@@ -1,0 +1,13 @@
+# Publish source files only; retain local research assets untracked.
+*
+!*/
+!*.py
+!*.sh
+!/README.md
+!.gitignore
+results/
+__pycache__/
+.git/
+.venv/
+venv/
+env/
