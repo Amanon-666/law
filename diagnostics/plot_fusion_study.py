@@ -78,9 +78,9 @@ def contrasts(summary):
             for mi,method in enumerate(methods):
                 cells=[rows[(building,method,reference,k)]['interval'] for k in K]
                 mean=np.array([r['mean'] if r else np.nan for r in cells])
-                low=np.array([r['simultaneous95'][0] if r else np.nan for r in cells])
-                high=np.array([r['simultaneous95'][1] if r else np.nan for r in cells])
-                missing+=int(np.isnan(mean).sum())
+                low=np.array([r['simultaneous95'][0] if r and r['simultaneous95'] is not None else np.nan for r in cells])
+                high=np.array([r['simultaneous95'][1] if r and r['simultaneous95'] is not None else np.nan for r in cells])
+                missing+=int(np.isnan(low).sum())
                 ax.plot(K,mean,color=COLORS[mi],marker=MARKERS[mi],lw=1.2,ms=4,label=LABELS[method])
                 ax.vlines(K,low,high,color=COLORS[mi],alpha=.55,lw=.8)
             ax.set(title=f'{building} vs {LABELS[reference]}',xlabel='Labeled support positions K',

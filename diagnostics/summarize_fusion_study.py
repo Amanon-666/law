@@ -47,7 +47,7 @@ def paired_intervals(groups,replicates=20000,seed=2026102801):
             sample=values[:,valid][indices]
             delta=sample.mean(1)-mean[valid]
             boot_se=sample.std(1,ddof=1)/np.sqrt(n)
-            z=np.divide(delta,boot_se,out=np.full_like(delta,np.inf),where=boot_se>0)
+            z=np.divide(delta,boot_se,out=np.copysign(np.full_like(delta,np.inf),delta),where=boot_se>0)
             z[(boot_se==0)&(delta==0)]=0
             t[start:stop,valid]=z
         centers.extend(mean);ses.extend(se);valids.extend(valid);statistics.append(t)
@@ -55,13 +55,14 @@ def paired_intervals(groups,replicates=20000,seed=2026102801):
     t=np.concatenate(statistics,axis=1)
     intervals=[None]*len(center);critical=None
     if valid.any():
-        critical=float(np.quantile(np.max(np.abs(t[:,valid]),axis=1),.95))
+        critical=float(np.quantile(np.max(np.abs(t[:,valid]),axis=1),.95,method='inverted_cdf'))
         for j in np.flatnonzero(valid):
-            lo,hi=np.quantile(t[:,j],[.025,.975])
+            lo,hi=np.quantile(t[:,j],[.025,.975],method='inverted_cdf')
             intervals[j]=dict(mean=float(center[j]),standard_error=float(se[j]),
-                pointwise95=[float(center[j]-hi*se[j]),float(center[j]-lo*se[j])],
-                simultaneous95=[float(center[j]-critical*se[j]),float(center[j]+critical*se[j])])
-    return intervals,dict(critical=critical,valid_contrasts=int(valid.sum()),
+                pointwise95=[float(center[j]-hi*se[j]),float(center[j]-lo*se[j])] if np.isfinite([lo,hi]).all() else None,
+                simultaneous95=[float(center[j]-critical*se[j]),float(center[j]+critical*se[j])] if np.isfinite(critical) else None)
+    unbounded=critical is not None and not np.isfinite(critical)
+    return intervals,dict(critical=None if unbounded else critical,unbounded_bootstrap_critical=unbounded,valid_contrasts=int(valid.sum()),
         total_contrasts=len(valid),invalid_indices=np.flatnonzero(~valid).tolist(),
         explanation='Missing draws or zero sample variance are not silently dropped or assigned a passing interval.')
 
@@ -132,7 +133,8 @@ def summarize():
     gates={}
     for name in freeze['candidate_arms']:
         required=[x for x in labels if x['method']==name]
-        gates[name]=dict(passed=all(x['interval'] is not None and np.isfinite(x['interval']['simultaneous95']).all()
+        gates[name]=dict(passed=all(x['interval'] is not None and x['interval']['simultaneous95'] is not None
+            and np.isfinite(x['interval']['simultaneous95']).all()
             and x['interval']['simultaneous95'][1]<=0 for x in required),required_contrasts=len(required),
             missing_or_zero_variance=sum(x['interval'] is None for x in required))
     # Each floor has equal population weight before conditioning on a stratum.
@@ -188,6 +190,10 @@ if __name__=='__main__':
         assert intervals[2] is None and intervals[3] is None and intervals[5] is None
         assert np.allclose(np.subtract(intervals[1]['simultaneous95'],intervals[0]['simultaneous95']),4)
         assert info['valid_contrasts']==3
+        sparse=np.zeros((128,1));sparse[0]=1
+        sparse_ci,sparse_info=paired_intervals([sparse],replicates=1024)
+        assert sparse_info['unbounded_bootstrap_critical'] and sparse_ci[0]['simultaneous95'] is None
+        json.dumps([sparse_ci,sparse_info],allow_nan=False)
         counts=rng.multinomial(4,np.full(4,.25),size=1024)
         values=np.array([[0.,0.],[2.,.5],[4.,1.],[0.,0.]])
         r,s=ratio_interval(values,counts)
