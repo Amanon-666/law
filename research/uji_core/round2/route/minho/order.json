@@ -1,0 +1,92 @@
+{
+  "pairs": [
+    {
+      "early": "2019-02-19",
+      "late": "2019-03-25",
+      "common_positions": 26,
+      "query_rows": 520,
+      "median_foil_metres": 3.5994114425303616,
+      "earlier_axis_width": 161,
+      "stats": {
+        "R1_correct": 0.646346153846154,
+        "R1_tie": 0.0,
+        "R1_margin": 0.5153026675531076,
+        "mean_correct": 0.6826923076923076,
+        "mean_tie": 0.0,
+        "mean_margin": 0.5121343394561978,
+        "R1_wrong_to_mean_correct": 0.13365384615384618,
+        "R1_correct_to_mean_wrong": 0.0973076923076923,
+        "any_order_change": 0.23096153846153847
+      }
+    },
+    {
+      "early": "2019-06-11",
+      "late": "2019-07-03",
+      "common_positions": 49,
+      "query_rows": 980,
+      "median_foil_metres": 3.5994104368978266,
+      "earlier_axis_width": 168,
+      "stats": {
+        "R1_correct": 0.7988775510204079,
+        "R1_tie": 0.0,
+        "R1_margin": 2.1744044030104432,
+        "mean_correct": 0.8622448979591838,
+        "mean_tie": 0.0,
+        "mean_margin": 2.307533688787514,
+        "R1_wrong_to_mean_correct": 0.10489795918367345,
+        "R1_correct_to_mean_wrong": 0.041530612244897964,
+        "any_order_change": 0.14642857142857144
+      }
+    },
+    {
+      "early": "2019-07-29",
+      "late": "2019-09-11",
+      "common_positions": 47,
+      "query_rows": 940,
+      "median_foil_metres": 3.5994104331384604,
+      "earlier_axis_width": 160,
+      "stats": {
+        "R1_correct": 0.7617021276595745,
+        "R1_tie": 0.00031914893617021275,
+        "R1_margin": 1.1291765913056544,
+        "mean_correct": 0.7978723404255319,
+        "mean_tie": 0.0,
+        "mean_margin": 1.1977888131025358,
+        "R1_wrong_to_mean_correct": 0.09574468085106382,
+        "R1_correct_to_mean_wrong": 0.05978723404255321,
+        "any_order_change": 0.15585106382978717
+      }
+    },
+    {
+      "early": "2019-10-09",
+      "late": "2019-11-13",
+      "common_positions": 49,
+      "query_rows": 980,
+      "median_foil_metres": 3.5994104368978266,
+      "earlier_axis_width": 165,
+      "stats": {
+        "R1_correct": 0.7459183673469387,
+        "R1_tie": 0.0,
+        "R1_margin": 1.6669498071631876,
+        "mean_correct": 0.8020408163265307,
+        "mean_tie": 0.0,
+        "mean_margin": 1.8010587884795188,
+        "R1_wrong_to_mean_correct": 0.12479591836734694,
+        "R1_correct_to_mean_wrong": 0.0686734693877551,
+        "any_order_change": 0.1934693877551021
+      }
+    }
+  ],
+  "macro": {
+    "R1_correct": 0.7382110499682688,
+    "R1_tie": 7.978723404255319e-05,
+    "R1_margin": 1.3714583672580982,
+    "mean_correct": 0.7862125906008886,
+    "mean_tie": 0.0,
+    "mean_margin": 1.4546289074564416,
+    "R1_wrong_to_mean_correct": 0.11477310113898259,
+    "R1_correct_to_mean_wrong": 0.06682475199572464,
+    "any_order_change": 0.1816776403687498
+  },
+  "median_foil_m": 3.599411436890759
+}

@@ -1,0 +1,150 @@
+{
+  "doi": "10.5281/zenodo.6646008",
+  "release_md5": "4c15884cb7edcd2c602ec5d567ddd8a8",
+  "format": "survey coordinates only; no RSS values or monitor rows decoded",
+  "visits": [
+    {
+      "date": "2019-02-19",
+      "rows": 520,
+      "unique_coordinates": 26,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "490cf457a8aee2ff449a1feb02e88192a9d84d32fb92bf363b818b9cded53fb5"
+    },
+    {
+      "date": "2019-03-25",
+      "rows": 860,
+      "unique_coordinates": 43,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "9bd5575ade247af0c606b1d00c77ad294d60466c74f01bc773d5b8fc39de0bcd"
+    },
+    {
+      "date": "2019-06-11",
+      "rows": 980,
+      "unique_coordinates": 49,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "ff1a222e18e6261c366900ab80825b14bf1b0fd99f2a55ec0bd914ce338d8b65"
+    },
+    {
+      "date": "2019-07-03",
+      "rows": 980,
+      "unique_coordinates": 49,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "5c6751613283d4f9060d19f1cdc67e23b385b41485aef6791d43c4166c9a2f79"
+    },
+    {
+      "date": "2019-07-29",
+      "rows": 960,
+      "unique_coordinates": 48,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "d5c846c1cacb5077d9b555503e756df8109611b3e901b48300b313246c6ee149"
+    },
+    {
+      "date": "2019-09-11",
+      "rows": 960,
+      "unique_coordinates": 48,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "2810d0f8527e37ea9f5ad9a1c73f0591711f4d7334945702381e457fbe1ccdfc"
+    },
+    {
+      "date": "2019-10-09",
+      "rows": 980,
+      "unique_coordinates": 49,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "4563d5d4fcedc67865403c41776dd2e40596ad2ec508ad21848efa061ad1c9ec"
+    },
+    {
+      "date": "2019-11-13",
+      "rows": 980,
+      "unique_coordinates": 49,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "20b81bf9bb5eeca33cb986949a9fa94b60588d94c5dba5c680ec801fc1e9a83a"
+    },
+    {
+      "date": "2019-12-11",
+      "rows": 980,
+      "unique_coordinates": 49,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "be12a27a8c322ee2e327d651fdb18cf26ccbc279c53cb4cdd987775f6fd04eb3"
+    },
+    {
+      "date": "2020-01-15",
+      "rows": 980,
+      "unique_coordinates": 49,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "ccc81c998391cbe25260341df466deff7ee7f269b8712fb91def5cd29ab5db15"
+    },
+    {
+      "date": "2020-02-19",
+      "rows": 980,
+      "unique_coordinates": 49,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "5756da8af7ba79fd3c8089427bb57cbf58865668f6e8c3224330f96afc3ce41d"
+    },
+    {
+      "date": "2021-04-23",
+      "rows": 960,
+      "unique_coordinates": 48,
+      "z": [
+        1.0
+      ],
+      "coordinate_sha256": "331f859145c8aa77bc54c574dee9055cd4a19ff3b6ada7d70111b66806cad769"
+    }
+  ],
+  "total_rows": 11120,
+  "exact_union": 51,
+  "exact_intersection": 26,
+  "consecutive_disjoint_visit_pairs": [
+    {
+      "earlier": "2019-02-19",
+      "later": "2019-03-25",
+      "common_xyz": 26
+    },
+    {
+      "earlier": "2019-06-11",
+      "later": "2019-07-03",
+      "common_xyz": 49
+    },
+    {
+      "earlier": "2019-07-29",
+      "later": "2019-09-11",
+      "common_xyz": 47
+    },
+    {
+      "earlier": "2019-10-09",
+      "later": "2019-11-13",
+      "common_xyz": 49
+    },
+    {
+      "earlier": "2019-12-11",
+      "later": "2020-01-15",
+      "common_xyz": 49
+    },
+    {
+      "earlier": "2020-02-19",
+      "later": "2021-04-23",
+      "common_xyz": 48
+    }
+  ]
+}
