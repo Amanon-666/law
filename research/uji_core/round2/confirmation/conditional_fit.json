@@ -1,0 +1,243 @@
+{
+  "folds": {
+    "0": {
+      "n": 405,
+      "source_buildings": [
+        1,
+        2
+      ],
+      "values": {
+        "scalar": [
+          0.024079729081273548,
+          0.024079729081273548,
+          0.024079729081273548
+        ],
+        "gate": [
+          0.0,
+          0.23577501573086093,
+          0.0
+        ],
+        "source_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fits": {
+        "scalar": {
+          "objective": 11.487072715864256,
+          "iterations": 5,
+          "success": true
+        },
+        "gate": {
+          "objective": 11.26295637274886,
+          "iterations": 7,
+          "success": true
+        }
+      },
+      "selected_fixed": "fixed0.0",
+      "fixed_source_risk": {
+        "fixed0.0": 11.494550191971186,
+        "fixed0.25": 11.921062592908536,
+        "fixed0.5": 13.504677166775554,
+        "fixed0.75": 16.588797400991226,
+        "fixed1.0": 22.420342725010414,
+        "fixed_rising": 11.502233406491152,
+        "fixed_falling": 21.30177839879639
+      }
+    },
+    "1": {
+      "n": 405,
+      "source_buildings": [
+        0,
+        2
+      ],
+      "values": {
+        "scalar": [
+          0.12267002575641202,
+          0.12267002575641202,
+          0.12267002575641202
+        ],
+        "gate": [
+          0.0625287235192562,
+          0.2758010598408024,
+          0.0
+        ],
+        "source_fixed": [
+          0.25,
+          0.25,
+          0.25
+        ]
+      },
+      "fits": {
+        "scalar": {
+          "objective": 9.473725574249679,
+          "iterations": 6,
+          "success": true
+        },
+        "gate": {
+          "objective": 9.292547329987109,
+          "iterations": 10,
+          "success": true
+        }
+      },
+      "selected_fixed": "fixed0.25",
+      "fixed_source_risk": {
+        "fixed0.0": 9.573099961910893,
+        "fixed0.25": 9.556442014342082,
+        "fixed0.5": 10.221395614976515,
+        "fixed0.75": 12.0537877319937,
+        "fixed1.0": 15.78092307390014,
+        "fixed_rising": 9.605800278835448,
+        "fixed_falling": 13.82968968064592
+      }
+    },
+    "2": {
+      "n": 360,
+      "source_buildings": [
+        0,
+        1
+      ],
+      "values": {
+        "scalar": [
+          0.014774812202580782,
+          0.014774812202580782,
+          0.014774812202580782
+        ],
+        "gate": [
+          0.0,
+          0.17689904399861245,
+          0.0
+        ],
+        "source_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fits": {
+        "scalar": {
+          "objective": 8.889930365929281,
+          "iterations": 5,
+          "success": true
+        },
+        "gate": {
+          "objective": 8.807711101687367,
+          "iterations": 6,
+          "success": true
+        }
+      },
+      "selected_fixed": "fixed0.0",
+      "fixed_source_risk": {
+        "fixed0.0": 8.8924835768763,
+        "fixed0.25": 9.260214489959782,
+        "fixed0.5": 10.682110196895504,
+        "fixed0.75": 13.529422303209229,
+        "fixed1.0": 19.216057528720338,
+        "fixed_rising": 9.128912710433486,
+        "fixed_falling": 17.687163766823232
+      }
+    },
+    "external": {
+      "n": 585,
+      "source_buildings": [
+        0,
+        1,
+        2
+      ],
+      "values": {
+        "scalar": [
+          0.04228933469458107,
+          0.04228933469458107,
+          0.04228933469458107
+        ],
+        "gate": [
+          0.0,
+          0.21941321218335094,
+          0.0
+        ],
+        "source_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fits": {
+        "scalar": {
+          "objective": 9.968192954944248,
+          "iterations": 7,
+          "success": true
+        },
+        "gate": {
+          "objective": 9.797115084547533,
+          "iterations": 7,
+          "success": true
+        }
+      },
+      "selected_fixed": "fixed0.0",
+      "fixed_source_risk": {
+        "fixed0.0": 9.986711243586134,
+        "fixed0.25": 10.245906365736795,
+        "fixed0.5": 11.46939432621584,
+        "fixed0.75": 14.057335812064721,
+        "fixed1.0": 19.13910777587696,
+        "fixed_rising": 10.078982131920027,
+        "fixed_falling": 17.606210615421837
+      }
+    }
+  },
+  "bins": [
+    0.2,
+    0.8
+  ],
+  "penalty": 0.1,
+  "sha256": {
+    "trainingData.csv": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+    "validationData.csv": "5f90c536648cd657b2c516d20c4e0968d4003279ea6bd5d5d5322d3f1e8905c0"
+  },
+  "fixed": {
+    "fixed0.0": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "fixed0.25": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "fixed0.5": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "fixed0.75": [
+      0.75,
+      0.75,
+      0.75
+    ],
+    "fixed1.0": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "fixed_rising": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "fixed_falling": [
+      1.0,
+      0.5,
+      0.0
+    ]
+  },
+  "shuffle_seeds": [
+    260110,
+    260111,
+    260112
+  ],
+  "scope": "Hypothesis developed on the known B1F2 three-position repeat failure, UJI development only; no external query used. Each target building excluded from both period and device source supervision. All-UJI rule frozen for potential external decision before held results.",
+  "design": "Fixed gap2 H map, fixed S residual, original nondetection and raw S templates. Detected-RSS means of H interpolate between m and clip(m+H conditional-minus-filled shift). Shared coefficients on p<.2, .2<=p<.8, p>=.8; scalar first fitted by direct MDE, three-bin fit penalizes deviations from scalar, 0.1 sum of squared deviations. H conditional moments use actual H at each AP/location. Balanced source building/regime/floor/device/draw/K; three source draws and all budgets.",
+  "shuffle": "Three independent controls for H XY rows and H AP columns (within H-prevalence quartiles), moving (p, H-detected correction) together. Average scored losses, not predicted coordinates."
+}

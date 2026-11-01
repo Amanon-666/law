@@ -1,0 +1,88 @@
+{
+  "study": "Single pre-unsealing external challenge, causal localization scores only",
+  "sites": [
+    "TIE1",
+    "SAH1",
+    "CETC331"
+  ],
+  "eligible_target_floors": 6,
+  "paired_events": 300,
+  "preregistered_parent_commit": "38e11a506621f7721fa40a4f8656392669fed313",
+  "previous_holdout_protocol_sha256": "ebc2b09bf6f1e68c04e07b1a1a202c6d89b2df24bbdd4d6cc7cb1de4c7df384c",
+  "split_and_wknn_file_sha256": {
+    "external_tau_protocol.json": "36dd7b24cbd48f4adde8b2f9d3c0f4dc554a09673e35fc6757ba3b45c479c4f8",
+    "external_sod_protocol.json": "78c585e822e375802b4254e9128ad26b290676d01c47af74aa9818c103e8b270",
+    "period_wknn_parameters.json": "807959e76729adc74db79bf0801cfd7de6e7d73287bea5d6563123a6a1ba279f",
+    "floor_wknn_parameters.json": "d3f5be9b19df496e34f4b12383760553bd0f1df2acb84ff9d44db908b2926b86"
+  },
+  "implementation_zip_sha256": "501f44aea1a4569060cc45286f30958d865857ccc916d0211b05a7b58e59d5f1",
+  "fit_file_sha256": "0b36024f6832eddde20c044739b2b48edcbf8c8e107fd51c24ecbdcbfc1e2386",
+  "refi_sha256": "c27cf82d35aecb8fd16cad4d4f8711a94533a34cd9c700c053b22d190500e84f",
+  "candidate": "One readout. Public floor-gap=2 half10/40 map, conditional RSS H candidate uplift only for detected measurements, three bands cut .2/.8; probabilities from real H. Raw S and miss scores untouched.",
+  "external_parameters": {
+    "scalar": [
+      0.04228933469458107,
+      0.04228933469458107,
+      0.04228933469458107
+    ],
+    "gate": [
+      0.0,
+      0.21941321218335094,
+      0.0
+    ],
+    "source_fixed": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "fixed_family_controls": {
+    "fixed0.0": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "fixed0.25": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "fixed0.5": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "fixed0.75": [
+      0.75,
+      0.75,
+      0.75
+    ],
+    "fixed1.0": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "fixed_rising": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "fixed_falling": [
+      1.0,
+      0.5,
+      0.0
+    ]
+  },
+  "strongest_simple_control": "Uniform slope learned from same scenes, fixed parent, and all predeclared fixed response curves; evaluate paired by site/K without reselecting model.",
+  "baselines": [
+    "original prelocked prototype WKNN",
+    "floor-aware device-trained WKNN",
+    "floor-aware true-late+device-trained WKNN",
+    "identical corrected-map WKNN with k fit from UJI sources"
+  ],
+  "external_map_k": "Use the single all-UJI k in the archived paired_map_parameters.json.",
+  "paired_map_parameters_sha256": "09037ad1bb36b8f700f9ac202c0ef2421ea4c5f6ca477257458177fb7ea0f516",
+  "source_rights": "All 3 UJI buildings to fit external weights, no Tampere/CETC scores. No site tuning. External position error in metres, unique query positions equal, report per floor and site.",
+  "eligibility": "All 12 successive building-budget changes reduce empirical MDE in each UJI regime. Strictly below the available strong WKNN comparisons in 15/15 building cells in each. Lower MDE vs unmodified parent, matched scalar and fixed family on BOTH regimes. Official effect vs zero is small with conditional interval crossing zero; point-estimate qualification for a blind test is not confirmation of three goals.",
+  "interpretation": "Report each external building and budget even if worse, clustered uncertainty conditional on fixed query pools. Do not search the external results to choose another model. Sites used for this challenge will no longer be pristine for subsequent models."
+}
