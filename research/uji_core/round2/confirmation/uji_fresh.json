@@ -1,0 +1,293 @@
+{
+  "official": {
+    "n": 2600,
+    "gate_mde": 10.181990920529223,
+    "K_curve": [
+      10.941322967850814,
+      10.62712461178486,
+      10.240913695039303,
+      9.774440743271912,
+      9.326152584699223
+    ],
+    "A_building_decreases": 12,
+    "A_floor_decreases": 44,
+    "A_draw_decreases": 1358,
+    "B_both_wknn": 15,
+    "C_all_point": true,
+    "C_all_upper95": false,
+    "C_limiting": "fixed0.0",
+    "best_measured_fixed": "fixed0.0",
+    "all_contrasts": {
+      "scalar": {
+        "mde": 10.216539241995227,
+        "delta": -0.03454832146600193,
+        "interval": [
+          -0.050238574133459286,
+          -0.018595008915325284
+        ],
+        "building_K_nonloss": 12,
+        "all_bk_pointwise_upper_below_zero": 8
+      },
+      "fixed0.0": {
+        "mde": 10.18497616904553,
+        "delta": -0.0029852485163080664,
+        "interval": [
+          -0.019390156579806188,
+          0.013648286541392789
+        ],
+        "building_K_nonloss": 8,
+        "all_bk_pointwise_upper_below_zero": 8
+      },
+      "fixed0.25": {
+        "mde": 10.344415791523069,
+        "delta": -0.16242487099384675,
+        "interval": [
+          -0.1888976763307417,
+          -0.1358071614891752
+        ],
+        "building_K_nonloss": 9,
+        "all_bk_pointwise_upper_below_zero": 8
+      },
+      "fixed0.5": {
+        "mde": 11.463564816918188,
+        "delta": -1.2815738963889667,
+        "interval": [
+          -1.3343247014691897,
+          -1.2290140521843027
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      },
+      "fixed0.75": {
+        "mde": 14.154581811316142,
+        "delta": -3.9725908907869196,
+        "interval": [
+          -4.063965032044058,
+          -3.8839812598891506
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      },
+      "fixed1.0": {
+        "mde": 19.402726318958734,
+        "delta": -9.220735398429513,
+        "interval": [
+          -9.367451291568221,
+          -9.077159768053448
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      },
+      "fixed_rising": {
+        "mde": 10.629350825134319,
+        "delta": -0.4473599046050979,
+        "interval": [
+          -0.4725201137791041,
+          -0.4222864703943118
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      },
+      "fixed_falling": {
+        "mde": 18.32893935715571,
+        "delta": -8.146948436626488,
+        "interval": [
+          -8.307445710210128,
+          -7.991799312623419
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      },
+      "source_fixed": {
+        "mde": 10.383951815578007,
+        "delta": -0.20196089504878584,
+        "interval": [
+          -0.22298176201545858,
+          -0.18063524838366854
+        ],
+        "building_K_nonloss": 13,
+        "all_bk_pointwise_upper_below_zero": 13
+      },
+      "floor_wknn": {
+        "mde": 13.729103359479405,
+        "delta": -3.547112438950182,
+        "interval": [
+          -3.6120972176493717,
+          -3.4820440307850684
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      },
+      "mapped_wknn": {
+        "mde": 11.956790234173422,
+        "delta": -1.7747993136441995,
+        "interval": [
+          -1.839884827694941,
+          -1.710098159503536
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      }
+    },
+    "floor_wins": {
+      "floor_wknn": 65,
+      "mapped_wknn": 65,
+      "scalar": 38,
+      "fixed0.0": 38,
+      "fixed_rising": 55
+    }
+  },
+  "phone": {
+    "n": 2600,
+    "gate_mde": 9.000982986217627,
+    "K_curve": [
+      10.112628461657694,
+      9.451413384105258,
+      8.998727717152063,
+      8.411275761178869,
+      8.03086960699426
+    ],
+    "A_building_decreases": 12,
+    "A_floor_decreases": 42,
+    "A_draw_decreases": 1338,
+    "B_both_wknn": 15,
+    "C_all_point": true,
+    "C_all_upper95": true,
+    "C_limiting": "fixed_rising",
+    "best_measured_fixed": "fixed_rising",
+    "all_contrasts": {
+      "scalar": {
+        "mde": 9.246720891005111,
+        "delta": -0.24573790478748403,
+        "interval": [
+          -0.277714897743488,
+          -0.21378022817861375
+        ],
+        "building_K_nonloss": 11,
+        "all_bk_pointwise_upper_below_zero": 10
+      },
+      "fixed0.0": {
+        "mde": 9.31930363393895,
+        "delta": -0.3183206477213248,
+        "interval": [
+          -0.3527021393728044,
+          -0.2840155342887184
+        ],
+        "building_K_nonloss": 10,
+        "all_bk_pointwise_upper_below_zero": 9
+      },
+      "fixed0.25": {
+        "mde": 9.724059170786246,
+        "delta": -0.7230761845686203,
+        "interval": [
+          -0.7775344613521933,
+          -0.669692374143068
+        ],
+        "building_K_nonloss": 13,
+        "all_bk_pointwise_upper_below_zero": 11
+      },
+      "fixed0.5": {
+        "mde": 11.004502053730523,
+        "delta": -2.0035190675128955,
+        "interval": [
+          -2.110351422072733,
+          -1.8987158820446812
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 14
+      },
+      "fixed0.75": {
+        "mde": 13.68301990034138,
+        "delta": -4.682036914123754,
+        "interval": [
+          -4.865004548714135,
+          -4.504856709854011
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      },
+      "fixed1.0": {
+        "mde": 18.752316432883944,
+        "delta": -9.751333446666314,
+        "interval": [
+          -10.012451065415206,
+          -9.504537609675413
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      },
+      "fixed_rising": {
+        "mde": 9.237074756956666,
+        "delta": -0.2360917707390387,
+        "interval": [
+          -0.2867931811853967,
+          -0.1836107598212012
+        ],
+        "building_K_nonloss": 9,
+        "all_bk_pointwise_upper_below_zero": 8
+      },
+      "fixed_falling": {
+        "mde": 16.073570984109065,
+        "delta": -7.072587997891437,
+        "interval": [
+          -7.3211769282407655,
+          -6.835095762878419
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      },
+      "source_fixed": {
+        "mde": 9.261338269530961,
+        "delta": -0.2603552833133328,
+        "interval": [
+          -0.30453650747095096,
+          -0.21684311311813315
+        ],
+        "building_K_nonloss": 10,
+        "all_bk_pointwise_upper_below_zero": 8
+      },
+      "floor_wknn": {
+        "mde": 12.467666856340106,
+        "delta": -3.4666838701224783,
+        "interval": [
+          -3.5714327842162925,
+          -3.359793252404085
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 15
+      },
+      "mapped_wknn": {
+        "mde": 11.118716462541279,
+        "delta": -2.1177334763236506,
+        "interval": [
+          -2.251760244686564,
+          -1.9860514672777752
+        ],
+        "building_K_nonloss": 15,
+        "all_bk_pointwise_upper_below_zero": 13
+      }
+    },
+    "floor_wins": {
+      "floor_wknn": 56,
+      "mapped_wknn": 50,
+      "scalar": 40,
+      "fixed0.0": 41,
+      "fixed_rising": 38
+    }
+  },
+  "checks": [
+    {
+      "mode": "official",
+      "old_public_max_MDE_gap": 1.4236078982321487e-10,
+      "frozen_predict_max_MDE_gap": 8.257750039319944e-11
+    },
+    {
+      "mode": "phone",
+      "old_public_max_MDE_gap": 2.1177370967961906e-10,
+      "frozen_predict_max_MDE_gap": 1.3922729635851283e-10
+    }
+  ],
+  "scope": "Previously fixed draws 10\u201349, fixed floors/queries/gates, 10,000 paired draws within each floor preserving correlations across K and models; building/floors equal. Intervals are pointwise unless marked.",
+  "gate_fit_sha256": "0b36024f6832eddde20c044739b2b48edcbf8c8e107fd51c24ecbdcbfc1e2386",
+  "order_sha256": "13091aa0b9c105e14de3e1498fa760851fb701d77a7590943fcb60966e59e0b8"
+}

@@ -1,0 +1,53 @@
+{
+  "post_hoc": true,
+  "new_fixed": [
+    0.0,
+    0.25,
+    0.0
+  ],
+  "learned_minus_fixed": true,
+  "fitted": false,
+  "manifest_sha256": "13091aa0b9c105e14de3e1498fa760851fb701d77a7590943fcb60966e59e0b8",
+  "fit_sha256": "0b36024f6832eddde20c044739b2b48edcbf8c8e107fd51c24ecbdcbfc1e2386",
+  "uncertainty": "Paired support draws within each fixed floor, a whole nested K curve per draw; equal building, floor and K; 10000 draws. Fixed queries and phones.",
+  "results": {
+    "official": {
+      "events": 2600,
+      "learned": 10.181990920528602,
+      "fixed": 10.204323508019039,
+      "delta": -0.022332587490436578,
+      "conditional_95": [
+        -0.029518480957478874,
+        -0.014852632865419494
+      ],
+      "building_deltas": [
+        -0.0024326353652578034,
+        0.03281101884952236,
+        -0.09737614595557428
+      ],
+      "building_K_wins": 8,
+      "floor_K_wins": 35,
+      "draw_K_wins": 1456,
+      "max_archived_gate_replay_gap": 1.0904166458658435e-10
+    },
+    "phone": {
+      "events": 2600,
+      "learned": 9.000982986220519,
+      "fixed": 9.021210264742622,
+      "delta": -0.020227278522103324,
+      "conditional_95": [
+        -0.031568570447186674,
+        -0.008707325194732139
+      ],
+      "building_deltas": [
+        -0.012638625548370346,
+        -0.09041297734170337,
+        0.04236976732376372
+      ],
+      "building_K_wins": 13,
+      "floor_K_wins": 47,
+      "draw_K_wins": 1743,
+      "max_archived_gate_replay_gap": 1.8414247904274816e-10
+    }
+  }
+}

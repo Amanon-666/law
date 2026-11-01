@@ -1,0 +1,406 @@
+{
+  "permanent_freeze_commit": "0eb447c261f29834de6218c8282d1a5c2c22e7ff",
+  "consumed": true,
+  "scope": "Once-only prospective evaluation of one all-UJI calibrated model. All three sites now consumed by this comparison; future fitting against these outcomes is exploratory.",
+  "n_events": 300,
+  "sites": [
+    {
+      "site": "CETC331",
+      "target_floors": 3,
+      "eligibility": "mean over ten draws and available target floors, meters",
+      "budgets": [
+        1,
+        3,
+        5,
+        10,
+        20
+      ],
+      "gate_curve": [
+        7.62974894491645,
+        6.392093976657513,
+        5.19221161820245,
+        4.7574849171623566,
+        4.358219825479716
+      ],
+      "parent_curve": [
+        7.527217977449524,
+        6.422232461103896,
+        5.100544299708229,
+        4.617406794929587,
+        4.230175226799679
+      ],
+      "scalar_curve": [
+        7.508129747685968,
+        6.3651664351926165,
+        5.132708831466229,
+        4.671925637142178,
+        4.278561252372145
+      ],
+      "period_WKNN_curve": [
+        9.437615240084801,
+        7.997981018415067,
+        6.944793057786477,
+        5.3174402406910035,
+        4.053082441682696
+      ],
+      "strongest_fixed": "fixed0.0",
+      "strongest_fixed_curve": [
+        7.527217977449524,
+        6.422232461103896,
+        5.100544299708229,
+        4.617406794929587,
+        4.230175226799679
+      ],
+      "means_m": {
+        "conditional_gate": 5.665951856483697,
+        "fixed0.0": 5.579515351998182,
+        "fixed0.25": 5.7138312888213205,
+        "fixed0.5": 5.93756620194362,
+        "fixed0.75": 5.997517063619599,
+        "fixed1.0": 5.90626835270598,
+        "fixed_falling": 5.729799910938742,
+        "fixed_gap2": 5.579515351998182,
+        "fixed_refi": 5.629283781288716,
+        "fixed_rising": 5.8149632238901745,
+        "floor_wknn": 6.750182399732009,
+        "period_floor_wknn": 6.750182399732009,
+        "same_map_wknn": 5.65885057193445,
+        "source_fixed": 5.579515351998182,
+        "strong_wknn": 6.2547378693343045,
+        "tied_scalar": 5.591298380771827
+      },
+      "strict_K_decreases": 4,
+      "contrasts": {
+        "fixed_gap2": {
+          "mean": 0.08643650448551413,
+          "pointwise_wins": 1,
+          "paired_floor_K_wins": 5,
+          "conditional_95": [
+            0.0423014898778935,
+            0.151616148299437
+          ]
+        },
+        "fixed0.0": {
+          "mean": 0.08643650448551413,
+          "pointwise_wins": 1,
+          "paired_floor_K_wins": 5,
+          "conditional_95": [
+            0.0423014898778935,
+            0.151616148299437
+          ]
+        },
+        "tied_scalar": {
+          "mean": 0.07465347571186971,
+          "pointwise_wins": 0,
+          "paired_floor_K_wins": 3,
+          "conditional_95": [
+            0.039242369007338,
+            0.1306641257297989
+          ]
+        },
+        "strong_wknn": {
+          "mean": -0.5887860128506077,
+          "pointwise_wins": 3,
+          "paired_floor_K_wins": 10,
+          "conditional_95": [
+            -0.9036156180527354,
+            -0.2310434992481935
+          ]
+        },
+        "floor_wknn": {
+          "mean": -1.0842305432483117,
+          "pointwise_wins": 4,
+          "paired_floor_K_wins": 10,
+          "conditional_95": [
+            -1.4805043901501669,
+            -0.6726283251822838
+          ]
+        },
+        "period_floor_wknn": {
+          "mean": -1.0842305432483117,
+          "pointwise_wins": 4,
+          "paired_floor_K_wins": 10,
+          "conditional_95": [
+            -1.4805043901501669,
+            -0.6726283251822838
+          ]
+        },
+        "same_map_wknn": {
+          "mean": 0.007101284549246678,
+          "pointwise_wins": 3,
+          "paired_floor_K_wins": 10,
+          "conditional_95": [
+            -0.1790761136697238,
+            0.2243085111284158
+          ]
+        }
+      }
+    },
+    {
+      "site": "SAH1",
+      "target_floors": 2,
+      "eligibility": "mean over ten draws and available target floors, meters",
+      "budgets": [
+        1,
+        3,
+        5,
+        10,
+        20
+      ],
+      "gate_curve": [
+        14.026446863551067,
+        13.170684589162798,
+        12.258959276656203,
+        10.294287188812667,
+        9.181331377383838
+      ],
+      "parent_curve": [
+        13.808552032559792,
+        13.09200557409605,
+        12.190444526478153,
+        10.165794109639403,
+        9.063456828528
+      ],
+      "scalar_curve": [
+        14.648419255417682,
+        13.633899674731003,
+        12.484141357198865,
+        10.261531988589642,
+        9.052359747762427
+      ],
+      "period_WKNN_curve": [
+        35.93305248723674,
+        33.27167692321733,
+        31.733795538898093,
+        27.665636974582355,
+        18.811855010912833
+      ],
+      "strongest_fixed": "fixed0.0",
+      "strongest_fixed_curve": [
+        13.808552032559792,
+        13.09200557409605,
+        12.190444526478153,
+        10.165794109639403,
+        9.063456828528
+      ],
+      "means_m": {
+        "conditional_gate": 11.786341859113316,
+        "fixed0.0": 11.664050614260281,
+        "fixed0.25": 15.297559249902076,
+        "fixed0.5": 21.492161933671063,
+        "fixed0.75": 29.281969170273953,
+        "fixed1.0": 39.608353204538574,
+        "fixed_falling": 40.405889862209015,
+        "fixed_gap2": 11.664050614260281,
+        "fixed_refi": 11.618870455191509,
+        "fixed_rising": 11.754715295002772,
+        "floor_wknn": 29.483203386969468,
+        "period_floor_wknn": 29.483203386969468,
+        "same_map_wknn": 18.037248107990674,
+        "source_fixed": 11.664050614260281,
+        "strong_wknn": 29.30719704320873,
+        "tied_scalar": 12.016070404739924
+      },
+      "strict_K_decreases": 4,
+      "contrasts": {
+        "fixed_gap2": {
+          "mean": 0.12229124485303515,
+          "pointwise_wins": 0,
+          "paired_floor_K_wins": 2,
+          "conditional_95": [
+            0.007233550985711,
+            0.2558688173561232
+          ]
+        },
+        "fixed0.0": {
+          "mean": 0.12229124485303515,
+          "pointwise_wins": 0,
+          "paired_floor_K_wins": 2,
+          "conditional_95": [
+            0.007233550985711,
+            0.2558688173561232
+          ]
+        },
+        "tied_scalar": {
+          "mean": -0.22972854562660922,
+          "pointwise_wins": 3,
+          "paired_floor_K_wins": 6,
+          "conditional_95": [
+            -0.4029012417862661,
+            -0.0596383274110464
+          ]
+        },
+        "strong_wknn": {
+          "mean": -17.520855184095417,
+          "pointwise_wins": 5,
+          "paired_floor_K_wins": 7,
+          "conditional_95": [
+            -19.76842152209409,
+            -15.157190945393609
+          ]
+        },
+        "floor_wknn": {
+          "mean": -17.696861527856154,
+          "pointwise_wins": 5,
+          "paired_floor_K_wins": 10,
+          "conditional_95": [
+            -19.949463396118112,
+            -15.329070686586736
+          ]
+        },
+        "period_floor_wknn": {
+          "mean": -17.696861527856154,
+          "pointwise_wins": 5,
+          "paired_floor_K_wins": 10,
+          "conditional_95": [
+            -19.949463396118112,
+            -15.329070686586736
+          ]
+        },
+        "same_map_wknn": {
+          "mean": -6.250906248877359,
+          "pointwise_wins": 5,
+          "paired_floor_K_wins": 8,
+          "conditional_95": [
+            -7.933481236204637,
+            -4.724185662602372
+          ]
+        }
+      }
+    },
+    {
+      "site": "TIE1",
+      "target_floors": 1,
+      "eligibility": "mean over ten draws and available target floors, meters",
+      "budgets": [
+        1,
+        3,
+        5,
+        10,
+        20
+      ],
+      "gate_curve": [
+        5.85504111602977,
+        5.5253453556469605,
+        5.501925740341929,
+        5.562721743014832,
+        5.3968944564541115
+      ],
+      "parent_curve": [
+        6.488410759696954,
+        6.1047796131178895,
+        5.996029483388017,
+        5.921773614368792,
+        5.874187367438517
+      ],
+      "scalar_curve": [
+        6.42914348592794,
+        6.066531048834369,
+        5.989798999892715,
+        5.916979811695088,
+        5.82768963524772
+      ],
+      "period_WKNN_curve": [
+        6.5591549989617475,
+        6.559152137461301,
+        6.559150912923052,
+        6.542867590772799,
+        6.608562998568789
+      ],
+      "strongest_fixed": "fixed_rising",
+      "strongest_fixed_curve": [
+        5.527438234966512,
+        5.310825932497352,
+        5.326565899519871,
+        5.3973278981498485,
+        5.183374758936622
+      ],
+      "means_m": {
+        "conditional_gate": 5.56838568229752,
+        "fixed0.0": 6.077036167602033,
+        "fixed0.25": 5.871261346380639,
+        "fixed0.5": 6.295353120890316,
+        "fixed0.75": 8.00128954416362,
+        "fixed1.0": 19.28505542153833,
+        "fixed_falling": 23.172080548941345,
+        "fixed_gap2": 6.077036167602033,
+        "fixed_refi": 6.2078532840660445,
+        "fixed_rising": 5.34910654481404,
+        "floor_wknn": 6.5657777277375375,
+        "period_floor_wknn": 6.5657777277375375,
+        "same_map_wknn": 5.878810342146389,
+        "source_fixed": 6.077036167602033,
+        "strong_wknn": 6.5657777277375375,
+        "tied_scalar": 6.046028596319565
+      },
+      "strict_K_decreases": 3,
+      "contrasts": {
+        "fixed_gap2": {
+          "mean": -0.5086504853045135,
+          "pointwise_wins": 5,
+          "paired_floor_K_wins": 5,
+          "conditional_95": [
+            -0.6219638370965984,
+            -0.3958371059145343
+          ]
+        },
+        "fixed_rising": {
+          "mean": 0.21927913748347957,
+          "pointwise_wins": 0,
+          "paired_floor_K_wins": 0,
+          "conditional_95": [
+            0.1213590542367806,
+            0.3286045667682372
+          ]
+        },
+        "tied_scalar": {
+          "mean": -0.4776429140220458,
+          "pointwise_wins": 5,
+          "paired_floor_K_wins": 5,
+          "conditional_95": [
+            -0.5929017969613997,
+            -0.3562779225884143
+          ]
+        },
+        "strong_wknn": {
+          "mean": -0.997392045440017,
+          "pointwise_wins": 5,
+          "paired_floor_K_wins": 5,
+          "conditional_95": [
+            -1.1629250322048412,
+            -0.7654704592960504
+          ]
+        },
+        "floor_wknn": {
+          "mean": -0.997392045440017,
+          "pointwise_wins": 5,
+          "paired_floor_K_wins": 5,
+          "conditional_95": [
+            -1.1629250322048412,
+            -0.7654704592960504
+          ]
+        },
+        "period_floor_wknn": {
+          "mean": -0.997392045440017,
+          "pointwise_wins": 5,
+          "paired_floor_K_wins": 5,
+          "conditional_95": [
+            -1.1629250322048412,
+            -0.7654704592960504
+          ]
+        },
+        "same_map_wknn": {
+          "mean": -0.3104246598488677,
+          "pointwise_wins": 4,
+          "paired_floor_K_wins": 4,
+          "conditional_95": [
+            -0.6359488675361075,
+            0.0109186445486028
+          ]
+        }
+      }
+    }
+  ],
+  "coverage": "TIE1 tests F0 only (50 distinct Q). SAH1 tests F1/F2 (96 and 60 Q). CETC331 tests F1/F2/F3 (280/320/240 scans, 28/32/24 positions). S/H training records at CETC331 are means of 30 scans; Finnish records are individual survey fingerprints.",
+  "interval_scope": "Paired resampling of entire 10-draw K curves within each fixed floor; no population inference over buildings or people. Min fixed per cell or per site is descriptive, not a deployable rule. No reporting-driven change to any fit."
+}
