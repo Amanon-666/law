@@ -42,11 +42,43 @@ def smooth_history(prior, length, strength):
     return (1. - strength) * values + strength * (weights @ values), xy
 
 
-def fit_map(histories, support, *, history_length=10., smoothing=.5):
+def historical_prior(hist, length, smoothing, floor_gaps=None):
+    """Pool registered historical fingerprints; use vertical separation if known.
+
+    Sources at the same horizontal location contribute one prototype each.
+    Within the smoothed component, each distinct location contributes its
+    average source reliability; duplicate scans do not multiply that mass.
+    """
+    if floor_gaps is None:
+        return smooth_history(tpm.history_map(hist, None, None), length, smoothing)
+    gaps = np.asarray(floor_gaps, dtype=float)
+    if gaps.shape != (len(hist),) or not np.isfinite(gaps).all():
+        raise ValueError("One finite floor gap is needed for each historical source")
+    levels = np.abs(gaps)
+    if np.all(levels == levels[0]):
+        return smooth_history(tpm.history_map(hist, None, None), length, smoothing)
+    strength = np.exp(np.maximum(-2. * (levels - levels.min()), -100.))
+    tables = [tpm.position_map(tpm.dbm(h["rss"]), h["xy"]) for h in hist]
+    xy, loc = np.unique(np.vstack([x for _, x in tables]), axis=0, return_inverse=True)
+    loc = loc.ravel()
+    value = np.vstack([v for v, _ in tables])
+    weights = np.repeat(strength, [len(v) for v, _ in tables])
+    total = np.bincount(loc, weights=weights)
+    summed = np.zeros((len(xy), value.shape[1]))
+    np.add.at(summed, loc, value * weights[:, None])
+    raw = summed / total[:, None]
+    density = total / np.bincount(loc)
+    spatial = np.exp(-cdist(xy, xy, "sqeuclidean") / (2 * length**2)) * density
+    average = (spatial / spatial.sum(1, keepdims=True)) @ raw
+    return (1.-smoothing)*raw + smoothing*average, xy
+
+
+def fit_map(histories, support, *, history_length=10., smoothing=.5, floor_gaps=None):
     """Use aligned, same-frame H and S. For K=0, pass empty 2-D S arrays.
 
     Both the historical smoothing range and 40-unit support influence range
     are expressed in UJI projected units.
+    Optional floor_gaps are signed or absolute floor-index differences.
     Multiple scans at one position are averaged. Each historical source first
     contributes one prototype per coordinate, then sources at identical
     coordinates receive equal weight. The target anchors stay in the map.
@@ -59,13 +91,17 @@ def fit_map(histories, support, *, history_length=10., smoothing=.5):
     width = s.shape[1]
     support = _scans(support, width)
     floors = [_scans(h, width) for h in histories]
+    if floor_gaps is not None:
+        floor_gaps = list(floor_gaps)
+        if len(floor_gaps) != len(floors):
+            raise ValueError("Provide one floor gap per input history")
+        floor_gaps = [g for h, g in zip(floors, floor_gaps) if len(h["rss"])]
     floors = [h for h in floors if len(h["rss"])]
     if not floors:
         raise ValueError("This history-conditioned model needs at least one historical scan")
     visible = np.logical_or.reduce([(h["rss"] != 100).any(0) for h in [*floors, support]])
     hist = [dict(rss=h["rss"][:, visible], xy=h["xy"]) for h in floors]
     anchors = dict(rss=support["rss"][:, visible], xy=support["xy"])
-    prior = tpm.history_map(hist, transfer=None, cross_floor=None)
-    prior = smooth_history(prior, history_length, smoothing)
+    prior = historical_prior(hist, history_length, smoothing, floor_gaps)
     prototypes, xy = tpm.calibrate(prior, anchors, (40., 1.))
     return FingerprintMap(prototypes, xy, visible)
