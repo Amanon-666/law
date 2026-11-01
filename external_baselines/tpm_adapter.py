@@ -40,6 +40,12 @@ def calibrate(prior, support, field):
         return prior
     anchor, anchor_xy = position_map(dbm(support['rss']), support['xy'])
     residual = anchor - lookup(anchor_xy, positions, prototypes)
+    return propagate(prior, anchor, anchor_xy, residual, field)
+
+
+def propagate(prior, anchor, anchor_xy, residual, field):
+    """Apply the same spatial residual solve and retain the measured anchors."""
+    prototypes, positions = prior
     length, noise = field
     def kernel(a, b):
         return np.exp(-((a[:, None]-b[None])**2).sum(-1)/(2*length**2))

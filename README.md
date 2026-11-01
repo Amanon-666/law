@@ -1,8 +1,26 @@
-# LAW: history-conditioned Wi-Fi localization
+# UJI 少标定定位 · 重构分支
 
-研究代码快照。目标是利用多环境历史指纹语料 H 和新环境少量带位置标签的扫描 S，提高新环境的定位精度。部署时仍保留历史库，语义入口为 `predict(history_bank, support, query_scan)`。
+本分支面向楼层已知、同楼历史指纹已配准的少标定定位。
 
-## 代码范围
+## 当前入口
+
+本分支以“少量现场标定怎样修正历史指纹”组织实现。默认入口为 `refi.fit_map(histories, support)`，得到可重复调用 `.predict(query_rss)` 的目标楼层指纹图。默认模型只依赖 NumPy、SciPy 和已有的 TPM 指纹图适配代码。训练和评测脚本均在 `research/uji_core/`，部署无需读取该目录。
+
+- [方法取舍、三项目标的实测结果和复现命令](research/uji_core/REPORT.md)
+- [部署代码](refi.py) · [UJI 抽样定义](research/uji_core/protocol.py) · [配对结果](research/uji_core/results/building_means.csv)
+
+```python
+from refi import fit_map
+
+# histories 中每一项和 support 均为 {"rss": [N, A], "xy": [N, 2]}。
+# 每次试验内各矩阵 AP 顺序一致，100 表示未检出，坐标在同一水平参考系。
+target_map = fit_map(histories, support)
+xy = target_map.predict(query_rss)  # 多次查询复用同一张图
+```
+
+维护这条主线时，初稿作为研究方向。新设计进入默认路径前，需要在同样的现场数据、同样的读出和强 WKNN 之下，单独检验它带来的定位增量。下方为分支建立前的研究归档。
+
+## 历史代码范围
 
 - 根目录：概率观测模型、历史指纹先验、Support 适应、全扫描定位，以及历史实验入口。
 - `residual_probe/`：历史条件残差学习、同特征现场拟合、固定查询与嵌套 K 对照；本轮入口为 `broad_source.py` 和 `broad_evaluation.py`。
@@ -10,7 +28,7 @@
 - `external_baselines/`：成熟方法的本项目适配实现；不是原作者官方代码。
 - `operator_prior_v1/`、`learnable_profile/`、`physical_prior_candidate/`：保留的历史候选及诊断实现，不代表均属于当前主模型。
 
-## 当前证据边界
+## 原 main 的研究记录
 
 截至 2026-10-27，仅扩大源训练任务覆盖的候选已完成开发评价并停止：在 K=1/3/5 的楼内平均定位误差比较中，只有 2/4 个建筑同时优于成熟历史基座和同特征现场拟合，未通过预先规定的学习增量门槛。胜过 H+S WKNN 的结果不能单独证明学习更有效地利用历史。共 57 个完整评价事件，另有 3 个 Pisa K=20 事件未通过数值收敛门槛。独立验证未启动；本仓库不宣称已证明泛化收益或方法创新。
 

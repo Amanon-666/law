@@ -1,0 +1,38 @@
+{
+  "0": {
+    "base": {
+      "mean": -104.36768496092276,
+      "amplitude": 16.836724936729784,
+      "length": 14.483046316526877,
+      "drift": 7.940123840544718
+    },
+    "obs": {
+      "alpha": 0.8672161172161172,
+      "beta": -85.39309326431558,
+      "detect_scale": 4.466755164467143,
+      "noise_std": 4.812471740718842
+    }
+  },
+  "1": {
+    "base": {
+      "mean": -134.187,
+      "amplitude": 24.63,
+      "length": 12.42,
+      "drift": 8.63367297789148
+    },
+    "obs": {
+      "alpha": 0.9807176737471643,
+      "beta": -88.54650384645022,
+      "detect_scale": 5.9775559289389735,
+      "noise_std": 4.209119877543206
+    }
+  },
+  "provenance": {
+    "0": "Recomputed using uji_probability_study.prepare source steps on B0F0-F2 (seed 251025, 12 AP cases, 32 Adam steps).",
+    "1": "Spatial mean, amplitude and length are the three-decimal B1 fitted values recorded in Notion 406217e091ae81c6b7b9ffb48c08e6a4. Observation and drift were recomputed on all four B1 floors with the six adjacent directed pairs in external_baselines/tpm_source_calibration.py. Recomputed drift 8.63367 vs rounded archived 8.635, so this is a reconstruction.",
+    "legacy_estimator": "Amanon-666/Femloc@ab1a60b17c7b85542755937c68f89d63ce26255c/models/{cross_floor,radio_map}.py",
+    "csv": "UCI hashes in protocol.py; repeat scans retained with data.group_scans.",
+    "B1_report": "https://www.notion.so/406217e091ae81c6b7b9ffb48c08e6a4",
+    "legacy_tree": "https://github.com/Amanon-666/Femloc/tree/ab1a60b17c7b85542755937c68f89d63ce26255c/models"
+  }
+}
