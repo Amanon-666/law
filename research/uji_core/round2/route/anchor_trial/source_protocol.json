@@ -1,0 +1,169 @@
+{
+  "archive_sha256": "0a74d814be48359dc4b9f7aee26cf8905574d4999db722aa477cfd571a2ce505",
+  "source_doi": "10.5281/zenodo.3748719",
+  "script_sha256": "09b5cdce77016940ccdcbbe04001f54267734283d9e8f84434aaa8f4d106bb02",
+  "implementation_sha256": "e47af09f6b0481bbb6fe1302d8d6f241956c32899475bfb0e4b852fd0f35be75",
+  "no_outcome_selection": true,
+  "training_site": "UJI Library, Spain; two aligned floors 3 and 5; Galaxy S3 only.",
+  "inclusion": "Only pre-existing designated early library source block months 1 to 7, June\u2013December 2016. For each distinct physical date choose first publisher trn campaign number. In sorted chronology use successive non-overlapping pairs and drop the odd last singleton. One later day per earlier survey; no records from 2017, 2018, UJIIndoorLoc or any other corpus.",
+  "K": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "floor_units_per_uji": 0.766,
+  "design": "H = all S3 earlier-day scans on opposite floor; S = one earlier-day raw S3 scan at each nested selected target-floor position. Label = same target-floor XY mean of all 12 later-day real S3 scans after coding each miss as -110. Use only APs seen in H or current S. Field = unchanged half10/40 ridge1 posterior at S (including exact historical XY lookup).",
+  "objective": "Per K, equal AP weights within a site, equal selected sites per episode, then 10 equal nested draws per floor, 2 equal floors per distinct date pair, then 7 equal disjoint physical date pairs. Scalar gives 5 budgets equal weight. For y=future-raw and d=posterior-raw, g=clip(mean(d*y)/mean(d*d),0,1) with the same weights; no monotonic constraint. Mix only the appended S template; leave H, candidate weights and readout unchanged.",
+  "declared_controls": {
+    "raw": 0.0,
+    "quarter": 0.25,
+    "half": 0.5,
+    "three_quarters": 0.75,
+    "field": 1.0
+  },
+  "pairs": [
+    [
+      {
+        "date": "20160602",
+        "month": 1,
+        "number": 1,
+        "n": 576,
+        "first": "20160602155217232",
+        "last": "20160602164637988"
+      },
+      {
+        "date": "20160603",
+        "month": 1,
+        "number": 2,
+        "n": 576,
+        "first": "20160603111129096",
+        "last": "20160603120753184"
+      }
+    ],
+    [
+      {
+        "date": "20160607",
+        "month": 1,
+        "number": 3,
+        "n": 576,
+        "first": "20160607124155952",
+        "last": "20160607132946656"
+      },
+      {
+        "date": "20160608",
+        "month": 1,
+        "number": 4,
+        "n": 576,
+        "first": "20160608081441088",
+        "last": "20160608090748724"
+      }
+    ],
+    [
+      {
+        "date": "20160616",
+        "month": 1,
+        "number": 5,
+        "n": 576,
+        "first": "20160616091833472",
+        "last": "20160616100710212"
+      },
+      {
+        "date": "20160617",
+        "month": 1,
+        "number": 7,
+        "n": 576,
+        "first": "20160617085952112",
+        "last": "20160617095239284"
+      }
+    ],
+    [
+      {
+        "date": "20160620",
+        "month": 1,
+        "number": 9,
+        "n": 576,
+        "first": "20160620101823704",
+        "last": "20160620111055636"
+      },
+      {
+        "date": "20160621",
+        "month": 1,
+        "number": 13,
+        "n": 576,
+        "first": "20160621174156040",
+        "last": "20160621184430696"
+      }
+    ],
+    [
+      {
+        "date": "20160622",
+        "month": 1,
+        "number": 14,
+        "n": 576,
+        "first": "20160622142229712",
+        "last": "20160622152237028"
+      },
+      {
+        "date": "20160714",
+        "month": 2,
+        "number": 1,
+        "n": 576,
+        "first": "20160714122432768",
+        "last": "20160714132209696"
+      }
+    ],
+    [
+      {
+        "date": "20160913",
+        "month": 3,
+        "number": 1,
+        "n": 576,
+        "first": "20160913175113828",
+        "last": "20160913184220264"
+      },
+      {
+        "date": "20160922",
+        "month": 4,
+        "number": 1,
+        "n": 576,
+        "first": "20160922190646556",
+        "last": "20160922195952952"
+      }
+    ],
+    [
+      {
+        "date": "20161018",
+        "month": 5,
+        "number": 1,
+        "n": 576,
+        "first": "20161018171927336",
+        "last": "20161018181346164"
+      },
+      {
+        "date": "20161123",
+        "month": 6,
+        "number": 1,
+        "n": 576,
+        "first": "20161123175132608",
+        "last": "20161123185131620"
+      }
+    ]
+  ],
+  "excluded_last_singleton": [
+    "20161214"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "model": "lib-2016-anchor-fraction-v1",
+  "g_by_K": {
+    "1": 0.36778417538432756,
+    "3": 0.5364294154264884,
+    "5": 0.5879668420255805,
+    "10": 0.6312758557941953,
+    "20": 0.6774048510962956
+  },
+  "g_scalar": 0.5585807790689454,
+  "orientation": "S_template=(1-g)*raw+g*posterior; H templates and coordinate weights unchanged",
+  "source_protocol_sha256": "ec1a63aa8f861ffacfb3358c149f28accbabc647da2b3a09ac9ddd74bd6a55f3",
+  "training_archive_sha256": "0a74d814be48359dc4b9f7aee26cf8905574d4999db722aa477cfd571a2ce505",
+  "counts": {
+    "date_pairs": 7,
+    "unique_physical_visits": 14,
+    "source_s3_scans": 8064,
+    "unique_source_floors": 2,
+    "pair_floor_instances": 14,
+    "distinct_physical_floor_XY": 48,
+    "draws_per_floor": 10,
+    "exposures_across_nested_k": 5460,
+    "episodes_across_nested_k": 700,
+    "actual_AP_range": [
+      52,
+      117
+    ]
+  },
+  "K_monotone_non_decreasing": true,
+  "frozen_fixed_controls": {
+    "raw": 0.0,
+    "quarter": 0.25,
+    "half": 0.5,
+    "three_quarters": 0.75,
+    "field": 1.0
+  },
+  "limits": "One historical site and receiver, repeated registered grid. Visits 1-36 days apart. Training examples reuse grid positions, nested draws and months; 7 date pairs do not represent independent buildings. Forecast loss in squared dBm is not positional MDE."
+}
