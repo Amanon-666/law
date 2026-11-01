@@ -1,0 +1,35 @@
+{
+  "model": "lib-2016-anchor-location-objective-v1",
+  "g_by_K": {
+    "1": 0.9428352709437813,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0,
+    "20": 1.0
+  },
+  "g_scalar": 1.0,
+  "orientation": "S_template=(1-g)*raw+g*posterior; H templates and coordinate weights unchanged",
+  "source_protocol_sha256": "2727cdafd9a84315ec15f584ced7fbeca65ac390df65a5525d4a1af01403e78c",
+  "source_query_receipts_sha256": "36a953966625b9c5175ef2e9d9730a93bec21f79ba495a8e593464efe534b4d2",
+  "training_archive_sha256": "0a74d814be48359dc4b9f7aee26cf8905574d4999db722aa477cfd571a2ce505",
+  "source_only": true,
+  "previous_forecast_sha256": "ed3ae84fd08d2286b7c754937d0d1c50b9304e8c339c3a3a5487689eea481162",
+  "counts": {
+    "source_pairs": 7,
+    "floors": 2,
+    "draws_per_floor": 10,
+    "episodes": 700,
+    "Q_sites_per_event": 4,
+    "Q_scans_per_event": 48,
+    "all_140_paths_have_identical_ordered_Q_ids_across_5_K": true,
+    "public_readout_max_MDE_parity_gap": 7.771561172376096e-14
+  },
+  "K_monotone_non_decreasing": true,
+  "frozen_fixed_controls": {
+    "raw": 0.0,
+    "quarter": 0.25,
+    "half": 0.5,
+    "three_quarters": 0.75,
+    "field": 1.0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_forecast_sha256": "ed3ae84fd08d2286b7c754937d0d1c50b9304e8c339c3a3a5487689eea481162",
+  "source_orders_sha256": "90d7fe961d26e1f683bb0b1f73945c6b18457865f872d900b249994f22babd5f",
+  "archive_sha256": "0a74d814be48359dc4b9f7aee26cf8905574d4999db722aa477cfd571a2ce505",
+  "script_sha256": "095366d694b78685ade0710ff8a38beb19c5d9e86e217c281afae5ee82232526",
+  "anchor_impl_sha256": "e47af09f6b0481bbb6fe1302d8d6f241956c32899475bfb0e4b852fd0f35be75",
+  "study": "Objective-only replication of one public target-anchor mixture, 7 early 2016 date pairs, S3 2 registered floors, 10 prior nested S orders, K=1/3/5/10/20.",
+  "Q": "For each date-pair, floor, draw use the four later-day target-floor sites outside MAX S20, all 12 scans at each, same 48 IDs at every K. Q never in S, and other-floor H may cover identical registered physical XY.",
+  "readout": "Exact original censored Gaussian matching sigma=12 threshold=-85, raw anchors blended toward their calibrated field with common g at each K. Keep H, multiplicity and coordinate weights unchanged; predicts in metres.",
+  "objective": "Average Euclidean location error over all real Q scans; 12 equal repeats per location, equal sites, draws, floors, 7 physical pairs and all budgets for pooled g. Per-K and scalar bounded minimization within each of four quarters plus explicit fixed [0,.25,.5,.75,1], lowest source risk first; differences <=1e-12 m tie toward .5 then smaller g. xatol=1e-7. No monotonic penalty or formal guarantee against multiple minima within a quarter.",
+  "controls": [
+    "raw",
+    "quarter",
+    "half",
+    "three_quarters",
+    "field",
+    "previous_2016_forecast_by_K",
+    "previous_2016_forecast_pooled",
+    "location_pooled",
+    "location_by_K"
+  ],
+  "wknn": "One neighbor count per matcher (original map, fitted location map, raw and prototype direct), minimizing source MDE with the exact same fixed 48 Q rows per draw & K; k in [1,3,7,15], lower k breaks ties. Direct jointly selects representation (raw preferred on ties), no floor penalty. Original RMS distances, inverse-distance votes, tie by source row ID. No external outcomes enter this workbench."
+}
