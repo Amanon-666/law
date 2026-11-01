@@ -1,0 +1,17 @@
+{
+  "anchor_freeze_sha256": "ed3ae84fd08d2286b7c754937d0d1c50b9304e8c339c3a3a5487689eea481162",
+  "source_protocol_sha256": "ec1a63aa8f861ffacfb3358c149f28accbabc647da2b3a09ac9ddd74bd6a55f3",
+  "script_sha256": "9f19738df7b1423de6fc417699451067b07cd3044349c5fe01f7aa6d8c9bad6b",
+  "k_original_map": 7,
+  "k_forecast_map": 7,
+  "direct_rep": "raw",
+  "k_direct": 7,
+  "direct_alpha": 0.0,
+  "k_raw_direct": 7,
+  "k_prototype_direct": 7,
+  "source": "Exactly same seven pre-2017 disjoint visit pairs, 2 adjacent floors, 10 nested draws and 5 K. Never loads any UJIIndoorLoc, April route,July panel or external position results.",
+  "Q": "Only later-date target-floor real query scans at coordinates outside *all* current S. For K=1/3/5/10/20 there are respectively 23/21/19/14/4 Q positions, 12 scans per position. Q position repeated scans count as one site in risk. Registered other-floor H can cover these positions.",
+  "arms": "Both map WKNNs retain the H/S candidate multiplicities of the localization method, including H/S at the same XY. g=0 in original_map and the frozen g[K] in forecast_map. Direct raw/prototype WKNN uses unmodified H scans or per-floor per-XY filled means and raw S. No floor penalty (one physically adjacent H floor), no transport. All arms use same allowed H union current S APs, RMS distance, inverse-distance vote, deterministic input-row ID tie breaking.",
+  "choice_rule": "One k for all K, minimizing labelled future-query mean position error. First average scans within XY, then equal Q sites, draws, K, floors and distinct date pairs. Fixed grid 1,3,7,15; smaller k wins exact risk ties. Direct additionally chooses between raw/prototype, prefer raw on equal risk.",
+  "note": "These source selections reuse the old source campaigns that trained g. Source scores describe fitting. Each current K uses its own held-Q complement; this source design does not estimate a fixed-Q K-trend."
+}
