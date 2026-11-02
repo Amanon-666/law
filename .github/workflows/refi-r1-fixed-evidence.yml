@@ -71,3 +71,24 @@ jobs:
                   else:
                       d=json.loads(raw); print('LEGACY_KEYS',list(d),'FIRST',json.dumps(d.get('events',[])[:1])[:2000])
           PY
+
+      - name: Aggregate existing B1 400-event strong comparators, do not rescore
+        run: |
+          python - <<'PY'
+          import csv,io,zipfile,collections,statistics
+          with zipfile.ZipFile('research/uji_core/evidence.zip') as z:
+              sources=[('official','results/wknn_events.csv','draw'),('phone','results/device_stress_events.csv','seed')]
+              for label,fn,index in sources:
+                  rr=list(csv.DictReader(io.StringIO(z.read(fn).decode())))
+                  rr=[r for r in rr if int(r['building'])==1]
+                  methods=sorted(set(r['method'] for r in rr));print('REGIME',label,'METHODS',methods,'ROWS',len(rr))
+                  for m in methods:
+                      print('METHOD',label,m)
+                      for k in (1,3,5,10,20):
+                          cells=[]
+                          for f in range(4):
+                              a=[float(r['mde']) for r in rr if int(r['floor'])==f and int(r['K'])==k and r['method']==m]
+                              assert len(a)==10,(label,f,k,m,len(a))
+                              cells.append(round(statistics.mean(a),5))
+                          print('K',k,'FLOORS',cells,'EQUAL_FLOOR',round(statistics.mean(cells),5))
+          PY
