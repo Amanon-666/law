@@ -56,3 +56,18 @@ jobs:
               w=json.loads(z.read('results/wknn_parameters.json'))
               print('WKNN_SELECTION',json.dumps(w['selected'],ensure_ascii=False)[:3000]);print('WKNN_CANDIDATES',w['candidates'])
           PY
+
+      - name: Identify existing complete WKNN scores without rerunning them
+        run: |
+          python - <<'PY'
+          import csv,io,zipfile,collections,json
+          with zipfile.ZipFile('research/uji_core/evidence.zip') as z:
+              for name in ['results/wknn_events.csv','results/device_stress_events.csv','results/legacy_wknn_audit.json']:
+                  raw=z.read(name)
+                  if name.endswith('.csv'):
+                      rr=list(csv.DictReader(io.StringIO(raw.decode())))
+                      print('OLD_ROWS',name,len(rr),'HEAD',rr[0] if rr else None)
+                      print('FREQ',collections.Counter((r.get('building'),r.get('floor'),r.get('K'),r.get('split')) for r in rr).most_common(8))
+                  else:
+                      d=json.loads(raw); print('LEGACY_KEYS',list(d),'FIRST',json.dumps(d.get('events',[])[:1])[:2000])
+          PY
