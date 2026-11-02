@@ -1,0 +1,145 @@
+{
+  "method": "One-scan contrast-per-metre ranking; no fitted threshold or weights",
+  "source": "UM DSI lite DOI 10.5281/zenodo.6646008",
+  "md5": "4c15884cb7edcd2c602ec5d567ddd8a8",
+  "holdout": "2019-12-11/2020-01-15 and 2020-02-19/2021-04-23 excluded",
+  "evaluation": "Earlier common-location R1 prototypes and fixed nearest foil for all methods; later queries only as labels; survey/site equal weight; R1-only earlier AP axis; missing=-110 dBm. AUC=0.5 chance. Survey-site block bootstrap 400 replicates; conditional on four known dates and spatially dependent candidate sites.",
+  "scores": {
+    "contrast_per_m": "negative RSS RMS separation / spatial metres",
+    "rss_contrast": "negative RSS RMS separation",
+    "ap_jaccard": "detected AP Jaccard similarity",
+    "ap_scarcity": "negative true-anchor AP detection count",
+    "geometry": "negative nearest-foil distance",
+    "uniform": "constant risk"
+  },
+  "visits": [
+    {
+      "early": "2019-02-19",
+      "late": "2019-03-25",
+      "sites": 26,
+      "query_rows": 520,
+      "median_foil_m": 3.5994114425303616,
+      "error_rate": 0.3536538461538462,
+      "risk_auc": {
+        "contrast_per_m": 0.42132991551733,
+        "rss_contrast": 0.4197480516684474,
+        "ap_jaccard": 0.5053492103973026,
+        "ap_scarcity": 0.591145902572161,
+        "geometry": 0.5725887912219204,
+        "uniform": 0.5
+      }
+    },
+    {
+      "early": "2019-06-11",
+      "late": "2019-07-03",
+      "sites": 49,
+      "query_rows": 980,
+      "median_foil_m": 3.5994104368978266,
+      "error_rate": 0.20112244897959183,
+      "risk_auc": {
+        "contrast_per_m": 0.4672192930976351,
+        "rss_contrast": 0.643653187037372,
+        "ap_jaccard": 0.6257082884029146,
+        "ap_scarcity": 0.563402424216886,
+        "geometry": 0.6239913444070011,
+        "uniform": 0.5
+      }
+    },
+    {
+      "early": "2019-07-29",
+      "late": "2019-09-11",
+      "sites": 47,
+      "query_rows": 940,
+      "median_foil_m": 3.5994104331384604,
+      "error_rate": 0.23813829787234048,
+      "risk_auc": {
+        "contrast_per_m": 0.3995318299049977,
+        "rss_contrast": 0.6011774264475078,
+        "ap_jaccard": 0.554979791577413,
+        "ap_scarcity": 0.5171892350480815,
+        "geometry": 0.656410361031435,
+        "uniform": 0.5
+      }
+    },
+    {
+      "early": "2019-10-09",
+      "late": "2019-11-13",
+      "sites": 49,
+      "query_rows": 980,
+      "median_foil_m": 3.5994104368978266,
+      "error_rate": 0.2540816326530612,
+      "risk_auc": {
+        "contrast_per_m": 0.42963392980838433,
+        "rss_contrast": 0.620235145283389,
+        "ap_jaccard": 0.5804002996193924,
+        "ap_scarcity": 0.600380802679444,
+        "geometry": 0.6400380033616552,
+        "uniform": 0.5
+      }
+    }
+  ],
+  "macro_auc": {
+    "contrast_per_m": 0.4294287420820868,
+    "rss_contrast": 0.571203452609179,
+    "ap_jaccard": 0.5666093974992557,
+    "ap_scarcity": 0.5680295911291432,
+    "geometry": 0.6232571250055029,
+    "uniform": 0.5
+  },
+  "macro_contrast_per_m_minus_controls_ci95": {
+    "rss_contrast": [
+      -0.20044469556482403,
+      -0.08849223535877915
+    ],
+    "ap_jaccard": [
+      -0.192895082485555,
+      -0.083238147882984
+    ],
+    "ap_scarcity": [
+      -0.21041622064466356,
+      -0.06186814323341255
+    ],
+    "geometry": [
+      -0.28184818952057583,
+      -0.10196506077268694
+    ],
+    "uniform": [
+      -0.11881506440509867,
+      -0.019267327476581646
+    ]
+  },
+  "macro_contrast_per_m_minus_controls": {
+    "rss_contrast": -0.14177471052709223,
+    "ap_jaccard": -0.13718065541716884,
+    "ap_scarcity": -0.13860084904705638,
+    "geometry": -0.1938283829234161,
+    "uniform": -0.07057125791791319
+  },
+  "reserved_payloads_read": 0,
+  "read_manifest": {
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-02-19/coordinates.csv": "490cf457a8aee2ff449a1feb02e88192a9d84d32fb92bf363b818b9cded53fb5",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-02-19/timestamps.csv": "37dbe2fdf36b3057375037a0b607c20d4613a1857656d30b99e54bb9c29b50b8",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-02-19/rssis.csv": "db2fdef6fde3e1cb5d58761a48095af130a6a92b104be1a3070e93743f549cec",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-03-25/coordinates.csv": "9bd5575ade247af0c606b1d00c77ad294d60466c74f01bc773d5b8fc39de0bcd",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-03-25/timestamps.csv": "7dbad877399f690b8a167506ab06a9655e429101ab77affb21cbdc55cad90b58",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-03-25/rssis.csv": "3312b63e90a33b67ee3d531af47ed4aefbfcae9d062fa056eef91e107c326c72",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-06-11/coordinates.csv": "ff1a222e18e6261c366900ab80825b14bf1b0fd99f2a55ec0bd914ce338d8b65",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-06-11/timestamps.csv": "2df401d92cd39e8a339084ea3cb54e69d8e8cee11aa7cf4d14c53b1139c71eb6",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-06-11/rssis.csv": "6604035845a01dc50f9a147d1ccbeb48cfacf2ed968c7afab21300522129e8bf",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-07-03/coordinates.csv": "5c6751613283d4f9060d19f1cdc67e23b385b41485aef6791d43c4166c9a2f79",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-07-03/timestamps.csv": "30562781a58ba26cd0270471c30abdca94443467ad17d3cc61b618108db643a5",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-07-03/rssis.csv": "15d6d4979f623f606aa7c3f6216687d871fc83c6d1be9428344972371b55e18e",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-07-29/coordinates.csv": "d5c846c1cacb5077d9b555503e756df8109611b3e901b48300b313246c6ee149",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-07-29/timestamps.csv": "7ac88a05dceea61de4907ed63455d598a1b79ace1ea1ee108d3c185babad3b6d",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-07-29/rssis.csv": "acb0bb14adf8bf809d78956373fb1e8f50281f9e116a5ef2e0874bea1016e074",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-09-11/coordinates.csv": "2810d0f8527e37ea9f5ad9a1c73f0591711f4d7334945702381e457fbe1ccdfc",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-09-11/timestamps.csv": "711f164f45d824f7af26d1c79dfaef9e250234c3fa709562f5bada65ff9a074b",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-09-11/rssis.csv": "ddf77c9dd0054e325dbaaea2e131069bc5b09b3caecdadf2e4da2ee43a3cdc73",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-10-09/coordinates.csv": "4563d5d4fcedc67865403c41776dd2e40596ad2ec508ad21848efa061ad1c9ec",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-10-09/timestamps.csv": "7a6d9087f758a70591e15172d466efbccb4eb8fe9b168c48f2e757a01d6aabfd",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-10-09/rssis.csv": "8994420247ea73adc698c1b95ac0230c667de7eb23d3d41470a90c6a0a79754b",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-11-13/coordinates.csv": "20b81bf9bb5eeca33cb986949a9fa94b60588d94c5dba5c680ec801fc1e9a83a",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-11-13/timestamps.csv": "e364df2d9cfa8ae29520ecfe5371ec4782768cae18be450616983966149a36ce",
+    "UM_DSI_DB_v1.0.0_lite/data/site_surveys/2019-11-13/rssis.csv": "0c27a2764d6e4dfd987e2742b8d7b49a1eaeac01de88b705787fa5a33f762720"
+  }
+}
