@@ -40,3 +40,19 @@ jobs:
           assert hashlib.sha256(d).hexdigest()=='76763a87569d885705dccc54cbd72e878f7a711cbb5343fbfee4517caf2482e6'
           print('R1_ARCHIVE_SHA_AND_DESIGN_PASS')
           PY
+
+      - name: Inspect exact B1 R1 event schema before scoring
+        run: |
+          python - <<'PY'
+          import zipfile,json
+          with zipfile.ZipFile('research/uji_core/evidence.zip') as z:
+              m=json.loads(z.read('results/manifest.json'))
+              b=[e for e in m['episodes'] if e['building']==1]
+              print('B1_EPISODES',len(b),'BY_FLOOR',[(f,sum(e['floor']==f for e in b)) for f in range(4)])
+              for e in [b[0],b[10],b[20],b[30]]:
+                  print('B1_EPISODE',json.dumps({k:(v[:3] if isinstance(v,list) else v) for k,v in e.items()},ensure_ascii=False))
+              d=json.loads(z.read('results/device_stress_design.json'))
+              print('DEVICE_EVENTS',len(d['events']),'FIRST',json.dumps(d['events'][:2],ensure_ascii=False)[:5500])
+              w=json.loads(z.read('results/wknn_parameters.json'))
+              print('WKNN_SELECTION',json.dumps(w['selected'],ensure_ascii=False)[:3000]);print('WKNN_CANDIDATES',w['candidates'])
+          PY
