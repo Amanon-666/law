@@ -1,0 +1,60 @@
+name: ReFi verified variance receipt
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-variance-receipt.yml']
+jobs:
+  verify:
+    if: github.repository == 'Amanon-666/law' && github.ref == 'refs/heads/research/uji-core-refactor-20261101'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      actions: read
+      contents: write
+    env:
+      MKL_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/uji-core-refactor-20261101
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Load fixed original fields and compact row predictions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/fields
+          while read -r id hash; do
+            gh api "repos/Amanon-666/law/actions/artifacts/$id/zip" >/tmp/gp.zip
+            printf '%s  %s\n' "$hash" /tmp/gp.zip | sha256sum -c -
+            unzip -oq /tmp/gp.zip -d /tmp/fields
+          done <<'INPUT'
+          13108723033 f82f595b4adca5af71a8af938f1894a90020ce8468f9e6e935c78302018ac3b7
+          13109201524 e6398151dc871869d0200d1a7641d16fe56239590c90302ae2912f4bdda8c115
+          13109311401 c638260fa084500aed3ef224e6ec082d0fe61b8665187f018066a1e3954583a5
+          13108204159 46599c28b53802c95990364d3b2a0ba114be47548b14ef4bcc5d3bc5632def15
+          13108328814 958bf10490d7a233a7a8b0e13ef66e8e270094e913a04d1d96a8c12515913775
+          13108878994 3ddafeea9692fec518c3685992bae3dd49c3bbf0629ae41a3d0334ddba1a34e9
+          13108338821 e1de5f34a0ea158e36dc6502868344d794d422830e23b3afd460f588f17d2b5b
+          INPUT
+      - name: Measure dense versus exact sparse likelihood, same CPU and signal model
+        run: |
+          python -m pip install numpy==2.3.5 scipy==1.16.3 pandas==2.2.3
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0
+          curl -fsSL --retry 3 https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip -o /tmp/uji.zip
+          unzip -q /tmp/uji.zip -d /tmp/uji
+          d=$(dirname "$(find /tmp/uji -name validationData.csv | head -1)")
+          dst=research/uji_core/round2/paper_replay/results/variance
+          mkdir -p "$dst"; cp /tmp/fields/summary.json /tmp/fields/*_pred.npz "$dst/"
+          python -m research.uji_core.round2.paper_replay.sparse_readout "$d" /tmp/fields "$dst/benchmark.json"
+          (cd "$dst" && sha256sum *.npz *.json > SHA256SUMS)
+          git add -f "$dst"; git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Archive fixed GP deletion scores, predictions and verified latency without changing the estimator'; git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
+      - uses: actions/upload-artifact@v4
+        with:
+          name: b1-variance-receipt
+          path: research/uji_core/round2/paper_replay/results/variance
