@@ -13,20 +13,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: {ref: research/uji-core-refactor-20261101}
-      - name: Verify named assets against their source run, then archive only real outputs
+      - name: Verify fixed source and artifact hash; retain completed measurements only
         env: {GH_TOKEN: '${{ github.token }}'}
         run: |
           python - <<'PY'
           import json,pathlib,subprocess,hashlib,zipfile,io
           base='repos/Amanon-666/law';dest=pathlib.Path('research/uji_core/round2/paper_replay/limit_study/receipts');dest.mkdir(parents=True,exist_ok=True)
-          assets=[('b895dbb4a629154b534cbd97c840c5d92d8bb6e9','headroom-references','headroom.json'),('8894e050e20590394090bd823d35340cc48ae793','native-field-limit','model_ceiling.json'),('b63a685dbd62f851f6be10fa177e00fd976afbd3','dense-gp-six','dense_gp_summary.json'),('c92124f975949941c055a9394c3b93585ce88b67','joint-check','joint_check.json'),('568aaafc027838cab5e3e4ffc63be518ce65539d','real-revisit','revisit.json'),('8b6bf09c91d9d7c72b0950858440ea975c7f5699','shared-history-envelope','envelope.json'),('51588a8fa1fd81a4ecae068f4e9d690a8794799f','co-detection','co_detection.json'),('684bb5e04e6c7d3a3a83e968cb92c6685190f974','affine-six-with-source','affine_summary.json'),('ed294e3cefe45f21d4f32a0959a5b3e28f08fb37','source-v1','freeze.json'),('ed294e3cefe45f21d4f32a0959a5b3e28f08fb37','all-b1-models','paired_summary.json')];get=lambda u:subprocess.check_output(['gh','api',base+'/'+u]);results=[]
+          assets=[('b895dbb4a629154b534cbd97c840c5d92d8bb6e9','headroom-references','headroom.json'),('8894e050e20590394090bd823d35340cc48ae793','native-field-limit','model_ceiling.json'),('b63a685dbd62f851f6be10fa177e00fd976afbd3','dense-gp-six','dense_gp_summary.json'),('c92124f975949941c055a9394c3b93585ce88b67','joint-check','joint_check.json'),('2ff71c5cc70363eac08699ca8688f743872442b5','real-revisit','revisit.json'),('8b6bf09c91d9d7c72b0950858440ea975c7f5699','shared-history-envelope','envelope.json'),('51588a8fa1fd81a4ecae068f4e9d690a8794799f','co-detection','co_detection.json'),('684bb5e04e6c7d3a3a83e968cb92c6685190f974','affine-six-with-source','affine_summary.json'),('b994c1851ad4556a915f00966d2a75fedb48bc7d','cross-budget','cross_summary.json'),('ed294e3cefe45f21d4f32a0959a5b3e28f08fb37','source-v1','freeze.json'),('ed294e3cefe45f21d4f32a0959a5b3e28f08fb37','all-b1-models','paired_summary.json')]
+          get=lambda u:subprocess.check_output(['gh','api',base+'/'+u]); results=[]
           for sha,name,member in assets:
-            run=json.loads(get('actions/runs?head_sha='+sha+'&per_page=1'))['workflow_runs'][0];assert run['head_sha']==sha and run['head_branch']=='research/uji-core-refactor-20261101';row={'commit':sha,'name':name,'run_id':run['id'],'status':run['status'],'conclusion':run['conclusion']};results.append(row);arts=json.loads(get('actions/runs/'+str(run['id'])+'/artifacts?per_page=100'))['artifacts'];chosen=[a for a in arts if a['name']==name and not a['expired']];
-            if not chosen: continue
+            runs=json.loads(get('actions/runs?head_sha='+sha+'&per_page=1'))['workflow_runs']; assert runs
+            run=runs[0];assert run['head_sha']==sha and run['head_branch']=='research/uji-core-refactor-20261101'
+            row={'commit':sha,'name':name,'run_id':run['id'],'status':run['status'],'conclusion':run['conclusion']};results.append(row)
+            arts=json.loads(get('actions/runs/'+str(run['id'])+'/artifacts?per_page=100'))['artifacts'];chosen=[a for a in arts if a['name']==name and not a['expired']];
+            if not chosen:continue
             assert len(chosen)==1;a=chosen[0];raw=get('actions/artifacts/'+str(a['id'])+'/zip');digest=hashlib.sha256(raw).hexdigest();assert 'sha256:'+digest==a['digest'] and len(raw)==a['size_in_bytes'];z=zipfile.ZipFile(io.BytesIO(raw));o=z.read(member);json.loads(o);(dest/(name+'.json')).write_bytes(o);(dest/(name+'.zip')).write_bytes(raw);row.update(artifact=a['id'],sha256=digest,member=member)
           (dest/'index.json').write_text(json.dumps(results,indent=2)+'\n');print([(r['name'],r['run_id'],r.get('artifact'),r['status']) for r in results])
           PY
           git add -f research/uji_core/round2/paper_replay/limit_study/receipts
           if ! git diff --cached --quiet; then
-            git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git commit -m 'Archive checksummed B1 study assets and exact run status'; git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
+            git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git commit -m 'Save checked study predictions and parameters, retaining original comparisons'; git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
           fi
