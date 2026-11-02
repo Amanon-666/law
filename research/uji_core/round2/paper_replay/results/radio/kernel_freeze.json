@@ -1,0 +1,59 @@
+{
+  "source": "B0/B2 training-file internal only, equal building, then uniform interior floors and draws",
+  "train_hash": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+  "risk": {
+    "radio_0": 9.776959138236869,
+    "radio_1": 10.098587931882445,
+    "radio_4": 11.221533793576489,
+    "radio_16": 13.01244864005708,
+    "xy_10": 13.22589708862284,
+    "xy_20": 11.233380779673928,
+    "xy_40": 9.776959138236869,
+    "xy_80": 10.071475092842846
+  },
+  "radio": "radio_0",
+  "geo": "xy_40",
+  "config": {
+    "radio_0": [
+      40.0,
+      0.0,
+      false
+    ],
+    "radio_1": [
+      40.0,
+      1.0,
+      false
+    ],
+    "radio_4": [
+      40.0,
+      4.0,
+      false
+    ],
+    "radio_16": [
+      40.0,
+      16.0,
+      false
+    ],
+    "xy_10": [
+      10.0,
+      0.0,
+      false
+    ],
+    "xy_20": [
+      20.0,
+      0.0,
+      false
+    ],
+    "xy_40": [
+      40.0,
+      0.0,
+      false
+    ],
+    "xy_80": [
+      80.0,
+      0.0,
+      false
+    ]
+  },
+  "gate": "Both B1 Table-II means strictly below DeepSets 10.661/11.586 AND learned radio below same-source spatial-only and base in both splits. No holdout if fail. Include fixed gamma 1/4/16 as descriptive controls, do not select on B1."
+}
