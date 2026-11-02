@@ -40,11 +40,14 @@
     "member": "joint_check.json"
   },
   {
-    "commit": "568aaafc027838cab5e3e4ffc63be518ce65539d",
+    "commit": "2ff71c5cc70363eac08699ca8688f743872442b5",
     "name": "real-revisit",
-    "run_id": 41373396814,
+    "run_id": 41373941720,
     "status": "completed",
-    "conclusion": "failure"
+    "conclusion": "success",
+    "artifact": 13110154043,
+    "sha256": "712fdec3b72080825031fcb915e28efbb6019912abc1683b0a37714658515510",
+    "member": "revisit.json"
   },
   {
     "commit": "8b6bf09c91d9d7c72b0950858440ea975c7f5699",
@@ -70,6 +73,16 @@
     "commit": "684bb5e04e6c7d3a3a83e968cb92c6685190f974",
     "name": "affine-six-with-source",
     "run_id": 41372872696,
+    "status": "completed",
+    "conclusion": "success",
+    "artifact": 13110009567,
+    "sha256": "8da134052d70bb96f117e8217bf84547c1f67c8f20892472c045ab9e72cadd37",
+    "member": "affine_summary.json"
+  },
+  {
+    "commit": "b994c1851ad4556a915f00966d2a75fedb48bc7d",
+    "name": "cross-budget",
+    "run_id": 41374253144,
     "status": "in_progress",
     "conclusion": null
   },
