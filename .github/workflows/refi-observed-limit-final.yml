@@ -1,0 +1,42 @@
+name: ReFi observed limit and locked B1 results
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-observed-limit-final.yml']
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions: {contents: write, actions: read}
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: research/uji-core-refactor-20261101}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Verify result archives produced by both previously completed experiments
+        run: |
+          set -eu
+          out=research/uji_core/round2/paper_replay/limit_study/receipts
+          while read -r name id digest member; do
+            gh api repos/Amanon-666/law/actions/artifacts/$id/zip > "$out/$name.zip"
+            echo "$digest  $out/$name.zip" | sha256sum -c -
+            unzip -p "$out/$name.zip" "$member" > "$out/$name.json"
+          done <<'FROZEN'
+          all-b1-models 13111357060 524a536dfb2758d6bdfed1d6dbb369852aed8a9a157ffff7a3a1344e1ce1aebe paired_summary.json
+          source-v1 13111055882 fb09b5f9a8645e513d53032baa3dbf72def8fea8d5a514fcf819947d17472fa8 freeze.json
+          cross-budget 13111026549 c2d5b62dd85e735f510d762d7d8332c1d59a535419ca31f56bc3bba725b7fdcb cross_summary.json
+          FROZEN
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git add -f "$out"; git diff --cached --quiet || git commit -m 'Preserve authenticated training, all six learned-map comparisons and density cross'; git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
+      - name: Four open surveys only; independent reference arm and disjoint query rows
+        run: |
+          python -m pip install numpy==2.3.5
+          curl -fsSL --retry 3 --max-time 200 'https://zenodo.org/records/6646008/files/UM_DSI_DB_v1.0.0_lite.zip?download=1' -o /tmp/minho.zip
+          python -m research.uji_core.round2.paper_replay.limit_study.minho_empirical_ceiling /tmp/minho.zip /tmp/real
+      - uses: actions/upload-artifact@v4
+        with: {name: minho-empirical-reference, path: /tmp/real, retention-days: 90}
+      - run: |
+          dest=research/uji_core/round2/paper_replay/limit_study/receipts/minho_age_and_repeats.json
+          cp /tmp/real/minho_age_and_repeats.json "$dest";git add -f "$dest";git commit -m 'Record real survey-age versus single/multiple query references';git pull --rebase origin research/uji-core-refactor-20261101;git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
