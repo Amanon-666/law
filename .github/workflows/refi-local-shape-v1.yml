@@ -1,0 +1,72 @@
+name: ReFi local shape v1
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-local-shape-v1.yml', 'research/local_shape_v1/experiment.py']
+permissions: {contents: read}
+env:
+  OPENBLAS_NUM_THREADS: '1'
+  OMP_NUM_THREADS: '1'
+  MKL_NUM_THREADS: '1'
+jobs:
+  fit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Dependencies
+        run: |
+          pip -q install packaging numpy==2.3.5 scipy==1.16.3 pandas==2.2.3 pypmc==1.2.6
+          pip -q install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0
+      - name: Sydney only; frozen arms before Tampere
+        run: |
+          curl -fsSL --retry 3 --max-time 150 https://raw.githubusercontent.com/XudongSong/UTSIndoorLoc-dataset/master/UTSIndoorLoc/UTS_training.csv -o /tmp/tr.csv
+          python -u -m research.local_shape_v1.experiment UTS /tmp/tr.csv /tmp/fit
+      - uses: actions/upload-artifact@v4
+        with: {name: shape-v1-fit, path: /tmp/fit, retention-days: 90}
+  transfer:
+    needs: fit
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix: {site: [TIE1, SAH1]}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/download-artifact@v4
+        with: {name: shape-v1-fit, path: /tmp/fit}
+      - name: Dependencies
+        run: |
+          pip -q install packaging numpy==2.3.5 scipy==1.16.3 pandas==2.2.3 pypmc==1.2.6
+          pip -q install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0
+      - name: Score all held-out targets without refitting the learner
+        run: |
+          curl -fsSL --retry 3 --max-time 150 'https://zenodo.org/records/5174851/files/WiFi%20RSS%20measurements%20in%20Tampere%20University%20multi-building%20campus%202017%20-%20Zenodo%205174851.zip?download=1' -o /tmp/t.zip
+          python -u -m research.local_shape_v1.experiment '${{ matrix.site }}' /tmp/t.zip /tmp/transfer --weights /tmp/fit
+      - uses: actions/upload-artifact@v4
+        with: {name: 'shape-v1-${{ matrix.site }}', path: /tmp/transfer, retention-days: 90}
+  archive:
+    needs: [fit,transfer]
+    runs-on: ubuntu-latest
+    permissions: {contents: write, actions: read}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: research/uji-core-refactor-20261101}
+      - uses: actions/download-artifact@v4
+        with: {pattern: 'shape-v1-*', path: /tmp/all, merge-multiple: true}
+      - name: Add one version directory with provenance and fingerprints; never replace earlier outputs
+        run: |
+          set -euo pipefail
+          base=research/local_shape_v1/results/$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT
+          test ! -e "$base"; mkdir -p "$base"; cp /tmp/all/*.json "$base"/
+          echo "$GITHUB_SHA" > "$base/score_commit.txt"
+          (cd /tmp/all; sha256sum * > /tmp/shape-sha; cp /tmp/shape-sha SHA256SUMS; zip -q -9 /tmp/shape.zip ./*)
+          cp /tmp/shape.zip "$base/replication.zip"; cp /tmp/shape-sha "$base/SHA256SUMS"
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f "$base"; git commit -m "Archive immutable local-shape weights, manifests and predictions for $GITHUB_RUN_ID"; git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
+      - uses: actions/upload-artifact@v4
+        with: {name: local-shape-replication, path: /tmp/shape.zip, retention-days: 90}
