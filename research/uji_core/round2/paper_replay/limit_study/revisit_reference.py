@@ -1,7 +1,9 @@
-"""Can actual single scans distinguish reference sites when given their target signatures?
-Only original UJI training-file B1, no validation RSS opened. For each frozen event exclude S coordinates, use its identical AP mask. Per target phone split ALL eligible original scans at that phone-floor's median timestamp (independent of RSS). Keep every exact XY with >=3 distinct pre-cut timestamps and >=1 post-cut timestamp. Require >=8 such sites. Three real first distinct-time scans per site, all strictly before all corresponding test scans. Deduplicate repeated rows per timestamp/site within the phone; log repeat/effective Q counts. Knowledge of target site-list, reference surveys and phone is privileged. Score exact same later phone scans/candidate sites with (1) historic GP at nearest grid site, (2) actual three-scan target templates simple 3-WKNN. No model selection and no fallback to a friendlier split when coverage is inadequate. Not B1 manuscript, not a universal Bayes bound."
+"""Evaluate how precisely real single scans distinguish earlier same-phone reference sites.
+Only the UJI B1 training file is opened. Earlier/later split uses the phone-floor median time, three earlier distinct timestamps per site, at least eight common sites; both models evaluated on the same later scans and candidate sites. Target site list, phone and real target surveys are privileged. The old GP field is conditioned on the original S; its S timestamps are not restricted here, so only the repeated reference is strictly earlier than this internal Q, not necessarily the GP's S. No model selection, no fallback and not a Table II score.
+"""
 import argparse,csv,json
 from pathlib import Path
+from collections import defaultdict
 import numpy as np
 from scipy.special import softmax
 from scipy.spatial.distance import cdist
