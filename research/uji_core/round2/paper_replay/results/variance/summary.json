@@ -1,0 +1,294 @@
+{
+  "macro": {
+    "internal": {
+      "full": 11.103042841333334,
+      "flat": 10.888672054305275,
+      "flat_minus_full": -0.21437078702805876
+    },
+    "official": {
+      "full": 11.787374265130703,
+      "flat": 12.008031449957228,
+      "flat_minus_full": 0.22065718482652455
+    }
+  },
+  "matches_printed_GP_both": false,
+  "events": [
+    {
+      "event": "B1F1_0",
+      "weights": [
+        0.5356516156075107,
+        0.46434838439248927
+      ],
+      "grid": 6460,
+      "ap_count": 173,
+      "support_ids": [
+        13153,
+        14101,
+        12696,
+        13946,
+        12107,
+        12602,
+        12253,
+        12755,
+        12841,
+        12508,
+        12678,
+        12339,
+        3727,
+        15404,
+        15099
+      ],
+      "means_sha": "aa4290102f65468d8e85279daea2a8f5612ac349f3bac04179077aac09b9b450",
+      "variance_sha": "3f89234202cba12690a14bcae0d8c6c524eeaa485a0527096c19abb207fc350e",
+      "grid_sha": "0a77a1bb4e500d25a49cae7eeb8b2d334018e1c1ee4116ab2ab7215dc0888a45",
+      "min_ess": 23828.296045414507,
+      "max_dense_sparse_coordinate_diff": 9.094947017729282e-13,
+      "detected_ap_fraction": 0.10113100448468536,
+      "runtime_seconds": 112.05001837199998,
+      "scores": {
+        "internal": {
+          "full": 11.693253481992635,
+          "flat": 11.120491779007425,
+          "flat_minus_full": -0.5727617029852095
+        },
+        "official": {
+          "full": 10.840690875320185,
+          "flat": 10.817089797334388,
+          "flat_minus_full": -0.023601077985796692
+        }
+      },
+      "backend": "B0 parameters reconstructed; original single_history, shared EB, original M-PMC 6x4096+32768; CPU float64. No DeepSets weights."
+    },
+    {
+      "event": "B1F1_1",
+      "weights": [
+        0.593589422233174,
+        0.406410577766826
+      ],
+      "grid": 6120,
+      "ap_count": 175,
+      "support_ids": [
+        10169,
+        13775,
+        9256,
+        12582,
+        12251,
+        12332,
+        7460,
+        13303,
+        12692,
+        4141,
+        15197,
+        4550,
+        3455,
+        3597,
+        3877
+      ],
+      "means_sha": "d46d96a7bba1154fcb356eab6520e045d25bce6e5f3da91f0ad2bc8f16117926",
+      "variance_sha": "8ed44df9e94d84a3d4fdab16530c7d49a5273d673b33df85b66ae0e376db4bdb",
+      "grid_sha": "6ba29e253f8428744fdbc7580129127de2834abf6ed66e7d63e30a6b1587fbef",
+      "min_ess": 24172.94692310063,
+      "max_dense_sparse_coordinate_diff": 9.094947017729282e-13,
+      "detected_ap_fraction": 0.10135937055645085,
+      "runtime_seconds": 81.254209359,
+      "scores": {
+        "internal": {
+          "full": 12.337183655347678,
+          "flat": 12.256894495309595,
+          "flat_minus_full": -0.08028916003808284
+        },
+        "official": {
+          "full": 9.753803684177363,
+          "flat": 10.114669011976444,
+          "flat_minus_full": 0.36086532779908076
+        }
+      },
+      "backend": "B0 parameters reconstructed; original single_history, shared EB, original M-PMC 6x4096+32768; CPU float64. No DeepSets weights."
+    },
+    {
+      "event": "B1F1_2",
+      "weights": [
+        0.5313327677727143,
+        0.4686672322272857
+      ],
+      "grid": 6120,
+      "ap_count": 172,
+      "support_ids": [
+        11539,
+        10621,
+        11536,
+        7901,
+        12601,
+        13627,
+        11525,
+        12689,
+        12776,
+        12499,
+        12330,
+        12581,
+        4278,
+        3866,
+        14992
+      ],
+      "means_sha": "12c2cbf148abe2b6ef76f16168cfaed4536634f4744c37ecdf88b427bb782971",
+      "variance_sha": "228ea54d21ce663d39766b87ca3f7830d111353c8d3384d7f2833c5d1a48a2ed",
+      "grid_sha": "6ba29e253f8428744fdbc7580129127de2834abf6ed66e7d63e30a6b1587fbef",
+      "min_ess": 24427.886376519393,
+      "max_dense_sparse_coordinate_diff": 9.094947017729282e-13,
+      "detected_ap_fraction": 0.10256220032173927,
+      "runtime_seconds": 109.579346953,
+      "scores": {
+        "internal": {
+          "full": 12.521910977781154,
+          "flat": 11.987931472470711,
+          "flat_minus_full": -0.5339795053104428
+        },
+        "official": {
+          "full": 11.053032701813127,
+          "flat": 10.447224965353756,
+          "flat_minus_full": -0.6058077364593704
+        }
+      },
+      "backend": "B0 parameters reconstructed; original single_history, shared EB, original M-PMC 6x4096+32768; CPU float64. No DeepSets weights."
+    },
+    {
+      "event": "B1F2_0",
+      "weights": [
+        0.32127514134830626,
+        0.6787248586516937
+      ],
+      "grid": 6120,
+      "ap_count": 172,
+      "support_ids": [
+        677,
+        1003,
+        565,
+        784,
+        564,
+        566,
+        477,
+        1480,
+        1633,
+        576,
+        796,
+        355,
+        5453,
+        6770,
+        6497
+      ],
+      "means_sha": "b7ddc0ea928f4f96241442fcf4d7eba02e97b1b02b8d66290f674c236ece6e65",
+      "variance_sha": "bb801cf5b8ef00674a199f516dff0574e5663e9974110bfe2e3d465a92df572a",
+      "grid_sha": "6ba29e253f8428744fdbc7580129127de2834abf6ed66e7d63e30a6b1587fbef",
+      "min_ess": 24883.452381526164,
+      "max_dense_sparse_coordinate_diff": 9.094947017729282e-13,
+      "detected_ap_fraction": 0.10661383498740927,
+      "runtime_seconds": 60.973132032000024,
+      "scores": {
+        "internal": {
+          "full": 9.610305827284847,
+          "flat": 9.55127943542626,
+          "flat_minus_full": -0.0590263918585876
+        },
+        "official": {
+          "full": 13.166229189176377,
+          "flat": 13.278979596516427,
+          "flat_minus_full": 0.11275040734004982
+        }
+      },
+      "backend": "B0 parameters reconstructed; original single_history, shared EB, original M-PMC 6x4096+32768; CPU float64. No DeepSets weights."
+    },
+    {
+      "event": "B1F2_1",
+      "weights": [
+        0.35633955421775604,
+        0.6436604457822439
+      ],
+      "grid": 6120,
+      "ap_count": 173,
+      "support_ids": [
+        890,
+        1545,
+        555,
+        1521,
+        1377,
+        1414,
+        32,
+        1514,
+        1476,
+        264,
+        698,
+        480,
+        5345,
+        5548,
+        5867
+      ],
+      "means_sha": "8f8300a32cfa049fb19411b8a0f9465a855b358b7ef3c8c209562fa945457265",
+      "variance_sha": "e57e8279909b0e0bb1fe4c676b4b146ea261ea9ea25e5ad96c08e9f9b99f2062",
+      "grid_sha": "6ba29e253f8428744fdbc7580129127de2834abf6ed66e7d63e30a6b1587fbef",
+      "min_ess": 24829.140509788533,
+      "max_dense_sparse_coordinate_diff": 9.094947017729282e-13,
+      "detected_ap_fraction": 0.10538915163192619,
+      "runtime_seconds": 110.54005890900001,
+      "scores": {
+        "internal": {
+          "full": 10.681808602959203,
+          "flat": 10.300773557859051,
+          "flat_minus_full": -0.38103504510015185
+        },
+        "official": {
+          "full": 12.099196935078206,
+          "flat": 13.365814449112943,
+          "flat_minus_full": 1.2666175140347367
+        }
+      },
+      "backend": "B0 parameters reconstructed; original single_history, shared EB, original M-PMC 6x4096+32768; CPU float64. No DeepSets weights."
+    },
+    {
+      "event": "B1F2_2",
+      "weights": [
+        0.3124247942740768,
+        0.6875752057259232
+      ],
+      "grid": 6120,
+      "ap_count": 171,
+      "support_ids": [
+        1499,
+        1315,
+        1462,
+        116,
+        1345,
+        1489,
+        1374,
+        1635,
+        1483,
+        572,
+        356,
+        678,
+        5882,
+        5558,
+        6409
+      ],
+      "means_sha": "2e4ba2993592609ae76dca3512590d1ba0947dd142e6e837dd2170d12cd4015e",
+      "variance_sha": "9148ec3b71dbe1bdd8a230225e639c9161818002785b2c09b28c01f8332f6c1b",
+      "grid_sha": "6ba29e253f8428744fdbc7580129127de2834abf6ed66e7d63e30a6b1587fbef",
+      "min_ess": 23629.278497581923,
+      "max_dense_sparse_coordinate_diff": 9.094947017729282e-13,
+      "detected_ap_fraction": 0.10707760842906124,
+      "runtime_seconds": 63.355600865,
+      "scores": {
+        "internal": {
+          "full": 9.773794502634487,
+          "flat": 10.11466158575861,
+          "flat_minus_full": 0.34086708312412206
+        },
+        "official": {
+          "full": 13.811292205218962,
+          "flat": 14.024410879449409,
+          "flat_minus_full": 0.21311867423044717
+        }
+      },
+      "backend": "B0 parameters reconstructed; original single_history, shared EB, original M-PMC 6x4096+32768; CPU float64. No DeepSets weights."
+    }
+  ],
+  "scope": "Six B1 development calibration events; not an independent building test. The two DeepSets means are published references, not predictions from this run."
+}
