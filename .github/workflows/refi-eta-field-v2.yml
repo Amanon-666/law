@@ -1,0 +1,73 @@
+name: ReFi one parameter field covariance
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-eta-field-v2.yml','research/eta_field_v2/study.py','research/eta_field_v2/operator.py']
+  workflow_dispatch:
+permissions: {contents: read}
+env: {OPENBLAS_NUM_THREADS: '1', OMP_NUM_THREADS: '1', MKL_NUM_THREADS: '1'}
+jobs:
+  fit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: |
+          python -m pip install packaging numpy==2.3.5 scipy==1.16.3 pandas==2.2.3 pypmc==1.2.6
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0
+          curl -fsSL --retry 3 --max-time 180 https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip -o /tmp/uji.zip
+          unzip -q /tmp/uji.zip -d /tmp/uji
+          d=$(dirname "$(find /tmp/uji -name trainingData.csv | head -1)")
+          python -m research.eta_field_v2.study fit "$d" /tmp/eta-fit
+      - uses: actions/upload-artifact@v4
+        with: {name: eta-source-freeze, path: /tmp/eta-fit, retention-days: 90}
+  score:
+    needs: fit
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix: {floor: [1,2], seed: [0,1,2]}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/download-artifact@v4
+        with: {name: eta-source-freeze, path: /tmp/eta-fit}
+      - run: |
+          python -m pip install packaging numpy==2.3.5 scipy==1.16.3 pandas==2.2.3 pypmc==1.2.6
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0
+          curl -fsSL --retry 3 --max-time 180 https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip -o /tmp/uji.zip
+          unzip -q /tmp/uji.zip -d /tmp/uji
+          d=$(dirname "$(find /tmp/uji -name trainingData.csv | head -1)")
+          python -m research.eta_field_v2.study score "$d" /tmp/eta-target ${{ matrix.floor }} ${{ matrix.seed }} /tmp/eta-fit/freeze.json
+      - uses: actions/upload-artifact@v4
+        with: {name: 'eta-B1F${{ matrix.floor }}-${{ matrix.seed }}', path: /tmp/eta-target, retention-days: 90}
+  collect:
+    needs: score
+    runs-on: ubuntu-latest
+    permissions: {contents: write, actions: read}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: research/uji-core-refactor-20261101}
+      - uses: actions/download-artifact@v4
+        with: {pattern: 'eta-B1F*', path: /tmp/complete, merge-multiple: true}
+      - uses: actions/download-artifact@v4
+        with: {name: eta-source-freeze, path: /tmp/complete}
+      - run: |
+          set -euo pipefail
+          dest=research/eta_field_v2/results/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}
+          test ! -e "$dest"; mkdir -p "$dest"; cp /tmp/complete/* "$dest/"
+          python - "$dest" <<'PY'
+          import json,pathlib,sys,statistics,hashlib
+          d=pathlib.Path(sys.argv[1]);rows=[json.loads(p.read_text()) for p in sorted(d.glob('B1F*.json'))];assert len(rows)==6 and len(list(d.glob('B1F*.npz')))==6
+          assert all(e['freeze_sha']==hashlib.sha256((d/'freeze.json').read_bytes()).hexdigest() for e in rows)
+          mu={sp:{m:statistics.mean(e['metrics'][m][sp]['mde'] for e in rows) for m in rows[0]['metrics']} for sp in ['internal','official']}
+          print(mu);(d/'means.json').write_text(json.dumps(mu,indent=2)+'\n');(d/'SHA256SUMS').write_text(''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name+'\n' for p in sorted(d.iterdir())))
+          PY
+          git add -f "$dest"; git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git commit -m 'Archive six eta propagation comparisons and source-only optimum'; git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
+          cp "$dest/means.json" "$dest/SHA256SUMS" /tmp/complete/
+      - uses: actions/upload-artifact@v4
+        with: {name: eta-six-verified, path: /tmp/complete, retention-days: 90}
