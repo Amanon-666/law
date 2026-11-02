@@ -1,0 +1,45 @@
+name: Archive verified ReFi manuscript experiment outputs
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-archive-nov02.yml']
+jobs:
+  archive:
+    if: github.repository == 'Amanon-666/law' && github.ref == 'refs/heads/research/uji-core-refactor-20261101'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/uji-core-refactor-20261101
+      - name: Verify exact signed artifact bytes; extract only named result members
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          base=research/uji_core/round2/paper_replay/results
+          mkdir -p "$base"
+          while read -r id hash name members; do
+            gh api "repos/Amanon-666/law/actions/artifacts/$id/zip" > "/tmp/$id.zip"
+            printf '%s  %s\n' "$hash" "/tmp/$id.zip" | sha256sum --check
+            mkdir -p "$base/$name"
+            for member in $members; do unzip -p "/tmp/$id.zip" "$member" > "$base/$name/$member"; test -s "$base/$name/$member"; done
+          done <<'FROZEN'
+          13107555977 7023dd4ea1ce557523ee06bc3188cd4ec3cd9d760e88aa351e34a2ec3b1c4168 replay replay.json predictions.npz
+          13107745436 377343e690268ef71aed322805c55908be0938160af9ed3ae8cce2ab940d99bf minho direction.json
+          13107651209 83a5c6e00be0b5b934ea6b58a5bd8fb76b9cd687ab7f428d30b51327e476ecc7 prior_235 bridge.json
+          13107586483 cacc01ce95dbffc2d16a51c2a373402543a1619962e3ce10336a3a69731c5ec3 prior_126 bridge.json
+          13106783846 c664ab662c86d9f2b8994669d612b6393389148234c3829fa90aac261c34a359 radio kernel.json kernel_freeze.json
+          FROZEN
+          (cd "$base"; find . -type f ! -name SHA256SUMS -print0 | sort -z | xargs -0 sha256sum >SHA256SUMS)
+          git add -f "$base"
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Preserve verified manuscript replay, intervention results and paired prediction rows'
+            git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
+          fi
