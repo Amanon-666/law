@@ -1,0 +1,42 @@
+name: ReFi R1 fixed-evidence audit
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-r1-fixed-evidence.yml']
+permissions: {contents: read}
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Audit immutable single-scan protocol
+        run: |
+          python - <<'PY'
+          import json,zipfile,hashlib,pathlib
+          z=zipfile.ZipFile('research/uji_core/evidence.zip')
+          names=z.namelist()
+          print('N_FILES',len(names))
+          for name in names:
+              if name.endswith('/'): continue
+              q=z.getinfo(name)
+              if not name.endswith(('.json','.txt','.md','.csv','.npz')):continue
+              print('MEMBER',name,q.file_size)
+              if name.endswith('.json'):
+                  b=z.read(name); d=json.loads(b)
+                  print('JSON_SHA',hashlib.sha256(b).hexdigest())
+                  if isinstance(d,dict):
+                      print('KEYS',list(d)[:30])
+                      for k,v in list(d.items())[:4]:
+                          if isinstance(v,list): print('LIST',k,'LEN',len(v),'FIRST',json.dumps(v[:1],ensure_ascii=False)[:1100])
+                          elif isinstance(v,dict): print('DICT',k,'KEYS',list(v)[:12],'FIRST',json.dumps(list(v.items())[:1],ensure_ascii=False)[:800])
+                          else:print('VALUE',k,str(v)[:200])
+                  elif isinstance(d,list):print('LIST_LEN',len(d),'FIRST',json.dumps(d[:1],ensure_ascii=False)[:1100])
+          m=z.read('results/manifest.json')
+          assert hashlib.sha256(m).hexdigest()=='5f4fb0ceccc5a64aa7411cc287715e6fa9a39d593da6713910920a3fda67c613'
+          d=z.read('results/device_stress_design.json')
+          assert hashlib.sha256(d).hexdigest()=='76763a87569d885705dccc54cbd72e878f7a711cbb5343fbfee4517caf2482e6'
+          print('R1_ARCHIVE_SHA_AND_DESIGN_PASS')
+          PY
