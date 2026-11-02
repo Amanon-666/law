@@ -1,0 +1,49 @@
+name: ReFi density numerical continuation
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-cross-resume.yml']
+permissions: {contents: read, actions: read}
+jobs:
+  resume:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy: {fail-fast: false, matrix: {f: [1,2]}}
+    env: {OPENBLAS_NUM_THREADS: '1', OMP_NUM_THREADS: '1', MKL_NUM_THREADS: '1'}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - env: {GH_TOKEN: '${{ github.token }}'}
+        run: |
+          gh api repos/Amanon-666/law/actions/artifacts/13110009567/zip >/tmp/affine.zip
+          gh api repos/Amanon-666/law/actions/artifacts/13109733236/zip >/tmp/dense.zip
+          python -m pip install packaging numpy==2.3.5 scipy==1.16.3 pandas==2.2.3 pypmc==1.2.6
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0
+          curl -fsSL --retry 3 --max-time 180 https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip -o /tmp/uji.zip
+          unzip -q /tmp/uji.zip -d /tmp/uji
+          d=$(dirname "$(find /tmp/uji -name trainingData.csv | head -1)")
+          python -m research.uji_core.round2.paper_replay.limit_study.cross_resume "$d" /tmp/affine.zip /tmp/dense.zip /tmp/out ${{ matrix.f }} 1
+          rm -r /tmp/out/working
+      - uses: actions/upload-artifact@v4
+        with: {name: 'retry-F${{ matrix.f }}-1', path: /tmp/out}
+  combine:
+    needs: resume
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 41374253144
+          github-token: ${{ github.token }}
+          pattern: 'cross-F*'
+          merge-multiple: true
+          path: /tmp/results
+      - uses: actions/download-artifact@v4
+        with: {pattern: 'retry-F*', path: /tmp/results, merge-multiple: true}
+      - run: |
+          python - <<'PY'
+          import json,pathlib,statistics
+          p=pathlib.Path('/tmp/results');rs=[json.loads(f.read_text()) for f in sorted(p.glob('B1F*.json'))];assert len(rs)==6 and {r['event'] for r in rs}=={f'B1F{f}_{i}' for f in [1,2] for i in range(3)};scores={s:{a:statistics.mean(r['scores'][s][a] for r in rs) for a in rs[0]['scores'][s]} for s in ('internal','official')};(p/'cross_summary.json').write_text(json.dumps(dict(summary=scores,events=rs),indent=2));print(scores)
+          PY
+      - uses: actions/upload-artifact@v4
+        with: {name: cross-budget, path: /tmp/results}
