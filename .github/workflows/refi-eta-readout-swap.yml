@@ -1,0 +1,54 @@
+name: ReFi eta posterior readout accounting
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-eta-readout-swap.yml','research/eta_field_v2/readout_swap.py']
+permissions: {contents: read}
+env: {OPENBLAS_NUM_THREADS: '1', OMP_NUM_THREADS: '1', MKL_NUM_THREADS: '1'}
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix: {f: [1,2], seed: [0,1,2]}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: |
+          python -m pip install packaging numpy==2.3.5 scipy==1.16.3 pandas==2.2.3 pypmc==1.2.6
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0
+          curl -fsSL --retry 3 --max-time 180 https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip -o /tmp/uji.zip
+          unzip -q /tmp/uji.zip -d /tmp/uji
+          d=$(dirname "$(find /tmp/uji -name trainingData.csv | head -1)")
+          ref=research/eta_field_v2/results/41414332442-1; (cd "$ref"; sha256sum -c SHA256SUMS)
+          python -m research.eta_field_v2.readout_swap "$d" "$ref" /tmp/out ${{ matrix.f }} ${{ matrix.seed }}
+      - uses: actions/upload-artifact@v4
+        with: {name: 'split-B1F${{ matrix.f }}-${{ matrix.seed }}', path: /tmp/out, retention-days: 90}
+  combine:
+    needs: score
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions: {contents: write, actions: read}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: research/uji-core-refactor-20261101}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/download-artifact@v4
+        with: {pattern: 'split-B1F*', path: /tmp/swap, merge-multiple: true}
+      - run: |
+          python -m pip install numpy==2.3.5
+          # Pure NumPy aggregation; do not import torch or rerun any score here.
+          python - <<'PY'
+          import ast,itertools,json,sys,pathlib,numpy as np
+          from pathlib import Path
+          ARMS=('CC','DC','CD','DD')
+          def write(p,x): p.write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
+          mod=ast.parse(Path('research/eta_field_v2/readout_swap.py').read_text()); fn=next(x for x in mod.body if isinstance(x,ast.FunctionDef) and x.name=='summary');exec(compile(ast.Module(body=[fn],type_ignores=[]),'frozen-swap-reducer','exec'));summary(Path('/tmp/swap'))
+          PY
+          dst=research/eta_field_v2/swap-results/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}; test ! -e "$dst"; mkdir -p "$dst"; cp /tmp/swap/* "$dst/"; (cd "$dst"; sha256sum B1F* decomposition.json > SHA256SUMS); cp "$dst/SHA256SUMS" /tmp/swap/
+          git add -f "$dst"; git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git commit -m 'Archive six paired moment-swap diagnostics; no estimator promotion'; git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
+      - uses: actions/upload-artifact@v4
+        with: {name: eta-swap-six, path: /tmp/swap, retention-days: 90}
