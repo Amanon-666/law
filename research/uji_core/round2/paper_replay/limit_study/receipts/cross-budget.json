@@ -1,0 +1,324 @@
+{
+  "summary": {
+    "internal": {
+      "plain_S5": 11.106270236443379,
+      "plain_denseR3": 9.850808671848725,
+      "learned_S5": 11.104232556696854,
+      "learned_denseR3": 9.888748912225582
+    },
+    "official": {
+      "plain_S5": 11.712560953795188,
+      "plain_denseR3": 11.209029495143072,
+      "learned_S5": 10.86334273432604,
+      "learned_denseR3": 11.161695252076987
+    }
+  },
+  "events": [
+    {
+      "event": "B1F1_0",
+      "source": "cd5c4972f4ad418a58c9c73f88d9c65c245f24ecf5c35842bcdc8535114caf58",
+      "scores": {
+        "internal": {
+          "plain_S5": 11.74979362141316,
+          "plain_denseR3": 10.819478842264692,
+          "learned_S5": 11.404010875198727,
+          "learned_denseR3": 10.812237695876759
+        },
+        "official": {
+          "plain_S5": 10.798573446990986,
+          "plain_denseR3": 10.603998976617536,
+          "learned_S5": 9.86753297702672,
+          "learned_denseR3": 10.238480517478013
+        }
+      },
+      "groups": [
+        {
+          "fold": 0,
+          "sites": 45,
+          "target_scans": 135,
+          "target_ids_sha256": "f230f89d91e037010152874854142e560fa71e4cc75d59cc90ebd47b5240ffb5"
+        },
+        {
+          "fold": 1,
+          "sites": 52,
+          "target_scans": 156,
+          "target_ids_sha256": "4254325031372d553ca6391f9d8d3a3be34785b17ea8be84f93f09b3bfe622cb"
+        },
+        {
+          "fold": 2,
+          "sites": 52,
+          "target_scans": 156,
+          "target_ids_sha256": "5638f190dc0f8ba98ae54e6f1d6efb1d4a6c6cfbf6721a566a7fd0fa88fa6b52"
+        },
+        {
+          "fold": 3,
+          "sites": 48,
+          "target_scans": 144,
+          "target_ids_sha256": "ee8175f71a7893e8a4dba6296a9596fb9f42730e06384dc6bd20e5ce0dfd3d71"
+        },
+        {
+          "fold": 4,
+          "sites": 44,
+          "target_scans": 132,
+          "target_ids_sha256": "8f4f1dc185d65f5b20926d24565204d45c4dfb399bf7368bd917ebdf9226540d"
+        }
+      ],
+      "learned_max_gradient": 8.376769861762057e-06
+    },
+    {
+      "event": "B1F1_1",
+      "source": "cd5c4972f4ad418a58c9c73f88d9c65c245f24ecf5c35842bcdc8535114caf58",
+      "scores": {
+        "internal": {
+          "plain_S5": 12.35994900085662,
+          "plain_denseR3": 11.252651665909225,
+          "learned_S5": 12.01640448479252,
+          "learned_denseR3": 11.229710126081121
+        },
+        "official": {
+          "plain_S5": 9.80511435544191,
+          "plain_denseR3": 10.986900086734506,
+          "learned_S5": 9.39297590535788,
+          "learned_denseR3": 11.876548886998647
+        }
+      },
+      "groups": [
+        {
+          "fold": 0,
+          "sites": 45,
+          "target_scans": 135,
+          "target_ids_sha256": "c730def96f7064539fca3250ee09e351d86b29f2dec4f1ee66bc8b9666714371"
+        },
+        {
+          "fold": 1,
+          "sites": 52,
+          "target_scans": 156,
+          "target_ids_sha256": "7ea3ddb0510e2cb7ddaa3580c2d57981f22f94f58a9b52734141362359c0f68b"
+        },
+        {
+          "fold": 2,
+          "sites": 53,
+          "target_scans": 159,
+          "target_ids_sha256": "f54395e44f783e95608313605409b46da6bfcc21f8b02ba5661d298ca9286da2"
+        },
+        {
+          "fold": 3,
+          "sites": 48,
+          "target_scans": 144,
+          "target_ids_sha256": "921042aa7b94d91da01c778bb2c28ca5fce6c9925964acc48b9d24b482d80790"
+        },
+        {
+          "fold": 4,
+          "sites": 43,
+          "target_scans": 129,
+          "target_ids_sha256": "68c3acc2a5e7d4ed36e8a7df674e94aef7f60a2ca58cdb0d531c58eb5373bcbb"
+        }
+      ],
+      "learned_max_gradient": 8.376769861762057e-06
+    },
+    {
+      "event": "B1F1_2",
+      "source": "cd5c4972f4ad418a58c9c73f88d9c65c245f24ecf5c35842bcdc8535114caf58",
+      "scores": {
+        "internal": {
+          "plain_S5": 12.636777760656903,
+          "plain_denseR3": 12.025964077810992,
+          "learned_S5": 12.016950232801724,
+          "learned_denseR3": 12.068550144997898
+        },
+        "official": {
+          "plain_S5": 11.255612800175838,
+          "plain_denseR3": 11.056692874357573,
+          "learned_S5": 10.66758014550573,
+          "learned_denseR3": 11.248064033480322
+        }
+      },
+      "groups": [
+        {
+          "fold": 0,
+          "sites": 44,
+          "target_scans": 132,
+          "target_ids_sha256": "5862d84da41c98769d71a4c02d12b559625bef3d0c84a8220a73a1801368f3fb"
+        },
+        {
+          "fold": 1,
+          "sites": 52,
+          "target_scans": 156,
+          "target_ids_sha256": "37b46749f1c0fcfff1299f2d558e112b8d2a4b3d8b265c0b50e1bcc770a24c75"
+        },
+        {
+          "fold": 2,
+          "sites": 53,
+          "target_scans": 159,
+          "target_ids_sha256": "ff5e60cbc12db978f59cea6130abc16d612d5e6be43068f0c2351bbe689ed95e"
+        },
+        {
+          "fold": 3,
+          "sites": 50,
+          "target_scans": 150,
+          "target_ids_sha256": "79f8141257d49875e34e42549da1ac6d0d8c2125eb2a701a1f1f59e37c1bcc57"
+        },
+        {
+          "fold": 4,
+          "sites": 42,
+          "target_scans": 126,
+          "target_ids_sha256": "4eec985c7ca59f570eb56b89bcdcc296ca633844c1b17ddaa9686523d1d2e519"
+        }
+      ],
+      "learned_max_gradient": 8.376769861762057e-06
+    },
+    {
+      "event": "B1F2_0",
+      "source": "cd5c4972f4ad418a58c9c73f88d9c65c245f24ecf5c35842bcdc8535114caf58",
+      "scores": {
+        "internal": {
+          "plain_S5": 9.51787291078385,
+          "plain_denseR3": 8.633446530147413,
+          "learned_S5": 9.602086683998921,
+          "learned_denseR3": 8.74508215178811
+        },
+        "official": {
+          "plain_S5": 12.916328877799332,
+          "plain_denseR3": 11.865289031762726,
+          "learned_S5": 11.896067899437295,
+          "learned_denseR3": 11.331184742321453
+        }
+      },
+      "groups": [
+        {
+          "fold": 0,
+          "sites": 64,
+          "target_scans": 192,
+          "target_ids_sha256": "dbfdd478a71d870d61bdde0c03a027f16e465c3e13ee8ac5f3b92393c0f445e6"
+        },
+        {
+          "fold": 1,
+          "sites": 67,
+          "target_scans": 201,
+          "target_ids_sha256": "9fd10ff57879fd558d9b2864aa83090bdc20e6f603302cc06e099643fa3a3d37"
+        },
+        {
+          "fold": 2,
+          "sites": 70,
+          "target_scans": 210,
+          "target_ids_sha256": "128661da229076903bd09d21d98150cf59fb0ac9a363360752f5a3b6f5b18a8c"
+        },
+        {
+          "fold": 3,
+          "sites": 66,
+          "target_scans": 198,
+          "target_ids_sha256": "78584689f1986cb066c1d2f4186480362ee77c597ee540c74fe070c88c70f41c"
+        },
+        {
+          "fold": 4,
+          "sites": 54,
+          "target_scans": 162,
+          "target_ids_sha256": "b989b067937086700a6e7f99567c6f7aa5cf25123255dec2edff0618712e374f"
+        }
+      ],
+      "learned_max_gradient": 8.386307329022458e-06
+    },
+    {
+      "event": "B1F2_1",
+      "source": "cd5c4972f4ad418a58c9c73f88d9c65c245f24ecf5c35842bcdc8535114caf58",
+      "scores": {
+        "internal": {
+          "plain_S5": 10.652600980685369,
+          "plain_denseR3": 8.225399197734317,
+          "learned_S5": 11.218815659905822,
+          "learned_denseR3": 8.381350363440337
+        },
+        "official": {
+          "plain_S5": 11.918224518103663,
+          "plain_denseR3": 11.212136363124406,
+          "learned_S5": 11.029525037862323,
+          "learned_denseR3": 11.291752813766081
+        }
+      },
+      "groups": [
+        {
+          "fold": 0,
+          "sites": 64,
+          "target_scans": 192,
+          "target_ids_sha256": "e3fab726e2c4d8cf58984b6805b5b291588ddf2cef88b7139e3d4fd49e8e3e2f"
+        },
+        {
+          "fold": 1,
+          "sites": 66,
+          "target_scans": 198,
+          "target_ids_sha256": "9e9e0e6188135fbba3aebb9fdb354ba74271dd165b68c94602f9e1fcc982e772"
+        },
+        {
+          "fold": 2,
+          "sites": 69,
+          "target_scans": 207,
+          "target_ids_sha256": "3ddadc578bf23775dd131e7ab93cded57cb5f78916c9cd38aeef611a30a254ff"
+        },
+        {
+          "fold": 3,
+          "sites": 65,
+          "target_scans": 195,
+          "target_ids_sha256": "3fe6e533bd86fe40d2c0719a773272f689b03e9afa06a2199376d0b023d07cd8"
+        },
+        {
+          "fold": 4,
+          "sites": 57,
+          "target_scans": 171,
+          "target_ids_sha256": "7bdd393ad58c0a1c6fb93c9350957236fcf6ef177a5104915ace8e557b37ae0a"
+        }
+      ],
+      "learned_max_gradient": 8.386307329022458e-06
+    },
+    {
+      "event": "B1F2_2",
+      "source": "cd5c4972f4ad418a58c9c73f88d9c65c245f24ecf5c35842bcdc8535114caf58",
+      "scores": {
+        "internal": {
+          "plain_S5": 9.72062714426437,
+          "plain_denseR3": 8.147911717225707,
+          "learned_S5": 10.367127403483405,
+          "learned_denseR3": 8.09556299116927
+        },
+        "official": {
+          "plain_S5": 13.581511724259402,
+          "plain_denseR3": 11.529159638261689,
+          "learned_S5": 12.326374440766289,
+          "learned_denseR3": 10.984140518417409
+        }
+      },
+      "groups": [
+        {
+          "fold": 0,
+          "sites": 65,
+          "target_scans": 195,
+          "target_ids_sha256": "8649de5d9cb65adf521287a1fc4f815a2e77b29f0f20801d537eef54b60192ba"
+        },
+        {
+          "fold": 1,
+          "sites": 67,
+          "target_scans": 201,
+          "target_ids_sha256": "391b9198c463457b8150fc14b38646014aedbc0c5400de78d76ae46be8627b5c"
+        },
+        {
+          "fold": 2,
+          "sites": 70,
+          "target_scans": 210,
+          "target_ids_sha256": "f172c66c07ff52cc22bbd120edf2db63438e7171072ba28a0827328113ffa1cd"
+        },
+        {
+          "fold": 3,
+          "sites": 66,
+          "target_scans": 198,
+          "target_ids_sha256": "9d6c7707e4819456a604c051733e1db37777e590dbf0786230b261f01741700f"
+        },
+        {
+          "fold": 4,
+          "sites": 53,
+          "target_scans": 159,
+          "target_ids_sha256": "1645d2ae6e8cb23fd9161b94ec4171ca78b635e05fc9e0ed984db3ecee373483"
+        }
+      ],
+      "learned_max_gradient": 8.386307329022458e-06
+    }
+  ]
+}
