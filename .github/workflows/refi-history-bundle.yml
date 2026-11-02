@@ -1,0 +1,34 @@
+name: ReFi pre-shape version archive
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-history-bundle.yml']
+permissions: {contents: read}
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: archive/refi-before-local-shape-20261102
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Bundle, clone, verify old commit ancestry and milestone weights
+        run: |
+          set -euo pipefail
+          pre=b7f7dbcdee8e577287504a85b005421e97e35278
+          test "$(git rev-parse HEAD)" = "$pre"
+          mkdir -p /tmp/old
+          git branch restore/refi-pre-shape "$pre"
+          git bundle create /tmp/old/refi-pre-shape.bundle refs/heads/restore/refi-pre-shape
+          git bundle verify /tmp/old/refi-pre-shape.bundle
+          git clone -q -b restore/refi-pre-shape /tmp/old/refi-pre-shape.bundle /tmp/verify
+          cd /tmp/verify; test "$(git rev-parse HEAD)" = "$pre"; git fsck --full
+          git log --format='%H %P %s' HEAD >/tmp/old/COMMITS.txt
+          for c in 156efc6 49f581b 50de227 683a297 e795dea b7f7dbc; do git merge-base --is-ancestor "$c" "$pre"; git show --no-patch --format='%H %s' "$c"; done >/tmp/old/MILESTONES.txt
+          root=research/uji_core/round2/paper_replay/limit_study/receipts
+          for f in all-b1-models source-v1 affine-six-with-source cross-budget; do unzip -tq "$root/$f.zip"; sha256sum "$root/$f.zip"; done >/tmp/old/CHECKPOINTS.txt
+          (cd /tmp/old; sha256sum *.bundle *.txt > SHA256SUMS; du -h *.bundle; wc -l COMMITS.txt)
+      - uses: actions/upload-artifact@v4
+        with: {name: verified-refi-pre-shape-history, path: /tmp/old, retention-days: 90}
