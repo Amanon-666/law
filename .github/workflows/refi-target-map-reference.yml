@@ -1,0 +1,40 @@
+name: ReFi target-map density reference
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-target-map-reference.yml','research/uji_core/round2/paper_replay/limit_study/dense_gp.py']
+permissions: {contents: read}
+jobs:
+  estimate:
+    strategy:
+      fail-fast: false
+      matrix: {f: [1,2], seed: [0,1,2]}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env: {OPENBLAS_NUM_THREADS: '1', OMP_NUM_THREADS: '1', MKL_NUM_THREADS: '1'}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: |
+          python -m pip install packaging numpy==2.3.5 scipy==1.16.3 pandas==2.2.3 pypmc==1.2.6
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0
+          curl -fsSL --retry 3 --max-time 180 https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip -o /tmp/uji.zip
+          unzip -q /tmp/uji.zip -d /tmp/uji
+          d=$(dirname "$(find /tmp/uji -name trainingData.csv | head -1)")
+          python -m research.uji_core.round2.paper_replay.limit_study.dense_gp "$d" /tmp/dense ${{ matrix.f }} ${{ matrix.seed }}
+      - uses: actions/upload-artifact@v4
+        with: {name: 'dense-F${{ matrix.f }}-${{ matrix.seed }}', path: /tmp/dense}
+  summary:
+    needs: estimate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: {pattern: 'dense-F*', path: /tmp/all, merge-multiple: true}
+      - run: |
+          python - <<'PY'
+          import json,statistics,pathlib
+          d=pathlib.Path('/tmp/all');rs=[json.loads(i.read_text()) for i in sorted(d.glob('*.json'))];assert len(rs)==6 and len(set(e['event'] for e in rs))==6;summary={sp:{k:statistics.mean(e['scores'][sp][k] for e in rs) for k in ('S5','denseR3')} for sp in ('internal','official')};(d/'dense_gp_summary.json').write_text(json.dumps(dict(summary=summary,events=rs),indent=2));print(summary)
+          PY
+      - uses: actions/upload-artifact@v4
+        with: {name: dense-gp-six, path: /tmp/all}
