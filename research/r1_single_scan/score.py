@@ -105,7 +105,7 @@ def models():
         assert beta.shape==(7,)
     with zipfile.ZipFile(RECEIPTS/'source-v1.zip') as z:
         names=z.namelist()
-        ckpt=next((n for n in names if n.endswith('source/operator.pt')),None)
+        ckpt=next((n for n in names if n in ('operator.pt','source/operator.pt') or n.endswith('/source/operator.pt')),None)
         assert ckpt is not None, ('missing source checkpoint',names[:10])
         b=z.read(ckpt);assert digest(b)==NONLINEAR_HASH
         net=OperatorNet().double()
