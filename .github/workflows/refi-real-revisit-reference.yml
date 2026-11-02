@@ -2,7 +2,7 @@ name: ReFi real earlier revisit boundary
 on:
   push:
     branches: [research/uji-core-refactor-20261101]
-    paths: ['.github/workflows/refi-real-revisit-reference.yml']
+    paths: ['.github/workflows/refi-real-revisit-reference.yml', 'research/uji_core/round2/paper_replay/limit_study/revisit_reference.py']
 permissions: {contents: read, actions: read}
 jobs:
   real:
@@ -13,6 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
+      - run: python -m py_compile research/uji_core/round2/paper_replay/limit_study/revisit_reference.py
       - uses: actions/download-artifact@v4
         with:
           run-id: 41370648408
