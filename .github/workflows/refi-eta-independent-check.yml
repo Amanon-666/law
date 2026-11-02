@@ -8,39 +8,29 @@ env: {OPENBLAS_NUM_THREADS: '1'}
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 65
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
-      - name: Install only the offline verifier dependency
-        run: python -m pip install numpy==2.3.5
-      - name: Require the already running frozen study and verify its manifest
+      - run: python -m pip install numpy==2.3.5
+      - name: Verify all immutable original and new row-level predictions using only NumPy
         env: {GH_TOKEN: '${{ github.token }}'}
         run: |
           set -euo pipefail
-          # Read a single fixed run, never dispatch another experiment or search for favorable outputs.
-          for i in $(seq 1 145); do
-            s=$(gh api repos/Amanon-666/law/actions/runs/41414332442 --jq '.status+":"+(.conclusion//"pending")+":"+.head_sha')
-            case "$s" in
-              completed:success:7c00039ef60f129d6408775adff8e80e6381fe41) break;;
-              completed:*) echo "$s"; exit 1;;
-            esac
-            sleep 20
-          done
-          id=$(gh api repos/Amanon-666/law/actions/runs/41414332442/artifacts --jq '.artifacts[]|select(.name=="eta-six-verified")|.id'); test -n "$id"
-          hash=$(gh api repos/Amanon-666/law/actions/artifacts/$id --jq '.digest'|cut -d: -f2)
+          test "$(gh api repos/Amanon-666/law/actions/runs/41414332442 --jq '.status+":"+.conclusion+":"+.head_sha')" = 'completed:success:7c00039ef60f129d6408775adff8e80e6381fe41'
           mkdir -p /tmp/eta-delivery/study; cd /tmp/eta-delivery
-          gh api repos/Amanon-666/law/actions/artifacts/$id/zip > paired.zip; echo "$hash  paired.zip" | sha256sum -c
+          gh api repos/Amanon-666/law/actions/artifacts/13127022782/zip > paired.zip
+          echo '716d86367d0fbef5bf4a36bdd6cd308ed1a3bdb5e552f035aaadbc78ced48646  paired.zip' | sha256sum -c
           cp "$GITHUB_WORKSPACE"/research/eta_field_v2/{operator.py,study.py,PROTOCOL.md,verify.py} study/
           cp "$GITHUB_WORKSPACE"/research/uji_core/round2/paper_replay/limit_study/receipts/{affine-six-with-source,all-b1-models}.zip .
-          python study/verify.py paired.zip affine-six-with-source.zip all-b1-models.zip > verified.json
+          python -B -m study.verify paired.zip affine-six-with-source.zip all-b1-models.zip > verified.json
           python - <<'PY'
           import json
-          r=json.load(open('verified.json')); print('prior identity max coordinate difference',r['identity_max_coordinate_diff']);print('minimum ESS',r['min_ess']); assert r['identity_max_coordinate_diff']<0.01 and r['min_ess']>=1000
+          r=json.load(open('verified.json'));print('max coordinate discrepancy and minimum ESS',r['identity_max_coordinate_diff'],r['min_ess']);assert r['identity_max_coordinate_diff']<.01 and r['min_ess']>=1000
           for s,o in r['splits'].items(): print(s,{k:round(a['MDE'],5) for k,a in o['metrics'].items()},o['pairs']['full-mean'])
           PY
-          echo 'Offline: python study/verify.py paired.zip affine-six-with-source.zip all-b1-models.zip > my-verification.json (Python + NumPy). Training/scoring: copy study code into research/eta_field_v2 in Amanon-666/law@7c00039ef60f129d6408775adff8e80e6381fe41; use .github/workflows/refi-eta-field-v2.yml. Original UCI dataset: DOI 10.24432/C5MS59. U units, B1 known development site; no official validation labels in fitting. See study/PROTOCOL.md for full scope.' > README.txt
+          echo 'Offline: from the extracted root run python -B -m study.verify paired.zip affine-six-with-source.zip all-b1-models.zip > my-verification.json (Python + NumPy). Full training/scoring: Amanon-666/law@7c00039ef60f129d6408775adff8e80e6381fe41, .github/workflows/refi-eta-field-v2.yml. UCI DOI 10.24432/C5MS59. UJI projected coordinate units, B1 development data, known building, not a blind test.' > README.txt
           find . -type f ! -name SHA256SUMS -print0|sort -z|xargs -0 sha256sum > SHA256SUMS
       - uses: actions/upload-artifact@v4
         with: {name: eta-field-offline-verification, path: /tmp/eta-delivery, retention-days: 90}
