@@ -1,0 +1,31 @@
+name: ReFi source geometry audit
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-shape-source-audit.yml']
+permissions: {contents: read}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip -q install pandas numpy
+      - name: Read training files only; publish metadata and no scans
+        run: |
+          mkdir -p /tmp/raw /tmp/out
+          curl -fsSL --retry 2 --max-time 100 https://raw.githubusercontent.com/XudongSong/UTSIndoorLoc-dataset/master/UTSIndoorLoc/UTS_training.csv -o /tmp/raw/UTS.csv
+          test "$(git hash-object /tmp/raw/UTS.csv)" = 93155fe4f9448d7cd367bf31dd3dc469bd854f03
+          curl -fsSL --retry 2 --max-time 100 'https://zenodo.org/records/5174851/files/WiFi%20RSS%20measurements%20in%20Tampere%20University%20multi-building%20campus%202017%20-%20Zenodo%205174851.zip?download=1' -o /tmp/raw/tau.zip
+          echo '9ed418ecea09890692ea8a464895395a  /tmp/raw/tau.zip' | md5sum -c
+          python - <<'PY'
+          import pandas as pd,numpy as np,json,hashlib,zipfile,io
+          from pathlib import Path
+          raw=Path('/tmp/raw'); df=pd.read_csv(raw/'UTS.csv');z=zipfile.ZipFile(raw/'tau.zip');out={'uts_shape':df.shape,'uts_tail_columns':list(df.columns[-16:]),'uts_tail_top':str(df.iloc[:2,-10:]),'uts_rss_freq':pd.Series(df.iloc[:,:589].to_numpy().ravel()).value_counts().head(12).to_dict(),'sha256':{f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in raw.iterdir()},'tau_files':[n for n in z.namelist() if 'train' in n.lower() and '__MACOSX' not in n]};
+          for n in out['tau_files']:
+            b=z.read(n);df1=pd.read_csv(io.BytesIO(b),header=None);out[n]=dict(shape=df1.shape,first=str(df1.iloc[:2,:min(7,df1.shape[1])]),last=str(df1.iloc[:2,-4:]))
+          Path('/tmp/out/audit.json').write_text(json.dumps(out,ensure_ascii=False,indent=2,default=str));print(json.dumps(out,ensure_ascii=False,default=str))
+          PY
+      - uses: actions/upload-artifact@v4
+        with: {name: refi-shape-source-audit, path: /tmp/out}
