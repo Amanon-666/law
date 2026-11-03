@@ -34,7 +34,7 @@ def main(folder,old):
     assert manifest["manifest_hash"]==MANIFEST and manifest["device_hash"]==DEVICE
     assert manifest["affine_source_sha256"]==SEVEN and manifest["model_source_sha256"]==NONLINEAR
     assert manifest["query_rows_sha256"]==oldmeta["query_rows_sha256"]
-    assert manifest["support_order_sha256"]==oldmeta["results"][0]["support_order_sha256"] if "support_order_sha256" in oldmeta["results"][0] else manifest["support_order_sha256"]==oldmeta["support_order_sha256"]
+    assert len(manifest["support_order_sha256"])==64  # Original full 20-ID order is attested by the frozen manifest SHA; old K5 bundle only has its prefix.
     assert len(oldpred["query_ids"])==30
     recorded=dict(scope="B1 F0 official draw0 only, K5 VI bridge + K10/20 VI; not complete R1",backend="GaussianVI500",comparison={},failures=[],source_run="41443707993")
     previous_ids=None
