@@ -1,0 +1,502 @@
+{
+  "verified_cells": 399,
+  "scopes": {
+    "all10": {
+      "official": {
+        "1-3": {
+          "complete": true,
+          "paired_events": 40,
+          "stable_count": 2,
+          "stable_events": [
+            {
+              "floor": 0,
+              "draw": 1,
+              "delta": {
+                "gp": 1.009219921912481,
+                "seven": 2.3681693302329423,
+                "nonlinear": -1.2697063985681707
+              }
+            },
+            {
+              "floor": 0,
+              "draw": 4,
+              "delta": {
+                "gp": 0.552661952775671,
+                "seven": 0.9378734281987434,
+                "nonlinear": -0.7653399092308915
+              }
+            }
+          ],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.7135453964194375,
+              "nearer_mean_delta": -0.3573761975482415,
+              "unchanged_mean_delta": -0.28948956241718504,
+              "nearer_contribution": -0.2550041405504312,
+              "unchanged_contribution": -0.08292561784292529,
+              "total": -0.3379297583933565
+            },
+            "seven": {
+              "nearer_fraction": 0.7135453964194375,
+              "nearer_mean_delta": -0.21119115808734396,
+              "unchanged_mean_delta": -0.482832390676495,
+              "nearer_contribution": -0.15069447861771393,
+              "unchanged_contribution": -0.13830956106709075,
+              "total": -0.2890040396848047
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.7135453964194375,
+              "nearer_mean_delta": 0.03692011302868077,
+              "unchanged_mean_delta": -0.05589113159354912,
+              "nearer_contribution": 0.026344176686900457,
+              "unchanged_contribution": -0.016010271944299177,
+              "total": 0.01033390474260128
+            }
+          }
+        },
+        "3-5": {
+          "complete": false
+        },
+        "5-10": {
+          "complete": false
+        },
+        "10-20": {
+          "complete": true,
+          "paired_events": 40,
+          "stable_count": 0,
+          "stable_events": [],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.5045155888442332,
+              "nearer_mean_delta": -2.622683420834465,
+              "unchanged_mean_delta": 0.5961400594200005,
+              "nearer_contribution": -1.323184670414308,
+              "unchanged_contribution": 0.29537810630808276,
+              "total": -1.0278065641062253
+            },
+            "seven": {
+              "nearer_fraction": 0.5045155888442332,
+              "nearer_mean_delta": -1.3414997926895027,
+              "unchanged_mean_delta": 0.5056670490080182,
+              "nearer_contribution": -0.6768075578431613,
+              "unchanged_contribution": 0.25055014001861214,
+              "total": -0.4262574178245491
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.5045155888442332,
+              "nearer_mean_delta": -1.5675962578338478,
+              "unchanged_mean_delta": 0.1216047550267257,
+              "nearer_contribution": -0.7908767490910601,
+              "unchanged_contribution": 0.06025326043815845,
+              "total": -0.7306234886529016
+            }
+          }
+        }
+      },
+      "phone": {
+        "1-3": {
+          "complete": true,
+          "paired_events": 40,
+          "stable_count": 1,
+          "stable_events": [
+            {
+              "floor": 0,
+              "draw": 7,
+              "delta": {
+                "gp": 0.013995656687104304,
+                "seven": 0.07754290939507648,
+                "nonlinear": -0.0554421176884601
+              }
+            }
+          ],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.6395833333333333,
+              "nearer_mean_delta": -0.24800446648757055,
+              "unchanged_mean_delta": 0.07712675720628194,
+              "nearer_contribution": -0.15861952335767532,
+              "unchanged_contribution": 0.027797768743097452,
+              "total": -0.13082175461457787
+            },
+            "seven": {
+              "nearer_fraction": 0.6395833333333333,
+              "nearer_mean_delta": -0.25636054835458094,
+              "unchanged_mean_delta": -0.04533236490527873,
+              "nearer_contribution": -0.16396393405178405,
+              "unchanged_contribution": -0.016338539851277544,
+              "total": -0.1803024739030616
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.6395833333333333,
+              "nearer_mean_delta": -0.48595280620080683,
+              "unchanged_mean_delta": -0.0781094283604225,
+              "nearer_contribution": -0.31080731563259933,
+              "unchanged_contribution": -0.02815193980490228,
+              "total": -0.3389592554375016
+            }
+          }
+        },
+        "3-5": {
+          "complete": true,
+          "paired_events": 40,
+          "stable_count": 1,
+          "stable_events": [
+            {
+              "floor": 0,
+              "draw": 5,
+              "delta": {
+                "gp": -0.30926428854172094,
+                "seven": -0.32690546885869537,
+                "nonlinear": -0.20208106099057216
+              }
+            }
+          ],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.3916666666666667,
+              "nearer_mean_delta": -0.6652278980085149,
+              "unchanged_mean_delta": -0.11064217495319588,
+              "nearer_contribution": -0.2605475933866684,
+              "unchanged_contribution": -0.0673073230965275,
+              "total": -0.32785491648319587
+            },
+            "seven": {
+              "nearer_fraction": 0.3916666666666667,
+              "nearer_mean_delta": -0.8001111210936014,
+              "unchanged_mean_delta": 0.023651477593906473,
+              "nearer_contribution": -0.3133768557616606,
+              "unchanged_contribution": 0.014387982202959773,
+              "total": -0.2989888735587008
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.3916666666666667,
+              "nearer_mean_delta": -0.6362599448294884,
+              "unchanged_mean_delta": -0.07940413149017207,
+              "nearer_contribution": -0.249201811724883,
+              "unchanged_contribution": -0.04830417998985468,
+              "total": -0.2975059917147377
+            }
+          }
+        },
+        "5-10": {
+          "complete": true,
+          "paired_events": 40,
+          "stable_count": 1,
+          "stable_events": [
+            {
+              "floor": 0,
+              "draw": 5,
+              "delta": {
+                "gp": 0.6114576871068881,
+                "seven": 0.3545970641511492,
+                "nonlinear": -0.33636988636918447
+              }
+            }
+          ],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.45625,
+              "nearer_mean_delta": -1.3237514584282062,
+              "unchanged_mean_delta": 0.8011101454325947,
+              "nearer_contribution": -0.603961602907869,
+              "unchanged_contribution": 0.43560364157897347,
+              "total": -0.16835796132889558
+            },
+            "seven": {
+              "nearer_fraction": 0.45625,
+              "nearer_mean_delta": -0.5508173170525457,
+              "unchanged_mean_delta": 0.6570199971953575,
+              "nearer_contribution": -0.25131040090522394,
+              "unchanged_contribution": 0.3572546234749757,
+              "total": 0.10594422256975178
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.45625,
+              "nearer_mean_delta": -0.19304357191638472,
+              "unchanged_mean_delta": 0.11296424133344055,
+              "nearer_contribution": -0.08807612968685052,
+              "unchanged_contribution": 0.0614243062250583,
+              "total": -0.02665182346179222
+            }
+          }
+        },
+        "10-20": {
+          "complete": true,
+          "paired_events": 40,
+          "stable_count": 0,
+          "stable_events": [],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.5291666666666668,
+              "nearer_mean_delta": -2.009405328158544,
+              "unchanged_mean_delta": 0.17727253486155703,
+              "nearer_contribution": -1.0633103194838964,
+              "unchanged_contribution": 0.08346581849731641,
+              "total": -0.97984450098658
+            },
+            "seven": {
+              "nearer_fraction": 0.5291666666666668,
+              "nearer_mean_delta": -2.647902377264863,
+              "unchanged_mean_delta": 0.08511868445496451,
+              "nearer_contribution": -1.4011816746359904,
+              "unchanged_contribution": 0.04007671393087912,
+              "total": -1.3611049607051113
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.5291666666666668,
+              "nearer_mean_delta": -1.4977678411940518,
+              "unchanged_mean_delta": 0.08798639466448185,
+              "nearer_contribution": -0.7925688159651859,
+              "unchanged_contribution": 0.0414269274878602,
+              "total": -0.7511418884773258
+            }
+          }
+        }
+      }
+    },
+    "later8": {
+      "official": {
+        "1-3": {
+          "complete": true,
+          "paired_events": 32,
+          "stable_count": 1,
+          "stable_events": [
+            {
+              "floor": 0,
+              "draw": 4,
+              "delta": {
+                "gp": 0.552661952775671,
+                "seven": 0.9378734281987434,
+                "nonlinear": -0.7653399092308915
+              }
+            }
+          ],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.7147566907197663,
+              "nearer_mean_delta": -0.7606887939795022,
+              "unchanged_mean_delta": -0.41094955926065113,
+              "nearer_contribution": -0.5437074050523991,
+              "unchanged_contribution": -0.11722061223076169,
+              "total": -0.6609280172831609
+            },
+            "seven": {
+              "nearer_fraction": 0.7147566907197663,
+              "nearer_mean_delta": -0.4340849662068557,
+              "unchanged_mean_delta": -0.5955307036788796,
+              "nearer_contribution": -0.3102651339372138,
+              "unchanged_contribution": -0.16987114869534994,
+              "total": -0.4801362826325637
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.7147566907197663,
+              "nearer_mean_delta": 0.03894395831940474,
+              "unchanged_mean_delta": 0.04331289389426243,
+              "nearer_contribution": 0.027835454771906243,
+              "unchanged_contribution": 0.012354713188903051,
+              "total": 0.04019016796080929
+            }
+          }
+        },
+        "3-5": {
+          "complete": false
+        },
+        "5-10": {
+          "complete": false
+        },
+        "10-20": {
+          "complete": true,
+          "paired_events": 32,
+          "stable_count": 0,
+          "stable_events": [],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.5288226160029229,
+              "nearer_mean_delta": -2.6162982197325944,
+              "unchanged_mean_delta": 0.48365722455993426,
+              "nearer_contribution": -1.3835576688027806,
+              "unchanged_contribution": 0.22788834581943668,
+              "total": -1.155669322983344
+            },
+            "seven": {
+              "nearer_fraction": 0.5288226160029229,
+              "nearer_mean_delta": -1.233734934037952,
+              "unchanged_mean_delta": 0.44476862961966845,
+              "nearer_contribution": -0.6524269352721433,
+              "unchanged_contribution": 0.20956491938816024,
+              "total": -0.4428620158839831
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.5288226160029229,
+              "nearer_mean_delta": -1.6336021329732116,
+              "unchanged_mean_delta": 0.05197144966016825,
+              "nearer_contribution": -0.8638857534668485,
+              "unchanged_contribution": 0.024487771693413853,
+              "total": -0.8393979817734346
+            }
+          }
+        }
+      },
+      "phone": {
+        "1-3": {
+          "complete": true,
+          "paired_events": 32,
+          "stable_count": 1,
+          "stable_events": [
+            {
+              "floor": 0,
+              "draw": 7,
+              "delta": {
+                "gp": 0.013995656687104304,
+                "seven": 0.07754290939507648,
+                "nonlinear": -0.0554421176884601
+              }
+            }
+          ],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.6614583333333333,
+              "nearer_mean_delta": -0.2659321841794578,
+              "unchanged_mean_delta": 0.1041780834360712,
+              "nearer_contribution": -0.17590305932703718,
+              "unchanged_contribution": 0.035268621996586605,
+              "total": -0.14063443733045056
+            },
+            "seven": {
+              "nearer_fraction": 0.6614583333333333,
+              "nearer_mean_delta": -0.2756905738259527,
+              "unchanged_mean_delta": -0.0383654136264602,
+              "nearer_contribution": -0.18235782747862492,
+              "unchanged_contribution": -0.01298829107145788,
+              "total": -0.1953461185500828
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.6614583333333333,
+              "nearer_mean_delta": -0.5497431925562672,
+              "unchanged_mean_delta": -0.19181234117675688,
+              "nearer_contribution": -0.36363221590961425,
+              "unchanged_contribution": -0.06493646966921457,
+              "total": -0.4285686855788288
+            }
+          }
+        },
+        "3-5": {
+          "complete": true,
+          "paired_events": 32,
+          "stable_count": 1,
+          "stable_events": [
+            {
+              "floor": 0,
+              "draw": 5,
+              "delta": {
+                "gp": -0.30926428854172094,
+                "seven": -0.32690546885869537,
+                "nonlinear": -0.20208106099057216
+              }
+            }
+          ],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.3958333333333333,
+              "nearer_mean_delta": -0.2333206279147913,
+              "unchanged_mean_delta": -0.11612179335479834,
+              "nearer_contribution": -0.09235608188293822,
+              "unchanged_contribution": -0.070156916818524,
+              "total": -0.1625129987014622
+            },
+            "seven": {
+              "nearer_fraction": 0.3958333333333333,
+              "nearer_mean_delta": -0.3097961400126424,
+              "unchanged_mean_delta": -0.024597223139116525,
+              "nearer_contribution": -0.12262763875500428,
+              "unchanged_contribution": -0.014860822313216233,
+              "total": -0.13748846106822052
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.3958333333333333,
+              "nearer_mean_delta": -0.2328918252917975,
+              "unchanged_mean_delta": -0.10385012165832197,
+              "nearer_contribution": -0.0921863475113365,
+              "unchanged_contribution": -0.06274278183523618,
+              "total": -0.15492912934657269
+            }
+          }
+        },
+        "5-10": {
+          "complete": true,
+          "paired_events": 32,
+          "stable_count": 1,
+          "stable_events": [
+            {
+              "floor": 0,
+              "draw": 5,
+              "delta": {
+                "gp": 0.6114576871068881,
+                "seven": 0.3545970641511492,
+                "nonlinear": -0.33636988636918447
+              }
+            }
+          ],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.47916666666666674,
+              "nearer_mean_delta": -0.8829959068905568,
+              "unchanged_mean_delta": 0.9259652249834849,
+              "nearer_contribution": -0.42310220538505855,
+              "unchanged_contribution": 0.4822735546788983,
+              "total": 0.05917134929383977
+            },
+            "seven": {
+              "nearer_fraction": 0.47916666666666674,
+              "nearer_mean_delta": -0.44285132470125416,
+              "unchanged_mean_delta": 0.6530415329322538,
+              "nearer_contribution": -0.21219959308601766,
+              "unchanged_contribution": 0.34012579840221546,
+              "total": 0.1279262053161978
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.47916666666666674,
+              "nearer_mean_delta": -0.19183500775080273,
+              "unchanged_mean_delta": 0.24687191833909153,
+              "nearer_contribution": -0.09192094121392633,
+              "unchanged_contribution": 0.1285791241349435,
+              "total": 0.03665818292101716
+            }
+          }
+        },
+        "10-20": {
+          "complete": true,
+          "paired_events": 32,
+          "stable_count": 0,
+          "stable_events": [],
+          "models": {
+            "gp": {
+              "nearer_fraction": 0.4921875,
+              "nearer_mean_delta": -1.9464924762689804,
+              "unchanged_mean_delta": 0.12541056094695197,
+              "nearer_contribution": -0.9580392656636387,
+              "unchanged_contribution": 0.06368505048087403,
+              "total": -0.8943542151827647
+            },
+            "seven": {
+              "nearer_fraction": 0.4921875,
+              "nearer_mean_delta": -2.693210605879492,
+              "unchanged_mean_delta": 0.12784492169205466,
+              "nearer_contribution": -1.3255645950813124,
+              "unchanged_contribution": 0.06492124929674649,
+              "total": -1.2606433457845658
+            },
+            "nonlinear": {
+              "nearer_fraction": 0.4921875,
+              "nearer_mean_delta": -1.5642738186951077,
+              "unchanged_mean_delta": 0.19542750210424278,
+              "nearer_contribution": -0.7699160201389983,
+              "unchanged_contribution": 0.09924052841231076,
+              "total": -0.6706754917266875
+            }
+          }
+        }
+      }
+    }
+  }
+}
