@@ -1,0 +1,39 @@
+name: Independently check original B1 R1 ten draws
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-r1-ten-independent.yml']
+permissions: {actions: read, contents: read}
+env: {OPENBLAS_NUM_THREADS: '1'}
+jobs:
+  check:
+    if: github.repository == 'Amanon-666/law' && github.ref == 'refs/heads/research/uji-core-refactor-20261101'
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    permissions: {actions: read, contents: write}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: 'research/uji-core-refactor-20261101'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install numpy==2.3.5
+      - name: Check byte receipts/row identity, compute all prespecified measures; archive even failed cells
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/ten/remaining /tmp/ten/verified; cd /tmp/ten
+          gh api repos/Amanon-666/law/actions/artifacts/13197332579/zip > /tmp/front.zip; echo 'dc5c27b12106f4a7e7327e2f7a0b59d14874d4f783db698caa3beb9a8af7029c  /tmp/front.zip'|sha256sum -c; unzip -q /tmp/front.zip; sha256sum -c SHA256SUMS; mv SHA256SUMS TWO_DRAW_CHECKSUMS
+          for i in $(seq 1 270); do
+            id=$(gh api repos/Amanon-666/law/actions/runs/41563449591/artifacts --jq '.artifacts[]|select(.name=="R1-original-remaining320-rows")|.id'); if test -n "$id"; then break; fi; sleep 15
+          done
+          test -n "$id"; h=$(gh api repos/Amanon-666/law/actions/artifacts/$id --jq .digest|cut -d: -f2); gh api repos/Amanon-666/law/actions/artifacts/$id/zip > /tmp/rest.zip; echo "$h  /tmp/rest.zip"|sha256sum -c; unzip -q /tmp/rest.zip -d remaining; (cd remaining; sha256sum -c SHA256SUMS; test "$(cat EXECUTED_COMMIT)" = 176eaba9d11e7c17fd7dc82aebb8de34644566cf)
+          cp "$GITHUB_WORKSPACE"/research/r1_single_scan/full_draw0/{verify_all.py,report_all.py,finish_pairs.py,TEN_DRAW_PROTOCOL.md} .
+          python verify_all.py rows draw1 remaining evidence.zip WKNN_SOURCE_LOCK.json verified/ten.json
+          python report_all.py verified/ten.json verified
+          printf '%s\n' 'Offline (Python 3 and NumPy only): python verify_all.py rows draw1 remaining evidence.zip WKNN_SOURCE_LOCK.json ten-local.json ; python report_all.py ten-local.json my-report . All input rows, manifest hashes, old-backend reference, masks/anchors metadata and warning records are included. UJI native coordinate U, not m. The ten original support draws cover a single known development building. Incomplete output, if any, is declared by the verifier.' > READ_ME_TEN.txt
+          printf '%s\n' "front zip sha256: dc5c27b12106f4a7e7327e2f7a0b59d14874d4f783db698caa3beb9a8af7029c" "remaining zip sha256: $h" "remaining artifact id: $id" "verified by: $GITHUB_SHA" > verified/PROVENANCE.txt
+          cd "$GITHUB_WORKSPACE"; p=research/r1_single_scan/full_draw0/verified/${{ github.run_id }}-${{ github.run_attempt }}; mkdir -p "$p"; cp /tmp/ten/verified/* "$p"/; git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git add -f "$p"; git commit -m 'Preserve independently calculated original-ten macro and floor results, intervals, failures and costs'; git pull --rebase origin research/uji-core-refactor-20261101; git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
+          cd /tmp/ten; find . -type f ! -name SHA256SUMS -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with: {name: R1-original-ten-independent-pack, path: /tmp/ten, if-no-files-found: error}
