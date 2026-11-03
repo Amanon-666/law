@@ -1,0 +1,36 @@
+name: ReFi R1 high-K frozen artifact offline validation
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-r1-highk-offline-audit.yml']
+permissions: {contents: read, actions: read}
+env: {OPENBLAS_NUM_THREADS: '1', PYTHONUNBUFFERED: '1'}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install numpy==2.3.5
+      - name: Fetch the one previously frozen high-K run and original K5 M-PMC
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/r1vi /tmp/r1old
+          gh api repos/Amanon-666/law/actions/artifacts/13193457399/zip > /tmp/vi.zip
+          echo '8fa3b411517e99079b9742347dc063553fd3d1a4252777112a77572322a4b64d  /tmp/vi.zip' | sha256sum -c
+          gh api repos/Amanon-666/law/actions/artifacts/13141727942/zip > /tmp/old.zip
+          echo '1962c99dd2b87d800d3d1f0afd11990058a0c3cc425b4cf56c52170e767f30e2  /tmp/old.zip' | sha256sum -c
+          unzip -q /tmp/vi.zip -d /tmp/r1vi
+          unzip -q /tmp/old.zip -d /tmp/r1old
+      - name: Independently audit all nine rows, no source fitting or rescoring
+        run: |
+          python -m research.r1_single_scan.verify_highk_bridge /tmp/r1vi /tmp/r1old
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: R1-highK-F0-draw0-numeric-independently-verified
+          path: /tmp/r1vi/INDEPENDENT_BRIDGE_CHECK.json
+          if-no-files-found: warn
