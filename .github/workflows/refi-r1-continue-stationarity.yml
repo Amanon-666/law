@@ -1,0 +1,61 @@
+name: R1 original ten same-objective numerical continuation
+on:
+  push:
+    branches: [research/uji-core-refactor-20261101]
+    paths: ['.github/workflows/refi-r1-continue-stationarity.yml']
+permissions: {actions: read, contents: read}
+env: {OPENBLAS_NUM_THREADS: '1', OMP_NUM_THREADS: '1', MKL_NUM_THREADS: '1', PYTHONUNBUFFERED: '1'}
+jobs:
+  continue-verify:
+    if: github.repository == 'Amanon-666/law' && github.ref == 'refs/heads/research/uji-core-refactor-20261101'
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    permissions: {contents: write, actions: read}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: research/uji-core-refactor-20261101}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Signed primary, source, geometry and canonical input receipts (no fit of a completed event)
+        env: {GH_TOKEN: '${{ github.token }}'}
+        run: |
+          set -euo pipefail
+          src=research/r1_single_scan/full_draw0; python -m py_compile "$src/failed_only.py" "$src/verify_all.py" "$src/family_check.py" "$src/legacy_context.py"
+          python -m pip install packaging numpy==2.3.5 scipy==1.16.3 pandas==2.2.3 pypmc==1.2.6; python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.8.0
+          curl -fsSL --retry 3 --max-time 180 https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip -o /tmp/uji.zip; unzip -q /tmp/uji.zip -d /tmp/uji; d=$(dirname "$(find /tmp/uji -name trainingData.csv|head -1)"); echo "DATA_DIR=$d" >> "$GITHUB_ENV"
+          mkdir -p /tmp/packet/{geometry,continuations}; cd /tmp/packet
+          for i in $(seq 1 220); do
+            id=$(gh api repos/Amanon-666/law/actions/runs/41563781076/artifacts --jq '.artifacts[]|select(.name=="R1-original-ten-independent-pack")|.id'); if test -n "$id"; then break; fi; sleep 15
+          done
+          test -n "$id"; h=$(gh api repos/Amanon-666/law/actions/artifacts/$id --jq .digest|cut -d: -f2); gh api repos/Amanon-666/law/actions/artifacts/$id/zip >/tmp/primary.zip; echo "$h  /tmp/primary.zip" | sha256sum -c; unzip -q /tmp/primary.zip; sha256sum -c SHA256SUMS; mv SHA256SUMS CHECKSUMS_BEFORE_CONTINUATION; mv verified primary-unmodified; mkdir verified
+          gh api repos/Amanon-666/law/actions/artifacts/13198014068/zip >/tmp/georefs.zip; echo '3bb2d245afe92e54e562e0af4c4dba1e827884b2d190b6e9dad515649eae617e  /tmp/georefs.zip'|sha256sum -c; unzip -q /tmp/georefs.zip -d geometry
+          cp "$GITHUB_WORKSPACE"/$src/{failed_only.py,NUMERIC_RESUME.md,legacy_context.py,family_check.py} .; cp "$GITHUB_WORKSPACE"/research/uji_core/round2/replication/05-followup.zip .
+          printf 'Original incomplete pack artifact %s SHA256 %s\n' "$id" "$h" > verified/NUMERICAL_RECEIPT.txt
+      - name: Only missing EB cells; keep all original rows and failure receipts unmodified
+        run: |
+          set -euo pipefail
+          base=/tmp/packet; cd "$GITHUB_WORKSPACE"; find "$base/remaining" -type f -name 'failure_K*.json' -printf '%h\n'|sort -u >/tmp/failed_groups
+          while IFS= read -r group; do
+            python -m research.r1_single_scan.full_draw0.failed_only "$DATA_DIR" "$group" "$base/continuations" || echo "unresolved event in $group, no substitution"
+          done </tmp/failed_groups
+          cd "$base"; python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,shutil
+          fp=lambda p:hashlib.sha256(p.read_bytes()).hexdigest(); records=[]
+          for f in sorted(Path('continuations').glob('draw*/K*.json')):
+            sub=f.parent.name; target=Path('remaining')/sub; k=f.stem[1:]; fail=target/f'failure_K{k}.json'; npz=f.with_suffix('.npz'); r=json.loads(f.read_text()); assert fail.is_file() and fp(fail)==r['original_failure_sha256'] and fp(npz)==r['npz_sha256'] and r['numeric_resume_only'] and not (target/f.name).exists() and not (target/npz.name).exists(); assert any(t['stationary'] for t in r['weight_trials']); w=min([t for t in r['weight_trials'] if t['stationary']],key=lambda t:t['objective']); b=min(t['objective'] for t in r['original_rejected_trials']); assert w['objective']<=b+1e-7 and w['simplex_kkt_residual']<.001 and w['variational_gradient']<.001;shutil.copy2(f,target/f.name);shutil.copy2(npz,target/npz.name);records.append(dict(event=sub,K=int(k),rejected_objective=b,new_objective=w['objective'],weights=w['weights'],kkt=w['simplex_kkt_residual'],grad=w['variational_gradient'],extra_history_seconds=r['extra_H_reconstruction_s'],seconds=r['seconds']))
+          Path('verified/continuation.json').write_text(json.dumps(records,indent=2)+'\n');print('RECOVERIES',records)
+          PY
+          python verify_all.py rows draw1 remaining evidence.zip WKNN_SOURCE_LOCK.json verified/ten.json; python report_all.py verified/ten.json verified; python legacy_context.py verified/ten.json 05-followup.zip verified/legacy.json
+          python geometry/geometry_check.py analyze rows draw1 remaining geometry verified/ten.json verified/geometry.json
+          if python -c "import json; assert json.load(open('verified/ten.json'))['verified']==400"; then python family_check.py . verified/family.json; fi
+          cat > OFFLINE_FINAL.txt <<'TXT'
+          Offline, Python + NumPy: python verify_all.py rows draw1 remaining evidence.zip WKNN_SOURCE_LOCK.json /tmp/ten.json ; python report_all.py /tmp/ten.json /tmp/report ; python geometry/geometry_check.py analyze rows draw1 remaining geometry /tmp/ten.json /tmp/geometry.json ; python legacy_context.py /tmp/ten.json 05-followup.zip /tmp/legacy.json ; python family_check.py . /tmp/family.json . Initial failed fits are preserved in remaining/draw*/failure_*.json and in primary-unmodified/. Fresh files were overlaid ONLY at missing keys and are separately in continuations/, with KKT/objective receipts. CHECKSUMS_BEFORE_CONTINUATION describes the initial layout before moving verified/ to primary-unmodified/. The repository's earlier archives were NOT overwritten. U, not metres; do not mix the two regimes. A study result, not a new deployment model.
+          TXT
+          find . -type f ! -name SHA256SUMS -print0|sort -z|xargs -0 sha256sum >SHA256SUMS
+      - name: Publish only new diagnostics, numerical entries and verified summaries
+        run: |
+          set -euo pipefail
+          p=research/r1_single_scan/full_draw0/final/${{ github.run_id }}-${{ github.run_attempt }}; test ! -e "$p"; mkdir -p "$p"; cp -r /tmp/packet/{verified,continuations} "$p/"; cp /tmp/packet/{OFFLINE_FINAL.txt,SHA256SUMS} "$p/"; git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'; git add -f "$p"; git commit -m 'Preserve final B1 ten-draw decision table, raw-weight stationarity receipts and coverage decomposition'; git pull --rebase origin research/uji-core-refactor-20261101; git push origin HEAD:refs/heads/research/uji-core-refactor-20261101
+      - uses: actions/upload-artifact@v4
+        with: {name: R1-final-original-ten-reproducible, path: /tmp/packet, if-no-files-found: error}
