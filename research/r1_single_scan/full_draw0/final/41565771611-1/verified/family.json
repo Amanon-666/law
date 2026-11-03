@@ -1,0 +1,271 @@
+{
+  "draws": 10,
+  "bootstraps": 16000,
+  "method": "Secondary max absolute standardized centered bootstrap contrast (97.5% within each of two regimes; Bonferroni across regimes). Fixed four floors; common 8-U spatial block and original support-order resamples. Marginal intervals of the within-regime macro average across five pre-existing budgets are also included. No selection, no new-building inference.",
+  "official": {
+    "factor": 3.0139668542729354,
+    "comparisons": {
+      "seven-gp/K1": {
+        "delta_U": -1.9373771802136601,
+        "simultaneous_approx_interval_U": [
+          -3.4345671102839663,
+          -0.44018725014335414
+        ],
+        "individual_95_U": [
+          -2.9027109584885924,
+          -0.9535349953726125
+        ]
+      },
+      "nonlinear-gp/K1": {
+        "delta_U": -1.2575139776154383,
+        "simultaneous_approx_interval_U": [
+          -3.699178605857881,
+          1.1841506506270045
+        ],
+        "individual_95_U": [
+          -2.735373738655147,
+          0.42645306343212946
+        ]
+      },
+      "seven-gp/K3": {
+        "delta_U": -1.888451461505109,
+        "simultaneous_approx_interval_U": [
+          -3.3981348398424376,
+          -0.3787680831677802
+        ],
+        "individual_95_U": [
+          -2.8913957009120486,
+          -0.9336378462996566
+        ]
+      },
+      "nonlinear-gp/K3": {
+        "delta_U": -0.9092503144794803,
+        "simultaneous_approx_interval_U": [
+          -3.1359926041660495,
+          1.3174919752070888
+        ],
+        "individual_95_U": [
+          -2.237076074120014,
+          0.6356576600680424
+        ]
+      },
+      "seven-gp/K5": {
+        "delta_U": -1.7459657393011638,
+        "simultaneous_approx_interval_U": [
+          -3.352556082186398,
+          -0.13937539641592966
+        ],
+        "individual_95_U": [
+          -2.8292884561437166,
+          -0.7414689210410629
+        ]
+      },
+      "nonlinear-gp/K5": {
+        "delta_U": -0.45442181653969604,
+        "simultaneous_approx_interval_U": [
+          -2.3829686122523537,
+          1.4741249791729616
+        ],
+        "individual_95_U": [
+          -1.61694738964649,
+          0.8937457291330061
+        ]
+      },
+      "seven-gp/K10": {
+        "delta_U": -1.4464604280361462,
+        "simultaneous_approx_interval_U": [
+          -2.8844220993324594,
+          -0.008498756739833135
+        ],
+        "individual_95_U": [
+          -2.4492049767682755,
+          -0.5686212707638644
+        ]
+      },
+      "nonlinear-gp/K10": {
+        "delta_U": -0.5579089174422613,
+        "simultaneous_approx_interval_U": [
+          -1.9633555380386698,
+          0.8475377031541471
+        ],
+        "individual_95_U": [
+          -1.4339285312956773,
+          0.39117676052234174
+        ]
+      },
+      "seven-gp/K20": {
+        "delta_U": -0.8449112817544696,
+        "simultaneous_approx_interval_U": [
+          -1.8069024011411208,
+          0.11707983763218155
+        ],
+        "individual_95_U": [
+          -1.4690905523997728,
+          -0.20156295492134851
+        ]
+      },
+      "nonlinear-gp/K20": {
+        "delta_U": -0.26072584198893767,
+        "simultaneous_approx_interval_U": [
+          -1.3250062475541635,
+          0.8035545635762881
+        ],
+        "individual_95_U": [
+          -0.9178698035529879,
+          0.47223759315938046
+        ]
+      }
+    },
+    "equal_K_summary": {
+      "seven": {
+        "delta_average_over_K_U": -1.5726332181621097,
+        "conditional_95_U": [
+          -2.375221153457389,
+          -0.7836376411987545
+        ]
+      },
+      "nonlinear": {
+        "delta_average_over_K_U": -0.6879641736131628,
+        "conditional_95_U": [
+          -1.6715334802442379,
+          0.44295352013359185
+        ]
+      }
+    },
+    "negative_band_count": 4,
+    "positive_band_count": 0
+  },
+  "phone": {
+    "factor": 2.877444160198584,
+    "comparisons": {
+      "seven-gp/K1": {
+        "delta_U": 0.6787283395253716,
+        "simultaneous_approx_interval_U": [
+          -1.6473157587599816,
+          3.0047724378107246
+        ],
+        "individual_95_U": [
+          -0.93605951564854,
+          2.2416654040714215
+        ]
+      },
+      "nonlinear-gp/K1": {
+        "delta_U": -0.565376922270959,
+        "simultaneous_approx_interval_U": [
+          -2.795387018375105,
+          1.664633173833187
+        ],
+        "individual_95_U": [
+          -2.110893390403551,
+          0.9281838239669579
+        ]
+      },
+      "seven-gp/K3": {
+        "delta_U": 0.6292476202368883,
+        "simultaneous_approx_interval_U": [
+          -1.364758285376174,
+          2.6232535258499503
+        ],
+        "individual_95_U": [
+          -0.7354152570124773,
+          1.9726824627175772
+        ]
+      },
+      "nonlinear-gp/K3": {
+        "delta_U": -0.7735144230938825,
+        "simultaneous_approx_interval_U": [
+          -2.647538763274892,
+          1.1005099170871273
+        ],
+        "individual_95_U": [
+          -2.0336561184454722,
+          0.5105287327653263
+        ]
+      },
+      "seven-gp/K5": {
+        "delta_U": 0.6581136631613832,
+        "simultaneous_approx_interval_U": [
+          -1.1435035669043687,
+          2.459730893227135
+        ],
+        "individual_95_U": [
+          -0.5650582214335725,
+          1.875585870415478
+        ]
+      },
+      "nonlinear-gp/K5": {
+        "delta_U": -0.7431654983254243,
+        "simultaneous_approx_interval_U": [
+          -2.5129093304292844,
+          1.0265783337784358
+        ],
+        "individual_95_U": [
+          -1.9123650702813253,
+          0.4975107042814226
+        ]
+      },
+      "seven-gp/K10": {
+        "delta_U": 0.9324158470600303,
+        "simultaneous_approx_interval_U": [
+          -0.5878687921181756,
+          2.4527004862382364
+        ],
+        "individual_95_U": [
+          -0.118661954887532,
+          1.9494327794368396
+        ]
+      },
+      "nonlinear-gp/K10": {
+        "delta_U": -0.6014593604583208,
+        "simultaneous_approx_interval_U": [
+          -2.1524465790774543,
+          0.9495278581608128
+        ],
+        "individual_95_U": [
+          -1.6484699488365044,
+          0.4833354314174816
+        ]
+      },
+      "seven-gp/K20": {
+        "delta_U": 0.5511553873414998,
+        "simultaneous_approx_interval_U": [
+          -0.4771684015741757,
+          1.5794791762571754
+        ],
+        "individual_95_U": [
+          -0.16712381485561892,
+          1.226875402517566
+        ]
+      },
+      "nonlinear-gp/K20": {
+        "delta_U": -0.3727567479490662,
+        "simultaneous_approx_interval_U": [
+          -1.605486095079237,
+          0.8599725991811046
+        ],
+        "individual_95_U": [
+          -1.234714561062995,
+          0.46511161622163955
+        ]
+      }
+    },
+    "equal_K_summary": {
+      "seven": {
+        "delta_average_over_K_U": 0.6899321714650346,
+        "conditional_95_U": [
+          -0.4075378509368405,
+          1.7574189710688053
+        ]
+      },
+      "nonlinear": {
+        "delta_average_over_K_U": -0.6112545904195306,
+        "conditional_95_U": [
+          -1.6490035704439485,
+          0.4784101731954605
+        ]
+      }
+    },
+    "negative_band_count": 0,
+    "positive_band_count": 0
+  }
+}
