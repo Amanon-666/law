@@ -1,0 +1,194 @@
+{
+  "weights": [
+    1.0,
+    8.898340313672279e-26,
+    1.8993599304616284e-17
+  ],
+  "weight_trials": [
+    {
+      "start": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "weights": [
+        1.0,
+        8.898340313672279e-26,
+        1.8993599304616284e-17
+      ],
+      "objective": 3.559142727875109,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 14,
+      "simplex_kkt_residual": 0.0,
+      "variational_gradient": 3.937317498104928e-07,
+      "stationary": true
+    },
+    {
+      "start": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "weights": [
+        0.9999999770290403,
+        1.8655368968707108e-08,
+        4.315590598260541e-09
+      ],
+      "objective": 3.5591427343933697,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 32,
+      "simplex_kkt_residual": 6.333085389442772e-09,
+      "variational_gradient": 6.173324584449538e-07,
+      "stationary": true
+    },
+    {
+      "start": [
+        0.1,
+        0.8,
+        0.1
+      ],
+      "weights": [
+        0.9999999836124416,
+        1.5913911167992422e-08,
+        4.736471356902151e-10
+      ],
+      "objective": 3.559142731117571,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 33,
+      "simplex_kkt_residual": 3.0868301248432317e-09,
+      "variational_gradient": 6.877121181314734e-07,
+      "stationary": true
+    },
+    {
+      "start": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "weights": [
+        0.999999997981273,
+        1.1521113637151072e-10,
+        1.9035157577319595e-09
+      ],
+      "objective": 3.559142729168572,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 34,
+      "simplex_kkt_residual": 1.3938747933650575e-09,
+      "variational_gradient": 3.58979359804841e-07,
+      "stationary": true
+    }
+  ],
+  "grid": 6688,
+  "grid_hash": "574940370a69016da80124f68355872636ca7d2a4211ec50b9a5106063510d12",
+  "ap_count": 199,
+  "quality": {
+    "gp": {
+      "total": 199,
+      "success": 199,
+      "gradmax": 1.6422270610050305e-07,
+      "maxnit": 14,
+      "gt1e3": 0,
+      "messages": [
+        "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      ]
+    },
+    "seven": {
+      "total": 199,
+      "success": 199,
+      "gradmax": 1.2987746034198722e-07,
+      "maxnit": 13,
+      "gt1e3": 0,
+      "messages": [
+        "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      ]
+    },
+    "nonlinear": {
+      "total": 199,
+      "success": 199,
+      "gradmax": 2.801273175645491e-07,
+      "maxnit": 14,
+      "gt1e3": 0,
+      "messages": [
+        "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      ]
+    }
+  },
+  "metrics": {
+    "gp": {
+      "mde": 15.309235016220532,
+      "p90": 25.87905506899167
+    },
+    "gp_w1": {
+      "mde": 14.821954297048226,
+      "p90": 22.62849460118444
+    },
+    "gp_w3": {
+      "mde": 14.833735922275032,
+      "p90": 25.26032971956117
+    },
+    "gp_w7": {
+      "mde": 14.803054672148344,
+      "p90": 25.425274272261873
+    },
+    "gp_w15": {
+      "mde": 14.645944104625352,
+      "p90": 25.11243889759873
+    },
+    "seven": {
+      "mde": 15.297780973421107,
+      "p90": 24.518385945987998
+    },
+    "seven_w1": {
+      "mde": 14.720225621559344,
+      "p90": 23.50565512564787
+    },
+    "seven_w3": {
+      "mde": 14.546179080856577,
+      "p90": 23.47335229724185
+    },
+    "seven_w7": {
+      "mde": 14.745461600817897,
+      "p90": 23.9576577675864
+    },
+    "seven_w15": {
+      "mde": 14.433601256761749,
+      "p90": 23.27749541758957
+    },
+    "nonlinear": {
+      "mde": 14.925149917443736,
+      "p90": 24.56281262601387
+    },
+    "nonlinear_w1": {
+      "mde": 14.022415771600286,
+      "p90": 21.945205936163653
+    },
+    "nonlinear_w3": {
+      "mde": 14.210226392253343,
+      "p90": 22.195630810821353
+    },
+    "nonlinear_w7": {
+      "mde": 14.050124599412268,
+      "p90": 22.503503054756255
+    },
+    "nonlinear_w15": {
+      "mde": 14.126987774927722,
+      "p90": 21.87444821951242
+    }
+  },
+  "K": 5,
+  "seconds": 44.374245986000005,
+  "archived_raw": {
+    "fixed_tobit": 13.728586765774773,
+    "tuned_tobit": 12.669848277656923,
+    "empirical": 12.633471983075738,
+    "strong_wknn": 26.78405337786457
+  },
+  "npz_sha256": "e17515e676107dbc66258cb157c1ec46a184ac69f5f5b02a230bab31bd004a3c"
+}

@@ -1,0 +1,195 @@
+{
+  "weights": [
+    0.9999999937600561,
+    6.239942990501472e-09,
+    9.675923041516964e-16
+  ],
+  "weight_trials": [
+    {
+      "start": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "weights": [
+        0.9999996475133787,
+        1.0097658216389044e-09,
+        3.5147685546445463e-07
+      ],
+      "objective": 2.472317504709044,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 14,
+      "simplex_kkt_residual": 2.3415480265853716e-07,
+      "variational_gradient": 9.984858080364784e-07,
+      "stationary": true
+    },
+    {
+      "start": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "weights": [
+        0.999999988175165,
+        1.058994968694325e-08,
+        1.2348851998569418e-09
+      ],
+      "objective": 2.472317274221623,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 33,
+      "simplex_kkt_residual": 4.051924684667085e-09,
+      "variational_gradient": 7.740482293001547e-07,
+      "stationary": true
+    },
+    {
+      "start": [
+        0.1,
+        0.8,
+        0.1
+      ],
+      "weights": [
+        0.9999999937600561,
+        6.239942990501472e-09,
+        9.675923041516964e-16
+      ],
+      "objective": 2.472317271982786,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 38,
+      "simplex_kkt_residual": 1.9034282483509912e-09,
+      "variational_gradient": 7.847937516392706e-07,
+      "stationary": true
+    },
+    {
+      "start": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "weights": [
+        0.9999999949837017,
+        3.639863025890633e-10,
+        4.652311791764926e-09
+      ],
+      "objective": 2.472317273497625,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 31,
+      "simplex_kkt_residual": 3.206344023620744e-09,
+      "variational_gradient": 7.868801819581502e-07,
+      "stationary": true
+    }
+  ],
+  "grid": 6536,
+  "grid_hash": "4ef2b25ff0d1c8fa186acc9e0da78fb7ac79b13420142392de8da0c8ec05651b",
+  "ap_count": 206,
+  "quality": {
+    "gp": {
+      "total": 206,
+      "success": 206,
+      "gradmax": 4.747303810059833e-07,
+      "maxnit": 14,
+      "gt1e3": 0,
+      "messages": [
+        "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      ]
+    },
+    "seven": {
+      "total": 206,
+      "success": 206,
+      "gradmax": 2.056659191840282e-07,
+      "maxnit": 16,
+      "gt1e3": 0,
+      "messages": [
+        "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      ]
+    },
+    "nonlinear": {
+      "total": 206,
+      "success": 206,
+      "gradmax": 1.1481901962540064e-07,
+      "maxnit": 14,
+      "gt1e3": 0,
+      "messages": [
+        "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      ]
+    }
+  },
+  "metrics": {
+    "gp": {
+      "mde": 19.057190645347024,
+      "p90": 62.21908152672267
+    },
+    "gp_w1": {
+      "mde": 23.401024412884873,
+      "p90": 69.66041107449058
+    },
+    "gp_w3": {
+      "mde": 23.38166953835503,
+      "p90": 69.66042418919557
+    },
+    "gp_w7": {
+      "mde": 22.663171570545465,
+      "p90": 69.20344098425448
+    },
+    "gp_w15": {
+      "mde": 22.65916304557299,
+      "p90": 68.94340667902517
+    },
+    "seven": {
+      "mde": 12.494032610739723,
+      "p90": 29.271376644801006
+    },
+    "seven_w1": {
+      "mde": 18.95081670688083,
+      "p90": 37.815148827195465
+    },
+    "seven_w3": {
+      "mde": 18.992285433042145,
+      "p90": 37.75869384721211
+    },
+    "seven_w7": {
+      "mde": 18.910260379412527,
+      "p90": 37.97813103546668
+    },
+    "seven_w15": {
+      "mde": 18.385844663647788,
+      "p90": 38.027528619207146
+    },
+    "nonlinear": {
+      "mde": 19.146053897573104,
+      "p90": 42.25567436638489
+    },
+    "nonlinear_w1": {
+      "mde": 24.19458855834575,
+      "p90": 79.24093053963392
+    },
+    "nonlinear_w3": {
+      "mde": 22.813869447813396,
+      "p90": 51.04350824451775
+    },
+    "nonlinear_w7": {
+      "mde": 23.22342563676986,
+      "p90": 66.48268800138702
+    },
+    "nonlinear_w15": {
+      "mde": 22.606131192906307,
+      "p90": 56.15940891562586
+    }
+  },
+  "K": 5,
+  "seconds": 67.78152880300001,
+  "archived_raw": {
+    "raw_fixed3": 20.186433222272314,
+    "raw_tuned": 21.407987602209584,
+    "prototype_fixed3": 14.765843967145852,
+    "prototype_tuned": 16.903509402798736,
+    "joint_tuned": 16.903509402798736
+  },
+  "npz_sha256": "3d6f3e41e3f8d2a4da328a145422a0e52abce31718cf888b834aaf93a9c8b735"
+}
