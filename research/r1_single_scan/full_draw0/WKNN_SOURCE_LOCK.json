@@ -1,0 +1,6 @@
+{
+  "purpose":"Freeze source-only WKNN choices; do not retune at any B1 budget or protocol.",
+  "study":"41561930039", "source_artifacts":{"B0F1":"27c292d8113619d3f85cbda7a32a5256e7d10817540cb38818ec1a1153fbc860","B2F2":"620c2c45e288957e8c90b396efbd1626ddf2eb2a38188644956ee7251a60aa21"},
+  "neighbor_grid":[1,3,7,15],"equal_source_floor_MDE":{"gp":[7.944587284101724,8.208601869646738,8.175455026529388,8.094098102555469],"seven":[9.142955145089374,8.911646109173295,8.892366286752642,8.906769666501617],"nonlinear":[7.553280701490445,7.196446060729384,7.222741560851286,7.38230333711493]},"selected":{"gp":1,"seven":7,"nonlinear":3},
+  "diagnostics":"Each source task has five single-scan supports and 24 other query coordinates. B2F2 nonlinear has one SciPy abnormal termination among 193 posterior AP solves. Largest projected gradient for that arm across all APs was 2.64e-7 or less. Preserve the warning; not a guarantee of global optimization. No B1 outputs involved."
+}
