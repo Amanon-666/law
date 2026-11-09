@@ -1,0 +1,41 @@
+{
+  "complete": true,
+  "created": "2026-11-05T05:05:42.936142+00:00",
+  "seconds": 129.68533511832356,
+  "fits": {
+    "1": {
+      "rho": [
+        0.0,
+        0.0
+      ],
+      "nll": 5.125230728950353,
+      "iterations": 1,
+      "evaluations": 2,
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "projected_gradient": 0.0
+    },
+    "2": {
+      "rho": [
+        0.0,
+        0.0
+      ],
+      "nll": 5.125230728950353,
+      "iterations": 1,
+      "evaluations": 2,
+      "success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "projected_gradient": 0.0
+    }
+  },
+  "means": {
+    "GP": 10.386744753509888,
+    "uniform": 8.628520227728051,
+    "spatial": 8.628520227728051,
+    "WKNN": 13.642318463145479
+  },
+  "gate": false,
+  "stationary": true,
+  "events": 2,
+  "new_environment_test": false
+}

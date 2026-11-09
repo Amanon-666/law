@@ -1,0 +1,1961 @@
+{
+  "snapshot_date": "2026-11-09",
+  "scope": "static review snapshot, not runnable release or proof of server-current identity",
+  "entrypoints": [
+    "tabicl_multitask_full_trial",
+    "tabicl_multitask_transfer",
+    "tabicl_recomposed_trial",
+    "coupled_scan_transport_trial",
+    "common_update_transport_trial",
+    "prior_mean_transport_trial",
+    "predictive_context_trial",
+    "history_position_ranking_trial",
+    "source_position_ranker_trial",
+    "recomposition_trial",
+    "recomposition_corpus",
+    "recomposition_multibudget_natural",
+    "history_feature_gp_trial",
+    "acquisition_retention_trial",
+    "acquisition_retention_transfer",
+    "observed_recomposition_trial",
+    "conditional_relation_trial",
+    "marginal_relation_gpu_trial"
+  ],
+  "local_imports": {
+    "fields": [],
+    "uji": [
+      "fields"
+    ],
+    "observations": [],
+    "adaptation": [
+      "fields",
+      "observations"
+    ],
+    "sampling": [
+      "observations"
+    ],
+    "posterior": [
+      "observations",
+      "sampling"
+    ],
+    "predict": [
+      "adaptation",
+      "fields",
+      "observations",
+      "posterior"
+    ],
+    "recomposition": [
+      "fields",
+      "observations",
+      "posterior"
+    ],
+    "conditional_shape": [
+      "fields",
+      "observations",
+      "posterior",
+      "recomposition"
+    ],
+    "support_recomposition": [
+      "conditional_shape",
+      "observations",
+      "posterior",
+      "recomposition"
+    ],
+    "episode_queries": [
+      "uji"
+    ],
+    "episodic_tasks": [
+      "episode_queries",
+      "predict",
+      "support_recomposition",
+      "uji"
+    ],
+    "acquisition_tasks": [
+      "episodic_tasks",
+      "uji"
+    ],
+    "tabicl_history": [],
+    "tabicl_history_learning": [
+      "tabicl_history"
+    ],
+    "check_recomposition": [
+      "fields",
+      "observations",
+      "posterior",
+      "recomposition"
+    ],
+    "recomposition_trial": [
+      "check_recomposition",
+      "recomposition",
+      "uji"
+    ],
+    "check_tabicl_history_learning": [
+      "acquisition_tasks",
+      "recomposition_trial",
+      "tabicl_history",
+      "tabicl_history_learning"
+    ],
+    "source_episode_catalog": [
+      "acquisition_tasks",
+      "recomposition_trial"
+    ],
+    "tabicl_multitask_full_trial": [
+      "acquisition_tasks",
+      "check_tabicl_history_learning",
+      "recomposition_trial",
+      "source_episode_catalog",
+      "tabicl_history",
+      "tabicl_history_learning"
+    ],
+    "tabicl_context_matching": [
+      "tabicl_history",
+      "tabicl_history_learning"
+    ],
+    "check_tabicl_context_matching": [
+      "recomposition_trial",
+      "tabicl_context_matching",
+      "tabicl_history"
+    ],
+    "tabicl_context_matching_trial": [
+      "acquisition_tasks",
+      "check_tabicl_context_matching",
+      "check_tabicl_history_learning",
+      "recomposition_trial",
+      "tabicl_context_matching",
+      "tabicl_history"
+    ],
+    "tabicl_multitask_transfer": [
+      "recomposition_trial",
+      "tabicl_context_matching_trial",
+      "tabicl_history",
+      "tabicl_history_learning"
+    ],
+    "paired_acquisition_tasks": [
+      "recomposition_trial",
+      "source_episode_catalog"
+    ],
+    "tabicl_recomposed_tasks": [
+      "paired_acquisition_tasks"
+    ],
+    "tabicl_recomposed_trial": [
+      "acquisition_tasks",
+      "check_tabicl_history_learning",
+      "paired_acquisition_tasks",
+      "recomposition_trial",
+      "source_episode_catalog",
+      "tabicl_history",
+      "tabicl_history_learning",
+      "tabicl_multitask_full_trial",
+      "tabicl_recomposed_tasks",
+      "uji"
+    ],
+    "recomposition_corpus": [
+      "recomposition",
+      "recomposition_trial",
+      "uji"
+    ],
+    "recomposition_predict": [
+      "observations",
+      "posterior",
+      "predict",
+      "recomposition"
+    ],
+    "recomposition_multibudget_natural": [
+      "adaptation",
+      "fields",
+      "recomposition",
+      "recomposition_corpus",
+      "recomposition_predict",
+      "recomposition_trial",
+      "uji"
+    ],
+    "conditional_budgets": [
+      "recomposition_multibudget_natural",
+      "support_recomposition"
+    ],
+    "source_context_replay": [
+      "episodic_tasks",
+      "predict",
+      "recomposition",
+      "recomposition_trial",
+      "support_recomposition",
+      "uji"
+    ],
+    "conditional_budget_trial": [
+      "conditional_budgets",
+      "episode_queries",
+      "episodic_tasks",
+      "recomposition",
+      "recomposition_multibudget_natural",
+      "recomposition_trial",
+      "source_context_replay",
+      "support_recomposition",
+      "uji"
+    ],
+    "scalar_support": [
+      "observations",
+      "posterior"
+    ],
+    "coupled_scan_transport": [
+      "fields",
+      "scalar_support",
+      "uji"
+    ],
+    "coupled_scan_transport_trial": [
+      "conditional_budget_trial",
+      "coupled_scan_transport",
+      "episodic_tasks",
+      "recomposition_trial",
+      "tabicl_history",
+      "uji"
+    ],
+    "common_update_transport": [
+      "coupled_scan_transport",
+      "fields",
+      "observations",
+      "uji"
+    ],
+    "common_update_transport_trial": [
+      "common_update_transport",
+      "conditional_budget_trial",
+      "episodic_tasks",
+      "recomposition_trial",
+      "tabicl_history",
+      "uji"
+    ],
+    "acquisition_offset": [
+      "observations",
+      "posterior",
+      "scalar_support"
+    ],
+    "acquisition_bank": [
+      "acquisition_offset",
+      "episodic_tasks",
+      "recomposition"
+    ],
+    "acquisition_bank_trial": [
+      "acquisition_bank",
+      "acquisition_tasks",
+      "conditional_budget_trial",
+      "episodic_tasks",
+      "fields",
+      "recomposition",
+      "recomposition_multibudget_natural",
+      "recomposition_trial"
+    ],
+    "location_decision": [],
+    "scalar_gp_adaptation": [
+      "observations"
+    ],
+    "acquisition_bank_transfer": [
+      "acquisition_bank",
+      "acquisition_bank_trial",
+      "acquisition_tasks",
+      "adaptation",
+      "conditional_budget_trial",
+      "episodic_tasks",
+      "location_decision",
+      "observations",
+      "recomposition",
+      "recomposition_multibudget_natural",
+      "recomposition_trial",
+      "scalar_gp_adaptation",
+      "scalar_support",
+      "tabicl_history"
+    ],
+    "common_transport_pairing_trial": [
+      "common_update_transport",
+      "common_update_transport_trial",
+      "conditional_budget_trial",
+      "episodic_tasks",
+      "recomposition_trial",
+      "tabicl_history",
+      "uji"
+    ],
+    "prior_mean_transport": [
+      "common_update_transport",
+      "coupled_scan_transport",
+      "fields",
+      "observations",
+      "scalar_support",
+      "uji"
+    ],
+    "target_role_transport_trial": [
+      "common_transport_pairing_trial",
+      "common_update_transport",
+      "common_update_transport_trial",
+      "conditional_budget_trial",
+      "episodic_tasks",
+      "recomposition_trial",
+      "tabicl_history",
+      "uji"
+    ],
+    "prior_mean_transport_trial": [
+      "acquisition_bank",
+      "acquisition_bank_transfer",
+      "common_transport_pairing_trial",
+      "common_update_transport_trial",
+      "conditional_budget_trial",
+      "episodic_tasks",
+      "observations",
+      "prior_mean_transport",
+      "recomposition",
+      "recomposition_trial",
+      "scalar_support",
+      "tabicl_history",
+      "target_role_transport_trial"
+    ],
+    "predictive_scan_context": [
+      "acquisition_bank",
+      "observations",
+      "recomposition",
+      "scalar_support",
+      "uji"
+    ],
+    "predictive_context_trial": [
+      "acquisition_bank_transfer",
+      "common_update_transport",
+      "common_update_transport_trial",
+      "conditional_budget_trial",
+      "episodic_tasks",
+      "observations",
+      "predictive_scan_context",
+      "prior_mean_transport_trial",
+      "recomposition_trial",
+      "tabicl_history",
+      "uji"
+    ],
+    "history_ratio_correction": [],
+    "history_position_ranking": [
+      "history_ratio_correction",
+      "observations"
+    ],
+    "history_position_ranking_trial": [
+      "acquisition_bank_transfer",
+      "common_update_transport_trial",
+      "history_position_ranking",
+      "observations",
+      "prior_mean_transport_trial",
+      "recomposition_trial"
+    ],
+    "source_gp_boundary": [
+      "scalar_gp_adaptation"
+    ],
+    "tabicl_observation_features": [
+      "uji"
+    ],
+    "tabicl_adaptation_examples": [
+      "acquisition_tasks",
+      "source_episode_catalog",
+      "tabicl_observation_features"
+    ],
+    "source_position_ranker": [
+      "history_position_ranking",
+      "history_ratio_correction",
+      "observations",
+      "tabicl_adaptation_examples"
+    ],
+    "source_position_ranker_trial": [
+      "acquisition_bank",
+      "acquisition_bank_transfer",
+      "common_update_transport_trial",
+      "conditional_budget_trial",
+      "episodic_tasks",
+      "history_position_ranking",
+      "observations",
+      "predictive_scan_context",
+      "prior_mean_transport_trial",
+      "recomposition",
+      "recomposition_trial",
+      "source_gp_boundary",
+      "source_position_ranker"
+    ],
+    "history_feature_gp": [],
+    "tabicl_history_features": [
+      "tabicl_history",
+      "tabicl_history_learning"
+    ],
+    "history_feature_cache": [
+      "recomposition_trial",
+      "source_episode_catalog",
+      "tabicl_history",
+      "tabicl_history_features"
+    ],
+    "history_feature_gp_trial": [
+      "history_feature_cache",
+      "history_feature_gp",
+      "recomposition_trial",
+      "source_episode_catalog",
+      "tabicl_history",
+      "tabicl_multitask_full_trial"
+    ],
+    "fingerprint_change": [
+      "fields",
+      "observations",
+      "recomposition"
+    ],
+    "fingerprint_posterior": [
+      "observations",
+      "posterior"
+    ],
+    "acquisition_transfer": [
+      "fields",
+      "fingerprint_change",
+      "fingerprint_posterior",
+      "observations"
+    ],
+    "conditional_history_field": [
+      "observations"
+    ],
+    "conditional_field_objective": [
+      "observations"
+    ],
+    "neural_history_operator": [
+      "conditional_field_objective",
+      "conditional_history_field",
+      "fields",
+      "fingerprint_change",
+      "observations",
+      "recomposition",
+      "uji"
+    ],
+    "module_evidence": [],
+    "joint_history_prior": [
+      "fields",
+      "module_evidence",
+      "recomposition"
+    ],
+    "neighbor_recomposition": [
+      "fields",
+      "observations",
+      "posterior",
+      "recomposition"
+    ],
+    "neighbor_stream": [
+      "neighbor_recomposition",
+      "uji"
+    ],
+    "check_neighbor_recomposition": [
+      "fields",
+      "neighbor_recomposition",
+      "observations",
+      "posterior",
+      "recomposition",
+      "recomposition_predict"
+    ],
+    "neighbor_source_integration": [
+      "check_neighbor_recomposition",
+      "episodic_tasks",
+      "neighbor_recomposition",
+      "neighbor_stream",
+      "recomposition_trial",
+      "source_context_replay",
+      "uji"
+    ],
+    "neighbor_gpu_check": [
+      "episodic_tasks",
+      "neighbor_recomposition",
+      "neighbor_source_integration",
+      "neighbor_stream",
+      "recomposition_trial",
+      "source_context_replay",
+      "uji"
+    ],
+    "check_joint_history_prior": [
+      "fields",
+      "joint_history_prior",
+      "neighbor_gpu_check",
+      "posterior",
+      "recomposition",
+      "recomposition_predict",
+      "recomposition_trial"
+    ],
+    "neighbor_learning_trial": [
+      "adaptation",
+      "conditional_budget_trial",
+      "episodic_tasks",
+      "neighbor_gpu_check",
+      "neighbor_recomposition",
+      "neighbor_stream",
+      "recomposition_trial",
+      "source_context_replay",
+      "uji"
+    ],
+    "fingerprint_change_trial": [
+      "check_joint_history_prior",
+      "fields",
+      "fingerprint_change",
+      "neighbor_gpu_check",
+      "neighbor_learning_trial",
+      "neighbor_stream",
+      "recomposition_trial",
+      "source_context_replay",
+      "uji"
+    ],
+    "fingerprint_change_continue": [
+      "fingerprint_change",
+      "fingerprint_change_trial",
+      "fingerprint_posterior",
+      "neighbor_gpu_check",
+      "neighbor_learning_trial",
+      "neighbor_stream",
+      "recomposition_trial",
+      "uji"
+    ],
+    "neural_history_trial": [
+      "conditional_budget_trial",
+      "conditional_history_field",
+      "episodic_tasks",
+      "fingerprint_change_continue",
+      "fingerprint_posterior",
+      "location_decision",
+      "neighbor_gpu_check",
+      "neighbor_stream",
+      "neural_history_operator",
+      "recomposition_trial",
+      "uji"
+    ],
+    "acquisition_retention_trial": [
+      "acquisition_tasks",
+      "acquisition_transfer",
+      "conditional_budget_trial",
+      "conditional_history_field",
+      "fields",
+      "fingerprint_posterior",
+      "neural_history_trial",
+      "recomposition_multibudget_natural",
+      "recomposition_trial",
+      "uji"
+    ],
+    "acquisition_retention_transfer": [
+      "acquisition_retention_trial",
+      "acquisition_tasks",
+      "acquisition_transfer",
+      "conditional_budget_trial",
+      "fields",
+      "fingerprint_posterior",
+      "recomposition_multibudget_natural",
+      "recomposition_trial"
+    ],
+    "anchored_barycenter": [],
+    "history_fit": [
+      "adaptation",
+      "fields",
+      "observations",
+      "uji"
+    ],
+    "building_source_tasks": [
+      "paired_acquisition_tasks",
+      "source_episode_catalog"
+    ],
+    "contrast_source_operator": [
+      "neural_history_operator"
+    ],
+    "paired_assets": [
+      "episodic_tasks",
+      "fields",
+      "history_fit",
+      "paired_acquisition_tasks",
+      "recomposition_trial",
+      "source_episode_catalog",
+      "uji"
+    ],
+    "building_source_assets": [
+      "building_source_tasks",
+      "contrast_source_operator",
+      "episodic_tasks",
+      "fields",
+      "history_fit",
+      "paired_acquisition_tasks",
+      "paired_assets",
+      "predict",
+      "recomposition_trial",
+      "source_episode_catalog",
+      "uji"
+    ],
+    "anchored_barycenter_assets": [
+      "anchored_barycenter",
+      "building_source_assets",
+      "fields",
+      "recomposition_trial"
+    ],
+    "observed_history": [
+      "episodic_tasks",
+      "fields",
+      "history_fit",
+      "uji"
+    ],
+    "recomposition_adaptation": [
+      "adaptation",
+      "observations",
+      "recomposition"
+    ],
+    "recomposition_coupled": [
+      "observations",
+      "posterior",
+      "recomposition",
+      "recomposition_adaptation"
+    ],
+    "observed_recomposition": [
+      "observed_history",
+      "recomposition",
+      "recomposition_adaptation",
+      "recomposition_coupled"
+    ],
+    "operator_proposals": [
+      "observations",
+      "posterior"
+    ],
+    "check_recomposition_adaptation": [
+      "fields",
+      "observations",
+      "posterior",
+      "recomposition",
+      "recomposition_adaptation",
+      "recomposition_trial"
+    ],
+    "recomposition_coupled_trial": [
+      "building_source_assets",
+      "check_recomposition_adaptation",
+      "episodic_tasks",
+      "fields",
+      "paired_assets",
+      "recomposition",
+      "recomposition_adaptation",
+      "recomposition_coupled",
+      "recomposition_trial",
+      "uji"
+    ],
+    "source_environment_validation": [
+      "building_source_tasks",
+      "paired_acquisition_tasks",
+      "source_episode_catalog"
+    ],
+    "refi_source_selection_trial": [
+      "building_source_assets",
+      "episodic_tasks",
+      "history_fit",
+      "neural_history_trial",
+      "paired_assets",
+      "recomposition",
+      "recomposition_coupled",
+      "recomposition_coupled_trial",
+      "recomposition_trial",
+      "source_environment_validation",
+      "source_episode_catalog",
+      "uji"
+    ],
+    "refi_source_selection_numerical": [
+      "operator_proposals",
+      "paired_assets",
+      "recomposition",
+      "recomposition_adaptation",
+      "recomposition_coupled_trial",
+      "recomposition_multibudget_natural",
+      "recomposition_trial",
+      "refi_source_selection_trial",
+      "source_environment_validation",
+      "uji"
+    ],
+    "observed_recomposition_trial": [
+      "anchored_barycenter_assets",
+      "building_source_assets",
+      "fields",
+      "neural_history_trial",
+      "observed_recomposition",
+      "operator_proposals",
+      "paired_assets",
+      "recomposition",
+      "recomposition_adaptation",
+      "recomposition_coupled",
+      "recomposition_coupled_trial",
+      "recomposition_predict",
+      "recomposition_trial",
+      "refi_source_selection_numerical"
+    ],
+    "marginal_relation": [],
+    "conditional_relation": [
+      "marginal_relation"
+    ],
+    "conditional_relation_trial": [
+      "acquisition_bank_transfer",
+      "common_update_transport_trial",
+      "conditional_relation",
+      "marginal_relation",
+      "observations",
+      "prior_mean_transport_trial",
+      "recomposition_trial"
+    ],
+    "marginal_relation_gpu": [
+      "marginal_relation"
+    ],
+    "marginal_relation_gpu_trial": [
+      "acquisition_bank_transfer",
+      "common_update_transport_trial",
+      "marginal_relation",
+      "marginal_relation_gpu",
+      "observations",
+      "prior_mean_transport_trial",
+      "recomposition_trial"
+    ]
+  },
+  "external_import_roots": [
+    "argparse",
+    "ast",
+    "collections",
+    "contextlib",
+    "copy",
+    "csv",
+    "datetime",
+    "functools",
+    "gc",
+    "hashlib",
+    "importlib",
+    "itertools",
+    "json",
+    "math",
+    "numpy",
+    "os",
+    "pathlib",
+    "public_corpus",
+    "pypmc",
+    "random",
+    "resource",
+    "scipy",
+    "signal",
+    "sklearn",
+    "socket",
+    "sys",
+    "tabicl",
+    "time",
+    "torch",
+    "traceback",
+    "unittest",
+    "xgboost"
+  ],
+  "files": {
+    "src/acquisition_bank.py": {
+      "sha256": "7354395b59134bdb7ee468307840af5b6ea5fc91f607d4841fe5edd99dfc8e82",
+      "bytes": 4663,
+      "origin": "ReFi-UJI-Core-20261031-recovered/acquisition_bank.py"
+    },
+    "src/acquisition_bank_transfer.py": {
+      "sha256": "f861c4f7b77c7f84276013a401520823e0dc8f901620c3d8f8738ee480f3c4f9",
+      "bytes": 20166,
+      "origin": "ReFi-UJI-Core-20261031-recovered/acquisition_bank_transfer.py"
+    },
+    "src/acquisition_bank_trial.py": {
+      "sha256": "00e75d4bcce56bfb4ddb7b9c034ffeb26dd3dadb67288d79869282f87e14f0ef",
+      "bytes": 11168,
+      "origin": "ReFi-UJI-Core-20261031-recovered/acquisition_bank_trial.py"
+    },
+    "src/acquisition_offset.py": {
+      "sha256": "c8bd9ce841743a4e303aee5fd061e515982a54147d6480b3cabdfa3d1ae3eae0",
+      "bytes": 6032,
+      "origin": "ReFi-UJI-Core-20261031-recovered/acquisition_offset.py"
+    },
+    "src/acquisition_retention_transfer.py": {
+      "sha256": "ee59878db6934bf951928c322ddc2e627cf498e0cae8b6505c2e9692ee5e3d3b",
+      "bytes": 8084,
+      "origin": "ReFi-UJI-Core-20261031-recovered/acquisition_retention_transfer.py"
+    },
+    "src/acquisition_retention_trial.py": {
+      "sha256": "1d0a002befd1d667e9cb5d709df0e24db271729412fa42c26f704b8ef6e77be4",
+      "bytes": 11118,
+      "origin": "ReFi-UJI-Core-20261031-recovered/acquisition_retention_trial.py"
+    },
+    "src/acquisition_tasks.py": {
+      "sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50",
+      "bytes": 6486,
+      "origin": "ReFi-UJI-Core-20261031-recovered/acquisition_tasks.py"
+    },
+    "src/acquisition_transfer.py": {
+      "sha256": "7a7dd18e24dbf99fd4ee0f4d4098aedf962fbf0102e4bc65f12e5ddff76e5283",
+      "bytes": 7925,
+      "origin": "ReFi-UJI-Core-20261031-recovered/acquisition_transfer.py"
+    },
+    "src/adaptation.py": {
+      "sha256": "dc6a8a65d427fc573cf19ef0e984dedd6e15316714fb458e8d05d30d4db27fba",
+      "bytes": 11783,
+      "origin": "ReFi-UJI-Core-20261031-recovered/adaptation.py"
+    },
+    "src/anchored_barycenter.py": {
+      "sha256": "d1f97c41039bbbc62eb864e86a1078e5fbad4f3f525a63eea6d34d071813b36a",
+      "bytes": 10548,
+      "origin": "ReFi-UJI-Core-20261031-recovered/anchored_barycenter.py"
+    },
+    "src/anchored_barycenter_assets.py": {
+      "sha256": "194933317c4f5e886348bb7035b37a63aec9fbe849f3dac3c7cf7c01eecda7b3",
+      "bytes": 8417,
+      "origin": "ReFi-UJI-Core-20261031-recovered/anchored_barycenter_assets.py"
+    },
+    "src/building_source_assets.py": {
+      "sha256": "4dc36c4ff9ae9e0e662a1fabd40b3176a0e66ab2f4b872aae23ac599ec869597",
+      "bytes": 13382,
+      "origin": "ReFi-UJI-Core-20261031-recovered/building_source_assets.py"
+    },
+    "src/building_source_tasks.py": {
+      "sha256": "d1267c8ff2731a2eae1a54d6b5faa8d58ee48793f986183361940e2c5609e9d0",
+      "bytes": 8203,
+      "origin": "ReFi-UJI-Core-20261031-recovered/building_source_tasks.py"
+    },
+    "src/check_joint_history_prior.py": {
+      "sha256": "650e6ddeb566048d822aa5b35ed5fd9d8a2f9b8e10de1f706239769dc7a0f6da",
+      "bytes": 10447,
+      "origin": "ReFi-UJI-Core-20261031-recovered/check_joint_history_prior.py"
+    },
+    "src/check_neighbor_recomposition.py": {
+      "sha256": "f40db7d7311ea44d65dc2075a279afbfde6a1326dce5076fd7c068f509c31424",
+      "bytes": 11034,
+      "origin": "ReFi-UJI-Core-20261031-recovered/check_neighbor_recomposition.py"
+    },
+    "src/check_recomposition.py": {
+      "sha256": "a688be6b20297c1206042d97a71498b41bd70b6031a3eba1243b7b31b3565d06",
+      "bytes": 4810,
+      "origin": "ReFi-UJI-Core-20261031-recovered/check_recomposition.py"
+    },
+    "src/check_recomposition_adaptation.py": {
+      "sha256": "c8da19c49f56e6145fc35fdc00154a12b191211c03cd23bc6b93909214563fc0",
+      "bytes": 7436,
+      "origin": "ReFi-UJI-Core-20261031-recovered/check_recomposition_adaptation.py"
+    },
+    "src/check_tabicl_context_matching.py": {
+      "sha256": "2d6171ad012c76d7963609eb98646a9aec954e32cda24268aa6a7e076dfb9ef3",
+      "bytes": 6876,
+      "origin": "ReFi-UJI-Core-20261031-recovered/check_tabicl_context_matching.py"
+    },
+    "src/check_tabicl_history_learning.py": {
+      "sha256": "7dd215013f22304617ec04ec27a786f60567e3c52c9a063c6db949d0539ff4c9",
+      "bytes": 8563,
+      "origin": "ReFi-UJI-Core-20261031-recovered/check_tabicl_history_learning.py"
+    },
+    "src/common_transport_pairing_trial.py": {
+      "sha256": "d5caf7b23b74bc32a4219a89735c452ad6eead9b4b9892e6833f39ede16f23b3",
+      "bytes": 16572,
+      "origin": "ReFi-UJI-Core-20261031-recovered/common_transport_pairing_trial.py"
+    },
+    "src/common_update_transport.py": {
+      "sha256": "dc3989882da63f70d5318ee85677fecda2bf8d64e7f3e5e6b8b11b665598e192",
+      "bytes": 5400,
+      "origin": "ReFi-UJI-Core-20261031-recovered/common_update_transport.py"
+    },
+    "src/common_update_transport_trial.py": {
+      "sha256": "1589c23c629b232158cc37725dd2382b31515ca265aec68c65c94295d41df32a",
+      "bytes": 14387,
+      "origin": "ReFi-UJI-Core-20261031-recovered/common_update_transport_trial.py"
+    },
+    "src/conditional_budget_trial.py": {
+      "sha256": "3447566821843cd288bb6a7536fe65984567307c08036d80add589821a6341d9",
+      "bytes": 12755,
+      "origin": "ReFi-UJI-Core-20261031-recovered/conditional_budget_trial.py"
+    },
+    "src/conditional_budgets.py": {
+      "sha256": "555e4bb836b9a3226241c1bc6be49f389f57c0d2f85ca91cacd01f50df090b57",
+      "bytes": 923,
+      "origin": "ReFi-UJI-Core-20261031-recovered/conditional_budgets.py"
+    },
+    "src/conditional_field_objective.py": {
+      "sha256": "2f4965db0e37e677f88bb37ced10f9107c1d80e4f3efdecb28531114ef7c0cde",
+      "bytes": 4282,
+      "origin": "ReFi-UJI-Core-20261031-recovered/conditional_field_objective.py"
+    },
+    "src/conditional_history_field.py": {
+      "sha256": "a2dac7094aa28348fc3421b6b725dc03288a48424817958ea20fed65af5db853",
+      "bytes": 8329,
+      "origin": "ReFi-UJI-Core-20261031-recovered/conditional_history_field.py"
+    },
+    "src/conditional_relation.py": {
+      "sha256": "2bb532d94eaf4a54bb5e07bf6d921dc17b4bfac0bbd9d5c27b6a3dffb1ede9e1",
+      "bytes": 6516,
+      "origin": "ReFi-UJI-Core-20261031-recovered/conditional_relation.py"
+    },
+    "src/conditional_relation_trial.py": {
+      "sha256": "53f3d7f12063104178d049ef354228f16821a1740f0a0e7dfd405bb6872fd6fd",
+      "bytes": 13626,
+      "origin": "ReFi-UJI-Core-20261031-recovered/conditional_relation_trial.py"
+    },
+    "src/conditional_shape.py": {
+      "sha256": "c0ab0c99da4ca6e5e506cdcfd989a124f48f14f600d856d7d868696c0e4502d9",
+      "bytes": 5361,
+      "origin": "ReFi-UJI-Core-20261031-recovered/conditional_shape.py"
+    },
+    "src/contrast_source_operator.py": {
+      "sha256": "9c164a7f97e1123ee7637c17e39ae781e68ad845d1d9e21c62d2b331e6665ab2",
+      "bytes": 1177,
+      "origin": "ReFi-UJI-Core-20261031-recovered/contrast_source_operator.py"
+    },
+    "src/coupled_scan_transport.py": {
+      "sha256": "b69b58609c930bcabff9e742698487a5c4e78ff18b796cb1c37b3c56c6329710",
+      "bytes": 10217,
+      "origin": "ReFi-UJI-Core-20261031-recovered/coupled_scan_transport.py"
+    },
+    "src/coupled_scan_transport_trial.py": {
+      "sha256": "c2cfc8e1eb5ab2e1aeb861e81ef205fff066bd05321ce4136d7fbc5f79a6bfa0",
+      "bytes": 12436,
+      "origin": "ReFi-UJI-Core-20261031-recovered/coupled_scan_transport_trial.py"
+    },
+    "src/episode_queries.py": {
+      "sha256": "460ea77b0a2a4a6a86ff702061be08cc6e1abdff3055ffc5e92e854f3bfb0488",
+      "bytes": 3028,
+      "origin": "ReFi-UJI-Core-20261031-recovered/episode_queries.py"
+    },
+    "src/episodic_tasks.py": {
+      "sha256": "cc2461e847889d4929af1f9be661214b6e6e1c5529d5550cb4d38cd76e94c02f",
+      "bytes": 5162,
+      "origin": "ReFi-UJI-Core-20261031-recovered/episodic_tasks.py"
+    },
+    "src/fields.py": {
+      "sha256": "25d9d929d317baf38e16924822d26b77a9d94a35be6dbea0cfda0c16818efbbb",
+      "bytes": 6213,
+      "origin": "ReFi-UJI-Core-20261031-recovered/fields.py"
+    },
+    "src/fingerprint_change.py": {
+      "sha256": "9c89888bba14e96bc35c6640460118cb9e77ea0f5190e35d5f027ccd0493cb31",
+      "bytes": 7265,
+      "origin": "ReFi-UJI-Core-20261031-recovered/fingerprint_change.py"
+    },
+    "src/fingerprint_change_continue.py": {
+      "sha256": "3752745a956b9ae0ff14e3f37acf63777af687badac07344094d21454059819c",
+      "bytes": 10745,
+      "origin": "ReFi-UJI-Core-20261031-recovered/fingerprint_change_continue.py"
+    },
+    "src/fingerprint_change_trial.py": {
+      "sha256": "3df36ef45b884f42f78a8384815d0eb2673f6aa78798422421f31fdf06136bd9",
+      "bytes": 10966,
+      "origin": "ReFi-UJI-Core-20261031-recovered/fingerprint_change_trial.py"
+    },
+    "src/fingerprint_posterior.py": {
+      "sha256": "5be319d6f85b42466b5c415acfde2a6b1839911fa7ce34bb924e301264b2b728",
+      "bytes": 1744,
+      "origin": "ReFi-UJI-Core-20261031-recovered/fingerprint_posterior.py"
+    },
+    "src/history_feature_cache.py": {
+      "sha256": "19280c88f01b3db7641a552ecb21c7939682a987837d170f5eac3e8e78d4390a",
+      "bytes": 11034,
+      "origin": "ReFi-UJI-Core-20261031-recovered/history_feature_cache.py"
+    },
+    "src/history_feature_gp.py": {
+      "sha256": "83bbdaff19529a7bfde9354798c9c92518367eafe7501265496322c6c977cb10",
+      "bytes": 4303,
+      "origin": "ReFi-UJI-Core-20261031-recovered/history_feature_gp.py"
+    },
+    "src/history_feature_gp_trial.py": {
+      "sha256": "451af97037ec22eaa3d330d300dc81b5ec8ec5aaecf55304d817ee688c449c3d",
+      "bytes": 14463,
+      "origin": "ReFi-UJI-Core-20261031-recovered/history_feature_gp_trial.py"
+    },
+    "src/history_fit.py": {
+      "sha256": "1c638fe1bc8b8bf936a68f0b2f66326df4294ade30f239ae667f8e70304c11ad",
+      "bytes": 8379,
+      "origin": "ReFi-UJI-Core-20261031-recovered/history_fit.py"
+    },
+    "src/history_position_ranking.py": {
+      "sha256": "133cce3977a44ef573f46a647a25e8cfc19ef6985f2ea9e71092a1842acc6e25",
+      "bytes": 3980,
+      "origin": "ReFi-UJI-Core-20261031-recovered/history_position_ranking.py"
+    },
+    "src/history_position_ranking_trial.py": {
+      "sha256": "31ff56e2788cd2e377f222c580506e44fde59e2ab79321faa505565ecfe379dd",
+      "bytes": 15033,
+      "origin": "ReFi-UJI-Core-20261031-recovered/history_position_ranking_trial.py"
+    },
+    "src/history_ratio_correction.py": {
+      "sha256": "7faed18fe5b165468f04956e4673078851021c842fafc6523520b9af2306b4b7",
+      "bytes": 3941,
+      "origin": "ReFi-UJI-Core-20261031-recovered/history_ratio_correction.py"
+    },
+    "src/joint_history_prior.py": {
+      "sha256": "0a3ffb1b4c68b1608cd16385fd27125549b6def078e652d8489da154b0f19910",
+      "bytes": 6457,
+      "origin": "ReFi-UJI-Core-20261031-recovered/joint_history_prior.py"
+    },
+    "src/location_decision.py": {
+      "sha256": "dacc55291881a679fc728f4d4c91e1199f419b4bfdb0193165521569673587ba",
+      "bytes": 1782,
+      "origin": "ReFi-UJI-Core-20261031-recovered/location_decision.py"
+    },
+    "src/marginal_relation.py": {
+      "sha256": "7ce0b40aa43024722257877d59cbad2cefd02c29d7f70f07f5db9edb878e4b09",
+      "bytes": 5473,
+      "origin": "ReFi-UJI-Core-20261031-recovered/marginal_relation.py"
+    },
+    "src/marginal_relation_gpu.py": {
+      "sha256": "1c977f918137858a5408faac9b05a2c41df78d00e3f1ca30c303ba60716bf6f9",
+      "bytes": 2378,
+      "origin": "ReFi-UJI-Core-20261031-recovered/marginal_relation_gpu.py"
+    },
+    "src/marginal_relation_gpu_trial.py": {
+      "sha256": "f79cec29acd98df7e6494cf64b9533d7bdcbaa964df45761af4c491f9afe6230",
+      "bytes": 16428,
+      "origin": "ReFi-UJI-Core-20261031-recovered/marginal_relation_gpu_trial.py"
+    },
+    "src/module_evidence.py": {
+      "sha256": "2d695107092744babd4b4878694dfcd2f9206cd5bb984f96174e66b48bb3787b",
+      "bytes": 2460,
+      "origin": "ReFi-UJI-Core-20261031-recovered/module_evidence.py"
+    },
+    "src/neighbor_gpu_check.py": {
+      "sha256": "06dba403c083682eb19f3d5c1a43c1934ba1a5e5ca5dd80d0bf215c9a164c65d",
+      "bytes": 7668,
+      "origin": "ReFi-UJI-Core-20261031-recovered/neighbor_gpu_check.py"
+    },
+    "src/neighbor_learning_trial.py": {
+      "sha256": "3370ca70a95ef8a3f72d1a6f69640c54c0e4c5e6e3f2b6080485a47b16d26d78",
+      "bytes": 12538,
+      "origin": "ReFi-UJI-Core-20261031-recovered/neighbor_learning_trial.py"
+    },
+    "src/neighbor_recomposition.py": {
+      "sha256": "9a64f4727c20d970ba8e4635a6dec926ffe09788aaab7c956383e45d2f75bbff",
+      "bytes": 8110,
+      "origin": "ReFi-UJI-Core-20261031-recovered/neighbor_recomposition.py"
+    },
+    "src/neighbor_source_integration.py": {
+      "sha256": "7e55bd358faa96aec5f023fae86172d83e8a37f1a6d60cf29a2dd3fee3b6c97f",
+      "bytes": 6564,
+      "origin": "ReFi-UJI-Core-20261031-recovered/neighbor_source_integration.py"
+    },
+    "src/neighbor_stream.py": {
+      "sha256": "691f94363a989fac9b724e23ae4a66eee4e790a46f30b10bc3db5b14c9fd1975",
+      "bytes": 6713,
+      "origin": "ReFi-UJI-Core-20261031-recovered/neighbor_stream.py"
+    },
+    "src/neural_history_operator.py": {
+      "sha256": "293aa0f3083aa9f5728af7e033452c1c666387a88a7bbb9453a7db837ae7c3a9",
+      "bytes": 6910,
+      "origin": "ReFi-UJI-Core-20261031-recovered/neural_history_operator.py"
+    },
+    "src/neural_history_trial.py": {
+      "sha256": "b7b44ad5591407379a323480db6c363803eef261a036320cb73a3009a2d95245",
+      "bytes": 11725,
+      "origin": "ReFi-UJI-Core-20261031-recovered/neural_history_trial.py"
+    },
+    "src/observations.py": {
+      "sha256": "930fdd3ffe2a2bb40dbcd897aae61b6cf0efc0b4e1ce9548fedc113e9ce059c7",
+      "bytes": 5187,
+      "origin": "ReFi-UJI-Core-20261031-recovered/observations.py"
+    },
+    "src/observed_history.py": {
+      "sha256": "f5cbbd8a4c651cef87dea8b7f3ffc2b96d6611e8181ef965b309fbdd868449dc",
+      "bytes": 3262,
+      "origin": "ReFi-UJI-Core-20261031-recovered/observed_history.py"
+    },
+    "src/observed_recomposition.py": {
+      "sha256": "efd854394a3364a81cf07872907bd7f10dd5930d33855503ce7d226854fc70c0",
+      "bytes": 1422,
+      "origin": "ReFi-UJI-Core-20261031-recovered/observed_recomposition.py"
+    },
+    "src/observed_recomposition_trial.py": {
+      "sha256": "cd031b3a20ec9a6b59af2d24b6d29fdbae5ccb4f389c8c190e9cb50c45e43f89",
+      "bytes": 8494,
+      "origin": "ReFi-UJI-Core-20261031-recovered/observed_recomposition_trial.py"
+    },
+    "src/operator_proposals.py": {
+      "sha256": "429dcfc6c9cbd822e259d3b08725fd2e51200713e369fa871a26867addb65da9",
+      "bytes": 2943,
+      "origin": "ReFi-UJI-Core-20261031-recovered/operator_proposals.py"
+    },
+    "src/paired_acquisition_tasks.py": {
+      "sha256": "e121841d83da09fc1e583d2e85be8be6fda06fac8edb26b01e14a4ac95e7479d",
+      "bytes": 8973,
+      "origin": "ReFi-UJI-Core-20261031-recovered/paired_acquisition_tasks.py"
+    },
+    "src/paired_assets.py": {
+      "sha256": "8ff3984f89eb335dd9fd4a3a9431e58ac42096939e25d9812c4d609b9a918e48",
+      "bytes": 12537,
+      "origin": "ReFi-UJI-Core-20261031-recovered/paired_assets.py"
+    },
+    "src/posterior.py": {
+      "sha256": "72b31b7e548b4b0eaa68a9fd63cfce1d7f3f020902a834ec90da3e37272eca4d",
+      "bytes": 8808,
+      "origin": "ReFi-UJI-Core-20261031-recovered/posterior.py"
+    },
+    "src/predict.py": {
+      "sha256": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5",
+      "bytes": 2610,
+      "origin": "ReFi-UJI-Core-20261031-recovered/predict.py"
+    },
+    "src/predictive_context_trial.py": {
+      "sha256": "3f84e498d5f45c697e3fcdee1af39145cb37cf29fb64d374fb063c5dcf8686d6",
+      "bytes": 18151,
+      "origin": "ReFi-UJI-Core-20261031-recovered/predictive_context_trial.py"
+    },
+    "src/predictive_scan_context.py": {
+      "sha256": "22c86ea41992e7b3ca8f0620c811ac69f2a8439f727650af305dd90a93cff9eb",
+      "bytes": 5233,
+      "origin": "ReFi-UJI-Core-20261031-recovered/predictive_scan_context.py"
+    },
+    "src/prior_mean_transport.py": {
+      "sha256": "c647d42238fb65321b12d97c54199eea00617cb433a267722d3071f1e0784ad2",
+      "bytes": 7751,
+      "origin": "ReFi-UJI-Core-20261031-recovered/prior_mean_transport.py"
+    },
+    "src/prior_mean_transport_trial.py": {
+      "sha256": "fd98197e40b0acbd1ab5392e857017d9cc4ad4349380a82df96cf44e0ab7ce1f",
+      "bytes": 25886,
+      "origin": "ReFi-UJI-Core-20261031-recovered/prior_mean_transport_trial.py"
+    },
+    "src/recomposition.py": {
+      "sha256": "2aaa6a88aaf273610c25646ac9abcc8a99c83173f9d249dd80e632952a5a925d",
+      "bytes": 8630,
+      "origin": "ReFi-UJI-Core-20261031-recovered/recomposition.py"
+    },
+    "src/recomposition_adaptation.py": {
+      "sha256": "d047184100c71649b13539b7b9ad2e6a5c723dde7aaeecbaa6d128fa16745d81",
+      "bytes": 10720,
+      "origin": "ReFi-UJI-Core-20261031-recovered/recomposition_adaptation.py"
+    },
+    "src/recomposition_corpus.py": {
+      "sha256": "17e787cbf7e68f4707959b215c67c21782b75eeba88a5b4a4b34df72896d48ff",
+      "bytes": 10983,
+      "origin": "ReFi-UJI-Core-20261031-recovered/recomposition_corpus.py"
+    },
+    "src/recomposition_coupled.py": {
+      "sha256": "b5eb64dcadf1ef8d71e9372ed4bac7523382ee2c4a88b4b2ab30c932fe4964ec",
+      "bytes": 3553,
+      "origin": "ReFi-UJI-Core-20261031-recovered/recomposition_coupled.py"
+    },
+    "src/recomposition_coupled_trial.py": {
+      "sha256": "25143ef78d194cf8d2363fcb257cb13475a255cf03bcc3d09d4a0f006f7f606e",
+      "bytes": 10003,
+      "origin": "ReFi-UJI-Core-20261031-recovered/recomposition_coupled_trial.py"
+    },
+    "src/recomposition_multibudget_natural.py": {
+      "sha256": "7c8e57c54dda7671d621246ce62b091649179e5b2608f3ca69cda4f308d4107e",
+      "bytes": 19869,
+      "origin": "ReFi-UJI-Core-20261031-recovered/recomposition_multibudget_natural.py"
+    },
+    "src/recomposition_predict.py": {
+      "sha256": "8a90bd443b6d02166dbd58f026f5e4de47322138c5e3b361436ab27a3e3b516c",
+      "bytes": 2827,
+      "origin": "ReFi-UJI-Core-20261031-recovered/recomposition_predict.py"
+    },
+    "src/recomposition_trial.py": {
+      "sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "bytes": 13195,
+      "origin": "ReFi-UJI-Core-20261031-recovered/recomposition_trial.py"
+    },
+    "src/refi_source_selection_numerical.py": {
+      "sha256": "2d0674cc6d7e05646949459eeeb2c603cf0e2ecbe0eaa655ebd6147fdbd844c9",
+      "bytes": 11750,
+      "origin": "ReFi-UJI-Core-20261031-recovered/refi_source_selection_numerical.py"
+    },
+    "src/refi_source_selection_trial.py": {
+      "sha256": "0ca65bd5b078187f6de562e55b341c83bd693ceeb62719d9caafe1f3157841aa",
+      "bytes": 14318,
+      "origin": "ReFi-UJI-Core-20261031-recovered/refi_source_selection_trial.py"
+    },
+    "src/sampling.py": {
+      "sha256": "7e6168c9ec72c14d66a6e2d947a7a1cda46b6e98a60772b5272b107c0a3e0add",
+      "bytes": 7311,
+      "origin": "ReFi-UJI-Core-20261031-recovered/sampling.py"
+    },
+    "src/scalar_gp_adaptation.py": {
+      "sha256": "b4028547cf47a0341d7227b38bcca9f78ca501825f33fc21d44b88dc969afa0f",
+      "bytes": 3603,
+      "origin": "ReFi-UJI-Core-20261031-recovered/scalar_gp_adaptation.py"
+    },
+    "src/scalar_support.py": {
+      "sha256": "ac50b217f39e8ca4d592e1df1c094e83e094ea22e2a2d31341da49c13165da2c",
+      "bytes": 4591,
+      "origin": "ReFi-UJI-Core-20261031-recovered/scalar_support.py"
+    },
+    "src/source_context_replay.py": {
+      "sha256": "8d21c7ab5bb2054ecc9d2e494de2da24cebf118915e986baf4a2dcadcdf666b3",
+      "bytes": 8649,
+      "origin": "ReFi-UJI-Core-20261031-recovered/source_context_replay.py"
+    },
+    "src/source_environment_validation.py": {
+      "sha256": "f09c67a7f9fc27e90470eda26e1e558822f0fbcdc025cc3bf91111504b4c3b62",
+      "bytes": 8118,
+      "origin": "ReFi-UJI-Core-20261031-recovered/source_environment_validation.py"
+    },
+    "src/source_episode_catalog.py": {
+      "sha256": "f4a14a634dd9592003b60559ca3ea46ab0e852d2adfae18e5ce012e81c37d303",
+      "bytes": 11221,
+      "origin": "ReFi-UJI-Core-20261031-recovered/source_episode_catalog.py"
+    },
+    "src/source_gp_boundary.py": {
+      "sha256": "a8196106bfe2dc92f64e253de8f57b51ed8826ddbd1c62588217d78784dd2f7f",
+      "bytes": 3260,
+      "origin": "ReFi-UJI-Core-20261031-recovered/source_gp_boundary.py"
+    },
+    "src/source_position_ranker.py": {
+      "sha256": "f269b1f5541e48e4c5e2ff70bbb684a046402e874be16e9693231880c65ea06e",
+      "bytes": 4476,
+      "origin": "ReFi-UJI-Core-20261031-recovered/source_position_ranker.py"
+    },
+    "src/source_position_ranker_trial.py": {
+      "sha256": "4f82846b546972151743252dd633f14d98c87686237fa2da4c16bc97d12ecc9d",
+      "bytes": 20565,
+      "origin": "ReFi-UJI-Core-20261031-recovered/source_position_ranker_trial.py"
+    },
+    "src/support_recomposition.py": {
+      "sha256": "6f71a906d95373656b230faacd5edba73f0f7e05f65ea423b93f1a0d43fe13bf",
+      "bytes": 5722,
+      "origin": "ReFi-UJI-Core-20261031-recovered/support_recomposition.py"
+    },
+    "src/tabicl_adaptation_examples.py": {
+      "sha256": "3ab3b605246476a58ab63748022f7b31e0aa39fcd90683a791784ea69f8afee3",
+      "bytes": 6944,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_adaptation_examples.py"
+    },
+    "src/tabicl_context_matching.py": {
+      "sha256": "b18e177dc317c0073bdbf272ad03f6089460e62cde40370bf0cc0fb637d4f907",
+      "bytes": 1249,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_context_matching.py"
+    },
+    "src/tabicl_context_matching_trial.py": {
+      "sha256": "4454b453256c1c7a5007361f26c14c6ea3f17e1a428c9a73cb40cd8a39b9d250",
+      "bytes": 10513,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_context_matching_trial.py"
+    },
+    "src/tabicl_history.py": {
+      "sha256": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518",
+      "bytes": 3072,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_history.py"
+    },
+    "src/tabicl_history_features.py": {
+      "sha256": "769e9f19eb36fee13f4d98b45a62348854fd013212870bac8c465990077abc7d",
+      "bytes": 8022,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_history_features.py"
+    },
+    "src/tabicl_history_learning.py": {
+      "sha256": "ce9ff72806f312793bbe164ed61e29af5b64873c7f131d68381e20c930681387",
+      "bytes": 4620,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_history_learning.py"
+    },
+    "src/tabicl_multitask_full_trial.py": {
+      "sha256": "0bbd3259e8dc9655a1c3737dca99e7d00727a1a52ae872fbece6e0fe686b96b3",
+      "bytes": 19081,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_multitask_full_trial.py"
+    },
+    "src/tabicl_multitask_transfer.py": {
+      "sha256": "6b6fd18c84973d8efa3ba963df92465195513973655f3d0d139ce62c2a959638",
+      "bytes": 8524,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_multitask_transfer.py"
+    },
+    "src/tabicl_observation_features.py": {
+      "sha256": "59a242a1539cd108713283d72767d5d466fe09ff9995c9144bfd6183705cdc6d",
+      "bytes": 5934,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_observation_features.py"
+    },
+    "src/tabicl_recomposed_tasks.py": {
+      "sha256": "173d1e495d0f9a6d18805341ea8c132f53673147576a604899dc3b2963c2137e",
+      "bytes": 2040,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_recomposed_tasks.py"
+    },
+    "src/tabicl_recomposed_trial.py": {
+      "sha256": "5f8a1ab365583784ed6409fe8a1d7a56c99a02fd7cdc3f701f4294b211fe4875",
+      "bytes": 8528,
+      "origin": "ReFi-UJI-Core-20261031-recovered/tabicl_recomposed_trial.py"
+    },
+    "src/target_role_transport_trial.py": {
+      "sha256": "36cdaf217d297732ac12b6e6a92a19a3d6db599a50c85db508ce2dd6361b3f9d",
+      "bytes": 18480,
+      "origin": "ReFi-UJI-Core-20261031-recovered/target_role_transport_trial.py"
+    },
+    "src/uji.py": {
+      "sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+      "bytes": 3647,
+      "origin": "ReFi-UJI-Core-20261031-recovered/uji.py"
+    },
+    "evidence/tabicl_multitask_full_trial_20261107_checked/checkpoints.json": {
+      "sha256": "b2a43d6fcaaaaa346b3108d064fbd40e0cb992d35c15696b87a4dbb4406f3e2b",
+      "bytes": 155,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/tabicl_multitask_full_trial_20261107_checked/checkpoints.json"
+    },
+    "evidence/tabicl_multitask_full_trial_20261107_checked/step_24.json": {
+      "sha256": "2337b1ff5c1cd5bfc165b25053d0e8a357194599fc70b4259c40c6d037b88e3e",
+      "bytes": 9158,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/tabicl_multitask_full_trial_20261107_checked/step_24.json"
+    },
+    "evidence/tabicl_multitask_full_trial_20261107_checked/training.json": {
+      "sha256": "27a5a0c9ad6eb05362265a09d501f3d951d9a3446333d755211202e0fa7b54dc",
+      "bytes": 19406,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/tabicl_multitask_full_trial_20261107_checked/training.json"
+    },
+    "evidence/tabicl_multitask_full_trial_20261107_checked/parameters.json": {
+      "sha256": "14c54ddb6f1993c18a0990672eb1b7ea56cc4b4563a6d7ad3b1a5cd31cdda512",
+      "bytes": 139,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/tabicl_multitask_full_trial_20261107_checked/parameters.json"
+    },
+    "evidence/tabicl_multitask_full_trial_20261107_checked/complete.json": {
+      "sha256": "0161024a77e6839357a91333dd6fdf144b8d10bb88a1a80a58f78830656738ed",
+      "bytes": 5354,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/tabicl_multitask_full_trial_20261107_checked/complete.json"
+    },
+    "evidence/tabicl_multitask_full_trial_20261107_checked/freeze.json": {
+      "sha256": "97b1e7ff64758a0ecd843829a07da624c26185597608b6eea3d880822583fc0f",
+      "bytes": 41546,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/tabicl_multitask_full_trial_20261107_checked/freeze.json"
+    },
+    "evidence/tabicl_multitask_transfer_20261107/complete.json": {
+      "sha256": "cec2892d986002e9bab3c224c20df6d327292208d68b2c3e52d93148417fbf19",
+      "bytes": 2642,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/tabicl_multitask_transfer_20261107/complete.json"
+    },
+    "evidence/tabicl_multitask_transfer_20261107/freeze.json": {
+      "sha256": "db8d381585a98432196dc564b5c4dc1e2f21529fafb1923721fbb3fe4d785218",
+      "bytes": 94643,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/tabicl_multitask_transfer_20261107/freeze.json"
+    },
+    "evidence/coupled_scan_transport_20261108_numeric_replay/complete.json": {
+      "sha256": "9666bca5655c760d1ca9609513edf56c9929d97bf187dfa5333d67a88791575c",
+      "bytes": 5428,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/coupled_scan_transport_20261108_numeric_replay/complete.json"
+    },
+    "evidence/coupled_scan_transport_20261108/failure.json": {
+      "sha256": "61b54458fe532f806937e973a6f9391fd17b660a6331914f97b8e0dc60a231d5",
+      "bytes": 104,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/coupled_scan_transport_20261108/failure.json"
+    },
+    "evidence/history_position_ranking_fixed_20261109/complete.json": {
+      "sha256": "aaa1ec24f5924263fa4d1e49f375c5bba40745c22cb7281fe79a10cf8fae5013",
+      "bytes": 24129,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/history_position_ranking_fixed_20261109/complete.json"
+    },
+    "evidence/history_position_ranking_20261109/complete.json": {
+      "sha256": "466a994f3d44571d09af8932b6ca0e00742bb6b58967c24e5633c1c6fee05380",
+      "bytes": 169,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/history_position_ranking_20261109/complete.json"
+    },
+    "evidence/source_position_ranker_20261109/complete.json": {
+      "sha256": "d6a65e3e900457c5568cf0cf3dd55b4ebba5f83021b6f31a3bcaacb8ff785c89",
+      "bytes": 144,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/source_position_ranker_20261109/complete.json"
+    },
+    "evidence/history_feature_gp_trial_20261107/complete.json": {
+      "sha256": "1f3e1f29958ee38d74740073ef6520274a74a307500dd807c8c4841f9dbac352",
+      "bytes": 12527,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/history_feature_gp_trial_20261107/complete.json"
+    },
+    "evidence/history_feature_gp_trial_20261107/freeze.json": {
+      "sha256": "71a0be22a4d52b3c451b11cf7827fd4354689a1809555795d0e61825c24a809c",
+      "bytes": 25381,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/history_feature_gp_trial_20261107/freeze.json"
+    },
+    "evidence/prior_mean_transport_20261108/complete.json": {
+      "sha256": "6d423c7dc4a7fc09f423208487fca96dfc692c443fb3f02193ce7b7fd512e661",
+      "bytes": 33462,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/prior_mean_transport_20261108/complete.json"
+    },
+    "evidence/predictive_context_20261108/exit_code.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/predictive_context_20261108/exit_code.txt"
+    },
+    "evidence/predictive_context_20261108/complete.json": {
+      "sha256": "e32629608a71a7f37fe977bfc7e6f92760cc29f40093d24a6c44ba311141b129",
+      "bytes": 22559,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/predictive_context_20261108/complete.json"
+    },
+    "evidence/acquisition_retention_trial_20261105/parameters.json": {
+      "sha256": "ae4aea540529b416f9e35dd058c39b42d13909186d4f449fcf9b7fe32d2a46bd",
+      "bytes": 495,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/acquisition_retention_trial_20261105/parameters.json"
+    },
+    "evidence/acquisition_retention_trial_20261105/complete.json": {
+      "sha256": "2459a2d684a4e34e6d297e4e7836e9553ec3d61a269ef4e1036ad5248d232035",
+      "bytes": 895,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/acquisition_retention_trial_20261105/complete.json"
+    },
+    "evidence/acquisition_retention_trial_20261105/freeze.json": {
+      "sha256": "d33c2d731e985e445a3c374b73525f000e312ea8bb995c05b3d5116723743b31",
+      "bytes": 90553,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/acquisition_retention_trial_20261105/freeze.json"
+    },
+    "evidence/acquisition_retention_transfer_20261105/complete.json": {
+      "sha256": "e0fa9257a0d2802e3b89bfc24950c1d0078355b0c0bf271c75d4e3885120a38f",
+      "bytes": 336,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/acquisition_retention_transfer_20261105/complete.json"
+    },
+    "evidence/acquisition_retention_transfer_20261105/freeze.json": {
+      "sha256": "935b22e72e32c389e400a9b688bc17f8ee7a0fc4917f610c29e62f1c59b90315",
+      "bytes": 83496,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/acquisition_retention_transfer_20261105/freeze.json"
+    },
+    "evidence/conditional_relation_20261109/complete.json": {
+      "sha256": "ebd175241b1e19c53d08e8c59430bea8d7150826d42c73ee6854ca1c01de2bf9",
+      "bytes": 27417,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/conditional_relation_20261109/complete.json"
+    },
+    "evidence/marginal_relation_gpu_20261109/complete.json": {
+      "sha256": "f6e88f3740377b8f9c79a212e0869345a950e839ea21eaee9220222a7014930b",
+      "bytes": 25271,
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/marginal_relation_gpu_20261109/complete.json"
+    },
+    "legacy_models/radio_map.py": {
+      "bytes": 1771,
+      "sha256": "731fb5a63e64a414ea56594ffefa12cfaeec68a6588411c32c8a3567acab2884",
+      "origin": "hash-identical copy of paired_assets_20261106 frozen FeMLoc-Signal-Calibrated-Map/models/radio_map.py"
+    },
+    "legacy_models/cross_floor.py": {
+      "bytes": 7932,
+      "sha256": "d0cad68e0a8a326ffbce5151b34012365beac1953c114834847553123335d6a7",
+      "origin": "hash-identical copy of paired_assets_20261106 frozen FeMLoc-Signal-Calibrated-Map/models/cross_floor.py"
+    },
+    "evidence/paired_assets_20261106/freeze.json": {
+      "bytes": 391052,
+      "sha256": "21adf4532ebad9c45f4d23e0218d7c3e0751479076abc51418bad08350943155",
+      "origin": "ReFi-UJI-Core-20261031-recovered/results/paired_assets_20261106/freeze.json"
+    },
+    "legacy_public_corpus/public_corpus/history_cache.py": {
+      "bytes": 11249,
+      "sha256": "0a965684bb838ea91096ae7dd8b6a30a8531a5e4869c054597d251356bc925cf",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/public_corpus/history_cache.py"
+    },
+    "legacy_public_corpus/run_calibration_learning.py": {
+      "bytes": 11812,
+      "sha256": "50f1de3fe23b7b02228d792f48832c108e2df3fdc43641fbee81ba8fc26e2de4",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/run_calibration_learning.py"
+    },
+    "legacy_public_corpus/conditional_operator_learning.py": {
+      "bytes": 13503,
+      "sha256": "79f812117c0de06c96b6151024c395fab36b6368797412be4143e311c9058614",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/conditional_operator_learning.py"
+    },
+    "legacy_public_corpus/source_weight_mixture.py": {
+      "bytes": 4294,
+      "sha256": "b90c8db4e26261e85366e79cd834e764da1d48658de2b4e952a330cdf8e15438",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/source_weight_mixture.py"
+    },
+    "legacy_public_corpus/history_bank.py": {
+      "bytes": 5982,
+      "sha256": "024499f2e0a7146276888644f4e2346947d379ef4c19a11ebda7e998593da670",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/history_bank.py"
+    },
+    "legacy_public_corpus/multi_history.py": {
+      "bytes": 6231,
+      "sha256": "4bff4bc70ccaad406ca8b829a966858931ee675a83c555b835a2ef86c8337023",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/multi_history.py"
+    },
+    "legacy_public_corpus/check_support_integral.py": {
+      "bytes": 11830,
+      "sha256": "502c9033e4993af9cc5a374f0b2e23a99606ac03c2d3a123418d12e1b9ef7373",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/check_support_integral.py"
+    },
+    "legacy_public_corpus/multi_source_adaptation.py": {
+      "bytes": 5578,
+      "sha256": "f0e0c6f4b09c8db98b37027ef4a0f93c9aba2f9eec1bdd347d72fd86bf027b6f",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/multi_source_adaptation.py"
+    },
+    "legacy_public_corpus/public_corpus/adapter.py": {
+      "bytes": 11505,
+      "sha256": "18dc65a9098f469cdbb7ca0c31fb312d34d4cfce2c87daef9fdcac9bdbeac902",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/public_corpus/adapter.py"
+    },
+    "legacy_public_corpus/uji_probability_study.py": {
+      "bytes": 14642,
+      "sha256": "3fe47930297d448eac6a56662b7dcdafcec3b1a74b2b5f0b7f80cf9507693a2e",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/uji_probability_study.py"
+    },
+    "legacy_public_corpus/transfer.py": {
+      "bytes": 6353,
+      "sha256": "5c81d94b5d951beb55e184b40ef3757babd5dcf66b763d2d37d879371d9185da",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/transfer.py"
+    },
+    "legacy_public_corpus/calibration_relation.py": {
+      "bytes": 2373,
+      "sha256": "e1791060e4c5436b1c9a8400636135091977527d4177302cc84dead7eee421bf",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/calibration_relation.py"
+    },
+    "legacy_public_corpus/data.py": {
+      "bytes": 5374,
+      "sha256": "ee023c3bd4ce46ca944ecd8761aee82b56dc1d798bfaeea75ca74fcfff3eabd8",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/data.py"
+    },
+    "legacy_public_corpus/run_change_control.py": {
+      "bytes": 7224,
+      "sha256": "88ca00411608f0ab18605352461a6c35098c3ecd5c4f36814a06aef457c4efa4",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/run_change_control.py"
+    },
+    "legacy_public_corpus/run_change.py": {
+      "bytes": 7072,
+      "sha256": "985293d7ee72dd5b892b497781fcce7c983eaf5f58bfa25baa5e5d466b07d174",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/run_change.py"
+    },
+    "legacy_public_corpus/public_corpus/probe_episodes.py": {
+      "bytes": 15554,
+      "sha256": "8fee76d83bd133e9221e76d1d5723d62a3bf0c3393d444faad3cff332d2c0dfb",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/public_corpus/probe_episodes.py"
+    },
+    "legacy_public_corpus/inference.py": {
+      "bytes": 15277,
+      "sha256": "212675770da448ace61822bf6828f110787142792d39e02346d197b50cbf65d7",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/inference.py"
+    },
+    "legacy_public_corpus/reference_pmc.py": {
+      "bytes": 12530,
+      "sha256": "e9c467d1e4ee88de18d58b3f47e06d36e3a7309359817c7778a8bf013aaa72b9",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/reference_pmc.py"
+    },
+    "legacy_public_corpus/run_multi_history.py": {
+      "bytes": 17163,
+      "sha256": "892b3d8224141e16d655ccd47be45b02ee26e44bf02cfc03a9ef3c3563d32658",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/run_multi_history.py"
+    },
+    "legacy_public_corpus/full_ap_study.py": {
+      "bytes": 18698,
+      "sha256": "5a0adcd6b261ef39364e5bf9426c5cac04b954a88f27625dce8cbef73323eb37",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/full_ap_study.py"
+    },
+    "legacy_public_corpus/support_integral.py": {
+      "bytes": 8182,
+      "sha256": "d4ca9fd4ecb21b1d48680fbbc37ecd73d0957efbbc1bfa5e5cd77a17cb6547b9",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/support_integral.py"
+    },
+    "legacy_public_corpus/run.py": {
+      "bytes": 11919,
+      "sha256": "cbab0019f004dbe765e5c50aa6cd46254822720356a9b191b1c2124ba263f518",
+      "origin": "迁移学习/Law-Probabilistic-Transfer-20261023/run.py"
+    }
+  },
+  "recorded_source_checks": [
+    {
+      "freeze": "evidence/history_feature_gp_trial_20261107/freeze.json",
+      "file": "src/history_feature_gp_trial.py",
+      "recorded_sha256": "451af97037ec22eaa3d330d300dc81b5ec8ec5aaecf55304d817ee688c449c3d",
+      "snapshot_sha256": "451af97037ec22eaa3d330d300dc81b5ec8ec5aaecf55304d817ee688c449c3d",
+      "match": true
+    },
+    {
+      "freeze": "evidence/history_feature_gp_trial_20261107/freeze.json",
+      "file": "src/history_feature_gp.py",
+      "recorded_sha256": "83bbdaff19529a7bfde9354798c9c92518367eafe7501265496322c6c977cb10",
+      "snapshot_sha256": "83bbdaff19529a7bfde9354798c9c92518367eafe7501265496322c6c977cb10",
+      "match": true
+    },
+    {
+      "freeze": "evidence/history_feature_gp_trial_20261107/freeze.json",
+      "file": "src/history_feature_cache.py",
+      "recorded_sha256": "19280c88f01b3db7641a552ecb21c7939682a987837d170f5eac3e8e78d4390a",
+      "snapshot_sha256": "19280c88f01b3db7641a552ecb21c7939682a987837d170f5eac3e8e78d4390a",
+      "match": true
+    },
+    {
+      "freeze": "evidence/history_feature_gp_trial_20261107/freeze.json",
+      "file": "src/tabicl_history_features.py",
+      "recorded_sha256": "769e9f19eb36fee13f4d98b45a62348854fd013212870bac8c465990077abc7d",
+      "snapshot_sha256": "769e9f19eb36fee13f4d98b45a62348854fd013212870bac8c465990077abc7d",
+      "match": true
+    },
+    {
+      "freeze": "evidence/history_feature_gp_trial_20261107/freeze.json",
+      "file": "src/tabicl_history.py",
+      "recorded_sha256": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518",
+      "snapshot_sha256": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518",
+      "match": true
+    },
+    {
+      "freeze": "evidence/history_feature_gp_trial_20261107/freeze.json",
+      "file": "src/tabicl_history_learning.py",
+      "recorded_sha256": "ce9ff72806f312793bbe164ed61e29af5b64873c7f131d68381e20c930681387",
+      "snapshot_sha256": "ce9ff72806f312793bbe164ed61e29af5b64873c7f131d68381e20c930681387",
+      "match": true
+    },
+    {
+      "freeze": "evidence/history_feature_gp_trial_20261107/freeze.json",
+      "file": "src/tabicl_multitask_full_trial.py",
+      "recorded_sha256": "0bbd3259e8dc9655a1c3737dca99e7d00727a1a52ae872fbece6e0fe686b96b3",
+      "snapshot_sha256": "0bbd3259e8dc9655a1c3737dca99e7d00727a1a52ae872fbece6e0fe686b96b3",
+      "match": true
+    },
+    {
+      "freeze": "evidence/history_feature_gp_trial_20261107/freeze.json",
+      "file": "src/source_episode_catalog.py",
+      "recorded_sha256": "f4a14a634dd9592003b60559ca3ea46ab0e852d2adfae18e5ce012e81c37d303",
+      "snapshot_sha256": "f4a14a634dd9592003b60559ca3ea46ab0e852d2adfae18e5ce012e81c37d303",
+      "match": true
+    },
+    {
+      "freeze": "evidence/history_feature_gp_trial_20261107/freeze.json",
+      "file": "src/recomposition_trial.py",
+      "recorded_sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "snapshot_sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_full_trial_20261107_checked/freeze.json",
+      "file": "src/tabicl_multitask_full_trial.py",
+      "recorded_sha256": "0bbd3259e8dc9655a1c3737dca99e7d00727a1a52ae872fbece6e0fe686b96b3",
+      "snapshot_sha256": "0bbd3259e8dc9655a1c3737dca99e7d00727a1a52ae872fbece6e0fe686b96b3",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_full_trial_20261107_checked/freeze.json",
+      "file": "src/source_episode_catalog.py",
+      "recorded_sha256": "f4a14a634dd9592003b60559ca3ea46ab0e852d2adfae18e5ce012e81c37d303",
+      "snapshot_sha256": "f4a14a634dd9592003b60559ca3ea46ab0e852d2adfae18e5ce012e81c37d303",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_full_trial_20261107_checked/freeze.json",
+      "file": "src/tabicl_history.py",
+      "recorded_sha256": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518",
+      "snapshot_sha256": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_full_trial_20261107_checked/freeze.json",
+      "file": "src/tabicl_history_learning.py",
+      "recorded_sha256": "ce9ff72806f312793bbe164ed61e29af5b64873c7f131d68381e20c930681387",
+      "snapshot_sha256": "ce9ff72806f312793bbe164ed61e29af5b64873c7f131d68381e20c930681387",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_full_trial_20261107_checked/freeze.json",
+      "file": "src/check_tabicl_history_learning.py",
+      "recorded_sha256": "7dd215013f22304617ec04ec27a786f60567e3c52c9a063c6db949d0539ff4c9",
+      "snapshot_sha256": "7dd215013f22304617ec04ec27a786f60567e3c52c9a063c6db949d0539ff4c9",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_full_trial_20261107_checked/freeze.json",
+      "file": "src/acquisition_tasks.py",
+      "recorded_sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50",
+      "snapshot_sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_full_trial_20261107_checked/freeze.json",
+      "file": "src/uji.py",
+      "recorded_sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+      "snapshot_sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_full_trial_20261107_checked/freeze.json",
+      "file": "src/recomposition_trial.py",
+      "recorded_sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "snapshot_sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_full_trial_20261107_checked/freeze.json",
+      "file": "src/recomposition_multibudget_natural.py",
+      "recorded_sha256": "7c8e57c54dda7671d621246ce62b091649179e5b2608f3ca69cda4f308d4107e",
+      "snapshot_sha256": "7c8e57c54dda7671d621246ce62b091649179e5b2608f3ca69cda4f308d4107e",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/acquisition_retention_trial.py",
+      "recorded_sha256": "1d0a002befd1d667e9cb5d709df0e24db271729412fa42c26f704b8ef6e77be4",
+      "snapshot_sha256": "1d0a002befd1d667e9cb5d709df0e24db271729412fa42c26f704b8ef6e77be4",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/acquisition_transfer.py",
+      "recorded_sha256": "7a7dd18e24dbf99fd4ee0f4d4098aedf962fbf0102e4bc65f12e5ddff76e5283",
+      "snapshot_sha256": "7a7dd18e24dbf99fd4ee0f4d4098aedf962fbf0102e4bc65f12e5ddff76e5283",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/acquisition_tasks.py",
+      "recorded_sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50",
+      "snapshot_sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/adaptation.py",
+      "recorded_sha256": "dc6a8a65d427fc573cf19ef0e984dedd6e15316714fb458e8d05d30d4db27fba",
+      "snapshot_sha256": "dc6a8a65d427fc573cf19ef0e984dedd6e15316714fb458e8d05d30d4db27fba",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/predict.py",
+      "recorded_sha256": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5",
+      "snapshot_sha256": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/episodic_tasks.py",
+      "recorded_sha256": "cc2461e847889d4929af1f9be661214b6e6e1c5529d5550cb4d38cd76e94c02f",
+      "snapshot_sha256": "cc2461e847889d4929af1f9be661214b6e6e1c5529d5550cb4d38cd76e94c02f",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/fields.py",
+      "recorded_sha256": "25d9d929d317baf38e16924822d26b77a9d94a35be6dbea0cfda0c16818efbbb",
+      "snapshot_sha256": "25d9d929d317baf38e16924822d26b77a9d94a35be6dbea0cfda0c16818efbbb",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/fingerprint_change.py",
+      "recorded_sha256": "9c89888bba14e96bc35c6640460118cb9e77ea0f5190e35d5f027ccd0493cb31",
+      "snapshot_sha256": "9c89888bba14e96bc35c6640460118cb9e77ea0f5190e35d5f027ccd0493cb31",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/fingerprint_posterior.py",
+      "recorded_sha256": "5be319d6f85b42466b5c415acfde2a6b1839911fa7ce34bb924e301264b2b728",
+      "snapshot_sha256": "5be319d6f85b42466b5c415acfde2a6b1839911fa7ce34bb924e301264b2b728",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/posterior.py",
+      "recorded_sha256": "72b31b7e548b4b0eaa68a9fd63cfce1d7f3f020902a834ec90da3e37272eca4d",
+      "snapshot_sha256": "72b31b7e548b4b0eaa68a9fd63cfce1d7f3f020902a834ec90da3e37272eca4d",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/observations.py",
+      "recorded_sha256": "930fdd3ffe2a2bb40dbcd897aae61b6cf0efc0b4e1ce9548fedc113e9ce059c7",
+      "snapshot_sha256": "930fdd3ffe2a2bb40dbcd897aae61b6cf0efc0b4e1ce9548fedc113e9ce059c7",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/conditional_history_field.py",
+      "recorded_sha256": "a2dac7094aa28348fc3421b6b725dc03288a48424817958ea20fed65af5db853",
+      "snapshot_sha256": "a2dac7094aa28348fc3421b6b725dc03288a48424817958ea20fed65af5db853",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/conditional_budget_trial.py",
+      "recorded_sha256": "3447566821843cd288bb6a7536fe65984567307c08036d80add589821a6341d9",
+      "snapshot_sha256": "3447566821843cd288bb6a7536fe65984567307c08036d80add589821a6341d9",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/neural_history_trial.py",
+      "recorded_sha256": "b7b44ad5591407379a323480db6c363803eef261a036320cb73a3009a2d95245",
+      "snapshot_sha256": "b7b44ad5591407379a323480db6c363803eef261a036320cb73a3009a2d95245",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/recomposition_multibudget_natural.py",
+      "recorded_sha256": "7c8e57c54dda7671d621246ce62b091649179e5b2608f3ca69cda4f308d4107e",
+      "snapshot_sha256": "7c8e57c54dda7671d621246ce62b091649179e5b2608f3ca69cda4f308d4107e",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/recomposition_trial.py",
+      "recorded_sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "snapshot_sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_trial_20261105/freeze.json",
+      "file": "src/uji.py",
+      "recorded_sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+      "snapshot_sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_transfer_20261107/freeze.json",
+      "file": "src/tabicl_multitask_transfer.py",
+      "recorded_sha256": "6b6fd18c84973d8efa3ba963df92465195513973655f3d0d139ce62c2a959638",
+      "snapshot_sha256": "6b6fd18c84973d8efa3ba963df92465195513973655f3d0d139ce62c2a959638",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_transfer_20261107/freeze.json",
+      "file": "src/tabicl_context_matching_trial.py",
+      "recorded_sha256": "4454b453256c1c7a5007361f26c14c6ea3f17e1a428c9a73cb40cd8a39b9d250",
+      "snapshot_sha256": "4454b453256c1c7a5007361f26c14c6ea3f17e1a428c9a73cb40cd8a39b9d250",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_transfer_20261107/freeze.json",
+      "file": "src/tabicl_context_matching.py",
+      "recorded_sha256": "b18e177dc317c0073bdbf272ad03f6089460e62cde40370bf0cc0fb637d4f907",
+      "snapshot_sha256": "b18e177dc317c0073bdbf272ad03f6089460e62cde40370bf0cc0fb637d4f907",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_transfer_20261107/freeze.json",
+      "file": "src/check_tabicl_context_matching.py",
+      "recorded_sha256": "2d6171ad012c76d7963609eb98646a9aec954e32cda24268aa6a7e076dfb9ef3",
+      "snapshot_sha256": "2d6171ad012c76d7963609eb98646a9aec954e32cda24268aa6a7e076dfb9ef3",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_transfer_20261107/freeze.json",
+      "file": "src/tabicl_history.py",
+      "recorded_sha256": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518",
+      "snapshot_sha256": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_transfer_20261107/freeze.json",
+      "file": "src/tabicl_history_learning.py",
+      "recorded_sha256": "ce9ff72806f312793bbe164ed61e29af5b64873c7f131d68381e20c930681387",
+      "snapshot_sha256": "ce9ff72806f312793bbe164ed61e29af5b64873c7f131d68381e20c930681387",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_transfer_20261107/freeze.json",
+      "file": "src/check_tabicl_history_learning.py",
+      "recorded_sha256": "7dd215013f22304617ec04ec27a786f60567e3c52c9a063c6db949d0539ff4c9",
+      "snapshot_sha256": "7dd215013f22304617ec04ec27a786f60567e3c52c9a063c6db949d0539ff4c9",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_transfer_20261107/freeze.json",
+      "file": "src/acquisition_tasks.py",
+      "recorded_sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50",
+      "snapshot_sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_transfer_20261107/freeze.json",
+      "file": "src/uji.py",
+      "recorded_sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+      "snapshot_sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+      "match": true
+    },
+    {
+      "freeze": "evidence/tabicl_multitask_transfer_20261107/freeze.json",
+      "file": "src/recomposition_trial.py",
+      "recorded_sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "snapshot_sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/acquisition_retention_trial.py",
+      "recorded_sha256": "1d0a002befd1d667e9cb5d709df0e24db271729412fa42c26f704b8ef6e77be4",
+      "snapshot_sha256": "1d0a002befd1d667e9cb5d709df0e24db271729412fa42c26f704b8ef6e77be4",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/acquisition_transfer.py",
+      "recorded_sha256": "7a7dd18e24dbf99fd4ee0f4d4098aedf962fbf0102e4bc65f12e5ddff76e5283",
+      "snapshot_sha256": "7a7dd18e24dbf99fd4ee0f4d4098aedf962fbf0102e4bc65f12e5ddff76e5283",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/acquisition_tasks.py",
+      "recorded_sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50",
+      "snapshot_sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/adaptation.py",
+      "recorded_sha256": "dc6a8a65d427fc573cf19ef0e984dedd6e15316714fb458e8d05d30d4db27fba",
+      "snapshot_sha256": "dc6a8a65d427fc573cf19ef0e984dedd6e15316714fb458e8d05d30d4db27fba",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/predict.py",
+      "recorded_sha256": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5",
+      "snapshot_sha256": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/episodic_tasks.py",
+      "recorded_sha256": "cc2461e847889d4929af1f9be661214b6e6e1c5529d5550cb4d38cd76e94c02f",
+      "snapshot_sha256": "cc2461e847889d4929af1f9be661214b6e6e1c5529d5550cb4d38cd76e94c02f",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/fields.py",
+      "recorded_sha256": "25d9d929d317baf38e16924822d26b77a9d94a35be6dbea0cfda0c16818efbbb",
+      "snapshot_sha256": "25d9d929d317baf38e16924822d26b77a9d94a35be6dbea0cfda0c16818efbbb",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/fingerprint_change.py",
+      "recorded_sha256": "9c89888bba14e96bc35c6640460118cb9e77ea0f5190e35d5f027ccd0493cb31",
+      "snapshot_sha256": "9c89888bba14e96bc35c6640460118cb9e77ea0f5190e35d5f027ccd0493cb31",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/fingerprint_posterior.py",
+      "recorded_sha256": "5be319d6f85b42466b5c415acfde2a6b1839911fa7ce34bb924e301264b2b728",
+      "snapshot_sha256": "5be319d6f85b42466b5c415acfde2a6b1839911fa7ce34bb924e301264b2b728",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/posterior.py",
+      "recorded_sha256": "72b31b7e548b4b0eaa68a9fd63cfce1d7f3f020902a834ec90da3e37272eca4d",
+      "snapshot_sha256": "72b31b7e548b4b0eaa68a9fd63cfce1d7f3f020902a834ec90da3e37272eca4d",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/observations.py",
+      "recorded_sha256": "930fdd3ffe2a2bb40dbcd897aae61b6cf0efc0b4e1ce9548fedc113e9ce059c7",
+      "snapshot_sha256": "930fdd3ffe2a2bb40dbcd897aae61b6cf0efc0b4e1ce9548fedc113e9ce059c7",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/conditional_history_field.py",
+      "recorded_sha256": "a2dac7094aa28348fc3421b6b725dc03288a48424817958ea20fed65af5db853",
+      "snapshot_sha256": "a2dac7094aa28348fc3421b6b725dc03288a48424817958ea20fed65af5db853",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/conditional_budget_trial.py",
+      "recorded_sha256": "3447566821843cd288bb6a7536fe65984567307c08036d80add589821a6341d9",
+      "snapshot_sha256": "3447566821843cd288bb6a7536fe65984567307c08036d80add589821a6341d9",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/neural_history_trial.py",
+      "recorded_sha256": "b7b44ad5591407379a323480db6c363803eef261a036320cb73a3009a2d95245",
+      "snapshot_sha256": "b7b44ad5591407379a323480db6c363803eef261a036320cb73a3009a2d95245",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/recomposition_multibudget_natural.py",
+      "recorded_sha256": "7c8e57c54dda7671d621246ce62b091649179e5b2608f3ca69cda4f308d4107e",
+      "snapshot_sha256": "7c8e57c54dda7671d621246ce62b091649179e5b2608f3ca69cda4f308d4107e",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/recomposition_trial.py",
+      "recorded_sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "snapshot_sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/uji.py",
+      "recorded_sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+      "snapshot_sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+      "match": true
+    },
+    {
+      "freeze": "evidence/acquisition_retention_transfer_20261105/freeze.json",
+      "file": "src/acquisition_retention_transfer.py",
+      "recorded_sha256": "ee59878db6934bf951928c322ddc2e627cf498e0cae8b6505c2e9692ee5e3d3b",
+      "snapshot_sha256": "ee59878db6934bf951928c322ddc2e627cf498e0cae8b6505c2e9692ee5e3d3b",
+      "match": true
+    }
+  ],
+  "dynamic_dependency_notes": {
+    "legacy_models": "Two modules match paired_assets_20261106 original hashes; path relocation is archival only. No loader rewritten.",
+    "legacy_public_corpus": "Local project-source closure for public_corpus.probe_episodes; not asserted to match every old server run. Original OLD path retained in core.",
+    "third_party": "TabICL, XGBoost, PyTorch etc are not vendored. See freeze package hashes and imports."
+  }
+}

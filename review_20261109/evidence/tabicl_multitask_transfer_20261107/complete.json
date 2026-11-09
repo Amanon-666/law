@@ -1,0 +1,87 @@
+{
+  "complete": true,
+  "created": "2026-11-07T14:18:35.679121+00:00",
+  "seconds": 17.722991121932864,
+  "summary": {
+    "means": {
+      "frozen": 10.406813714132886,
+      "GP": 10.597572793712423,
+      "retained": 9.940603119502104,
+      "WKNN": 12.299139285084872,
+      "full_model": 10.02497504701542
+    },
+    "gains": {
+      "frozen": 0.036691217658572306,
+      "GP": 0.05403102746665989,
+      "retained": -0.008487606486148769,
+      "WKNN": 0.18490434048725046
+    },
+    "learning_criterion": true,
+    "replacement_criterion": false
+  },
+  "directions": [
+    {
+      "event": "B1F1_acquisition_0",
+      "full_model": {
+        "raw": 9.842598647949409,
+        "projected": 9.842598647949409
+      },
+      "public": 10.142132304395245,
+      "GP": 11.285770380297478,
+      "retained": 10.003152968913543,
+      "WKNN": 12.590916303915558
+    },
+    {
+      "event": "B1F1_acquisition_1",
+      "full_model": {
+        "raw": 10.20735144608143,
+        "projected": 10.20735144608143
+      },
+      "public": 10.671495123870526,
+      "GP": 9.909375207127368,
+      "retained": 9.878053270090662,
+      "WKNN": 12.007362266254185
+    }
+  ],
+  "records": [
+    {
+      "event": "B1F1_acquisition_0",
+      "mde": {
+        "raw": 9.842598647949409,
+        "projected": 9.842598647949409
+      },
+      "frozen": 10.142132304395245,
+      "context_rows": 2331,
+      "APs": 173
+    },
+    {
+      "event": "B1F1_acquisition_1",
+      "mde": {
+        "raw": 10.20735144608143,
+        "projected": 10.20735144608143
+      },
+      "frozen": 10.671495123870526,
+      "context_rows": 2331,
+      "APs": 173
+    }
+  ],
+  "source_checkpoint": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/tabicl_multitask_full_trial_20261107_checked/full_step_24.ckpt",
+  "source_checkpoint_sha256": "bfc3553049ec88e847411d7a99e6dfe98bf330fce4adb8b5c6bf0d50c9223a59",
+  "source_final_sha256": "0161024a77e6839357a91333dd6fdf144b8d10bb88a1a80a58f78830656738ed",
+  "source_state_sha256": "b4128a22966334431ef26a59f54e83d3b4e7d4cd0744feb5bb994bed19858bd3",
+  "model_state_unchanged": true,
+  "source_updates": 24,
+  "new_training_updates": 0,
+  "target_updates": 0,
+  "target_tasks": 2,
+  "public_repredicted": false,
+  "GP_refitted": false,
+  "blind_test": false,
+  "converged": false,
+  "freeze_sha256": "db8d381585a98432196dc564b5c4dc1e2f21529fafb1923721fbb3fe4d785218",
+  "predictions": {
+    "B1F1_acquisition_0": "9ecc338e06c2cd73581c3e2a720ad0d63c4a6f5ff1c5041a8f454be3e5abde66",
+    "B1F1_acquisition_1": "d8ab7590bec07f5d0ddad13d46b488e4898a04774afbd1292128e4b12c4f2f83"
+  },
+  "peak_gpu_MiB": 1547.2666015625
+}

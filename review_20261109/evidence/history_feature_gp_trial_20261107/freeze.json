@@ -1,0 +1,771 @@
+{
+  "created": "2026-11-07T15:38:10.508210+00:00",
+  "seed": 1150546,
+  "code": {
+    "history_feature_gp_trial.py": "451af97037ec22eaa3d330d300dc81b5ec8ec5aaecf55304d817ee688c449c3d",
+    "history_feature_gp.py": "83bbdaff19529a7bfde9354798c9c92518367eafe7501265496322c6c977cb10",
+    "history_feature_cache.py": "19280c88f01b3db7641a552ecb21c7939682a987837d170f5eac3e8e78d4390a",
+    "tabicl_history_features.py": "769e9f19eb36fee13f4d98b45a62348854fd013212870bac8c465990077abc7d",
+    "tabicl_history.py": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518",
+    "tabicl_history_learning.py": "ce9ff72806f312793bbe164ed61e29af5b64873c7f131d68381e20c930681387",
+    "tabicl_multitask_full_trial.py": "0bbd3259e8dc9655a1c3737dca99e7d00727a1a52ae872fbece6e0fe686b96b3",
+    "source_episode_catalog.py": "f4a14a634dd9592003b60559ca3ea46ab0e852d2adfae18e5ce012e81c37d303",
+    "recomposition_trial.py": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21"
+  },
+  "package": {
+    "tabicl/__about__.py": "0ca93ed5bfab66c245c458b526827b4e612f204434adff82f470195b0be3b8cd",
+    "tabicl/__init__.py": "f40b23bee37298b180b86d3aed5444a0a9be154fd1e4b1cd02ee01b4bc112516",
+    "tabicl/_finetune/__init__.py": "e84be47a11765308609ac615943d86226d08260491383cff8ef056be79c94601",
+    "tabicl/_finetune/base.py": "9fc3a3a380f24cafdb7cc1888aefa99d648d38b04258e82a1478ea8635c940d0",
+    "tabicl/_finetune/classifier.py": "26afc0f2e16241be769fc2344cdcf04ec108971560e518b0ee4e094de04cad6c",
+    "tabicl/_finetune/data.py": "4ff16a94194b3e158b720915149c9c68e3492560b5151a434a26c1cbad639bc1",
+    "tabicl/_finetune/logging.py": "21a35f4f060990d972e245f9bb74b9df0d254336c7f93065517e3bb9df75849b",
+    "tabicl/_finetune/regressor.py": "068d51719518490a46162128d1806b4fb16f253b3d6ed5f9de7f5daad43af741",
+    "tabicl/_model/__init__.py": "c24eccee285dd1c5dea721708cd3e52501fe39f29a865fb6cd3d8b448a33ad4f",
+    "tabicl/_model/_cgroup_memory.py": "161bc6813d8e15c657bff0ce169b6b16230fe76e24516737eb341c73953a1495",
+    "tabicl/_model/attention.py": "2406a52571ce33392b003aca185550bc33a8e55797de72bdbf8b4449b09e66f8",
+    "tabicl/_model/embedding.py": "a0c562600fe22944f91b1b71b706198cb9a4c3d9d8aaba67a86f35a85493d322",
+    "tabicl/_model/encoders.py": "a3e0e9bde47e7f587c4a196d124ea631e25755d4f5ac5d6a8568618a4e299a4e",
+    "tabicl/_model/inference.py": "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc",
+    "tabicl/_model/inference_config.py": "852abb9cf97e9c82ae42a92b034581f6e9131f3bec70efbd3ce068ac92a77a37",
+    "tabicl/_model/interaction.py": "6f35b5a70cd7b7ea44286faa8921b64c2cc83aca8ed49a4ad8b287abe54cbf27",
+    "tabicl/_model/kv_cache.py": "a7942448631e1770455c826ae159176725f98d2eefc874101c8687f605c57bd8",
+    "tabicl/_model/layers.py": "96cce2e84db33e176d872c7bb7c0df8c305de3eb7a02fcad9f1128f33d319d95",
+    "tabicl/_model/learning.py": "7549dff09c3796a3cb0b55ea03e249342392fa601a681526f7b1efb6a6f1eef2",
+    "tabicl/_model/quantile_dist.py": "7e09ac0c3ce0260dc07cef79b0a98ee63b0785efafbf415fd243fe2981499b99",
+    "tabicl/_model/rope.py": "f59874106743b58330f35699df27ad8d45d4ae692b38c64626f58cdf2da12eab",
+    "tabicl/_model/ssmax.py": "29b3955e2597446cdcfe70f2084a70faa959f0ef510a27ac0668e58943d3d639",
+    "tabicl/_model/tabicl.py": "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491",
+    "tabicl/_sklearn/__init__.py": "000e8247eb8c86e7dbda9f7091f0a341a390e41e6894f617488c034b1ebef11d",
+    "tabicl/_sklearn/base.py": "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+    "tabicl/_sklearn/classifier.py": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+    "tabicl/_sklearn/preprocessing.py": "2163a3bf6754127365a7aedac854d99a6f565545cc1ea7e63c68a596081b2976",
+    "tabicl/_sklearn/regressor.py": "9bfc15027a63211e7ab15a2924c13eb7537937dbd3d53e2799b18cdbc8d09731",
+    "tabicl/_sklearn/sklearn_utils.py": "e5639073a9c80bcaf13c1b59de424be76f17d4e66418f74ff0c41840920d54b2",
+    "tabicl/_torch_devices.py": "badd87f5f62a03add8efd5f101ad7d67634cf7808ec4b104d5f7cb1c3b774942",
+    "tabicl/_unsupervised/__init__.py": "e5fb5869472ad2f49019e188fc7ad38d3c54d6f9eb86b1fb7e5bd81b34610aac",
+    "tabicl/_unsupervised/unsupervised.py": "a226992e3c959e5e665b5f79dfca0e74a76f927cb7a94a83c392a78939f8285c",
+    "tabicl/forecast/__init__.py": "1beb749587642d8be7c734638780361d095a408ea64f790a2468356f7eaa0afe",
+    "tabicl/forecast/_dispatch.py": "755f98ab30adec615c211a5913f88516797e9339b39cb7aceb3b26aafb002677",
+    "tabicl/forecast/_engine.py": "8f902a6e117cf07cb42cbef7538daf081579d71e80a08b5b9cbec6f3857e3f99",
+    "tabicl/forecast/_forecaster.py": "48b579efa88997492ad27d7aa5371518bee216860d11ae7051c7e143779809f9",
+    "tabicl/forecast/_plotting.py": "df253ec7bf61d5670c85e657174730df32984b934e767aea83627009a1122041",
+    "tabicl/forecast/_preprocessing.py": "d4175203418764746b5fd29506d56d279f74148e0431fb9d75f07c8ecdfd0a79",
+    "tabicl/forecast/_ts_dataframe.py": "381a6e24aeee36be4ac4166f0dad4de63f2b9cc4f1d191096e9140bef0e764f1",
+    "tabicl/forecast/transforms/__init__.py": "2ca8a32f76958533807c4e3606db74ab705e255c241e58bf024cb5227dd9ebef",
+    "tabicl/forecast/transforms/_base.py": "7c3773607b052db4a53e526741404131ab68681ce8ac0f56488c269ed000d425",
+    "tabicl/forecast/transforms/_calendar.py": "15c138bb56325c8625383e2793b1d55982f0fbff71ceca6cd2b6bf75d5862aef",
+    "tabicl/forecast/transforms/_pipeline.py": "dfad7e852fd527c7a4d1a1bef03902002a22bee66c51c9721405635eee94e112",
+    "tabicl/forecast/transforms/_seasonality.py": "4b2c8c21335bd525624841efb44ba10d380ffd5192b02dcc6c516939bfe54526",
+    "tabicl/prior/__init__.py": "87f6627fa1bc3bbb6379fda1d8930d26fb8a92646c7247035ce6408a5e3c8577",
+    "tabicl/prior/__main__.py": "009739ac1995497fcaf04a15c99de0c6f1de0c6ef1d00ebac5b369ea4b920032",
+    "tabicl/prior/_activations.py": "a0fb88053f642af1fd99669f681513af0446faccaca5141919ed837d8da48e1a",
+    "tabicl/prior/_dataset.py": "3c3624af9ea9ca99345a64b37962f99422c56eb114f52f3c8f523a928782efbd",
+    "tabicl/prior/_genload.py": "5e88789ddb203314a5bcb44e530cdb5fde03f4c627cad2f548047e45fbdbbbfd",
+    "tabicl/prior/_graph_scm.py": "89f955bbc9854616ef4f0225a3a391ab2cc2c708be50669a4d9af348abb27684",
+    "tabicl/prior/_hp_sampling.py": "6e973dc1f992658fb61d297c66d0259ba416b941a1844dd08bd7cacace05bceb",
+    "tabicl/prior/_mlp_scm.py": "9e565999b5eef77c57027a99b3570719df331f7a5b1c1b27cf4d93bb9e2afd3c",
+    "tabicl/prior/_prior_config.py": "7e70db056f95e9a14d38d3d8baa25aaa4935d0967fd901a3af32e9616157ba0d",
+    "tabicl/prior/_reg2cls.py": "d1672e2cb3fcf3eb4ee7d0ed72a23f8c9bc73dbce202185a152029fc9fcfbd23",
+    "tabicl/prior/_tree_scm.py": "3667136254a3bedb5654969bd8b04f3e365b0b373a26eeb1d6d3940aaa415e13",
+    "tabicl/prior/_utils.py": "b99f93b5b128b8e40030460af82462ccf7918ea05c9a3fecc33efe8f05432f5b",
+    "tabicl/prior/graph_lib/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tabicl/prior/graph_lib/_activation.py": "11b8bca1e34d11725bbe2a19a229059840fe14ca0f604cbe864c07987bb9f51a",
+    "tabicl/prior/graph_lib/_base.py": "065ed93d700fb125222ee60b68656eb419a39c630645d1b8f44fe9d6baf718d7",
+    "tabicl/prior/graph_lib/_config.py": "789f5af746f7a96e3efd2433652c9a2fcdc2bbfe62988b391d3b8572be9baf01",
+    "tabicl/prior/graph_lib/_converter.py": "a402be9663e8fc527af83e31e76406179816afc0ddffc5d9fc7fe0b69af11ea9",
+    "tabicl/prior/graph_lib/_dataset.py": "7e4237e2f8c34b98000c147b81383b33711b381073d78212191d0761685ec1e1",
+    "tabicl/prior/graph_lib/_function.py": "ff2939197b353f6d11a3fbaf0e27586998bdf93527dad11f24698ff296ce2f6c",
+    "tabicl/prior/graph_lib/_graph.py": "36e9488d481d562387d11ef655510ffb1ad0a28c2d3bb49b48c1edba2f4acabc",
+    "tabicl/prior/graph_lib/_graph_function.py": "42413eade5ae9064c7ae86e8a0befb51aeb54ee87967fbc4f6691699d375764e",
+    "tabicl/prior/graph_lib/_matrix.py": "cfb1d766bbe0db14ae8987b8570e5f9392904ed32f63d1af206811882aaf4c41",
+    "tabicl/prior/graph_lib/_multi_function.py": "289e747e4b9b5a864b6adccac8531e3cff9dbbcfea31937a748317e71a302b1b",
+    "tabicl/prior/graph_lib/_node_function.py": "3b2345f23d0013442f7390c907454dfd4c6f4b43836a1bd210423242a34964c6",
+    "tabicl/prior/graph_lib/_points.py": "04dcbd7664004f6acc8453ca866caba0879d87d4ecbcdad08dd79f9ca2ff7a04",
+    "tabicl/prior/graph_lib/_properties.py": "ff64d682258891516a3d5c6b8f65c07f57a8b03cdfccc553a97e75cf070e16b7",
+    "tabicl/prior/graph_lib/_weights.py": "5e8ca75184a84ce34337a8b90dbc0ce199395fe03ba51c95c8b622438b85d2d8",
+    "tabicl/prior/graph_lib/eval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tabicl/prior/graph_lib/eval/check_runtime.py": "6184d869c119eeea0b35fb678b7b47a9d4f86381c13b8b02ee0e2f822728206c",
+    "tabicl/prior/graph_lib/eval/plot_random_dag.py": "40e4cde19fb2f0ae3f98fb2126e309f4f30a78406e35196864868a5b083f79c8",
+    "tabicl/prior/graph_lib/eval/plot_random_dataset.py": "a9db32b406e0a49c74038b5b5e0ce19a2d41d894d140bd78725d6892121ed6b7",
+    "tabicl/prior/graph_lib/eval/plot_random_function.py": "70cffaab40021959f198a671f37fe0ad5d919959f90a6b3091eef5cd1a7ca246",
+    "tabicl/prior/graph_lib/eval/plot_random_matrix.py": "97b46132af5d7010c81e66634c1a10303107d85d13e4df9997faff69acb3bb9d",
+    "tabicl/prior/graph_lib/eval/plot_random_points.py": "86a1108104ce279395c1b35364198183b2c8caef639bf9359738fd73494679f6",
+    "tabicl/prior/graph_lib/eval/plot_random_reg_1d_dataset.py": "bcf3507bf7ca453dedd9933a244910bf3671d0a2576c3da0486514072888ddc6",
+    "tabicl/prior/graph_lib/eval/plot_random_reg_2d_dataset.py": "ead5611b3b519c2279492425d3a8ab10692c219833be76da1a2650d82e4da0fc",
+    "tabicl/prior/graph_lib/eval/plot_random_weights.py": "30c66ddd2c8f36d414c3c0662560dbdbc5c469e07319106fa51fa877c0c4e795",
+    "tabicl/prior/graph_lib/eval/plot_scalars.py": "019c2a173a27cc5c6cd8790b904dedd6273a11f36ac282f6438d8e2f1af6710f",
+    "tabicl/shap/__init__.py": "d63aad1992768fc66e6ac95dd3cd3a581f4e11c64700c0f97cd67fdc989aa87d",
+    "tabicl/shap/_shap.py": "1440f601dff0d1be3dc678afae9dff470be74c0d216d808a5c214e3c5a3acfb4",
+    "tabicl/shap/_shapiq.py": "bd9cd60737ccca2759d25c26b117fb4b9480e75f209ddc97c79d23b878683b84",
+    "tabicl/train/__init__.py": "6e1d2d715ad0e452552af9ee3886ec202361951169db6c5db17a0701b2ab11b4",
+    "tabicl/train/__main__.py": "8c1e0f5dd2c1c523a21367cb6b91a3c31609d19a564c179445f794a756939d52",
+    "tabicl/train/_muon.py": "cbd26a41b61cdb3888037d5d8d554bfaa6671680557e0be18f689fc56b541b05",
+    "tabicl/train/_optim.py": "56e22ac1f4637db78271e552a6d92cebc50976796d7e57e4445ce6478f94d2b5",
+    "tabicl/train/_run.py": "72f01a3c9cea8d6f58a92c3189882aecc8962aa6f12274cd914f32dfc3717066",
+    "tabicl/train/_train_config.py": "f5f58e15ee2069d428b5de5d7889be393a911900a361f45be6cf7b6bc2871069"
+  },
+  "inputs": {
+    "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/source_episode_catalog_20261105/catalog.json": "120eb3b0129f066c35e2e3462840420175d88a2002b338849c226a78798faa2d",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/tabicl_multitask_full_trial_20261107_checked/full_step_24.ckpt": "bfc3553049ec88e847411d7a99e6dfe98bf330fce4adb8b5c6bf0d50c9223a59",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/tabicl_multitask_full_trial_20261107_checked/complete.json": "0161024a77e6839357a91333dd6fdf144b8d10bb88a1a80a58f78830656738ed",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/tabicl_multitask_full_trial_20261107_checked/freeze.json": "97b1e7ff64758a0ecd843829a07da624c26185597608b6eea3d880822583fc0f"
+  },
+  "fit_specs": [
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 0,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 0,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group2",
+      "draw_index": 0,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 0,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 0,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group3",
+      "draw_index": 0,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 0,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 0,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group2_to_B0F2_group0",
+      "draw_index": 0,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 0,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 0,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group3_to_B0F2_group0",
+      "draw_index": 0,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 0,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 0,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group2",
+      "draw_index": 0,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 0,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 0,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group3",
+      "draw_index": 0,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 1,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 1,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group2_to_B0F2_group0",
+      "draw_index": 1,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 1,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 1,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group3_to_B0F2_group0",
+      "draw_index": 1,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 1,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 1,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group2",
+      "draw_index": 1,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 1,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 1,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group3",
+      "draw_index": 1,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 1,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 1,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group2_to_B0F2_group0",
+      "draw_index": 1,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 1,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 1,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group3_to_B0F2_group0",
+      "draw_index": 1,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 3,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 3,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group2",
+      "draw_index": 3,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 3,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 3,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group3",
+      "draw_index": 3,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 3,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 3,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group2_to_B0F2_group0",
+      "draw_index": 3,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 3,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 3,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group3_to_B0F2_group0",
+      "draw_index": 3,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 3,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 3,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group2",
+      "draw_index": 3,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 3,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 3,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group3",
+      "draw_index": 3,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 4,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 4,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group2_to_B0F2_group0",
+      "draw_index": 4,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 4,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 4,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group3_to_B0F2_group0",
+      "draw_index": 4,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 4,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 4,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group2",
+      "draw_index": 4,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 4,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 4,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group3",
+      "draw_index": 4,
+      "k": 1,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 4,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 4,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group2_to_B0F2_group0",
+      "draw_index": 4,
+      "k": 3,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 4,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 4,
+      "k": 5,
+      "phase": "fit"
+    },
+    {
+      "family_id": "B0F2_group3_to_B0F2_group0",
+      "draw_index": 4,
+      "k": 5,
+      "phase": "fit"
+    }
+  ],
+  "validation_specs": [
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 2,
+      "k": 1,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 2,
+      "k": 3,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F0_group0_to_B0F0_group2",
+      "draw_index": 2,
+      "k": 5,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 2,
+      "k": 1,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 2,
+      "k": 3,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F0_group1_to_B0F0_group2",
+      "draw_index": 2,
+      "k": 5,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 2,
+      "k": 1,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 2,
+      "k": 3,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F0_group2_to_B0F0_group0",
+      "draw_index": 2,
+      "k": 5,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 2,
+      "k": 1,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 2,
+      "k": 3,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F1_group0_to_B0F1_group1",
+      "draw_index": 2,
+      "k": 5,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 2,
+      "k": 1,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 2,
+      "k": 3,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F1_group1_to_B0F1_group0",
+      "draw_index": 2,
+      "k": 5,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group2",
+      "draw_index": 2,
+      "k": 1,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group2",
+      "draw_index": 2,
+      "k": 3,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group2",
+      "draw_index": 2,
+      "k": 5,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group3",
+      "draw_index": 2,
+      "k": 1,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group3",
+      "draw_index": 2,
+      "k": 3,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group0_to_B0F2_group3",
+      "draw_index": 2,
+      "k": 5,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group2_to_B0F2_group0",
+      "draw_index": 2,
+      "k": 1,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group2_to_B0F2_group0",
+      "draw_index": 2,
+      "k": 3,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group2_to_B0F2_group0",
+      "draw_index": 2,
+      "k": 5,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group3_to_B0F2_group0",
+      "draw_index": 2,
+      "k": 1,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group3_to_B0F2_group0",
+      "draw_index": 2,
+      "k": 3,
+      "phase": "validation"
+    },
+    {
+      "family_id": "B0F2_group3_to_B0F2_group0",
+      "draw_index": 2,
+      "k": 5,
+      "phase": "validation"
+    }
+  ],
+  "source_events": 72,
+  "validation_events": 27,
+  "optimizer": {
+    "method": "L-BFGS-B",
+    "starts": [
+      [
+        10.0,
+        1.0,
+        5.0
+      ],
+      [
+        5.0,
+        0.1,
+        5.0
+      ],
+      [
+        20.0,
+        10.0,
+        10.0
+      ]
+    ],
+    "log_bounds": [
+      [
+        -2.3025850929940455,
+        4.605170185988092
+      ],
+      [
+        -4.605170185988091,
+        4.605170185988092
+      ],
+      [
+        -2.3025850929940455,
+        4.605170185988092
+      ]
+    ],
+    "maxiter": 120,
+    "maxls": 30,
+    "ftol": 1e-11,
+    "gtol": 1e-06,
+    "accepted_projected_gradient": 0.0001
+  },
+  "objectives": "Same site-average Gaussian; joint NLL/all sites vs (joint-S-marginal NLL)/Q sites; equal episodes/floors.",
+  "selection": "Lowest converged SOURCE fitting objective. No validation selection; no target evaluation.",
+  "criterion": "Conditional mean improves >=3% over both full H+S and joint GP; no floor or K mean worse than either.",
+  "boundaries": [
+    "Deep-kernel GP and conditional fitting are mature rules, not originality evidence",
+    "Full H-only preprocessing differs from existing H+S: system comparison, not single-module attribution",
+    "Previously exposed source validation, no unseen-building or independent-trial claim",
+    "No matching strong-GP result for this source catalog; old scores cannot substitute"
+  ],
+  "resources": {
+    "cpu": 2,
+    "gpu": 1,
+    "wall_seconds": 900,
+    "max_gpu_fraction": 0.75,
+    "downloads": 0,
+    "network_updates": 0
+  }
+}
