@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "created": "2026-11-09T17:37:26.681513+00:00",
+  "seconds": 4.342188190668821,
+  "code_sha256": "b0acb1cbb401570ef9576082352d2d8775cc4f050ece85934c5346bfccb2b0b8",
+  "freeze_sha256": "3435a59dcc5bde321f0435d3b1195cc0f93665db4c4f867bef908191e1cf584e",
+  "profile_sha256": "feaf8fa15f5dfee40f2216c25783801a09ec376ff2cf3c434dfbcc1ce6fe3f21",
+  "source_only": true,
+  "coverage": {
+    "by_K": {
+      "1": {
+        "events": 34,
+        "Q_detections": 21029,
+        "Q_detected_S_unseen": 12210,
+        "Q_detected_H_unseen": 186,
+        "S_unseen_fraction": 0.5806267535308384,
+        "H_unseen_fraction": 0.008844928432165106
+      },
+      "3": {
+        "events": 31,
+        "Q_detections": 19495,
+        "Q_detected_S_unseen": 7649,
+        "Q_detected_H_unseen": 106,
+        "S_unseen_fraction": 0.39235701461913314,
+        "H_unseen_fraction": 0.005437291613234163
+      },
+      "5": {
+        "events": 31,
+        "Q_detections": 19187,
+        "Q_detected_S_unseen": 5288,
+        "Q_detected_H_unseen": 97,
+        "S_unseen_fraction": 0.2756032730494606,
+        "H_unseen_fraction": 0.005055506332412571
+      }
+    },
+    "weighting": "Observed query scan-AP detections pooled within K; repeated schedule occurrences retained",
+    "scope": "Original source episodic scans only; no augmented values, protected rows or held-out building",
+    "limitation": "Not independent samples or future population estimates. H coverage does not imply S coverage; S detection alone does not identify a persistent bias."
+  },
+  "model_calls": 0,
+  "backward_calls": 0,
+  "limits": [
+    "AP-wise fully detected subset; not latent RSS or complete coverage",
+    "Pairs and positions are dependent, not future population estimates",
+    "Missing evidence means no added perturbation, not zero real bias",
+    "S/Q shared increment is an augmentation assumption despite distinct real acquisition groups",
+    "Adding any increment can widen existing differences; not a distribution-preserving replacement"
+  ],
+  "original_complete_sha256": "59247954a3350a286bd85f583866435afd4543ead3c151ef15ef09e0814adcc1",
+  "scope": "Source information check, not localization performance; extracted from completed floor-matched profile."
+}
