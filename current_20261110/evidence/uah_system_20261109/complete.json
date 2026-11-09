@@ -1,0 +1,282 @@
+{
+  "complete": true,
+  "created": "2026-11-09T13:36:38.745458+00:00",
+  "summary": {
+    "3NN": {
+      "mean": 6.384537472386639,
+      "by_K": {
+        "1": 6.1336392246168465,
+        "3": 6.2589018341470775,
+        "5": 6.76107135839599
+      },
+      "by_direction": {
+        "AB": 6.257572361606446,
+        "BA": 6.5115025831668305
+      }
+    },
+    "GP": {
+      "mean": 4.63763860519473,
+      "by_K": {
+        "1": 4.61690299928945,
+        "3": 4.692669087094325,
+        "5": 4.6033437292004145
+      },
+      "by_direction": {
+        "AB": 4.3761872938444855,
+        "BA": 4.899089916544974
+      }
+    },
+    "public": {
+      "mean": 5.27351732810227,
+      "by_K": {
+        "1": 4.937445273367944,
+        "3": 5.020237539348679,
+        "5": 5.862869171590187
+      },
+      "by_direction": {
+        "AB": 5.377268315548423,
+        "BA": 5.1697663406561185
+      }
+    },
+    "ordinary": {
+      "mean": 5.110485111548944,
+      "by_K": {
+        "1": 4.863668770458523,
+        "3": 5.014492103222727,
+        "5": 5.453294460965581
+      },
+      "by_direction": {
+        "AB": 5.15402520388299,
+        "BA": 5.066945019214898
+      }
+    },
+    "full24": {
+      "mean": 5.365538876130077,
+      "by_K": {
+        "1": 5.169350793330185,
+        "3": 5.294226823004989,
+        "5": 5.633039012055054
+      },
+      "by_direction": {
+        "AB": 5.379288286086937,
+        "BA": 5.351789466173216
+      }
+    },
+    "GP_public_half": {
+      "mean": 4.699430956342014,
+      "by_K": {
+        "1": 4.518767677755669,
+        "3": 4.576266650919843,
+        "5": 5.003258540350532
+      },
+      "by_direction": {
+        "AB": 4.727399690021283,
+        "BA": 4.671462222662746
+      }
+    },
+    "GP_ordinary_half": {
+      "mean": 4.605007590772459,
+      "by_K": {
+        "1": 4.478811324471718,
+        "3": 4.544691223310972,
+        "5": 4.791520224534689
+      },
+      "by_direction": {
+        "AB": 4.609791533216967,
+        "BA": 4.600223648327952
+      }
+    },
+    "GP_full24_half": {
+      "mean": 4.709773894363029,
+      "by_K": {
+        "1": 4.599175948232691,
+        "3": 4.657440110331626,
+        "5": 4.8727056245247695
+      },
+      "by_direction": {
+        "AB": 4.685932738725672,
+        "BA": 4.7336150500003855
+      }
+    }
+  },
+  "records": [
+    {
+      "event": "UAH2016_B20F1_AB_K1",
+      "K": 1,
+      "direction": "AB",
+      "query_scans": 32,
+      "query_positions": 32,
+      "mde": {
+        "3NN": 5.849777810502614,
+        "GP": 4.3688446104989875,
+        "public": 4.757816194855948,
+        "ordinary": 4.769827672176234,
+        "full24": 4.989828258025021,
+        "GP_public_half": 4.402837202508116,
+        "GP_ordinary_half": 4.377099796084149,
+        "GP_full24_half": 4.463041736948414
+      },
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_AB_K1_unscored.npz",
+      "prediction_sha256": "e293b4aa21655e56ac9f6df4db06b1d4e7ffe57155a040116869e383208463f6",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_AB_K1_scored.npz",
+      "scored_sha256": "c787602e0d57c88051309e248f27cb37a24cb37efe0e2893f953e968274b7b97",
+      "GP_diagnostics_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_AB_K1_GP_diagnostics.json",
+      "GP_diagnostics_sha256": "804980fb183af2388ae4a71bc63479612245a8a28dd3047f79ad467fa7bad4fa",
+      "seconds": 48.683979354798794
+    },
+    {
+      "event": "UAH2016_B20F1_AB_K3",
+      "K": 3,
+      "direction": "AB",
+      "query_scans": 32,
+      "query_positions": 32,
+      "mde": {
+        "3NN": 6.005047603116251,
+        "GP": 4.448486871499043,
+        "public": 4.764186463470214,
+        "ordinary": 4.757845859730084,
+        "full24": 5.093952627274589,
+        "GP_public_half": 4.439428901176507,
+        "GP_ordinary_half": 4.426820264587459,
+        "GP_full24_half": 4.5329259767797225
+      },
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_AB_K3_unscored.npz",
+      "prediction_sha256": "636cb43737a35d2d351fc84f61d4a3ce09b34d8733d95449e9229d5ffab73687",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_AB_K3_scored.npz",
+      "scored_sha256": "137fe8e62daa63b59eb13c83f8190ec7d9c64eb419e5b6dffdb5e048574a98b9",
+      "GP_diagnostics_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_AB_K3_GP_diagnostics.json",
+      "GP_diagnostics_sha256": "08c89b98b9e0b4bcb8882994cc4867f5a298ecfd36f9117023343c61253895bd",
+      "seconds": 52.831828873604536
+    },
+    {
+      "event": "UAH2016_B20F1_AB_K5",
+      "K": 5,
+      "direction": "AB",
+      "query_scans": 32,
+      "query_positions": 32,
+      "mde": {
+        "3NN": 6.917891671200471,
+        "GP": 4.311230399535427,
+        "public": 6.609802288319104,
+        "ordinary": 5.934402079742651,
+        "full24": 6.0540839729612,
+        "GP_public_half": 5.3399329663792265,
+        "GP_ordinary_half": 5.025454538979293,
+        "GP_full24_half": 5.061830502448879
+      },
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_AB_K5_unscored.npz",
+      "prediction_sha256": "21d4b59aa62d24534cda041e1cf1f1abd861e54eacbd353c91c39a8d22fe0af8",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_AB_K5_scored.npz",
+      "scored_sha256": "d97e77e1fd9e88bc6caf89d6cf042dc8312249027b395d9b7c3ed0ffaad4a7d4",
+      "GP_diagnostics_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_AB_K5_GP_diagnostics.json",
+      "GP_diagnostics_sha256": "da65c9a71b2ddee4c4c72d604588d1d01fe1cba285970331f937546b336ee009",
+      "seconds": 56.99850381910801
+    },
+    {
+      "event": "UAH2016_B20F1_BA_K1",
+      "K": 1,
+      "direction": "BA",
+      "query_scans": 63,
+      "query_positions": 63,
+      "mde": {
+        "3NN": 6.417500638731079,
+        "GP": 4.864961388079912,
+        "public": 5.11707435187994,
+        "ordinary": 4.957509868740813,
+        "full24": 5.3488733286353485,
+        "GP_public_half": 4.634698153003222,
+        "GP_ordinary_half": 4.580522852859287,
+        "GP_full24_half": 4.735310159516968
+      },
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_BA_K1_unscored.npz",
+      "prediction_sha256": "834657a1357829d58fb603aa25e7b232c1f45d02fb7565a90513c2d2fc5e3a08",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_BA_K1_scored.npz",
+      "scored_sha256": "fbe39a8490dae277e48df7206e93401268d18d42b322eb38152968f3e4d36fd8",
+      "GP_diagnostics_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_BA_K1_GP_diagnostics.json",
+      "GP_diagnostics_sha256": "287dfc646f78f4400cc82ccbf38f932e2c36f79cd115c06d07d9cb2d2725eb61",
+      "seconds": 47.4226216673851
+    },
+    {
+      "event": "UAH2016_B20F1_BA_K3",
+      "K": 3,
+      "direction": "BA",
+      "query_scans": 63,
+      "query_positions": 63,
+      "mde": {
+        "3NN": 6.5127560651779035,
+        "GP": 4.936851302689608,
+        "public": 5.276288615227146,
+        "ordinary": 5.271138346715369,
+        "full24": 5.494501018735389,
+        "GP_public_half": 4.7131044006631795,
+        "GP_ordinary_half": 4.662562182034484,
+        "GP_full24_half": 4.781954243883529
+      },
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_BA_K3_unscored.npz",
+      "prediction_sha256": "5138d3dd346a4889c65da3e001f6c4ccbf5c19a72b2b8c6c138d951a83d1f109",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_BA_K3_scored.npz",
+      "scored_sha256": "cc285c2b56c49302eaea6c3a3d87399948149c9c6f7b63ebd349ad70f1a9aa3b",
+      "GP_diagnostics_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_BA_K3_GP_diagnostics.json",
+      "GP_diagnostics_sha256": "f6b1be8bd5cdf0132414bbb889ab1d635c61f6d63979dd1c34e974933b155f86",
+      "seconds": 52.954609636217356
+    },
+    {
+      "event": "UAH2016_B20F1_BA_K5",
+      "K": 5,
+      "direction": "BA",
+      "query_scans": 63,
+      "query_positions": 63,
+      "mde": {
+        "3NN": 6.604251045591509,
+        "GP": 4.895457058865402,
+        "public": 5.115936054861271,
+        "ordinary": 4.972186842188511,
+        "full24": 5.211994051148908,
+        "GP_public_half": 4.666584114321838,
+        "GP_ordinary_half": 4.557585910090085,
+        "GP_full24_half": 4.6835807466006605
+      },
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_BA_K5_unscored.npz",
+      "prediction_sha256": "f18ce4f7fd30a22a580ba3487ae1c15ab3c2faecc1d8a55c1f099b0a42a3e645",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_BA_K5_scored.npz",
+      "scored_sha256": "dd563231da2bdea130647a44db7322ecf60b29625c8a2671e53c38dee1b856ef",
+      "GP_diagnostics_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uah_system_20261109/UAH2016_B20F1_BA_K5_GP_diagnostics.json",
+      "GP_diagnostics_sha256": "aeb2556edd9b0cb2d090efd475bb023d736249619b4553e58aa7c1efbf0593ed",
+      "seconds": 57.206899113953114
+    }
+  ],
+  "segments": [
+    {
+      "phase": "adapt",
+      "ended": "2026-11-09T13:24:23.566819+00:00",
+      "seconds": 16.387920383363962,
+      "budget": 900.0,
+      "budget_overrun": false
+    },
+    {
+      "phase": "evaluate",
+      "ended": "2026-11-09T13:36:38.744936+00:00",
+      "seconds": 316.68563179671764,
+      "budget": 900.0,
+      "budget_overrun": false
+    }
+  ],
+  "freeze_sha256": "692771621ccdf199976d84fff5a66e6f6e49b113d767901016e9ea1d1dc1fdfe",
+  "adapted_sha256": "5ca352ee87106c70fa2df2f57a0c064107df7c7980482ca3c920a9f0fe4a4a57",
+  "primary_gain_vs_GP": 0.007036127046579299,
+  "network_updates": 0,
+  "history_fits": 0,
+  "support_adaptations": 6,
+  "target_selection": false,
+  "blind_test": false,
+  "limits": [
+    "One exposed external development floor, not a blind test or broad generalization guarantee",
+    "Two same-day routes and device-file labels; no claim of longitudinal or static repeated scans",
+    "Positions are time-interpolated landmarks; K means K positions with one original scan each",
+    "Original selected H only: 128/128/109 scans; all methods share these same historical assets",
+    "Public, ordinary30, full24 and GP base/observation parameters remain UJI-derived",
+    "Only GP source weights and intercept choice adapt to each UAH Support; no Query fitting",
+    "Fixed half averages are mature fusion; improvement alone is not a novel historical mechanism",
+    "Directions have different Query counts; aggregate equally by direction and K, then position"
+  ]
+}

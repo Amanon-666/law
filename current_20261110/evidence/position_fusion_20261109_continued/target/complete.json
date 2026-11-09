@@ -1,0 +1,1202 @@
+{
+  "complete": true,
+  "created": "2026-11-09T10:04:06.872876+00:00",
+  "freeze_sha256": "805e5469b7ca66b0465fb597fbb64cf06471299629b23be7b7f6882764e2303a",
+  "phase": "target",
+  "summary": {
+    "GP": {
+      "mean": 11.898282797011321,
+      "by_K": {
+        "1": 12.066136100358335,
+        "3": 11.837135343001474,
+        "5": 11.791576947674155
+      },
+      "by_floor": {
+        "B1F0": 8.435302710851678,
+        "B1F1": 10.198914723230518,
+        "B1F2": 7.7061143885961245,
+        "B1F3": 13.852589397613938,
+        "B2F0": 22.72100388956802,
+        "B2F1": 9.082013178877586,
+        "B2F2": 5.869423621973159,
+        "B2F3": 8.147740495465978,
+        "B2F4": 22.921495258863157
+      },
+      "cells": {
+        "B1F0": {
+          "1": 8.498421649880932,
+          "3": 8.25292268871394,
+          "5": 8.55456379396016
+        },
+        "B1F1": {
+          "1": 9.977063459479824,
+          "3": 10.556003940057924,
+          "5": 10.063676770153801
+        },
+        "B1F2": {
+          "1": 7.953043552773415,
+          "3": 7.900471276546819,
+          "5": 7.264828336468141
+        },
+        "B1F3": {
+          "1": 13.367840772526158,
+          "3": 14.235750021024458,
+          "5": 13.954177399291197
+        },
+        "B2F0": {
+          "1": 22.75980820510277,
+          "3": 21.928370946815804,
+          "5": 23.474832516785476
+        },
+        "B2F1": {
+          "1": 9.753982638872495,
+          "3": 8.89859625338077,
+          "5": 8.59346064437949
+        },
+        "B2F2": {
+          "1": 5.939274975959083,
+          "3": 5.818374928361639,
+          "5": 5.850620961598754
+        },
+        "B2F3": {
+          "1": 9.567635424108222,
+          "3": 7.006070587085155,
+          "5": 7.869515475204557
+        },
+        "B2F4": {
+          "1": 22.895197966215367,
+          "3": 23.538505806442455,
+          "5": 22.330782003931642
+        }
+      }
+    },
+    "full24": {
+      "mean": 12.191667002344495,
+      "by_K": {
+        "1": 12.711387999539339,
+        "3": 12.379084356300934,
+        "5": 11.484528651193212
+      },
+      "by_floor": {
+        "B1F0": 12.165222419280594,
+        "B1F1": 11.153561459984282,
+        "B1F2": 9.84008038411959,
+        "B1F3": 14.279279946043586,
+        "B2F0": 16.58573039517373,
+        "B2F1": 10.100174507240665,
+        "B2F2": 6.504667413437925,
+        "B2F3": 9.100325853956654,
+        "B2F4": 20.32809159185091
+      },
+      "cells": {
+        "B1F0": {
+          "1": 11.199391515546319,
+          "3": 13.235502115042141,
+          "5": 12.060773627253319
+        },
+        "B1F1": {
+          "1": 11.543847920135683,
+          "3": 11.039038641242934,
+          "5": 10.877797818574232
+        },
+        "B1F2": {
+          "1": 10.145427554436637,
+          "3": 10.157177931085563,
+          "5": 9.217635666836571
+        },
+        "B1F3": {
+          "1": 16.518953382999605,
+          "3": 14.125997462499472,
+          "5": 12.192888992631682
+        },
+        "B2F0": {
+          "1": 16.357166292929257,
+          "3": 16.470645097428505,
+          "5": 16.92937979516343
+        },
+        "B2F1": {
+          "1": 12.66362903986435,
+          "3": 8.975299021603057,
+          "5": 8.661595460254587
+        },
+        "B2F2": {
+          "1": 6.426668522212273,
+          "3": 6.3496326848590705,
+          "5": 6.737701033242432
+        },
+        "B2F3": {
+          "1": 10.113583608689943,
+          "3": 8.591564292036209,
+          "5": 8.595829661143808
+        },
+        "B2F4": {
+          "1": 19.793307065299764,
+          "3": 22.70655727974486,
+          "5": 18.484410430508106
+        }
+      }
+    },
+    "fusion": {
+      "mean": 10.816697227923484,
+      "by_K": {
+        "1": 11.280555493586267,
+        "3": 11.1726198883891,
+        "5": 9.996916301795082
+      },
+      "by_floor": {
+        "B1F0": 9.250290237146366,
+        "B1F1": 8.750129886801846,
+        "B1F2": 7.668667653618357,
+        "B1F3": 13.614117223217372,
+        "B2F0": 17.927293868025444,
+        "B2F1": 8.258055973198438,
+        "B2F2": 4.718357740231114,
+        "B2F3": 8.98171279128457,
+        "B2F4": 19.177545655515342
+      },
+      "cells": {
+        "B1F0": {
+          "1": 8.566819928519621,
+          "3": 9.662835242912726,
+          "5": 9.52121554000675
+        },
+        "B1F1": {
+          "1": 9.123917475019969,
+          "3": 8.420137877688418,
+          "5": 8.706334307697148
+        },
+        "B1F2": {
+          "1": 8.105516046637174,
+          "3": 7.777140158928329,
+          "5": 7.123346755289569
+        },
+        "B1F3": {
+          "1": 14.534987988168957,
+          "3": 14.146917050297276,
+          "5": 12.16044663118588
+        },
+        "B2F0": {
+          "1": 18.210128183606336,
+          "3": 18.683289989526514,
+          "5": 16.88846343094348
+        },
+        "B2F1": {
+          "1": 9.38628004740142,
+          "3": 7.901727950548082,
+          "5": 7.48615992164581
+        },
+        "B2F2": {
+          "1": 4.499793553295374,
+          "3": 4.446484940183671,
+          "5": 5.208794727214295
+        },
+        "B2F3": {
+          "1": 11.198803484126302,
+          "3": 7.916864509465428,
+          "5": 7.829470380261979
+        },
+        "B2F4": {
+          "1": 19.096497869501093,
+          "3": 22.769043581883864,
+          "5": 15.66709551516107
+        }
+      }
+    }
+  },
+  "records": [
+    {
+      "event": "B1F0_AB_K1",
+      "floor": "B1F0",
+      "K": 1,
+      "mde": {
+        "GP": 8.453636317189238,
+        "full24": 12.421537936782787,
+        "fusion": 8.591385946065222
+      },
+      "tab_mean_max_gap": 1.52587890625e-05,
+      "zero_lambda_max_gap": 6.705522537231445e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F0_AB_K1_unscored.npz",
+      "prediction_sha256": "a8fa37f069bfe0cf2a1992ca3d9af3f8481abc0ee8a5aafefcb90b9ff8735de5",
+      "scored_sha256": "ad1a91156c7e0bffb262d8b0955f07180b6b9aeec3a71da459e9cc32b6cc950c",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B1F0_AB_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "4ea6014f06c9b35fde78123f4517ab11dfa938a98fb67bc090bd6bdd54bca40a",
+      "seconds": 15.680480640381575
+    },
+    {
+      "event": "B1F0_AB_K3",
+      "floor": "B1F0",
+      "K": 3,
+      "mde": {
+        "GP": 8.243494288855324,
+        "full24": 16.887849663245948,
+        "fusion": 11.34932983270464
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.705522537231445e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F0_AB_K3_unscored.npz",
+      "prediction_sha256": "b088c30f2a2aedb3fdfe0f3cf8b260690766a85b972de707a930a6e2060744a3",
+      "scored_sha256": "b54ff8526671a6a809bc3255b36967869301676cd3eea0dc1daa9f9a468c91f2",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F0_AB_K3_gp.npz",
+      "gp_sha256": "060f1385ec7c90e3cb556a26ff2877add59b6ec690bb5c497eae183aa3886fe9",
+      "seconds": 36.710051853209734
+    },
+    {
+      "event": "B1F0_AB_K5",
+      "floor": "B1F0",
+      "K": 5,
+      "mde": {
+        "GP": 8.499001909021608,
+        "full24": 13.315796968681324,
+        "fusion": 9.820309544845799
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 4.0046870708465576e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F0_AB_K5_unscored.npz",
+      "prediction_sha256": "5658a0da5bb12c60889518e69a182bfbc5c9ceeee00484999753b02981b3437b",
+      "scored_sha256": "070d46c765544b2c06fde02c48906ed6069eb9dbb5f91a35865050edc073ad5c",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F0_AB_K5_gp.npz",
+      "gp_sha256": "f3f9f35992e8bf2fa7ff1a7f14d8a7cb0c5416288f1011d37aabc25d2125b566",
+      "seconds": 39.454548221081495
+    },
+    {
+      "event": "B1F0_BA_K1",
+      "floor": "B1F0",
+      "K": 1,
+      "mde": {
+        "GP": 8.543206982572626,
+        "full24": 9.97724509430985,
+        "fusion": 8.542253910974019
+      },
+      "tab_mean_max_gap": 7.62939453125e-06,
+      "zero_lambda_max_gap": 6.798654794692993e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F0_BA_K1_unscored.npz",
+      "prediction_sha256": "c4b657fa2fbfe55251358f4d0604d6bc16dbeae6785929a3e985ebaeb22dd2f8",
+      "scored_sha256": "0bd7c61a41bd652bc6db5173c516c71bcec53936df67063a9a39719caef4853a",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B1F0_BA_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "582fb21df50ce3e46128cbdb10ca1a4c9767d656a281c450d38f58235fee55ee",
+      "seconds": 15.114177539944649
+    },
+    {
+      "event": "B1F0_BA_K3",
+      "floor": "B1F0",
+      "K": 3,
+      "mde": {
+        "GP": 8.26235108857256,
+        "full24": 9.583154566838337,
+        "fusion": 7.976340653120812
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.146728992462158e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F0_BA_K3_unscored.npz",
+      "prediction_sha256": "bf17e0dfaec3a4b63ba89e0fb98d48f7babb63cbd53ac2a5fc9371f15cdc58ba",
+      "scored_sha256": "0ec11a37b102720b1f236c75278e6e7398e5d83a5da945e0d41e5e1e304e0f93",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F0_BA_K3_gp.npz",
+      "gp_sha256": "3eb70a0edeb676aaf208c8921cea5c3e379a2528125c7235191cb379a7d8e6c1",
+      "seconds": 37.03684661537409
+    },
+    {
+      "event": "B1F0_BA_K5",
+      "floor": "B1F0",
+      "K": 5,
+      "mde": {
+        "GP": 8.610125678898713,
+        "full24": 10.805750285825315,
+        "fusion": 9.222121535167702
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 5.3085386753082275e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F0_BA_K5_unscored.npz",
+      "prediction_sha256": "caa2050d88b1df8909e560905c115d9607ae0978ad41cbd58d9823a277dcff5e",
+      "scored_sha256": "be81b375415aeab8760e8702f8eb81bacd9a29f83231f94c19920600a1cc41f2",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F0_BA_K5_gp.npz",
+      "gp_sha256": "ab009cfec655f6bc80c6618b7a18a9a85fb023cb474501c1c4610e86b79b0813",
+      "seconds": 40.259746711701155
+    },
+    {
+      "event": "B1F1_AB_K1",
+      "floor": "B1F1",
+      "K": 1,
+      "mde": {
+        "GP": 10.402569611563237,
+        "full24": 12.192465939017591,
+        "fusion": 9.433746055148491
+      },
+      "tab_mean_max_gap": 7.62939453125e-06,
+      "zero_lambda_max_gap": 3.4458935260772705e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F1_AB_K1_unscored.npz",
+      "prediction_sha256": "9ca8f8df169deeba74448fe2429e56ce465b5988743eeac7430af4f7ecd78c6a",
+      "scored_sha256": "02ceaf2a0f33e5ab18ff1be9949daa409127f38653ab2efd3b4061ae209baaa3",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B1F1_AB_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "0a87e54a0ed245bc03fb6c59d5d066125e2e55f25b6329906761a788959966c2",
+      "seconds": 14.616125050932169
+    },
+    {
+      "event": "B1F1_AB_K3",
+      "floor": "B1F1",
+      "K": 3,
+      "mde": {
+        "GP": 10.778390481898105,
+        "full24": 11.887046291128698,
+        "fusion": 8.736235365566522
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.5390257835388184e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F1_AB_K3_unscored.npz",
+      "prediction_sha256": "f55232e00ee88aca270b3f3729ac1c255ea285d4b4ce1c071d358a6346f89b1c",
+      "scored_sha256": "91ec82d8fe8c1af0c7d79ae1b65b2e4c00eb40c0e51cb391a2ad7e6f3703c371",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F1_AB_K3_gp.npz",
+      "gp_sha256": "c4648ed9ca577497ccc56a535eb2d7faf68a02ecd290835c9ba0ea63133009e6",
+      "seconds": 35.34218538925052
+    },
+    {
+      "event": "B1F1_AB_K5",
+      "floor": "B1F1",
+      "K": 5,
+      "mde": {
+        "GP": 10.395538881421855,
+        "full24": 11.607971991504307,
+        "fusion": 9.054814594013745
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.3527612686157227e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F1_AB_K5_unscored.npz",
+      "prediction_sha256": "da28fcf0b06d36a3d69d44f1167f5d6bd0d9a9f3b76688055949256f84ded3ae",
+      "scored_sha256": "bf4fc7b042dc37bd3fa03ffcafcfe59b7465b9dbae9fb6f2b0095eaf9baea869",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F1_AB_K5_gp.npz",
+      "gp_sha256": "b50fc0159cf84fe30d9714deaaab0e8ce169952d1f4ad8c57d1f13201c7f6832",
+      "seconds": 37.79945055022836
+    },
+    {
+      "event": "B1F1_BA_K1",
+      "floor": "B1F1",
+      "K": 1,
+      "mde": {
+        "GP": 9.551557307396411,
+        "full24": 10.895229901253776,
+        "fusion": 8.814088894891448
+      },
+      "tab_mean_max_gap": 1.52587890625e-05,
+      "zero_lambda_max_gap": 3.4458935260772705e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F1_BA_K1_unscored.npz",
+      "prediction_sha256": "248a49fcf70144dab0f7a4ec06c53c1c599fad2ee1110b4f4ff3eba3a5d267ff",
+      "scored_sha256": "e8ecbdeae8d2835f8c889873a15515fb3846822273656473ae030858288cf248",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B1F1_BA_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "a9236f4908b1e87fd70cafaa5d36e9b6945b5a8b6d50169ac3cf7dc950cd425c",
+      "seconds": 14.624616533517838
+    },
+    {
+      "event": "B1F1_BA_K3",
+      "floor": "B1F1",
+      "K": 3,
+      "mde": {
+        "GP": 10.33361739821774,
+        "full24": 10.19103099135717,
+        "fusion": 8.104040389810313
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 2.9802322387695312e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F1_BA_K3_unscored.npz",
+      "prediction_sha256": "9459230842e26ae50267ed39ba94048ec3107bd592ff59700b6b82da7b5cfe6b",
+      "scored_sha256": "d402f5ee38901d8cbc05d1753af904b42bdf09a0e9ed2750a3c9e75f645bfe6e",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F1_BA_K3_gp.npz",
+      "gp_sha256": "acdaf2c3c94b12467c4473d2d1f00bc89a12afc3d41f48a68a64a64bc4dd61ad",
+      "seconds": 35.59305651113391
+    },
+    {
+      "event": "B1F1_BA_K5",
+      "floor": "B1F1",
+      "K": 5,
+      "mde": {
+        "GP": 9.73181465888575,
+        "full24": 10.147623645644156,
+        "fusion": 8.35785402138055
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.4458935260772705e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F1_BA_K5_unscored.npz",
+      "prediction_sha256": "282dc46c012cb1646ab2a6cb18ca7a8403c3696da3a58ab2d9107cc8d9ec8c17",
+      "scored_sha256": "6df4bba32a7538a3ac799f4476b7310fdc523513b38910ceb1f8c0f9f13fdeed",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F1_BA_K5_gp.npz",
+      "gp_sha256": "38f8b3f87a58d99f5726699042757337e577a0624035ebd782318b52909e8ced",
+      "seconds": 38.21148641034961
+    },
+    {
+      "event": "B1F2_AB_K1",
+      "floor": "B1F2",
+      "K": 1,
+      "mde": {
+        "GP": 7.963767334594346,
+        "full24": 11.756012592908862,
+        "fusion": 8.17081016547255
+      },
+      "tab_mean_max_gap": 7.62939453125e-06,
+      "zero_lambda_max_gap": 4.563480615615845e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F2_AB_K1_unscored.npz",
+      "prediction_sha256": "44920c4c4a462f04bef8de7f61ed6981f54c4dae61a1f2d1d5a8986b739fbf73",
+      "scored_sha256": "a58dcb7ada8edda00b2baafcd326bb73ce362789b665ea0d1fdf9f17fd5c00a8",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B1F2_AB_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "c9cc18404742bb3197afdfa611ba095a7daf6b53060e28c7e4a4625f889f745f",
+      "seconds": 14.075686503201723
+    },
+    {
+      "event": "B1F2_AB_K3",
+      "floor": "B1F2",
+      "K": 3,
+      "mde": {
+        "GP": 7.848066785917795,
+        "full24": 11.678969768662785,
+        "fusion": 7.926805752589453
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.984919309616089e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F2_AB_K3_unscored.npz",
+      "prediction_sha256": "2eac6decbf8165ea79474d344909dd7c24eb1dc08767ee615181d3d61c26572c",
+      "scored_sha256": "14161dbc2bdd171eaf983703c448974093f96ae63eef8293702e397c7458f686",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F2_AB_K3_gp.npz",
+      "gp_sha256": "54cab8a3b293a04963b4d50e8626f57b459bb70bcb5544b83c97fff1847dd626",
+      "seconds": 32.81648658961058
+    },
+    {
+      "event": "B1F2_AB_K5",
+      "floor": "B1F2",
+      "K": 5,
+      "mde": {
+        "GP": 7.255224527679245,
+        "full24": 10.597885680650295,
+        "fusion": 7.24848418531084
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.891787052154541e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F2_AB_K5_unscored.npz",
+      "prediction_sha256": "c8bb221c684a0e4dab5e8501cf5956f97928f92b06a15c611d3c10f4be19536c",
+      "scored_sha256": "4c06ff88a4566f231e108f334f910c75c79f1e18db3da757038b8779951f86fe",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F2_AB_K5_gp.npz",
+      "gp_sha256": "3f2b3fae55e5a5fe0357b53dfda992f6a9e4040ab893e17081076ef09a21d7c4",
+      "seconds": 35.31217473745346
+    },
+    {
+      "event": "B1F2_BA_K1",
+      "floor": "B1F2",
+      "K": 1,
+      "mde": {
+        "GP": 7.9423197709524835,
+        "full24": 8.53484251596441,
+        "fusion": 8.040221927801799
+      },
+      "tab_mean_max_gap": 7.62939453125e-06,
+      "zero_lambda_max_gap": 3.259629011154175e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F2_BA_K1_unscored.npz",
+      "prediction_sha256": "259b7451fdecf8767a69f467708d5dad353daeddd570c1f1e7e023e0cd99e93f",
+      "scored_sha256": "fdb89a9bf4a8e914abdc4239d8e0cda77062f940e250287e0b54b8554ebe0c82",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B1F2_BA_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "726d6c887aa923ee298b78e5d9b4f4d5f8d9622ac85b8dd205f2b98c4752c63c",
+      "seconds": 14.18730964511633
+    },
+    {
+      "event": "B1F2_BA_K3",
+      "floor": "B1F2",
+      "K": 3,
+      "mde": {
+        "GP": 7.9528757671758425,
+        "full24": 8.63538609350834,
+        "fusion": 7.627474565267206
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.259629011154175e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F2_BA_K3_unscored.npz",
+      "prediction_sha256": "6d9bd4248a49e4e2a9ef297b348dae9a817395903e133cbc11b8ded9ee231091",
+      "scored_sha256": "660930d795a5fb3c84dcf3f15fb11b2fb7319edc7f6a63b218418c213ebb3b51",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F2_BA_K3_gp.npz",
+      "gp_sha256": "d2ce6f2bdd7a1a5310e7b4cac609330ee67ef3d06d8b0f10a440e5ef49665fe7",
+      "seconds": 33.1368705406785
+    },
+    {
+      "event": "B1F2_BA_K5",
+      "floor": "B1F2",
+      "K": 5,
+      "mde": {
+        "GP": 7.274432145257037,
+        "full24": 7.837385653022846,
+        "fusion": 6.998209325268298
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.4458935260772705e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F2_BA_K5_unscored.npz",
+      "prediction_sha256": "b600921e8936ee8bec8f5b680d8ce3bb9864cc52651a28a891ad8937bf9dcfa1",
+      "scored_sha256": "bf3ec9fc84e72c098e6b9e4063b989221bc34ab5047a7519cfb86581e58f8cb4",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F2_BA_K5_gp.npz",
+      "gp_sha256": "6dda9c841bae035acc9e2d0656fc6b5a96b39d16375ed79630c953c4162c15cc",
+      "seconds": 35.70730796456337
+    },
+    {
+      "event": "B1F3_AB_K1",
+      "floor": "B1F3",
+      "K": 1,
+      "mde": {
+        "GP": 9.248966850470719,
+        "full24": 11.226309857319196,
+        "fusion": 11.317914295840563
+      },
+      "tab_mean_max_gap": 7.62939453125e-06,
+      "zero_lambda_max_gap": 3.4458935260772705e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F3_AB_K1_unscored.npz",
+      "prediction_sha256": "3e883e6d69a1f9c1bbc3b118ab3273a40cd9239e73d4d69edd2b8951ae737825",
+      "scored_sha256": "8cca7e0abfa50b7e3ef80222abf4261a4e175f8db9c8de32e965f0a90f36c036",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B1F3_AB_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "1b9055780ad3ccd8de4e8f4f65ec486c0c882444d7fbb67e86f570ef5ed0610f",
+      "seconds": 15.79383746534586
+    },
+    {
+      "event": "B1F3_AB_K3",
+      "floor": "B1F3",
+      "K": 3,
+      "mde": {
+        "GP": 11.448913656028585,
+        "full24": 9.0023662969766,
+        "fusion": 10.894004422698552
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.166496753692627e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F3_AB_K3_unscored.npz",
+      "prediction_sha256": "830b6f17786904aea569e0d064bf5176038bb8dc71a74e624b0259ffa114b8b4",
+      "scored_sha256": "98102a5ae882da4b074471b3cbf200c211889a5bd755f2c4619c677d76445254",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F3_AB_K3_gp.npz",
+      "gp_sha256": "453a2a15de6f8db3f92f6019b8e4699654a150775e0f6278949d773946c6eaf2",
+      "seconds": 37.06182577461004
+    },
+    {
+      "event": "B1F3_AB_K5",
+      "floor": "B1F3",
+      "K": 5,
+      "mde": {
+        "GP": 10.800976473690309,
+        "full24": 7.172822421448448,
+        "fusion": 8.765849825184672
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.91155481338501e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F3_AB_K5_unscored.npz",
+      "prediction_sha256": "48d06d2b8bf51c0f6084281c523c05597dd6f789596d634dbce7b6312dc93cc0",
+      "scored_sha256": "24aab6375fec67773480c8a0de5f7b07f9746070f8435c577c6ba8a698dcae89",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F3_AB_K5_gp.npz",
+      "gp_sha256": "af8132ae5a1cdf94eaf1aadf2a0293f01ba8ba43d1375a392d82e02117cf25ff",
+      "seconds": 39.72225437685847
+    },
+    {
+      "event": "B1F3_BA_K1",
+      "floor": "B1F3",
+      "K": 1,
+      "mde": {
+        "GP": 17.486714694581597,
+        "full24": 21.811596908680013,
+        "fusion": 17.752061680497352
+      },
+      "tab_mean_max_gap": 7.62939453125e-06,
+      "zero_lambda_max_gap": 3.259629011154175e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F3_BA_K1_unscored.npz",
+      "prediction_sha256": "d09c8b2a8716deb9ae1fc079450ee49c050c09097444bc49c67f716f1c4d5bf7",
+      "scored_sha256": "d6c9a28b70d0046b8d962e191ba103db2391a6200ae8a1569989f5608b70bbf9",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B1F3_BA_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "ce95ec642703896ca3f2a94eaaf3a8a3367f19956eeac6a5578f5d3a9a1fdd13",
+      "seconds": 15.802296064794064
+    },
+    {
+      "event": "B1F3_BA_K3",
+      "floor": "B1F3",
+      "K": 3,
+      "mde": {
+        "GP": 17.022586386020333,
+        "full24": 19.249628628022343,
+        "fusion": 17.399829677896
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.632158041000366e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F3_BA_K3_unscored.npz",
+      "prediction_sha256": "168f6947f9314c6db1496374323ade4c37c9112790feff0797bbc13b7d7213c2",
+      "scored_sha256": "1dd98f9d0c4ad1aecaf523a0633bf801fa427d821c9adc529788f8c79a9fbe7f",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F3_BA_K3_gp.npz",
+      "gp_sha256": "1ab11624818d05ac67503ea985ea7e70a4d91786124699b1c5f73b4f3bed29b1",
+      "seconds": 37.046125907450914
+    },
+    {
+      "event": "B1F3_BA_K5",
+      "floor": "B1F3",
+      "K": 5,
+      "mde": {
+        "GP": 17.107378324892085,
+        "full24": 17.212955563814916,
+        "fusion": 15.555043437187091
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.3527612686157227e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B1F3_BA_K5_unscored.npz",
+      "prediction_sha256": "230690377e87983c98c33387397fe005be06505362c9747a938be67c9c2d3032",
+      "scored_sha256": "395f93c00e8a72fa7ae11966f081907e3fa4a266f3dfc4f7f3915a6567294aa0",
+      "gp_path": "results/position_fusion_20261109_continued/target/B1F3_BA_K5_gp.npz",
+      "gp_sha256": "7324578f3fce2fcf8dc4ba66baf9387f24111dacfaab599342583fb1092a97d1",
+      "seconds": 39.71518389135599
+    },
+    {
+      "event": "B2F0_AB_K1",
+      "floor": "B2F0",
+      "K": 1,
+      "mde": {
+        "GP": 18.3666120387057,
+        "full24": 13.982576244480141,
+        "fusion": 14.664418939496356
+      },
+      "tab_mean_max_gap": 5.7220458984375e-06,
+      "zero_lambda_max_gap": 5.122274160385132e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F0_AB_K1_unscored.npz",
+      "prediction_sha256": "9b3d2540619b6c5cc97b98a06e8e0c6c66bff79240897019165b7ba9655c9a13",
+      "scored_sha256": "ff08f6d3c8849ec9eed0bccb04bd8ea6c9b0a1a238cc823721e3b33396918026",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B2F0_AB_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "6a7f17d4df00268216447b0f09ece9b0b6aee8f5b48d4839c3d16b5f9f00fc18",
+      "seconds": 22.555703103542328
+    },
+    {
+      "event": "B2F0_AB_K3",
+      "floor": "B2F0",
+      "K": 3,
+      "mde": {
+        "GP": 19.58402819705883,
+        "full24": 14.645623959580629,
+        "fusion": 16.54243674346671
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 5.681067705154419e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F0_AB_K3_unscored.npz",
+      "prediction_sha256": "036b7de3081b17dbc666b682bdaaf2806c44706faf6d6d3981654d1a843ef111",
+      "scored_sha256": "b9f83ff179628c81eee3c55afb2b2e172e3189f98375f4c69bdb6b80511a5a0f",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F0_AB_K3_gp.npz",
+      "gp_sha256": "8c621c97bab3a9518bfc1f057ce98172c1244c03db943d7a483e6e10db656a51",
+      "seconds": 45.42658820748329
+    },
+    {
+      "event": "B2F0_AB_K5",
+      "floor": "B2F0",
+      "K": 5,
+      "mde": {
+        "GP": 19.76269073670882,
+        "full24": 14.380879100194667,
+        "fusion": 14.170997589387635
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.725290298461914e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F0_AB_K5_unscored.npz",
+      "prediction_sha256": "d9afc6e6ae28300b2dd3b6caf48d4eec207bd9e5c993ba58ca1576ea2d08f8c5",
+      "scored_sha256": "7413d68d2cdca221709d9bbf8fac9f79362aad14d2a2c7b27799caa4a825ee1b",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F0_AB_K5_gp.npz",
+      "gp_sha256": "2306fd06926f11e07a7caee584abf0287e3a106b765d48c186675044d1f6a1ae",
+      "seconds": 48.32665428891778
+    },
+    {
+      "event": "B2F0_BA_K1",
+      "floor": "B2F0",
+      "K": 1,
+      "mde": {
+        "GP": 27.153004371499843,
+        "full24": 18.731756341378375,
+        "fusion": 21.755837427716315
+      },
+      "tab_mean_max_gap": 7.62939453125e-06,
+      "zero_lambda_max_gap": 3.5390257835388184e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F0_BA_K1_unscored.npz",
+      "prediction_sha256": "584aaade0c9b6643e53b55b0665c63251c0b8f77c696ee0abdf92689fad5cb09",
+      "scored_sha256": "a0a5a78851516166b4192cd32a911e04c81ed749b523b7c029706dfd68c96a42",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B2F0_BA_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "0bb1fc47955d732dc4f6ee08408fc4ff0daaa77ecf5f57e8efe9a2256a942166",
+      "seconds": 22.521796096116304
+    },
+    {
+      "event": "B2F0_BA_K3",
+      "floor": "B2F0",
+      "K": 3,
+      "mde": {
+        "GP": 24.27271369657278,
+        "full24": 18.295666235276382,
+        "fusion": 20.824143235586323
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.259629011154175e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F0_BA_K3_unscored.npz",
+      "prediction_sha256": "5721359df9cd011096f1313ed7bcf3ef0c5f0fc79409c989c2c8b559486da522",
+      "scored_sha256": "a6236133e0dbd235ae258051676bc340d235143f9573692c95ac00af425bc2a0",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F0_BA_K3_gp.npz",
+      "gp_sha256": "dda86fac86b98f073aab4816c47ccc7eeadc8d8ec04b63b3d67b229d3a95bd2b",
+      "seconds": 45.41983851790428
+    },
+    {
+      "event": "B2F0_BA_K5",
+      "floor": "B2F0",
+      "K": 5,
+      "mde": {
+        "GP": 27.186974296862136,
+        "full24": 19.477880490132193,
+        "fusion": 19.605929272499324
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 3.4458935260772705e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F0_BA_K5_unscored.npz",
+      "prediction_sha256": "7651bf9d2b6244dbe9212787eee80e49169f8242ce4a99443ac7ff3942215399",
+      "scored_sha256": "bfc092c3b8ed94c040711928fa38531a483b3fb089f0c85ad2002167f3d2a18c",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F0_BA_K5_gp.npz",
+      "gp_sha256": "fdbbdcabe3a4c6b32d0b8026f3dbf35dd8a60ec756bbb5a003e7c7c6fbb11e0f",
+      "seconds": 48.19639617949724
+    },
+    {
+      "event": "B2F1_AB_K1",
+      "floor": "B2F1",
+      "K": 1,
+      "mde": {
+        "GP": 10.929454864818833,
+        "full24": 12.347326480365867,
+        "fusion": 9.242934810605991
+      },
+      "tab_mean_max_gap": 3.814697265625e-06,
+      "zero_lambda_max_gap": 6.332993507385254e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F1_AB_K1_unscored.npz",
+      "prediction_sha256": "255282c1a0143e08a1ede7600448cefb90988c8a066129525138e44abc1f19db",
+      "scored_sha256": "5b46c82950a94305dc40a2e7173a4b8ee76b85f921875ad353b860627a8677fd",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B2F1_AB_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "b50d47b9d6b9073823a8db2e106deade3ea77673e73cffbcfd69a0f93b1dee52",
+      "seconds": 22.38488281145692
+    },
+    {
+      "event": "B2F1_AB_K3",
+      "floor": "B2F1",
+      "K": 3,
+      "mde": {
+        "GP": 9.865144560453952,
+        "full24": 11.119313389755172,
+        "fusion": 8.353210367982312
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.146728992462158e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F1_AB_K3_unscored.npz",
+      "prediction_sha256": "068f102cd8c006bc16577715655c86064f5c84389ad7e5a08bcea101af5f10e2",
+      "scored_sha256": "d6a168ac8944bd4023319cb9a25a2fe2692ca0b4f3f6d47b77a88f547b32b15d",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F1_AB_K3_gp.npz",
+      "gp_sha256": "84f61d211db998ed1169c3715fa8b67ecf6e3e8444314ce6d46499f374c22762",
+      "seconds": 42.74349321424961
+    },
+    {
+      "event": "B2F1_AB_K5",
+      "floor": "B2F1",
+      "K": 5,
+      "mde": {
+        "GP": 9.282388646410348,
+        "full24": 9.578406739922091,
+        "fusion": 7.675574177824638
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.798654794692993e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F1_AB_K5_unscored.npz",
+      "prediction_sha256": "88f5c53db2b93eda0ef79ac90214da283ac0661921add6f9997c68655bea8040",
+      "scored_sha256": "962f69f3785b8ea4557c42d5dffc840acd5191afab2ad32bf5f0b9fefd5d5aee",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F1_AB_K5_gp.npz",
+      "gp_sha256": "24cfc4a798f413c53c3185743d03e2cad475250f0bd988d0457a428667a403b4",
+      "seconds": 45.77200012654066
+    },
+    {
+      "event": "B2F1_BA_K1",
+      "floor": "B2F1",
+      "K": 1,
+      "mde": {
+        "GP": 8.578510412926157,
+        "full24": 12.979931599362834,
+        "fusion": 9.529625284196852
+      },
+      "tab_mean_max_gap": 3.814697265625e-06,
+      "zero_lambda_max_gap": 5.029141902923584e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F1_BA_K1_unscored.npz",
+      "prediction_sha256": "c3697ecf56b259590425b49ee5d95fabeef63cff333d4691cae35c9b1d74d486",
+      "scored_sha256": "6b1efea3c12621c167211d08afc5fe30dcb3eed6a2a15217615fd1a20af3b179",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B2F1_BA_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "eb0160a86ed5222126427a9f684f98267a38902364e00cf68a63ddd3f8c3024e",
+      "seconds": 21.87745838612318
+    },
+    {
+      "event": "B2F1_BA_K3",
+      "floor": "B2F1",
+      "K": 3,
+      "mde": {
+        "GP": 7.932047946307588,
+        "full24": 6.8312846534509415,
+        "fusion": 7.450245533113852
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 4.6566128730773926e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F1_BA_K3_unscored.npz",
+      "prediction_sha256": "b4345da5ada65190f9ad41f65404544d399ba79ace980ad14c9a510d1971c489",
+      "scored_sha256": "c76481e894fced5073a4bcd627b88193a69c56dce689d8d726e3ae9153923737",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F1_BA_K3_gp.npz",
+      "gp_sha256": "7bf544bda97828f5a370ba8d072352aa2f8bda12216de0c18b1d06e1f7f804e9",
+      "seconds": 42.990434654057026
+    },
+    {
+      "event": "B2F1_BA_K5",
+      "floor": "B2F1",
+      "K": 5,
+      "mde": {
+        "GP": 7.904532642348631,
+        "full24": 7.744784180587083,
+        "fusion": 7.2967456654669824
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 4.470348358154297e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F1_BA_K5_unscored.npz",
+      "prediction_sha256": "8c4cf00292603bd99a9a8dcd9e3b32f548e973011f2a24fc6f6a21e5bfb925ff",
+      "scored_sha256": "f2c9a7c936067d4e7f0461ce4b0998ea90a976c63c2f0302892ff7ad3c9b0a75",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F1_BA_K5_gp.npz",
+      "gp_sha256": "a2a10d6bd93a9631fe73a4c3b509c01500cef891bae63dad0092395ea1211fc7",
+      "seconds": 47.052899580448866
+    },
+    {
+      "event": "B2F2_AB_K1",
+      "floor": "B2F2",
+      "K": 1,
+      "mde": {
+        "GP": 4.599441157825562,
+        "full24": 7.013425187034732,
+        "fusion": 4.095270738939312
+      },
+      "tab_mean_max_gap": 3.814697265625e-06,
+      "zero_lambda_max_gap": 7.078051567077637e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F2_AB_K1_unscored.npz",
+      "prediction_sha256": "fd84ed964b845fb13f193985fb176943927f940f1df5675e7c60201715af34b9",
+      "scored_sha256": "0144e4d29b9eca92af050992979e9669d71085db06fa64b602b4901bc4c24919",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B2F2_AB_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "36a6e72d2e4fe412fff5b0bcae3086005afa6bdaf8231f26935c18f9fa1d644f",
+      "seconds": 23.06592147424817
+    },
+    {
+      "event": "B2F2_AB_K3",
+      "floor": "B2F2",
+      "K": 3,
+      "mde": {
+        "GP": 4.436548791974016,
+        "full24": 7.3079380805988565,
+        "fusion": 4.007699503745984
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.984919309616089e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F2_AB_K3_unscored.npz",
+      "prediction_sha256": "915db73764896a42a607644761f29f710a05503a7366a1abc75bb53dff78d588",
+      "scored_sha256": "181c0ad65fdb076040d63eb063ce0375493c2ff32af3e9056cb6ea1b12de8d48",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F2_AB_K3_gp.npz",
+      "gp_sha256": "db0e5ca14f971d4ec7a06a0998b9122d00a1d458007d546deb8f3f47d67e364b",
+      "seconds": 44.57830814272165
+    },
+    {
+      "event": "B2F2_AB_K5",
+      "floor": "B2F2",
+      "K": 5,
+      "mde": {
+        "GP": 4.679605983010673,
+        "full24": 7.12983120068909,
+        "fusion": 4.8553686183687175
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 7.171183824539185e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F2_AB_K5_unscored.npz",
+      "prediction_sha256": "5bc9bf618210644da1bb0e2565979e7fe2d19e0693446de8f44e670a525a22f7",
+      "scored_sha256": "31e0b4556c95cb4c0fcef62eb89f4aebf6694b012fd50f935062f3d898324635",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F2_AB_K5_gp.npz",
+      "gp_sha256": "ea2eddcf3c065d07dc31872d45bb0b6f11fd5c7213f8e1fe6762fe64ff7e0ee9",
+      "seconds": 47.78183791413903
+    },
+    {
+      "event": "B2F2_BA_K1",
+      "floor": "B2F2",
+      "K": 1,
+      "mde": {
+        "GP": 7.279108794092603,
+        "full24": 5.839911857389813,
+        "fusion": 4.904316367651436
+      },
+      "tab_mean_max_gap": 7.62939453125e-06,
+      "zero_lambda_max_gap": 3.818422555923462e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F2_BA_K1_unscored.npz",
+      "prediction_sha256": "2f64aa9c77bfa2cca7d2e0125de87f1a94b2d31a43017dc526777b0fc99237b4",
+      "scored_sha256": "34453f69e0aaf8c472f4e7cf60e43d7f3b08f36bb6ef8808b645cd0b12c5e439",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B2F2_BA_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "1b87e9c927a997111c0831e8d94a439fac97c96ddf50cb65db10e7e2cbe11dbd",
+      "seconds": 23.094163216650486
+    },
+    {
+      "event": "B2F2_BA_K3",
+      "floor": "B2F2",
+      "K": 3,
+      "mde": {
+        "GP": 7.20020106474926,
+        "full24": 5.3913272891192845,
+        "fusion": 4.885270376621358
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 5.21540641784668e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F2_BA_K3_unscored.npz",
+      "prediction_sha256": "dff54670867d96f6534168d2e122ec11b60b81ccf50c569f885c635242f667c9",
+      "scored_sha256": "90210b976ba86e0e53e6153c297fc69ef219bb84ee547e996432e0067699362b",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F2_BA_K3_gp.npz",
+      "gp_sha256": "e1ed12862225eca27be3bf048d326954e49c548573fd0dafc11665c858593f79",
+      "seconds": 44.835479363799095
+    },
+    {
+      "event": "B2F2_BA_K5",
+      "floor": "B2F2",
+      "K": 5,
+      "mde": {
+        "GP": 7.021635940186834,
+        "full24": 6.345570865795775,
+        "fusion": 5.562220836059874
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.332993507385254e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F2_BA_K5_unscored.npz",
+      "prediction_sha256": "d24cdead973b0d7747e1cb215460c65c0826e44fad3925d0c45eb9186ef9e80f",
+      "scored_sha256": "c5208076b2c021cadf112f762f38b31ada729cd8ea1c87760500248c66de4549",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F2_BA_K5_gp.npz",
+      "gp_sha256": "8737afd081e19730436a018f2d453d7c3130be41c2f7fcf8aa8bf18c571be4f9",
+      "seconds": 47.958707343786955
+    },
+    {
+      "event": "B2F3_AB_K1",
+      "floor": "B2F3",
+      "K": 1,
+      "mde": {
+        "GP": 8.90667058776278,
+        "full24": 10.416348704131064,
+        "fusion": 10.0915161309845
+      },
+      "tab_mean_max_gap": 7.62939453125e-06,
+      "zero_lambda_max_gap": 6.51925802230835e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F3_AB_K1_unscored.npz",
+      "prediction_sha256": "99e903f2e555c106c186a17a5931964f50e5c2ec0e84cf1df274bae473dd1dfb",
+      "scored_sha256": "a53010c438c4011c45811ce01dcdd68792cb3561c07aa8fe337bd467848228ed",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B2F3_AB_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "f6d3f072a588b308d595fe20568df6d0660df14a9b254a2a0916e03adae3cbc6",
+      "seconds": 20.00157232582569
+    },
+    {
+      "event": "B2F3_AB_K3",
+      "floor": "B2F3",
+      "K": 3,
+      "mde": {
+        "GP": 7.165794805329653,
+        "full24": 9.174252543342474,
+        "fusion": 8.329286490752517
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.51925802230835e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F3_AB_K3_unscored.npz",
+      "prediction_sha256": "739e1845b6e46d32f92f1b83aca0bcaf253b669ee35c9138d7402bca919c3a42",
+      "scored_sha256": "daf34b168f633612a302b18d510cb7a2e023c120b548c922bbd468510fae959b",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F3_AB_K3_gp.npz",
+      "gp_sha256": "c4aabfc107a97da26f051f1898c0631e1bb36e6ab72b679b2a3622f629f89831",
+      "seconds": 39.69451753050089
+    },
+    {
+      "event": "B2F3_AB_K5",
+      "floor": "B2F3",
+      "K": 5,
+      "mde": {
+        "GP": 8.673062012521692,
+        "full24": 9.04172897856297,
+        "fusion": 8.051328621602886
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.612390279769897e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F3_AB_K5_unscored.npz",
+      "prediction_sha256": "3154bcd7c3cd4e8c1db68a3fa1adbbcf06e7b16740ff88f86e88873e7cacd1e4",
+      "scored_sha256": "c47bac3a2bb04474efeb7737d351770baa915f4f478ad5173fe39a66bac082f2",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F3_AB_K5_gp.npz",
+      "gp_sha256": "c105aa490bb403032dec8923a3327169cc7d315536418a0573047ba984a7c48d",
+      "seconds": 42.355803087353706
+    },
+    {
+      "event": "B2F3_BA_K1",
+      "floor": "B2F3",
+      "K": 1,
+      "mde": {
+        "GP": 10.22860026045366,
+        "full24": 9.810818513248822,
+        "fusion": 12.306090837268105
+      },
+      "tab_mean_max_gap": 7.62939453125e-06,
+      "zero_lambda_max_gap": 4.284083843231201e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F3_BA_K1_unscored.npz",
+      "prediction_sha256": "b93245b1fe69dedbba10fb9e3b1667751d45fde8a96765d8daa82b241913d516",
+      "scored_sha256": "388d88fe52f140ea034db1530aa9ba29760feda58de6947e82137c0fda325f22",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B2F3_BA_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "221a5c94759116afd6f93a673a117a2d4d07187fbd375dad8a8f60e00f8d4b28",
+      "seconds": 20.044613625854254
+    },
+    {
+      "event": "B2F3_BA_K3",
+      "floor": "B2F3",
+      "K": 3,
+      "mde": {
+        "GP": 6.846346368840657,
+        "full24": 8.008876040729943,
+        "fusion": 7.50444252817834
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 5.122274160385132e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F3_BA_K3_unscored.npz",
+      "prediction_sha256": "9a7318df9d16baa2b0928c94fef58a21cb5efe88a099ab98abed20bba4490395",
+      "scored_sha256": "b1be202440a70da85d335915bd847ea74c62f3e3b7d9ad5f5f61aa0b74dd58be",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F3_BA_K3_gp.npz",
+      "gp_sha256": "13b4b0c015df2767600935dedc43daa3454bb81612c8dcc11560cb919baf41dd",
+      "seconds": 39.58685801178217
+    },
+    {
+      "event": "B2F3_BA_K5",
+      "floor": "B2F3",
+      "K": 5,
+      "mde": {
+        "GP": 7.065968937887423,
+        "full24": 8.149930343724646,
+        "fusion": 7.607612138921071
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.798654794692993e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F3_BA_K5_unscored.npz",
+      "prediction_sha256": "a45544dbf3820f7820f66644c342e5a9fd60a39d5bfbae6badb8e3b0fbcebbc7",
+      "scored_sha256": "69a6e4a42933e2a149a2824253f7cd5b90101ed994e742c1bbe37667b2135307",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F3_BA_K5_gp.npz",
+      "gp_sha256": "727c8bfd880b84b3e0dcf5a7ee4df8fb511850d575a6ce0203124e4ae8134cda",
+      "seconds": 42.42046429216862
+    },
+    {
+      "event": "B2F4_AB_K1",
+      "floor": "B2F4",
+      "K": 1,
+      "mde": {
+        "GP": 26.614273602910558,
+        "full24": 25.471664196113164,
+        "fusion": 26.529134869804913
+      },
+      "tab_mean_max_gap": 3.814697265625e-06,
+      "zero_lambda_max_gap": 4.563480615615845e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F4_AB_K1_unscored.npz",
+      "prediction_sha256": "e0ab47ce4bdfcb2f3f9d1eb5369035bd01b3df7f9099c760e8612ec6e98ed54a",
+      "scored_sha256": "14e8803f5771d201f130beaaf24f290892267b0394afadcc030b5e7a4cf4740b",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B2F4_AB_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "86c2d0cdcc4ef0606b926d6a2b25edfac9772bdf8865daa9735dd4147d0e04c7",
+      "seconds": 23.98877265676856
+    },
+    {
+      "event": "B2F4_AB_K3",
+      "floor": "B2F4",
+      "K": 3,
+      "mde": {
+        "GP": 28.790927489647334,
+        "full24": 29.02380771201734,
+        "fusion": 30.09446892968025
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 5.3085386753082275e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F4_AB_K3_unscored.npz",
+      "prediction_sha256": "87121913c08ced65b05dd9c56ac7fc43590a995553787a4987a404604750ffa3",
+      "scored_sha256": "f3d57707191bd7e325c94c7a76ebb1484f0ab4032f260b6df0c33370a7d26d56",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F4_AB_K3_gp.npz",
+      "gp_sha256": "9f4684a1652d26ddaee9a8bf170e21bba8e7e7e2a7bc08ce14ab2116b91fd3a3",
+      "seconds": 45.76932575926185
+    },
+    {
+      "event": "B2F4_AB_K5",
+      "floor": "B2F4",
+      "K": 5,
+      "mde": {
+        "GP": 27.301432016842334,
+        "full24": 19.889345578570897,
+        "fusion": 17.205627431327922
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 5.494803190231323e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F4_AB_K5_unscored.npz",
+      "prediction_sha256": "ba7f103ca95d16f2859287d88dedcffbb15700489cc8d5bd51e196a2894f95f1",
+      "scored_sha256": "de8030f9736879026311229194621baa54a71a0d8660353f8718e11280636a12",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F4_AB_K5_gp.npz",
+      "gp_sha256": "ee03f81cee250d7d8904a7424c5059390c87a1d4515e635ee501241d82b15e9f",
+      "seconds": 48.97204747796059
+    },
+    {
+      "event": "B2F4_BA_K1",
+      "floor": "B2F4",
+      "K": 1,
+      "mde": {
+        "GP": 19.176122329520176,
+        "full24": 14.114949934486368,
+        "fusion": 11.663860869197274
+      },
+      "tab_mean_max_gap": 3.814697265625e-06,
+      "zero_lambda_max_gap": 7.078051567077637e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F4_BA_K1_unscored.npz",
+      "prediction_sha256": "0aff61067489ab8f426ed831b78cada908ce7d6fecea2fbb0f8e10e3e670a285",
+      "scored_sha256": "0d3094b6fa357f1ebc8affdca7cee8489917a85ca4e3b58f2ce18306c9be381c",
+      "gp_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_gp_20261109/B2F4_BA_K1_HS_GP_MPMC_GP_MPMC_retained_unscored.npz",
+      "gp_sha256": "53381fb9928a5e1c445203a3449e6872e8afcb0a34fd9781afce4caeeabbac6e",
+      "seconds": 24.217948339879513
+    },
+    {
+      "event": "B2F4_BA_K3",
+      "floor": "B2F4",
+      "K": 3,
+      "mde": {
+        "GP": 18.286084123237575,
+        "full24": 16.38930684747238,
+        "fusion": 15.443618234087479
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.612390279769897e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F4_BA_K3_unscored.npz",
+      "prediction_sha256": "6ad19f6a08d02537091f97767e5f9005f133dc893c374176be8c1c710629cd21",
+      "scored_sha256": "80ad13382de43d9e09407ff2c7fa518af845615547c4433a9cd43059ea5f8cd7",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F4_BA_K3_gp.npz",
+      "gp_sha256": "8c5bee913e6d3bf3544c44655986265aaa25ca21c054e5acf4e7f3825e824479",
+      "seconds": 46.37899912893772
+    },
+    {
+      "event": "B2F4_BA_K5",
+      "floor": "B2F4",
+      "K": 5,
+      "mde": {
+        "GP": 17.36013199102095,
+        "full24": 17.079475282445312,
+        "fusion": 14.128563598994214
+      },
+      "tab_mean_max_gap": null,
+      "zero_lambda_max_gap": 6.332993507385254e-08,
+      "prediction_path": "results/position_fusion_20261109_continued/target/B2F4_BA_K5_unscored.npz",
+      "prediction_sha256": "0162a643ddf573e4a1a0cac767d23fa45f883fa16eea31ebf02331f9c2d56217",
+      "scored_sha256": "7e8d9322d4876edf6602de71f6df0d32286da00d7faa9d5468c6aa6af467a309",
+      "gp_path": "results/position_fusion_20261109_continued/target/B2F4_BA_K5_gp.npz",
+      "gp_sha256": "0001b36576f8bab3b497846749280665fe1c30a6a1760a30b8237bf991330d5b",
+      "seconds": 49.29699184000492
+    }
+  ],
+  "segments": [
+    {
+      "created": "2026-11-09T09:48:04.834960+00:00",
+      "seconds": 944.4054760560393,
+      "completed": 30,
+      "budget": 900.0,
+      "weights_unchanged": true
+    },
+    {
+      "created": "2026-11-09T10:04:06.871306+00:00",
+      "seconds": 898.000087916851,
+      "completed": 24,
+      "budget": 900.0,
+      "weights_unchanged": true
+    }
+  ],
+  "selected_lambda": 2.0,
+  "practical_gate": {
+    "relative_gain": 0.09090266112682377,
+    "worse_floors": 2,
+    "passed": true
+  }
+}
