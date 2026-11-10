@@ -1,0 +1,73 @@
+{
+  "complete": true,
+  "created": "2026-11-10T15:46:30.385761+00:00",
+  "freeze_sha256": "0b1d4c4613a324167af8c2b4e1e0d4d1633b4803cc9fa2bbe8367bd67bd6d587",
+  "manifest_sha256": "2692c7e0f98d4abfb6a407710a1fe1584206dbc5f3c1cf0b480b4fc9de00b324",
+  "histories_sha256": "449aa2782f15835ddeb78647670973fea0aa361464f9804c4ed3aec072d16914",
+  "history_fields": 1800,
+  "fields_by_floor": {
+    "2": 316,
+    "3": 569,
+    "4": 405,
+    "5": 404,
+    "6": 106
+  },
+  "history_positions_by_floor": {
+    "2": 128,
+    "3": 128,
+    "4": 128,
+    "5": 128,
+    "6": 60
+  },
+  "eligible_floors": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "floor_metadata": {
+    "1": {
+      "scans": 0,
+      "positions": 0,
+      "eligible": false,
+      "status": "unsupported_training_coverage"
+    },
+    "2": {
+      "scans": 480,
+      "positions": 389,
+      "eligible": true,
+      "status": "eligible"
+    },
+    "3": {
+      "scans": 1433,
+      "positions": 1251,
+      "eligible": true,
+      "status": "eligible"
+    },
+    "4": {
+      "scans": 1298,
+      "positions": 1159,
+      "eligible": true,
+      "status": "eligible"
+    },
+    "5": {
+      "scans": 1076,
+      "positions": 868,
+      "eligible": true,
+      "status": "eligible"
+    },
+    "6": {
+      "scans": 100,
+      "positions": 60,
+      "eligible": true,
+      "status": "eligible"
+    }
+  },
+  "segment_seconds": 94.9367321357131,
+  "total_fit_seconds": 94.81698692962527,
+  "max_projected_gradient": 2.016725274556208e-06,
+  "official_query_opened": false,
+  "GT_opened": false,
+  "source_model_updates": 0
+}
