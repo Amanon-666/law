@@ -1,0 +1,90 @@
+{
+  "created": "2026-11-10T18:08:29.500052+00:00",
+  "command": [
+    "/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python",
+    "-m",
+    "law_bench.run",
+    "--dataset",
+    "uji",
+    "--building",
+    "B1",
+    "--source-buildings",
+    "B0",
+    "--floors",
+    "0",
+    "--repeats",
+    "0",
+    "--budgets",
+    "1",
+    "3",
+    "5",
+    "--query-positions",
+    "10",
+    "--R",
+    "3",
+    "--methods",
+    "wknn_S",
+    "wknn_HS",
+    "--output",
+    "results/law_bench_uji_smoke_20261111"
+  ],
+  "first": {
+    "exit_code": 0,
+    "seconds": 2.346825525164604,
+    "stdout": "{\"method\": \"wknn_S\", \"task\": \"uji/B1/F0/K1/r0\", \"status\": \"completed\"}\n{\"method\": \"wknn_S\", \"task\": \"uji/B1/F0/K3/r0\", \"status\": \"completed\"}\n{\"method\": \"wknn_S\", \"task\": \"uji/B1/F0/K5/r0\", \"status\": \"completed\"}\n{\"method\": \"wknn_HS\", \"task\": \"uji/B1/F0/K1/r0\", \"status\": \"completed\"}\n{\"method\": \"wknn_HS\", \"task\": \"uji/B1/F0/K3/r0\", \"status\": \"completed\"}\n{\"method\": \"wknn_HS\", \"task\": \"uji/B1/F0/K5/r0\", \"status\": \"completed\"}\n",
+    "stderr": ""
+  },
+  "resume": {
+    "exit_code": 0,
+    "seconds": 0.45635346323251724,
+    "stdout": "",
+    "stderr": ""
+  },
+  "event_records": 6,
+  "event_and_source_cache_unchanged": true,
+  "fingerprints": {
+    "results/law_bench_uji_smoke_20261111/events/wknn_HS/uji/B1/F0/K1/r0.json": {
+      "sha256": "2d38d877d6afe411ee7d7e1240a47e28dd1ddad1db9c13283e0f8f0bba96ce1d",
+      "mtime_ns": 1794334108617214898
+    },
+    "results/law_bench_uji_smoke_20261111/events/wknn_HS/uji/B1/F0/K3/r0.json": {
+      "sha256": "ac3a679ee6b69c40a45b4dcd54d07fc9ebc247c9ae88a88eff5231afe945c511",
+      "mtime_ns": 1794334108664214962
+    },
+    "results/law_bench_uji_smoke_20261111/events/wknn_HS/uji/B1/F0/K5/r0.json": {
+      "sha256": "bf031c719e5d758ff4a981783427e3887d6d893b70fc48b9288a078030a0bbf3",
+      "mtime_ns": 1794334108704215017
+    },
+    "results/law_bench_uji_smoke_20261111/events/wknn_S/uji/B1/F0/K1/r0.json": {
+      "sha256": "d0f0a4c9317a01a2d202e22b2403517e76c0ef145905ed6d3d48df760d1575e5",
+      "mtime_ns": 1794334108571214836
+    },
+    "results/law_bench_uji_smoke_20261111/events/wknn_S/uji/B1/F0/K3/r0.json": {
+      "sha256": "2acec51c291b00e2b1ef681a4f10fa1c92153f9a706d270a3ddefb9bddf88812",
+      "mtime_ns": 1794334108572214837
+    },
+    "results/law_bench_uji_smoke_20261111/events/wknn_S/uji/B1/F0/K5/r0.json": {
+      "sha256": "21d6b515bb46706c8a9e65b6dc07055c6dfe30c6f906ea675fa77fe28fc3ae65",
+      "mtime_ns": 1794334108573214838
+    },
+    "results/law_bench_uji_smoke_20261111/source_models/wknn_HS.joblib": {
+      "sha256": "71899cd3552a6eabcb0a214ae042b0fdf400eca8d085a4ac237257840d6968e2",
+      "mtime_ns": 1794334108574214840
+    },
+    "results/law_bench_uji_smoke_20261111/source_models/wknn_HS.json": {
+      "sha256": "5d0802a77102a27a80ad835487016d753910a44d27299ce1b740959473fa8579",
+      "mtime_ns": 1794334108574214840
+    },
+    "results/law_bench_uji_smoke_20261111/source_models/wknn_S.joblib": {
+      "sha256": "8b42e2a31a1552bc26a36d51a0cba3a2842b0f0576f6a5abe7dbbac7bf6316cf",
+      "mtime_ns": 1794334107111212840
+    },
+    "results/law_bench_uji_smoke_20261111/source_models/wknn_S.json": {
+      "sha256": "b3fb7d5b8a8a6039f23ed809594aa7884a9488651aeb1c2d3e5c33efc57e1a39",
+      "mtime_ns": 1794334107111212840
+    }
+  },
+  "freeze_sha256": "8eb594e4d92c4de1cd8872e178117221b0da3ad994a8eacdd030ed6ea7417224",
+  "purpose": "One UJI floor/repeat interface run and exact resume; no performance comparison claim",
+  "training": false
+}

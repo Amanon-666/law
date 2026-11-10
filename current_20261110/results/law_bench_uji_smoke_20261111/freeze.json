@@ -1,0 +1,52 @@
+{
+  "protocol": "static-resample-v1",
+  "configuration": {
+    "dataset": "uji",
+    "building": "B1",
+    "root": null,
+    "source_dataset": null,
+    "source_root": null,
+    "source_buildings": [
+      "B0"
+    ],
+    "floors": [
+      0
+    ],
+    "budgets": [
+      1,
+      3,
+      5
+    ],
+    "repeats": [
+      0
+    ],
+    "seed": 20261111,
+    "R": 3,
+    "query_positions": 10,
+    "methods": [
+      "wknn_S",
+      "wknn_HS"
+    ],
+    "method_options": {}
+  },
+  "target_data": {
+    "B1": "57ceefb605b4f6185254fcd3108bb0ec22d3c40cc84c39a8ec257fd9e44a34ea"
+  },
+  "source_data": {
+    "B0": "d962a78bc873a1cda17a199fd255f95171a524bdd772d8b91d16c56a3b6284d9"
+  },
+  "code": {
+    "__init__.py": "6647f153fcd3bdd10261969bd07b3695936399968561b582ff25666629af2c5e",
+    "data.py": "d15143fea47d61b7a75ccf8fc88271082b4e2045698c997d1361c0b2698ba5eb",
+    "data_ipin2025.py": "bd4c12003db5f51c78f5abdc2873e48a1eae14de484c37f36b966b37c102408b",
+    "method_retained_gp.py": "cd927f3947da18296aedabd781b78082855c11cdc33898051778cd8554973985",
+    "method_scaml.py": "de98aba42600750c976bbc5aa96bb9902fc2571a89dbd4695966b0bc2f4e7008",
+    "method_tabicl.py": "15850c55f3f8caabf463a32a1c915bea4a5dee3915a2aa3656def728efa220a2",
+    "method_tcms.py": "edf75ece349fd5a9b34cdcbaae2d15b93993f10f4bc0ebdc9fe748d3bd42a401",
+    "methods_simple.py": "e7319e90b71ce5441d24b4976a894c08f318ee64895e8f586c8017b4856e2217",
+    "protocol.py": "3466794c120de3dbce9ed025ecaf044dd4e0d65176ef4ce010bf39e1fa526780",
+    "run.py": "b8f6316fe6a869aef3be3fb0aebbb1c3e55a5d0e3149734130e31e677659a0b9",
+    "score.py": "6f93caf1010226c718d3f02606f3125785440c4f4b4620dbece1f6cdac2ecfaa",
+    "task.py": "59646d99097a7f91bf266de8c4e44bcdd444ca0b915644a206ef9e1decaee294"
+  }
+}

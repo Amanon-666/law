@@ -1,0 +1,62 @@
+{
+  "ready": [
+    {
+      "task_id": "uji/B1/F0/K1/r0",
+      "protocol": "static-resample-v1",
+      "seed": 6890959968831237373,
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3
+      ],
+      "query_positions": 10,
+      "query_scans": 30,
+      "split_grid_m": null,
+      "acquisition_separated": true,
+      "support_acquisition": 7,
+      "query_acquisition": 14,
+      "evaluation_status": "not_declared"
+    },
+    {
+      "task_id": "uji/B1/F0/K3/r0",
+      "protocol": "static-resample-v1",
+      "seed": 6890959968831237373,
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3
+      ],
+      "query_positions": 10,
+      "query_scans": 30,
+      "split_grid_m": null,
+      "acquisition_separated": true,
+      "support_acquisition": 7,
+      "query_acquisition": 14,
+      "evaluation_status": "not_declared"
+    },
+    {
+      "task_id": "uji/B1/F0/K5/r0",
+      "protocol": "static-resample-v1",
+      "seed": 6890959968831237373,
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "query_positions": 10,
+      "query_scans": 30,
+      "split_grid_m": null,
+      "acquisition_separated": true,
+      "support_acquisition": 7,
+      "query_acquisition": 14,
+      "evaluation_status": "not_declared"
+    }
+  ],
+  "unavailable": []
+}

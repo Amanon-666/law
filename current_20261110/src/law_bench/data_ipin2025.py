@@ -43,7 +43,7 @@ def load(dataset_root=DATA, *, parse_log=None):
             label_provenance=[dict(file=r['relative_file'],
                 landmark_lines=r['landmark_lines'], landmark_times=r['landmark_times'],
                 interpolation_fraction=r['fraction']) for r in rows],
-            meta=dict(dataset='ipin2025_training_resample', max_supported_R=1,
+            meta=dict(dataset='ipin2025_training_resample', max_supported_R=1, split_grid_m=2.0,
                 position_kind='time_interpolated_POSI_landmarks',
                 reference=training['reference'], evaluation_status='exposed_development',
                 unsupported_floors=[f for f, m in training['floor_metadata'].items()

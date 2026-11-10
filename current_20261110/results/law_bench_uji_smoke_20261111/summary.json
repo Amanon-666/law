@@ -1,0 +1,168 @@
+{
+  "wknn_S": {
+    "method": "wknn_S",
+    "source_fit": {
+      "status": "completed",
+      "seconds": 0.0006936714053153992,
+      "sha256": "8b42e2a31a1552bc26a36d51a0cba3a2842b0f0576f6a5abe7dbbac7bf6316cf",
+      "source_buildings": [
+        "B0"
+      ]
+    },
+    "by_K": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "mean": 129.8450654021683,
+        "p50": 126.21900132726442,
+        "p90": 143.52492416807337,
+        "query_positions": 10
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "mean": 140.64115575407172,
+        "p50": 134.71505766134402,
+        "p90": 159.5804477893734,
+        "query_positions": 10
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "mean": 140.64115575407172,
+        "p50": 134.71505766134402,
+        "p90": 159.5804477893734,
+        "query_positions": 10
+      }
+    },
+    "by_floor": {
+      "0": {
+        "1": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "mean": 129.8450654021683,
+          "p50": 126.21900132726442,
+          "p90": 143.52492416807337,
+          "query_positions": 10
+        },
+        "3": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "mean": 140.64115575407172,
+          "p50": 134.71505766134402,
+          "p90": 159.5804477893734,
+          "query_positions": 10
+        },
+        "5": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "mean": 140.64115575407172,
+          "p50": 134.71505766134402,
+          "p90": 159.5804477893734,
+          "query_positions": 10
+        }
+      }
+    },
+    "task_records": [
+      "events/wknn_S/uji/B1/F0/K1/r0.json",
+      "events/wknn_S/uji/B1/F0/K3/r0.json",
+      "events/wknn_S/uji/B1/F0/K5/r0.json"
+    ],
+    "unavailable": []
+  },
+  "wknn_HS": {
+    "method": "wknn_HS",
+    "source_fit": {
+      "status": "completed",
+      "seconds": 0.00020681694149971008,
+      "sha256": "71899cd3552a6eabcb0a214ae042b0fdf400eca8d085a4ac237257840d6968e2",
+      "source_buildings": [
+        "B0"
+      ]
+    },
+    "by_K": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "mean": 9.647543784614076,
+        "p50": 9.886115632732638,
+        "p90": 16.87685667535701,
+        "query_positions": 10
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "mean": 9.647543784614076,
+        "p50": 9.886115632732638,
+        "p90": 16.87685667535701,
+        "query_positions": 10
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "mean": 9.647543784614076,
+        "p50": 9.886115632732638,
+        "p90": 16.87685667535701,
+        "query_positions": 10
+      }
+    },
+    "by_floor": {
+      "0": {
+        "1": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "mean": 9.647543784614076,
+          "p50": 9.886115632732638,
+          "p90": 16.87685667535701,
+          "query_positions": 10
+        },
+        "3": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "mean": 9.647543784614076,
+          "p50": 9.886115632732638,
+          "p90": 16.87685667535701,
+          "query_positions": 10
+        },
+        "5": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "mean": 9.647543784614076,
+          "p50": 9.886115632732638,
+          "p90": 16.87685667535701,
+          "query_positions": 10
+        }
+      }
+    },
+    "task_records": [
+      "events/wknn_HS/uji/B1/F0/K1/r0.json",
+      "events/wknn_HS/uji/B1/F0/K3/r0.json",
+      "events/wknn_HS/uji/B1/F0/K5/r0.json"
+    ],
+    "unavailable": []
+  }
+}
