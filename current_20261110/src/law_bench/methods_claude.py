@@ -93,3 +93,15 @@ class OursMethod(Method):
 def predict_mass(method, task):
     """For OursMethod: (projected xy, candidate xy, normalised log position mass, bounds) for posterior pooling"""
     return method.model.predict(task.H, task.floor, task.S['rss'], task.S['xy'], task.Q_rss, return_mass=True)
+
+
+class OursLoaded(Method):
+    """Reader ablation WITHOUT retraining: load a saved OursMethod joblib (run.py source_models/<name>.joblib) and
+    read its field with a modified reader. reader: dict(offsets=False) | dict(eps=1e-12) | dict(temper=False) |
+    dict(knn3=True); {} reproduces the saved method exactly."""
+    def __init__(self, model_path, reader=None, tag='same'):
+        import joblib
+        self.loaded = joblib.load(model_path); self.reader = dict(reader or {}); self.name = f'ours_loaded_{tag}'
+
+    def predict(self, task):
+        return self.loaded.model.predict(task.H, task.floor, task.S['rss'], task.S['xy'], task.Q_rss, reader=self.reader)

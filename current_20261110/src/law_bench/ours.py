@@ -334,20 +334,35 @@ def condition_v2(Xc, f, s_rss, s_xy, theta, fS=None, r_prior=4.0):
     return p, m, s2
 
 
-def read_mass(cand_xy, p, m, s2, s_rss, s_xy, q_rss, informative=False):
-    """frozen M3 reader -> (candidate xy incl. empirical S entries, normalised log position mass [n_q, n_c], bounds)"""
+def read_mass(cand_xy, p, m, s2, s_rss, s_xy, q_rss, informative=False, offsets=True, eps=None, temper=True):
+    """frozen M3 reader -> (candidate xy incl. empirical S entries, normalised log position mass [n_q, n_c], bounds).
+    Ablation switches (defaults = frozen reader): offsets (device-offset integration), eps (robust mixture weight;
+    1e-12 ~ off), temper (beta/A temperature)."""
+    EPS_ = EPS if eps is None else eps; OFF = OFFSETS if offsets else np.array([0.0])
     Ps, n, nd, mean, var = det_stats(s_rss, s_xy)
     xy = np.vstack([cand_xy, Ps]); p = np.clip(np.vstack([p, (nd + 0.5) / (n[:, None] + 1.0)]), 1e-4, 1 - 1e-4)
     m = np.vstack([m, np.where(np.isnan(mean), -95.0, mean)]); s2 = np.vstack([s2, np.nan_to_num(var, nan=0.0) + S0 ** 2 + 16.0])
-    lmiss = np.log((1 - EPS) * (1 - p) + EPS * U_MISS); logp = np.log(p); lnorm = -0.5 * np.log(2 * np.pi * s2)
+    lmiss = np.log((1 - EPS_) * (1 - p) + EPS_ * U_MISS); logp = np.log(p); lnorm = -0.5 * np.log(2 * np.pi * s2)
     A = p.shape[1]; pmax = p.max(0) > 0.05; L = np.empty((len(q_rss), len(xy)))
     bd = np.stack([np.floor(xy.min(0) / 2) * 2, np.ceil(xy.max(0) / 2) * 2])
     for i, row in enumerate(q_rss):
         d = row != 100; v = row[d][None]
-        per = [np.logaddexp(np.log(1 - EPS) + logp[:, d] + lnorm[:, d] - 0.5 * (v - o - m[:, d]) ** 2 / s2[:, d],
-                            np.log(EPS * U_DET)).sum(1) for o in OFFSETS]
-        L[i] = (logsumexp(np.stack(per), 0) - np.log(len(OFFSETS)) + lmiss[:, ~d].sum(1)) * BETA / ((d | pmax).sum() if informative else A)
+        per = [np.logaddexp(np.log(1 - EPS_) + logp[:, d] + lnorm[:, d] - 0.5 * (v - o - m[:, d]) ** 2 / s2[:, d],
+                            np.log(EPS_ * U_DET)).sum(1) for o in OFF]
+        L[i] = logsumexp(np.stack(per), 0) - np.log(len(OFF)) + lmiss[:, ~d].sum(1)
+        if temper:
+            L[i] = L[i] * BETA / ((d | pmax).sum() if informative else A)
     return xy, L - logsumexp(L, 1, keepdims=True), bd
+
+
+def read_knn3(cand_xy, p, m, s_rss, s_xy, q_rss):
+    """ablation reader: 3NN on the expected encoded map p*m + (1-p)*ND plus the real S scans (vt_lib.read_knn)"""
+    enc = lambda r: np.where(r == 100, T.ND, r)
+    a = np.vstack([p * m + (1 - p) * T.ND, enc(s_rss)]); xy = np.vstack([cand_xy, s_xy])
+    D = np.sqrt(((enc(q_rss)[:, None] - a[None]) ** 2).mean(-1)); idx = np.argsort(D, 1, kind='stable')[:, :3]
+    w = 1 / np.maximum(np.take_along_axis(D, idx, 1), 1e-8); w /= w.sum(1, keepdims=True)
+    bd = np.stack([np.floor(xy.min(0) / 2) * 2, np.ceil(xy.max(0) / 2) * 2])
+    return np.clip((w[:, :, None] * xy[idx]).sum(1), bd[0], bd[1])
 
 
 def read(cand_xy, p, m, s2, s_rss, s_xy, q_rss, informative=False):
@@ -366,7 +381,7 @@ class Ours:
         rel = rnd = self.variant != 'v1'
         self.ops = [Operator(source_buildings, s, reliability=rel, randomise=rnd) for s in self.seeds]
 
-    def predict(self, H, t, s_rss, s_xy, q_rss, return_mass=False):
+    def predict(self, H, t, s_rss, s_xy, q_rss, return_mass=False, reader=None):
         """H {floor: dict(rss, xy)} other floors of the task building; one AP axis shared with S and Q.
         return_mass=True -> (projected xy, cand_xy, log_position_mass, bounds) for posterior pooling with a GP"""
         maps = make_maps(H)
@@ -392,7 +407,10 @@ class Ours:
             p, m, s2 = condition(Xc, f['p'], f['m'], f['s2'], sr, s_xy, (16.0, 0.3, 1.0, 0.0))
         else:
             p, m, s2 = condition_v2(Xc, f, sr, s_xy, self.theta, fS)
-        xy, L, bd = read_mass(Xc, p, m, s2, sr, s_xy, qr, self.inf)
+        reader = reader or {}
+        if reader.get('knn3'):
+            return read_knn3(Xc, p, m, sr, s_xy, qr)
+        xy, L, bd = read_mass(Xc, p, m, s2, sr, s_xy, qr, self.inf, **{k: v for k, v in reader.items() if k != 'knn3'})
         proj = np.clip(np.exp(L) @ xy, bd[0], bd[1])
         return (proj, xy, L, bd) if return_mass else proj
 
