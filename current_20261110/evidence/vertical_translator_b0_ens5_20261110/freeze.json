@@ -1,0 +1,71 @@
+{
+  "created": "2026-11-10T11:21:42.638429+00:00",
+  "code": {
+    "vertical_translator_generate.py": "39cac314e914ddf13daf14324f28e802be01475c9ad2a2819bcc231f5e8444b0",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/vertical_translator/core.py": "0526acc13fb8f1b060de1f51a26bfd241d08bd0c650409f1d69369bd783e0fc3",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/vertical_translator/protocol9.py": "fac717eb291bee42e8a74ae48199376308a737aa92879b55c6fe0edc93bab80d",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/vertical_translator/run_nine_floor.py": "83f82f1999a46f1629df6ad84d18a2c17bb0b979a7403ca424f973b16031b7eb",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/vertical_translator/tab_adapter.py": "086e8ddea0cca8afeb0ef183f94dce1dbe838424b9cbc3792148d4b8ec16c35f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/vertical_translator/translator.py": "50b51aa05330ec1b7335b8be7f8c72f7200de198a933c950e19a9acfd582eacd",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/vertical_translator/vt_lib.py": "6342988bb2ccdf49ae7a29152ac2e7276b2fa92629a41d51f28af82856a579bd"
+  },
+  "input_sha256": {
+    "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_assets_20261109/manifest.json": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496"
+  },
+  "original_archive": {
+    "sha256": "8486c2174a041cf649c5c093eab92631cb323c95e65248af92f0f90b0cc88561",
+    "bytes": 47692
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "train": "b0only",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "draws": 8,
+  "single_acquisition": false,
+  "source_rows_by_floor": {
+    "B0F0": 1059,
+    "B0F1": 1356,
+    "B0F2": 1443,
+    "B0F3": 1391
+  },
+  "source_permission": "All original B0 F0/F1/F2/F3 rows, no protected exclusion; broader than existing Tab clean three-floor assets",
+  "training": "Original V.training_set([0],rng,draws8,single_acquisition=False), one H and one HS V.Model per seed; no hyperparameter change",
+  "model_settings": {
+    "max_iter": 400,
+    "learning_rate": 0.06,
+    "max_leaf_nodes": 63,
+    "min_samples_leaf": 40,
+    "l2_regularization": 1.0,
+    "random_state": 0
+  },
+  "map_semantics": "Mean of encoded RSS with missing=-105, not physical latent RSS or full observation density",
+  "reader": "Original V.read_knn k3, missing=-105; distinct from the project raw nearest3 missing=-110",
+  "naive_reference": "Original V.hist_feats reference, same candidate/AP/bounds and V.read_knn plus real S; no fitting",
+  "label_permission": "Package eagerly loads full CSV/maps; target Q labels do not enter fitting/prediction; score only after persisted predictions",
+  "output": "Original final NPZ schema plus naive_ref/pred_3nn_naive; no thresholding, rounding or Tab/GP field replacement",
+  "resources": {
+    "cpu_threads": 2,
+    "GPUs": 0,
+    "max_seconds": 900,
+    "hard_timeout": "external launcher",
+    "downloads": 0
+  },
+  "limits": [
+    "Previously exposed target development events; no blind claim or same-training-information attribution",
+    "No Tab/GP training, new seeds, target selection or automatic retry",
+    "Five fixed seed maps are averaged, not selected by target errors"
+  ]
+}

@@ -15,213 +15,52 @@
     "uah_system_assets",
     "uah_system_trial",
     "system_stability",
-    "trained_system_validation_trial"
+    "trained_system_validation_trial",
+    "vertical_translator_generate",
+    "translated_history_system_trial",
+    "context_influence_training",
+    "context_influence_evaluation"
   ],
   "files": [
     {
-      "path": "src/trained_system_validation_trial.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/trained_system_validation_trial.py",
-      "sha256": "4e0380e92f6f3d14fa11f494f9b3e54f493f55c592f688b132b949b944eab82c"
+      "path": "evidence/building_information_gp_20261109/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/building_information_gp_20261109/complete.json",
+      "sha256": "f6e87d0a0a3ddff698465ebdca571c0fecffa0f942dac474beaf0f3a2e0f92f5"
     },
     {
-      "path": "src/tabicl_history.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_history.py",
-      "sha256": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518"
+      "path": "evidence/building_information_gp_20261109/freeze.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/building_information_gp_20261109/freeze.json",
+      "sha256": "ff1d0d0e71b97c577021fcaf62448e2c1bff095cb89ab53c199cb6772fb08194"
     },
     {
-      "path": "src/building_information_tab_trial.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/building_information_tab_trial.py",
-      "sha256": "44a1579a63c5dbe6ceb12abeba90a16f019b474bb8158e68e4a82200bbfdc834"
+      "path": "evidence/building_information_tab_20261109/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/building_information_tab_20261109/complete.json",
+      "sha256": "fbae29c6478c20daee4b0562a8531d915f3763bc3850adfc3e7dbf481b882ffd"
     },
     {
-      "path": "src/system_stability.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/system_stability.py",
-      "sha256": "e2ae8195cd0d46a46138b808c50f25195fc9e97f98e4d9c9f3e492c9f392877b"
+      "path": "evidence/building_information_tab_20261109/freeze.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/building_information_tab_20261109/freeze.json",
+      "sha256": "988834d696fe272ab518b16e8b8b610b30371d6ca2121928ebffb2549d3e928f"
     },
     {
-      "path": "src/uah_system_trial.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/uah_system_trial.py",
-      "sha256": "61c289ab6960b546d622473a8a819e478b432370275c0d8f501c0906c5567228"
+      "path": "evidence/ordinary_context_target_20261109/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ordinary_context_target_20261109/complete.json",
+      "sha256": "8c5b6560bcfe34d45bbd47dd4fa3f528374486269ec92f356e7ee90fd0d0428a"
     },
     {
-      "path": "src/uah_system_assets.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/uah_system_assets.py",
-      "sha256": "ff475aff9373a0ceef952d0df8bc89bf0154b754dfd39effc29683cdcd11e77d"
+      "path": "evidence/ordinary_context_trial_20261109/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ordinary_context_trial_20261109/complete.json",
+      "sha256": "d6fbfd3d28d5239cd3501e7b1e1e7854c13c6f04166cc1eacc009178c841e625"
     },
     {
-      "path": "src/fields.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/fields.py",
-      "sha256": "25d9d929d317baf38e16924822d26b77a9d94a35be6dbea0cfda0c16818efbbb"
+      "path": "evidence/position_fusion_20261109_continued/source/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/position_fusion_20261109_continued/source/complete.json",
+      "sha256": "ad22890e31483b295cace3be8be7d84e9bac89e313a36c7a2bb22f5bbaa6ba4e"
     },
     {
-      "path": "src/position_fusion_trial.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/position_fusion_trial.py",
-      "sha256": "421804aebeb9178e53955e6b52d7556488e4c03a635adc85335efd385da84a09"
-    },
-    {
-      "path": "src/uji.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/uji.py",
-      "sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444"
-    },
-    {
-      "path": "src/tabicl_multitask_full_trial.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_multitask_full_trial.py",
-      "sha256": "0bbd3259e8dc9655a1c3737dca99e7d00727a1a52ae872fbece6e0fe686b96b3"
-    },
-    {
-      "path": "src/recomposition_trial.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/recomposition_trial.py",
-      "sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21"
-    },
-    {
-      "path": "src/check_recomposition.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/check_recomposition.py",
-      "sha256": "a688be6b20297c1206042d97a71498b41bd70b6031a3eba1243b7b31b3565d06"
-    },
-    {
-      "path": "src/observations.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/observations.py",
-      "sha256": "930fdd3ffe2a2bb40dbcd897aae61b6cf0efc0b4e1ce9548fedc113e9ce059c7"
-    },
-    {
-      "path": "src/posterior.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/posterior.py",
-      "sha256": "72b31b7e548b4b0eaa68a9fd63cfce1d7f3f020902a834ec90da3e37272eca4d"
-    },
-    {
-      "path": "src/sampling.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/sampling.py",
-      "sha256": "7e6168c9ec72c14d66a6e2d947a7a1cda46b6e98a60772b5272b107c0a3e0add"
-    },
-    {
-      "path": "src/recomposition.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/recomposition.py",
-      "sha256": "2aaa6a88aaf273610c25646ac9abcc8a99c83173f9d249dd80e632952a5a925d"
-    },
-    {
-      "path": "src/tabicl_history_learning.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_history_learning.py",
-      "sha256": "ce9ff72806f312793bbe164ed61e29af5b64873c7f131d68381e20c930681387"
-    },
-    {
-      "path": "src/source_episode_catalog.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/source_episode_catalog.py",
-      "sha256": "f4a14a634dd9592003b60559ca3ea46ab0e852d2adfae18e5ce012e81c37d303"
-    },
-    {
-      "path": "src/acquisition_tasks.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/acquisition_tasks.py",
-      "sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50"
-    },
-    {
-      "path": "src/episodic_tasks.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/episodic_tasks.py",
-      "sha256": "cc2461e847889d4929af1f9be661214b6e6e1c5529d5550cb4d38cd76e94c02f"
-    },
-    {
-      "path": "src/episode_queries.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/episode_queries.py",
-      "sha256": "460ea77b0a2a4a6a86ff702061be08cc6e1abdff3055ffc5e92e854f3bfb0488"
-    },
-    {
-      "path": "src/support_recomposition.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/support_recomposition.py",
-      "sha256": "6f71a906d95373656b230faacd5edba73f0f7e05f65ea423b93f1a0d43fe13bf"
-    },
-    {
-      "path": "src/conditional_shape.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/conditional_shape.py",
-      "sha256": "c0ab0c99da4ca6e5e506cdcfd989a124f48f14f600d856d7d868696c0e4502d9"
-    },
-    {
-      "path": "src/predict.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/predict.py",
-      "sha256": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5"
-    },
-    {
-      "path": "src/adaptation.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/adaptation.py",
-      "sha256": "dc6a8a65d427fc573cf19ef0e984dedd6e15316714fb458e8d05d30d4db27fba"
-    },
-    {
-      "path": "src/check_tabicl_history_learning.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/check_tabicl_history_learning.py",
-      "sha256": "7dd215013f22304617ec04ec27a786f60567e3c52c9a063c6db949d0539ff4c9"
-    },
-    {
-      "path": "src/position_fusion_gp.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/position_fusion_gp.py",
-      "sha256": "6f1f5b789c383a06b4ed34555c18870519ea522b9f72198c8fe27b90effe22d8"
-    },
-    {
-      "path": "src/building_information_gp_trial.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/building_information_gp_trial.py",
-      "sha256": "dd49fa8b7cd023b8faf1ac1470cf94c4e4f92a2af86447c9a6458ba69ad3eaed"
-    },
-    {
-      "path": "src/position_distribution_fusion.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/position_distribution_fusion.py",
-      "sha256": "b84d90f816b49ad7caf66ad3a856d41109fb4afb9a0c80a62bdb5ef660abec3b"
-    },
-    {
-      "path": "src/building_information_protocol.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/building_information_protocol.py",
-      "sha256": "fac717eb291bee42e8a74ae48199376308a737aa92879b55c6fe0edc93bab80d"
-    },
-    {
-      "path": "src/building_information_assets.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/building_information_assets.py",
-      "sha256": "3f204e13d08570a4714602ebd1f23a594ea554475320c9276eb8d3343c5f7267"
-    },
-    {
-      "path": "src/paired_assets.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/paired_assets.py",
-      "sha256": "8ff3984f89eb335dd9fd4a3a9431e58ac42096939e25d9812c4d609b9a918e48"
-    },
-    {
-      "path": "src/paired_acquisition_tasks.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/paired_acquisition_tasks.py",
-      "sha256": "e121841d83da09fc1e583d2e85be8be6fda06fac8edb26b01e14a4ac95e7479d"
-    },
-    {
-      "path": "src/history_fit.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/history_fit.py",
-      "sha256": "1c638fe1bc8b8bf936a68f0b2f66326df4294ade30f239ae667f8e70304c11ad"
-    },
-    {
-      "path": "src/ordinary_context_target_trial.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/ordinary_context_target_trial.py",
-      "sha256": "86e3eee6f4cb9e04f55897fb68816a899253af4286c0adfc165869f6dfabc7f9"
-    },
-    {
-      "path": "src/ordinary_context_trial.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/ordinary_context_trial.py",
-      "sha256": "9b5f899c005795cf263f76ea5bcac38569e069ca9ac891532225c54db723c487"
-    },
-    {
-      "path": "src/ordinary_context_protocol.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/ordinary_context_protocol.py",
-      "sha256": "35150459af799cdf21fbf0aaeda761483191b30fcac3c8cfc409fad8a5deea54"
-    },
-    {
-      "path": "src/tabicl_multitask_transfer.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_multitask_transfer.py",
-      "sha256": "6b6fd18c84973d8efa3ba963df92465195513973655f3d0d139ce62c2a959638"
-    },
-    {
-      "path": "src/tabicl_context_matching_trial.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_context_matching_trial.py",
-      "sha256": "4454b453256c1c7a5007361f26c14c6ea3f17e1a428c9a73cb40cd8a39b9d250"
-    },
-    {
-      "path": "src/check_tabicl_context_matching.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/check_tabicl_context_matching.py",
-      "sha256": "2d6171ad012c76d7963609eb98646a9aec954e32cda24268aa6a7e076dfb9ef3"
-    },
-    {
-      "path": "src/tabicl_context_matching.py",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_context_matching.py",
-      "sha256": "b18e177dc317c0073bdbf272ad03f6089460e62cde40370bf0cc0fb637d4f907"
+      "path": "evidence/position_fusion_20261109_continued/target/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/position_fusion_20261109_continued/target/complete.json",
+      "sha256": "911d59c730f450368c8d9d44d96a4eb95f85be18f7889514a04078cfcfaba325"
     },
     {
       "path": "evidence/tabicl_multitask_full_trial_20261107_checked/complete.json",
@@ -239,49 +78,324 @@
       "sha256": "27a5a0c9ad6eb05362265a09d501f3d951d9a3446333d755211202e0fa7b54dc"
     },
     {
-      "path": "evidence/ordinary_context_trial_20261109/complete.json",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ordinary_context_trial_20261109/complete.json",
-      "sha256": "d6fbfd3d28d5239cd3501e7b1e1e7854c13c6f04166cc1eacc009178c841e625"
-    },
-    {
-      "path": "evidence/ordinary_context_target_20261109/complete.json",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ordinary_context_target_20261109/complete.json",
-      "sha256": "8c5b6560bcfe34d45bbd47dd4fa3f528374486269ec92f356e7ee90fd0d0428a"
-    },
-    {
-      "path": "evidence/position_fusion_20261109_continued/source/complete.json",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/position_fusion_20261109_continued/source/complete.json",
-      "sha256": "ad22890e31483b295cace3be8be7d84e9bac89e313a36c7a2bb22f5bbaa6ba4e"
-    },
-    {
-      "path": "evidence/position_fusion_20261109_continued/target/complete.json",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/position_fusion_20261109_continued/target/complete.json",
-      "sha256": "911d59c730f450368c8d9d44d96a4eb95f85be18f7889514a04078cfcfaba325"
-    },
-    {
-      "path": "evidence/building_information_tab_20261109/complete.json",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/building_information_tab_20261109/complete.json",
-      "sha256": "fbae29c6478c20daee4b0562a8531d915f3763bc3850adfc3e7dbf481b882ffd"
-    },
-    {
-      "path": "evidence/building_information_tab_20261109/freeze.json",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/building_information_tab_20261109/freeze.json",
-      "sha256": "988834d696fe272ab518b16e8b8b610b30371d6ca2121928ebffb2549d3e928f"
-    },
-    {
-      "path": "evidence/building_information_gp_20261109/complete.json",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/building_information_gp_20261109/complete.json",
-      "sha256": "f6e87d0a0a3ddff698465ebdca571c0fecffa0f942dac474beaf0f3a2e0f92f5"
-    },
-    {
-      "path": "evidence/building_information_gp_20261109/freeze.json",
-      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/building_information_gp_20261109/freeze.json",
-      "sha256": "ff1d0d0e71b97c577021fcaf62448e2c1bff095cb89ab53c199cb6772fb08194"
-    },
-    {
       "path": "evidence/uah_system_20261109/complete.json",
       "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/uah_system_20261109/complete.json",
       "sha256": "ec6aa8b80f0be23311638c534487e562df2b58efd6940cbbc3c88464e4b375fe"
+    },
+    {
+      "path": "evidence/vertical_translator_b0_ens5_20261110/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/vertical_translator_b0_ens5_20261110/complete.json",
+      "sha256": "d457164bd4f7568d7fecc66eda945dd04af0035bbac175219be91a86abada640"
+    },
+    {
+      "path": "evidence/vertical_translator_b0_ens5_20261110/freeze.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/vertical_translator_b0_ens5_20261110/freeze.json",
+      "sha256": "f43bf13d792616f4595bdfd6a91320834fbae091740332894f0368d1993bdb76"
+    },
+    {
+      "path": "evidence/vertical_translator_b0_ens5_20261110/summary.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/vertical_translator_b0_ens5_20261110/summary.json",
+      "sha256": "82fec6ba3f5d5862a10958d882a68ad7884fd8b4df1537af635285137dae420e"
+    },
+    {
+      "path": "src/acquisition_tasks.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/acquisition_tasks.py",
+      "sha256": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50"
+    },
+    {
+      "path": "src/adaptation.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/adaptation.py",
+      "sha256": "dc6a8a65d427fc573cf19ef0e984dedd6e15316714fb458e8d05d30d4db27fba"
+    },
+    {
+      "path": "src/building_information_assets.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/building_information_assets.py",
+      "sha256": "3f204e13d08570a4714602ebd1f23a594ea554475320c9276eb8d3343c5f7267"
+    },
+    {
+      "path": "src/building_information_gp_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/building_information_gp_trial.py",
+      "sha256": "dd49fa8b7cd023b8faf1ac1470cf94c4e4f92a2af86447c9a6458ba69ad3eaed"
+    },
+    {
+      "path": "src/building_information_protocol.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/building_information_protocol.py",
+      "sha256": "fac717eb291bee42e8a74ae48199376308a737aa92879b55c6fe0edc93bab80d"
+    },
+    {
+      "path": "src/building_information_tab_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/building_information_tab_trial.py",
+      "sha256": "44a1579a63c5dbe6ceb12abeba90a16f019b474bb8158e68e4a82200bbfdc834"
+    },
+    {
+      "path": "src/check_recomposition.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/check_recomposition.py",
+      "sha256": "a688be6b20297c1206042d97a71498b41bd70b6031a3eba1243b7b31b3565d06"
+    },
+    {
+      "path": "src/check_tabicl_context_matching.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/check_tabicl_context_matching.py",
+      "sha256": "2d6171ad012c76d7963609eb98646a9aec954e32cda24268aa6a7e076dfb9ef3"
+    },
+    {
+      "path": "src/check_tabicl_history_learning.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/check_tabicl_history_learning.py",
+      "sha256": "7dd215013f22304617ec04ec27a786f60567e3c52c9a063c6db949d0539ff4c9"
+    },
+    {
+      "path": "src/conditional_shape.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/conditional_shape.py",
+      "sha256": "c0ab0c99da4ca6e5e506cdcfd989a124f48f14f600d856d7d868696c0e4502d9"
+    },
+    {
+      "path": "src/context_influence_adapter.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/context_influence_adapter.py",
+      "sha256": "c5eb06c4577c4e58e35ecebc870770b7664ba266235ad2b7df417db804196a47"
+    },
+    {
+      "path": "src/context_influence_backward_check.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/context_influence_backward_check.py",
+      "sha256": "0e4e20c8db2182c07d02cc2cac33dfd79e4a7eacfb9a0d4e5e35b5486c9d6d68"
+    },
+    {
+      "path": "src/context_influence_consumer.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/context_influence_consumer.py",
+      "sha256": "56e60ad3a75e6b19afb3976528cbd24e358f3a4b563b021bd3a91d5385e77dfe"
+    },
+    {
+      "path": "src/context_influence_evaluation.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/context_influence_evaluation.py",
+      "sha256": "1961971c6e338a276572aa9b6c4ef543aaa4752ad90795e1cf4c8a17b59be273"
+    },
+    {
+      "path": "src/context_influence_features.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/context_influence_features.py",
+      "sha256": "7205a1161cd67dbec0f00c8ac2fe452e927231014c32984b3ee38874295428c7"
+    },
+    {
+      "path": "src/context_influence_integration_check.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/context_influence_integration_check.py",
+      "sha256": "50b9dbb18fef5bca1145c775222c7f5de22bc486218e9434864b737d8cb0c52b"
+    },
+    {
+      "path": "src/context_influence_objective.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/context_influence_objective.py",
+      "sha256": "e829dfb9fed72cec59e6367b85330329db075cbfe741f816839117b86709cfb6"
+    },
+    {
+      "path": "src/context_influence_system.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/context_influence_system.py",
+      "sha256": "2953ef2ccef088c0ce644d8288c5e7dc9e45ba6b126e9bab739960867d4e9016"
+    },
+    {
+      "path": "src/context_influence_training.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/context_influence_training.py",
+      "sha256": "a3ff53c8e9d119334df3772b8675a3ac066de9dbf87ff9453bee4229f658eec4"
+    },
+    {
+      "path": "src/episode_queries.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/episode_queries.py",
+      "sha256": "460ea77b0a2a4a6a86ff702061be08cc6e1abdff3055ffc5e92e854f3bfb0488"
+    },
+    {
+      "path": "src/episodic_tasks.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/episodic_tasks.py",
+      "sha256": "cc2461e847889d4929af1f9be661214b6e6e1c5529d5550cb4d38cd76e94c02f"
+    },
+    {
+      "path": "src/fields.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/fields.py",
+      "sha256": "25d9d929d317baf38e16924822d26b77a9d94a35be6dbea0cfda0c16818efbbb"
+    },
+    {
+      "path": "src/history_fit.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/history_fit.py",
+      "sha256": "1c638fe1bc8b8bf936a68f0b2f66326df4294ade30f239ae667f8e70304c11ad"
+    },
+    {
+      "path": "src/observations.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/observations.py",
+      "sha256": "930fdd3ffe2a2bb40dbcd897aae61b6cf0efc0b4e1ce9548fedc113e9ce059c7"
+    },
+    {
+      "path": "src/ordinary_context_protocol.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/ordinary_context_protocol.py",
+      "sha256": "35150459af799cdf21fbf0aaeda761483191b30fcac3c8cfc409fad8a5deea54"
+    },
+    {
+      "path": "src/ordinary_context_target_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/ordinary_context_target_trial.py",
+      "sha256": "86e3eee6f4cb9e04f55897fb68816a899253af4286c0adfc165869f6dfabc7f9"
+    },
+    {
+      "path": "src/ordinary_context_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/ordinary_context_trial.py",
+      "sha256": "9b5f899c005795cf263f76ea5bcac38569e069ca9ac891532225c54db723c487"
+    },
+    {
+      "path": "src/paired_acquisition_tasks.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/paired_acquisition_tasks.py",
+      "sha256": "e121841d83da09fc1e583d2e85be8be6fda06fac8edb26b01e14a4ac95e7479d"
+    },
+    {
+      "path": "src/paired_assets.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/paired_assets.py",
+      "sha256": "8ff3984f89eb335dd9fd4a3a9431e58ac42096939e25d9812c4d609b9a918e48"
+    },
+    {
+      "path": "src/position_distribution_fusion.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/position_distribution_fusion.py",
+      "sha256": "b84d90f816b49ad7caf66ad3a856d41109fb4afb9a0c80a62bdb5ef660abec3b"
+    },
+    {
+      "path": "src/position_fusion_gp.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/position_fusion_gp.py",
+      "sha256": "7c1f3397bff78d94fd1140dac52f1c00ba591f32227820f3f4ed2361ee2b9f91"
+    },
+    {
+      "path": "src/position_fusion_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/position_fusion_trial.py",
+      "sha256": "421804aebeb9178e53955e6b52d7556488e4c03a635adc85335efd385da84a09"
+    },
+    {
+      "path": "src/posterior.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/posterior.py",
+      "sha256": "72b31b7e548b4b0eaa68a9fd63cfce1d7f3f020902a834ec90da3e37272eca4d"
+    },
+    {
+      "path": "src/predict.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/predict.py",
+      "sha256": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5"
+    },
+    {
+      "path": "src/recomposition_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/recomposition_trial.py",
+      "sha256": "459090d18143beec28f9e6c0f2a12604d16df5839281b2d7faf6ed1033bd0f21"
+    },
+    {
+      "path": "src/recomposition.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/recomposition.py",
+      "sha256": "2aaa6a88aaf273610c25646ac9abcc8a99c83173f9d249dd80e632952a5a925d"
+    },
+    {
+      "path": "src/sampling.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/sampling.py",
+      "sha256": "7e6168c9ec72c14d66a6e2d947a7a1cda46b6e98a60772b5272b107c0a3e0add"
+    },
+    {
+      "path": "src/source_episode_catalog.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/source_episode_catalog.py",
+      "sha256": "f4a14a634dd9592003b60559ca3ea46ab0e852d2adfae18e5ce012e81c37d303"
+    },
+    {
+      "path": "src/support_recomposition.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/support_recomposition.py",
+      "sha256": "6f71a906d95373656b230faacd5edba73f0f7e05f65ea423b93f1a0d43fe13bf"
+    },
+    {
+      "path": "src/system_stability.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/system_stability.py",
+      "sha256": "e2ae8195cd0d46a46138b808c50f25195fc9e97f98e4d9c9f3e492c9f392877b"
+    },
+    {
+      "path": "src/tabicl_context_matching_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_context_matching_trial.py",
+      "sha256": "4454b453256c1c7a5007361f26c14c6ea3f17e1a428c9a73cb40cd8a39b9d250"
+    },
+    {
+      "path": "src/tabicl_context_matching.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_context_matching.py",
+      "sha256": "b18e177dc317c0073bdbf272ad03f6089460e62cde40370bf0cc0fb637d4f907"
+    },
+    {
+      "path": "src/tabicl_history_learning.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_history_learning.py",
+      "sha256": "ce9ff72806f312793bbe164ed61e29af5b64873c7f131d68381e20c930681387"
+    },
+    {
+      "path": "src/tabicl_history.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_history.py",
+      "sha256": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518"
+    },
+    {
+      "path": "src/tabicl_multitask_full_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_multitask_full_trial.py",
+      "sha256": "0bbd3259e8dc9655a1c3737dca99e7d00727a1a52ae872fbece6e0fe686b96b3"
+    },
+    {
+      "path": "src/tabicl_multitask_transfer.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/tabicl_multitask_transfer.py",
+      "sha256": "6b6fd18c84973d8efa3ba963df92465195513973655f3d0d139ce62c2a959638"
+    },
+    {
+      "path": "src/trained_system_validation_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/trained_system_validation_trial.py",
+      "sha256": "4e0380e92f6f3d14fa11f494f9b3e54f493f55c592f688b132b949b944eab82c"
+    },
+    {
+      "path": "src/translated_history_context.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/translated_history_context.py",
+      "sha256": "d746682d37db39089aedd43e743cc71d30fe1b264329e7baebce6ac79f98ebe3"
+    },
+    {
+      "path": "src/translated_history_system_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/translated_history_system_trial.py",
+      "sha256": "918623af5a6271ac8d302f8a9eb38efff4deb21c218c389e7baca92f0c45bbb0"
+    },
+    {
+      "path": "src/uah_system_assets.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/uah_system_assets.py",
+      "sha256": "ff475aff9373a0ceef952d0df8bc89bf0154b754dfd39effc29683cdcd11e77d"
+    },
+    {
+      "path": "src/uah_system_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/uah_system_trial.py",
+      "sha256": "61c289ab6960b546d622473a8a819e478b432370275c0d8f501c0906c5567228"
+    },
+    {
+      "path": "src/uji.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/uji.py",
+      "sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444"
+    },
+    {
+      "path": "src/vertical_translator_generate.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/vertical_translator_generate.py",
+      "sha256": "39cac314e914ddf13daf14324f28e802be01475c9ad2a2819bcc231f5e8444b0"
+    },
+    {
+      "path": "src/vertical_translator/core.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/vertical_translator/core.py",
+      "sha256": "0526acc13fb8f1b060de1f51a26bfd241d08bd0c650409f1d69369bd783e0fc3"
+    },
+    {
+      "path": "src/vertical_translator/protocol9.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/vertical_translator/protocol9.py",
+      "sha256": "fac717eb291bee42e8a74ae48199376308a737aa92879b55c6fe0edc93bab80d"
+    },
+    {
+      "path": "src/vertical_translator/run_nine_floor.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/vertical_translator/run_nine_floor.py",
+      "sha256": "83f82f1999a46f1629df6ad84d18a2c17bb0b979a7403ca424f973b16031b7eb"
+    },
+    {
+      "path": "src/vertical_translator/tab_adapter.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/vertical_translator/tab_adapter.py",
+      "sha256": "086e8ddea0cca8afeb0ef183f94dce1dbe838424b9cbc3792148d4b8ec16c35f"
+    },
+    {
+      "path": "src/vertical_translator/translator.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/vertical_translator/translator.py",
+      "sha256": "50b51aa05330ec1b7335b8be7f8c72f7200de198a933c950e19a9acfd582eacd"
+    },
+    {
+      "path": "src/vertical_translator/vt_lib.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/vertical_translator/vt_lib.py",
+      "sha256": "6342988bb2ccdf49ae7a29152ac2e7276b2fa92629a41d51f28af82856a579bd"
     }
-  ]
+  ],
+  "sync": {
+    "date": "2026-11-10",
+    "preserved_collaborator_commit": "af3c996ca4e60fc57e865bb93c645bb84ac4a8ee",
+    "translator_assets": "B0-only seeds1–5 complete; system inference in progress; Tab training remains paused"
+  }
 }
