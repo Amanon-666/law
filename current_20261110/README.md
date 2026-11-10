@@ -44,7 +44,7 @@
 
 ## 楼层翻译接入（2026-11-10）
 
-已吸收 Claude 的 `af3c996` 提交，原翻译器和开发痕迹保留在 [vertical_translator_20261110](../vertical_translator_20261110)。本次执行所用的用户压缩包源码原样保留在 [src/vertical_translator](src/vertical_translator)，与协作者后续版本分别保留。
+已吸收 Claude 的 `af3c996` 及 `e1a9983` 提交，原翻译器和开发痕迹保留在 [vertical_translator_20261110](../vertical_translator_20261110)。本次执行所用的用户压缩包源码原样保留在 [src/vertical_translator](src/vertical_translator)，与协作者后续版本分别保留。
 
 - [vertical_translator_generate.py](src/vertical_translator_generate.py)：B0-only、种子1–5、每种子H/HS模型各一份，247.72秒完成；54组地图及模型留服务器，轻量结果见 [summary](evidence/vertical_translator_b0_ens5_20261110/summary.json)。H/HS翻译图的原3NN均值为11.3927/10.5648米，同表示简单参考图为17.1490米。原型使用B0四层全量源数据，现ordinary30使用三层合法语料。
 - [translated_history_context.py](src/translated_history_context.py)：保留连续均值图；按现Tab的−105编码直接作为特征均值，不阈值化或取整，真实S只加入一次。
@@ -66,3 +66,5 @@
 按用户最新要求，从现象追查学习对象，不把所有组件固定拼进最终方法。平均指纹会合并不同观测机制：50%未检出、检出时−65dBm，与始终−85dBm，按−105编码都得到均值−85；它们对实际扫描的定位证据不同。下一步沿历史翻译主线学习真实单次扫描的检出与RSS分布，统一形成位置证据。旧观测表与条件场已有相关思想，此处保留它们的经验，不另称首次提出概率定位。
 
 [observation_translation_tasks.py](src/observation_translation_tasks.py)已将现43维历史＋12维标定表示接到原共同源任务：H∪S决定AP，只用H/S生成特征，源监督使用另一采集的真实逐扫描RSS并保留未检出值，位置/扫描/AP等权；不再以位置均值充当扫描标签。该模块可复用现有source_episode_catalog/episode_scans，保护源验证位置的权限沿原任务入口执行。仅完成实现与静态审查，尚未拟合概率模型或产生新成绩；当前Tab退步的具体成因仍待这一主线的直接证据。已完成的9.9607米组合保留为实用结果与研究依据，最终结构不要求同时保留GP、Tab和3NN。
+
+已全文读取[Claude框架v2](https://app.notion.com/p/414217e091ae81978a1cf668fdf2091a)。新增[faf_baseline.py](../vertical_translator_20261110/faf_baseline.py)按协作者原提交保留，未在本轮执行。逐点翻译误差方差没有定义跨位置协方差，且HS翻译已使用S；直接替换GP场并再次按S适应的方案尚不成立，不据页面建议启动这条接线或训练。恢复该接法需要明确的空间关系和一致的条件路径。当前优先完成真实观测监督，未启动轴向注意力网络、多数据集或新增下载。
