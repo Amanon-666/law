@@ -29,6 +29,8 @@ METHODS = {
     'wknn_S': ('methods_simple', 'WKNN_S', {}),
     'wknn_HS': ('methods_simple', 'WKNN_HS', {}),
     'tabicl': ('method_tabicl', 'TabICL', {}),
+    'tabicl_ordinary': ('method_tabicl', 'TabICL', {'variant': 'ordinary'}),
+    'tabicl_full24': ('method_tabicl', 'TabICL', {'variant': 'full24'}),
     'scaml': ('method_scaml', 'ScaMLMethod', {}),
     'tcms': ('method_tcms', 'TCMSMethod', {}),
     'retained_gp': ('method_retained_gp', 'RetainedGPMethod', {}),
