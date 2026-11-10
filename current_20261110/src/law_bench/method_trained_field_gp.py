@@ -108,6 +108,7 @@ class TrainedFieldGP:
                 gp = self.gp.predict_scores(task)
             finally:
                 self.diagnostics['GP'] = self.gp.diagnostics
+            self.diagnostics['GP_projected'] = np.asarray(gp['projected']).tolist()
             aps = C._hs_aps(task)
             if not np.array_equal(aps, gp['aps']) or not np.array_equal(bounds, gp['bounds']):
                 raise ValueError('A/GP H-current-S AP axes or bounds differ')
