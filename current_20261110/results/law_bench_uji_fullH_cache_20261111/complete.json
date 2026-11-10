@@ -1,0 +1,155 @@
+{
+  "complete": true,
+  "time_utc": "2026-11-10T18:58:14.618425+00:00",
+  "elapsed_seconds": 7.494284704327583,
+  "history_count": 9,
+  "history_rows": 14688,
+  "field_count": 1320,
+  "imported_fields": 1320,
+  "reused_existing_fields": 0,
+  "source_assets": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_assets_20261109",
+  "cache_dir": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111",
+  "parameters_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/paired_assets_20261106/parameters.json",
+  "provenance": {
+    "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+    "training_sources": [
+      {
+        "dataset": "uji",
+        "building": "B0"
+      }
+    ],
+    "evidence": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_assets_20261109/freeze.json#source_calibration; B0F0/B0F1/B0F2"
+  },
+  "source_code_sha256": "0c903a4f212bb7ac770ca010b70d1a2500aca44a6da13de2e0df5e295e57aa0d",
+  "contexts": [
+    {
+      "building": "B1",
+      "target_floor": 0,
+      "legal_H_floors": [
+        1,
+        2,
+        3
+      ],
+      "newly_visited_H_floors": [
+        1,
+        2,
+        3
+      ],
+      "new_fields": 504
+    },
+    {
+      "building": "B1",
+      "target_floor": 1,
+      "legal_H_floors": [
+        0,
+        2,
+        3
+      ],
+      "newly_visited_H_floors": [
+        0
+      ],
+      "new_fields": 121
+    },
+    {
+      "building": "B2",
+      "target_floor": 0,
+      "legal_H_floors": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "newly_visited_H_floors": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "new_fields": 607
+    },
+    {
+      "building": "B2",
+      "target_floor": 1,
+      "legal_H_floors": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "newly_visited_H_floors": [
+        0
+      ],
+      "new_fields": 88
+    }
+  ],
+  "histories": [
+    {
+      "floor": "B1F1",
+      "history_key": "91fa2f996278ae3b2bcd882a0a06d96911ae31e4aa289b3bc5f77c572fa8ad33",
+      "rows": 1484,
+      "field_count": 168,
+      "legacy_binding": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111/91fa2f996278ae3b2bcd882a0a06d96911ae31e4aa289b3bc5f77c572fa8ad33/legacy_binding.json"
+    },
+    {
+      "floor": "B1F2",
+      "history_key": "c0e7a5b489b10959f23d28836c82b739ebe115038cd98f1077760a4c8981d008",
+      "rows": 1396,
+      "field_count": 190,
+      "legacy_binding": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111/c0e7a5b489b10959f23d28836c82b739ebe115038cd98f1077760a4c8981d008/legacy_binding.json"
+    },
+    {
+      "floor": "B1F3",
+      "history_key": "15c95b5b43de89e6020ec56a0bd650ee3cd7bd39d961cddbaeca460c9a7ba36e",
+      "rows": 948,
+      "field_count": 146,
+      "legacy_binding": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111/15c95b5b43de89e6020ec56a0bd650ee3cd7bd39d961cddbaeca460c9a7ba36e/legacy_binding.json"
+    },
+    {
+      "floor": "B1F0",
+      "history_key": "da321d3c543a9b36afd14ee2f25b6c49516db155f8d66388f5bb1f627882f030",
+      "rows": 1368,
+      "field_count": 121,
+      "legacy_binding": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111/da321d3c543a9b36afd14ee2f25b6c49516db155f8d66388f5bb1f627882f030/legacy_binding.json"
+    },
+    {
+      "floor": "B2F1",
+      "history_key": "2ba41877e97f078e892852e5f1e52087f9d0ba4423852745026a7d4188f711e2",
+      "rows": 2162,
+      "field_count": 161,
+      "legacy_binding": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111/2ba41877e97f078e892852e5f1e52087f9d0ba4423852745026a7d4188f711e2/legacy_binding.json"
+    },
+    {
+      "floor": "B2F2",
+      "history_key": "7c999fb2ab234a91be28b5775b44206e5d418e799bdffa37c6ff4ba3071457ab",
+      "rows": 1577,
+      "field_count": 149,
+      "legacy_binding": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111/7c999fb2ab234a91be28b5775b44206e5d418e799bdffa37c6ff4ba3071457ab/legacy_binding.json"
+    },
+    {
+      "floor": "B2F3",
+      "history_key": "82bf78b92661fb45e58751edc16209f06876d6ff18b33f3120c4b988af439c86",
+      "rows": 2709,
+      "field_count": 178,
+      "legacy_binding": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111/82bf78b92661fb45e58751edc16209f06876d6ff18b33f3120c4b988af439c86/legacy_binding.json"
+    },
+    {
+      "floor": "B2F4",
+      "history_key": "cb20ef833692a3ccf2718479c9a5fb4a02442cc81f66277dc585fb0fdac5c02c",
+      "rows": 1102,
+      "field_count": 119,
+      "legacy_binding": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111/cb20ef833692a3ccf2718479c9a5fb4a02442cc81f66277dc585fb0fdac5c02c/legacy_binding.json"
+    },
+    {
+      "floor": "B2F0",
+      "history_key": "8454c817631d022275ab912e8063c9e41e02489659bd30e476db9b3ebab06af3",
+      "rows": 1942,
+      "field_count": 88,
+      "legacy_binding": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111/8454c817631d022275ab912e8063c9e41e02489659bd30e476db9b3ebab06af3/legacy_binding.json"
+    }
+  ],
+  "transformation": "z + old_origin - source_xy_mean; mean/cov unchanged",
+  "fitting_calls": 0,
+  "adaptation_calls": 0,
+  "prediction_calls": 0,
+  "source_fit_action": "B0 identity validation only"
+}

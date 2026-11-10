@@ -1,0 +1,46 @@
+{
+  "time_utc": "2026-11-10T18:37:08.406511+00:00",
+  "source": "law_bench/ours.py",
+  "source_sha256": "1d3761feaf964497f3408df01cc639ad3b6619743ae0592bcbd1d16165990705",
+  "execution": "Single in-memory combined counterexample; exact AST-extracted det_stats, _logit, condition_v2; no model imports, training or real data",
+  "cpu_threads": 2,
+  "cases": {
+    "far_5m": {
+      "actual": {
+        "p": 0.5,
+        "mean": -74.5412240625863,
+        "variance": 3.6756340117828077
+      },
+      "expected": {
+        "mean": -74.5412240625863,
+        "variance": 3.6756340117828077
+      }
+    },
+    "colocated_same_field": {
+      "actual": {
+        "p": 0.5,
+        "mean": -64.0,
+        "variance": 1.7999999999999998
+      },
+      "expected": {
+        "gain": 0.8,
+        "mean": -64.0,
+        "variance": 1.8
+      }
+    },
+    "undetected_100_detection_enabled": {
+      "p": 0.4905717492617787,
+      "mean": -80.0,
+      "variance": 4.999986756459309
+    }
+  },
+  "checks": {
+    "far_mean_uses_S_prior": true,
+    "far_variance_uses_S_prior": true,
+    "colocated_mean_gain_4_over_5": true,
+    "colocated_variance": true,
+    "missing_RSS_mean_unchanged": true,
+    "missing_detection_probability_reduced": true
+  },
+  "passed": true
+}

@@ -164,9 +164,10 @@ class Operator:
         self.noise = _Fit(_reg(seed), np.vstack(Xn), np.concatenate(yn), np.concatenate(wn))
         self.perr = _Fit(_reg(seed), np.vstack(Xp), np.concatenate(yp), np.concatenate(wp))
 
-    def field(self, maps, t, aps):
-        """-> Xc, dict(p, m, s2 [v1 scale head], tau2 [field error], sig2 [scan noise], vp [detection-rate error])"""
-        Xc = np.unique(np.concatenate([m[0] for m in maps.values()]), axis=0)
+    def field(self, maps, t, aps, X=None):
+        """-> Xc, dict(p, m, s2 [v1 scale head], tau2 [field error], sig2 [scan noise], vp [detection-rate error]).
+        X: explicit positions (e.g. the S coordinates, legal at deployment); default = union of history positions"""
+        Xc = np.unique(np.concatenate([m[0] for m in maps.values()]), axis=0) if X is None else np.asarray(X, float)
         sm = sub_maps(maps, aps); out = {k: [] for k in ('p', 'm', 's2', 'tau2', 'sig2', 'vp')}
         for k in range(0, len(Xc), 1500):                              # memory: chunk candidates
             X = features(Xc[k:k + 1500], t, sm, self.rel); X = X.reshape(-1, X.shape[2])
@@ -210,7 +211,15 @@ def condition(Xc, p0, m0, s20, s_rss, s_xy, theta, r_prior=4.0):
     return out_p, out_m, out_s2
 
 
-def condition_v2(Xc, f, s_rss, s_xy, theta, r_prior=4.0):
+def ensemble_field(ops, maps, t, aps, X=None):
+    outs = [op.field(maps, t, aps, X) for op in ops]
+    f = {k: np.stack([o[1][k] for o in outs]).mean(0) for k in outs[0][1]}
+    mv = np.stack([o[1]['m'] for o in outs]).var(0)
+    f['tau2'] = f['tau2'] + mv; f['s2'] = f['s2'] + mv                   # ensemble disagreement is field error
+    return outs[0][0], f
+
+
+def condition_v2(Xc, f, s_rss, s_xy, theta, fS=None, r_prior=4.0):
     """M2 v2. f: ensemble field dict. Prior field error lam*tau2 (spatial shape rho), S noise sig2(S)/n_d, so the
     anchor gain lam*tau2/(lam*tau2 + sig2/n_d) grows when the history-based field is unreliable. Detection logit
     prior variance lam_g * vp / (p(1-p))^2 (delta method). theta = (ell, o, lam, lam_g). Returns p, m, s2."""
@@ -219,13 +228,18 @@ def condition_v2(Xc, f, s_rss, s_xy, theta, r_prior=4.0):
     if len(s_xy) == 0:
         return p0, m0, sig2 + tau2
     Ps, n, nd, ybar, _ = det_stats(s_rss, s_xy)
-    D = np.linalg.norm(Ps[:, None] - Xc[None], axis=2); j = D.argmin(1); far = D.min(1) > r_prior
+    if fS is None:     # legacy: prior at S = nearest history candidate (S farther than r_prior is ignored)
+        D = np.linalg.norm(Ps[:, None] - Xc[None], axis=2); j = D.argmin(1); far = D.min(1) > r_prior
+        pS, mS, tS, sS, vS = p0[j], m0[j], tau2[j], sig2[j], vp[j]
+    else:              # prior evaluated by the operator AT the S coordinates (rows ordered like det_stats' unique Ps)
+        far = np.zeros(len(Ps), bool)
+        pS, mS, tS, sS, vS = fS['p'], fS['m'], lam * fS['tau2'], fS['sig2'], fS['vp']
     rho_SS = o + (1 - o) * np.exp(-np.linalg.norm(Ps[:, None] - Ps[None], axis=2) / ell)
     rho_xS = o + (1 - o) * np.exp(-np.linalg.norm(Xc[:, None] - Ps[None], axis=2) / ell)
     K_ = len(Ps); big = 1e6
-    tau_x = np.sqrt(tau2); tau_S = tau_x[j]; det = nd > 0
-    r = np.where(det, np.nan_to_num(ybar) - m0[j], 0.0)
-    noise = np.where(det & ~far[:, None], sig2[j] / np.maximum(nd, 1), big)
+    tau_x = np.sqrt(tau2); tau_S = np.sqrt(tS); det = nd > 0
+    r = np.where(det, np.nan_to_num(ybar) - mS, 0.0)
+    noise = np.where(det & ~far[:, None], sS / np.maximum(nd, 1), big)
     KSS = tau_S.T[:, :, None] * tau_S.T[:, None, :] * rho_SS[None] + np.eye(K_)[None] * noise.T[:, :, None]
     W = np.linalg.inv(KSS); kxS = tau_x[:, :, None] * tau_S.T[None] * rho_xS[:, None, :]
     m = m0 + np.einsum('nak,ak->na', kxS, np.einsum('akl,la->ak', W, r))
@@ -233,8 +247,9 @@ def condition_v2(Xc, f, s_rss, s_xy, theta, r_prior=4.0):
     p = p0
     if lamg > 0:
         pc = np.clip(p0, 1e-3, 1 - 1e-3); vz = np.clip(lamg * vp / (pc * (1 - pc)) ** 2, 1e-3, 25.0)
-        vz_S = vz[j]; ph = (nd + 0.5) / (n[:, None] + 1.0)
-        zr = np.where(far[:, None], 0.0, _logit(ph) - _logit(p0[j]))
+        pcS = np.clip(pS, 1e-3, 1 - 1e-3); vz_S = np.clip(lamg * vS / (pcS * (1 - pcS)) ** 2, 1e-3, 25.0)
+        ph = (nd + 0.5) / (n[:, None] + 1.0)
+        zr = np.where(far[:, None], 0.0, _logit(ph) - _logit(pS))
         nz = np.where(far[:, None], big, 1.0 / ((n[:, None] + 1.0) * ph * (1 - ph)))
         sz_x, sz_S = np.sqrt(vz), np.sqrt(vz_S)
         KZ = sz_S.T[:, :, None] * sz_S.T[:, None, :] * rho_SS[None] + np.eye(K_)[None] * nz.T[:, :, None]
@@ -278,18 +293,16 @@ class Ours:
         for d in H.values():
             seen |= (d['rss'] != 100).any(0)
         aps = np.flatnonzero(seen)
-        outs = [op.field(maps, t, aps) for op in self.ops]
-        Xc = outs[0][0]
-        f = {k: np.stack([o[1][k] for o in outs]).mean(0) for k in outs[0][1]}
-        mvar = np.stack([o[1]['m'] for o in outs]).var(0)
-        f['tau2'] = f['tau2'] + mvar; f['s2'] = f['s2'] + mvar          # ensemble disagreement is field error
+        Xc, f = ensemble_field(self.ops, maps, t, aps)
         sr, qr = s_rss[:, aps], q_rss[:, aps]
+        Ps = det_stats(sr, s_xy)[0]
+        fS = ensemble_field(self.ops, maps, t, aps, Ps)[1] if len(Ps) else None
         if self.variant == 'noM2':
             p, m, s2 = f['p'], f['m'], f['sig2'] + f['tau2']
         elif self.variant in ('C1', 'v1'):                              # original C conditioning (s2-proportional)
             p, m, s2 = condition(Xc, f['p'], f['m'], f['s2'], sr, s_xy, (16.0, 0.3, 1.0, 0.0))
         else:
-            p, m, s2 = condition_v2(Xc, f, sr, s_xy, self.theta)
+            p, m, s2 = condition_v2(Xc, f, sr, s_xy, self.theta, fS)
         return read(Xc, p, m, s2, sr, s_xy, qr, self.inf)
 
 
@@ -305,7 +318,8 @@ def scan_nll(p, m, s2, rss):
 
 
 def select_theta(source_buildings, seed=1, draws=8, reliability=True, randomise=True, grid=THETA_GRID, max_eval=400):
-    """Held-out predictive NLL of real target-floor scans. >=2 source buildings: operators trained on one half of
+    """Held-out predictive NLL of real target-floor scans, with the field evaluated AT those scans' coordinates
+    (no nearest-candidate proxy, no R_LABEL filter). >=2 source buildings: operators trained on one half of
     the buildings are evaluated on the other half; 1 building: leave-one-floor-out. S: random K in {1,3,5}
     positions (<=3 scans each); history condition drawn like training. Returns (best theta, scores)."""
     rng = np.random.default_rng([seed, 99]); scores = {th: [] for th in grid}
@@ -335,13 +349,14 @@ def select_theta(source_buildings, seed=1, draws=8, reliability=True, randomise=
                     for mp in maps.values():
                         seen |= mp[2].max(0) > 0
                     aps = np.flatnonzero(seen)
-                    Xc, f = op.field(maps, t, aps)
-                    D = np.linalg.norm(tr_['xy'][erows][:, None] - Xc[None], axis=2); jj = D.argmin(1); ok = D.min(1) <= T.R_LABEL
-                    if ok.sum() < 10:
-                        continue
-                    ev_rss = tr_['rss'][erows[ok]][:, aps]; jj = jj[ok]
+                    # field evaluated directly at the held-out real scans' coordinates (source data, legal)
+                    Pe, inv_e = np.unique(tr_['xy'][erows], axis=0, return_inverse=True); inv_e = inv_e.ravel()
+                    fe = op.field(maps, t, aps, Pe)[1]
+                    Ps_ = det_stats(tr_['rss'][srows][:, aps], tr_['xy'][srows])[0]
+                    fS = op.field(maps, t, aps, Ps_)[1]
+                    ev_rss = tr_['rss'][erows][:, aps]
                     for th in grid:
-                        p, m, s2 = condition_v2(Xc, f, tr_['rss'][srows][:, aps], tr_['xy'][srows], th)
-                        scores[th].append(scan_nll(p[jj], m[jj], s2[jj], ev_rss))
+                        p, m, s2 = condition_v2(Pe, fe, tr_['rss'][srows][:, aps], tr_['xy'][srows], th, fS)
+                        scores[th].append(scan_nll(p[inv_e], m[inv_e], s2[inv_e], ev_rss))
     mean = {th: float(np.mean(v)) for th, v in scores.items() if v}
     return min(mean, key=mean.get), mean
