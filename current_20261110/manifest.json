@@ -26,7 +26,10 @@
     "observation_translation_model",
     "observation_translation_trial",
     "observation_translation_readout_trial",
-    "joint_support_translation"
+    "joint_support_translation",
+    "continuous_observation_tasks",
+    "continuous_observation_translation",
+    "continuous_observation_trial"
   ],
   "files": [
     {
@@ -482,7 +485,7 @@
     {
       "path": "src/joint_support_translation.py",
       "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/joint_support_translation.py",
-      "sha256": "8584097ebaa6c455a08dd7771942b77d2fe721ed1e7ea46fc36f2d1d325cc924"
+      "sha256": "dc33148f467299efb845150e3d1f2536c2e326251723963d695c888f17ac5812"
     },
     {
       "path": "evidence/observation_translation_readout_20261110/complete.json",
@@ -498,12 +501,27 @@
       "path": "evidence/observation_translation_readout_20261110/source_representatives.json",
       "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_readout_20261110/source_representatives.json",
       "sha256": "44a54d0407387c2e188f69d62c61b91a65f46a23e0ef8c25de415a58ddab72e0"
+    },
+    {
+      "path": "src/continuous_observation_tasks.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/continuous_observation_tasks.py",
+      "sha256": "2be3beb4ba70fb4570389ea65a86fda51972ffa28778b3363c58c35b78856bbf"
+    },
+    {
+      "path": "src/continuous_observation_translation.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/continuous_observation_translation.py",
+      "sha256": "715b5abbed8ed454b97ce64e7835bdb8f416ba316912f5c0020cff169630d751"
+    },
+    {
+      "path": "src/continuous_observation_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/continuous_observation_trial.py",
+      "sha256": "b1d474500ee8c1e9e564cdf2a3bb1b5b7d4240432227ef16b7e05bdcccb73495"
     }
   ],
   "sync": {
     "date": "2026-11-10",
-    "preserved_collaborator_commit": "b0800c6dd5bbd41f052a98c5b6658fca55bd42d4",
+    "preserved_collaborator_commit": "a9e353712e6112a5b33998a47cb409292dfcf069",
     "translator_assets": "B0-only seeds1–5 and all54 system events complete; reusable H/S modules statically reviewed; formal Tab/relation training remains paused",
-    "next_learning_object": "Frozen-model readout comparison complete: probability12.7186m versus quantized-map3NN12.6584m, no new training. JointSupportTranslation implements arbitrary-XY total GP moment access for future translator features, statically reviewed but not run/integrated."
+    "next_learning_object": "Continuous single-scan hurdle translator, full legal source-acquisition supervision and separate train/evaluate entrypoints implemented and statically reviewed, not run. Claude's published results reused: B0 ensembles9.4325/9.3664m, LOBO9.5219m. Joint-support context/learner remains implemented but inactive."
   }
 }

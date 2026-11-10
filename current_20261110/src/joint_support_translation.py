@@ -1,9 +1,10 @@
-"""Arbitrary-XY total GP moments for a future historical-field translator.
+"""Arbitrary-XY GP moments and the joint-support observation translator.
 
 Collect the actual per-AP prior and complete support posterior from ONE existing
 retained-GP pass. No adaptation, sampling, model fitting, Query RSS/labels, file
-I/O or network hook is performed here. This is not wired into translator
-training or evaluation and has not been numerically validated.
+I/O or network hook is performed by the field collector. The context/model
+below connect these fields to the existing classifier and readout; no runner
+is connected or executed and this path has not been numerically validated.
 
 Usage with an already legal, adapted task/state on its final device::
 
@@ -31,20 +32,28 @@ retained path. A total cross is propagated once, retaining cross-source terms
 induced by conditioning; separately propagated source variances are NOT added.
 The original predict_from_posterior solve/jitter convention is unchanged.
 
-Future source supervision may evaluate at permitted source-Q coordinates;
+Source supervision may evaluate at permitted source-Q coordinates;
 deployment evaluates at H/S-derived candidates, never true target-Q positions.
-Choosing/normalizing consumer features and training that consumer remain caller
-work. Do not treat this moment representation as a lossless copy of all H/S.
+Only the four nearest-S columns are replaced, in raw physical units; no fitted
+normalization is introduced. Training the consumer remains caller work. Do not
+treat this moment representation as a lossless copy of all H/S.
 """
+import joblib
 import numpy as np
 import torch
 
 from fields import rbf
 from observations import predict_from_posterior
+from observation_translation_tasks import ObservationTranslationContext
+from observation_translation_model import ObservationTranslationModel, PreparedObservationTranslation
 
 
 FIELD_NAMES = ('prior_mean', 'prior_variance', 'posterior_mean', 'posterior_variance')
 FIELD_UNITS = ('dBm', 'dB**2', 'dBm', 'dB**2')
+REPRESENTATION = 'joint_support_translation_v1'
+JOINT_FEATURE_NAMES = ('posterior_mean', 'posterior_mean_update',
+                       'prior_std', 'posterior_std')
+JOINT_FEATURE_UNITS = ('dBm', 'dB', 'dB', 'dB')
 
 
 class JointSupportTranslation:
@@ -108,3 +117,90 @@ class JointSupportTranslation:
         return dict({name: torch.stack(values, dim=1) for name, values in output.items()},
                     aps=self.aps.copy(), xy_absolute=absolute.clone(),
                     units=dict(zip(FIELD_NAMES, FIELD_UNITS)))
+
+
+class JointObservationTranslationContext(ObservationTranslationContext):
+    """Same H/S features, with indices 49:53 replaced by joint GP moments.
+
+    Keep all 43 H columns and S columns 0:6,10:12 (global/grouped statistics,
+    K and coverage). S columns 6:10 are replaced in JOINT_FEATURE_NAMES order,
+    in JOINT_FEATURE_UNITS, then packed as the original float32 [N,AP,55].
+    The supplied completed collector MUST come from these exact legal H/S and
+    matched fitted assets/state. AP binding is checked here; H-row provenance
+    and S identity remain the caller's preparation contract, as for the GP.
+    """
+
+    def __init__(self, histories, support, target_floor, *, joint_support):
+        super().__init__(histories, support, target_floor)
+        assert isinstance(joint_support, JointSupportTranslation)
+        assert np.array_equal(self.aps, joint_support.aps), 'GP and translator AP order differs'
+        self.joint_support = joint_support
+
+    def at(self, xy):
+        features = super().at(xy)
+        field = self.joint_support.at(xy)
+        joint = torch.stack((field['posterior_mean'],
+                             field['posterior_mean'] - field['prior_mean'],
+                             field['prior_variance'].sqrt(),
+                             field['posterior_variance'].sqrt()), dim=-1)
+        features[..., 49:53] = joint.cpu().numpy().astype(np.float32)
+        return features
+
+    def source_scan_table(self, query, event):
+        """Reuse original permissions, labels and weights via dynamic self.at()."""
+        table = super().source_scan_table(query, event)
+        table['representation'] = REPRESENTATION
+        return table
+
+
+class JointObservationTranslationModel(ObservationTranslationModel):
+    """Original classifier/quantization/readout, bound to the joint features.
+
+    Fit accepts only tagged source tables from the context above. Explicit
+    prepare(..., joint_support=collector) only evaluates existing posterior
+    fields and the trained classifier; it never fits or samples. The new
+    serialized layout rejects old untagged models on load, and its nested
+    model payload also prevents the old loader treating it as the old 55D
+    representation. Raw predict_log_mass(X) retains the inherited low-level
+    array contract; callers must supply this representation's feature arrays.
+    """
+
+    def fit(self, tables, *, seed, max_iter=200):
+        tables = list(tables)
+        assert all(t.get('representation') == REPRESENTATION for t in tables), 'Mixed feature representations'
+        super().fit(tables, seed=seed, max_iter=max_iter)
+        self.representation = REPRESENTATION
+        return self
+
+    def source_nll(self, table):
+        assert table.get('representation') == REPRESENTATION, 'Wrong feature representation'
+        return super().source_nll(table)
+
+    def prepare(self, histories, support, target_floor, *, joint_support):
+        context = JointObservationTranslationContext(
+            histories, support, target_floor, joint_support=joint_support)
+        candidates = np.unique(np.concatenate([
+            *[np.asarray(h['xy'], dtype=np.float64) for h in histories.values()],
+            np.asarray(support['xy'], dtype=np.float64),
+        ]), axis=0)
+        features = context.at(candidates)
+        mass = self.predict_log_mass(features.reshape(-1, 55)).reshape(
+            len(candidates), len(context.aps), len(self.cuts) + 2)
+        return PreparedObservationTranslation(candidates, context.aps, self.cuts, mass)
+
+    def save(self, path):
+        joblib.dump(dict(representation=self.representation,
+                         model=dict(estimator=self.estimator, cuts=self.cuts,
+                                    columns=self.columns)), path)
+
+    @classmethod
+    def load(cls, path):
+        saved = joblib.load(path)
+        assert saved.get('representation') == REPRESENTATION, 'Wrong model representation'
+        payload = saved['model']
+        model = cls()
+        model.representation = saved['representation']
+        model.estimator, model.cuts, model.columns = (
+            payload['estimator'], payload['cuts'], payload['columns'])
+        assert np.array_equal(model.estimator.classes_, np.arange(len(model.cuts) + 2))
+        return model
