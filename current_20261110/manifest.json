@@ -22,7 +22,9 @@
     "context_influence_evaluation",
     "frozen_history_translator",
     "translated_history_system",
-    "observation_translation_tasks"
+    "observation_translation_tasks",
+    "observation_translation_model",
+    "observation_translation_trial"
   ],
   "files": [
     {
@@ -419,12 +421,22 @@
       "path": "src/observation_translation_tasks.py",
       "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/observation_translation_tasks.py",
       "sha256": "d4b06d4edbb32fd4fd02ad969d59a793d0667ad6b0702463d097b15943864639"
+    },
+    {
+      "path": "src/observation_translation_model.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/observation_translation_model.py",
+      "sha256": "d904491a3c387791ac55556283bac0f49e30da27cdf9bcfd223c66ba9c431448"
+    },
+    {
+      "path": "src/observation_translation_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/observation_translation_trial.py",
+      "sha256": "96b1fcec83479fb2097cdec1c858e70a53117a42876e0b6a0a315b275c7088f5"
     }
   ],
   "sync": {
     "date": "2026-11-10",
-    "preserved_collaborator_commit": "af3c996ca4e60fc57e865bb93c645bb84ac4a8ee",
+    "preserved_collaborator_commit": "ae001b0a797df7274d4e11ce4b694357fe4c4599",
     "translator_assets": "B0-only seeds1–5 and all54 system events complete; reusable H/S modules statically reviewed; formal Tab/relation training remains paused",
-    "next_learning_object": "Real single-scan observation law from H/S; cross-acquisition source supervision prepared, no classifier/distribution training executed"
+    "next_learning_object": "Single shared quantized real-scan observation law implemented. Source-only CPU fit/validation is the next bounded computation; no target result yet. Initial all-NaN input-column binner error fixed by freezing training-observed columns. Four-arm Tab and relation training remain paused."
   }
 }

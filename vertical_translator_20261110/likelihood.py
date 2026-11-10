@@ -55,13 +55,17 @@ class HeteroTranslator:
             parts.append((X, y))
         Xall = np.vstack([p[0] for p in parts]); yall = np.concatenate([p[1] for p in parts])
         self.mean = V.Model(Xall, yall)
+        del Xall, yall
         Xv, rv = [], []
         for i in (0, 1):
             m = V.Model(*parts[1 - i])
             Xi, yi = parts[i]
             mu = np.clip(m.predict(Xi), T.ND, 0)
-            Xv.append(np.hstack([Xi, mu[:, None]])); rv.append((yi - mu) ** 2)
-        self.var = V.Model(np.vstack(Xv), np.log1p(np.concatenate(rv)))
+            Xv.append(np.hstack([Xi, mu[:, None].astype(np.float32)])); rv.append((yi - mu) ** 2)
+            del m
+        parts.clear()
+        Xv = np.vstack(Xv); rv = np.log1p(np.concatenate(rv))
+        self.var = V.Model(Xv, rv)
 
     def translate(self, b, t, s_rows, aps):
         Xc, F, ref = V.hist_feats(b, t)
