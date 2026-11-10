@@ -1,0 +1,158 @@
+B1F0_AB_K1 oracle-cand 10.12 oracle-all 9.02
+B1F0_AB_K3 oracle-cand 10.12 oracle-all 9.02
+B1F0_AB_K5 oracle-cand 10.12 oracle-all 9.02
+B1F0_BA_K1 oracle-cand 8.34 oracle-all 7.95
+B1F0_BA_K3 oracle-cand 8.34 oracle-all 7.95
+B1F0_BA_K5 oracle-cand 8.34 oracle-all 7.95
+B1F1_AB_K1 oracle-cand 6.96 oracle-all 3.73
+B1F1_AB_K3 oracle-cand 6.96 oracle-all 3.73
+B1F1_AB_K5 oracle-cand 6.96 oracle-all 3.73
+B1F1_BA_K1 oracle-cand 8.73 oracle-all 5.56
+B1F1_BA_K3 oracle-cand 8.59 oracle-all 5.45
+B1F1_BA_K5 oracle-cand 8.59 oracle-all 5.45
+B1F2_AB_K1 oracle-cand 5.10 oracle-all 3.27
+B1F2_AB_K3 oracle-cand 5.10 oracle-all 3.27
+B1F2_AB_K5 oracle-cand 5.10 oracle-all 3.27
+B1F2_BA_K1 oracle-cand 6.66 oracle-all 4.71
+B1F2_BA_K3 oracle-cand 6.68 oracle-all 4.70
+B1F2_BA_K5 oracle-cand 6.68 oracle-all 4.70
+B1F3_AB_K1 oracle-cand 4.56 oracle-all 4.50
+B1F3_AB_K3 oracle-cand 4.56 oracle-all 4.50
+B1F3_AB_K5 oracle-cand 4.56 oracle-all 4.50
+B1F3_BA_K1 oracle-cand 14.23 oracle-all 12.42
+B1F3_BA_K3 oracle-cand 14.23 oracle-all 12.42
+B1F3_BA_K5 oracle-cand 14.23 oracle-all 12.42
+B2F0_AB_K1 oracle-cand 6.26 oracle-all 3.26
+B2F0_AB_K3 oracle-cand 6.26 oracle-all 3.26
+B2F0_AB_K5 oracle-cand 6.26 oracle-all 3.26
+B2F0_BA_K1 oracle-cand 14.27 oracle-all 12.13
+B2F0_BA_K3 oracle-cand 14.27 oracle-all 12.13
+B2F0_BA_K5 oracle-cand 14.27 oracle-all 12.13
+B2F1_AB_K1 oracle-cand 3.79 oracle-all 3.35
+B2F1_AB_K3 oracle-cand 3.79 oracle-all 3.35
+B2F1_AB_K5 oracle-cand 3.79 oracle-all 3.35
+B2F1_BA_K1 oracle-cand 5.63 oracle-all 5.38
+B2F1_BA_K3 oracle-cand 5.63 oracle-all 5.38
+B2F1_BA_K5 oracle-cand 5.79 oracle-all 5.51
+B2F2_AB_K1 oracle-cand 4.89 oracle-all 3.57
+B2F2_AB_K3 oracle-cand 4.89 oracle-all 3.57
+B2F2_AB_K5 oracle-cand 4.89 oracle-all 3.57
+B2F2_BA_K1 oracle-cand 4.06 oracle-all 3.69
+B2F2_BA_K3 oracle-cand 4.06 oracle-all 3.69
+B2F2_BA_K5 oracle-cand 4.06 oracle-all 3.69
+B2F3_AB_K1 oracle-cand 5.93 oracle-all 5.33
+B2F3_AB_K3 oracle-cand 5.93 oracle-all 5.33
+B2F3_AB_K5 oracle-cand 5.93 oracle-all 5.33
+B2F3_BA_K1 oracle-cand 5.21 oracle-all 4.88
+B2F3_BA_K3 oracle-cand 5.21 oracle-all 4.88
+B2F3_BA_K5 oracle-cand 5.21 oracle-all 4.88
+B2F4_AB_K1 oracle-cand 18.71 oracle-all 17.90
+B2F4_AB_K3 oracle-cand 18.71 oracle-all 17.90
+B2F4_AB_K5 oracle-cand 18.71 oracle-all 17.90
+B2F4_BA_K1 oracle-cand 27.33 oracle-all 24.49
+B2F4_BA_K3 oracle-cand 27.33 oracle-all 24.50
+B2F4_BA_K5 oracle-cand 27.33 oracle-all 24.49
+{
+ "D0": {
+  "oracle_on_candidates": 8.845308278380179,
+  "oracle_on_true_positions": 7.3928510537207535
+ },
+ "D1": {
+  "table": {
+   "K1_d0-3": {
+    "n": 6,
+    "gain": -3.3430953917349657,
+    "hurdle": 14.232876329302627,
+    "gp": 32.11367252609937
+   },
+   "K1_d3-6": {
+    "n": 18,
+    "gain": -0.15054382147953863,
+    "hurdle": 3.136867159933531,
+    "gp": 5.720474726584277
+   },
+   "K1_d6-12": {
+    "n": 54,
+    "gain": 0.23572140615568019,
+    "hurdle": 9.141712776507076,
+    "gp": 8.808117062113304
+   },
+   "K1_d12-24": {
+    "n": 144,
+    "gain": 1.2288337040945014,
+    "hurdle": 13.201674041064072,
+    "gp": 14.536424366603278
+   },
+   "K1_d24-1e+09": {
+    "n": 426,
+    "gain": 0.3537946908424174,
+    "hurdle": 8.550688981760862,
+    "gp": 11.9876744883897
+   },
+   "K3_d0-3": {
+    "n": 18,
+    "gain": 2.020897735280558,
+    "hurdle": 17.311757643821327,
+    "gp": 22.66529608086449
+   },
+   "K3_d3-6": {
+    "n": 48,
+    "gain": 0.7273279304006569,
+    "hurdle": 6.0504523059350825,
+    "gp": 7.377628459364394
+   },
+   "K3_d6-12": {
+    "n": 114,
+    "gain": -0.20530369326370548,
+    "hurdle": 8.350789914600105,
+    "gp": 10.06959973862401
+   },
+   "K3_d12-24": {
+    "n": 258,
+    "gain": 0.9534025336491216,
+    "hurdle": 10.457655788371582,
+    "gp": 12.014380583274402
+   },
+   "K3_d24-1e+09": {
+    "n": 210,
+    "gain": 1.0785958952041563,
+    "hurdle": 9.377022204120223,
+    "gp": 13.218946324256668
+   },
+   "K5_d0-3": {
+    "n": 42,
+    "gain": 0.5289188676895713,
+    "hurdle": 10.758948434629888,
+    "gp": 14.745085475721222
+   },
+   "K5_d3-6": {
+    "n": 108,
+    "gain": 0.2933854141947107,
+    "hurdle": 8.542649609724903,
+    "gp": 13.684784983405589
+   },
+   "K5_d6-12": {
+    "n": 198,
+    "gain": 0.1153061297955005,
+    "hurdle": 8.085133422025814,
+    "gp": 9.758969371269787
+   },
+   "K5_d12-24": {
+    "n": 234,
+    "gain": 1.3445580962779942,
+    "hurdle": 9.827460469967813,
+    "gp": 10.254732250389882
+   },
+   "K5_d24-1e+09": {
+    "n": 66,
+    "gain": 0.8580883158833355,
+    "hurdle": 12.233238543060882,
+    "gp": 20.359565433892833
+   }
+  },
+  "spearman_dist_vs_gain": 0.014529597167462912,
+  "p": 0.5220142832458913,
+  "n": 1944,
+  "note": "query-level, unweighted; gain = hurdle error - probability_half error (m)"
+ }
+}
