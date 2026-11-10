@@ -19,7 +19,9 @@
     "vertical_translator_generate",
     "translated_history_system_trial",
     "context_influence_training",
-    "context_influence_evaluation"
+    "context_influence_evaluation",
+    "frozen_history_translator",
+    "translated_history_system"
   ],
   "files": [
     {
@@ -391,11 +393,31 @@
       "path": "src/vertical_translator/vt_lib.py",
       "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/vertical_translator/vt_lib.py",
       "sha256": "6342988bb2ccdf49ae7a29152ac2e7276b2fa92629a41d51f28af82856a579bd"
+    },
+    {
+      "path": "src/frozen_history_translator.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/frozen_history_translator.py",
+      "sha256": "b4931427ee6de51665059b12636bfce4fdd12ed0a14c6d77fca330c9ab7a4af1"
+    },
+    {
+      "path": "src/translated_history_system.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/translated_history_system.py",
+      "sha256": "f59a23602c43bcceadb665a156dbdeb01f60616a9ef430ac4506a5c242ff4f40"
+    },
+    {
+      "path": "evidence/translated_history_system_20261110/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/translated_history_system_20261110/complete.json",
+      "sha256": "e86149aab391ceebbd85b5e72f43c1b36eefaa54277ac2ac4524be2ad6907fa1"
+    },
+    {
+      "path": "evidence/translated_history_system_20261110/freeze.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/translated_history_system_20261110/freeze.json",
+      "sha256": "aa27d5f241ee4f6c2ef865ce3b3f6f7c468eb06af513ed72c3536789d3c07a8a"
     }
   ],
   "sync": {
     "date": "2026-11-10",
     "preserved_collaborator_commit": "af3c996ca4e60fc57e865bb93c645bb84ac4a8ee",
-    "translator_assets": "B0-only seeds1–5 complete; system inference in progress; Tab training remains paused"
+    "translator_assets": "B0-only seeds1–5 and all54 system events complete; reusable H/S modules statically reviewed; formal Tab/relation training remains paused"
   }
 }

@@ -48,7 +48,15 @@
 
 - [vertical_translator_generate.py](src/vertical_translator_generate.py)：B0-only、种子1–5、每种子H/HS模型各一份，247.72秒完成；54组地图及模型留服务器，轻量结果见 [summary](evidence/vertical_translator_b0_ens5_20261110/summary.json)。H/HS翻译图的原3NN均值为11.3927/10.5648米，同表示简单参考图为17.1490米。原型使用B0四层全量源数据，现ordinary30使用三层合法语料。
 - [translated_history_context.py](src/translated_history_context.py)：保留连续均值图；按现Tab的−105编码直接作为特征均值，不阈值化或取整，真实S只加入一次。
-- [translated_history_system_trial.py](src/translated_history_system_trial.py)：固定ordinary30，比较学习图与简单参考图；复用原GP、ordinary及其组合缓存。主输出固定为GP与读取学习图的Tab等权组合。当前正在服务器执行，尚无完成分数；没有Tab训练或GP拟合。
+- [translated_history_system_trial.py](src/translated_history_system_trial.py)：54事件、108次Tab前向已于11:39 UTC完整结束，572.20秒，无Tab训练或GP拟合。预先固定的主输出GP+读学习图的Tab为12.4767米，未改善原GP+ordinary系统10.7880米；同表示简单参考图+Tab组合11.8057米。所有预先声明的读出完整保留在[结果](evidence/translated_history_system_20261110/complete.json)与[冻结](evidence/translated_history_system_20261110/freeze.json)。
 - `context_influence_*.py`补齐此前已保存的关系学习实现；v2正式训练仍暂停。旧接线检查对应此前版本，不能当作v2性能结果。
 
 后续代码与关键结果继续同步本研究分支，保留双方提交；原始数据、大模型和凭据不上传。
+
+### 已完成的整体推进
+
+预先声明的另一条读出——学习翻译图的3NN与原GP固定等权——得到 **9.9607米**，较已有GP+ordinary系统10.7880米降低 **7.67%**。K1/3/5分别10.3638/9.8925/9.6258米，均值九层七层改善；同一3NN组合使用未学习参考图为12.8960米。总体位置均值误差p90为20.0522米（原20.7964），但K1为22.9095（原21.1161），少标定尾部仍需解决。
+
+本轮采用原型的四层B0源资产，ordinary30仍是原三层受限源语料；结果是现有资产的系统集成，统一源语料的训练归因留待后续。保留历史翻译及有效GP互补，Tab维持原有原始历史用法；本次均值图替换输入未成功，不据此淘汰Tab或历史翻译机制。
+
+已把有效算法整理为[纯H/S翻译入口](src/frozen_history_translator.py)和[可复用系统入口](src/translated_history_system.py)：加载已有五种子树模型，接收历史、现场标定与待定位扫描，复用原GP输出；不重新训练，不读取整份CSV或Query坐标。两个新入口经过静态审查，以上性能来自冻结的系统评价入口，未再启动数值重跑。原四组正式训练和关系编码器训练继续暂停。
