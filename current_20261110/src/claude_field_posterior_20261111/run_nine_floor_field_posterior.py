@@ -16,7 +16,7 @@ Decision (written before running):
   'single better AND pool gain shrinks' supports 'the learner absorbed GP's S-conditioning'.
 
   LAW_UJI_CSV=... VT_DIR=... POOL_SRC=<current_20261110/src> \
-  nice -n 10 python run_nine_floor_field_posterior.py --theta 8 0.7 1 --gp-records <.../position_fusion_20261109_continued/target/complete.json> --out nine_fp
+  nice -n 10 python run_nine_floor_field_posterior.py --theta-c <ell c g o> --theta-d <ell c g o> --gp-records <.../position_fusion_20261109_continued/target/complete.json> --out nine_fp
 """
 import argparse, json, os, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -69,7 +69,8 @@ def project_summary(errors):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--theta', type=float, nargs=3, required=True, metavar=('ELL', 'C', 'G'))
+    ap.add_argument('--theta-c', type=float, nargs='+', required=True, help='NLL-selected theta of C (ell c g [o])')
+    ap.add_argument('--theta-d', type=float, nargs='+', required=True, help='NLL-selected theta of D (ell c g [o])')
     ap.add_argument('--seeds', type=int, nargs='+', default=[1, 2, 3, 4, 5])
     ap.add_argument('--gp-records', required=True)
     ap.add_argument('--out', required=True)
@@ -79,7 +80,7 @@ def main():
     gp = json.load(open(a.gp_records)); gp_root = os.environ['POOL_SRC']   # gp_path is relative to src (trial ROOT)
     gp_rec = {r['event']: r for r in gp['records']}
     os.makedirs(a.out, exist_ok=False)
-    theta = tuple(a.theta); t0 = time.time()
+    th_c, th_d = tuple(a.theta_c), tuple(a.theta_d); t0 = time.time()
     accA, accB = {}, {}
     for seed in a.seeds:
         fA = Hd.HurdleField([0], seed=seed)
@@ -98,7 +99,7 @@ def main():
         aps = np.flatnonzero(C.DET[ctx].any(0)); bd = C.bounds_of(C.XY[ctx]); Xc = V.candidates(b, t)
         fa, fb = FP.ensemble(accA[e['id']]), FP.ensemble(accB[e['id']])
         fields = {'A_adopted': fa, 'B_H_only': fb,
-                  'C_H_cond': FP.condition(Xc, *fb, S, aps, theta), 'D_HS_cond': FP.condition(Xc, *fa, S, aps, theta)}
+                  'C_H_cond': FP.condition(Xc, *fb, S, aps, th_c), 'D_HS_cond': FP.condition(Xc, *fa, S, aps, th_d)}
         rec = gp_rec[e['id']]
         with np.load(os.path.join(gp_root, rec['gp_path'])) as g:
             assert np.array_equal(g['query_rows'], e['query_rows']) and np.array_equal(g['aps'], aps), e['id']
@@ -116,7 +117,7 @@ def main():
     summ = {v: dict(single=project_summary(single[v]), pool=project_summary(pooled[v])) for v in VARIANTS}
     for v in VARIANTS:
         summ[v]['pool_gain'] = summ[v]['single']['mean'] - summ[v]['pool']['mean']
-    json.dump(dict(theta=theta, seeds=a.seeds, reader=dict(beta=BETA, eps=EPS, offsets=True), summary=summ,
+    json.dump(dict(theta_c=th_c, theta_d=th_d, seeds=a.seeds, reader=dict(beta=BETA, eps=EPS, offsets=True), summary=summ,
                    anchor=dict(adopted_single=9.4325, adopted_pool=8.7792), seconds=time.time() - t0),
               open(os.path.join(a.out, 'summary.json'), 'w'), indent=1)
     for v in VARIANTS:

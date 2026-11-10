@@ -23,7 +23,9 @@ Residual model for one AP a (all scalars below are per AP, positions x, x'):
               into translation error (spatially correlated) and scan noise (independent).)
   detection: logit p_true(x) = logit p0(x) + z(x),  Cov[z(x), z(x')] = g * rho(|x-x'|)
              observed logit((nd+.5)/(n+1)) with variance 1 / ((n+1) ph (1-ph))
-  rho(d) = exp(-d / ell).   theta = (ell, c, g): three scalars, selected on source building B0 only by the
+  rho(d) = o + (1-o) exp(-d / ell): o = per-AP floor-wide offset share (added 2026-11-11 AFTER the first dev run,
+  motivated by the D2 diagnostic: per-AP mean residual sd 5.7 dB ~ local residual sd 6.4 dB; o=0 is the v1 model).
+  theta = (ell, c, g[, o]): three or four scalars, selected on source building B0 only by the
   predictive log-likelihood of held-out real target-floor scans (not by localization, never on B1/B2).
 
 Degenerate limits (falsifiability): ell -> 0 or c, g -> 0 returns the prior field unchanged; a fitted ell far above
@@ -93,15 +95,16 @@ def _logit(p):
 
 def condition(Xc, p0, m0, s20, s_rows, aps, theta):
     """Gaussian conditioning of the prior field on the S scans. Returns (p, m, s2) on the same candidates."""
-    ell, c, g = theta
+    ell, c, g = theta[:3]
+    o = theta[3] if len(theta) > 3 else 0.0   # share of the residual variance that is a per-AP floor-wide offset
     if len(s_rows) == 0 or ell <= 0 or (c <= 0 and g <= 0):
         return p0, m0, s20
     Ps, n, nd, ybar, _ = Hd.det_stats(C.RSS[s_rows][:, aps], C.XY[s_rows])     # [K], [K], [K,A], [K,A]
     D = np.linalg.norm(Ps[:, None] - Xc[None], axis=2)                            # [K, N]
     j = D.argmin(1)                                                                # prior at S = nearest candidate
     far = D.min(1) > R_PRIOR
-    rho_SS = np.exp(-np.linalg.norm(Ps[:, None] - Ps[None], axis=2) / ell)        # [K, K]
-    rho_xS = np.exp(-np.linalg.norm(Xc[:, None] - Ps[None], axis=2) / ell)        # [N, K]
+    rho_SS = o + (1 - o) * np.exp(-np.linalg.norm(Ps[:, None] - Ps[None], axis=2) / ell)   # [K, K]
+    rho_xS = o + (1 - o) * np.exp(-np.linalg.norm(Xc[:, None] - Ps[None], axis=2) / ell)   # [N, K]
     K_, A = nd.shape
     big = 1e6
     out_m, out_s2, out_p = m0.copy(), s20.copy(), p0.copy()

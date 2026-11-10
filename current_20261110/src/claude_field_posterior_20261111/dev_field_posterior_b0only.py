@@ -1,4 +1,5 @@
-"""Source-only development of the learned-prior + Bayesian-S field (field_posterior.py). B0 ONLY, never B1/B2.
+"""[v2, 2026-11-11: grid adds the per-AP offset share o; v1 result kept in results/dev_fp_b0_20261111]
+Source-only development of the learned-prior + Bayesian-S field (field_posterior.py). B0 ONLY, never B1/B2.
 
 Same leave-one-floor-out as dev_hurdle_b0only.py (seed 20261110): for each B0 floor t the operators are trained
 on B0 without t, then the B0 development events of floor t are read with the FROZEN reader (beta=128, eps=0.02,
@@ -27,9 +28,9 @@ import field_posterior as FP
 from field_posterior import C, V, Hd
 
 BETA, EPS = 128.0, 0.02
-ELLS, CS, GS = (4.0, 8.0, 16.0, 32.0), (0.3, 0.7), (0.0, 1.0)
-THETAS = [(l, c, g) for l in ELLS for c in CS for g in GS]
-tkey = lambda th: 'l%g_c%g_g%g' % th
+ELLS, CS, GS, OS = (8.0, 16.0, 32.0), (0.3, 0.7), (0.0, 1.0), (0.0, 0.5, 0.8)
+THETAS = [(l, c, g, o) for l in ELLS for c in CS for g in GS for o in OS]   # v2 grid (adds offset share o)
+tkey = lambda th: 'l%g_c%g_g%g_o%g' % th
 
 
 def eval_scans(t, e, S, rng, cap=400):

@@ -31,13 +31,13 @@ def true_field(b, t, e, aps):
     rows = np.flatnonzero((C.BLD == b) & (C.FLR == t))
     u, ph, day = acq_of(rows)
     drop = np.zeros(len(rows), bool)
-    for acq in (e['support_acquisition'], e['query_acquisition']):
+    for acq in (e['query_acquisition'],):     # v2: drop only the Query acquisition (v1 also dropped S -> 18 positions left)
         drop |= (u == acq[0]) & (ph == acq[1]) & (day == acq[2])
     rows = rows[~drop]
     P, n, nd, mu, var = Hd.det_stats(C.RSS[rows][:, aps], C.XY[rows])
     p = (nd + 0.5) / (n[:, None] + 1.0)
     m = np.where(np.isnan(mu), -95.0, mu)
-    s2 = np.nan_to_num(var, nan=0.0) + Hd.S0 ** 2
+    s2 = np.nan_to_num(var, nan=0.0) + Hd.S0 ** 2 + 4.0 ** 2          # same scale floor as hurdle.support_candidates
     return P, p, m, s2, len(rows)
 
 
