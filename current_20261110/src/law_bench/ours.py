@@ -59,10 +59,10 @@ def sub_maps(maps, aps):
     return {f: (P, M[:, aps], R[:, aps], N) for f, (P, M, R, N) in maps.items()}
 
 
-def features(X, t, maps, reliability=True):
+def features(X, t, maps, reliability=True, return_ref=False):
     base, ref = T.history_features(X, t, {f: m[:3] for f, m in maps.items()})
     if not reliability:
-        return base.astype(np.float32)
+        return (base.astype(np.float32), ref) if return_ref else base.astype(np.float32)
     n, A, _ = base.shape; extra = []
     for d in T.SLOTS:
         if t + d not in maps:
@@ -72,7 +72,22 @@ def features(X, t, maps, reliability=True):
         nb = neighborhood_evidence(X, dict(P=P, n_scans=N, n_detected=np.zeros((len(P), 1))))['n_scans']
         extra += [np.broadcast_to(np.where(ok, np.log1p(N[j]), np.nan)[:, None], (n, A)),
                   np.broadcast_to(np.log1p(nb.astype(float))[:, None], (n, A))]
-    return np.concatenate([base, np.stack(extra, 2)], 2).astype(np.float32)
+    out = np.concatenate([base, np.stack(extra, 2)], 2).astype(np.float32)
+    return (out, ref) if return_ref else out
+
+
+def with_support(X, t, sm, F, ref, s_rss, s_xy):
+    """append the 12 original support features (translator.support_features) for S given on the same AP subset"""
+    s_ref = T.naive_ref_at(s_xy, t, {f: m[:3] for f, m in sm.items()})
+    S = T.support_features(X, ref, s_xy, s_rss, s_ref, F).astype(np.float32)
+    return np.concatenate([F, S], 2)
+
+
+def sample_support(rss, xy, rng, Ks=(1, 3, 5), R=3):
+    P, inv = np.unique(xy, axis=0, return_inverse=True); inv = inv.ravel()
+    K = min(int(rng.choice(Ks)), len(P))
+    rows = np.concatenate([rng.permutation(np.flatnonzero(inv == k))[:R] for k in rng.choice(len(P), K, replace=False)])
+    return rss[rows], xy[rows]
 
 
 class _Fit:
@@ -87,7 +102,7 @@ def _reg(seed):
                                          l2_regularization=1.0, random_state=seed)
 
 
-def episodes(buildings, rng, draws, reliability, randomise, max_rows=18000, targets=None):
+def episodes(buildings, rng, draws, reliability, randomise, max_rows=18000, targets=None, use_support=False):
     """buildings: list of {floor: dict(rss, xy)} (one AP axis per building). One episode = (building, target floor,
     history condition). Labels: real scans of the target floor (sufficient statistics at the nearest position)."""
     X, n, nd, mu, var = [], [], [], [], []
@@ -114,7 +129,12 @@ def episodes(buildings, rng, draws, reliability, randomise, max_rows=18000, targ
                 pos = np.flatnonzero(ok)
                 if len(pos) > 1500:                                   # memory: cap candidate positions per episode
                     pos = rng.choice(pos, 1500, replace=False)
-                F = features(Xc[pos], t, sub_maps(maps, aps), reliability); F2 = F.reshape(-1, F.shape[2]); jj = j[pos]
+                sm = sub_maps(maps, aps)
+                F, ref = features(Xc[pos], t, sm, reliability, return_ref=True)
+                if use_support:                                       # S drawn from the real target floor (A recipe)
+                    srss, sxy = sample_support(floors[t]['rss'][:, aps], floors[t]['xy'], rng)
+                    F = with_support(Xc[pos], t, sm, F, ref, srss, sxy)
+                F2 = F.reshape(-1, F.shape[2]); jj = j[pos]
                 cn = np.repeat(nt[jj], len(aps)); cnd = ndt[jj][:, aps].ravel()
                 cm = mt[jj][:, aps].ravel(); cv = vt[jj][:, aps].ravel()
                 info = (np.nan_to_num(F2[:, 0:40:5], nan=T.ND).max(1) > T.ND) | (cnd > 0)
@@ -126,15 +146,16 @@ def episodes(buildings, rng, draws, reliability, randomise, max_rows=18000, targ
 
 
 class Operator:
-    def __init__(self, buildings, seed, draws=8, reliability=True, randomise=True):
-        self.rel = reliability
+    def __init__(self, buildings, seed, draws=8, reliability=True, randomise=True, use_support=False):
+        self.rel, self.sup = reliability, use_support
         half = [buildings[0::2], buildings[1::2]] if len(buildings) > 1 else None
         if half is None:   # single source building: cross-fit halves = disjoint TARGET floors (labels never shared)
             fl = sorted(buildings[0])
             parts = [episodes(buildings, np.random.default_rng([seed, i]), draws, reliability, randomise,
-                              targets=set(fl[i::2])) for i in (0, 1)]
+                              targets=set(fl[i::2]), use_support=use_support) for i in (0, 1)]
         else:
-            parts = [episodes(h, np.random.default_rng([seed, i]), draws, reliability, randomise) for i, h in enumerate(half)]
+            parts = [episodes(h, np.random.default_rng([seed, i]), draws, reliability, randomise, use_support=use_support)
+                     for i, h in enumerate(half)]
         X = np.vstack([p[0] for p in parts]); n, nd, mu, var = (np.concatenate([p[k] for p in parts]) for k in (1, 2, 3, 4))
         Xd = np.vstack([X, X]); yd = np.r_[np.ones(len(X)), np.zeros(len(X))]; wd = np.r_[nd, n - nd]; k = wd > 0
         self.det = _Fit(HistGradientBoostingClassifier(max_iter=400, learning_rate=0.06, max_leaf_nodes=63,
@@ -164,13 +185,16 @@ class Operator:
         self.noise = _Fit(_reg(seed), np.vstack(Xn), np.concatenate(yn), np.concatenate(wn))
         self.perr = _Fit(_reg(seed), np.vstack(Xp), np.concatenate(yp), np.concatenate(wp))
 
-    def field(self, maps, t, aps, X=None):
+    def field(self, maps, t, aps, X=None, S=None):
         """-> Xc, dict(p, m, s2 [v1 scale head], tau2 [field error], sig2 [scan noise], vp [detection-rate error]).
         X: explicit positions (e.g. the S coordinates, legal at deployment); default = union of history positions"""
         Xc = np.unique(np.concatenate([m[0] for m in maps.values()]), axis=0) if X is None else np.asarray(X, float)
         sm = sub_maps(maps, aps); out = {k: [] for k in ('p', 'm', 's2', 'tau2', 'sig2', 'vp')}
         for k in range(0, len(Xc), 1500):                              # memory: chunk candidates
-            X = features(Xc[k:k + 1500], t, sm, self.rel); X = X.reshape(-1, X.shape[2])
+            X, ref = features(Xc[k:k + 1500], t, sm, self.rel, return_ref=True)
+            if getattr(self, 'sup', False):                            # S = (s_rss on aps, s_xy)
+                X = with_support(Xc[k:k + 1500], t, sm, X, ref, S[0], S[1])
+            X = X.reshape(-1, X.shape[2])
             p = self.det.predict_proba(X)[:, 1]; m = self.mean.predict(X)
             Xa = np.hstack([X, m[:, None].astype(np.float32)])
             vals = dict(p=p, m=m, s2=np.exp(self.scale.predict(Xa)), tau2=np.exp(self.terr.predict(Xa)),
@@ -211,8 +235,8 @@ def condition(Xc, p0, m0, s20, s_rss, s_xy, theta, r_prior=4.0):
     return out_p, out_m, out_s2
 
 
-def ensemble_field(ops, maps, t, aps, X=None):
-    outs = [op.field(maps, t, aps, X) for op in ops]
+def ensemble_field(ops, maps, t, aps, X=None, S=None):
+    outs = [op.field(maps, t, aps, X, S) for op in ops]
     f = {k: np.stack([o[1][k] for o in outs]).mean(0) for k in outs[0][1]}
     mv = np.stack([o[1]['m'] for o in outs]).var(0)
     f['tau2'] = f['tau2'] + mv; f['s2'] = f['s2'] + mv                   # ensemble disagreement is field error
@@ -310,20 +334,25 @@ def condition_v2(Xc, f, s_rss, s_xy, theta, fS=None, r_prior=4.0):
     return p, m, s2
 
 
-def read(cand_xy, p, m, s2, s_rss, s_xy, q_rss, informative=False):
+def read_mass(cand_xy, p, m, s2, s_rss, s_xy, q_rss, informative=False):
+    """frozen M3 reader -> (candidate xy incl. empirical S entries, normalised log position mass [n_q, n_c], bounds)"""
     Ps, n, nd, mean, var = det_stats(s_rss, s_xy)
     xy = np.vstack([cand_xy, Ps]); p = np.clip(np.vstack([p, (nd + 0.5) / (n[:, None] + 1.0)]), 1e-4, 1 - 1e-4)
     m = np.vstack([m, np.where(np.isnan(mean), -95.0, mean)]); s2 = np.vstack([s2, np.nan_to_num(var, nan=0.0) + S0 ** 2 + 16.0])
     lmiss = np.log((1 - EPS) * (1 - p) + EPS * U_MISS); logp = np.log(p); lnorm = -0.5 * np.log(2 * np.pi * s2)
-    A = p.shape[1]; pmax = p.max(0) > 0.05; out = np.empty((len(q_rss), 2))
+    A = p.shape[1]; pmax = p.max(0) > 0.05; L = np.empty((len(q_rss), len(xy)))
     bd = np.stack([np.floor(xy.min(0) / 2) * 2, np.ceil(xy.max(0) / 2) * 2])
     for i, row in enumerate(q_rss):
         d = row != 100; v = row[d][None]
         per = [np.logaddexp(np.log(1 - EPS) + logp[:, d] + lnorm[:, d] - 0.5 * (v - o - m[:, d]) ** 2 / s2[:, d],
                             np.log(EPS * U_DET)).sum(1) for o in OFFSETS]
-        L = (logsumexp(np.stack(per), 0) - np.log(len(OFFSETS)) + lmiss[:, ~d].sum(1)) * BETA / ((d | pmax).sum() if informative else A)
-        w = np.exp(L - L.max()); w /= w.sum(); out[i] = w @ xy
-    return np.clip(out, bd[0], bd[1])
+        L[i] = (logsumexp(np.stack(per), 0) - np.log(len(OFFSETS)) + lmiss[:, ~d].sum(1)) * BETA / ((d | pmax).sum() if informative else A)
+    return xy, L - logsumexp(L, 1, keepdims=True), bd
+
+
+def read(cand_xy, p, m, s2, s_rss, s_xy, q_rss, informative=False):
+    xy, L, bd = read_mass(cand_xy, p, m, s2, s_rss, s_xy, q_rss, informative)
+    return np.clip(np.exp(L) @ xy, bd[0], bd[1])
 
 
 class Ours:
@@ -337,8 +366,9 @@ class Ours:
         rel = rnd = self.variant != 'v1'
         self.ops = [Operator(source_buildings, s, reliability=rel, randomise=rnd) for s in self.seeds]
 
-    def predict(self, H, t, s_rss, s_xy, q_rss):
-        """H {floor: dict(rss, xy)} other floors of the task building; one AP axis shared with S and Q"""
+    def predict(self, H, t, s_rss, s_xy, q_rss, return_mass=False):
+        """H {floor: dict(rss, xy)} other floors of the task building; one AP axis shared with S and Q.
+        return_mass=True -> (projected xy, cand_xy, log_position_mass, bounds) for posterior pooling with a GP"""
         maps = make_maps(H)
         seen = (s_rss != 100).any(0)
         for d in H.values():
@@ -351,15 +381,20 @@ class Ours:
             tv, sv = self.naive_var                                    # stored on the object (survives joblib)
             f, fS = naive_field(maps, t, aps, Xc, tv, sv), (naive_field(maps, t, aps, Ps, tv, sv) if len(Ps) else None)
         else:
-            Xc, f = ensemble_field(self.ops, maps, t, aps)
-            fS = ensemble_field(self.ops, maps, t, aps, Ps)[1] if len(Ps) else None
-        if self.variant in ('noM2', 'naive_noM2'):
+            Sx = (sr, s_xy)
+            Xc, f = ensemble_field(self.ops, maps, t, aps, None, Sx)
+            fS = ensemble_field(self.ops, maps, t, aps, Ps, Sx)[1] if len(Ps) else None
+        if self.variant == 'A':                                     # original A: v1 scale head as reader variance
+            p, m, s2 = f['p'], f['m'], f['s2']
+        elif self.variant in ('noM2', 'naive_noM2'):
             p, m, s2 = f['p'], f['m'], f['sig2'] + f['tau2']
         elif self.variant in ('C1', 'v1'):                              # original C conditioning (s2-proportional)
             p, m, s2 = condition(Xc, f['p'], f['m'], f['s2'], sr, s_xy, (16.0, 0.3, 1.0, 0.0))
         else:
             p, m, s2 = condition_v2(Xc, f, sr, s_xy, self.theta, fS)
-        return read(Xc, p, m, s2, sr, s_xy, qr, self.inf)
+        xy, L, bd = read_mass(Xc, p, m, s2, sr, s_xy, qr, self.inf)
+        proj = np.clip(np.exp(L) @ xy, bd[0], bd[1])
+        return (proj, xy, L, bd) if return_mass else proj
 
 
 # ---------------------------------------------------------------- theta selection on SOURCE data only

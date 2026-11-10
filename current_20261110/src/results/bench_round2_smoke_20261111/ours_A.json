@@ -1,0 +1,44 @@
+{
+  "method": "ours_A",
+  "source_fit": {
+    "status": "completed",
+    "seconds": 690.6747305691242,
+    "sha256": "7833c70e06cf9b32891bfae0240ebfb8dd05b269b6840b7a00a652e13a909592",
+    "source_buildings": [
+      "B0",
+      "B2"
+    ]
+  },
+  "by_K": {
+    "1": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 11.881998369698769,
+      "p50": 11.301508992741738,
+      "p90": 20.912569448307668,
+      "query_positions": 38
+    }
+  },
+  "by_floor": {
+    "0": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 11.881998369698769,
+        "p50": 11.301508992741738,
+        "p90": 20.912569448307668,
+        "query_positions": 38
+      }
+    }
+  },
+  "task_records": [
+    "events/ours_A/uji/B1/F0/K1/r0.json"
+  ],
+  "unavailable": []
+}
