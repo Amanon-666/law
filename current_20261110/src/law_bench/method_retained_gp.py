@@ -11,9 +11,11 @@ cache_dir holds <history_key>/<AP-index>.npz plus .json: z/mean/cov/origin, a fi
 checksum and solver diagnostics. history_key binds the full actual H arrays,
 AP axis, source-floor XY mean origin and parameter bytes, independently of
 target/S/K/repeat. Cached fields stay in that source frame and are translated
-only when loaded into a task. Old asset manifests require
-an explicit, verified conversion into this format; FPS128 fields cannot stand
-in for full H. Missing fields raise unless fit_missing_history=True, which
+only when loaded into a task. uji_assets_dir can point to the existing
+results/building_information_assets_20261109: import_uji_assets verifies its
+full-H row/AP/parameter bindings and copies fields without fitting. Other old
+asset formats are not imported; FPS128 fields cannot stand in for full H.
+Missing fields raise unless fit_missing_history=True, which
 runs the original CPU full-covariance VI (640 iterations maximum). Its cost
 grows steeply with unique H positions; no history subsampling is performed.
 
@@ -22,6 +24,7 @@ patches the original module. Statically reviewed only; no numerical run yet.
 """
 from pathlib import Path
 from unittest.mock import patch
+import csv
 import hashlib
 import json
 
@@ -37,7 +40,7 @@ def history_key(task, floor, parameters_sha256):
     identity = dict(dataset=task.dataset, building=task.building, floor=int(floor),
                     ap_ids=list(task.ap_ids), parameters_sha256=parameters_sha256,
                     origin=np.asarray(task.H[floor]['xy'], dtype=np.float64).mean(0).tolist(),
-                    frame='source_xy_mean_v1', history_steps=640)
+                    frame='source_xy_mean_v1')
     h = hashlib.sha256(json.dumps(identity, sort_keys=True).encode())
     for name, dtype in [('rss', np.float64), ('xy', np.float64), ('acq', np.int64)]:
         value = np.ascontiguousarray(task.H[floor][name], dtype=dtype)
@@ -50,7 +53,7 @@ class RetainedGPMethod:
     name = 'retained_gp'
 
     def __init__(self, *, parameters_path, provenance, cache_dir,
-                 fit_missing_history=False):
+                 fit_missing_history=False, uji_assets_dir=None):
         self.parameters_path = Path(parameters_path)
         self.parameters_sha256 = _digest(self.parameters_path)
         self.parameters = json.loads(self.parameters_path.read_text())
@@ -69,6 +72,8 @@ class RetainedGPMethod:
         self.base, self.obs = self.parameters['base'], self.parameters['obs']
         self.cache_dir = Path(cache_dir)
         self.fit_missing_history = fit_missing_history
+        self.uji_assets_dir = None if uji_assets_dir is None else Path(uji_assets_dir)
+        self._imported_history_keys = set()
         self.allowed_sources = None
         self._fields = {}
         self.diagnostics = {}
@@ -82,6 +87,100 @@ class RetainedGPMethod:
             raise ValueError('Non-runnable GP fold: parameters use non-source buildings')
         self.allowed_sources = allowed
         return self
+
+    def import_uji_assets(self, task, assets_dir):
+        """Import only this Task's H from the verified nine-floor UJI assets.
+
+        No GP/model imports or inference. The cache key identifies data and
+        parameters; actual solver iterations and the old maxiter are recorded
+        separately. Existing entries are kept, not overwritten.
+        """
+        if (task.dataset != 'uji' or task.building not in ('B1', 'B2')
+                or self.training_sources != {('uji', 'B0')}
+                or self.allowed_sources is None
+                or ('uji', task.building) in self.allowed_sources):
+            raise ValueError('UJI asset import requires a permitted B0-source/B1-or-B2-heldout fold')
+        assets = Path(assets_dir).resolve()
+        read = lambda name: json.loads((assets/name).read_text())
+        complete, manifest, index, freeze = (read(name) for name in
+            ('complete.json', 'manifest.json', 'histories.json', 'freeze.json'))
+        if not (complete['complete']
+                and _digest(assets/'manifest.json') == complete['manifest_sha256'] == index['manifest_sha256'] == freeze['manifest_sha256']
+                and _digest(assets/'histories.json') == complete['histories_sha256']
+                and _digest(assets/'freeze.json') == complete['freeze_sha256']
+                and _digest(index['parameters_path']) == self.parameters_sha256 == index['parameters_sha256'] == complete['parameters_sha256']
+                and freeze['source_calibration']['floors'] == ['B0F0', 'B0F1', 'B0F2']
+                and index['history_rows'] == manifest['history_rows']):
+            raise ValueError('UJI legacy asset manifest/parameter binding mismatch')
+        csv_path = Path(manifest['csv_path'])
+        if _digest(csv_path) != manifest['csv_sha256']:
+            raise ValueError('UJI legacy CSV checksum mismatch')
+        aps = [f'WAP{i:03}' for i in range(1, 521)]
+        if list(task.ap_ids) != aps:
+            raise ValueError('UJI legacy asset AP axis must be the original WAP001..WAP520')
+        names = {f'{task.building}F{floor}': floor for floor in task.H}
+        raw = {name: [] for name in names}
+        with csv_path.open(newline='') as stream:
+            for row_id, row in enumerate(csv.DictReader(stream), 1):
+                name = f"B{row['BUILDINGID']}F{row['FLOOR']}"
+                if name in raw:
+                    raw[name].append((row_id, [int(row[ap]) for ap in aps],
+                                      [float(row['LONGITUDE']), float(row['LATITUDE'])]))
+        imported = []
+        for name, floor in names.items():
+            h = task.H[floor]
+            rows = [r[0] for r in raw[name]]
+            rss, xy = np.asarray([r[1] for r in raw[name]]), np.asarray([r[2] for r in raw[name]])
+            if not (rows == manifest['history_rows'][name] == np.asarray(h['row_ids']).tolist()
+                    and np.array_equal(rss, h['rss']) and np.array_equal(xy, h['xy'])):
+                raise ValueError(f'UJI legacy field does not match full raw H rows/RSS/XY: {name}')
+            records = [r for r in index['fields'] if r['floor'] == name]
+            if sorted(r['ap'] for r in records) != np.flatnonzero((rss != 100).any(0)).tolist():
+                raise ValueError(f'UJI legacy field AP coverage mismatch: {name}')
+            origin = np.asarray(h['xy'], dtype=np.float64).mean(0)
+            key = history_key(task, floor, self.parameters_sha256)
+            destination = self.cache_dir/key
+            destination.mkdir(parents=True, exist_ok=True)
+            # One small binding per history, shared by all its AP field records.
+            binding = dict(kind='building_information_assets_20261109', history_key=key,
+                source_assets=str(assets), complete_sha256=_digest(assets/'complete.json'),
+                manifest_sha256=complete['manifest_sha256'], histories_sha256=complete['histories_sha256'],
+                freeze_sha256=complete['freeze_sha256'], csv_path=str(csv_path), csv_sha256=manifest['csv_sha256'],
+                parameters_path=index['parameters_path'], parameters_sha256=self.parameters_sha256,
+                floor=name, row_ids=rows, ap_ids=aps, full_raw_rows_RSS_XY_verified=True,
+                acquisition_note='Legacy fit uses all raw rows, without acquisition grouping',
+                legacy_max_iterations=freeze['inner_maxiter'], source_origin=origin.tolist())
+            binding_path = destination/'legacy_binding.json'
+            binding_path.write_text(json.dumps(binding, indent=2)+'\n')
+            for record in records:
+                old_path = assets.parent.parent/record['path']
+                if _digest(old_path) != record['sha256']:
+                    raise ValueError(f'UJI legacy field checksum mismatch: {old_path}')
+                ap = record['ap']
+                path = destination/f'{ap}.npz'
+                metadata = path.with_suffix('.json')
+                if metadata.exists():
+                    saved = json.loads(metadata.read_text())
+                    if (saved['history_key'] != key or saved['ap_id'] != aps[ap]
+                            or saved['sha256'] != _digest(path)):
+                        raise ValueError(f'Existing GP cache binding mismatch: {path}')
+                    continue
+                with np.load(old_path, allow_pickle=False) as old:
+                    expected_z = np.unique(xy-old['origin'], axis=0)
+                    if not np.array_equal(old['z'], expected_z):
+                        raise ValueError(f'UJI legacy field coordinate grid mismatch: {old_path}')
+                    z = old['z']+old['origin']-origin
+                    np.savez_compressed(path, z=z, mean=old['mean'], cov=old['cov'], origin=origin)
+                    old_origin = old['origin'].tolist()
+                metadata.write_text(json.dumps(dict(history_key=key, ap_id=aps[ap],
+                    sha256=_digest(path), solver=record.get('solver', {'status': 'unknown'}),
+                    imported_from=dict(path=str(old_path), sha256=record['sha256'], origin=old_origin,
+                        binding_path=str(binding_path), binding_sha256=_digest(binding_path),
+                        transformation='z + old_origin - source_origin; mean/cov unchanged')),
+                    indent=2)+'\n')
+                imported.append(str(path))
+            self._imported_history_keys.add(key)
+        return imported
 
     def predict(self, task):
         self.state = None
@@ -110,6 +209,8 @@ class RetainedGPMethod:
                               for f, h in histories.items()}
             keys = {str(f): history_key(task, f, self.parameters_sha256)
                     for f in sorted(task.H)}
+            if self.uji_assets_dir is not None and not set(keys.values()) <= self._imported_history_keys:
+                self.diagnostics['imported_fields'] = self.import_uji_assets(task, self.uji_assets_dir)
             grouped = {}
             self.diagnostics.update(history_keys=keys, origin=origin.tolist(),
                 source_origins={f: o.tolist() for f, o in source_origins.items()},
