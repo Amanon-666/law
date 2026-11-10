@@ -1,4 +1,5 @@
 """Serial authorized loaded-model benchmark, exact replay gate, per-fold lightweight commits."""
+import argparse
 import datetime
 import json
 import os
@@ -15,8 +16,17 @@ PYTHON = '/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python'
 MAC_NET = '/home/panyushuo/projects/panyushuo/.network/mac-net'
 BRANCH = 'research/claude-field-posterior-20261111'
 STATE = RESULTS / 'bench_round3_execution_20261111.json'
+parser = argparse.ArgumentParser()
+parser.add_argument('--resume', action='store_true')
+args = parser.parse_args()
 started = time.time()
 state = {'started_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'driver_pid': os.getpid(), 'folds': []}
+
+if args.resume:
+    state = json.loads(STATE.read_text())
+    state.setdefault('previous_runs', []).append({key: state[key] for key in ('driver_pid', 'status', 'elapsed_seconds')})
+    state['driver_pid'] = os.getpid()
+    state['resumed_utc'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
 
 
 def save():
@@ -65,6 +75,8 @@ save()
 try:
     for stage in ('readerablation', 'kcurve'):
         for building in ('B0', 'B1', 'B2'):
+            if any(record['stage'] == stage and record['building'] == building and record.get('pushed_commit') and record.get('exit_code') == 0 and not record.get('failed_events') for record in state['folds']):
+                continue
             if time.time() - started >= 55 * 60:
                 state['status'] = 'time_limit_no_new_fold'
                 save()
