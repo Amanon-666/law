@@ -1,0 +1,83 @@
+{
+  "condition": "jitter",
+  "data_status": "exposed_development",
+  "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+  "models": [
+    {
+      "seed": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/nine_v2_20261111/models/v2_seed1.joblib",
+      "sha256": "e4e0b35b4554faeb74c918671d1f776914f742f028b5c50b05c73588cb35502e",
+      "source": "UJI B0",
+      "csv": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv"
+    },
+    {
+      "seed": 2,
+      "path": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/nine_v2_20261111/models/v2_seed2.joblib",
+      "sha256": "03348023903f2d6db9c4e9cf3465f61f9adb98e07ac1920c8f143a0d8191977e",
+      "source": "UJI B0",
+      "csv": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv"
+    },
+    {
+      "seed": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/nine_v2_20261111/models/v2_seed3.joblib",
+      "sha256": "3cd8384da4b530f415f5ad2561cec5c10770c5c41c372ae957f19da226669935",
+      "source": "UJI B0",
+      "csv": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv"
+    },
+    {
+      "seed": 4,
+      "path": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/nine_v2_20261111/models/v2_seed4.joblib",
+      "sha256": "0b7308e770848d21b8e44e7dd0efb4a0a012e8a9097fa546ddbfc16c194f87ed",
+      "source": "UJI B0",
+      "csv": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv"
+    },
+    {
+      "seed": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/nine_v2_20261111/models/v2_seed5.joblib",
+      "sha256": "6569bab534f4f6693b57575b70781bff2fae48a1b0ce854b70183ef46884a663",
+      "source": "UJI B0",
+      "csv": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv"
+    }
+  ],
+  "theta": [
+    32.0,
+    0.0,
+    2.0,
+    1.0
+  ],
+  "old_stress_summary_sha256": "9f2d445648826b5323cc43b4b0cedd337c5f01b4d897e02d6c8b73b8b7ef027c",
+  "original_trial_summary_sha256": "e0b49966692b97f4c349b95991afe20adad96ce5d99bc97ff7dc56239767260f",
+  "source_code": {
+    "law_bench_ours.py": "1d3761feaf964497f3408df01cc639ad3b6619743ae0592bcbd1d16165990705",
+    "nine_floor_v2.py": "5f0aefb4a4142901ff84671cb88a09fc738a1bf0e2a4075dcfd641dcc8527038",
+    "stress_uji.py": "a84cfbe5910166d899289b703f9839b969e1e4b04e49d2f55e1b3478a1956f64",
+    "run_nine_floor_field_posterior.py": "652e48e091f32f58e4d301b8469103cea66c1a56d106568ec1a690e516c0c88b"
+  },
+  "evaluator_sha256": "b04cf4d6d4b7d8ea135a9c67ebaeecf2265b92e6a2db6661772e60fb962cad64",
+  "history_identity": {
+    "B1F0": "31d09c0a0f348d66f4e80fff4d140c7984e92cf1f92ec233229d603d132a38bd",
+    "B1F1": "9cd30feb1d7c027317bfeed82af394b2e3986d4f8feb2ce7c30386675ad7ce23",
+    "B1F2": "8cf618bcd66ba4ae4921cd1ee8ef221a7a6a7652c7baf9c55c94139975cc98d3",
+    "B1F3": "c5fff17e4432ce41c0c89d0fc297357ef502da6c4d3ffd936f9305bc8d57c857",
+    "B2F0": "72751d059045e3a75f7e04d8a85fdb95fef17a39aa22cc01c5d87c21424b96e5",
+    "B2F1": "cb1aa323dd3beac6dff5740aa23de135635b716d4e1cb9701d27f4cc57cdbd92",
+    "B2F2": "3596355826fdaf5a79e10f2dcd59733f448bd2af72bcbb977b25e8f302ab4532",
+    "B2F3": "ee4db5235fb1bd2973c3474fc2439f4fffca3c0ec5a26ee69404c8cf47427d59",
+    "B2F4": "4fbb5f593d14b558c44a7bc09c2090f0b18d563d5ac57c74f10f7ef0ab8d57d4"
+  },
+  "protocol_manifest_sha256": "092bab7df2a5aa69e9c4bcba376b619e6d1a077294632cb8fb2f7abd978eb49c",
+  "variants": [
+    "v2_noM2",
+    "v2_C1",
+    "v2_full"
+  ],
+  "control_reuse": [
+    "A_adopted",
+    "B_H_only",
+    "C_H_cond",
+    "WKNN3_raw_HS"
+  ],
+  "training": false,
+  "parameter_selection": false,
+  "readout": "Original posterior(), beta128/eps.02/offsets; no GP pool with mismatched H"
+}

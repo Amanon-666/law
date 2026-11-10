@@ -223,9 +223,8 @@ NAIVE_TAU2, NAIVE_SIG2 = 64.0, 25.0
 
 
 def calibrate_naive(source_buildings):
-    """set NAIVE_TAU2 / NAIVE_SIG2 from SOURCE data: leave-one-floor-out residual of the copied field at real
+    """return (tau2, sig2) for the copied field from SOURCE data: leave-one-floor-out residual of the copied field at real
     positions (squared detected-mean error minus sampling variance) and mean within-position variance + S0^2"""
-    global NAIVE_TAU2, NAIVE_SIG2
     res, wv = [], []
     for floors in source_buildings:
         fl = sorted(floors)
@@ -239,31 +238,36 @@ def calibrate_naive(source_buildings):
             d = nd[:, aps] > 1
             res.append(((mean[:, aps] - f['m']) ** 2 - np.nan_to_num(var[:, aps]) / np.maximum(nd[:, aps], 1))[d])
             wv.append(np.nan_to_num(var[:, aps])[d])
-    NAIVE_TAU2 = float(max(np.mean(np.concatenate(res)), 1.0)); NAIVE_SIG2 = float(np.mean(np.concatenate(wv)) + S0 ** 2)
-    return NAIVE_TAU2, NAIVE_SIG2
+    return float(max(np.mean(np.concatenate(res)), 1.0)), float(np.mean(np.concatenate(wv)) + S0 ** 2)
 
 
-def naive_field(maps, t, aps, X):
-    """No-learning M1 ablation: at X, copy the nearest lower/upper history floors' same-position statistics.
-    p = mean detection rate of those floors, m = their detected mean (encoded-mean corrected), constant tau2/sig2."""
+def naive_field(maps, t, aps, X, tau2=None, sig2=None):
+    """Copied (no-learning) field. For the nearest available lower and upper history floor (the same sides as
+    translator.history_features' 'ref'), take the same-position value (within R_SAME) or else the R_SMOOTH
+    neighbourhood mean, for BOTH the encoded mean M and the detection rate R with identical weights and missing
+    handling; average the available sides. Then p = copied R and the detected mean m = (ref - (1-p) ND) / p.
+    tau2/sig2: constants calibrated on sources (passed explicitly; stored on the model object)."""
     sm = sub_maps(maps, aps)
-    F, ref = T.history_features(X, t, {f: m[:3] for f, m in sm.items()})
-    rates = []
-    for d in (-1, 1, -2, 2):
-        if t + d in sm:
-            P, M, R, _ = sm[t + d]
-            D = np.linalg.norm(X[:, None] - P[None], axis=2); j = D.argmin(1)
-            ok = (D.min(1) <= T.R_SMOOTH)[:, None]
-            rates.append(np.where(ok, R[j], np.nan))
-            if len(rates) == 2:
-                break
+    below = [d for d in T.SLOTS if d < 0 and t + d in sm]; above = [d for d in T.SLOTS if d > 0 and t + d in sm]
+    vm, vr = [], []
+    for side in (below[-1:], above[:1]):
+        if not side:
+            continue
+        P, M, R, _ = sm[t + side[0]]
+        D = np.linalg.norm(X[:, None] - P[None], axis=2); j = D.argmin(1); ok = (D.min(1) <= T.R_SAME)[:, None]
+        W = (D <= T.R_SMOOTH).astype(float); cnt = W.sum(1, keepdims=True)
+        with np.errstate(all='ignore'):
+            smM = np.where(cnt > 0, W @ M / np.maximum(cnt, 1), np.nan); smR = np.where(cnt > 0, W @ R / np.maximum(cnt, 1), np.nan)
+        vm.append(np.where(ok, M[j], smM)); vr.append(np.where(ok, R[j], smR))
+    A = len(aps)
     with np.errstate(all='ignore'):
-        p = np.nan_to_num(np.nanmean(np.stack(rates), 0), nan=0.02) if rates else np.full(ref.shape, 0.02)
-    p = np.clip(p, 0.02, 0.98)
-    m = np.where(p > 0.05, (ref - (1 - p) * T.ND) / p, -90.0)
-    m = np.clip(m, -100.0, -30.0)
-    return dict(p=p, m=m, s2=np.full(p.shape, NAIVE_TAU2 + NAIVE_SIG2), tau2=np.full(p.shape, NAIVE_TAU2),
-                sig2=np.full(p.shape, NAIVE_SIG2), vp=np.full(p.shape, 0.05))
+        ref = np.nanmean(np.stack(vm), 0) if vm else np.full((len(X), A), np.nan)
+        pr = np.nanmean(np.stack(vr), 0) if vr else np.full((len(X), A), np.nan)
+    ref = np.where(np.isnan(ref), T.ND, ref); p = np.clip(np.where(np.isnan(pr), 0.0, pr), 0.02, 0.98)
+    m = np.clip(np.where(p > 0.05, (ref - (1 - p) * T.ND) / p, -90.0), -100.0, -30.0)
+    tau2 = NAIVE_TAU2 if tau2 is None else tau2; sig2 = NAIVE_SIG2 if sig2 is None else sig2
+    return dict(p=p, m=m, s2=np.full(p.shape, tau2 + sig2), tau2=np.full(p.shape, tau2),
+                sig2=np.full(p.shape, sig2), vp=np.full(p.shape, 0.05))
 
 
 def condition_v2(Xc, f, s_rss, s_xy, theta, fS=None, r_prior=4.0):
@@ -344,7 +348,8 @@ class Ours:
         Ps = det_stats(sr, s_xy)[0]
         if self.variant in ('naive', 'naive_noM2'):   # ablation: M1 replaced by copying the nearest history floors (no learning)
             Xc = np.unique(np.concatenate([m[0] for m in maps.values()]), axis=0)
-            f, fS = naive_field(maps, t, aps, Xc), (naive_field(maps, t, aps, Ps) if len(Ps) else None)
+            tv, sv = self.naive_var                                    # stored on the object (survives joblib)
+            f, fS = naive_field(maps, t, aps, Xc, tv, sv), (naive_field(maps, t, aps, Ps, tv, sv) if len(Ps) else None)
         else:
             Xc, f = ensemble_field(self.ops, maps, t, aps)
             fS = ensemble_field(self.ops, maps, t, aps, Ps)[1] if len(Ps) else None
@@ -409,5 +414,37 @@ def select_theta(source_buildings, seed=1, draws=8, reliability=True, randomise=
                     for th in grid:
                         p, m, s2 = condition_v2(Pe, fe, tr_['rss'][srows][:, aps], tr_['xy'][srows], th, fS)
                         scores[th].append(scan_nll(p[inv_e], m[inv_e], s2[inv_e], ev_rss))
+    mean = {th: float(np.mean(v)) for th, v in scores.items() if v}
+    return min(mean, key=mean.get), mean
+
+
+def select_theta_naive(source_buildings, tau2, sig2, seed=1, grid=THETA_GRID, max_eval=400):
+    """Same held-out NLL criterion as select_theta, for the copied (no-learning) field: leave-one-floor-out on every
+    source building, field evaluated at the held-out scans' coordinates, history in its full condition."""
+    rng = np.random.default_rng([seed, 99]); scores = {th: [] for th in grid}
+    for floors in source_buildings:
+        for t in sorted(floors):
+            if len(floors) < 2:
+                continue
+            maps = make_maps({f: floors[f] for f in floors if f != t})
+            tr_ = floors[t]; P, inv = np.unique(tr_['xy'], axis=0, return_inverse=True); inv = inv.ravel()
+            for K in (1, 3, 5):
+                if len(P) <= K + 5:
+                    continue
+                sp = rng.choice(len(P), K, replace=False)
+                srows = np.concatenate([rng.permutation(np.flatnonzero(inv == k))[:3] for k in sp])
+                erows = np.flatnonzero(~np.isin(inv, sp)); erows = rng.choice(erows, min(max_eval, len(erows)), replace=False)
+                seen = (tr_['rss'][srows] != 100).any(0)
+                for mp in maps.values():
+                    seen |= mp[2].max(0) > 0
+                aps = np.flatnonzero(seen)
+                Pe, inv_e = np.unique(tr_['xy'][erows], axis=0, return_inverse=True); inv_e = inv_e.ravel()
+                fe = naive_field(maps, t, aps, Pe, tau2, sig2)
+                Ps_ = det_stats(tr_['rss'][srows][:, aps], tr_['xy'][srows])[0]
+                fS = naive_field(maps, t, aps, Ps_, tau2, sig2)
+                ev_rss = tr_['rss'][erows][:, aps]
+                for th in grid:
+                    p, m, s2 = condition_v2(Pe, fe, tr_['rss'][srows][:, aps], tr_['xy'][srows], th, fS)
+                    scores[th].append(scan_nll(p[inv_e], m[inv_e], s2[inv_e], ev_rss))
     mean = {th: float(np.mean(v)) for th, v in scores.items() if v}
     return min(mean, key=mean.get), mean

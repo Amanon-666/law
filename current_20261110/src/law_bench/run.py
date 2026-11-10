@@ -29,15 +29,25 @@ METHODS = {
     'wknn_S': ('methods_simple', 'WKNN_S', {}),
     'wknn_HS': ('methods_simple', 'WKNN_HS', {}),
     'tabicl': ('method_tabicl', 'TabICL', {}),
+    'tabicl_ordinary': ('method_tabicl', 'TabICL', {'variant': 'ordinary'}),
+    'tabicl_full24': ('method_tabicl', 'TabICL', {'variant': 'full24'}),
     'scaml': ('method_scaml', 'ScaMLMethod', {}),
     'tcms': ('method_tcms', 'TCMSMethod', {}),
     'retained_gp': ('method_retained_gp', 'RetainedGPMethod', {}),
+    'adopted_A': ('method_adopted', 'AdoptedMethod', {'variant': 'A'}),
+    'adopted_A_GP': ('method_adopted', 'AdoptedMethod', {'variant': 'A_GP'}),
+    'frozen_v1': ('method_frozen_field', 'FrozenFieldMethod', {'variant': 'v1'}),
+    'frozen_v1_GP': ('method_frozen_field', 'FrozenFieldMethod', {'variant': 'v1_GP'}),
     'gp_S': ('methods_claude', 'GpS', {}),
     'gp_histmean': ('methods_claude', 'GpHS', {}),
     'ours': ('methods_claude', 'OursMethod', {}),
     'ours_noM2': ('methods_claude', 'OursMethod', {'variant': 'noM2'}),
     'ours_C1': ('methods_claude', 'OursMethod', {'variant': 'C1'}),
     'ours_v1': ('methods_claude', 'OursMethod', {'variant': 'v1'}),
+    'ours_naive': ('methods_claude', 'OursMethod', {'variant': 'naive'}),
+    # No-M2 predictions do not consume theta; skip the unused source search.
+    'ours_naive_noM2': ('methods_claude', 'OursMethod',
+                       {'variant': 'naive_noM2', 'fixed_theta': (16.0, 0.0, 1.0, 1.0)}),
 }
 
 
