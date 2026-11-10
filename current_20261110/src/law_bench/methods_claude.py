@@ -62,6 +62,11 @@ class OursMethod(Method):
     def fit_source(self, sources):
         t0 = time.time()
         b = [_floors(s) for s in sources]
+        if self.variant.startswith('naive'):          # no learned operator; variances calibrated on sources
+            self.naive_var = O.calibrate_naive(b)
+            self.model = O.Ours(theta=self.fixed or (16.0, 0.0, 1.0, 1.0), variant=self.variant, informative=self.inf)
+            self.model.ops = []; self.theta = self.model.theta; self.fit_seconds = time.time() - t0
+            return
         rel = rnd = self.variant != 'v1'
         theta = self.fixed
         if theta is None and self.variant == 'full':

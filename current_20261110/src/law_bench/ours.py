@@ -219,6 +219,53 @@ def ensemble_field(ops, maps, t, aps, X=None):
     return outs[0][0], f
 
 
+NAIVE_TAU2, NAIVE_SIG2 = 64.0, 25.0
+
+
+def calibrate_naive(source_buildings):
+    """set NAIVE_TAU2 / NAIVE_SIG2 from SOURCE data: leave-one-floor-out residual of the copied field at real
+    positions (squared detected-mean error minus sampling variance) and mean within-position variance + S0^2"""
+    global NAIVE_TAU2, NAIVE_SIG2
+    res, wv = [], []
+    for floors in source_buildings:
+        fl = sorted(floors)
+        for t in fl:
+            if len(fl) < 2:
+                continue
+            P, n, nd, mean, var = det_stats(floors[t]['rss'], floors[t]['xy'])
+            maps = make_maps({f: floors[f] for f in fl if f != t})
+            aps = np.flatnonzero((nd > 0).any(0))
+            f = naive_field(maps, t, aps, P)
+            d = nd[:, aps] > 1
+            res.append(((mean[:, aps] - f['m']) ** 2 - np.nan_to_num(var[:, aps]) / np.maximum(nd[:, aps], 1))[d])
+            wv.append(np.nan_to_num(var[:, aps])[d])
+    NAIVE_TAU2 = float(max(np.mean(np.concatenate(res)), 1.0)); NAIVE_SIG2 = float(np.mean(np.concatenate(wv)) + S0 ** 2)
+    return NAIVE_TAU2, NAIVE_SIG2
+
+
+def naive_field(maps, t, aps, X):
+    """No-learning M1 ablation: at X, copy the nearest lower/upper history floors' same-position statistics.
+    p = mean detection rate of those floors, m = their detected mean (encoded-mean corrected), constant tau2/sig2."""
+    sm = sub_maps(maps, aps)
+    F, ref = T.history_features(X, t, {f: m[:3] for f, m in sm.items()})
+    rates = []
+    for d in (-1, 1, -2, 2):
+        if t + d in sm:
+            P, M, R, _ = sm[t + d]
+            D = np.linalg.norm(X[:, None] - P[None], axis=2); j = D.argmin(1)
+            ok = (D.min(1) <= T.R_SMOOTH)[:, None]
+            rates.append(np.where(ok, R[j], np.nan))
+            if len(rates) == 2:
+                break
+    with np.errstate(all='ignore'):
+        p = np.nan_to_num(np.nanmean(np.stack(rates), 0), nan=0.02) if rates else np.full(ref.shape, 0.02)
+    p = np.clip(p, 0.02, 0.98)
+    m = np.where(p > 0.05, (ref - (1 - p) * T.ND) / p, -90.0)
+    m = np.clip(m, -100.0, -30.0)
+    return dict(p=p, m=m, s2=np.full(p.shape, NAIVE_TAU2 + NAIVE_SIG2), tau2=np.full(p.shape, NAIVE_TAU2),
+                sig2=np.full(p.shape, NAIVE_SIG2), vp=np.full(p.shape, 0.05))
+
+
 def condition_v2(Xc, f, s_rss, s_xy, theta, fS=None, r_prior=4.0):
     """M2 v2. f: ensemble field dict. Prior field error lam*tau2 (spatial shape rho), S noise sig2(S)/n_d, so the
     anchor gain lam*tau2/(lam*tau2 + sig2/n_d) grows when the history-based field is unreliable. Detection logit
@@ -293,11 +340,15 @@ class Ours:
         for d in H.values():
             seen |= (d['rss'] != 100).any(0)
         aps = np.flatnonzero(seen)
-        Xc, f = ensemble_field(self.ops, maps, t, aps)
         sr, qr = s_rss[:, aps], q_rss[:, aps]
         Ps = det_stats(sr, s_xy)[0]
-        fS = ensemble_field(self.ops, maps, t, aps, Ps)[1] if len(Ps) else None
-        if self.variant == 'noM2':
+        if self.variant in ('naive', 'naive_noM2'):   # ablation: M1 replaced by copying the nearest history floors (no learning)
+            Xc = np.unique(np.concatenate([m[0] for m in maps.values()]), axis=0)
+            f, fS = naive_field(maps, t, aps, Xc), (naive_field(maps, t, aps, Ps) if len(Ps) else None)
+        else:
+            Xc, f = ensemble_field(self.ops, maps, t, aps)
+            fS = ensemble_field(self.ops, maps, t, aps, Ps)[1] if len(Ps) else None
+        if self.variant in ('noM2', 'naive_noM2'):
             p, m, s2 = f['p'], f['m'], f['sig2'] + f['tau2']
         elif self.variant in ('C1', 'v1'):                              # original C conditioning (s2-proportional)
             p, m, s2 = condition(Xc, f['p'], f['m'], f['s2'], sr, s_xy, (16.0, 0.3, 1.0, 0.0))
