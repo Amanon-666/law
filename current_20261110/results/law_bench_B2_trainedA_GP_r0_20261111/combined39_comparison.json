@@ -1,0 +1,640 @@
+{
+  "complete": true,
+  "created": "2026-11-10T23:16:45.377699+00:00",
+  "tasks": 39,
+  "methods": {
+    "A": {
+      "pooled_positions": {
+        "tasks": 39,
+        "complete": true,
+        "query_positions": 1389,
+        "mean": 8.866039280057349,
+        "p50": 6.07376294039927,
+        "p90": 17.42118351553181,
+        "by_K": {
+          "1": {
+            "tasks": 13,
+            "completed_tasks": 13,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.117446955784084,
+            "p50": 6.241192427953204,
+            "p90": 17.45138905623177,
+            "query_positions": 463
+          },
+          "3": {
+            "tasks": 13,
+            "completed_tasks": 13,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.839511894146051,
+            "p50": 6.151125491569876,
+            "p90": 17.57001359511562,
+            "query_positions": 463
+          },
+          "5": {
+            "tasks": 13,
+            "completed_tasks": 13,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.64115899024191,
+            "p50": 5.757257569006426,
+            "p90": 17.163100927362148,
+            "query_positions": 463
+          }
+        }
+      },
+      "equal_building_mean": 8.63502097223188,
+      "equal_building_by_K": {
+        "1": 8.851828428922397,
+        "3": 8.623513750950579,
+        "5": 8.429720736822665
+      }
+    },
+    "GP": {
+      "pooled_positions": {
+        "tasks": 39,
+        "complete": true,
+        "query_positions": 1389,
+        "mean": 11.453272425926173,
+        "p50": 8.37303655551139,
+        "p90": 23.703813508014115,
+        "by_K": {
+          "1": {
+            "tasks": 13,
+            "completed_tasks": 13,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 11.77280582501439,
+            "p50": 8.35245147679309,
+            "p90": 24.130426192178593,
+            "query_positions": 463
+          },
+          "3": {
+            "tasks": 13,
+            "completed_tasks": 13,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 11.26108588373428,
+            "p50": 8.398657614504366,
+            "p90": 23.119893565434843,
+            "query_positions": 463
+          },
+          "5": {
+            "tasks": 13,
+            "completed_tasks": 13,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 11.325925569029852,
+            "p50": 8.37303655551139,
+            "p90": 23.707420230534773,
+            "query_positions": 463
+          }
+        }
+      },
+      "equal_building_mean": 11.140364768404298,
+      "equal_building_by_K": {
+        "1": 11.426270201557381,
+        "3": 10.991791681465662,
+        "5": 11.003032422189852
+      }
+    },
+    "A_GP": {
+      "pooled_positions": {
+        "tasks": 39,
+        "complete": true,
+        "query_positions": 1389,
+        "mean": 8.122230239591167,
+        "p50": 5.831306828934506,
+        "p90": 16.451292240829876,
+        "by_K": {
+          "1": {
+            "tasks": 13,
+            "completed_tasks": 13,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.204817938102725,
+            "p50": 5.757994543761857,
+            "p90": 16.933769925126192,
+            "query_positions": 463
+          },
+          "3": {
+            "tasks": 13,
+            "completed_tasks": 13,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.056679555248937,
+            "p50": 5.71771136408205,
+            "p90": 16.140150476114353,
+            "query_positions": 463
+          },
+          "5": {
+            "tasks": 13,
+            "completed_tasks": 13,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.105193225421836,
+            "p50": 5.971654303969825,
+            "p90": 16.17333083905211,
+            "query_positions": 463
+          }
+        }
+      },
+      "equal_building_mean": 7.984942773084591,
+      "equal_building_by_K": {
+        "1": 8.064815680479544,
+        "3": 7.9393754064563185,
+        "5": 7.950637232317909
+      }
+    }
+  },
+  "by_building": {
+    "B0": {
+      "A": {
+        "tasks": 12,
+        "complete": true,
+        "query_positions": 387,
+        "mean": 5.025614340584896,
+        "p50": 3.561451005770195,
+        "p90": 11.322753858890342,
+        "by_K": {
+          "1": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 5.086610099506004,
+            "p50": 3.561451005770195,
+            "p90": 11.309155790140657,
+            "query_positions": 129
+          },
+          "3": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 5.122734398357759,
+            "p50": 3.789399724347883,
+            "p90": 11.218504102960416,
+            "query_positions": 129
+          },
+          "5": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 4.867498523890924,
+            "p50": 3.4241606113939,
+            "p90": 11.109178946506631,
+            "query_positions": 129
+          }
+        }
+      },
+      "GP": {
+        "tasks": 12,
+        "complete": true,
+        "query_positions": 387,
+        "mean": 9.277239345572344,
+        "p50": 6.284377010437491,
+        "p90": 17.787750274340016,
+        "by_K": {
+          "1": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.383801163276791,
+            "p50": 6.45385723259178,
+            "p90": 18.083062182444866,
+            "query_positions": 129
+          },
+          "3": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.256208536497443,
+            "p50": 6.097672632091026,
+            "p90": 16.778005553178215,
+            "query_positions": 129
+          },
+          "5": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.191708336942801,
+            "p50": 6.041545665676151,
+            "p90": 17.635190982984195,
+            "query_positions": 129
+          }
+        }
+      },
+      "A_GP": {
+        "tasks": 12,
+        "complete": true,
+        "query_positions": 387,
+        "mean": 5.3538150321423785,
+        "p50": 3.616072401419897,
+        "p90": 13.689290211819241,
+        "by_K": {
+          "1": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 5.28738746878099,
+            "p50": 3.5898818934810435,
+            "p90": 14.194425754765804,
+            "query_positions": 129
+          },
+          "3": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 5.445026897773871,
+            "p50": 3.6335153901910746,
+            "p90": 13.918100932119636,
+            "query_positions": 129
+          },
+          "5": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 5.329030729872274,
+            "p50": 3.5732492936838773,
+            "p90": 12.75094017314017,
+            "query_positions": 129
+          }
+        }
+      }
+    },
+    "B1": {
+      "A": {
+        "tasks": 12,
+        "complete": true,
+        "query_positions": 396,
+        "mean": 10.871095366332424,
+        "p50": 9.153764818621148,
+        "p90": 19.332218152585604,
+        "by_K": {
+          "1": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 11.02153643050005,
+            "p50": 8.867722071802808,
+            "p90": 19.512304920323068,
+            "query_positions": 132
+          },
+          "3": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.845653071518766,
+            "p50": 9.55555113511825,
+            "p90": 19.09517600601882,
+            "query_positions": 132
+          },
+          "5": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.74609659697846,
+            "p50": 8.87771663024677,
+            "p90": 19.459095946924606,
+            "query_positions": 132
+          }
+        }
+      },
+      "GP": {
+        "tasks": 12,
+        "complete": true,
+        "query_positions": 396,
+        "mean": 11.01367777460579,
+        "p50": 9.808566733361143,
+        "p90": 18.882457002281964,
+        "by_K": {
+          "1": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 11.264188003470073,
+            "p50": 10.075261162041837,
+            "p90": 19.440344355303132,
+            "query_positions": 132
+          },
+          "3": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 11.02056816621295,
+            "p50": 9.616655775003082,
+            "p90": 18.419558833747253,
+            "query_positions": 132
+          },
+          "5": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.756277154134347,
+            "p50": 9.33855077946805,
+            "p90": 16.27719099514009,
+            "query_positions": 132
+          }
+        }
+      },
+      "A_GP": {
+        "tasks": 12,
+        "complete": true,
+        "query_positions": 396,
+        "mean": 9.820774603030836,
+        "p50": 8.74434665376845,
+        "p90": 16.775072049562276,
+        "by_K": {
+          "1": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.03526159725757,
+            "p50": 8.96655199439823,
+            "p90": 17.378712204140783,
+            "query_positions": 132
+          },
+          "3": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.764741409925403,
+            "p50": 8.405975395823193,
+            "p90": 16.592928753106477,
+            "query_positions": 132
+          },
+          "5": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.662320801909528,
+            "p50": 8.603937233679877,
+            "p90": 16.56365030643893,
+            "query_positions": 132
+          }
+        }
+      }
+    },
+    "B2": {
+      "A": {
+        "tasks": 15,
+        "complete": true,
+        "query_positions": 606,
+        "mean": 10.00835320977832,
+        "p50": 6.782482804431199,
+        "p90": 20.933184887676465,
+        "by_K": {
+          "1": {
+            "tasks": 5,
+            "completed_tasks": 5,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.447338756761138,
+            "p50": 6.852325087605456,
+            "p90": 21.197258367036206,
+            "query_positions": 202
+          },
+          "3": {
+            "tasks": 5,
+            "completed_tasks": 5,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.902153782975214,
+            "p50": 6.749875357274291,
+            "p90": 20.892604601042795,
+            "query_positions": 202
+          },
+          "5": {
+            "tasks": 5,
+            "completed_tasks": 5,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.675567089598607,
+            "p50": 6.764506915489731,
+            "p90": 18.769427893130086,
+            "query_positions": 202
+          }
+        }
+      },
+      "GP": {
+        "tasks": 15,
+        "complete": true,
+        "query_positions": 606,
+        "mean": 13.13017718503476,
+        "p50": 8.799475809036975,
+        "p90": 30.175914009061227,
+        "by_K": {
+          "1": {
+            "tasks": 5,
+            "completed_tasks": 5,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 13.63082143792528,
+            "p50": 8.810267800049129,
+            "p90": 31.617328957972703,
+            "query_positions": 202
+          },
+          "3": {
+            "tasks": 5,
+            "completed_tasks": 5,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 12.698598341686594,
+            "p50": 8.692862180204115,
+            "p90": 27.83732237022046,
+            "query_positions": 202
+          },
+          "5": {
+            "tasks": 5,
+            "completed_tasks": 5,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 13.06111177549241,
+            "p50": 9.085420893554495,
+            "p90": 30.054296426002736,
+            "query_positions": 202
+          }
+        }
+      },
+      "A_GP": {
+        "tasks": 15,
+        "complete": true,
+        "query_positions": 606,
+        "mean": 8.78023868408056,
+        "p50": 6.293902540095125,
+        "p90": 17.636169027208425,
+        "by_K": {
+          "1": {
+            "tasks": 5,
+            "completed_tasks": 5,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.871797975400073,
+            "p50": 6.050992230642461,
+            "p90": 19.376572135007436,
+            "query_positions": 202
+          },
+          "3": {
+            "tasks": 5,
+            "completed_tasks": 5,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.60835791166968,
+            "p50": 6.279635867592498,
+            "p90": 16.71866289419127,
+            "query_positions": 202
+          },
+          "5": {
+            "tasks": 5,
+            "completed_tasks": 5,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.860560165171925,
+            "p50": 6.521790505235333,
+            "p90": 17.373753930729006,
+            "query_positions": 202
+          }
+        }
+      }
+    }
+  },
+  "aggregation": "Stored per-position pooled scores and equal mean of the three full building results, including equal-building per-K means",
+  "identity": "Generic S-feature ours_A three-model variant, with unchanged retained GP and fixed 1:1 log-score pool. B0 sources B1+B2; B1 sources B0+B2; B2 sources B0+B1.",
+  "boundary": "B0 reader hyperparameters historically selected on B0 development; all are exposed development. B0 one same-objective numerical continuation repair is explicit. No original54 or original-A02 results included.",
+  "repaired_task": "uji/B0/F0/K3/r0",
+  "inputs_sha256": {
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/freeze.json": "ac782c07bac975293b9e482b32ba022a92726f75def5b45810a96db896c669cd",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/freeze.json": "f9fbea6df32d91f31cf2293504c9bbc52d9c8dfb915f3d4d7193b290cd794423",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/complete.json": "f6ebeca0ec738a04a4fd456e24dfcd720623e7e48746a7101c5af01184d78fb9",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/combined_task_scores.json": "6453bbb97edbd91352b68983d0671cc919da1d3f5a6912ec8c79ecdb84e187cc",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/freeze.json": "b12601925e3682996667b6a2eeb938048c64b370865d5469e4a0c22e8c39a7a6",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/freeze.json": "f758de913bc7d296f3382f3600a0650ddc580867f459eba2fd8327f923fb6302",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/source_models/ours_A.json": "409df235d218cb7abb0b868a5f678da07d7a98e00bfa023eaf2d2a972573eedb",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F0/K1/r0.json": "7376084783c0e86312380d0456d9ccf54d23b9f134113b1cef89ff0a836df03d",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F0/K1/r0.json": "ff92146e6909b525c663c420265a2ce266b47e6770819aa8a8da2cddbd709cdb",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F0/K1/r0.json": "d23ddcf67112b91a658f1119431990f33f023094fc55637bbcd3cd3f7d43e22a",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F0/K3/r0.json": "e11d81f579bc79204f4867207eebe79d56e99833ac9397c592b593a8aca83899",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F0/K3/r0.json": "32b9ad5a332f2c3821df9e8dece055559fc893968a38fe2941193cf5d1169c58",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F0/K3/r0.json": "55a65d94bc657be8c1d4b6f51e80b5afde96c418ce48ca4799999d284058c149",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F0/K5/r0.json": "580479829bd6624545d2cf28aa000a73f522fdf47eb98f26b83985b4b6f1c66e",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F0/K5/r0.json": "3c44949f1b5c92d39b1da3be139e5facbe4b959d7c072b8d5eea98de9cded378",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F0/K5/r0.json": "0a498cbb4f68c9e5ae871012522320116cef23e06029fd0c4e35437e6aedd75a",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F1/K1/r0.json": "1113aef9e471e1b0eb2e8c86aa01982c0e5351a75bdaba01f6ad12d94c2e4fd1",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F1/K1/r0.json": "2867a5dbea7c1aed6fd999bcdf874c4b50765d68d077ead35b9f03abc80e291e",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F1/K1/r0.json": "d2b2a6aa6d6c6efb9835a5670ce0c70689396d1708ed17fe90701776b46caa24",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F1/K3/r0.json": "403f2f4859b29b88c74d40e5cd41d5ae87bd14e99d118f77a66b8fa12092261b",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F1/K3/r0.json": "e866d403591598b91cf81b8535bd1a519c8156e3fcf4a0d2ee1f0d2a48728a83",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F1/K3/r0.json": "8a4455ef16910e9604a8dcb2547a0e238303a2a96fa8e1c86e8fb4ef92aef241",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F1/K5/r0.json": "f29b770e91be2d6460528e74064cd5f810e712d75429f5760060f7ac61f7d6ad",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F1/K5/r0.json": "f1a89e06859512cb964cca6ac90801731b4946c294a2dd71c225dcebeae64bec",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F1/K5/r0.json": "dd781481f7719dc7c2bf17e59acc66859cb2441c1a621644ce3c7933cbe7e4e2",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F2/K1/r0.json": "3e0946b9ca4d10ca6b18ddcdf80e9d807b0bd1289d61015d3d83a41f8e734fac",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F2/K1/r0.json": "3db75d18dd7a16a5b539c99f25ec3943389bf0efb7bb8606180935e912081f87",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F2/K1/r0.json": "f674ac11292d3efceed322c13528b2a13cf58fff6d31a081c3b478fe2758e449",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F2/K3/r0.json": "7499f8c3313bad433ad3b878e4c0bdfea23e7c10a462717a1ec095bd2132f41e",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F2/K3/r0.json": "125991341996f0fe9d8601f3000c5bae095726f3c1c97dd7e8467a4ec18f990f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F2/K3/r0.json": "957955e83013f58e5f1c3fa01b2e71c261b0054adb806ec1e969a5c577a2d1ca",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F2/K5/r0.json": "73e4a737069485d61d17b50e0176ed3aa80d16e3bcd1dd0d2d02e2a48bfd82f9",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F2/K5/r0.json": "67afbed65aa6af4172b6891653d5d145a87b47aceaccb195f44f2d07a490b9d2",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F2/K5/r0.json": "8cd42c1d4b295240fc62e4d4def2c6dc2c76d9bf5fe5f5b926b1eb3edfcde4b4",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F3/K1/r0.json": "91c5e718d098e94adbc1a03b53bc8ae401d24a20951610dd67f22d7fe68ac606",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F3/K1/r0.json": "fe5899aa6befcadf4809d55afc23156ac11f6cb7f654851cbe6d19c99351b2e1",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F3/K1/r0.json": "64e47d8c286163c514e10e29b82cd6009dd28626de6f1b79867fb42224bd6687",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F3/K3/r0.json": "66a82ea7e9d791e0cc746737c192710fd767f32d57a1086ff3b885e56b1dd1f3",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F3/K3/r0.json": "c916be5c52f5e43219ce4f59695d241631ce6864deaec28be6aea1e28444e081",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F3/K3/r0.json": "ea727d20b00305dee4fae8e65120abc868cab62cae444cce97c1cc316c4d1c3e",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F3/K5/r0.json": "78f0ddac072a2b88ffa02dd80614c60e9ae98eec88506414b83979878b075d4c",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F3/K5/r0.json": "e10f3305c163331d8b0bfa82d6f02a8346ec57dcb40e4d2437674ef6babd0285",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F3/K5/r0.json": "9f145ea1f290e798e5e74bfe4ab435bc8a8d512bae0376c5e26fe2d5377d7a5f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F4/K1/r0.json": "29348bb6f62812296e0f77bdcb1e28e53d7936104cc5aa56f9dc6fcdc56ad2ac",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F4/K1/r0.json": "d51d473f9f676e0c0c081ae3c2fb7e96e0b1ac997aae0c857244bab9db20fa5b",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F4/K1/r0.json": "a76057e424d56b8e7ac95a012f041bace13d58569d36c78fea894bba325626e6",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F4/K3/r0.json": "1cf7d2f2fac3090328ff78e20f7c77d1c454a233f4725815045ded31e3e4099b",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F4/K3/r0.json": "c5927fd7aaad316a7ad78b92253d78b50cfb5ecc616ed7dacf749aeeeb1f20fb",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F4/K3/r0.json": "7dd1372e4aac6b4a6d6b784bc76e63d10705f74a3a9d00df79969dc94118732d",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B2/F4/K5/r0.json": "99ac8a2479e57b7342f0ece36842805e008732d04bd2fdf57605cfe1ca6b1f00",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B2_A_20261111/events/ours_A/uji/B2/F4/K5/r0.json": "2440aa96ddd57d30e8bb79547002122eb588ef8fd6228ed2b3a241a6350ecc5f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B2_retainedGP_recovery_r0_20261111/events/retained_gp/uji/B2/F4/K5/r0.json": "7ca5fc93a90bc34a752bea8d3df0bb6a19cf07597d8361c670f54f40ca08d70b",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F0/K1/r0.json": "32dabce0e1f70ad5fb314e12d183956d0b9d5c8e3810e834a09266b80e252fd8",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F0/K3/r0.json": "2cbb5842412b433e001c4e02545b9519d414eb7c3af4b3f18c08d1af040a8736",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F0/K5/r0.json": "6691d286f985e6fa54961ded38891d59de3e0ab01f5f8201c78eb6c9012498a1",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F1/K1/r0.json": "b252bed280deefe53796746ef4359207837e63876a5ca4b0b2dac544effebc13",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F1/K3/r0.json": "dbe07b6c501c8001e48ae82689947ee0ea8a9743a0004f97f5995a29a2e13783",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F1/K5/r0.json": "4d6ad4baf92fb1e479d038666cbdff6465da3eeb97ed7651503184d5b4679bee",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F2/K1/r0.json": "5cf696d82143daa959c31f5a8eb346e9c1524e53198184d01fbd65150aa28066",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F2/K3/r0.json": "958e890c322d86703d288a28b36fc1d6ae0717bd267d3f76f6e7fc8ca5776c72",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F2/K5/r0.json": "4d924b85c37142d205bce938b2a40bb5fa745312a24e114fb747dc7ce8ceff3b",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F3/K1/r0.json": "d653e18cdfcb9d720ac592c8bd9a3ac0aaefbb3e993305aa3841a80c6c57ec2a",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F3/K3/r0.json": "1c0e545635c3ff38eac2c43e30de3c17c83cfd4cad7c773695fc1e43904aae8a",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B1/F3/K5/r0.json": "6a8d40e5d7601ece2a5976f8fc30964b8c27593f815a3aeaf1340ce5f2362eeb",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F0/K1/r0.json": "a8e350baa0ce8e5286de937749a65abd0008b4d9988e53f80598cd2dc306d093",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F0/K3/r0.json": "4f34b314dc62c0386d02fe763edaa634e5eb9198a52524a98bd7ee87fd04267f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F0/K5/r0.json": "beffd434029f358860a790073d7d6b40e89e845cad13f1d34e68e54b41a65f96",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F1/K1/r0.json": "91b77dbc48c58a018ee1047e30376c7851c2bd6fbc4ae683ed2dc347e3a43e86",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F1/K3/r0.json": "546f040229390c0a420b321af8f1b3d020aa5e63fb201112aedc91ec7d712e59",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F1/K5/r0.json": "2601af1d4063885ddba653994b15750a257fd7e5f16dadc8d9bf5bba4cda6f70",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F2/K1/r0.json": "ded91aae9d50c5272231c4e2a0914a2406c7b2ea6df631082489168865d4cc60",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F2/K3/r0.json": "5bf0888f1d95973de2ce18bc95f35b93da10600f1ecfb9d783787899b9456f19",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F2/K5/r0.json": "51d3f18a0277861f4753350dab5a66c6dd75129b567ba04e1133627ae1ce744a",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F3/K1/r0.json": "7473d7418e9a9d4aa53383d18f15921f5127b9b7d25d4ad5b9a7f04eaf6cad0a",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F3/K3/r0.json": "83d771369b45b687c49e9dc458d270c7a998833c95c334509be76f749653537d",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B1_frozen_r0_20261111/events/retained_gp/uji/B1/F3/K5/r0.json": "045504a5d7f19d66e484f37da2d220277cd6adb4f9cd67207a1fbe7c4030523e"
+  },
+  "code_sha256": "ddf1f04db4f2cd55a05c07ff5511297f311854076a405eb7168dcbdf4b6ab6ea",
+  "new_models": 0,
+  "new_history_fits": 0
+}
