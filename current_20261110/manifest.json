@@ -25,7 +25,8 @@
     "observation_translation_tasks",
     "observation_translation_model",
     "observation_translation_trial",
-    "observation_translation_readout_trial"
+    "observation_translation_readout_trial",
+    "joint_support_translation"
   ],
   "files": [
     {
@@ -477,12 +478,32 @@
       "path": "src/observation_translation_readout_trial.py",
       "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/observation_translation_readout_trial.py",
       "sha256": "f2167f4bb33e9c57b6923365ac92f776c7c532cdfc9c33f1c1a7ac99d3ba6ed2"
+    },
+    {
+      "path": "src/joint_support_translation.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/joint_support_translation.py",
+      "sha256": "8584097ebaa6c455a08dd7771942b77d2fe721ed1e7ea46fc36f2d1d325cc924"
+    },
+    {
+      "path": "evidence/observation_translation_readout_20261110/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_readout_20261110/complete.json",
+      "sha256": "9e1b776f3cd48e086644af5bf1b57a4297a867aac15b862fb7da84e3553db34e"
+    },
+    {
+      "path": "evidence/observation_translation_readout_20261110/freeze.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_readout_20261110/freeze.json",
+      "sha256": "4e77bdc04368aaf84639f18efce643fea6931dc4700332430652972bcce2c42e"
+    },
+    {
+      "path": "evidence/observation_translation_readout_20261110/source_representatives.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_readout_20261110/source_representatives.json",
+      "sha256": "44a54d0407387c2e188f69d62c61b91a65f46a23e0ef8c25de415a58ddab72e0"
     }
   ],
   "sync": {
     "date": "2026-11-10",
     "preserved_collaborator_commit": "b0800c6dd5bbd41f052a98c5b6658fca55bd42d4",
     "translator_assets": "B0-only seeds1–5 and all54 system events complete; reusable H/S modules statically reviewed; formal Tab/relation training remains paused",
-    "next_learning_object": "Frozen observation model completed: 72 legal source tables, 27 validation events MDE5.5443m; all54 target events MDE12.7186m. No target training. One information-matched readout comparison implemented; no new training or fusion."
+    "next_learning_object": "Frozen-model readout comparison complete: probability12.7186m versus quantized-map3NN12.6584m, no new training. JointSupportTranslation implements arbitrary-XY total GP moment access for future translator features, statically reviewed but not run/integrated."
   }
 }
