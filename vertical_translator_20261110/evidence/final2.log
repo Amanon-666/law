@@ -1,0 +1,21 @@
+lobo seed 1 {'H': 11.741, 'HS': 10.947}
+lobo seed 2 {'H': 11.825, 'HS': 10.112}
+lobo seed 3 {'H': 11.541, 'HS': 10.239}
+lobo seed 4 {'H': 11.595, 'HS': 10.699}
+lobo seed 5 {'H': 11.653, 'HS': 10.274}
+  train        method   mean     K1     K3     K5   B1F0  B1F1   B1F2   B1F3   B2F0  B2F1  B2F2  B2F3   B2F4
+0  lobo   H_ensemble5  11.55  12.10  11.83  10.71  11.36  9.79  10.57  15.64  16.14  9.05  6.04  8.86  16.16
+1  lobo  HS_ensemble5  10.43  10.78  10.51   9.99   8.27  9.39   9.56  15.04  14.92  8.45  6.48  8.33  13.25
+lobo H seeds mean 11.671 sd 0.102 min 11.541 max 11.825
+lobo HS seeds mean 10.455 sd 0.316 min 10.112 max 10.947
+b0only seed 1 {'H': 10.991, 'HS': 10.841}
+b0only seed 2 {'H': 11.292, 'HS': 10.902}
+b0only seed 3 {'H': 11.496, 'HS': 10.587}
+b0only seed 4 {'H': 11.764, 'HS': 10.873}
+b0only seed 5 {'H': 11.486, 'HS': 10.753}
+    train        method   mean     K1     K3     K5   B1F0  B1F1   B1F2   B1F3   B2F0  B2F1  B2F2  B2F3   B2F4
+0  b0only   H_ensemble5  11.39  11.69  11.58  10.90   9.26  9.69  10.35  14.30  17.25  9.71  6.52  8.35  17.62
+1  b0only  HS_ensemble5  10.57  11.57  10.66   9.47  10.53  9.21  10.72  10.31  14.36  8.89  6.75  8.59  16.11
+b0only H seeds mean 11.406 sd 0.256 min 10.991 max 11.764
+b0only HS seeds mean 10.791 sd 0.114 min 10.587 max 10.902
+exit=0
