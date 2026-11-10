@@ -1,0 +1,252 @@
+{
+  "method": "ours_naive_noM2",
+  "source_fit": {
+    "status": "completed",
+    "seconds": 2.2482285164296627,
+    "sha256": "6becc51c9e62630fb8982e7dd470632c235dc0b67d6906a46fb725d42f65f2a8",
+    "source_buildings": [
+      "B0",
+      "B2"
+    ]
+  },
+  "by_K": {
+    "1": {
+      "tasks": 20,
+      "completed_tasks": 20,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 16.839546005764145,
+      "p50": 12.685718120827701,
+      "p90": 34.12304217806613,
+      "query_positions": 660
+    },
+    "3": {
+      "tasks": 20,
+      "completed_tasks": 20,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 16.47011520276205,
+      "p50": 12.557243505556313,
+      "p90": 33.18623852932154,
+      "query_positions": 660
+    },
+    "5": {
+      "tasks": 20,
+      "completed_tasks": 20,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 16.45005761773956,
+      "p50": 12.493416582784292,
+      "p90": 32.99088116035684,
+      "query_positions": 660
+    }
+  },
+  "by_floor": {
+    "0": {
+      "1": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 19.17548248711451,
+        "p50": 14.754354297274844,
+        "p90": 40.16346925694563,
+        "query_positions": 190
+      },
+      "3": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 19.013383928036617,
+        "p50": 14.59859736664784,
+        "p90": 40.16075526581812,
+        "query_positions": 190
+      },
+      "5": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 19.087404298491407,
+        "p50": 14.598597366956643,
+        "p90": 40.156115125481065,
+        "query_positions": 190
+      }
+    },
+    "1": {
+      "1": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 11.63628482835059,
+        "p50": 11.142424633634551,
+        "p90": 18.026598913285767,
+        "query_positions": 150
+      },
+      "3": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 11.57819743135712,
+        "p50": 10.722770920976375,
+        "p90": 18.13547117523965,
+        "query_positions": 150
+      },
+      "5": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 11.65138879934181,
+        "p50": 10.722770920975366,
+        "p90": 18.218719704853388,
+        "query_positions": 150
+      }
+    },
+    "2": {
+      "1": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 12.982948566050823,
+        "p50": 11.214535340231992,
+        "p90": 24.572334881273314,
+        "query_positions": 195
+      },
+      "3": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 12.158359876988376,
+        "p50": 10.973953255841181,
+        "p90": 23.07874910087825,
+        "query_positions": 195
+      },
+      "5": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 11.993007099680886,
+        "p50": 10.90774952713302,
+        "p90": 22.621016398894685,
+        "query_positions": 195
+      }
+    },
+    "3": {
+      "1": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 25.549127972960655,
+        "p50": 22.187669726354965,
+        "p90": 49.90164187300241,
+        "query_positions": 125
+      },
+      "3": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 25.200986374237548,
+        "p50": 20.290186612602124,
+        "p90": 49.90173535266722,
+        "query_positions": 125
+      },
+      "5": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 25.15269205324558,
+        "p50": 20.069681130772192,
+        "p90": 49.901707449231715,
+        "query_positions": 125
+      }
+    }
+  },
+  "task_records": [
+    "events/ours_naive_noM2/uji/B1/F0/K1/r0.json",
+    "events/ours_naive_noM2/uji/B1/F0/K3/r0.json",
+    "events/ours_naive_noM2/uji/B1/F0/K5/r0.json",
+    "events/ours_naive_noM2/uji/B1/F0/K1/r1.json",
+    "events/ours_naive_noM2/uji/B1/F0/K3/r1.json",
+    "events/ours_naive_noM2/uji/B1/F0/K5/r1.json",
+    "events/ours_naive_noM2/uji/B1/F0/K1/r2.json",
+    "events/ours_naive_noM2/uji/B1/F0/K3/r2.json",
+    "events/ours_naive_noM2/uji/B1/F0/K5/r2.json",
+    "events/ours_naive_noM2/uji/B1/F0/K1/r3.json",
+    "events/ours_naive_noM2/uji/B1/F0/K3/r3.json",
+    "events/ours_naive_noM2/uji/B1/F0/K5/r3.json",
+    "events/ours_naive_noM2/uji/B1/F0/K1/r4.json",
+    "events/ours_naive_noM2/uji/B1/F0/K3/r4.json",
+    "events/ours_naive_noM2/uji/B1/F0/K5/r4.json",
+    "events/ours_naive_noM2/uji/B1/F1/K1/r0.json",
+    "events/ours_naive_noM2/uji/B1/F1/K3/r0.json",
+    "events/ours_naive_noM2/uji/B1/F1/K5/r0.json",
+    "events/ours_naive_noM2/uji/B1/F1/K1/r1.json",
+    "events/ours_naive_noM2/uji/B1/F1/K3/r1.json",
+    "events/ours_naive_noM2/uji/B1/F1/K5/r1.json",
+    "events/ours_naive_noM2/uji/B1/F1/K1/r2.json",
+    "events/ours_naive_noM2/uji/B1/F1/K3/r2.json",
+    "events/ours_naive_noM2/uji/B1/F1/K5/r2.json",
+    "events/ours_naive_noM2/uji/B1/F1/K1/r3.json",
+    "events/ours_naive_noM2/uji/B1/F1/K3/r3.json",
+    "events/ours_naive_noM2/uji/B1/F1/K5/r3.json",
+    "events/ours_naive_noM2/uji/B1/F1/K1/r4.json",
+    "events/ours_naive_noM2/uji/B1/F1/K3/r4.json",
+    "events/ours_naive_noM2/uji/B1/F1/K5/r4.json",
+    "events/ours_naive_noM2/uji/B1/F2/K1/r0.json",
+    "events/ours_naive_noM2/uji/B1/F2/K3/r0.json",
+    "events/ours_naive_noM2/uji/B1/F2/K5/r0.json",
+    "events/ours_naive_noM2/uji/B1/F2/K1/r1.json",
+    "events/ours_naive_noM2/uji/B1/F2/K3/r1.json",
+    "events/ours_naive_noM2/uji/B1/F2/K5/r1.json",
+    "events/ours_naive_noM2/uji/B1/F2/K1/r2.json",
+    "events/ours_naive_noM2/uji/B1/F2/K3/r2.json",
+    "events/ours_naive_noM2/uji/B1/F2/K5/r2.json",
+    "events/ours_naive_noM2/uji/B1/F2/K1/r3.json",
+    "events/ours_naive_noM2/uji/B1/F2/K3/r3.json",
+    "events/ours_naive_noM2/uji/B1/F2/K5/r3.json",
+    "events/ours_naive_noM2/uji/B1/F2/K1/r4.json",
+    "events/ours_naive_noM2/uji/B1/F2/K3/r4.json",
+    "events/ours_naive_noM2/uji/B1/F2/K5/r4.json",
+    "events/ours_naive_noM2/uji/B1/F3/K1/r0.json",
+    "events/ours_naive_noM2/uji/B1/F3/K3/r0.json",
+    "events/ours_naive_noM2/uji/B1/F3/K5/r0.json",
+    "events/ours_naive_noM2/uji/B1/F3/K1/r1.json",
+    "events/ours_naive_noM2/uji/B1/F3/K3/r1.json",
+    "events/ours_naive_noM2/uji/B1/F3/K5/r1.json",
+    "events/ours_naive_noM2/uji/B1/F3/K1/r2.json",
+    "events/ours_naive_noM2/uji/B1/F3/K3/r2.json",
+    "events/ours_naive_noM2/uji/B1/F3/K5/r2.json",
+    "events/ours_naive_noM2/uji/B1/F3/K1/r3.json",
+    "events/ours_naive_noM2/uji/B1/F3/K3/r3.json",
+    "events/ours_naive_noM2/uji/B1/F3/K5/r3.json",
+    "events/ours_naive_noM2/uji/B1/F3/K1/r4.json",
+    "events/ours_naive_noM2/uji/B1/F3/K3/r4.json",
+    "events/ours_naive_noM2/uji/B1/F3/K5/r4.json"
+  ],
+  "unavailable": []
+}

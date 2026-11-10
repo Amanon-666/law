@@ -3,7 +3,7 @@
 gp_S   SIMPLIFIED GP fingerprinting (not a faithful Ferris 2006 reproduction): per AP a GP over position fitted to
        the target calibration S only (constant prior mean = S mean of that AP); whole-scan Gaussian likelihood on a
        2 m grid raised to the power 1/n_used (the tempering of Ferris et al. eq. 14, gamma = 1/#APs used),
-       posterior mean. Not-detected handled by -105 encoding, not by a censoring model.
+       MAP position (the tempered posterior mean degenerates to the grid centroid). Not-detected handled by -105 encoding, not by a censoring model.
 gp_HS  same GP and reader, but the prior mean is the history reference field (nearest lower/upper history floor
        at the same planar position, as in translator.history_features 'ref'), and the GP models the residual of S
        around it. This is the standard 'history as prior mean + few-shot Bayesian correction' recipe
@@ -45,13 +45,18 @@ def grid_of(xy, step=2.0):
     return np.c_[gx.ravel(), gy.ravel()]
 
 
-def locate(q_enc, mu, var, grid, aps_mask=None):
-    """Gaussian whole-scan likelihood on the grid; posterior mean"""
+def locate(q_enc, mu, var, grid, aps_mask=None, readout='map'):
+    """Gaussian whole-scan likelihood on the grid, tempered by 1/n_used (Ferris eq. 14); MAP readout.
+    (2026-11-11: the posterior MEAN of the 1/n-tempered posterior is nearly flat and collapses to the grid centroid
+    - observed ~36 m on the UJI B0 fold - so the readout is the maximum, which tempering does not change.)"""
     out = np.empty((len(q_enc), 2))
     for i, q in enumerate(q_enc):
         use = (q > ND) | (mu.max(0) > ND + 5) if aps_mask is None else aps_mask
         ll = -0.5 * (((q[use][None] - mu[:, use]) ** 2) / var[:, None] + np.log(var)[:, None]).sum(1) / max(use.sum(), 1)
-        w = np.exp(ll - logsumexp(ll)); out[i] = w @ grid
+        if readout == 'map':
+            out[i] = grid[np.argmax(ll)]
+        else:                                  # original posterior-mean readout (kept as its own version)
+            w = np.exp(ll - logsumexp(ll)); out[i] = w @ grid
     return out
 
 
@@ -61,23 +66,23 @@ def s_positions(s_rss, s_xy):
     np.add.at(Y, inv, enc(s_rss)); return P, Y / c
 
 
-def gp_S(s_rss, s_xy, q_rss, bounds_xy, hyper):
+def gp_S(s_rss, s_xy, q_rss, bounds_xy, hyper, readout='map'):
     """S enters scan by scan (<= K x R rows, repeated positions kept; sn2 is the per-scan noise)"""
     ell, sf2, sn2 = hyper
     P, Y = s_xy, enc(s_rss)
     m0 = Y.mean(0)
     grid = grid_of(bounds_xy)
     mu, var = gp_posterior(P, Y - m0, grid, ell, sf2, sn2)
-    return locate(enc(q_rss), mu + m0, var, grid)
+    return locate(enc(q_rss), mu + m0, var, grid, readout=readout)
 
 
-def gp_HS(s_rss, s_xy, q_rss, bounds_xy, ref_fn, hyper):
+def gp_HS(s_rss, s_xy, q_rss, bounds_xy, ref_fn, hyper, readout='map'):
     """ref_fn(X [n,2]) -> history reference field [n,A] (encoded dBm) at arbitrary positions"""
     ell, sf2, sn2 = hyper
     P, Y = s_xy, enc(s_rss)                                         # scan level, as in gp_S
     grid = grid_of(bounds_xy)
     mu, var = gp_posterior(P, Y - ref_fn(P), grid, ell, sf2, sn2)
-    return locate(enc(q_rss), mu + ref_fn(grid), var, grid)
+    return locate(enc(q_rss), mu + ref_fn(grid), var, grid, readout=readout)
 
 
 def fit_hyper(floors, grid=((4, 100, 16), (8, 100, 16), (16, 100, 16), (8, 50, 16), (8, 200, 16),

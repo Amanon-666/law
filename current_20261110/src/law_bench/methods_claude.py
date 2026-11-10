@@ -25,7 +25,13 @@ def _bounds_xy(task):
 
 
 class GpS(Method):
+    """readout: 'mean' (the first-run version, kept) | 'map' (argmax; unaffected by the 1/n tempering)"""
     name = 'gp_S'
+
+    def __init__(self, readout='mean'):
+        self.readout = readout
+        if readout != 'mean':
+            self.name = f'{self.name}_{readout}'
 
     def fit_source(self, sources):
         fl = []
@@ -36,7 +42,7 @@ class GpS(Method):
 
     def predict(self, task):
         a = _hs_aps(task)
-        return G.gp_S(task.S['rss'][:, a], task.S['xy'], task.Q_rss[:, a], _bounds_xy(task), self.hyper)
+        return G.gp_S(task.S['rss'][:, a], task.S['xy'], task.Q_rss[:, a], _bounds_xy(task), self.hyper, self.readout)
 
 
 class GpHS(GpS):
@@ -48,7 +54,7 @@ class GpHS(GpS):
         a = _hs_aps(task)
         maps = O.sub_maps(O.make_maps(task.H), a)
         ref_fn = lambda X: O.T.history_features(X, task.floor, {f: m[:3] for f, m in maps.items()})[1]
-        return G.gp_HS(task.S['rss'][:, a], task.S['xy'], task.Q_rss[:, a], _bounds_xy(task), ref_fn, self.hyper)
+        return G.gp_HS(task.S['rss'][:, a], task.S['xy'], task.Q_rss[:, a], _bounds_xy(task), ref_fn, self.hyper, self.readout)
 
 
 class OursMethod(Method):
