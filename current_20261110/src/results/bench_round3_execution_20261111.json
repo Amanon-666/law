@@ -1,6 +1,6 @@
 {
   "started_utc": "2026-11-10T22:16:35.345412+00:00",
-  "driver_pid": 3788958,
+  "driver_pid": 3877838,
   "folds": [
     {
       "stage": "readerablation",
@@ -149,8 +149,66 @@
       "end_utc": "2026-11-10T23:14:34.719992+00:00",
       "exact_replay_tasks": 75,
       "failed_events": [],
+      "unavailable": [],
+      "pushed_commit": "032d673d96c01ed759f6742ba3b9e938a2b59570"
+    },
+    {
+      "stage": "kcurve",
+      "building": "B0",
+      "output": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_kcurve_20261111",
+      "log": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_kcurve_20261111.log",
+      "start_utc": "2026-11-10T23:16:31.705094+00:00",
+      "command": [
+        "/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python",
+        "-u",
+        "-m",
+        "law_bench.run_claude",
+        "--dataset",
+        "uji",
+        "--building",
+        "B0",
+        "--methods",
+        "ours_loaded_same",
+        "wknn_S",
+        "wknn_HS",
+        "--method-options",
+        "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/bench_round3_B0_kcurve_options_20261111.json",
+        "--budgets",
+        "1",
+        "3",
+        "5",
+        "10",
+        "20",
+        "--repeats",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "--seed",
+        "20261111",
+        "--R",
+        "3",
+        "--query-positions",
+        "60",
+        "--output",
+        "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_kcurve_20261111"
+      ],
+      "python_pid": 3877839,
+      "exit_code": 0,
+      "end_utc": "2026-11-10T23:20:47.497630+00:00",
+      "failed_events": [],
       "unavailable": []
     }
   ],
-  "status": "fold_completed"
+  "status": "fold_completed",
+  "elapsed_seconds": 3489.3080315589905,
+  "previous_runs": [
+    {
+      "driver_pid": 3788958,
+      "status": "time_limit_no_new_fold",
+      "elapsed_seconds": 3489.3080315589905
+    }
+  ],
+  "resumed_utc": "2026-11-10T23:16:31.704708+00:00"
 }
