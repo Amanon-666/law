@@ -1,0 +1,26 @@
+{
+  "supervisor_pid": 3759741,
+  "timeout_pid": 3759744,
+  "started_at": "2026-11-10T21:56:22Z",
+  "ended_at": "2026-11-10T22:05:04Z",
+  "exit_code": 0,
+  "state": "exited",
+  "python_pid": 3759745,
+  "parent_reported_git_commit": "8d5c7e8b9aeccb295161fb0b9bd8149c1171c67f",
+  "local_source": "/Users/Admin/Desktop/project/\u8fc1\u79fb\u5b66\u4e60/ReFi-UJI-Core-20261031-recovered",
+  "provenance": "Recovered local folder has no .git; actual snapshot code SHA and six original Git blobs are recorded in freeze.json",
+  "upload": {
+    "tool": "rsync over SSH Mac to ray",
+    "file_bytes": 121766,
+    "sent_bytes": 124492,
+    "received_bytes": 550,
+    "scope": "rsync accounting excludes SSH overhead; no downloads"
+  },
+  "recovery": {
+    "tool": "rsync over SSH ray to Mac",
+    "file_bytes": 64749,
+    "sent_bytes": 364,
+    "received_bytes": 65465,
+    "scope": "rsync final stats exclude SSH overhead; model joblib and reference NPZ remain server-side"
+  }
+}

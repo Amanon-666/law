@@ -1,0 +1,204 @@
+{
+  "method": "trained_A_GP",
+  "source_fit": {
+    "status": "completed",
+    "seconds": 0.08080452680587769,
+    "sha256": "ec7e0a28c79be8a28779490511a9221ba31be7d219c5f0d1e77f3258ab7a6f24",
+    "source_buildings": [
+      "B1",
+      "B2"
+    ]
+  },
+  "by_K": {
+    "1": {
+      "tasks": 4,
+      "completed_tasks": 4,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 5.28738746878099,
+      "p50": 3.5898818934810435,
+      "p90": 14.194425754765804,
+      "query_positions": 129
+    },
+    "3": {
+      "tasks": 4,
+      "completed_tasks": 3,
+      "failed_tasks": 1,
+      "complete": false,
+      "unfinished_optimization_tasks": [],
+      "mean": 4.788881950388173,
+      "p50": 3.1518314849773468,
+      "p90": 13.119969712029851,
+      "query_positions": 102
+    },
+    "5": {
+      "tasks": 4,
+      "completed_tasks": 4,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 5.329030729872274,
+      "p50": 3.5732492936838773,
+      "p90": 12.75094017314017,
+      "query_positions": 129
+    }
+  },
+  "by_floor": {
+    "0": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 7.645145803927672,
+        "p50": 4.453707223212556,
+        "p90": 20.09497658169859,
+        "query_positions": 27
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 0,
+        "failed_tasks": 1,
+        "complete": false,
+        "unfinished_optimization_tasks": [],
+        "mean": null,
+        "p50": null,
+        "p90": null,
+        "query_positions": 0
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 8.07952133091334,
+        "p50": 5.077923270152639,
+        "p90": 20.04319249355859,
+        "query_positions": 27
+      }
+    },
+    "1": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 4.562035286767737,
+        "p50": 3.7664271999118983,
+        "p90": 9.415266876750845,
+        "query_positions": 33
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 4.660279729878883,
+        "p50": 3.826644668100443,
+        "p90": 8.737813498839882,
+        "query_positions": 33
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 4.686820789839339,
+        "p50": 3.854662844810651,
+        "p90": 9.564547128887273,
+        "query_positions": 33
+      }
+    },
+    "2": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 3.4140800426842284,
+        "p50": 2.9604542402376257,
+        "p90": 5.904553158461405,
+        "query_positions": 35
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 3.663765161258022,
+        "p50": 2.7544113741750498,
+        "p90": 5.71734503944461,
+        "query_positions": 35
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 3.542737551063036,
+        "p50": 2.48251578205451,
+        "p90": 5.995735771745415,
+        "query_positions": 35
+      }
+    },
+    "3": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 6.047472964982861,
+        "p50": 3.967802773956495,
+        "p90": 15.187510709527048,
+        "query_positions": 34
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 6.0719102120458714,
+        "p50": 4.084394838349693,
+        "p90": 16.134440264219297,
+        "query_positions": 34
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 5.606970231381144,
+        "p50": 3.497834060652514,
+        "p90": 12.839529004727623,
+        "query_positions": 34
+      }
+    }
+  },
+  "task_records": [
+    "events/trained_A_GP/uji/B0/F0/K1/r0.json",
+    "events/trained_A_GP/uji/B0/F0/K3/r0.json",
+    "events/trained_A_GP/uji/B0/F0/K5/r0.json",
+    "events/trained_A_GP/uji/B0/F1/K1/r0.json",
+    "events/trained_A_GP/uji/B0/F1/K3/r0.json",
+    "events/trained_A_GP/uji/B0/F1/K5/r0.json",
+    "events/trained_A_GP/uji/B0/F2/K1/r0.json",
+    "events/trained_A_GP/uji/B0/F2/K3/r0.json",
+    "events/trained_A_GP/uji/B0/F2/K5/r0.json",
+    "events/trained_A_GP/uji/B0/F3/K1/r0.json",
+    "events/trained_A_GP/uji/B0/F3/K3/r0.json",
+    "events/trained_A_GP/uji/B0/F3/K5/r0.json"
+  ],
+  "unavailable": []
+}

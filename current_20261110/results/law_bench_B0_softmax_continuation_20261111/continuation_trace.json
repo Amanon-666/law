@@ -1,0 +1,152 @@
+{
+  "trials": [
+    {
+      "start": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "weights": [
+        0.9999999899714008,
+        7.120925656033392e-11,
+        9.957389931508836e-09
+      ],
+      "objective": 3.519005092351446,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 42,
+      "simplex_kkt_residual": 0.03008062288307478,
+      "variational_gradient": 9.808404229857959e-07,
+      "stationary": false
+    },
+    {
+      "start": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "weights": [
+        0.9999996208837231,
+        3.162735698423496e-07,
+        6.284270721008407e-08
+      ],
+      "objective": 3.519005093071264,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 35,
+      "simplex_kkt_residual": 0.030074218476850767,
+      "variational_gradient": 9.99238412992265e-07,
+      "stationary": false
+    },
+    {
+      "start": [
+        0.1,
+        0.8,
+        0.1
+      ],
+      "weights": [
+        0.9999999934601487,
+        8.465902460786304e-11,
+        6.455192374869967e-09
+      ],
+      "objective": 3.519005091713865,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 42,
+      "simplex_kkt_residual": 0.03007688359538685,
+      "variational_gradient": 9.264465889741863e-07,
+      "stationary": false
+    },
+    {
+      "start": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "weights": [
+        0.999999996462638,
+        1.3935189899589164e-09,
+        2.1438429555224485e-09
+      ],
+      "objective": 3.519005090625201,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 46,
+      "simplex_kkt_residual": 0.030080396209274163,
+      "variational_gradient": 3.8485375495125873e-07,
+      "stationary": false
+    },
+    {
+      "kind": "simplex_mass_transfer",
+      "continuation_step": 1,
+      "initial_trial": 3,
+      "stationary": true,
+      "iterations": 14,
+      "old_objective": 3.519005090625201,
+      "old_weights": [
+        0.999999996462638,
+        1.3935189899589164e-09,
+        2.1438429555224485e-09
+      ],
+      "old_simplex_kkt_residual": 0.030080396209274163,
+      "old_variational_gradient": 3.8485375495125873e-07,
+      "donor": 0,
+      "recipient": 1,
+      "directional_derivative": -0.030080395849155117,
+      "optimizer_success": true,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "evaluations": 20,
+      "transfer": 0.011902952044565646,
+      "transfer_upper_bound": 0.999999996462638,
+      "weights": [
+        0.9880970444180724,
+        0.011902953438084635,
+        2.1438429555224485e-09
+      ],
+      "objective": 3.518826645737995,
+      "simplex_kkt_residual": 3.797252436932297e-07,
+      "variational_gradient": 7.56100693209363e-07,
+      "accepted": true
+    }
+  ],
+  "final": {
+    "kind": "simplex_mass_transfer",
+    "continuation_step": 1,
+    "initial_trial": 3,
+    "stationary": true,
+    "iterations": 14,
+    "old_objective": 3.519005090625201,
+    "old_weights": [
+      0.999999996462638,
+      1.3935189899589164e-09,
+      2.1438429555224485e-09
+    ],
+    "old_simplex_kkt_residual": 0.030080396209274163,
+    "old_variational_gradient": 3.8485375495125873e-07,
+    "donor": 0,
+    "recipient": 1,
+    "directional_derivative": -0.030080395849155117,
+    "optimizer_success": true,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "evaluations": 20,
+    "transfer": 0.011902952044565646,
+    "transfer_upper_bound": 0.999999996462638,
+    "weights": [
+      0.9880970444180724,
+      0.011902953438084635,
+      2.1438429555224485e-09
+    ],
+    "objective": 3.518826645737995,
+    "simplex_kkt_residual": 3.797252436932297e-07,
+    "variational_gradient": 7.56100693209363e-07,
+    "accepted": true
+  },
+  "original_four_trial_max_abs_differences": {
+    "objective": 0.0,
+    "simplex_kkt_residual": 0.0,
+    "variational_gradient": 0.0,
+    "weights": 0.0
+  },
+  "A_projected_max_abs_difference": 0.0,
+  "before_scoring": true
+}

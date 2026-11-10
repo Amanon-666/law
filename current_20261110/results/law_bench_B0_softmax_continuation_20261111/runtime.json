@@ -1,0 +1,20 @@
+{
+  "runner_pid": 3785350,
+  "timeout_pid": 3785353,
+  "started_at": "2026-11-10T22:14:22Z",
+  "ended_at": "2026-11-10T22:14:53Z",
+  "exit_code": 1,
+  "state": "exited",
+  "outer_timeout_seconds": 900,
+  "python_pid": 3785354,
+  "numerical_prediction_completed": true,
+  "postprocessing_recovered": true,
+  "finalization_exit_code": 0,
+  "transport": {
+    "upload_rsync_sent": 29273,
+    "upload_rsync_received": 202,
+    "recovery_rsync_sent": 966,
+    "recovery_rsync_received": 4452273,
+    "scope": "rsync final accounting, excludes SSH commands/overhead"
+  }
+}

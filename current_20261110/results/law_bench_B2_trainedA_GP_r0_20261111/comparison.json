@@ -1,0 +1,230 @@
+{
+  "complete": true,
+  "methods": {
+    "A": {
+      "tasks": 15,
+      "complete": true,
+      "query_positions": 606,
+      "mean": 10.00835320977832,
+      "p50": 6.782482804431199,
+      "p90": 20.933184887676465,
+      "by_K": {
+        "1": {
+          "tasks": 5,
+          "completed_tasks": 5,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 10.447338756761138,
+          "p50": 6.852325087605456,
+          "p90": 21.197258367036206,
+          "query_positions": 202
+        },
+        "3": {
+          "tasks": 5,
+          "completed_tasks": 5,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 9.902153782975214,
+          "p50": 6.749875357274291,
+          "p90": 20.892604601042795,
+          "query_positions": 202
+        },
+        "5": {
+          "tasks": 5,
+          "completed_tasks": 5,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 9.675567089598607,
+          "p50": 6.764506915489731,
+          "p90": 18.769427893130086,
+          "query_positions": 202
+        }
+      }
+    },
+    "GP": {
+      "tasks": 15,
+      "complete": true,
+      "query_positions": 606,
+      "mean": 13.13017718503476,
+      "p50": 8.799475809036975,
+      "p90": 30.175914009061227,
+      "by_K": {
+        "1": {
+          "tasks": 5,
+          "completed_tasks": 5,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 13.63082143792528,
+          "p50": 8.810267800049129,
+          "p90": 31.617328957972703,
+          "query_positions": 202
+        },
+        "3": {
+          "tasks": 5,
+          "completed_tasks": 5,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 12.698598341686594,
+          "p50": 8.692862180204115,
+          "p90": 27.83732237022046,
+          "query_positions": 202
+        },
+        "5": {
+          "tasks": 5,
+          "completed_tasks": 5,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 13.06111177549241,
+          "p50": 9.085420893554495,
+          "p90": 30.054296426002736,
+          "query_positions": 202
+        }
+      }
+    },
+    "A_GP": {
+      "tasks": 15,
+      "complete": true,
+      "query_positions": 606,
+      "mean": 8.78023868408056,
+      "p50": 6.293902540095125,
+      "p90": 17.636169027208425,
+      "by_K": {
+        "1": {
+          "tasks": 5,
+          "completed_tasks": 5,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 8.871797975400073,
+          "p50": 6.050992230642461,
+          "p90": 19.376572135007436,
+          "query_positions": 202
+        },
+        "3": {
+          "tasks": 5,
+          "completed_tasks": 5,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 8.60835791166968,
+          "p50": 6.279635867592498,
+          "p90": 16.71866289419127,
+          "query_positions": 202
+        },
+        "5": {
+          "tasks": 5,
+          "completed_tasks": 5,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 8.860560165171925,
+          "p50": 6.521790505235333,
+          "p90": 17.373753930729006,
+          "query_positions": 202
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "task_id": "uji/B2/F0/K1/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 34.268319960683584
+    },
+    {
+      "task_id": "uji/B2/F0/K3/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 34.30836348608136
+    },
+    {
+      "task_id": "uji/B2/F0/K5/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 37.82341806218028
+    },
+    {
+      "task_id": "uji/B2/F1/K1/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 27.759944461286068
+    },
+    {
+      "task_id": "uji/B2/F1/K3/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 32.14207952097058
+    },
+    {
+      "task_id": "uji/B2/F1/K5/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 35.44828016683459
+    },
+    {
+      "task_id": "uji/B2/F2/K1/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 30.184544678777456
+    },
+    {
+      "task_id": "uji/B2/F2/K3/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 34.21259829029441
+    },
+    {
+      "task_id": "uji/B2/F2/K5/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 37.80511977523565
+    },
+    {
+      "task_id": "uji/B2/F3/K1/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 24.93803694099188
+    },
+    {
+      "task_id": "uji/B2/F3/K3/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 29.412333235144615
+    },
+    {
+      "task_id": "uji/B2/F3/K5/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 32.29621687904
+    },
+    {
+      "task_id": "uji/B2/F4/K1/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 31.21003446727991
+    },
+    {
+      "task_id": "uji/B2/F4/K3/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 36.0939886122942
+    },
+    {
+      "task_id": "uji/B2/F4/K5/r0",
+      "A_max_abs_difference": 0.0,
+      "source_Query_rows_groups_meta_exact": true,
+      "seconds": 39.63979373127222
+    }
+  ],
+  "model_calls_for_rescoring": 0,
+  "extra_GP_inference_tasks": 15,
+  "recovery_reason": "Original immutable wrapper omitted GP_projected; original A/fusion retained, only native retained GP repeated with exact same recorded S state",
+  "identity": "Generic S-feature ours_A B0+B1 three models with fixed retained-GP half pool"
+}

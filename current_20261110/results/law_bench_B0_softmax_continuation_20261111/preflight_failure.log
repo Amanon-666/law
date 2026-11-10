@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/retry_task.py", line 169, in <module>
+    run()
+  File "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/retry_task.py", line 82, in run
+    loaded = {str(Path(m.__file__).resolve()): _sha(Path(m.__file__))
+                                               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/run.py", line 76, in _sha
+    with Path(path).open('rb') as stream:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '_ops.py'

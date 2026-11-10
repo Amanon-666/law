@@ -1,0 +1,17 @@
+{
+  "source_snapshot/tabicl_history.py": {
+    "before": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518",
+    "after": "2fcf9bbaaa9e9c4e0488d07658152c7132d8032980393129c15744f597e9bdc2",
+    "reason": "Existing bundle path only"
+  },
+  "source_snapshot/law_bench/method_tabicl.py": {
+    "before": "c2d710fc8318c23d3f99ea7720c132a086063db8c632da20c075c6855f96d0b0",
+    "after": "3c10c9ecb05ac0e5e00d18cdb3ca13c60589aed34ce7e9def071aa215b4cae24",
+    "reason": "Expose existing device parameter and map existing source catalog path; same checksum"
+  },
+  "source_snapshot/law_bench/run.py": {
+    "before": "f4b2784394650557b0dff62d5c593536c56fa4d107589a412926f366d18a1c00",
+    "after": "c07d911616ca9b2190da7453c94dbda551926d2523912e5de00092cb46804f09",
+    "reason": "Preserve Slurm device visibility"
+  }
+}

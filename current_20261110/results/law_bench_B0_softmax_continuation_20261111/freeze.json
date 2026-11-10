@@ -1,0 +1,129 @@
+{
+  "created": "2026-11-10T22:14:24.535988+00:00",
+  "task_id": "uji/B0/F0/K3/r0",
+  "parent_reported_commit": "29ec1a8872b6705f3cd1e6d3f182986c7b226745",
+  "actual_adaptation_import": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/adaptation.py",
+  "adaptation_sha256": "ea59beed0a92d6a5ecab00ce5729b8e59a9e4fff1d837cab8ef5cca214c1ae87",
+  "driver_sha256": "3a095105987e6db4564972a27a1b2f05e307a43178277209acc5ee6a51580e63",
+  "loaded_code_sha256": {
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/retry_task.py": "3a095105987e6db4564972a27a1b2f05e307a43178277209acc5ee6a51580e63",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/fields.py": "25d9d929d317baf38e16924822d26b77a9d94a35be6dbea0cfda0c16818efbbb",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/observations.py": "930fdd3ffe2a2bb40dbcd897aae61b6cf0efc0b4e1ce9548fedc113e9ce059c7",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/adaptation.py": "ea59beed0a92d6a5ecab00ce5729b8e59a9e4fff1d837cab8ef5cca214c1ae87",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/__init__.py": "6647f153fcd3bdd10261969bd07b3695936399968561b582ff25666629af2c5e",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/task.py": "e903b275f67700970f676551668b74e8dedf60a7a3a4d7b4062742901f76f28d",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/protocol.py": "804461986101fad2904eba94232e533f0bf25128d99a14d2b4ce6346498f8bee",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/data.py": "a383d8f733f79db41181fa0bacdb123e4106da863a482a9bca7a621f1b6d02bd",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/score.py": "c4abfa7fbe008ac994a6ba4790c7ef3f25da11d07c5391367043936d95af6f3e",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/run.py": "d3b8897cda28b3a931e4d96e7675ac57c8c0a0e6cc6a5b96aa2caaa616042ad2",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/method_retained_gp.py": "7d47af9151f59269ee8eb18813ac2e26bd9cc62deedafffa8d3d9bdfebd0f749",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/method_trained_field_gp.py": "2e816861dd328153d94c5d440ca85a9bc1351da617e0643b8db7dcc0a39f26fd",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/sampling.py": "7e6168c9ec72c14d66a6e2d947a7a1cda46b6e98a60772b5272b107c0a3e0add",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/posterior.py": "72b31b7e548b4b0eaa68a9fd63cfce1d7f3f020902a834ec90da3e37272eca4d",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/predict.py": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/uji.py": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/recomposition.py": "2aaa6a88aaf273610c25646ac9abcc8a99c83173f9d249dd80e632952a5a925d",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/conditional_shape.py": "c0ab0c99da4ca6e5e506cdcfd989a124f48f14f600d856d7d868696c0e4502d9",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/support_recomposition.py": "6f71a906d95373656b230faacd5edba73f0f7e05f65ea423b93f1a0d43fe13bf",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/episode_queries.py": "460ea77b0a2a4a6a86ff702061be08cc6e1abdff3055ffc5e92e854f3bfb0488",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/episodic_tasks.py": "cc2461e847889d4929af1f9be661214b6e6e1c5529d5550cb4d38cd76e94c02f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/tabicl_history.py": "8a5424dd930fd8b0ee9bcdb29849786f970a4c0ab4d96799d03ce7e6201b7518",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/building_information_tab_trial.py": "44a1579a63c5dbe6ceb12abeba90a16f019b474bb8158e68e4a82200bbfdc834",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/building_information_gp_trial.py": "dd49fa8b7cd023b8faf1ac1470cf94c4e4f92a2af86447c9a6458ba69ad3eaed",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/position_fusion_gp.py": "7c1f3397bff78d94fd1140dac52f1c00ba591f32227820f3f4ed2361ee2b9f91",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/cached_retained_readout.py": "13384ea458e522b01fba46609114bb752827246b6bfae9d0b2b74afdcc08616c"
+  },
+  "inputs_sha256": {
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/freeze.json": "9df10a1d33ab572b389183f04caa0d8e1985366842aac8a50170e390f04cff65",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F0/K3/r0.json": "df3b1c2eaef5998449b37057a05e8945c94233bd3d565b562f6a0d0020cf3043",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_A_20261111/freeze.json": "589e2b9c496917aa3dc16ac3695ef0ea2f9dbe1a6c3a8c752c7e26828423b608",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_A_20261111/source_models/ours_A.joblib": "18ca9d2aad3999f4abb06982fa07366e5ae2123086621edec6dd15dde7c04ec8",
+    "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_A_20261111/source_models/ours_A.json": "31b9c4e2eafc383010a2b76833a34913d64c5deaca7fde62e25851d2bf4f12b7",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/same_output_scores.json": "91bc098ef4c842474c32d576e5ab3efb140fdf12f8e4b93841dfbd5e00a203de",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/comparison.json": "c2a597fcf80a883bde8ec3e7a6b626656554014602a60c9dec60c4b16fab332c",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F0/K1/r0.json": "f97eef3d848ee2c720e82f86eeb1441fa4d31a6507af4a35e035178d419f9e96",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F0/K5/r0.json": "9f6327532c10a902d6eca5eb359b5edcffeba80075d4a3ed76c12b0f423eb0ee",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F1/K1/r0.json": "c4b53c0f2ef9aeda3d7f65d76e5064ad68cc90cbb72a6ce36e351e6387910aee",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F1/K3/r0.json": "4f9b75bc1834e7ee886039def4eec34cb5efd85263ed1451afcdbe507978ae65",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F1/K5/r0.json": "2f3e459bbe0b40a8030edc727d797cdea733227c8081b6ed25161c6a5d9d8c59",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F2/K1/r0.json": "2096225366cde3e0e4ae2444671cd619cb6c3a64ba232dbd0618a3507ed09d55",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F2/K3/r0.json": "f386f5f915ac8640855f4fca363447dad9f8aa77e5048ea7ef102152886d66f9",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F2/K5/r0.json": "03ed0f71f80dcbb30757126d164bbf85a98f9a849552af03811a9bb8534f15c3",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F3/K1/r0.json": "4975600304098dd86136550aad023bf33521e03d79cc63e04186b8eb000a94ce",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F3/K3/r0.json": "467bc4bcbac43343ff9d5eed70c9421f48c49d7770217bcc8ec898d57e9ad2a8",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_trainedA_GP_r0_20261111/events/trained_A_GP/uji/B0/F3/K5/r0.json": "fda8a6de9e836d2bce9c2f0bb745ba9421ec63ced7d604f6dfefc454671c7188"
+  },
+  "original_configuration": {
+    "dataset": "uji",
+    "building": "B0",
+    "protocol": "static-resample-v2",
+    "manifest": null,
+    "root": null,
+    "source_dataset": null,
+    "source_root": null,
+    "source_buildings": [
+      "B1",
+      "B2"
+    ],
+    "floors": null,
+    "budgets": [
+      1,
+      3,
+      5
+    ],
+    "repeats": [
+      0
+    ],
+    "seed": 20261111,
+    "R": 3,
+    "query_positions": 60,
+    "methods": [
+      "trained_A_GP"
+    ],
+    "method_options": {
+      "trained_A_GP": {
+        "source_run": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_A_20261111",
+        "gp_options": {
+          "parameters_path": "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/Law-Probabilistic-Transfer-20261023/results/source_base_B1_20261028/parameters.json",
+          "cache_dir": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_B1parameters_fullH_cache_20261111",
+          "fit_missing_history": false,
+          "provenance": {
+            "parameters_sha256": "ef59c9a4335fd4398c945cd2fc138f847f8a7a6599e77b5e742033bd039588db",
+            "training_sources": [
+              {
+                "dataset": "uji",
+                "building": "B1"
+              }
+            ],
+            "evidence": {
+              "freeze_path": "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/Law-Probabilistic-Transfer-20261023/results/source_base_B1_20261028/freeze.json",
+              "freeze_sha256": "b5bc8db9cdfa0eb2167b922c83410a693b5de76adac149fbb8c82c36ed111b26",
+              "source_floors": [
+                "B1F0",
+                "B1F1",
+                "B1F2",
+                "B1F3"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "alignment_sha256": "19eb846121d28d2df60501b0b9766a08f5c90a69ca44c06b4a43d73ff8ef33ab",
+  "source_data": {
+    "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11",
+    "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+  },
+  "recipe": "Original four starts and thresholds; bounded simplex mass transfer only after all original starts fail direct KKT with converged variational gradient",
+  "A_identity": "Saved generic S-feature ours_A variant, not original five-seed HurdleField",
+  "resources": {
+    "CPU_threads": 2,
+    "nice": 10,
+    "GPU": 0,
+    "downloads": 0
+  },
+  "history_fits": 0,
+  "model_training": 0,
+  "target_Q_used_for_adaptation": false
+}

@@ -1,0 +1,34 @@
+{
+  "imported_fields": 582,
+  "skipped_empty_fields": 1498,
+  "history_keys": {
+    "0": "3c11ef5b6548ad6d3842dd243c76910864f33bfc7da4f3200b31d6ca053a5780",
+    "1": "3c30cfbdb2aab1d58465af5e06816daf5d14823c11b42811998ad25564e3c10f",
+    "2": "02788020271eacb304337f1ee7ad50d54e9f3e258b3b04c92c33b2174d370196",
+    "3": "64a0dc19736d8fdb8fd2912b01198b74a105cb2eb2daa0054fbfa89990a078cf"
+  },
+  "gp_options": {
+    "parameters_path": "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/Law-Probabilistic-Transfer-20261023/results/source_base_B1_20261028/parameters.json",
+    "cache_dir": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_B1parameters_fullH_cache_20261111",
+    "fit_missing_history": false,
+    "provenance": {
+      "parameters_sha256": "ef59c9a4335fd4398c945cd2fc138f847f8a7a6599e77b5e742033bd039588db",
+      "training_sources": [
+        {
+          "dataset": "uji",
+          "building": "B1"
+        }
+      ],
+      "evidence": {
+        "freeze_path": "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/Law-Probabilistic-Transfer-20261023/results/source_base_B1_20261028/freeze.json",
+        "freeze_sha256": "b5bc8db9cdfa0eb2167b922c83410a693b5de76adac149fbb8c82c36ed111b26",
+        "source_floors": [
+          "B1F0",
+          "B1F1",
+          "B1F2",
+          "B1F3"
+        ]
+      }
+    }
+  }
+}

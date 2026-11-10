@@ -1,0 +1,9 @@
+Component 0 died because of too few (2) samples.
+Component 0 died because of too few (1) samples.
+Traceback (most recent call last):
+  File "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/retry_task.py", line 170, in <module>
+    run()
+  File "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/retry_task.py", line 140, in run
+    records = [replacement if r['task_id']==TASK_ID else r for r in saved[method]]
+                                                                    ~~~~~^^^^^^^^
+KeyError: 'A_GP'

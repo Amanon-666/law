@@ -1,0 +1,17 @@
+start=2026-11-10T21:40:16Z runner_pid=3737294
+child_pid=3737297
+Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.
+Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/linear_operator/utils/interpolation.py:69: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:653.)
+  summing_matrix = cls(summing_matrix_indices, summing_matrix_values, size)
+{"method": "scaml", "task": "uji/B1/F0/K1/r0", "status": "completed"}
+Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.
+Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+{"method": "scaml", "task": "uji/B1/F0/K3/r0", "status": "completed"}
+Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.
+Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+{"method": "scaml", "task": "uji/B1/F0/K5/r0", "status": "completed"}
+end=2026-11-10T21:46:47Z elapsed_seconds=391 exit_code=0

@@ -42,6 +42,8 @@ class Task:
 
     @property
     def task_id(self):
+        if self.meta.get('protocol') == 'legacy54':
+            return f"{self.dataset}/{self.building}/legacy54/{self.meta['legacy_event_id']}"
         return f'{self.dataset}/{self.building}/F{self.floor}/K{self.K}/r{self.repeat}'
 
 

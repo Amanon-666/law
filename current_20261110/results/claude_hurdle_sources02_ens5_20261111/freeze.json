@@ -1,0 +1,101 @@
+{
+  "created": "2026-11-10T21:56:23.168281+00:00",
+  "upstream_commit": "a9e353712e6112a5b33998a47cb409292dfcf069",
+  "upstream_git_blobs": {
+    "core.py": "0989ad8ad670ca622bbe4f8bd6f477fe6ade1755",
+    "translator.py": "6f02006dcc539447222ca91ea75d4104ee218c79",
+    "vt_lib.py": "672a54c8bb1a134c798eab6ce6eac9aea7ddb755",
+    "protocol9.py": "4eb097c6d45fb12b1c7759b79f778bfe5a9c7865",
+    "hurdle.py": "72d427d08a0e834dacd78a6b13c59dcce1adf526",
+    "run_nine_floor_hurdle.py": "6ee9e07a8f5bcec916512a955f3fb40b0e4db6e9"
+  },
+  "train": "explicit_sources",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "draws": 4,
+  "source_buildings": [
+    0,
+    2
+  ],
+  "source_floors": {
+    "0": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "2": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "source_rows_by_floor": {
+    "B0F0": 1059,
+    "B2F3": 2709,
+    "B2F2": 1577,
+    "B2F4": 1102,
+    "B2F1": 2162,
+    "B2F0": 1942,
+    "B0F2": 1443,
+    "B0F1": 1356,
+    "B0F3": 1391
+  },
+  "source_permission": "Original full corpus of the ordered source buildings; original sampling, label-dependent cell selection and scan-count weights preserved",
+  "fit": "Verbatim hurdle.HurdleField([0, 2], seed=seed, draws=4), including original estimator defaults",
+  "reader": {
+    "beta": 128.0,
+    "eps": 0.02,
+    "offsets": [
+      -8.0,
+      -4.0,
+      0.0,
+      4.0,
+      8.0
+    ],
+    "selection_source": "UJI B0 development; not independent of B0",
+    "evaluation_status": "exposed_development"
+  },
+  "code": {
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_sources02_ens5_20261111_source/source_snapshot/claude_hurdle_assets.py": "23a4dd91374e62a3e41a65c98183f6a4a65189547886c5dab114683739ca1b54",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_sources02_ens5_20261111_source/source_snapshot/claude_hurdle_20261110/core.py": "b49e9b266d79d38bff9c872ce661527e575d6868a7da516570e1703a7a7ef1dc",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_sources02_ens5_20261111_source/source_snapshot/claude_hurdle_20261110/translator.py": "50b51aa05330ec1b7335b8be7f8c72f7200de198a933c950e19a9acfd582eacd",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_sources02_ens5_20261111_source/source_snapshot/claude_hurdle_20261110/vt_lib.py": "6342988bb2ccdf49ae7a29152ac2e7276b2fa92629a41d51f28af82856a579bd",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_sources02_ens5_20261111_source/source_snapshot/claude_hurdle_20261110/protocol9.py": "fac717eb291bee42e8a74ae48199376308a737aa92879b55c6fe0edc93bab80d",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_sources02_ens5_20261111_source/source_snapshot/claude_hurdle_20261110/hurdle.py": "768775984a59f365680b7cb4162a5a705279ce542a37596a3396eb9d7cf0d862",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_sources02_ens5_20261111_source/source_snapshot/claude_hurdle_20261110/run_nine_floor_hurdle.py": "94ae7776d5d142818141c9c92db8562fde83482c1c7d66523bf402a0b6aebba1"
+  },
+  "inputs": {
+    "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "runtime": {
+    "python": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python",
+    "pythonpath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages:/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/python_dependencies:/home/panyushuo/projects/panyushuo/multifloor-check-20261026/env/lib/python3.12/site-packages"
+  },
+  "resources": {
+    "CPU_threads": 2,
+    "GPU": 0,
+    "seconds": 840.0,
+    "external_timeout": 900,
+    "downloads": 0
+  },
+  "purpose": "Persist deployable five-model assets, not repeat the nine-floor evaluation",
+  "reference": "One source-context scan, no error scoring; used only to bind the portable deployment reader",
+  "access": "Upstream eagerly reads full CSV and precomputes floor statistics; only allowed sources enter fit and reference prediction",
+  "performance": "Asset export only; no new localization score"
+}

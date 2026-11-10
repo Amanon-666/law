@@ -1,0 +1,100 @@
+{
+  "complete": false,
+  "phase": "seed_saved",
+  "models": [
+    {
+      "seed": 1,
+      "path": "seed_1.joblib",
+      "sha256": "8d47b743ca4146158cc36f7a8809b090af44783b98ebb4c1b52344a58ae6ad73",
+      "bytes": 8834001,
+      "seconds": 15.149783086031675,
+      "selected_cells": 288000,
+      "upweighted_cells": 18006,
+      "unit_weight_cells": 269994,
+      "original_detected_scan_weight": 1048758.0,
+      "original_missing_scan_weight": 4726459.0,
+      "weighted_detected_scan_weight": 1048758.0,
+      "weighted_missing_scan_weight": 11546167.0
+    },
+    {
+      "seed": 2,
+      "path": "seed_2.joblib",
+      "sha256": "a83143b71fac57620eaeeb6b6be86a118f177f2cbafdf4709972094217389827",
+      "bytes": 8834193,
+      "seconds": 15.134635902941227,
+      "selected_cells": 288000,
+      "upweighted_cells": 18698,
+      "unit_weight_cells": 269302,
+      "original_detected_scan_weight": 1069739.0,
+      "original_missing_scan_weight": 4708778.0,
+      "weighted_detected_scan_weight": 1069739.0,
+      "weighted_missing_scan_weight": 11800338.0
+    },
+    {
+      "seed": 3,
+      "path": "seed_3.joblib",
+      "sha256": "90f3f2df8b753deca8c329af67824d1d86244866cf2a4c45b9f268683c715c91",
+      "bytes": 8834225,
+      "seconds": 15.271726600825787,
+      "selected_cells": 288000,
+      "upweighted_cells": 18398,
+      "unit_weight_cells": 269602,
+      "original_detected_scan_weight": 1073125.0,
+      "original_missing_scan_weight": 4695856.0,
+      "weighted_detected_scan_weight": 1073125.0,
+      "weighted_missing_scan_weight": 11652174.0
+    },
+    {
+      "seed": 4,
+      "path": "seed_4.joblib",
+      "sha256": "8dd0e743dae46c38bc2fd0928f2290ef6f811ae8c2e2747fa6099a45c0ef9c7c",
+      "bytes": 8833713,
+      "seconds": 15.596728771924973,
+      "selected_cells": 288000,
+      "upweighted_cells": 18878,
+      "unit_weight_cells": 269122,
+      "original_detected_scan_weight": 1085225.0,
+      "original_missing_scan_weight": 4691978.0,
+      "weighted_detected_scan_weight": 1085225.0,
+      "weighted_missing_scan_weight": 11862749.0
+    },
+    {
+      "seed": 5,
+      "path": "seed_5.joblib",
+      "sha256": "8673ed17377ffe1d58d661784b6d7b21c35e185f78e4bea35a49b92dde7a0993",
+      "bytes": 8833969,
+      "seconds": 15.695124041289091,
+      "selected_cells": 288000,
+      "upweighted_cells": 18231,
+      "unit_weight_cells": 269769,
+      "original_detected_scan_weight": 1072170.0,
+      "original_missing_scan_weight": 4704103.0,
+      "weighted_detected_scan_weight": 1072170.0,
+      "weighted_missing_scan_weight": 11604485.0
+    }
+  ],
+  "freeze_sha256": "419a16553719343694f31d9d231a0af04ba2be1374eee3c3cbee8024eb186deb",
+  "recipe": "detection_ipw20",
+  "original_recipe_changed": true,
+  "refit_heads": [
+    "det"
+  ],
+  "inherited_heads": [
+    "mean",
+    "scale"
+  ],
+  "target_predictions": 0,
+  "localization_scores": 0,
+  "weight_rule": "20 iff raw H hints absent, raw S hint absent and nd==0; otherwise1; multiply both nd and n-nd",
+  "feature_rule": {
+    "width": 55,
+    "history_width": 43,
+    "history_hint_slice": [
+      0,
+      40,
+      5
+    ],
+    "support_hint_column": 44
+  },
+  "scope": "Only the 5% label-dependent retention correction; row cap/task-mixture correction is outside this recipe"
+}

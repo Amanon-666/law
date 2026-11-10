@@ -1,0 +1,540 @@
+{
+  "created_utc": "2026-11-10T21:01:34.794047+00:00",
+  "scope": "Single interface/data/old-result check; no Method.predict or fit_source, no model inference/training, no new performance experiment",
+  "prediction_calls": 0,
+  "fit_source_calls": 0,
+  "training_calls": 0,
+  "source_snapshot": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/legacy54_interface_20261111/source_snapshot",
+  "source_sha256": {
+    "methods_claude.py": "33563b1f920be87f9e7569c6523e1c1aec03acf207947a57d101ca80c4f1a8a9",
+    "legacy54.py": "6a0236046991b6517e66e7e9d76b8acc0f94155d17f75b1aeecdb6a369ec37e0",
+    "data.py": "a383d8f733f79db41181fa0bacdb123e4106da863a482a9bca7a621f1b6d02bd",
+    "methods_simple.py": "e7319e90b71ce5441d24b4976a894c08f318ee64895e8f586c8017b4856e2217",
+    "task.py": "e903b275f67700970f676551668b74e8dedf60a7a3a4d7b4062742901f76f28d",
+    "score.py": "c4abfa7fbe008ac994a6ba4790c7ef3f25da11d07c5391367043936d95af6f3e",
+    "method_scaml.py": "de98aba42600750c976bbc5aa96bb9902fc2571a89dbd4695966b0bc2f4e7008",
+    "ours.py": "07733101709d234416dd7d95759094884ce9316c641b4dba3332c83a49a4a777",
+    "run.py": "f1a9ebb007e01e1a5f31e707a4a5173b203da999ae152ad0af341b708bfa3b91",
+    "protocol.py": "804461986101fad2904eba94232e533f0bf25128d99a14d2b4ce6346498f8bee",
+    "method_tabicl.py": "c2d710fc8318c23d3f99ea7720c132a086063db8c632da20c075c6855f96d0b0",
+    "__init__.py": "6647f153fcd3bdd10261969bd07b3695936399968561b582ff25666629af2c5e",
+    "data_ipin2025.py": "bd4c12003db5f51c78f5abdc2873e48a1eae14de484c37f36b966b37c102408b",
+    "method_retained_gp.py": "7d47af9151f59269ee8eb18813ac2e26bd9cc62deedafffa8d3d9bdfebd0f749",
+    "method_tcms.py": "edf75ece349fd5a9b34cdcbaae2d15b93993f10f4bc0ebdc9fe748d3bd42a401",
+    "method_adopted.py": "7d4c00086bcdb15b835855d5148a2931f3e60dfbbcdef26b34aab5d7e84db067",
+    "gp_lit.py": "6cdc9959849b596189958f5345385fd9e77fb3189ad6e577b97b8983678ab46c",
+    "method_frozen_field.py": "2d5a089211aa4f3d28f9b731faefc0c0a6859aa3aa8e8623bbda41c83fd13e07",
+    "evaluate_saved_stress.py": "b04cf4d6d4b7d8ea135a9c67ebaeecf2265b92e6a2db6661772e60fb962cad64"
+  },
+  "manifest": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_assets_20261109/manifest.json",
+  "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+  "csv": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+  "csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+  "tolerance_m": 1e-08,
+  "failures": [],
+  "cli_binding": {
+    "source_buildings": [
+      "B0"
+    ],
+    "seed": 11509159,
+    "R": 3,
+    "repeats": [
+      0,
+      1
+    ],
+    "aggregate_is_legacy": true,
+    "method_tabicl_uses_task_meta_seed": true
+  },
+  "tasks_constructed": 54,
+  "paths": {
+    "from_saved_predictions": {
+      "overall": {
+        "tasks": 54,
+        "completed_tasks": 54,
+        "failed_tasks": 0,
+        "complete": true,
+        "failed_task_ids": [],
+        "unfinished_optimization_tasks": [],
+        "mean": 8.779230043155339,
+        "p50": 7.034677495398054,
+        "p90": 15.953937051408282,
+        "query_positions": 648
+      },
+      "by_K": {
+        "1": {
+          "tasks": 18,
+          "completed_tasks": 18,
+          "failed_tasks": 0,
+          "complete": true,
+          "failed_task_ids": [],
+          "unfinished_optimization_tasks": [],
+          "mean": 8.951619240397118,
+          "p50": 6.944069255949732,
+          "p90": 15.777539300041859,
+          "query_positions": 216
+        },
+        "3": {
+          "tasks": 18,
+          "completed_tasks": 18,
+          "failed_tasks": 0,
+          "complete": true,
+          "failed_task_ids": [],
+          "unfinished_optimization_tasks": [],
+          "mean": 8.731598496814895,
+          "p50": 7.05590350434649,
+          "p90": 16.05771739548179,
+          "query_positions": 216
+        },
+        "5": {
+          "tasks": 18,
+          "completed_tasks": 18,
+          "failed_tasks": 0,
+          "complete": true,
+          "failed_task_ids": [],
+          "unfinished_optimization_tasks": [],
+          "mean": 8.654472392254007,
+          "p50": 7.464206098287537,
+          "p90": 15.953937051408282,
+          "query_positions": 216
+        }
+      }
+    },
+    "from_saved_query_errors": {
+      "overall": {
+        "tasks": 54,
+        "completed_tasks": 54,
+        "failed_tasks": 0,
+        "complete": true,
+        "failed_task_ids": [],
+        "unfinished_optimization_tasks": [],
+        "mean": 8.779230043155339,
+        "p50": 7.034677495398054,
+        "p90": 15.953937051408282,
+        "query_positions": 648
+      },
+      "by_K": {
+        "1": {
+          "tasks": 18,
+          "completed_tasks": 18,
+          "failed_tasks": 0,
+          "complete": true,
+          "failed_task_ids": [],
+          "unfinished_optimization_tasks": [],
+          "mean": 8.951619240397118,
+          "p50": 6.944069255949732,
+          "p90": 15.777539300041859,
+          "query_positions": 216
+        },
+        "3": {
+          "tasks": 18,
+          "completed_tasks": 18,
+          "failed_tasks": 0,
+          "complete": true,
+          "failed_task_ids": [],
+          "unfinished_optimization_tasks": [],
+          "mean": 8.731598496814895,
+          "p50": 7.05590350434649,
+          "p90": 16.05771739548179,
+          "query_positions": 216
+        },
+        "5": {
+          "tasks": 18,
+          "completed_tasks": 18,
+          "failed_tasks": 0,
+          "complete": true,
+          "failed_task_ids": [],
+          "unfinished_optimization_tasks": [],
+          "mean": 8.654472392254007,
+          "p50": 7.464206098287537,
+          "p90": 15.953937051408282,
+          "query_positions": 216
+        }
+      }
+    }
+  },
+  "passed": true,
+  "row_binding_54_verified": true,
+  "statistics_recovered": true,
+  "event_checks": [
+    {
+      "event": "B1F0_AB_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F0_AB_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F0_AB_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F0_BA_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F0_BA_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F0_BA_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F1_AB_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F1_AB_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F1_AB_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F1_BA_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F1_BA_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F1_BA_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F2_AB_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F2_AB_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F2_AB_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F2_BA_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F2_BA_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F2_BA_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F3_AB_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F3_AB_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F3_AB_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F3_BA_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F3_BA_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B1F3_BA_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F0_AB_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F0_AB_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F0_AB_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F0_BA_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F0_BA_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F0_BA_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F1_AB_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F1_AB_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F1_AB_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F1_BA_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F1_BA_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F1_BA_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F2_AB_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F2_AB_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F2_AB_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F2_BA_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F2_BA_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F2_BA_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F3_AB_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F3_AB_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F3_AB_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F3_BA_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F3_BA_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F3_BA_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F4_AB_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F4_AB_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F4_AB_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F4_BA_K1",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F4_BA_K3",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    },
+    {
+      "event": "B2F4_BA_K5",
+      "rows_order_AP_H_identity_passed": true,
+      "coordinate_gap_m": 0.0,
+      "saved_truth_gap_m": 0.0,
+      "error_gap_m": 0.0
+    }
+  ],
+  "old_complete_sha256": "03b72571ab1bf415474d5da7db5261d6594e380410a3a27b5a42a031e5d8a71c",
+  "elapsed_seconds": 5.252847325056791
+}

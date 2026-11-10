@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "final": {
+    "kind": "simplex_mass_transfer",
+    "continuation_step": 1,
+    "initial_trial": 3,
+    "stationary": true,
+    "iterations": 14,
+    "old_objective": 3.519005090625201,
+    "old_weights": [
+      0.999999996462638,
+      1.3935189899589164e-09,
+      2.1438429555224485e-09
+    ],
+    "old_simplex_kkt_residual": 0.030080396209274163,
+    "old_variational_gradient": 3.8485375495125873e-07,
+    "donor": 0,
+    "recipient": 1,
+    "directional_derivative": -0.030080395849155117,
+    "optimizer_success": true,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "evaluations": 20,
+    "transfer": 0.011902952044565646,
+    "transfer_upper_bound": 0.999999996462638,
+    "weights": [
+      0.9880970444180724,
+      0.011902953438084635,
+      2.1438429555224485e-09
+    ],
+    "objective": 3.518826645737995,
+    "simplex_kkt_residual": 3.797252436932297e-07,
+    "variational_gradient": 7.56100693209363e-07,
+    "accepted": true
+  },
+  "freeze_sha256": "c4c0019db1481a283388e3893c9e14801f33109a58605eedcf1d4daff74c2b51",
+  "event_sha256": "3e087bf820c45352ac25cf7beaca3d9bd921c7db20bb2f5ef2b6d873f911c474",
+  "comparison_sha256": "a153b236b174874637cbd5db5bccde15a4590589507689737a1d79efa338c580",
+  "original_four_trial_max_abs_differences": {
+    "objective": 0.0,
+    "simplex_kkt_residual": 0.0,
+    "variational_gradient": 0.0,
+    "weights": 0.0
+  },
+  "A_projected_max_abs_difference": 0.0,
+  "history_fits": 0,
+  "model_training": 0,
+  "numerical_task_executions": 1,
+  "postprocess_recovered": true,
+  "finalize_code_sha256": "dbd37cda4a0985ea1cd8c4bf60d9e264be47363a334556ca49e7d2139af15164"
+}

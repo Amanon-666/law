@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/finalize_saved.py", line 12, in <module>
+    buildings,_=load('uji');truth=dict(xy=buildings['B0'][0]['xy'][a['query_row_indices']],groups=np.asarray(a['query_groups']))
+                ^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/data.py", line 160, in load
+    return loaders[name](root)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/law_bench/data.py", line 49, in _uji
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
