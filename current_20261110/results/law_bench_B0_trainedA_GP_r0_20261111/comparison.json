@@ -1,0 +1,408 @@
+{
+  "created_utc": "2026-11-10T21:58:49.473281+00:00",
+  "evaluation_status": "exposed_development",
+  "coverage": {
+    "requested_tasks": 12,
+    "A_completed": 12,
+    "GP_and_fusion_completed": 11,
+    "failed_tasks": [
+      "uji/B0/F0/K3/r0"
+    ]
+  },
+  "all_requested_tasks": {
+    "A": {
+      "overall": {
+        "tasks": 12,
+        "completed_tasks": 12,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 5.025614340584896,
+        "p50": 3.561451005770195,
+        "p90": 11.322753858890342,
+        "query_positions": 387
+      },
+      "by_K": {
+        "1": {
+          "tasks": 4,
+          "completed_tasks": 4,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 5.086610099506004,
+          "p50": 3.561451005770195,
+          "p90": 11.309155790140657,
+          "query_positions": 129
+        },
+        "3": {
+          "tasks": 4,
+          "completed_tasks": 4,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 5.122734398357759,
+          "p50": 3.789399724347883,
+          "p90": 11.218504102960416,
+          "query_positions": 129
+        },
+        "5": {
+          "tasks": 4,
+          "completed_tasks": 4,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 4.867498523890924,
+          "p50": 3.4241606113939,
+          "p90": 11.109178946506631,
+          "query_positions": 129
+        }
+      }
+    },
+    "GP": {
+      "overall": {
+        "tasks": 12,
+        "completed_tasks": 11,
+        "failed_tasks": 1,
+        "complete": false,
+        "unfinished_optimization_tasks": [],
+        "mean": 8.544697651122627,
+        "p50": 6.0240846568156154,
+        "p90": 16.603071565215565,
+        "query_positions": 360
+      },
+      "by_K": {
+        "1": {
+          "tasks": 4,
+          "completed_tasks": 4,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 9.383801163276791,
+          "p50": 6.45385723259178,
+          "p90": 18.083062182444866,
+          "query_positions": 129
+        },
+        "3": {
+          "tasks": 4,
+          "completed_tasks": 3,
+          "failed_tasks": 1,
+          "complete": false,
+          "unfinished_optimization_tasks": [],
+          "mean": 6.665200283096256,
+          "p50": 5.701292792174408,
+          "p90": 14.325137954486383,
+          "query_positions": 102
+        },
+        "5": {
+          "tasks": 4,
+          "completed_tasks": 4,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 9.191708336942801,
+          "p50": 6.041545665676151,
+          "p90": 17.635190982984195,
+          "query_positions": 129
+        }
+      }
+    },
+    "A_GP": {
+      "overall": {
+        "tasks": 12,
+        "completed_tasks": 11,
+        "failed_tasks": 1,
+        "complete": false,
+        "unfinished_optimization_tasks": [],
+        "mean": 5.161066407127402,
+        "p50": 3.5219941412856057,
+        "p90": 12.925978147746207,
+        "query_positions": 360
+      },
+      "by_K": {
+        "1": {
+          "tasks": 4,
+          "completed_tasks": 4,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 5.28738746878099,
+          "p50": 3.5898818934810435,
+          "p90": 14.194425754765804,
+          "query_positions": 129
+        },
+        "3": {
+          "tasks": 4,
+          "completed_tasks": 3,
+          "failed_tasks": 1,
+          "complete": false,
+          "unfinished_optimization_tasks": [],
+          "mean": 4.788881950388173,
+          "p50": 3.1518314849773468,
+          "p90": 13.119969712029851,
+          "query_positions": 102
+        },
+        "5": {
+          "tasks": 4,
+          "completed_tasks": 4,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 5.329030729872274,
+          "p50": 3.5732492936838773,
+          "p90": 12.75094017314017,
+          "query_positions": 129
+        }
+      }
+    }
+  },
+  "common_completed_tasks": {
+    "task_ids": [
+      "uji/B0/F0/K1/r0",
+      "uji/B0/F0/K5/r0",
+      "uji/B0/F1/K1/r0",
+      "uji/B0/F1/K3/r0",
+      "uji/B0/F1/K5/r0",
+      "uji/B0/F2/K1/r0",
+      "uji/B0/F2/K3/r0",
+      "uji/B0/F2/K5/r0",
+      "uji/B0/F3/K1/r0",
+      "uji/B0/F3/K3/r0",
+      "uji/B0/F3/K5/r0"
+    ],
+    "methods": {
+      "A": {
+        "overall": {
+          "tasks": 11,
+          "completed_tasks": 11,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 4.967044686579797,
+          "p50": 3.5317022606942383,
+          "p90": 11.089954247026041,
+          "query_positions": 360
+        },
+        "by_K": {
+          "1": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 5.086610099506004,
+            "p50": 3.561451005770195,
+            "p90": 11.309155790140657,
+            "query_positions": 129
+          },
+          "3": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 4.941726223044346,
+            "p50": 3.6664251576450146,
+            "p90": 10.740390811494255,
+            "query_positions": 102
+          },
+          "5": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 4.867498523890924,
+            "p50": 3.4241606113939,
+            "p90": 11.109178946506631,
+            "query_positions": 129
+          }
+        }
+      },
+      "GP": {
+        "overall": {
+          "tasks": 11,
+          "completed_tasks": 11,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 8.544697651122627,
+          "p50": 6.0240846568156154,
+          "p90": 16.603071565215565,
+          "query_positions": 360
+        },
+        "by_K": {
+          "1": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.383801163276791,
+            "p50": 6.45385723259178,
+            "p90": 18.083062182444866,
+            "query_positions": 129
+          },
+          "3": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 6.665200283096256,
+            "p50": 5.701292792174408,
+            "p90": 14.325137954486383,
+            "query_positions": 102
+          },
+          "5": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.191708336942801,
+            "p50": 6.041545665676151,
+            "p90": 17.635190982984195,
+            "query_positions": 129
+          }
+        }
+      },
+      "A_GP": {
+        "overall": {
+          "tasks": 11,
+          "completed_tasks": 11,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 5.161066407127402,
+          "p50": 3.5219941412856057,
+          "p90": 12.925978147746207,
+          "query_positions": 360
+        },
+        "by_K": {
+          "1": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 5.28738746878099,
+            "p50": 3.5898818934810435,
+            "p90": 14.194425754765804,
+            "query_positions": 129
+          },
+          "3": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 4.788881950388173,
+            "p50": 3.1518314849773468,
+            "p90": 13.119969712029851,
+            "query_positions": 102
+          },
+          "5": {
+            "tasks": 4,
+            "completed_tasks": 4,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 5.329030729872274,
+            "p50": 3.5732492936838773,
+            "p90": 12.75094017314017,
+            "query_positions": 129
+          }
+        }
+      }
+    }
+  },
+  "interpretation": "GP/fusion lack a full-12-task performance result. Common-11-task metrics are conditional on solver success and must not replace complete coverage. No retries, parameter changes or fallback predictions.",
+  "query_and_A_existing_output_checks": [
+    {
+      "task_id": "uji/B0/F0/K1/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F0/K3/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F0/K5/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F1/K1/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F1/K3/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F1/K5/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F2/K1/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F2/K3/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F2/K5/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F3/K1/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F3/K3/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    },
+    {
+      "task_id": "uji/B0/F3/K5/r0",
+      "query_rows_groups_match_Claude": true,
+      "A_prediction_max_difference_to_saved_Claude": 0.0
+    }
+  ],
+  "failures": [
+    {
+      "task_id": "uji/B0/F0/K3/r0",
+      "error": "RuntimeError(\"No stationary multi-source fit: [{'start': [0.3333333333333333, 0.3333333333333333, 0.3333333333333333], 'weights': [0.9999999899714008, 7.120925656033392e-11, 9.957389931508836e-09], 'objective': 3.519005092351446, 'optimizer_success': True, 'message': 'CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL', 'iterations': 42, 'simplex_kkt_residual': 0.03008062288307478, 'variational_gradient': 9.808404229857959e-07, 'stationary': False}, {'start': [0.8, 0.1, 0.1], 'weights': [0.9999996208837231, 3.162735698423496e-07, 6.284270721008407e-08], 'objective': 3.519005093071264, 'optimizer_success': True, 'message': 'CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL', 'iterations': 35, 'simplex_kkt_residual': 0.030074218476850767, 'variational_gradient': 9.99238412992265e-07, 'stationary': False}, {'start': [0.1, 0.8, 0.1], 'weights': [0.9999999934601487, 8.465902460786304e-11, 6.455192374869967e-09], 'objective': 3.519005091713865, 'optimizer_success': True, 'message': 'CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL', 'iterations': 42, 'simplex_kkt_residual': 0.03007688359538685, 'variational_gradient': 9.264465889741863e-07, 'stationary': False}, {'start': [0.1, 0.1, 0.8], 'weights': [0.999999996462638, 1.3935189899589164e-09, 2.1438429555224485e-09], 'objective': 3.519005090625201, 'optimizer_success': True, 'message': 'CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL', 'iterations': 46, 'simplex_kkt_residual': 0.030080396209274163, 'variational_gradient': 3.8485375495125873e-07, 'stationary': False}]\")"
+    }
+  ],
+  "historical_development_scope": {
+    "basis": "According to the original hurdle.py implementation statement; original development log independently being checked by root",
+    "readout": {
+      "beta": 128.0,
+      "epsilon": 0.02
+    },
+    "prior_selection": "Original beta/epsilon selected on B0 development fold; generic ours_A retains these constants",
+    "interpretation": "A source fit uses B1+B2 and GP parameters use B1, but the complete recipe has historical B0 development exposure. Frozen-recipe comparison, not independent untouched-B0 validation.",
+    "new_target_parameter_selection": false
+  },
+  "execution": {
+    "start_epoch": 1794347496,
+    "end_epoch": 1794347774,
+    "elapsed_seconds": 278,
+    "exit_code": 0,
+    "runner_pid": 3752781,
+    "python_pid": 3752784
+  },
+  "new_model_calls_for_scoring": 0,
+  "freeze_sha256": "9df10a1d33ab572b389183f04caa0d8e1985366842aac8a50170e390f04cff65"
+}

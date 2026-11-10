@@ -1,4 +1,4 @@
-"""Original ReFi support-only task adaptation, extracted without changes.
+"""Original ReFi support-only task adaptation with bounded saturation recovery.
 
 Shared source weights precede composite-marginal intercept selection. These
 are empirical-Bayes point estimates; this module does not integrate their
@@ -142,7 +142,7 @@ def fit_source_weights(means,covariances,residual,stats,obs):
     starts=[np.full(sources,1/sources)]
     for source in range(sources):
         w=np.full(sources,.2/(sources-1));w[source]=.8;starts.append(w)
-    trials=[]
+    trials=[];terminal_states=[]
     for start in starts:
         initial[:prefix]=np.log(start[:-1]/start[-1])
         result=minimize(objective,initial,jac=True,method='L-BFGS-B',bounds=bounds,
@@ -163,7 +163,85 @@ def fit_source_weights(means,covariances,residual,stats,obs):
         trials.append(dict(start=start.tolist(),weights=weights.detach().tolist(),objective=float(result.fun),
             optimizer_success=bool(result.success),message=str(result.message),iterations=int(result.nit),
             simplex_kkt_residual=violation,variational_gradient=float(np.abs(projected).max()),stationary=bool(good)))
+        terminal_states.append((weights.detach().numpy().copy(),packed.copy()))
     valid=[t for t in trials if t['stationary']]
+    # Preserve every successful original path. Only the specific all-starts
+    # softmax-saturation failure is eligible for this same-objective continuation.
+    if not valid and all(np.isfinite(t['objective']) and t['simplex_kkt_residual']>=1e-3
+                         and t['variational_gradient']<1e-3 for t in trials):
+        selected=min(range(len(trials)),key=lambda i:trials[i]['objective'])
+        current_w,current_phi=terminal_states[selected]
+
+        def direct_status(w,phi):
+            wt=torch.from_numpy(w).requires_grad_()
+            pt=torch.from_numpy(phi).requires_grad_()
+            value=loss(wt,pt)
+            gw,gp=torch.autograd.grad(value,(wt,pt))
+            reduced=gw-(wt.detach()*gw).sum()
+            kkt=torch.where(wt.detach()>1e-6,reduced.abs(),(-reduced).clamp_min(0)).max().item()
+            gw,gp=gw.detach().numpy(),gp.detach().numpy()
+            if not (np.isfinite(value.item()) and np.isfinite(gw).all() and np.isfinite(gp).all()):
+                raise FloatingPointError('Nonfinite direct support-weight objective/gradient')
+            for at,(lo,_) in enumerate(bounds[prefix:]):
+                if lo is not None and phi[at]<=lo and gp[at]>0:gp[at]=0.
+            return value.item(),gw,kkt,float(np.abs(gp).max())
+
+        for step in range(12):
+            record=dict(kind='simplex_mass_transfer',continuation_step=step+1,
+                        initial_trial=selected,stationary=False,iterations=0)
+            trials.append(record)
+            try:
+                old_loss,gw,old_kkt,old_vg=direct_status(current_w,current_phi)
+                active=np.flatnonzero(current_w>1e-6)
+                donor=int(active[np.argmax(gw[active])]);recipient=int(np.argmin(gw))
+                derivative=float(gw[recipient]-gw[donor])
+                record.update(old_objective=old_loss,old_weights=current_w.tolist(),
+                    old_simplex_kkt_residual=old_kkt,old_variational_gradient=old_vg,
+                    donor=donor,recipient=recipient,directional_derivative=derivative)
+                if derivative>=0:
+                    record.update(accepted=False,message='No feasible negative mass-transfer direction')
+                    break
+                direction=np.zeros(sources);direction[recipient]=1.;direction[donor]=-1.
+                base_w=current_w.copy()
+                limit=float(base_w[donor])
+
+                def transfer_objective(value):
+                    variable=torch.from_numpy(value).requires_grad_()
+                    w=torch.from_numpy(base_w)+variable[0]*torch.from_numpy(direction)
+                    value_loss=loss(w,variable[1:])
+                    gradient,=torch.autograd.grad(value_loss,variable)
+                    gradient=gradient.detach().numpy()
+                    if not (np.isfinite(value_loss.item()) and np.isfinite(gradient).all()):
+                        raise FloatingPointError('Nonfinite mass-transfer objective/gradient')
+                    return value_loss.item(),gradient
+
+                continued=minimize(transfer_objective,np.r_[0.,current_phi],jac=True,
+                    method='L-BFGS-B',bounds=[(0.,limit)]+bounds[prefix:],
+                    options=dict(maxiter=800,maxls=40,ftol=1e-12,gtol=1e-6))
+                record.update(optimizer_success=bool(continued.success),message=str(continued.message),
+                    iterations=int(continued.nit),evaluations=int(continued.nfev),
+                    transfer=float(continued.x[0]),transfer_upper_bound=limit)
+                if not np.isfinite(continued.x).all() or not 0<=continued.x[0]<=limit:
+                    record.update(accepted=False,message='Nonfinite or infeasible continuation endpoint')
+                    break
+                new_w=base_w+continued.x[0]*direction
+                new_phi=continued.x[1:].copy()
+                new_loss,_,new_kkt,new_vg=direct_status(new_w,new_phi)
+                accepted=new_loss<=old_loss
+                stationary=accepted and new_kkt<1e-3 and new_vg<1e-3
+                record.update(weights=new_w.tolist(),objective=new_loss,
+                    simplex_kkt_residual=new_kkt,variational_gradient=new_vg,
+                    accepted=bool(accepted),stationary=bool(stationary))
+                if stationary:
+                    valid=[record]
+                    break
+                if not accepted or (np.array_equal(new_w,current_w) and np.array_equal(new_phi,current_phi)):
+                    record['stop_reason']='No accepted progress'
+                    break
+                current_w,current_phi=new_w,new_phi
+            except (FloatingPointError,torch.linalg.LinAlgError) as error:
+                record.update(accepted=False,error=repr(error))
+                raise RuntimeError(f'Failed support-weight continuation: {trials}') from error
     if not valid:raise RuntimeError(f'No stationary multi-source fit: {trials}')
     best=min(valid,key=lambda t:t['objective'])
     return best['weights'],trials
