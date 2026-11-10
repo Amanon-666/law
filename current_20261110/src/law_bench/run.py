@@ -37,6 +37,7 @@ METHODS = {
     'scaml': ('method_scaml', 'ScaMLMethod', {}),
     'tcms': ('method_tcms', 'TCMSMethod', {}),
     'retained_gp': ('method_retained_gp', 'RetainedGPMethod', {}),
+    'tampere_legacy_gp': ('method_tampere_legacy_gp', 'TampereLegacyGP', {}),
     'adopted_A': ('method_adopted', 'AdoptedMethod', {'variant': 'A'}),
     'adopted_A_GP': ('method_adopted', 'AdoptedMethod', {'variant': 'A_GP'}),
     'original_A': ('method_adopted', 'AdoptedMethod', {'variant': 'A'}),
