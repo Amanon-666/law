@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "created": "2026-11-10T15:05:16.481859+00:00",
+  "seconds": 2.512060072273016,
+  "event": "B0F0_AB_K1",
+  "query_rows": [
+    7606
+  ],
+  "aps_equal": true,
+  "cand_xy_equal": true,
+  "query_rows_equal": true,
+  "max_absolute_difference": {
+    "projected": 0.0,
+    "log_position_mass": 0.0
+  },
+  "shapes": {
+    "projected": {
+      "actual": [
+        1,
+        2
+      ],
+      "reference": [
+        1,
+        2
+      ]
+    },
+    "log_position_mass": {
+      "actual": [
+        1,
+        113
+      ],
+      "reference": [
+        1,
+        113
+      ]
+    }
+  },
+  "tolerance": 1e-08,
+  "model_hashes_before": {
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/seed_1.joblib": "6b64ad4a132c6410eef966f73da18eb7ec9986bd22ce1e06bea77cadce984454",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/seed_2.joblib": "797649424528f7c485ab730b3d70ec8605a4be55fe3794914363542f1779c6a2",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/seed_3.joblib": "d7665ab2d2e440b7def7254ddf5931803419e75099c6de47f1fa0f3843a667db",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/seed_4.joblib": "65e297fdfbe3903dc3764bdf7eda0b19c62338666851322d5b805de5de5564b4",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/seed_5.joblib": "b41ed65e0413b1895600c0684f35e34876c12687461594702b6ec9150fbf124f"
+  },
+  "model_hashes_after": {
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/seed_1.joblib": "6b64ad4a132c6410eef966f73da18eb7ec9986bd22ce1e06bea77cadce984454",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/seed_2.joblib": "797649424528f7c485ab730b3d70ec8605a4be55fe3794914363542f1779c6a2",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/seed_3.joblib": "d7665ab2d2e440b7def7254ddf5931803419e75099c6de47f1fa0f3843a667db",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/seed_4.joblib": "65e297fdfbe3903dc3764bdf7eda0b19c62338666851322d5b805de5de5564b4",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/seed_5.joblib": "b41ed65e0413b1895600c0684f35e34876c12687461594702b6ec9150fbf124f"
+  },
+  "model_hashes_unchanged": true,
+  "inputs": {
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/complete.json": "57756b1fc23f4eccceeafe91cda14398a5aca623ad76d12998bf34dc259ef111",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/freeze.json": "371f5815a44f7c4ddac67cbb1ad7932ba90e3189958d5723f4984f86cf1d08a7",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/deployment_reference.json": "340521243a2987bdfe89402b6fa9e3e5751b818e355243d7c36fe8d08e827ce2",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/deployment_reference.npz": "a988a4ce97b9d7db962c25c3d757374945c0d660f8cb34d83ecd3304fa963574",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/frozen_hurdle_translator.py": "ed27ca8798f19de798dedc0d349cc9c3473590cff9688ff23ad25f5d74cbd12a",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/claude_hurdle_20261110/core.py": "b49e9b266d79d38bff9c872ce661527e575d6868a7da516570e1703a7a7ef1dc"
+  },
+  "fits": 0,
+  "localization_scores": 0,
+  "query_coordinates_used": false,
+  "scope": "One frozen B0 source scan, original versus portable deployment outputs only; no target performance measurement"
+}

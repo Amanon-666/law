@@ -1,0 +1,2647 @@
+{
+  "complete": true,
+  "created": "2026-11-10T14:38:58.759061+00:00",
+  "seconds": 148.4599357061088,
+  "freeze_sha256": "ada0cfc5262219cac7d4a1826a5d7f55d6c5866c99e588a5cbd182162369cd44",
+  "model_sha256": "06ae55fe483d932788367b3bfc521ad2a981158acc999b232eda8dfc56f92ce4",
+  "records": [
+    {
+      "event": "B1F0_AB_K1_anchor1",
+      "original_event": "B1F0_AB_K1",
+      "floor": "B1F0",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7454.239100001752,
+        4864829.266000003
+      ],
+      "support_rows": [
+        3392,
+        3528,
+        3669
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B1F0_AB_K1_unscored.npz",
+      "prediction_sha256": "d4df1d111952ce3b1669a90b22cffe3dd7b74adda575a33114fd3f972fc40b29",
+      "scored_path": "results/continuous_observation_target_20261110/B1F0_AB_K1_scored.npz",
+      "scored_sha256": "5db0f197ff018c83a3a19688ac24a8632bf0ce1b58647dd97141bb8cbc94e950",
+      "mde": 16.21489784196419
+    },
+    {
+      "event": "B1F0_AB_K1_anchor2",
+      "original_event": "B1F0_AB_K1",
+      "floor": "B1F0",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7425.661100000143,
+        4864873.132700004
+      ],
+      "support_rows": [
+        3416,
+        3552,
+        3692
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_AB_K1_anchor2_unscored.npz",
+      "prediction_sha256": "91e421f440342beaeef0ccdce91dd87f83451c2bbfa9134fcca1df3386f3902d",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_AB_K1_anchor2_scored.npz",
+      "scored_sha256": "a82237b23a2375c6153a896f0b8029ca504574f02270b239eed9b92591cf1729",
+      "mde": 9.157200426577509
+    },
+    {
+      "event": "B1F0_AB_K1_anchor3",
+      "original_event": "B1F0_AB_K1",
+      "floor": "B1F0",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7439.624499998987,
+        4864864.1263
+      ],
+      "support_rows": [
+        3410,
+        3548,
+        3691
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_AB_K1_anchor3_unscored.npz",
+      "prediction_sha256": "a559c4377ef23c306670174e5562bdc9b746dd1f9a10fc6d4a00170e7d58779c",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_AB_K1_anchor3_scored.npz",
+      "scored_sha256": "a1ef04b7955f28f0ccb160f97193aba9800e6ba9e63357236eeecdd7c9c54fdb",
+      "mde": 12.719613145158233
+    },
+    {
+      "event": "B1F0_AB_K1_anchor4",
+      "original_event": "B1F0_AB_K1",
+      "floor": "B1F0",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7426.483600001782,
+        4864899.974799998
+      ],
+      "support_rows": [
+        3435,
+        3573,
+        3716
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_AB_K1_anchor4_unscored.npz",
+      "prediction_sha256": "8ca611c40c365d40d3b084bec2d34a14790d214b2a7eccca9b835b1ce894059e",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_AB_K1_anchor4_scored.npz",
+      "scored_sha256": "27110433b9a0bced57474f2433bed5c89ca52ec2f53f7c968888bd727e3c1868",
+      "mde": 12.42160489847288
+    },
+    {
+      "event": "B1F0_AB_K1_anchor5",
+      "original_event": "B1F0_AB_K1",
+      "floor": "B1F0",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7445.557873841375,
+        4864826.589670561
+      ],
+      "support_rows": [
+        3393,
+        3532,
+        3671
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_AB_K1_anchor5_unscored.npz",
+      "prediction_sha256": "62e8e734c9ba0391b7dacec1928b6d6087e4063109c4195b0053d035a9166122",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_AB_K1_anchor5_scored.npz",
+      "scored_sha256": "329e89d34b853a4f559c4955071f06eb795d7bbaca813f8cd0b25003fdac8513",
+      "mde": 13.604882625956222
+    },
+    {
+      "event": "B1F0_BA_K1_anchor1",
+      "original_event": "B1F0_BA_K1",
+      "floor": "B1F0",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7454.239100001752,
+        4864829.266000003
+      ],
+      "support_rows": [
+        14840,
+        14939,
+        15041
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B1F0_BA_K1_unscored.npz",
+      "prediction_sha256": "a527b4e05343d0bdc277191c95b9d04a835a4a067fe34626595b71e3a015f878",
+      "scored_path": "results/continuous_observation_target_20261110/B1F0_BA_K1_scored.npz",
+      "scored_sha256": "13b667e51950feadde03ddb7433ddf27cd67d04ee4a62ebf2b7a93214e300de7",
+      "mde": 8.455981959221383
+    },
+    {
+      "event": "B1F0_BA_K1_anchor2",
+      "original_event": "B1F0_BA_K1",
+      "floor": "B1F0",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7425.661100000143,
+        4864873.132700004
+      ],
+      "support_rows": [
+        14948,
+        15157,
+        15361
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_BA_K1_anchor2_unscored.npz",
+      "prediction_sha256": "36ac5f9e41da0e0dd5fbc623c9b2bd3ad953fe31b165cc0a70873252ae2e7a95",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_BA_K1_anchor2_scored.npz",
+      "scored_sha256": "e023d9cc38b46c993f6220eebd545869b3019008812bc80a0ddfcab8a0a13eb0",
+      "mde": 8.357245397709303
+    },
+    {
+      "event": "B1F0_BA_K1_anchor3",
+      "original_event": "B1F0_BA_K1",
+      "floor": "B1F0",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7439.624499998987,
+        4864864.1263
+      ],
+      "support_rows": [
+        14870,
+        14970,
+        15073
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_BA_K1_anchor3_unscored.npz",
+      "prediction_sha256": "14bee63518a521e3e300cb6f7ce434929bfd48ddf72fbdd61779fff8b8147ef3",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_BA_K1_anchor3_scored.npz",
+      "scored_sha256": "82f6d42bd24426215a6d93c4d544c2dda67d795b281d5ac1491d8e8ce199de24",
+      "mde": 7.975281167643381
+    },
+    {
+      "event": "B1F0_BA_K1_anchor4",
+      "original_event": "B1F0_BA_K1",
+      "floor": "B1F0",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7426.483600001782,
+        4864899.974799998
+      ],
+      "support_rows": [
+        5510,
+        15175,
+        15278
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_BA_K1_anchor4_unscored.npz",
+      "prediction_sha256": "94f0880d9b69e6309a0572d2cf04244c8b8b23dc5173a51ed91bb1005670b377",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_BA_K1_anchor4_scored.npz",
+      "scored_sha256": "8a44161d28ca975ba5c83cc8f1278a9a360e2bbb1f3ed46c63b7fba35047157b",
+      "mde": 7.048750179524056
+    },
+    {
+      "event": "B1F0_BA_K1_anchor5",
+      "original_event": "B1F0_BA_K1",
+      "floor": "B1F0",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7445.557873841375,
+        4864826.589670561
+      ],
+      "support_rows": [
+        15152,
+        15254,
+        14846
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_BA_K1_anchor5_unscored.npz",
+      "prediction_sha256": "751310601ccca94971f6227b3d70d0712300c8023528a21a9c75f7013dde1f56",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F0_BA_K1_anchor5_scored.npz",
+      "scored_sha256": "59ab2cd1c0f22acfdcf2784f5a50544a9daa5861e3f8c9d636c898f097dc65f0",
+      "mde": 10.295865384481942
+    },
+    {
+      "event": "B1F1_AB_K1_anchor1",
+      "original_event": "B1F1_AB_K1",
+      "floor": "B1F1",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7536.4928999990225,
+        4864918.059600003
+      ],
+      "support_rows": [
+        7882,
+        8316,
+        8765
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B1F1_AB_K1_unscored.npz",
+      "prediction_sha256": "02b4ac2d69806b82268e62403b46cc45092f8fdbdb8089516e91c08ed7bdc7b2",
+      "scored_path": "results/continuous_observation_target_20261110/B1F1_AB_K1_scored.npz",
+      "scored_sha256": "a15dbd25936a1e0b4d28e8b20aa51ee406243be2c47a82b01889e88c5d9d54b2",
+      "mde": 8.825075177460196
+    },
+    {
+      "event": "B1F1_AB_K1_anchor2",
+      "original_event": "B1F1_AB_K1",
+      "floor": "B1F1",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7510.211205821484,
+        4864949.287095763
+      ],
+      "support_rows": [
+        7891,
+        8325,
+        8774
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_AB_K1_anchor2_unscored.npz",
+      "prediction_sha256": "54dfea519deb99e302f1f7aebe9b60bb2845efca47a5388e030a0784a854453b",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_AB_K1_anchor2_scored.npz",
+      "scored_sha256": "2d772b409f47a983cec7a8682cd4c080c780710371a656b596b3c889f60be007",
+      "mde": 9.032840030139635
+    },
+    {
+      "event": "B1F1_AB_K1_anchor3",
+      "original_event": "B1F1_AB_K1",
+      "floor": "B1F1",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7524.5142999999225,
+        4864934.194600001
+      ],
+      "support_rows": [
+        7880,
+        8323,
+        8770
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_AB_K1_anchor3_unscored.npz",
+      "prediction_sha256": "270ff660d6db6da2d3c14528e97c2c7731092327fbb01a144c36220eaa3a3323",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_AB_K1_anchor3_scored.npz",
+      "scored_sha256": "ace0b3304083208a54141e6bbc407c1fe0c8e8cb5f36b7f69e6d8ce12f142763",
+      "mde": 9.06918804976743
+    },
+    {
+      "event": "B1F1_AB_K1_anchor4",
+      "original_event": "B1F1_AB_K1",
+      "floor": "B1F1",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7555.068599998951,
+        4864885.213299997
+      ],
+      "support_rows": [
+        7907,
+        8342,
+        8795
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_AB_K1_anchor4_unscored.npz",
+      "prediction_sha256": "0cbd5ad2653ae873e15f0e18cad5599ef4c7749898110a582b2eda2fafaf62ed",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_AB_K1_anchor4_scored.npz",
+      "scored_sha256": "e9d66b39dd7466567981cd4e74caa37fc166a9f6f39987b33e32bcca07d3be1b",
+      "mde": 8.697544381728518
+    },
+    {
+      "event": "B1F1_AB_K1_anchor5",
+      "original_event": "B1F1_AB_K1",
+      "floor": "B1F1",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7535.209515403956,
+        4864948.090411805
+      ],
+      "support_rows": [
+        7894,
+        8330,
+        8786
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_AB_K1_anchor5_unscored.npz",
+      "prediction_sha256": "3dae9121ca08bf0ed082b34a95daa03c26042cc5038defe2afd4e60ec835fae4",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_AB_K1_anchor5_scored.npz",
+      "scored_sha256": "5f1441af138836bc3337a8d4f0c41020b0c4938c7d7be1f9373dafeeb6a8eeed",
+      "mde": 9.008818601821016
+    },
+    {
+      "event": "B1F1_BA_K1_anchor1",
+      "original_event": "B1F1_BA_K1",
+      "floor": "B1F1",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7536.4928999990225,
+        4864918.059600003
+      ],
+      "support_rows": [
+        13153,
+        13302,
+        13454
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B1F1_BA_K1_unscored.npz",
+      "prediction_sha256": "52fbbbed436993f40a1604b57654d4072be5fad9ad9ff98fcc30cc43b503c826",
+      "scored_path": "results/continuous_observation_target_20261110/B1F1_BA_K1_scored.npz",
+      "scored_sha256": "4a23d591655f70fe733f8f5ab33fdc64030d9fa9ae4bce2dc3c80c7c28d8e900",
+      "mde": 9.284861855951107
+    },
+    {
+      "event": "B1F1_BA_K1_anchor2",
+      "original_event": "B1F1_BA_K1",
+      "floor": "B1F1",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7510.211205821484,
+        4864949.287095763
+      ],
+      "support_rows": [
+        13157,
+        13303,
+        13462
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_BA_K1_anchor2_unscored.npz",
+      "prediction_sha256": "0fd9fa81d3950f100e0cb2380d3f579fee14ad7532b558624c7780756d60a229",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_BA_K1_anchor2_scored.npz",
+      "scored_sha256": "018bbba7106185e2b78182d6ed05b3f03994eaa579f21b2a288655f503e5532a",
+      "mde": 9.598339039949213
+    },
+    {
+      "event": "B1F1_BA_K1_anchor3",
+      "original_event": "B1F1_BA_K1",
+      "floor": "B1F1",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7524.5142999999225,
+        4864934.194600001
+      ],
+      "support_rows": [
+        13152,
+        13461,
+        13621
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_BA_K1_anchor3_unscored.npz",
+      "prediction_sha256": "fc3f0c9e7906553031287703221c1e516065ee5b02f4041db1e3e9442fa65264",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_BA_K1_anchor3_scored.npz",
+      "scored_sha256": "7ddb55ae4a3b597eee1ba5287bb13b9b42fa85f9385aeaebe3aca741a1443132",
+      "mde": 9.68605742804205
+    },
+    {
+      "event": "B1F1_BA_K1_anchor4",
+      "original_event": "B1F1_BA_K1",
+      "floor": "B1F1",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7555.068599998951,
+        4864885.213299997
+      ],
+      "support_rows": [
+        13143,
+        13290,
+        13449
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_BA_K1_anchor4_unscored.npz",
+      "prediction_sha256": "043cee80a50067623e7073cb90ab06528a534ce006b7b890088faac4c2694d4d",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_BA_K1_anchor4_scored.npz",
+      "scored_sha256": "e8a373b2c96d8c2101c73ba6939c101abebfcfbc6db803886918b96c10cd12ec",
+      "mde": 9.616636564831982
+    },
+    {
+      "event": "B1F1_BA_K1_anchor5",
+      "original_event": "B1F1_BA_K1",
+      "floor": "B1F1",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7535.209515403956,
+        4864948.090411805
+      ],
+      "support_rows": [
+        13163,
+        13464,
+        13628
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_BA_K1_anchor5_unscored.npz",
+      "prediction_sha256": "467a540e6e441045cc122428f8e8174986f96d8860eb1109b00ba337678641ad",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F1_BA_K1_anchor5_scored.npz",
+      "scored_sha256": "2105f74ef9b35589ca07c1f59b2d10383347153e5939cca1660b389f65d1382c",
+      "mde": 9.425527547472958
+    },
+    {
+      "event": "B1F2_AB_K1_anchor1",
+      "original_event": "B1F2_AB_K1",
+      "floor": "B1F2",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7564.196299999952,
+        4864887.1932
+      ],
+      "support_rows": [
+        127,
+        229,
+        343
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B1F2_AB_K1_unscored.npz",
+      "prediction_sha256": "4969b17142d1e12c882844e65f72f8128f1adcf085d67cfcd3d49894d28cd48a",
+      "scored_path": "results/continuous_observation_target_20261110/B1F2_AB_K1_scored.npz",
+      "scored_sha256": "0aef2f3fb5418c4f913586d938c7a1228f150a51919c1f2e09dcc44655e88b98",
+      "mde": 8.633810535973426
+    },
+    {
+      "event": "B1F2_AB_K1_anchor2",
+      "original_event": "B1F2_AB_K1",
+      "floor": "B1F2",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7571.093400001526,
+        4864871.7184000015
+      ],
+      "support_rows": [
+        123,
+        234,
+        341
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_AB_K1_anchor2_unscored.npz",
+      "prediction_sha256": "a64d6033fa49fe60830fa400628bf946f96b45c8cd459514d939cda2cd324449",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_AB_K1_anchor2_scored.npz",
+      "scored_sha256": "b44d4abd8f1b6df2d7981365fa8a6236550409df65fce946ba0b35bc9f15ae65",
+      "mde": 6.8090512946694135
+    },
+    {
+      "event": "B1F2_AB_K1_anchor3",
+      "original_event": "B1F2_AB_K1",
+      "floor": "B1F2",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7527.451099999249,
+        4864929.146399997
+      ],
+      "support_rows": [
+        117,
+        219,
+        329
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_AB_K1_anchor3_unscored.npz",
+      "prediction_sha256": "e327c96d23f6e4ef0f73c3a32bc00dad2f19ef814bd15a76ff474c593c95cc12",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_AB_K1_anchor3_scored.npz",
+      "scored_sha256": "7a29dce0491769069555c11b3ddc308b11b1b2c7fb6e14825dd0d817807a6152",
+      "mde": 8.374724972605229
+    },
+    {
+      "event": "B1F2_AB_K1_anchor4",
+      "original_event": "B1F2_AB_K1",
+      "floor": "B1F2",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7511.5214999988675,
+        4864853.5402000025
+      ],
+      "support_rows": [
+        151,
+        257,
+        366
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_AB_K1_anchor4_unscored.npz",
+      "prediction_sha256": "1e7edea689a36a751a5aad810eb6f59d57df9d8e70399b16674509019361bd6b",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_AB_K1_anchor4_scored.npz",
+      "scored_sha256": "78e017b8e6cb5c21ff99e889c780a6c17909d43261c061820b9949491f6d08e7",
+      "mde": 6.46429591236157
+    },
+    {
+      "event": "B1F2_AB_K1_anchor5",
+      "original_event": "B1F2_AB_K1",
+      "floor": "B1F2",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7506.529300000519,
+        4864862.554300003
+      ],
+      "support_rows": [
+        150,
+        259,
+        367
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_AB_K1_anchor5_unscored.npz",
+      "prediction_sha256": "23d96874922cfb5a6a46cde3cb76e2592048a9ccf266db1b3a67c4b6d94f559c",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_AB_K1_anchor5_scored.npz",
+      "scored_sha256": "a234b01a93ae7cb6dfd0b22bd03d192b3984955ec826c395a7981c49163af063",
+      "mde": 5.634632871446443
+    },
+    {
+      "event": "B1F2_BA_K1_anchor1",
+      "original_event": "B1F2_BA_K1",
+      "floor": "B1F2",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7564.196299999952,
+        4864887.1932
+      ],
+      "support_rows": [
+        1360,
+        1397,
+        1431
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B1F2_BA_K1_unscored.npz",
+      "prediction_sha256": "dfaef3bbad74c2339db45211253e8cef7e709e1a96c93c49e8d2272e8d29b604",
+      "scored_path": "results/continuous_observation_target_20261110/B1F2_BA_K1_scored.npz",
+      "scored_sha256": "eb6db7faaa840c3797fd6862520a1a869be09d8fec87fd1f6c0e4e995d025dd6",
+      "mde": 9.332720682755555
+    },
+    {
+      "event": "B1F2_BA_K1_anchor2",
+      "original_event": "B1F2_BA_K1",
+      "floor": "B1F2",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7571.093400001526,
+        4864871.7184000015
+      ],
+      "support_rows": [
+        1362,
+        1395,
+        1432
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_BA_K1_anchor2_unscored.npz",
+      "prediction_sha256": "83ee5b2b953a856e8fede07dc35eb71090a8860e77f77e28822637984cc96fa1",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_BA_K1_anchor2_scored.npz",
+      "scored_sha256": "69e77486ec8ca972d453febc9c178ef45d1b38796259ba3e9c1b704f46b25d29",
+      "mde": 8.940660845899629
+    },
+    {
+      "event": "B1F2_BA_K1_anchor3",
+      "original_event": "B1F2_BA_K1",
+      "floor": "B1F2",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7527.451099999249,
+        4864929.146399997
+      ],
+      "support_rows": [
+        1341,
+        1384,
+        1420
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_BA_K1_anchor3_unscored.npz",
+      "prediction_sha256": "bcf79cc08a8dad24835fe906363c008d9e4a4d4466030ba1a48d3ed7763df592",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_BA_K1_anchor3_scored.npz",
+      "scored_sha256": "5ec9a2045cf090b398a9448bf5c51cf6935899f16340f4485bae9ca21e73455a",
+      "mde": 8.599302340158271
+    },
+    {
+      "event": "B1F2_BA_K1_anchor4",
+      "original_event": "B1F2_BA_K1",
+      "floor": "B1F2",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7511.5214999988675,
+        4864853.5402000025
+      ],
+      "support_rows": [
+        1334,
+        1369,
+        1411
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_BA_K1_anchor4_unscored.npz",
+      "prediction_sha256": "fb002c1826916d78b3090e76e96986a10294f0fd41b5ef3b69af3708eccb3206",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_BA_K1_anchor4_scored.npz",
+      "scored_sha256": "2cf3153d887753396461e3ea1ca0acde15468518e5cae045f39e538dce9fa032",
+      "mde": 7.438173996836061
+    },
+    {
+      "event": "B1F2_BA_K1_anchor5",
+      "original_event": "B1F2_BA_K1",
+      "floor": "B1F2",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7506.529300000519,
+        4864862.554300003
+      ],
+      "support_rows": [
+        1335,
+        1372,
+        1409
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_BA_K1_anchor5_unscored.npz",
+      "prediction_sha256": "e61299231d6892e8a3f60365d7f5027908337a90a7298276d98f484d0ff0c52c",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F2_BA_K1_anchor5_scored.npz",
+      "scored_sha256": "3eb3a6547a19a64f03c58b68236917630be5cdff8e5e85782035ad29744ac785",
+      "mde": 8.082719542721755
+    },
+    {
+      "event": "B1F3_AB_K1_anchor1",
+      "original_event": "B1F3_AB_K1",
+      "floor": "B1F3",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7537.092713735998,
+        4864945.5342325345
+      ],
+      "support_rows": [
+        4690,
+        4743,
+        4800
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B1F3_AB_K1_unscored.npz",
+      "prediction_sha256": "f1e2fef2a8a8f9d7d70906e40ebce1dfd167b83afabc06aa6b8e3df3c06ff5c1",
+      "scored_path": "results/continuous_observation_target_20261110/B1F3_AB_K1_scored.npz",
+      "scored_sha256": "34817ca1b6b490cede9b6173f0891826179722ebf7b8d1cf0ce8ffaca9473dc7",
+      "mde": 5.622753279969164
+    },
+    {
+      "event": "B1F3_AB_K1_anchor2",
+      "original_event": "B1F3_AB_K1",
+      "floor": "B1F3",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7536.165800001472,
+        4864897.859200001
+      ],
+      "support_rows": [
+        4704,
+        4758,
+        4805
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_AB_K1_anchor2_unscored.npz",
+      "prediction_sha256": "b163288d08af4a1f4cfddbd6cf318bafc98cf9180c37028576aa1d9fdaa482be",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_AB_K1_anchor2_scored.npz",
+      "scored_sha256": "d0c665a88dd4958801775f35cfc095e97a70ea8afb1978d50fe2fd63d1f9bfa8",
+      "mde": 5.308415611052192
+    },
+    {
+      "event": "B1F3_AB_K1_anchor3",
+      "original_event": "B1F3_AB_K1",
+      "floor": "B1F3",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7513.10449071601,
+        4864943.869619727
+      ],
+      "support_rows": [
+        4686,
+        4741,
+        4795
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_AB_K1_anchor3_unscored.npz",
+      "prediction_sha256": "038282c7001640571e367c98c8954a68e528aab1e55dd86190ab1eaf48fc805f",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_AB_K1_anchor3_scored.npz",
+      "scored_sha256": "11c9a1a761f1851165dec58b0a4def1c92e8cfc62a335657af447950dfbdb4d8",
+      "mde": 5.977810472777936
+    },
+    {
+      "event": "B1F3_AB_K1_anchor4",
+      "original_event": "B1F3_AB_K1",
+      "floor": "B1F3",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7536.584399998188,
+        4864918.1096
+      ],
+      "support_rows": [
+        4681,
+        4734,
+        4787
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_AB_K1_anchor4_unscored.npz",
+      "prediction_sha256": "85bcce4499b6c0255d29ca6662cd11310bd05da9551539ac2f0d956f6b28d25f",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_AB_K1_anchor4_scored.npz",
+      "scored_sha256": "0d200f526de92193d7dca9bd363ae1952e0c14e91897dba0521d5468b4df912b",
+      "mde": 5.83655636314
+    },
+    {
+      "event": "B1F3_AB_K1_anchor5",
+      "original_event": "B1F3_AB_K1",
+      "floor": "B1F3",
+      "building": "B1",
+      "direction": "AB",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7559.637499999255,
+        4864871.639600001
+      ],
+      "support_rows": [
+        4699,
+        4754,
+        4807
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_AB_K1_anchor5_unscored.npz",
+      "prediction_sha256": "988ece8534b97b98ba615dea7d14a453f30d553d16753b12f9a7984aabd55d09",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_AB_K1_anchor5_scored.npz",
+      "scored_sha256": "6c0fd3b9be901d5be8137cc02b42e40fca90eb231931ff6d78ae4aa3e736ded5",
+      "mde": 5.8009295917346675
+    },
+    {
+      "event": "B1F3_BA_K1_anchor1",
+      "original_event": "B1F3_BA_K1",
+      "floor": "B1F3",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7537.092713735998,
+        4864945.5342325345
+      ],
+      "support_rows": [
+        19553,
+        19596,
+        19636
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B1F3_BA_K1_unscored.npz",
+      "prediction_sha256": "8cddfdb970ae837b6afd9dabd24355d8c4461b8d325d531417bcc852c646b9f3",
+      "scored_path": "results/continuous_observation_target_20261110/B1F3_BA_K1_scored.npz",
+      "scored_sha256": "b66f59b0a7f4c4c5d97fbffc97af4527532d3ffac13baddd8cd82058ce57ceae",
+      "mde": 13.499285116026833
+    },
+    {
+      "event": "B1F3_BA_K1_anchor2",
+      "original_event": "B1F3_BA_K1",
+      "floor": "B1F3",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7536.165800001472,
+        4864897.859200001
+      ],
+      "support_rows": [
+        19583,
+        19630,
+        19676
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_BA_K1_anchor2_unscored.npz",
+      "prediction_sha256": "a7470702f720258558138405c0e0b8d16df095c65352fb9c7676d9210ed6cfa0",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_BA_K1_anchor2_scored.npz",
+      "scored_sha256": "f744a0cbb90f29849f07bb2f8acb1c92499932e5a3bea41ad5e3d9f179ee33a2",
+      "mde": 13.59283878268942
+    },
+    {
+      "event": "B1F3_BA_K1_anchor3",
+      "original_event": "B1F3_BA_K1",
+      "floor": "B1F3",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7513.10449071601,
+        4864943.869619727
+      ],
+      "support_rows": [
+        19551,
+        19592,
+        19640
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_BA_K1_anchor3_unscored.npz",
+      "prediction_sha256": "64bf2e2ed3d3a2e57de2ad8a93718e037f353851cca2c503ec4be0a829e09bee",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_BA_K1_anchor3_scored.npz",
+      "scored_sha256": "45794ee51868b22f595affc4deb971b3798974c41278662a50caa8eaa3140a72",
+      "mde": 14.065799794346612
+    },
+    {
+      "event": "B1F3_BA_K1_anchor4",
+      "original_event": "B1F3_BA_K1",
+      "floor": "B1F3",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7536.584399998188,
+        4864918.1096
+      ],
+      "support_rows": [
+        19600,
+        19649,
+        19689
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_BA_K1_anchor4_unscored.npz",
+      "prediction_sha256": "807b79c4ffea8a39682d6942f12a99510a6838fba7c3f01200df68cadabc9d50",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_BA_K1_anchor4_scored.npz",
+      "scored_sha256": "483f37e52070b56e0da948baa30c8c1ee491bbdc61b154d9356ba79d345e28f1",
+      "mde": 14.257471756278061
+    },
+    {
+      "event": "B1F3_BA_K1_anchor5",
+      "original_event": "B1F3_BA_K1",
+      "floor": "B1F3",
+      "building": "B1",
+      "direction": "BA",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7559.637499999255,
+        4864871.639600001
+      ],
+      "support_rows": [
+        19541,
+        19587,
+        19629
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_BA_K1_anchor5_unscored.npz",
+      "prediction_sha256": "9c75157a0c8aee12212fc404a29e74fdee9aacbaa87d61dde9031d122300d912",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B1F3_BA_K1_anchor5_scored.npz",
+      "scored_sha256": "efed82c607a12c342ae5c03f7b8bc0553079828ae06e06d137fdd2a563212581",
+      "mde": 13.479651243431144
+    },
+    {
+      "event": "B2F0_AB_K1_anchor1",
+      "original_event": "B2F0_AB_K1",
+      "floor": "B2F0",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7316.835799999535,
+        4864813.697499998
+      ],
+      "support_rows": [
+        4732,
+        4786,
+        4840
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B2F0_AB_K1_unscored.npz",
+      "prediction_sha256": "bca4ed58439096f5fffadbfeaa588495169e6b8b96d9fa412cbc5d7d20cd4e59",
+      "scored_path": "results/continuous_observation_target_20261110/B2F0_AB_K1_scored.npz",
+      "scored_sha256": "b88b52c3878ca665dc63523e35a1c54072adb35a92673638bbd15ab55422eec7",
+      "mde": 13.390804827702434
+    },
+    {
+      "event": "B2F0_AB_K1_anchor2",
+      "original_event": "B2F0_AB_K1",
+      "floor": "B2F0",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7322.620947800577,
+        4864812.722818367
+      ],
+      "support_rows": [
+        4735,
+        4784,
+        4838
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_AB_K1_anchor2_unscored.npz",
+      "prediction_sha256": "c51fc1a316981e18552b476c59504264f914b07cb0d3252e6e9cf8d8fb31c907",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_AB_K1_anchor2_scored.npz",
+      "scored_sha256": "e88f569763d66af80b678082a9872932be3ed1dd61b33744da9ea61cda63f478",
+      "mde": 13.171519083522954
+    },
+    {
+      "event": "B2F0_AB_K1_anchor3",
+      "original_event": "B2F0_AB_K1",
+      "floor": "B2F0",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7311.829500000924,
+        4864805.7271
+      ],
+      "support_rows": [
+        4725,
+        4780,
+        4836
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_AB_K1_anchor3_unscored.npz",
+      "prediction_sha256": "2d03ee201a51ae008082ef244a2ec0c210a2a7fa062d77ae629ee17d37dd7ac4",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_AB_K1_anchor3_scored.npz",
+      "scored_sha256": "dba0221b820af0773788fc660da29a2c68f58cf2953012f441daea85d71e2dd4",
+      "mde": 13.590944736826716
+    },
+    {
+      "event": "B2F0_AB_K1_anchor4",
+      "original_event": "B2F0_AB_K1",
+      "floor": "B2F0",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7369.223544884473,
+        4864761.381877743
+      ],
+      "support_rows": [
+        4718,
+        4767,
+        4822
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_AB_K1_anchor4_unscored.npz",
+      "prediction_sha256": "ac1b65e884bd9ff019144cbf855948eef8fe6591ab0e70acdc12d411223bfdc5",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_AB_K1_anchor4_scored.npz",
+      "scored_sha256": "d10f2cf018a4b63a3d0ad052b5c594edb6e30285a7c586dd0f43c0d30873c40b",
+      "mde": 13.212575270482585
+    },
+    {
+      "event": "B2F0_AB_K1_anchor5",
+      "original_event": "B2F0_AB_K1",
+      "floor": "B2F0",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7375.98580000177,
+        4864772.226599999
+      ],
+      "support_rows": [
+        4712,
+        4765,
+        4821
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_AB_K1_anchor5_unscored.npz",
+      "prediction_sha256": "32ea1744d3920957e18974cc3e357399a7d202bed41befe109370d75655509c2",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_AB_K1_anchor5_scored.npz",
+      "scored_sha256": "42a0ff516597d86e9167e63c5967be10c372c04141c65f8ba82f1921a7c127a3",
+      "mde": 13.463869730693512
+    },
+    {
+      "event": "B2F0_BA_K1_anchor1",
+      "original_event": "B2F0_BA_K1",
+      "floor": "B2F0",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7316.835799999535,
+        4864813.697499998
+      ],
+      "support_rows": [
+        5312,
+        5414,
+        5835
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B2F0_BA_K1_unscored.npz",
+      "prediction_sha256": "c5660bbba7846731b1fcb2262d8a6e6c987f4c05630ca70f14d31f1e4a0ac2e1",
+      "scored_path": "results/continuous_observation_target_20261110/B2F0_BA_K1_scored.npz",
+      "scored_sha256": "a41f3b4bef93b8bb841c7b59db753dd4bd27bd136a86d2cb8ed9c78b2ca3c7f2",
+      "mde": 19.0063004502121
+    },
+    {
+      "event": "B2F0_BA_K1_anchor2",
+      "original_event": "B2F0_BA_K1",
+      "floor": "B2F0",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7322.620947800577,
+        4864812.722818367
+      ],
+      "support_rows": [
+        5316,
+        5413,
+        5837
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_BA_K1_anchor2_unscored.npz",
+      "prediction_sha256": "3d5823c22d08c25fecfeb26b54e89a9f6658dc2858f295f17fff0b7c0619fc33",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_BA_K1_anchor2_scored.npz",
+      "scored_sha256": "2c2e56be9c5cbca28969a7f34c3adf69f111dffcc7e0fc47a008c92589df87bc",
+      "mde": 21.49686526634777
+    },
+    {
+      "event": "B2F0_BA_K1_anchor3",
+      "original_event": "B2F0_BA_K1",
+      "floor": "B2F0",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7311.829500000924,
+        4864805.7271
+      ],
+      "support_rows": [
+        5306,
+        5406,
+        5504
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_BA_K1_anchor3_unscored.npz",
+      "prediction_sha256": "03e82b1e164cbbd2cfba8447e2c443eab867ba527270b5fc9cdfc3367e89b0ad",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_BA_K1_anchor3_scored.npz",
+      "scored_sha256": "0d073b632065dbd669a64fc7d091abee4f9ff9ca055192e703d4e0970ba70db1",
+      "mde": 18.998100674042437
+    },
+    {
+      "event": "B2F0_BA_K1_anchor4",
+      "original_event": "B2F0_BA_K1",
+      "floor": "B2F0",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7369.223544884473,
+        4864761.381877743
+      ],
+      "support_rows": [
+        5300,
+        5397,
+        5820
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_BA_K1_anchor4_unscored.npz",
+      "prediction_sha256": "2dc3d05134188cd4e975d6c775ba6db5776380ce9af0b206a912641d95af1f09",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_BA_K1_anchor4_scored.npz",
+      "scored_sha256": "6006d5fd74427dd8539940daa9a637dbb6ee9900358f638c34425fc4039387ea",
+      "mde": 21.297349349995987
+    },
+    {
+      "event": "B2F0_BA_K1_anchor5",
+      "original_event": "B2F0_BA_K1",
+      "floor": "B2F0",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7375.98580000177,
+        4864772.226599999
+      ],
+      "support_rows": [
+        5297,
+        5396,
+        5495
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_BA_K1_anchor5_unscored.npz",
+      "prediction_sha256": "dc68c82f7d8f281a52d787f731842b557aa5b64fb96b2c7c9949896c4e248bb2",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F0_BA_K1_anchor5_scored.npz",
+      "scored_sha256": "94817052bf4591326a778b139d933271ae82e9b123dd65023a5c396d0c647d13",
+      "mde": 20.12951963344909
+    },
+    {
+      "event": "B2F1_AB_K1_anchor1",
+      "original_event": "B2F1_AB_K1",
+      "floor": "B2F1",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7327.959273736924,
+        4864815.692792743
+      ],
+      "support_rows": [
+        3509,
+        3646,
+        3786
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B2F1_AB_K1_unscored.npz",
+      "prediction_sha256": "39778befc036affc4b3f4bfc95a430bdf0e57cda8c1a72e96007910d8e2bd65e",
+      "scored_path": "results/continuous_observation_target_20261110/B2F1_AB_K1_scored.npz",
+      "scored_sha256": "2360dc07fb452e34bc6dfb8f7322de5174e4cab5b525fcbb3fa75efecf424cdd",
+      "mde": 6.885897393687768
+    },
+    {
+      "event": "B2F1_AB_K1_anchor2",
+      "original_event": "B2F1_AB_K1",
+      "floor": "B2F1",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7366.037799999118,
+        4864845.549400002
+      ],
+      "support_rows": [
+        3477,
+        3614,
+        3754
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_AB_K1_anchor2_unscored.npz",
+      "prediction_sha256": "f6de9c09b3eec523ef4a5f4718c2a60c6f1d8a36f35955815aa49a40aa3d0382",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_AB_K1_anchor2_scored.npz",
+      "scored_sha256": "92a9dc42951887c2031432eb87af42fdc93b9138f69d2715206862116b2ed62c",
+      "mde": 6.851992188123775
+    },
+    {
+      "event": "B2F1_AB_K1_anchor3",
+      "original_event": "B2F1_AB_K1",
+      "floor": "B2F1",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7391.930192384869,
+        4864841.240641914
+      ],
+      "support_rows": [
+        3462,
+        3600,
+        3742
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_AB_K1_anchor3_unscored.npz",
+      "prediction_sha256": "3cd05e168fd5d5a66bc9df2917f4b4f3e96a5bb74ea424bf09959000a3e5b171",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_AB_K1_anchor3_scored.npz",
+      "scored_sha256": "b79006c7881dae207f2745f816a2864ea677452f47478783e6621a9c2c53d866",
+      "mde": 6.9459892189859085
+    },
+    {
+      "event": "B2F1_AB_K1_anchor4",
+      "original_event": "B2F1_AB_K1",
+      "floor": "B2F1",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7345.42330000177,
+        4864829.557700001
+      ],
+      "support_rows": [
+        3511,
+        3649,
+        3788
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_AB_K1_anchor4_unscored.npz",
+      "prediction_sha256": "90a9afe5313da1b8bbf34dfa7e0c2a0d0012d19e283c7b8b497a8737c684e061",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_AB_K1_anchor4_scored.npz",
+      "scored_sha256": "0f2117972829024fa9bbe8e3a1d035ff614d5d1652b038ef1ab3dfe92a199cea",
+      "mde": 7.5755401062959
+    },
+    {
+      "event": "B2F1_AB_K1_anchor5",
+      "original_event": "B2F1_AB_K1",
+      "floor": "B2F1",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7360.497299998999,
+        4864837.920500003
+      ],
+      "support_rows": [
+        3515,
+        3793,
+        3656
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_AB_K1_anchor5_unscored.npz",
+      "prediction_sha256": "e54564d05725eb8f68d770220eacdd796fa99dc650ed26078f39b3bed7626137",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_AB_K1_anchor5_scored.npz",
+      "scored_sha256": "bf400fba32be9f4bf3c3ba27983acfeb0c38e6205100d721c74d16d9d7135f85",
+      "mde": 7.540402333976338
+    },
+    {
+      "event": "B2F1_BA_K1_anchor1",
+      "original_event": "B2F1_BA_K1",
+      "floor": "B2F1",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7327.959273736924,
+        4864815.692792743
+      ],
+      "support_rows": [
+        18605,
+        18698,
+        18786
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B2F1_BA_K1_unscored.npz",
+      "prediction_sha256": "fc9bc59fc5385559aa11ba97a45484d5ebe7c1f118e7b7422317bf691d432275",
+      "scored_path": "results/continuous_observation_target_20261110/B2F1_BA_K1_scored.npz",
+      "scored_sha256": "d7a5c8a0efc1f2277fb76ec6326ba13628a0125edd06e59fc454f4b9fb915d93",
+      "mde": 8.719967888138694
+    },
+    {
+      "event": "B2F1_BA_K1_anchor2",
+      "original_event": "B2F1_BA_K1",
+      "floor": "B2F1",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7366.037799999118,
+        4864845.549400002
+      ],
+      "support_rows": [
+        14548,
+        14565,
+        14593
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_BA_K1_anchor2_unscored.npz",
+      "prediction_sha256": "dff95797ed47af4e04815d026f4f76b6a1aee8f466f18cc4111c3a0b91f92fb6",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_BA_K1_anchor2_scored.npz",
+      "scored_sha256": "ae4da5d5d7e64e1ca54cafb878c1d3b0fa543565c9f125a35ae6e58cd9c475a3",
+      "mde": 9.322518514717231
+    },
+    {
+      "event": "B2F1_BA_K1_anchor3",
+      "original_event": "B2F1_BA_K1",
+      "floor": "B2F1",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7391.930192384869,
+        4864841.240641914
+      ],
+      "support_rows": [
+        14544,
+        14572,
+        14594
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_BA_K1_anchor3_unscored.npz",
+      "prediction_sha256": "4a96ba132a859a8fccf545e525fbad1121ac52f3b6edc1aaa972082ca11a065b",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_BA_K1_anchor3_scored.npz",
+      "scored_sha256": "228045bebb0cfff5a90ef33b41a9402b66798a9bb070bf9e29c4670548a31114",
+      "mde": 9.097924646495501
+    },
+    {
+      "event": "B2F1_BA_K1_anchor4",
+      "original_event": "B2F1_BA_K1",
+      "floor": "B2F1",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7345.42330000177,
+        4864829.557700001
+      ],
+      "support_rows": [
+        18687,
+        18776,
+        18867
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_BA_K1_anchor4_unscored.npz",
+      "prediction_sha256": "bfc13f90c5ece6e5e4410f387052497550a88b35d180b1af73130843966e2115",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_BA_K1_anchor4_scored.npz",
+      "scored_sha256": "caaf086ffdb0d1d34130b5a64b8c74350c3fe1312376c0acf08da05052c24263",
+      "mde": 8.3634887110804
+    },
+    {
+      "event": "B2F1_BA_K1_anchor5",
+      "original_event": "B2F1_BA_K1",
+      "floor": "B2F1",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7360.497299998999,
+        4864837.920500003
+      ],
+      "support_rows": [
+        14569,
+        14547,
+        14591
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_BA_K1_anchor5_unscored.npz",
+      "prediction_sha256": "4294a0d68d3f0c5160b1ac586e017a5e1d468c74b01c30df6f6a6777c33d0c07",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F1_BA_K1_anchor5_scored.npz",
+      "scored_sha256": "a7670301d178b9ddc1ae0184c5637e1b04103fd08d481623089201c3ed3d4e9f",
+      "mde": 8.873052217976655
+    },
+    {
+      "event": "B2F2_AB_K1_anchor1",
+      "original_event": "B2F2_AB_K1",
+      "floor": "B2F2",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7390.184700001031,
+        4864838.919100001
+      ],
+      "support_rows": [
+        7925,
+        8365,
+        8818
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B2F2_AB_K1_unscored.npz",
+      "prediction_sha256": "4a49f3104647c116159fd7f4a26970a9d84efa9ee02bcad7ee88ac3d729ec09e",
+      "scored_path": "results/continuous_observation_target_20261110/B2F2_AB_K1_scored.npz",
+      "scored_sha256": "c58113d05aeb7f725b643f16177214de2c9c5b173ca2510208c0bf3cc0f1c455",
+      "mde": 8.9840479707499
+    },
+    {
+      "event": "B2F2_AB_K1_anchor2",
+      "original_event": "B2F2_AB_K1",
+      "floor": "B2F2",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7315.743400000036,
+        4864802.071500003
+      ],
+      "support_rows": [
+        7961,
+        8398,
+        8852
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_AB_K1_anchor2_unscored.npz",
+      "prediction_sha256": "3f00d360a97da2d177b48ecdf36117579b7199a06222c11b7f1c8a06a2185cc6",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_AB_K1_anchor2_scored.npz",
+      "scored_sha256": "60fc49378b59d0ab19cfa832e4893886e0f7667534f4c7ae8bd9568785087dc1",
+      "mde": 6.583308164888584
+    },
+    {
+      "event": "B2F2_AB_K1_anchor3",
+      "original_event": "B2F2_AB_K1",
+      "floor": "B2F2",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7311.919399999082,
+        4864808.963799998
+      ],
+      "support_rows": [
+        7957,
+        8394,
+        8847
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_AB_K1_anchor3_unscored.npz",
+      "prediction_sha256": "a9cf550e505b563aae23ff6af2a137771e9495b2f7e3cb4a0c9a78d84054ee44",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_AB_K1_anchor3_scored.npz",
+      "scored_sha256": "fe373739f99820394b823e97d4d974591c1f551a25c945f54a393733864fd013",
+      "mde": 7.583335911601141
+    },
+    {
+      "event": "B2F2_AB_K1_anchor4",
+      "original_event": "B2F2_AB_K1",
+      "floor": "B2F2",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7316.963899999857,
+        4864795.236500002
+      ],
+      "support_rows": [
+        7971,
+        8409,
+        8860
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_AB_K1_anchor4_unscored.npz",
+      "prediction_sha256": "31e3d2dbf4b7e1c631102a9d455dcc11ff8b19b11273b576a88fe64f1bcf2559",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_AB_K1_anchor4_scored.npz",
+      "scored_sha256": "f68307273144b3f536e3582cc4548a9e1b5f99c323971e5b4dfcce6d5c25365a",
+      "mde": 7.707847861278971
+    },
+    {
+      "event": "B2F2_AB_K1_anchor5",
+      "original_event": "B2F2_AB_K1",
+      "floor": "B2F2",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7345.42330000177,
+        4864829.557700001
+      ],
+      "support_rows": [
+        7991,
+        8424,
+        8880
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_AB_K1_anchor5_unscored.npz",
+      "prediction_sha256": "32dca03245dd561700a382a575dcf7b2a789b71551389e3df0d15de1636801c0",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_AB_K1_anchor5_scored.npz",
+      "scored_sha256": "66b24c36e55985641c281c1b889b472652181759b4baee0f3762edd120c2e983",
+      "mde": 7.299889695634898
+    },
+    {
+      "event": "B2F2_BA_K1_anchor1",
+      "original_event": "B2F2_BA_K1",
+      "floor": "B2F2",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7390.184700001031,
+        4864838.919100001
+      ],
+      "support_rows": [
+        13090,
+        13238,
+        13387
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B2F2_BA_K1_unscored.npz",
+      "prediction_sha256": "2a93dfd7e836f983518ebcd68c0840a2bc251625aa5c827864af31f561aed59c",
+      "scored_path": "results/continuous_observation_target_20261110/B2F2_BA_K1_scored.npz",
+      "scored_sha256": "d1f9793df787d03fd5503e176d29244ddd7aac4fe93be7f97cca45e82b8ea3d9",
+      "mde": 6.481522405933155
+    },
+    {
+      "event": "B2F2_BA_K1_anchor2",
+      "original_event": "B2F2_BA_K1",
+      "floor": "B2F2",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7315.743400000036,
+        4864802.071500003
+      ],
+      "support_rows": [
+        13115,
+        13413,
+        13577
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_BA_K1_anchor2_unscored.npz",
+      "prediction_sha256": "0472e9b2f30bd907cba7d79bd52865218a74f012e2c5c0a3f0e2590e09185cb6",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_BA_K1_anchor2_scored.npz",
+      "scored_sha256": "bb3855864e6de317d632094b558839e8720ede3ac4bb9f597e892a7e04163d15",
+      "mde": 6.7025875836070075
+    },
+    {
+      "event": "B2F2_BA_K1_anchor3",
+      "original_event": "B2F2_BA_K1",
+      "floor": "B2F2",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7311.919399999082,
+        4864808.963799998
+      ],
+      "support_rows": [
+        13112,
+        13263,
+        12950
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_BA_K1_anchor3_unscored.npz",
+      "prediction_sha256": "2acdd8b03af929b7bc3142ab2863ade2ea6f074b514228492061f8c52a2b1058",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_BA_K1_anchor3_scored.npz",
+      "scored_sha256": "ed15e98924a9d4a2a79632856a020ef9074445d66cad3b91a5ec53b371420fed",
+      "mde": 6.204770245145247
+    },
+    {
+      "event": "B2F2_BA_K1_anchor4",
+      "original_event": "B2F2_BA_K1",
+      "floor": "B2F2",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7316.963899999857,
+        4864795.236500002
+      ],
+      "support_rows": [
+        13118,
+        13265,
+        13415
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_BA_K1_anchor4_unscored.npz",
+      "prediction_sha256": "bfc9a12757a0d16585c5db8f8b5c07ff93fdba37a441f5e4bc903f4d9557ce14",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_BA_K1_anchor4_scored.npz",
+      "scored_sha256": "fb0af0b2d6296d49c82ae0c37f6af75ffcef0ae8ec32b9acf18f86e952bc08d1",
+      "mde": 6.913153964625631
+    },
+    {
+      "event": "B2F2_BA_K1_anchor5",
+      "original_event": "B2F2_BA_K1",
+      "floor": "B2F2",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7345.42330000177,
+        4864829.557700001
+      ],
+      "support_rows": [
+        13429,
+        13596,
+        13749
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_BA_K1_anchor5_unscored.npz",
+      "prediction_sha256": "8678e6be02d8148f1eb9a65c9a281650cf7e60cc51dd8498a1cd535e27d89fac",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F2_BA_K1_anchor5_scored.npz",
+      "scored_sha256": "ff8a698a4de683e8c2104112362bb6b2ffd8ce9988197dc88c8d1e761e691ed9",
+      "mde": 6.29195901203168
+    },
+    {
+      "event": "B2F3_AB_K1_anchor1",
+      "original_event": "B2F3_AB_K1",
+      "floor": "B2F3",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7336.700399998575,
+        4864764.478799999
+      ],
+      "support_rows": [
+        165,
+        271,
+        377
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B2F3_AB_K1_unscored.npz",
+      "prediction_sha256": "7fc8094bc938c5490d1e53a81ac405e90b92269045e252df1058d3f3007b5086",
+      "scored_path": "results/continuous_observation_target_20261110/B2F3_AB_K1_scored.npz",
+      "scored_sha256": "fdb1452acc3d13b8d52aed8634241e21d81f3cf0a520290bb6823498b2533d06",
+      "mde": 9.510094617680785
+    },
+    {
+      "event": "B2F3_AB_K1_anchor2",
+      "original_event": "B2F3_AB_K1",
+      "floor": "B2F3",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7385.372800000012,
+        4864776.740699999
+      ],
+      "support_rows": [
+        192,
+        302,
+        416
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_AB_K1_anchor2_unscored.npz",
+      "prediction_sha256": "97671fcf685610f84efc2c9dc295b3bd64483f1f2b760e6fa2f2af7fe4070a7d",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_AB_K1_anchor2_scored.npz",
+      "scored_sha256": "20b2e628f9f6d519885ce02f2f01c3aa74808aa0447a096397f16926a3b917ef",
+      "mde": 6.469478572603509
+    },
+    {
+      "event": "B2F3_AB_K1_anchor3",
+      "original_event": "B2F3_AB_K1",
+      "floor": "B2F3",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7370.614700000733,
+        4864768.552900001
+      ],
+      "support_rows": [
+        203,
+        313,
+        417
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_AB_K1_anchor3_unscored.npz",
+      "prediction_sha256": "dd54a5714b0677780a285fbae225a7d4b468003bdfeca052cae0f0d493211710",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_AB_K1_anchor3_scored.npz",
+      "scored_sha256": "69bc823b9601c0a94d01950730f257affc5c3f479962e3aece0177f7c144c0ac",
+      "mde": 6.029122985391867
+    },
+    {
+      "event": "B2F3_AB_K1_anchor4",
+      "original_event": "B2F3_AB_K1",
+      "floor": "B2F3",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7399.109700001776,
+        4864784.361699998
+      ],
+      "support_rows": [
+        187,
+        292,
+        402
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_AB_K1_anchor4_unscored.npz",
+      "prediction_sha256": "e6d1b43531fc94ca5c566ca1c0f54b656b9d67f8e344c3089f35a11e10a1d92b",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_AB_K1_anchor4_scored.npz",
+      "scored_sha256": "fec542e0120f6dd0e0e2ca122c05a2f954f6254a76cdc3c32705537e3fad9343",
+      "mde": 7.303428124269006
+    },
+    {
+      "event": "B2F3_AB_K1_anchor5",
+      "original_event": "B2F3_AB_K1",
+      "floor": "B2F3",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7331.747999999672,
+        4864767.318000004
+      ],
+      "support_rows": [
+        160,
+        267,
+        372
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_AB_K1_anchor5_unscored.npz",
+      "prediction_sha256": "f0404b3ad057a14fe391211e30c56fbd12d327d3401f209517809acec394797f",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_AB_K1_anchor5_scored.npz",
+      "scored_sha256": "f1c935ce98a05e83d3ed73f659ce78ce2c2e73e77fb956aa71f80bb8c41f19de",
+      "mde": 7.625200265099033
+    },
+    {
+      "event": "B2F3_BA_K1_anchor1",
+      "original_event": "B2F3_BA_K1",
+      "floor": "B2F3",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7336.700399998575,
+        4864764.478799999
+      ],
+      "support_rows": [
+        2412,
+        2509,
+        2607
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B2F3_BA_K1_unscored.npz",
+      "prediction_sha256": "d6492c3e57c1d918ec6ba02068639c91e16388f6b7b701c2a92c0538c913cabe",
+      "scored_path": "results/continuous_observation_target_20261110/B2F3_BA_K1_scored.npz",
+      "scored_sha256": "4010d4fbe5346412e6de1a6b36c0e92e0016f80c5e8ba2a5a9c364f299379c78",
+      "mde": 7.559866133065031
+    },
+    {
+      "event": "B2F3_BA_K1_anchor2",
+      "original_event": "B2F3_BA_K1",
+      "floor": "B2F3",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7385.372800000012,
+        4864776.740699999
+      ],
+      "support_rows": [
+        2386,
+        2484,
+        2582
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_BA_K1_anchor2_unscored.npz",
+      "prediction_sha256": "8cbbbeeb813078363d90bc06812cd93a1b51a5e71fbfd7d1898700d2229096b5",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_BA_K1_anchor2_scored.npz",
+      "scored_sha256": "31e82fdb2307d56818e553f367fae444db9be79a6cc1919c995df0e489b39693",
+      "mde": 6.981155727651634
+    },
+    {
+      "event": "B2F3_BA_K1_anchor3",
+      "original_event": "B2F3_BA_K1",
+      "floor": "B2F3",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7370.614700000733,
+        4864768.552900001
+      ],
+      "support_rows": [
+        2391,
+        2487,
+        2587
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_BA_K1_anchor3_unscored.npz",
+      "prediction_sha256": "ab1e0dfa357551087e8f0047cb7e3d579c72542fc8f368b54a43fbd9696f5a54",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_BA_K1_anchor3_scored.npz",
+      "scored_sha256": "879c71b7842366d2bd50d48f1747a104ac9f0b3af4d6946d83c079b18e2497ff",
+      "mde": 6.607719818739689
+    },
+    {
+      "event": "B2F3_BA_K1_anchor4",
+      "original_event": "B2F3_BA_K1",
+      "floor": "B2F3",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7399.109700001776,
+        4864784.361699998
+      ],
+      "support_rows": [
+        2379,
+        2475,
+        2573
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_BA_K1_anchor4_unscored.npz",
+      "prediction_sha256": "5ff7a98c2a14a72c36512b9a4d8ab55c336673602c79d28cd975d2d25291a8f0",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_BA_K1_anchor4_scored.npz",
+      "scored_sha256": "90d472523a68b5018fa313f6c096f1a0adef3c793469513ca3fca7be03962f1f",
+      "mde": 8.584940504190815
+    },
+    {
+      "event": "B2F3_BA_K1_anchor5",
+      "original_event": "B2F3_BA_K1",
+      "floor": "B2F3",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7331.747999999672,
+        4864767.318000004
+      ],
+      "support_rows": [
+        2510,
+        2609,
+        2707
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_BA_K1_anchor5_unscored.npz",
+      "prediction_sha256": "ff0c385350763565c150d3f54bf94ccffbab80bc708aa72820c755343b8d6123",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F3_BA_K1_anchor5_scored.npz",
+      "scored_sha256": "6f46b6f44a6b72f37b814cf9f2a3359d45f8caf3634e079dd0c3579f977e2a96",
+      "mde": 7.4377475125228605
+    },
+    {
+      "event": "B2F4_AB_K1_anchor1",
+      "original_event": "B2F4_AB_K1",
+      "floor": "B2F4",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7377.846599999815,
+        4864852.802199997
+      ],
+      "support_rows": [
+        2426,
+        2519,
+        2618
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B2F4_AB_K1_unscored.npz",
+      "prediction_sha256": "86a6e3cfd607d80a2be05794b7541ed593c6cb813adb33ea1ff6915629c0d81a",
+      "scored_path": "results/continuous_observation_target_20261110/B2F4_AB_K1_scored.npz",
+      "scored_sha256": "40bb9de2ce1f2ffb1fb23f806a3798f6869f124f64eb1732063c8ccb9b726234",
+      "mde": 18.779054421633738
+    },
+    {
+      "event": "B2F4_AB_K1_anchor2",
+      "original_event": "B2F4_AB_K1",
+      "floor": "B2F4",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7318.341099999845,
+        4864814.532499999
+      ],
+      "support_rows": [
+        2454,
+        2554,
+        2648
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_AB_K1_anchor2_unscored.npz",
+      "prediction_sha256": "dbf48ba158b33636fd11021e310847f798224c8489ba3bf0c71b4b648419a40a",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_AB_K1_anchor2_scored.npz",
+      "scored_sha256": "20bbf6284380f5a6804fb4a399f85272e3641f28d4377bd5706066b9565f6209",
+      "mde": 14.887580473044293
+    },
+    {
+      "event": "B2F4_AB_K1_anchor3",
+      "original_event": "B2F4_AB_K1",
+      "floor": "B2F4",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7310.057300001383,
+        4864815.1565999985
+      ],
+      "support_rows": [
+        2439,
+        2532,
+        2634
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_AB_K1_anchor3_unscored.npz",
+      "prediction_sha256": "7270410d73b939e0094e7426a6d3266ed17f34543b9eabaf1000e033a1ab4900",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_AB_K1_anchor3_scored.npz",
+      "scored_sha256": "976b94883cfe708b608550898234a53ce77797cc2b31cd45191d801e28f4b448",
+      "mde": 15.80924892136256
+    },
+    {
+      "event": "B2F4_AB_K1_anchor4",
+      "original_event": "B2F4_AB_K1",
+      "floor": "B2F4",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7385.526399999857,
+        4864838.958999999
+      ],
+      "support_rows": [
+        2421,
+        2520,
+        2619
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_AB_K1_anchor4_unscored.npz",
+      "prediction_sha256": "64effdc76482ef62a6b8ec9146205df60e12f0061dece96530b09c37e33bf96c",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_AB_K1_anchor4_scored.npz",
+      "scored_sha256": "c6f4542636e353c1c3233b8a08f247032742394a0b5be791197b49e4513b0a89",
+      "mde": 17.17215491794432
+    },
+    {
+      "event": "B2F4_AB_K1_anchor5",
+      "original_event": "B2F4_AB_K1",
+      "floor": "B2F4",
+      "building": "B2",
+      "direction": "AB",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7363.282299999148,
+        4864844.0207
+      ],
+      "support_rows": [
+        2428,
+        2529,
+        2625
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_AB_K1_anchor5_unscored.npz",
+      "prediction_sha256": "33a2f88f4377fd5196be05cd26b4ce33446f2777648dfcce147be51b40e351d9",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_AB_K1_anchor5_scored.npz",
+      "scored_sha256": "49c7eb3070d3c8d7f2882c42b0b70b31ee28ae9899a9d8b2f7fd2d4a84d54586",
+      "mde": 14.302631095608248
+    },
+    {
+      "event": "B2F4_BA_K1_anchor1",
+      "original_event": "B2F4_BA_K1",
+      "floor": "B2F4",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 1,
+      "anchor_xy": [
+        -7377.846599999815,
+        4864852.802199997
+      ],
+      "support_rows": [
+        12142,
+        12228,
+        12309
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": true,
+      "prediction_path": "results/continuous_observation_target_20261110/B2F4_BA_K1_unscored.npz",
+      "prediction_sha256": "db20d06952ce5e28100692a3e3ffaa66fd8c27926a6acaa6c748fda96b2c8f9c",
+      "scored_path": "results/continuous_observation_target_20261110/B2F4_BA_K1_scored.npz",
+      "scored_sha256": "5086eff24a691756da4ac37e4d0f442609b68a566868f10b79ca5f00496c6dae",
+      "mde": 10.643931671015425
+    },
+    {
+      "event": "B2F4_BA_K1_anchor2",
+      "original_event": "B2F4_BA_K1",
+      "floor": "B2F4",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 2,
+      "anchor_xy": [
+        -7318.341099999845,
+        4864814.532499999
+      ],
+      "support_rows": [
+        12204,
+        12284,
+        12365
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_BA_K1_anchor2_unscored.npz",
+      "prediction_sha256": "89a877a63482b36d4241ea425aee456aca0738e246e76ba358b80d8d4e37bf17",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_BA_K1_anchor2_scored.npz",
+      "scored_sha256": "ea5281dcdf5697fd374471094088bd9738afcf6c8fb3d5ca6d4cc9eebee40784",
+      "mde": 11.300497774605718
+    },
+    {
+      "event": "B2F4_BA_K1_anchor3",
+      "original_event": "B2F4_BA_K1",
+      "floor": "B2F4",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 3,
+      "anchor_xy": [
+        -7310.057300001383,
+        4864815.1565999985
+      ],
+      "support_rows": [
+        12200,
+        12364,
+        12447
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_BA_K1_anchor3_unscored.npz",
+      "prediction_sha256": "c7f1d8dbe45a758502241eecb53fb63e326981c76948d66827d147b480ffe362",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_BA_K1_anchor3_scored.npz",
+      "scored_sha256": "6708394d390f29b1d4a0593e2934f27eca024de9d381b4bde56f1db8570e394e",
+      "mde": 12.529869249773563
+    },
+    {
+      "event": "B2F4_BA_K1_anchor4",
+      "original_event": "B2F4_BA_K1",
+      "floor": "B2F4",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 4,
+      "anchor_xy": [
+        -7385.526399999857,
+        4864838.958999999
+      ],
+      "support_rows": [
+        12136,
+        12224,
+        12306
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_BA_K1_anchor4_unscored.npz",
+      "prediction_sha256": "36ce8b5669dc3a91881cbebc55f7a5824efe5a176f95a2cc8ae58932b11d4b00",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_BA_K1_anchor4_scored.npz",
+      "scored_sha256": "dab51be61101e99482a850865e3f2c8d8f0512658f5703228e537b3b1719dcc2",
+      "mde": 9.580567877073012
+    },
+    {
+      "event": "B2F4_BA_K1_anchor5",
+      "original_event": "B2F4_BA_K1",
+      "floor": "B2F4",
+      "building": "B2",
+      "direction": "BA",
+      "anchor_index": 5,
+      "anchor_xy": [
+        -7363.282299999148,
+        4864844.0207
+      ],
+      "support_rows": [
+        12234,
+        12314,
+        12148
+      ],
+      "K": 1,
+      "R": 3,
+      "reused": false,
+      "prediction_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_BA_K1_anchor5_unscored.npz",
+      "prediction_sha256": "c9805af307b02126b935da31522c8824e8faa1617f20d4a3cc54ff67a4369460",
+      "scored_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/continuous_observation_support_stability_20261110/B2F4_BA_K1_anchor5_scored.npz",
+      "scored_sha256": "2ea2350f9bf2e08834d505a736c731aab717a5383d061682b1aa72922e462aea",
+      "mde": 9.658304849977915
+    }
+  ],
+  "summary": {
+    "all_anchors": {
+      "mean": 9.95269411459936,
+      "position_mean_p90": 19.71434162048419
+    },
+    "by_anchor": {
+      "1": {
+        "mean": 10.489911042073569,
+        "position_mean_p90": 22.132805270113877
+      },
+      "2": {
+        "mean": 9.613162131748519,
+        "position_mean_p90": 18.788230445858435
+      },
+      "3": {
+        "mean": 9.949087406074428,
+        "position_mean_p90": 19.29619179134168
+      },
+      "4": {
+        "mean": 9.87186696268515,
+        "position_mean_p90": 19.616666983890923
+      },
+      "5": {
+        "mean": 9.839443030415145,
+        "position_mean_p90": 20.095582220927657
+      }
+    },
+    "anchor_mean_range": {
+      "min": 9.613162131748519,
+      "max": 10.489911042073569,
+      "span": 0.8767489103250501
+    },
+    "anchor1_relative": {
+      "mean_delta": 0.5372169274742085,
+      "p90_delta": 2.418463649629686,
+      "mean_rank_ascending": 5
+    },
+    "by_floor": {
+      "B1F0": {
+        "all_anchors": {
+          "mean": 10.625132302670913,
+          "position_mean_p90": 19.69945500826122
+        },
+        "by_anchor": {
+          "1": {
+            "mean": 12.335439900592785,
+            "position_mean_p90": 22.853330538191774
+          },
+          "2": {
+            "mean": 8.757222912143405,
+            "position_mean_p90": 15.669992790651614
+          },
+          "3": {
+            "mean": 10.347447156400806,
+            "position_mean_p90": 19.71434162048419
+          },
+          "4": {
+            "mean": 9.73517753899847,
+            "position_mean_p90": 19.616666983890923
+          },
+          "5": {
+            "mean": 11.950374005219082,
+            "position_mean_p90": 20.095582220927657
+          }
+        },
+        "anchor_mean_range": {
+          "min": 8.757222912143405,
+          "max": 12.335439900592785,
+          "span": 3.5782169884493804
+        },
+        "anchor1_relative": {
+          "mean_delta": 1.7103075979218723,
+          "p90_delta": 3.153875529930552,
+          "mean_rank_ascending": 5
+        }
+      },
+      "B1F1": {
+        "all_anchors": {
+          "mean": 9.224488867716413,
+          "position_mean_p90": 12.89499021177249
+        },
+        "by_anchor": {
+          "1": {
+            "mean": 9.054968516705651,
+            "position_mean_p90": 12.589616286214833
+          },
+          "2": {
+            "mean": 9.315589535044424,
+            "position_mean_p90": 12.822742127700812
+          },
+          "3": {
+            "mean": 9.377622738904739,
+            "position_mean_p90": 13.562017227836511
+          },
+          "4": {
+            "mean": 9.157090473280249,
+            "position_mean_p90": 12.89499021177249
+          },
+          "5": {
+            "mean": 9.217173074646988,
+            "position_mean_p90": 12.993751104879424
+          }
+        },
+        "anchor_mean_range": {
+          "min": 9.054968516705651,
+          "max": 9.377622738904739,
+          "span": 0.32265422219908757
+        },
+        "anchor1_relative": {
+          "mean_delta": -0.16952035101076213,
+          "p90_delta": -0.30537392555765663,
+          "mean_rank_ascending": 1
+        }
+      },
+      "B1F2": {
+        "all_anchors": {
+          "mean": 7.831009299542737,
+          "position_mean_p90": 19.29619179134168
+        },
+        "by_anchor": {
+          "1": {
+            "mean": 8.98326560936449,
+            "position_mean_p90": 23.129405077229606
+          },
+          "2": {
+            "mean": 7.874856070284522,
+            "position_mean_p90": 20.367226822252217
+          },
+          "3": {
+            "mean": 8.48701365638175,
+            "position_mean_p90": 18.764944962711596
+          },
+          "4": {
+            "mean": 6.951234954598816,
+            "position_mean_p90": 14.779974225056145
+          },
+          "5": {
+            "mean": 6.858676207084099,
+            "position_mean_p90": 12.856861419743709
+          }
+        },
+        "anchor_mean_range": {
+          "min": 6.858676207084099,
+          "max": 8.98326560936449,
+          "span": 2.1245894022803915
+        },
+        "anchor1_relative": {
+          "mean_delta": 1.1522563098217535,
+          "p90_delta": 3.8332132858879255,
+          "mean_rank_ascending": 5
+        }
+      },
+      "B1F3": {
+        "all_anchors": {
+          "mean": 9.744151201144604,
+          "position_mean_p90": 17.018578675437908
+        },
+        "by_anchor": {
+          "1": {
+            "mean": 9.561019197997998,
+            "position_mean_p90": 15.881807743919834
+          },
+          "2": {
+            "mean": 9.450627196870803,
+            "position_mean_p90": 15.624722460145087
+          },
+          "3": {
+            "mean": 10.021805133562275,
+            "position_mean_p90": 17.018578675437908
+          },
+          "4": {
+            "mean": 10.047014059709031,
+            "position_mean_p90": 17.76960873404741
+          },
+          "5": {
+            "mean": 9.640290417582905,
+            "position_mean_p90": 16.869559344503127
+          }
+        },
+        "anchor_mean_range": {
+          "min": 9.450627196870803,
+          "max": 10.047014059709031,
+          "span": 0.5963868628382283
+        },
+        "anchor1_relative": {
+          "mean_delta": -0.18313200314660527,
+          "p90_delta": -1.1367709315180736,
+          "mean_rank_ascending": 2
+        }
+      },
+      "B2F0": {
+        "all_anchors": {
+          "mean": 16.77578490232756,
+          "position_mean_p90": 30.256723980332975
+        },
+        "by_anchor": {
+          "1": {
+            "mean": 16.198552638957267,
+            "position_mean_p90": 30.85902052291337
+          },
+          "2": {
+            "mean": 17.33419217493536,
+            "position_mean_p90": 28.400219270692606
+          },
+          "3": {
+            "mean": 16.294522705434577,
+            "position_mean_p90": 21.723702126205385
+          },
+          "4": {
+            "mean": 17.254962310239293,
+            "position_mean_p90": 30.256723980332975
+          },
+          "5": {
+            "mean": 16.796694682071305,
+            "position_mean_p90": 27.393476631898082
+          }
+        },
+        "anchor_mean_range": {
+          "min": 16.198552638957267,
+          "max": 17.33419217493536,
+          "span": 1.1356395359780933
+        },
+        "anchor1_relative": {
+          "mean_delta": -0.5772322633702913,
+          "p90_delta": 0.6022965425803939,
+          "mean_rank_ascending": 1
+        }
+      },
+      "B2F1": {
+        "all_anchors": {
+          "mean": 8.017677321947819,
+          "position_mean_p90": 13.3268608793977
+        },
+        "by_anchor": {
+          "1": {
+            "mean": 7.802932640913231,
+            "position_mean_p90": 12.38836120918751
+          },
+          "2": {
+            "mean": 8.087255351420504,
+            "position_mean_p90": 14.993714881097228
+          },
+          "3": {
+            "mean": 8.021956932740707,
+            "position_mean_p90": 12.922456720767043
+          },
+          "4": {
+            "mean": 7.96951440868815,
+            "position_mean_p90": 12.68611286288826
+          },
+          "5": {
+            "mean": 8.206727275976501,
+            "position_mean_p90": 14.255425458641893
+          }
+        },
+        "anchor_mean_range": {
+          "min": 7.802932640913231,
+          "max": 8.206727275976501,
+          "span": 0.40379463506326996
+        },
+        "anchor1_relative": {
+          "mean_delta": -0.21474468103458744,
+          "p90_delta": -0.9384996702101898,
+          "mean_rank_ascending": 1
+        }
+      },
+      "B2F2": {
+        "all_anchors": {
+          "mean": 7.075242281549623,
+          "position_mean_p90": 15.783099814299925
+        },
+        "by_anchor": {
+          "1": {
+            "mean": 7.732785188341531,
+            "position_mean_p90": 15.977046896764639
+          },
+          "2": {
+            "mean": 6.642947874247799,
+            "position_mean_p90": 15.783099814299925
+          },
+          "3": {
+            "mean": 6.894053078373195,
+            "position_mean_p90": 13.6736976430228
+          },
+          "4": {
+            "mean": 7.310500912952302,
+            "position_mean_p90": 17.96076499660005
+          },
+          "5": {
+            "mean": 6.795924353833291,
+            "position_mean_p90": 14.815493721753144
+          }
+        },
+        "anchor_mean_range": {
+          "min": 6.642947874247799,
+          "max": 7.732785188341531,
+          "span": 1.0898373140937316
+        },
+        "anchor1_relative": {
+          "mean_delta": 0.6575429067919076,
+          "p90_delta": 0.19394708246471382,
+          "mean_rank_ascending": 5
+        }
+      },
+      "B2F3": {
+        "all_anchors": {
+          "mean": 7.410875426121424,
+          "position_mean_p90": 16.15106521128331
+        },
+        "by_anchor": {
+          "1": {
+            "mean": 8.53498037537291,
+            "position_mean_p90": 21.69109514267913
+          },
+          "2": {
+            "mean": 6.725317150127572,
+            "position_mean_p90": 12.770123762385316
+          },
+          "3": {
+            "mean": 6.318421402065779,
+            "position_mean_p90": 10.786911152442206
+          },
+          "4": {
+            "mean": 7.944184314229911,
+            "position_mean_p90": 16.389059440145154
+          },
+          "5": {
+            "mean": 7.531473888810948,
+            "position_mean_p90": 17.208601853710533
+          }
+        },
+        "anchor_mean_range": {
+          "min": 6.318421402065779,
+          "max": 8.53498037537291,
+          "span": 2.216558973307132
+        },
+        "anchor1_relative": {
+          "mean_delta": 1.1241049492514863,
+          "p90_delta": 5.5400299313958214,
+          "mean_rank_ascending": 5
+        }
+      },
+      "B2F4": {
+        "all_anchors": {
+          "mean": 13.466384125203883,
+          "position_mean_p90": 31.751588681358225
+        },
+        "by_anchor": {
+          "1": {
+            "mean": 14.711493046324584,
+            "position_mean_p90": 31.10452695247649
+          },
+          "2": {
+            "mean": 13.094039123825008,
+            "position_mean_p90": 32.774066047913436
+          },
+          "3": {
+            "mean": 14.16955908556806,
+            "position_mean_p90": 34.74916929374915
+          },
+          "4": {
+            "mean": 13.376361397508667,
+            "position_mean_p90": 27.901094499630783
+          },
+          "5": {
+            "mean": 11.980467972793083,
+            "position_mean_p90": 22.225282067389657
+          }
+        },
+        "anchor_mean_range": {
+          "min": 11.980467972793083,
+          "max": 14.711493046324584,
+          "span": 2.7310250735315016
+        },
+        "anchor1_relative": {
+          "mean_delta": 1.2451089211207016,
+          "p90_delta": -0.6470617288817344,
+          "mean_rank_ascending": 5
+        }
+      }
+    }
+  },
+  "forwards": 72,
+  "reused_events": 18,
+  "training_updates": 0,
+  "GP_fits": 0,
+  "anchor_selection": false,
+  "independent_building_validation": false
+}

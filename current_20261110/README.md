@@ -1,11 +1,14 @@
 # LAW 当前主线源码（2026-11-10）
 
-这是当前本机工作副本的发布快照，保留源文件内容，不为展示重写算法。GP历史场推断、训练后的Tab及已有有效组合均是方法内部组成部分；当前研究重点是改进训练框架的历史利用与目标迁移能力。
+当前正式起点是 **Claude原版五种子连续观测分布方案**：种子1–5已发布9.4325米，种子11–15为9.3664米。完整继承其代码、四层源语料、抽样、扫描计数权重、训练设置和分布集成，再从该版本向上改进。GP、训练后的Tab、9.9607米旧组合及所有正负结果保留为可用资产，不要求同时进入最终系统。
+
+本项目10.0337米实现同时改变了多项训练条件，身份是受限比较，尚未超过最好版本。旧划分用于特定归因，不自动约束所有正式方法。原版发布脚本未保存权重；[原配方资产生成](src/claude_hurdle_assets.py)和[H/S-only部署入口](src/frozen_hurdle_translator.py)用于把最好方案实际接续，原样源码在[src/claude_hurdle_20261110](src/claude_hurdle_20261110)。
 
 ## 阅读顺序
 
 | 功能 | 入口 |
 | --- | --- |
+| 当前采用：原版五模型训练资产与直接部署 | [claude_hurdle_assets.py](src/claude_hurdle_assets.py)、[frozen_hurdle_translator.py](src/frozen_hurdle_translator.py) |
 | 已有完整源任务训练（约6.77米源端结果） | [tabicl_multitask_full_trial.py](src/tabicl_multitask_full_trial.py) |
 | 普通微调及目标归因 | [ordinary_context_trial.py](src/ordinary_context_trial.py)、[ordinary_context_target_trial.py](src/ordinary_context_target_trial.py) |
 | 原始历史读取与学习器 | [tabicl_history.py](src/tabicl_history.py)、[tabicl_history_learning.py](src/tabicl_history_learning.py) |
@@ -93,4 +96,13 @@ Claude已完成连续hurdle翻译的九层评价：[B0种子1–5](../vertical_t
 
 新连续版本已完成[源学习](evidence/continuous_observation_source_20261110/complete.json)和[54事件目标评价](evidence/continuous_observation_target_20261110/complete.json)：2CPU单模型源训练及27项源验证共53.71秒，源均值5.1989米；固定模型目标评价322.05秒，平均 **10.0337米**、总体位置均误差p90 **20.1244米**。相比原GP11.8983米降低15.67%，相比GP＋ordinary系统10.7880米降低6.99%。K1/3/5依次10.4899/9.9185/9.6928米，三个预算均改善原系统均值，九层五层改善；K1尾部22.1328米仍弱于原21.1161米。四层原型GP＋翻译3NN的9.9607米保留为有效系统，未将其四层源与本版三层源差异抹平。
 
-这轮推进建立了完整合法源监督下连续学习的实际作用，单路直接定位、不增加GP融合或Tab读出。模型及位置分布保存服务器，冻结配置和完整结果保留；开发读出参数曾涉及B1/B2来源，结果属于已曝光开发评价。9.43/9.37米仍是协作者原型的独立版本。下一步沿当前机制完善极少标定尾部与独立验证，不立即更换结构。联合标定context未训练，原四组正式Tab与关系编码器训练仍暂停。
+这轮推进建立了完整合法源监督下连续学习的实际作用，单路直接定位、不增加GP融合或Tab读出。模型及位置分布保存服务器，冻结配置和完整结果保留；开发读出参数曾涉及B1/B2来源，结果属于已曝光开发评价。9.43/9.37米仍是协作者原型的独立版本。用户随后明确以Claude最好完整版本为起点；本受限版不继续承担追分主线。联合标定context未训练，原四组正式Tab与关系编码器训练仍暂停。
+
+
+## 原版五模型实际接入（用户最新取舍）
+
+当前使用[Claude原版](src/claude_hurdle_20261110)，固定种子1–5与draws4，原训练代码逐文件保留。原发布脚本没有保存权重，经库存核实后仅补生成了可部署五模型，耗时245.06秒，共44.20 MB留服务器；首次运行在拟合前因遗漏已有pandas路径退出，复用原有依赖后成功，未安装或下载环境。实际解释器和依赖路径保存在[冻结记录](evidence/claude_hurdle_b0_ens5_20261110/freeze.json)。
+
+[FrozenHurdleTranslator](src/frozen_hurdle_translator.py)加载这些权重，用显式H/S准备，再接收Query RSS；不依赖CSV全局状态，不改变原55维特征、分布集成、经验S或读出。一次B0源扫描的[部署对应检查](evidence/claude_hurdle_b0_ens5_20261110/deployment_check.json)与原程序位置、对数质量差均为0。没有重跑54个目标分数，当前最好已知9.3664米和种子1–5的9.4325米仍引用协作者已有结果，本轮只完成完整采用，不声称新的超越。
+
+用户纠正前已完成的受限版[五标定位置记录](evidence/continuous_observation_support_stability_20261110/complete.json)和[尾部描述](evidence/continuous_observation_tail_20261110/audit.json)保留。五点K1平均9.9527米、各点9.6132–10.4899米，只描述该受限模型对既定标定位置的敏感性，不是原版提升，也不与单一旧标定点的对照冒充同信息比较。已停止在此版本上追加修正与实验。
