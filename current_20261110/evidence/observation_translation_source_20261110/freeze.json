@@ -1,0 +1,646 @@
+{
+  "created": "2026-11-10T12:37:15.800249+00:00",
+  "code": {
+    "observation_translation_trial.py": "96b1fcec83479fb2097cdec1c858e70a53117a42876e0b6a0a315b275c7088f5",
+    "observation_translation_model.py": "9d8a59ef9fbd73ca448876444b8edf2191350d928b7fe22de331d47403decd17",
+    "observation_translation_tasks.py": "d4b06d4edbb32fd4fd02ad969d59a793d0667ad6b0702463d097b15943864639",
+    "location_decision.py": "dacc55291881a679fc728f4d4c91e1199f419b4bfdb0193165521569673587ba",
+    "source_episode_catalog.py": "f4a14a634dd9592003b60559ca3ea46ab0e852d2adfae18e5ce012e81c37d303",
+    "acquisition_tasks.py": "853cf122a9cd1a13fcec9a49f327d5b735dea9f275a432b5fc4e1572fef9db50",
+    "building_information_tab_trial.py": "44a1579a63c5dbe6ceb12abeba90a16f019b474bb8158e68e4a82200bbfdc834",
+    "uji.py": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+    "vertical_translator/translator.py": "50b51aa05330ec1b7335b8be7f8c72f7200de198a933c950e19a9acfd582eacd"
+  },
+  "inputs": {
+    "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/source_episode_catalog_20261105/catalog.json": "120eb3b0129f066c35e2e3462840420175d88a2002b338849c226a78798faa2d",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/tabicl_multitask_full_trial_20261107_checked/freeze.json": "97b1e7ff64758a0ecd843829a07da624c26185597608b6eea3d880822583fc0f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/tabicl_multitask_full_trial_20261107_checked/complete.json": "0161024a77e6839357a91333dd6fdf144b8d10bb88a1a80a58f78830656738ed"
+  },
+  "contract": {
+    "phase": "source_train",
+    "schedule": [
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 0,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 0,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group2",
+        "draw_index": 0,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 0,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 0,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group3",
+        "draw_index": 0,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 0,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 0,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group2_to_B0F2_group0",
+        "draw_index": 0,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 0,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 0,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group3_to_B0F2_group0",
+        "draw_index": 0,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 0,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 0,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group2",
+        "draw_index": 0,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 0,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 0,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group3",
+        "draw_index": 0,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 1,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 1,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group2_to_B0F2_group0",
+        "draw_index": 1,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 1,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 1,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group3_to_B0F2_group0",
+        "draw_index": 1,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 1,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 1,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group2",
+        "draw_index": 1,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 1,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 1,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group3",
+        "draw_index": 1,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 1,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 1,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group2_to_B0F2_group0",
+        "draw_index": 1,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 1,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 1,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group3_to_B0F2_group0",
+        "draw_index": 1,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 3,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 3,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group2",
+        "draw_index": 3,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 3,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 3,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group3",
+        "draw_index": 3,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 3,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 3,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group2_to_B0F2_group0",
+        "draw_index": 3,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 3,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 3,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group3_to_B0F2_group0",
+        "draw_index": 3,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 3,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 3,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group2",
+        "draw_index": 3,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 3,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 3,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group3",
+        "draw_index": 3,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 4,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 4,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group2_to_B0F2_group0",
+        "draw_index": 4,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 4,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 4,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group3_to_B0F2_group0",
+        "draw_index": 4,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 4,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 4,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group2",
+        "draw_index": 4,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 4,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 4,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group3",
+        "draw_index": 4,
+        "k": 1,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 4,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 4,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group2_to_B0F2_group0",
+        "draw_index": 4,
+        "k": 3,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 4,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 4,
+        "k": 5,
+        "phase": "fit"
+      },
+      {
+        "family_id": "B0F2_group3_to_B0F2_group0",
+        "draw_index": 4,
+        "k": 5,
+        "phase": "fit"
+      }
+    ],
+    "validation": [
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 2,
+        "k": 1,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 2,
+        "k": 3,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F0_group0_to_B0F0_group2",
+        "draw_index": 2,
+        "k": 5,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 2,
+        "k": 1,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 2,
+        "k": 3,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F0_group1_to_B0F0_group2",
+        "draw_index": 2,
+        "k": 5,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 2,
+        "k": 1,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 2,
+        "k": 3,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F0_group2_to_B0F0_group0",
+        "draw_index": 2,
+        "k": 5,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 2,
+        "k": 1,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 2,
+        "k": 3,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F1_group0_to_B0F1_group1",
+        "draw_index": 2,
+        "k": 5,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 2,
+        "k": 1,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 2,
+        "k": 3,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F1_group1_to_B0F1_group0",
+        "draw_index": 2,
+        "k": 5,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group2",
+        "draw_index": 2,
+        "k": 1,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group2",
+        "draw_index": 2,
+        "k": 3,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group2",
+        "draw_index": 2,
+        "k": 5,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group3",
+        "draw_index": 2,
+        "k": 1,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group3",
+        "draw_index": 2,
+        "k": 3,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group0_to_B0F2_group3",
+        "draw_index": 2,
+        "k": 5,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group2_to_B0F2_group0",
+        "draw_index": 2,
+        "k": 1,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group2_to_B0F2_group0",
+        "draw_index": 2,
+        "k": 3,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group2_to_B0F2_group0",
+        "draw_index": 2,
+        "k": 5,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group3_to_B0F2_group0",
+        "draw_index": 2,
+        "k": 1,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group3_to_B0F2_group0",
+        "draw_index": 2,
+        "k": 3,
+        "phase": "validation"
+      },
+      {
+        "family_id": "B0F2_group3_to_B0F2_group0",
+        "draw_index": 2,
+        "k": 5,
+        "phase": "validation"
+      }
+    ],
+    "seed": 11509159,
+    "max_iter": 200,
+    "seconds": 840.0,
+    "CPU_threads": 2,
+    "maximum_classes": 17,
+    "maximum_trees": 3400,
+    "source_floors": [
+      "B0F0",
+      "B0F1",
+      "B0F2"
+    ],
+    "selection": false,
+    "information": "72 legal fit tables, one fit; persist model before 27 protected source validations; no target access",
+    "bins": "Training-table position/scan/AP weights define at most16 detected intervals plus missing; unchanged in validation"
+  },
+  "resources": {
+    "CPU_threads": 2,
+    "GPU": 0,
+    "downloads": 0,
+    "external_timeout_required": true
+  },
+  "runtime": {
+    "numpy": "2.2.6",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1"
+  }
+}

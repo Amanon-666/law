@@ -24,7 +24,8 @@
     "translated_history_system",
     "observation_translation_tasks",
     "observation_translation_model",
-    "observation_translation_trial"
+    "observation_translation_trial",
+    "observation_translation_readout_trial"
   ],
   "files": [
     {
@@ -436,12 +437,52 @@
       "path": "src/location_decision.py",
       "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/location_decision.py",
       "sha256": "dacc55291881a679fc728f4d4c91e1199f419b4bfdb0193165521569673587ba"
+    },
+    {
+      "path": "evidence/observation_translation_source_20261110/freeze.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_source_20261110/freeze.json",
+      "sha256": "6569098073bb383c7443a104bb0172db5ead5374e5c49b09f64830f3a5c5a757"
+    },
+    {
+      "path": "evidence/observation_translation_source_20261110/observation_translation_source_20261110.log",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_source_20261110/observation_translation_source_20261110.log",
+      "sha256": "21f25e0f5cff8ed648ed3dc0ba81857a0366a0eb6648da126886ca3172bd5522"
+    },
+    {
+      "path": "evidence/observation_translation_source_20261110/observation_translation_source_20261110.exit",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_source_20261110/observation_translation_source_20261110.exit",
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "evidence/observation_translation_source_20261110_nanfix/freeze.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_source_20261110_nanfix/freeze.json",
+      "sha256": "1ff04ff905f8228b2273ad8081011abf603812c7aa45ef64572e354d4a54747a"
+    },
+    {
+      "path": "evidence/observation_translation_source_20261110_nanfix/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_source_20261110_nanfix/complete.json",
+      "sha256": "5ec3f3c1b3da3d6fe26d756925dfe2de94a286cf44895df493d405865535d663"
+    },
+    {
+      "path": "evidence/observation_translation_target_20261110/freeze.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_target_20261110/freeze.json",
+      "sha256": "44ef6dfd3cb7de6b5003e58f7d74100f8d64dd3e7974515d6796f655a7bdca7a"
+    },
+    {
+      "path": "evidence/observation_translation_target_20261110/complete.json",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/observation_translation_target_20261110/complete.json",
+      "sha256": "030b145cef3e76b0ca9ae36d2e7936d5266e6e7d9f598b521c3d400591f0961a"
+    },
+    {
+      "path": "src/observation_translation_readout_trial.py",
+      "source": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/observation_translation_readout_trial.py",
+      "sha256": "f2167f4bb33e9c57b6923365ac92f776c7c532cdfc9c33f1c1a7ac99d3ba6ed2"
     }
   ],
   "sync": {
     "date": "2026-11-10",
-    "preserved_collaborator_commit": "ae001b0a797df7274d4e11ce4b694357fe4c4599",
+    "preserved_collaborator_commit": "b0800c6dd5bbd41f052a98c5b6658fca55bd42d4",
     "translator_assets": "B0-only seeds1–5 and all54 system events complete; reusable H/S modules statically reviewed; formal Tab/relation training remains paused",
-    "next_learning_object": "Single shared quantized real-scan observation law implemented. Source-only CPU fit/validation is the next bounded computation; no target result yet. Initial all-NaN input-column binner error fixed by freezing training-observed columns. Four-arm Tab and relation training remain paused."
+    "next_learning_object": "Frozen observation model completed: 72 legal source tables, 27 validation events MDE5.5443m; all54 target events MDE12.7186m. No target training. One information-matched readout comparison implemented; no new training or fusion."
   }
 }
