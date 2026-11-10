@@ -42,7 +42,11 @@ def main():
     ap.add_argument('--seeds', type=int, nargs='+', default=[1])
     ap.add_argument('--draws', type=int, default=4)
     ap.add_argument('--out', required=True)
+    ap.add_argument('--b0floors', type=int, nargs='+', default=None,
+                    help='restrict source building B0 to these floors (e.g. 0 1 2 = the ordinary30 corpus floors)')
     a = ap.parse_args()
+    if a.b0floors is not None:
+        Hd.V.FLOORS[0] = list(a.b0floors); Hd.V._HF.clear()
     os.makedirs(a.out, exist_ok=False)
     acc = {}
     for seed in a.seeds:
@@ -73,7 +77,7 @@ def main():
                             pred=pred, query_rows=np.asarray(e['query_rows']), aps=aps, bounds=bd)
         errs[e['id']] = C.event_error(e, pred)
     s = C.summarize(errs)
-    json.dump(dict(train=a.train, seeds=a.seeds, draws=a.draws, reader=dict(beta=BETA, eps=EPS, offsets=OFFSETS),
+    json.dump(dict(train=a.train, seeds=a.seeds, draws=a.draws, b0floors=a.b0floors, reader=dict(beta=BETA, eps=EPS, offsets=OFFSETS),
                    summary=s, events=errs,
                    reference=dict(GP=11.8983, GP_ordinary_half=10.7880, translated_3NN_b0only_ens5=10.5648,
                                   GP_translated_3NN_half=9.9607)),

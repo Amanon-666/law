@@ -106,3 +106,10 @@ Claude已完成连续hurdle翻译的九层评价：[B0种子1–5](../vertical_t
 [FrozenHurdleTranslator](src/frozen_hurdle_translator.py)加载这些权重，用显式H/S准备，再接收Query RSS；不依赖CSV全局状态，不改变原55维特征、分布集成、经验S或读出。一次B0源扫描的[部署对应检查](evidence/claude_hurdle_b0_ens5_20261110/deployment_check.json)与原程序位置、对数质量差均为0。没有重跑54个目标分数，当前最好已知9.3664米和种子1–5的9.4325米仍引用协作者已有结果，本轮只完成完整采用，不声称新的超越。
 
 用户纠正前已完成的受限版[五标定位置记录](evidence/continuous_observation_support_stability_20261110/complete.json)和[尾部描述](evidence/continuous_observation_tail_20261110/audit.json)保留。五点K1平均9.9527米、各点9.6132–10.4899米，只描述该受限模型对既定标定位置的敏感性，不是原版提升，也不与单一旧标定点的对照冒充同信息比较。已停止在此版本上追加修正与实验。
+
+
+### 原版历史翻译与GP校准的完整互补比较（运行前）
+
+[hurdle_gp_pool.py](src/hurdle_gp_pool.py)在原Hurdle候选行上读取已有GP概率面的双线性插值，固定等权对数结合；保留原Hurdle、原网格GP、候选限制后的GP、坐标half四项比较，不改训练配方、不挑权重。共享H/S和Query的两路是预测组合，未假设独立证据；平坦GP会温和化Hurdle，候选超出原网格则停止该接法。原54份GP二维分数缓存齐全，只需原五模型的新前向。完整评价入口[hurdle_gp_pool_trial.py](src/hurdle_gp_pool_trial.py)正在执行，收益尚待结果；不会因超过旧系统而取代当前最好单路的比较。
+
+合入协作者7149b46的新同口径p90及三层版本记录。原五种子Hurdle总体p90为18.02米、K1为17.70米；种子11–15总体16.82米、K1为19.45米。三层源协作者版本为9.59米单种子／9.79米五种子，仍与本项目受限权重/任务版本分别保留；不将差距直接归因于单个改动。
