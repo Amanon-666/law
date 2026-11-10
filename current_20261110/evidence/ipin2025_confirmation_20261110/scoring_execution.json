@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-11-10T17:11:21.963318+00:00",
+  "predictions_sha256": "10fad9325ec3b0ee08837624ee7e0f4f67ce32feb64fb9499b30e7c17a297026",
+  "scorer_sha256": "242941f00b6baf00a4b01f3df36f8c9a257edb2763816e421756b3bb80873365",
+  "readout_execution_sha256": "56022e657ac665c3b5424e6907673651d9cff0ccdf4abad250f614f3a83faff9",
+  "first_GT_opened_utc": "2026-11-10T17:11:22.050617+00:00",
+  "GT_files_opened": [
+    "/home/panyushuo/datasets/ipin_t3_2025/2025_IPIN_Competition_Track03/03 Evaluation/GT/GT_IPIN2025_T3_ScoringTrial03.csv",
+    "/home/panyushuo/datasets/ipin_t3_2025/2025_IPIN_Competition_Track03/03 Evaluation/GT/GT_IPIN2025_T3_ScoringTrial04.csv"
+  ],
+  "command": [
+    "ipin2025_score.py",
+    "--predictions",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/predictions.json",
+    "--output",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/scores.json"
+  ],
+  "access_order": "Unchanged scorer load_sealed_predictions verifies all 30 streams before its first GT digest/read",
+  "CPU_threads": 2,
+  "ended_utc": "2026-11-10T17:11:22.080614+00:00",
+  "wall_seconds": 0.1170494370162487,
+  "cpu_process_seconds": 0.184364133,
+  "exit_code": 0,
+  "scores_sha256": "50716b22d18af368b1ffbbe9c48f345d24a1dac5335b5792f0d8b216a387ef04"
+}
