@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "source": {
+    "path": "cached_retained_readout.py",
+    "sha256": "13384ea458e522b01fba46609114bb752827246b6bfae9d0b2b74afdcc08616c"
+  },
+  "prepared": {
+    "path": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K1/complete.json",
+    "sha256": "d73d071124f5e74f64b13778d94801789e39aa7ea3ba1bafce07a5e5ed7b4ab9"
+  },
+  "freeze": {
+    "path": "results/ipin2025_confirmation_20261110/freeze.json",
+    "sha256": "6fc0475cb9e23014645d1a31853bb8e8b606a68c027d2f6ddc937c6f821d648c"
+  },
+  "input_scan_id": "01 Logfiles/01 - Training/IPIN2025_T3_TrainingTrial21_session01_SG24.txt@0x1.102f1a9fbe76dp+7",
+  "comparisons": {
+    "support_first": {
+      "max_logscore_difference": 1.4779288903810084e-12,
+      "raw_position_difference": 7.416289804496046e-14,
+      "projected_position_difference": 7.416289804496046e-14,
+      "GP_probability_L1": 1.706962320738733e-13,
+      "pooled_probability_L1": 6.537210122515799e-14,
+      "five_readout_position_differences": {
+        "hurdle": 0.0,
+        "GP": 7.416289804496046e-14,
+        "GP_candidates": 7.94475596421762e-13,
+        "coordinate_half": 3.907985046680551e-14,
+        "probability_half": 3.352873534367973e-13
+      }
+    },
+    "support_warm": {
+      "max_logscore_difference": 1.4779288903810084e-12,
+      "raw_position_difference": 7.416289804496046e-14,
+      "projected_position_difference": 7.416289804496046e-14,
+      "GP_probability_L1": 1.706962320738733e-13,
+      "pooled_probability_L1": 6.537210122515799e-14,
+      "five_readout_position_differences": {
+        "hurdle": 0.0,
+        "GP": 7.416289804496046e-14,
+        "GP_candidates": 7.94475596421762e-13,
+        "coordinate_half": 3.907985046680551e-14,
+        "probability_half": 3.352873534367973e-13
+      }
+    },
+    "all_missing": {
+      "max_logscore_difference": 0.0,
+      "raw_position_difference": 0.0,
+      "projected_position_difference": 0.0,
+      "GP_probability_L1": 0.0,
+      "pooled_probability_L1": 0.0,
+      "five_readout_position_differences": {
+        "hurdle": 0.0,
+        "GP": 0.0,
+        "GP_candidates": 0.0,
+        "coordinate_half": 0.0,
+        "probability_half": 0.0
+      }
+    }
+  },
+  "seconds": {
+    "original_support_readout": 0.3162247836589813,
+    "first_cache_build_and_readout": 0.33732882142066956,
+    "warm_cache_support_readout": 0.010893259197473526
+  },
+  "tolerances": {
+    "logscore": 1e-08,
+    "position_m": 1e-07,
+    "probability_L1": 1e-08
+  },
+  "device": "cpu",
+  "CPU_threads": 2,
+  "timing_repetitions": 1,
+  "official_query_opened": false,
+  "GT_opened": false,
+  "localization_scores": 0,
+  "model_updates": 0,
+  "scope": "One Support receipt and one all-missing identity case; timings only use the actual Support receipt; no formal predictions"
+}
