@@ -1,4 +1,4 @@
-"""H/S-only deployment of Claude's original five-seed B0 hurdle assets.
+"""H/S-only deployment of Claude's original five-seed hurdle assets.
 
 Only saved plain sklearn states are loaded. No fit, CSV/global dataset access,
 training-table reconstruction, GP/Tab branch or continuous_* dependency.
@@ -71,7 +71,13 @@ class FrozenHurdleTranslator:
         freeze_sha = _sha256(root/'freeze.json')
         assert complete['complete'] and complete['freeze_sha256'] == freeze_sha
         assert self.freeze['seeds'] == [1, 2, 3, 4, 5]
-        assert self.freeze['train'] == 'b0only' and self.freeze['draws'] == 4
+        assert self.freeze['draws'] == 4
+        sources = self.freeze['source_buildings']
+        assert sources and len(set(sources)) == len(sources)
+        assert complete['source_buildings'] == sources
+        if 'source_rows_by_floor' in self.freeze:
+            assert complete['source_rows_by_floor'] == self.freeze['source_rows_by_floor']
+            assert complete['source_floors'] == self.freeze['source_floors']
         feature_code = Path(T.__file__).read_bytes()
         feature_blob = hashlib.sha1(b'blob '+str(len(feature_code)).encode()+b'\0'+feature_code).hexdigest()
         assert feature_blob == self.freeze['upstream_git_blobs']['translator.py']
@@ -83,7 +89,10 @@ class FrozenHurdleTranslator:
             assert _sha256(path) == record['sha256']
             model = joblib.load(path)
             assert model['kind'] == 'claude_hurdle_v1' and model['seed'] == record['seed']
-            assert model['source_buildings'] == [0] and model['draws'] == 4
+            assert model['source_buildings'] == sources and model['draws'] == 4
+            if 'source_rows_by_floor' in self.freeze:
+                assert model['source_rows_by_floor'] == self.freeze['source_rows_by_floor']
+                assert model['source_floors'] == self.freeze['source_floors']
             assert model['freeze_sha256'] == freeze_sha
             self.models.append(model)
 

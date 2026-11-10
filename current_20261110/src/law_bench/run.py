@@ -39,6 +39,8 @@ METHODS = {
     'retained_gp': ('method_retained_gp', 'RetainedGPMethod', {}),
     'adopted_A': ('method_adopted', 'AdoptedMethod', {'variant': 'A'}),
     'adopted_A_GP': ('method_adopted', 'AdoptedMethod', {'variant': 'A_GP'}),
+    'original_A': ('method_adopted', 'AdoptedMethod', {'variant': 'A'}),
+    'original_A_GP': ('method_adopted', 'AdoptedMethod', {'variant': 'A_GP'}),
     'frozen_v1': ('method_frozen_field', 'FrozenFieldMethod', {'variant': 'v1'}),
     'frozen_v1_GP': ('method_frozen_field', 'FrozenFieldMethod', {'variant': 'v1_GP'}),
     'gp_S': ('methods_claude', 'GpS', {}),

@@ -1,9 +1,9 @@
 """Persist Claude's original five-seed hurdle models for deployment.
 
-Calls the verbatim HurdleField([0], seed, draws=4) without changing corpus,
+Calls the verbatim HurdleField(sources, seed, draws=4) without changing corpus,
 sampling, scan-count weights, estimator settings or early stopping. No target
 localization evaluation is performed. The upstream modules eagerly load the
-full existing CSV; only B0 pairs enter their fit. Export plain sklearn states
+full existing CSV; only specified source pairs enter their fit. Export plain sklearn states
 so deployment does not import those dataset-loading modules.
 """
 import os
@@ -13,6 +13,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = ''
 os.environ['HF_HUB_OFFLINE'] = os.environ['TRANSFORMERS_OFFLINE'] = '1'
 
 import argparse
+import csv
 import hashlib
 import json
 import socket
@@ -51,6 +52,18 @@ def run(args):
     start = time.monotonic()
     args.output = args.output.resolve()
     args.csv = args.csv.resolve()
+    sources = list(args.sources)
+    if not sources or len(set(sources)) != len(sources) or not set(sources) <= {0, 1, 2}:
+        raise ValueError('Sources must be an ordered, nonempty list of distinct UJI building IDs')
+    source_rows = {}
+    with args.csv.open(newline='') as stream:
+        for row in csv.DictReader(stream):
+            b, f = int(row['BUILDINGID']), int(row['FLOOR'])
+            if b in sources:
+                key = f'B{b}F{f}'
+                source_rows[key] = source_rows.get(key, 0) + 1
+    source_floors = {str(b): sorted(int(k.rsplit('F', 1)[1]) for k in source_rows
+                                  if k.startswith(f'B{b}F')) for b in sources}
     for name, expected in BLOBS.items():
         data = (PACKAGE/name).read_bytes()
         assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest() == expected
@@ -60,18 +73,20 @@ def run(args):
     args.output.mkdir(exist_ok=False)
     write(args.output/'freeze.json', dict(
         created=datetime.now(timezone.utc).isoformat(), upstream_commit=UPSTREAM,
-        upstream_git_blobs=BLOBS, train='b0only', seeds=SEEDS, draws=4,
-        source_buildings=[0], source_floors=[0, 1, 2, 3],
-        source_permission='Original full B0 corpus; original task sampling, label-dependent cell selection and scan-count weights preserved',
-        fit='Verbatim hurdle.HurdleField([0], seed=seed, draws=4), including original estimator defaults',
+        upstream_git_blobs=BLOBS, train='b0only' if sources == [0] else 'explicit_sources', seeds=SEEDS, draws=4,
+        source_buildings=sources, source_floors=source_floors, source_rows_by_floor=source_rows,
+        source_permission='Original full corpus of the ordered source buildings; original sampling, label-dependent cell selection and scan-count weights preserved',
+        fit=f'Verbatim hurdle.HurdleField({sources}, seed=seed, draws=4), including original estimator defaults',
+        reader=dict(beta=128., eps=.02, offsets=[-8., -4., 0., 4., 8.],
+                    selection_source='UJI B0 development; not independent of B0', evaluation_status='exposed_development'),
         code={str(p): digest(p) for p in [Path(__file__), *[PACKAGE/n for n in BLOBS]]},
         inputs={str(args.csv): digest(args.csv)}, versions=versions,
         runtime=dict(python=sys.executable, pythonpath=os.environ.get('PYTHONPATH', '')),
         resources=dict(CPU_threads=2, GPU=0, seconds=args.seconds, external_timeout=900, downloads=0),
         purpose='Persist deployable five-model assets, not repeat the nine-floor evaluation',
         reference='One source-context scan, no error scoring; used only to bind the portable deployment reader',
-        access='Upstream eagerly reads full CSV and precomputes floor statistics; B1/B2 are not passed to fit or reference prediction',
-        performance='Published upstream seeds1-5 result9.432476m; not a newly measured deployment score'))
+        access='Upstream eagerly reads full CSV and precomputes floor statistics; only allowed sources enter fit and reference prediction',
+        performance='Asset export only; no new localization score'))
     frozen_sha = digest(args.output/'freeze.json')
     os.environ['LAW_UJI_CSV'] = str(args.csv)
     sys.path.insert(0, str(PACKAGE))
@@ -82,10 +97,11 @@ def run(args):
     import hurdle as H
     import run_nine_floor_hurdle as R
 
-    assert H.V.FLOORS[0] == [0, 1, 2, 3]
-    event = C.DEV['events'][0]
-    assert event['building'] == 'B0'
-    history_rows, support_rows, query_rows = C.event_arrays_m(C.DEV, event)
+    assert all(H.V.FLOORS[b] == source_floors[str(b)] for b in sources)
+    reference_manifest = C.DEV if 0 in sources else C.MAN
+    event = next(e for e in reference_manifest['events'] if int(e['building'][1:]) in sources)
+    reference_building = int(event['building'][1:])
+    history_rows, support_rows, query_rows = C.event_arrays_m(reference_manifest, event)
     aps = np.flatnonzero(C.DET[np.concatenate((history_rows, support_rows))].any(0))
     query_rows = query_rows[:1]
     models, reference_fields = [], []
@@ -96,8 +112,9 @@ def run(args):
         for seed in SEEDS:
             budget()
             tick = time.monotonic()
-            field = H.HurdleField([0], seed=seed, draws=4)
-            payload = dict(kind='claude_hurdle_v1', seed=seed, source_buildings=[0], draws=4,
+            field = H.HurdleField(sources, seed=seed, draws=4)
+            payload = dict(kind='claude_hurdle_v1', seed=seed, source_buildings=sources, draws=4,
+                source_floors=source_floors, source_rows_by_floor=source_rows,
                 cols=field.cols, freeze_sha256=frozen_sha, versions=versions,
                 **{name: dict(estimator=getattr(field, name).est, cols=getattr(field, name).cols)
                    for name in ('det', 'mean', 'scale')})
@@ -106,7 +123,7 @@ def run(args):
             model = dict(seed=seed, path=str(path), sha256=digest(path),
                          bytes=path.stat().st_size, seconds=time.monotonic()-tick)
             models.append(model)
-            xy, p, mean, variance = field.predict(0, int(event['floor'].split('F')[1]),
+            xy, p, mean, variance = field.predict(reference_building, int(event['floor'].split('F')[1]),
                                                  support_rows, aps)
             reference_fields.append((p, mean, variance))
             write(args.output/'progress.json', dict(models=models, freeze_sha256=frozen_sha))
@@ -124,13 +141,13 @@ def run(args):
                             projected=np.clip(np.exp(log_mass) @ candidates, bounds[0], bounds[1]),
                             query_rows=query_rows+1, aps=aps)
         write(args.output/'deployment_reference.json', dict(
-            event=event, history_rows={h:C.DEV['history_rows'][h] for h in event['histories']},
+            event=event, history_rows={h:reference_manifest['history_rows'][h] for h in event['histories']},
             query_rows=(query_rows+1).tolist(), reference_path=str(reference),
             reference_sha256=digest(reference), score_computed=False))
     write(args.output/'complete.json', dict(complete=True,
         created=datetime.now(timezone.utc).isoformat(), seconds=time.monotonic()-start,
-        freeze_sha256=frozen_sha, models=models, source_buildings=[0],
-        source_rows_by_floor={str(f): int(((C.BLD == 0) & (C.FLR == f)).sum()) for f in H.V.FLOORS[0]},
+        freeze_sha256=frozen_sha, models=models, source_buildings=sources,
+        source_floors=source_floors, source_rows_by_floor=source_rows,
         reference_metadata_sha256=digest(args.output/'deployment_reference.json'),
         target_predictions=0, localization_scores=0, original_recipe_changed=False))
 
@@ -140,6 +157,7 @@ if __name__ == '__main__':
     parser.add_argument('--csv', type=Path, default=Path('/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv'))
     parser.add_argument('--output', type=Path, default=ROOT/'results/claude_hurdle_b0_ens5_20261110')
     parser.add_argument('--seconds', type=float, default=840.)
+    parser.add_argument('--sources', type=int, nargs='+', default=[0])
     args = parser.parse_args()
     assert socket.gethostname() == 'ray-web' and 0 < args.seconds <= 840
     run(args)
