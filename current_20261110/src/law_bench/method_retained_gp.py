@@ -183,6 +183,11 @@ class RetainedGPMethod:
         return imported
 
     def predict(self, task):
+        """Keep the original default projected-coordinate Method output."""
+        return self.predict_scores(task)['projected']
+
+    def predict_scores(self, task):
+        """Same computation, exposing its bound absolute grid/scores/raw for fusion."""
         self.state = None
         self.diagnostics = dict(task_id=task.task_id, completed=False,
             parameters_sha256=self.parameters_sha256, provenance=self.provenance,
@@ -297,8 +302,9 @@ class RetainedGPMethod:
             prepared = prepare_retained_fields(context, self.state, task.task_id, task.K)
             self.diagnostics['retained_fields'] = prepared['diagnostics']
             result = score_cached_fields(prepared, task.Q_rss)
+            result.update(grid=context['absolute_grid'], aps=context['aps'], bounds=context['bounds'])
             self.diagnostics['completed'] = True
-            return result['projected']
+            return result
         except Exception as error:
             self.diagnostics['error'] = repr(error)
             raise

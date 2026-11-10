@@ -34,12 +34,18 @@ METHODS = {
     'scaml': ('method_scaml', 'ScaMLMethod', {}),
     'tcms': ('method_tcms', 'TCMSMethod', {}),
     'retained_gp': ('method_retained_gp', 'RetainedGPMethod', {}),
+    'adopted_A': ('method_adopted', 'AdoptedMethod', {'variant': 'A'}),
+    'adopted_A_GP': ('method_adopted', 'AdoptedMethod', {'variant': 'A_GP'}),
     'gp_S': ('methods_claude', 'GpS', {}),
     'gp_histmean': ('methods_claude', 'GpHS', {}),
     'ours': ('methods_claude', 'OursMethod', {}),
     'ours_noM2': ('methods_claude', 'OursMethod', {'variant': 'noM2'}),
     'ours_C1': ('methods_claude', 'OursMethod', {'variant': 'C1'}),
     'ours_v1': ('methods_claude', 'OursMethod', {'variant': 'v1'}),
+    'ours_naive': ('methods_claude', 'OursMethod', {'variant': 'naive'}),
+    # No-M2 predictions do not consume theta; skip the unused source search.
+    'ours_naive_noM2': ('methods_claude', 'OursMethod',
+                       {'variant': 'naive_noM2', 'fixed_theta': (16.0, 0.0, 1.0, 1.0)}),
 }
 
 

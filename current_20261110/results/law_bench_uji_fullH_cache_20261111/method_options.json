@@ -13,5 +13,22 @@
     },
     "cache_dir": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111",
     "fit_missing_history": false
+  },
+  "adopted_A_GP": {
+    "gp_options": {
+      "parameters_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/paired_assets_20261106/parameters.json",
+      "provenance": {
+        "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+        "training_sources": [
+          {
+            "dataset": "uji",
+            "building": "B0"
+          }
+        ],
+        "evidence": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_assets_20261109/freeze.json#source_calibration; B0F0/B0F1/B0F2"
+      },
+      "cache_dir": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111",
+      "fit_missing_history": false
+    }
   }
 }

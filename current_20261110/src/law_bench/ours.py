@@ -219,6 +219,57 @@ def ensemble_field(ops, maps, t, aps, X=None):
     return outs[0][0], f
 
 
+NAIVE_TAU2, NAIVE_SIG2 = 64.0, 25.0
+
+
+def calibrate_naive(source_buildings):
+    """return (tau2, sig2) for the copied field from SOURCE data: leave-one-floor-out residual of the copied field at real
+    positions (squared detected-mean error minus sampling variance) and mean within-position variance + S0^2"""
+    res, wv = [], []
+    for floors in source_buildings:
+        fl = sorted(floors)
+        for t in fl:
+            if len(fl) < 2:
+                continue
+            P, n, nd, mean, var = det_stats(floors[t]['rss'], floors[t]['xy'])
+            maps = make_maps({f: floors[f] for f in fl if f != t})
+            aps = np.flatnonzero((nd > 0).any(0))
+            f = naive_field(maps, t, aps, P)
+            d = nd[:, aps] > 1
+            res.append(((mean[:, aps] - f['m']) ** 2 - np.nan_to_num(var[:, aps]) / np.maximum(nd[:, aps], 1))[d])
+            wv.append(np.nan_to_num(var[:, aps])[d])
+    return float(max(np.mean(np.concatenate(res)), 1.0)), float(np.mean(np.concatenate(wv)) + S0 ** 2)
+
+
+def naive_field(maps, t, aps, X, tau2=None, sig2=None):
+    """Copied (no-learning) field. For the nearest available lower and upper history floor (the same sides as
+    translator.history_features' 'ref'), take the same-position value (within R_SAME) or else the R_SMOOTH
+    neighbourhood mean, for BOTH the encoded mean M and the detection rate R with identical weights and missing
+    handling; average the available sides. Then p = copied R and the detected mean m = (ref - (1-p) ND) / p.
+    tau2/sig2: constants calibrated on sources (passed explicitly; stored on the model object)."""
+    sm = sub_maps(maps, aps)
+    below = [d for d in T.SLOTS if d < 0 and t + d in sm]; above = [d for d in T.SLOTS if d > 0 and t + d in sm]
+    vm, vr = [], []
+    for side in (below[-1:], above[:1]):
+        if not side:
+            continue
+        P, M, R, _ = sm[t + side[0]]
+        D = np.linalg.norm(X[:, None] - P[None], axis=2); j = D.argmin(1); ok = (D.min(1) <= T.R_SAME)[:, None]
+        W = (D <= T.R_SMOOTH).astype(float); cnt = W.sum(1, keepdims=True)
+        with np.errstate(all='ignore'):
+            smM = np.where(cnt > 0, W @ M / np.maximum(cnt, 1), np.nan); smR = np.where(cnt > 0, W @ R / np.maximum(cnt, 1), np.nan)
+        vm.append(np.where(ok, M[j], smM)); vr.append(np.where(ok, R[j], smR))
+    A = len(aps)
+    with np.errstate(all='ignore'):
+        ref = np.nanmean(np.stack(vm), 0) if vm else np.full((len(X), A), np.nan)
+        pr = np.nanmean(np.stack(vr), 0) if vr else np.full((len(X), A), np.nan)
+    ref = np.where(np.isnan(ref), T.ND, ref); p = np.clip(np.where(np.isnan(pr), 0.0, pr), 0.02, 0.98)
+    m = np.clip(np.where(p > 0.05, (ref - (1 - p) * T.ND) / p, -90.0), -100.0, -30.0)
+    tau2 = NAIVE_TAU2 if tau2 is None else tau2; sig2 = NAIVE_SIG2 if sig2 is None else sig2
+    return dict(p=p, m=m, s2=np.full(p.shape, tau2 + sig2), tau2=np.full(p.shape, tau2),
+                sig2=np.full(p.shape, sig2), vp=np.full(p.shape, 0.05))
+
+
 def condition_v2(Xc, f, s_rss, s_xy, theta, fS=None, r_prior=4.0):
     """M2 v2. f: ensemble field dict. Prior field error lam*tau2 (spatial shape rho), S noise sig2(S)/n_d, so the
     anchor gain lam*tau2/(lam*tau2 + sig2/n_d) grows when the history-based field is unreliable. Detection logit
@@ -293,11 +344,16 @@ class Ours:
         for d in H.values():
             seen |= (d['rss'] != 100).any(0)
         aps = np.flatnonzero(seen)
-        Xc, f = ensemble_field(self.ops, maps, t, aps)
         sr, qr = s_rss[:, aps], q_rss[:, aps]
         Ps = det_stats(sr, s_xy)[0]
-        fS = ensemble_field(self.ops, maps, t, aps, Ps)[1] if len(Ps) else None
-        if self.variant == 'noM2':
+        if self.variant in ('naive', 'naive_noM2'):   # ablation: M1 replaced by copying the nearest history floors (no learning)
+            Xc = np.unique(np.concatenate([m[0] for m in maps.values()]), axis=0)
+            tv, sv = self.naive_var                                    # stored on the object (survives joblib)
+            f, fS = naive_field(maps, t, aps, Xc, tv, sv), (naive_field(maps, t, aps, Ps, tv, sv) if len(Ps) else None)
+        else:
+            Xc, f = ensemble_field(self.ops, maps, t, aps)
+            fS = ensemble_field(self.ops, maps, t, aps, Ps)[1] if len(Ps) else None
+        if self.variant in ('noM2', 'naive_noM2'):
             p, m, s2 = f['p'], f['m'], f['sig2'] + f['tau2']
         elif self.variant in ('C1', 'v1'):                              # original C conditioning (s2-proportional)
             p, m, s2 = condition(Xc, f['p'], f['m'], f['s2'], sr, s_xy, (16.0, 0.3, 1.0, 0.0))
@@ -358,5 +414,37 @@ def select_theta(source_buildings, seed=1, draws=8, reliability=True, randomise=
                     for th in grid:
                         p, m, s2 = condition_v2(Pe, fe, tr_['rss'][srows][:, aps], tr_['xy'][srows], th, fS)
                         scores[th].append(scan_nll(p[inv_e], m[inv_e], s2[inv_e], ev_rss))
+    mean = {th: float(np.mean(v)) for th, v in scores.items() if v}
+    return min(mean, key=mean.get), mean
+
+
+def select_theta_naive(source_buildings, tau2, sig2, seed=1, grid=THETA_GRID, max_eval=400):
+    """Same held-out NLL criterion as select_theta, for the copied (no-learning) field: leave-one-floor-out on every
+    source building, field evaluated at the held-out scans' coordinates, history in its full condition."""
+    rng = np.random.default_rng([seed, 99]); scores = {th: [] for th in grid}
+    for floors in source_buildings:
+        for t in sorted(floors):
+            if len(floors) < 2:
+                continue
+            maps = make_maps({f: floors[f] for f in floors if f != t})
+            tr_ = floors[t]; P, inv = np.unique(tr_['xy'], axis=0, return_inverse=True); inv = inv.ravel()
+            for K in (1, 3, 5):
+                if len(P) <= K + 5:
+                    continue
+                sp = rng.choice(len(P), K, replace=False)
+                srows = np.concatenate([rng.permutation(np.flatnonzero(inv == k))[:3] for k in sp])
+                erows = np.flatnonzero(~np.isin(inv, sp)); erows = rng.choice(erows, min(max_eval, len(erows)), replace=False)
+                seen = (tr_['rss'][srows] != 100).any(0)
+                for mp in maps.values():
+                    seen |= mp[2].max(0) > 0
+                aps = np.flatnonzero(seen)
+                Pe, inv_e = np.unique(tr_['xy'][erows], axis=0, return_inverse=True); inv_e = inv_e.ravel()
+                fe = naive_field(maps, t, aps, Pe, tau2, sig2)
+                Ps_ = det_stats(tr_['rss'][srows][:, aps], tr_['xy'][srows])[0]
+                fS = naive_field(maps, t, aps, Ps_, tau2, sig2)
+                ev_rss = tr_['rss'][erows][:, aps]
+                for th in grid:
+                    p, m, s2 = condition_v2(Pe, fe, tr_['rss'][srows][:, aps], tr_['xy'][srows], th, fS)
+                    scores[th].append(scan_nll(p[inv_e], m[inv_e], s2[inv_e], ev_rss))
     mean = {th: float(np.mean(v)) for th, v in scores.items() if v}
     return min(mean, key=mean.get), mean
