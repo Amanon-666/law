@@ -113,7 +113,7 @@ class TabICL:
         aps = np.flatnonzero(seen)
         xy = np.concatenate([d['xy'] for d in histories.values()] + [task.S['xy']])
         bounds = np.stack([np.floor(xy.min(0) / 2) * 2, np.ceil(xy.max(0) / 2) * 2])
-        seed = self.seed + task.repeat
+        seed = task.meta['tabicl_seed'] if task.meta.get('protocol') == 'legacy54' else self.seed + task.repeat
         self.regressor.fit(histories, task.S, f'B0F{task.floor}', aps, bounds, seed)
         result = self.regressor.predict(task.Q_rss)
         self.diagnostics = dict(task_id=task.task_id, checkpoint=str(self.regressor.checkpoint),

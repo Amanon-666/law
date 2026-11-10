@@ -5,6 +5,9 @@ Example: python -m law_bench.run --dataset uji --building B1 \
 No dataset/model downloads. Source fits and completed tasks are reusable with
 --resume only when input arrays, configuration and benchmark code still match.
 This runner does not launch a multi-dataset or complete leave-one-building run.
+Use --protocol legacy54 --manifest <original manifest> to retain the old 54
+events' rows and hierarchical metric, one building at a time. Sources are B0;
+repeat 0/1 selects AB/BA rather than new random draws. Static defaults are unchanged.
 """
 import os
 for _name in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS', 'NUMEXPR_NUM_THREADS'):
@@ -99,6 +102,33 @@ def _method(name, options, output):
 def evaluate(args):
     from .data import load
 
+    legacy = manifest = None
+    aggregate_results = aggregate
+    if args.protocol == 'legacy54':
+        from . import legacy54 as legacy
+        if args.manifest is None:
+            raise ValueError('legacy54 requires the original --manifest')
+        if (args.dataset != 'uji' or args.source_dataset not in (None, 'uji')
+                or args.source_root is not None
+                or args.source_buildings not in (None, ['B0'])):
+            raise ValueError('legacy54 uses the original UJI corpus and B0 sources')
+        manifest = legacy.load_manifest(args.manifest)
+        if (args.R not in (None, manifest['R'])
+                or args.seed not in (None, manifest['seed'])
+                or args.query_positions is not None):
+            raise ValueError('legacy54 preserves the manifest R, seed and all Query rows')
+        args.R, args.seed = manifest['R'], manifest['seed']
+        args.repeats = [0, 1] if args.repeats is None else args.repeats
+        args.source_buildings = ['B0']
+        aggregate_results = legacy.aggregate
+    else:
+        if args.manifest is not None:
+            raise ValueError('--manifest is only used by --protocol legacy54')
+        args.R = 3 if args.R is None else args.R
+        args.seed = 20261111 if args.seed is None else args.seed
+        args.repeats = list(range(5)) if args.repeats is None else args.repeats
+        args.query_positions = 60 if args.query_positions is None else args.query_positions
+
     output = args.output.resolve()
     buildings, ap_ids = load(args.dataset, root=args.root)
     target = buildings[args.building]
@@ -118,10 +148,13 @@ def evaluate(args):
                      for k, v in vars(args).items() if k not in ('resume', 'output', 'method_options')}
     configuration['method_options'] = options
     package = Path(__file__).resolve().parent
-    frozen = dict(protocol='static-resample-v2', configuration=configuration,
+    frozen = dict(protocol=args.protocol, configuration=configuration,
         target_data=_data_identity({args.building: target}, {args.building: ap_ids[args.building]}),
         source_data=_data_identity({b: source_data[b] for b in source_names}, source_aps),
         code={p.name: _sha(p) for p in sorted(package.glob('*.py'))})
+    if manifest is not None:
+        frozen['manifest'] = dict(path=str(args.manifest.resolve()), sha256=_sha(args.manifest),
+                                  metric='legacy equal building/floor/direction/K/position; discrete quantiles')
     freeze_path = output / 'freeze.json'
     if args.resume:
         if json.loads(freeze_path.read_text()) != frozen:
@@ -131,16 +164,20 @@ def evaluate(args):
         _write(freeze_path, frozen)
 
     tasks, unavailable = [], []
-    for floor in args.floors if args.floors is not None else sorted(target):
-        for repeat in args.repeats:
-            try:
-                tasks.extend(make_tasks(args.dataset, args.building, target, ap_ids[args.building],
-                    floor, budgets=tuple(args.budgets), repeat=repeat, seed=args.seed,
-                    R=args.R, query_positions=args.query_positions))
-            except ValueError as error:
-                for k in args.budgets:
-                    unavailable.append(dict(task_id=f'{args.dataset}/{args.building}/F{floor}/K{k}/r{repeat}',
-                        floor=floor, K=k, repeat=repeat, status='protocol_unavailable', error=str(error)))
+    if legacy is not None:
+        tasks = legacy.make_tasks(manifest, args.building, target, ap_ids[args.building],
+                                  budgets=args.budgets, repeats=args.repeats, selected_floors=args.floors)
+    else:
+        for floor in args.floors if args.floors is not None else sorted(target):
+            for repeat in args.repeats:
+                try:
+                    tasks.extend(make_tasks(args.dataset, args.building, target, ap_ids[args.building],
+                        floor, budgets=tuple(args.budgets), repeat=repeat, seed=args.seed,
+                        R=args.R, query_positions=args.query_positions))
+                except ValueError as error:
+                    for k in args.budgets:
+                        unavailable.append(dict(task_id=f'{args.dataset}/{args.building}/F{floor}/K{k}/r{repeat}',
+                            floor=floor, K=k, repeat=repeat, status='protocol_unavailable', error=str(error)))
     _write(output / 'task_inventory.json', dict(
         ready=[dict(task_id=t.task_id, **t.meta) for t, _ in tasks], unavailable=unavailable))
 
@@ -200,11 +237,14 @@ def evaluate(args):
             records[task.task_id] = record
             print(json.dumps(dict(method=name, task=task.task_id, status=record['status'])), flush=True)
         all_records = list(records.values()) + unavailable
-        summary = dict(method=name, source_fit=fit_info, by_K=aggregate(all_records),
-            by_floor={str(f): aggregate([r for r in all_records if r['floor'] == f])
+        summary = dict(method=name, source_fit=fit_info, by_K=aggregate_results(all_records),
+            by_floor={str(f): aggregate_results([r for r in all_records if r['floor'] == f])
                       for f in sorted({r['floor'] for r in all_records})},
             task_records=[str(paths[t.task_id].relative_to(output)) for t, _ in tasks],
             unavailable=unavailable)
+        if legacy is not None:
+            summary['overall'] = legacy.overall(all_records)
+            summary['metric'] = frozen['manifest']['metric']
         _write(output / (name + '.json'), summary)
         summaries[name] = summary
     _write(output / 'summary.json', summaries)
@@ -215,16 +255,18 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--dataset', required=True)
     parser.add_argument('--building', required=True, help='Exactly one heldout building')
+    parser.add_argument('--protocol', choices=['static-resample-v2', 'legacy54'], default='static-resample-v2')
+    parser.add_argument('--manifest', type=Path, help='Original frozen 54-event manifest; legacy54 only')
     parser.add_argument('--root', type=Path)
     parser.add_argument('--source-dataset')
     parser.add_argument('--source-root', type=Path)
     parser.add_argument('--source-buildings', nargs='+')
     parser.add_argument('--floors', type=int, nargs='+')
     parser.add_argument('--budgets', type=int, nargs='+', default=[1, 3, 5])
-    parser.add_argument('--repeats', type=int, nargs='+', default=list(range(5)))
-    parser.add_argument('--seed', type=int, default=20261111)
-    parser.add_argument('--R', type=int, default=3)
-    parser.add_argument('--query-positions', type=int, default=60)
+    parser.add_argument('--repeats', type=int, nargs='+', help='Static: default 0..4; legacy54: 0=AB, 1=BA')
+    parser.add_argument('--seed', type=int, help='Static default 20261111; legacy54 keeps the manifest seed')
+    parser.add_argument('--R', type=int, help='Static default 3; legacy54 keeps the manifest R')
+    parser.add_argument('--query-positions', type=int, help='Static only, default 60; legacy54 keeps every Query row')
     parser.add_argument('--methods', choices=list(METHODS), nargs='+', default=['wknn_S', 'wknn_HS'])
     parser.add_argument('--method-options', type=Path, help='JSON mapping method names to constructor arguments')
     parser.add_argument('--output', type=Path, required=True)

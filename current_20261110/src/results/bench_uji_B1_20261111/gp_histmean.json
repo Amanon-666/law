@@ -1,0 +1,252 @@
+{
+  "method": "gp_histmean",
+  "source_fit": {
+    "status": "completed",
+    "seconds": 0.1198974959552288,
+    "sha256": "967f8e737dbef30adbc3eb34d191f0ad815f24e12e105ed35c70813d66cb94f7",
+    "source_buildings": [
+      "B0",
+      "B2"
+    ]
+  },
+  "by_K": {
+    "1": {
+      "tasks": 20,
+      "completed_tasks": 20,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 54.609175116627895,
+      "p50": 59.75607401046706,
+      "p90": 76.08261859368183,
+      "query_positions": 660
+    },
+    "3": {
+      "tasks": 20,
+      "completed_tasks": 20,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 54.372425058871954,
+      "p50": 59.23228117726573,
+      "p90": 75.80513598480216,
+      "query_positions": 660
+    },
+    "5": {
+      "tasks": 20,
+      "completed_tasks": 20,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 54.06138422546913,
+      "p50": 58.40322009528569,
+      "p90": 75.22702918920983,
+      "query_positions": 660
+    }
+  },
+  "by_floor": {
+    "0": {
+      "1": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 60.9335909919216,
+        "p50": 64.15625105384524,
+        "p90": 75.89727930555121,
+        "query_positions": 190
+      },
+      "3": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 60.735717944724534,
+        "p50": 64.21599760279034,
+        "p90": 75.88036302795666,
+        "query_positions": 190
+      },
+      "5": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 60.41342838043981,
+        "p50": 64.02956049527549,
+        "p90": 75.22702918920983,
+        "query_positions": 190
+      }
+    },
+    "1": {
+      "1": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 56.780151119858346,
+        "p50": 62.309024656358496,
+        "p90": 79.06687071925866,
+        "query_positions": 150
+      },
+      "3": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 56.367192339228595,
+        "p50": 61.8503984000492,
+        "p90": 78.97429155237025,
+        "query_positions": 150
+      },
+      "5": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 55.97608615196499,
+        "p50": 61.21288431349153,
+        "p90": 78.75208603945316,
+        "query_positions": 150
+      }
+    },
+    "2": {
+      "1": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 50.17021205063071,
+        "p50": 54.72383464791121,
+        "p90": 75.78489757618959,
+        "query_positions": 195
+      },
+      "3": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 50.01978180447371,
+        "p50": 54.192472669830074,
+        "p90": 74.90147689388259,
+        "query_positions": 195
+      },
+      "5": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 49.77866696215806,
+        "p50": 54.01038642713485,
+        "p90": 74.1190940861622,
+        "query_positions": 195
+      }
+    },
+    "3": {
+      "1": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 49.31567416526054,
+        "p50": 55.88397996856845,
+        "p90": 73.12898524362383,
+        "query_positions": 125
+      },
+      "3": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 49.09662261280937,
+        "p50": 55.8463976636402,
+        "p90": 72.35937036346479,
+        "query_positions": 125
+      },
+      "5": {
+        "tasks": 5,
+        "completed_tasks": 5,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 48.7896737288839,
+        "p50": 55.15385579767091,
+        "p90": 72.37563456693707,
+        "query_positions": 125
+      }
+    }
+  },
+  "task_records": [
+    "events/gp_histmean/uji/B1/F0/K1/r0.json",
+    "events/gp_histmean/uji/B1/F0/K3/r0.json",
+    "events/gp_histmean/uji/B1/F0/K5/r0.json",
+    "events/gp_histmean/uji/B1/F0/K1/r1.json",
+    "events/gp_histmean/uji/B1/F0/K3/r1.json",
+    "events/gp_histmean/uji/B1/F0/K5/r1.json",
+    "events/gp_histmean/uji/B1/F0/K1/r2.json",
+    "events/gp_histmean/uji/B1/F0/K3/r2.json",
+    "events/gp_histmean/uji/B1/F0/K5/r2.json",
+    "events/gp_histmean/uji/B1/F0/K1/r3.json",
+    "events/gp_histmean/uji/B1/F0/K3/r3.json",
+    "events/gp_histmean/uji/B1/F0/K5/r3.json",
+    "events/gp_histmean/uji/B1/F0/K1/r4.json",
+    "events/gp_histmean/uji/B1/F0/K3/r4.json",
+    "events/gp_histmean/uji/B1/F0/K5/r4.json",
+    "events/gp_histmean/uji/B1/F1/K1/r0.json",
+    "events/gp_histmean/uji/B1/F1/K3/r0.json",
+    "events/gp_histmean/uji/B1/F1/K5/r0.json",
+    "events/gp_histmean/uji/B1/F1/K1/r1.json",
+    "events/gp_histmean/uji/B1/F1/K3/r1.json",
+    "events/gp_histmean/uji/B1/F1/K5/r1.json",
+    "events/gp_histmean/uji/B1/F1/K1/r2.json",
+    "events/gp_histmean/uji/B1/F1/K3/r2.json",
+    "events/gp_histmean/uji/B1/F1/K5/r2.json",
+    "events/gp_histmean/uji/B1/F1/K1/r3.json",
+    "events/gp_histmean/uji/B1/F1/K3/r3.json",
+    "events/gp_histmean/uji/B1/F1/K5/r3.json",
+    "events/gp_histmean/uji/B1/F1/K1/r4.json",
+    "events/gp_histmean/uji/B1/F1/K3/r4.json",
+    "events/gp_histmean/uji/B1/F1/K5/r4.json",
+    "events/gp_histmean/uji/B1/F2/K1/r0.json",
+    "events/gp_histmean/uji/B1/F2/K3/r0.json",
+    "events/gp_histmean/uji/B1/F2/K5/r0.json",
+    "events/gp_histmean/uji/B1/F2/K1/r1.json",
+    "events/gp_histmean/uji/B1/F2/K3/r1.json",
+    "events/gp_histmean/uji/B1/F2/K5/r1.json",
+    "events/gp_histmean/uji/B1/F2/K1/r2.json",
+    "events/gp_histmean/uji/B1/F2/K3/r2.json",
+    "events/gp_histmean/uji/B1/F2/K5/r2.json",
+    "events/gp_histmean/uji/B1/F2/K1/r3.json",
+    "events/gp_histmean/uji/B1/F2/K3/r3.json",
+    "events/gp_histmean/uji/B1/F2/K5/r3.json",
+    "events/gp_histmean/uji/B1/F2/K1/r4.json",
+    "events/gp_histmean/uji/B1/F2/K3/r4.json",
+    "events/gp_histmean/uji/B1/F2/K5/r4.json",
+    "events/gp_histmean/uji/B1/F3/K1/r0.json",
+    "events/gp_histmean/uji/B1/F3/K3/r0.json",
+    "events/gp_histmean/uji/B1/F3/K5/r0.json",
+    "events/gp_histmean/uji/B1/F3/K1/r1.json",
+    "events/gp_histmean/uji/B1/F3/K3/r1.json",
+    "events/gp_histmean/uji/B1/F3/K5/r1.json",
+    "events/gp_histmean/uji/B1/F3/K1/r2.json",
+    "events/gp_histmean/uji/B1/F3/K3/r2.json",
+    "events/gp_histmean/uji/B1/F3/K5/r2.json",
+    "events/gp_histmean/uji/B1/F3/K1/r3.json",
+    "events/gp_histmean/uji/B1/F3/K3/r3.json",
+    "events/gp_histmean/uji/B1/F3/K5/r3.json",
+    "events/gp_histmean/uji/B1/F3/K1/r4.json",
+    "events/gp_histmean/uji/B1/F3/K3/r4.json",
+    "events/gp_histmean/uji/B1/F3/K5/r4.json"
+  ],
+  "unavailable": []
+}
