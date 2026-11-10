@@ -76,14 +76,20 @@ class OursMethod(Method):
             self.model = O.Ours(theta=theta, variant=self.variant, informative=self.inf)
             self.model.ops = []; self.model.naive_var = nv; self.theta = theta; self.fit_seconds = time.time() - t0
             return
-        rel = rnd = self.variant != 'v1'
+        rel = rnd = self.variant not in ('v1', 'A')
+        sup = self.variant == 'A'           # generic A: original recipe (S features, full history), trainable on any sources
         theta = self.fixed
-        if theta is None and self.variant == 'full':
+        if theta is None and self.variant == 'full':      # 'A' and no-M2 variants do not use theta
             theta, self.theta_scores = O.select_theta(b, seed=self.seeds[0], reliability=rel, randomise=rnd)
         self.model = O.Ours(theta=theta or (16.0, 0.0, 1.0, 1.0), seeds=self.seeds, variant=self.variant,
                             informative=self.inf)
-        self.model.ops = [O.Operator(b, s, reliability=rel, randomise=rnd) for s in self.seeds]
+        self.model.ops = [O.Operator(b, s, reliability=rel, randomise=rnd, use_support=sup) for s in self.seeds]
         self.theta = self.model.theta; self.fit_seconds = time.time() - t0
 
     def predict(self, task):
         return self.model.predict(task.H, task.floor, task.S['rss'], task.S['xy'], task.Q_rss)
+
+
+def predict_mass(method, task):
+    """For OursMethod: (projected xy, candidate xy, normalised log position mass, bounds) for posterior pooling"""
+    return method.model.predict(task.H, task.floor, task.S['rss'], task.S['xy'], task.Q_rss, return_mass=True)

@@ -44,6 +44,8 @@ METHODS = {
     'gp_S': ('methods_claude', 'GpS', {}),
     'gp_histmean': ('methods_claude', 'GpHS', {}),
     'ours': ('methods_claude', 'OursMethod', {}),
+    'ours_A': ('methods_claude', 'OursMethod', {'variant': 'A'}),
+    'trained_A_GP': ('method_trained_field_gp', 'TrainedFieldGP', {}),
     'ours_noM2': ('methods_claude', 'OursMethod', {'variant': 'noM2'}),
     'ours_C1': ('methods_claude', 'OursMethod', {'variant': 'C1'}),
     'ours_v1': ('methods_claude', 'OursMethod', {'variant': 'v1'}),
