@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "event": "IPIN2025_B2025F2_K1",
+  "floor": 2,
+  "K": 1,
+  "freeze_sha256": "6fc0475cb9e23014645d1a31853bb8e8b606a68c027d2f6ddc937c6f821d648c",
+  "state": {
+    "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K1/state.json",
+    "sha256": "069032a0a60002e3b6c576e0add0e493d70414f32c8ca6508b27b96b5e8a15d4"
+  },
+  "hurdle": {
+    "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K1/hurdle.npz",
+    "sha256": "f979cfef4334a3d7ce3b37416c54d1349c5175d28b9b2d9aea7173ae5b2d3937"
+  },
+  "grid": {
+    "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K1/grid.npz",
+    "sha256": "e45828d81be7557658d45c69165ede127ba5a79c335d3a4bba53a7cbc782c490"
+  },
+  "obs": {
+    "alpha": 0.878281117696867,
+    "beta": -84.8441959028493,
+    "detect_scale": 5.155623316019167,
+    "noise_std": 4.823813247698445
+  },
+  "sources": [
+    "IPIN2025_B2025F3",
+    "IPIN2025_B2025F4",
+    "IPIN2025_B2025F5",
+    "IPIN2025_B2025F6"
+  ],
+  "query_used": false,
+  "seconds_this_segment": 172.74479023739696,
+  "source_complete_sha256": "d73d071124f5e74f64b13778d94801789e39aa7ea3ba1bafce07a5e5ed7b4ab9",
+  "AP_fields": 1009,
+  "minimum_ESS": 31122.617634896873,
+  "field_seconds": 130.6909305639565,
+  "status": "First context complete; other14 contexts and official predictions/scoring pending at this snapshot"
+}

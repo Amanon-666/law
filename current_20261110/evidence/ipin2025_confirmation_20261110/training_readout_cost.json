@@ -1,0 +1,46 @@
+{
+  "event": "IPIN2025_B2025F2_K1",
+  "input": "Unique actual Support receipt, training-only",
+  "input_scan_id": "01 Logfiles/01 - Training/IPIN2025_T3_TrainingTrial21_session01_SG24.txt@0x1.102f1a9fbe76dp+7",
+  "prepared": {
+    "path": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K1/complete.json",
+    "sha256": "d73d071124f5e74f64b13778d94801789e39aa7ea3ba1bafce07a5e5ed7b4ab9"
+  },
+  "device": "cpu",
+  "CPU_threads": 2,
+  "receipts": 1,
+  "timing_repetitions": 1,
+  "load_prepared_seconds": 0.7465357780456543,
+  "hurdle_seconds": 0.0076925307512283325,
+  "GP_seconds": 0.3123411536216736,
+  "fusion_seconds": 0.0010595135390758514,
+  "readout_total_seconds": 0.3210956081748009,
+  "load_plus_readout_seconds": 1.0676313862204552,
+  "array_finite": {
+    "hurdle": true,
+    "GP": true,
+    "GP_candidates": true,
+    "coordinate_half": true,
+    "probability_half": true,
+    "hurdle_log_mass": true,
+    "GP_scores": true,
+    "pooled_log_mass": true
+  },
+  "all_finite": true,
+  "APs": 1009,
+  "GP_grid_points": 4864,
+  "hurdle_candidates": 445,
+  "method_names": [
+    "hurdle",
+    "GP",
+    "GP_candidates",
+    "coordinate_half",
+    "probability_half"
+  ],
+  "training_updates": 0,
+  "GP_fits": 0,
+  "localization_scores": 0,
+  "official_query_opened": false,
+  "GT_opened": false,
+  "scope": "One Support receipt verifies fixed prepared forward interfaces and gives one CPU timing sample; not a localization performance measurement or repeated benchmark"
+}
