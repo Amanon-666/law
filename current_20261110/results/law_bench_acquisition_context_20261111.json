@@ -1,0 +1,7342 @@
+{
+  "time_utc": "2026-11-10T20:04:44.399318+00:00",
+  "elapsed_seconds": 0.6023330129683018,
+  "purpose": "Metadata-only same-building acquisition-context comparison; no fitting/prediction or geometric probe",
+  "acquisition_definition": "USERID, PHONEID, UTC date; acquisition IDs use global sorted identities from the UJI loader",
+  "old_H_full_other_floor_rows": {
+    "B1F0": true,
+    "B1F1": true,
+    "B1F2": true,
+    "B1F3": true,
+    "B2F0": true,
+    "B2F1": true,
+    "B2F2": true,
+    "B2F3": true,
+    "B2F4": true
+  },
+  "old_event_H_all_other_floors": true,
+  "fraction_definition": "Equal task weight; within task, fraction of distinct Q acquisition IDs or phones present in H; all/any and disjoint are task fractions",
+  "summary": {
+    "old54": {
+      "B1": {
+        "tasks": 24,
+        "Q_acquisition_fraction_in_H": 0.5,
+        "Q_phone_fraction_in_H": 0.5,
+        "all_Q_acquisitions_in_H": 0.5,
+        "any_Q_acquisitions_in_H": 0.5,
+        "all_Q_phones_in_H": 0.5,
+        "S_Q_acquisition_disjoint": 1,
+        "S_Q_phone_disjoint": 1
+      },
+      "B2": {
+        "tasks": 30,
+        "Q_acquisition_fraction_in_H": 0.4,
+        "Q_phone_fraction_in_H": 0.5,
+        "all_Q_acquisitions_in_H": 0.4,
+        "any_Q_acquisitions_in_H": 0.4,
+        "all_Q_phones_in_H": 0.5,
+        "S_Q_acquisition_disjoint": 1,
+        "S_Q_phone_disjoint": 1
+      }
+    },
+    "static-resample-v2": {
+      "B1": {
+        "tasks": 60,
+        "Q_acquisition_fraction_in_H": 0.725,
+        "Q_phone_fraction_in_H": 0.725,
+        "all_Q_acquisitions_in_H": 0.5,
+        "any_Q_acquisitions_in_H": 1,
+        "all_Q_phones_in_H": 0.5,
+        "S_Q_acquisition_disjoint": 0,
+        "S_Q_phone_disjoint": 0
+      },
+      "B2": {
+        "tasks": 75,
+        "Q_acquisition_fraction_in_H": 0.4266666666666667,
+        "Q_phone_fraction_in_H": 0.5166666666666667,
+        "all_Q_acquisitions_in_H": 0.2,
+        "any_Q_acquisitions_in_H": 0.6,
+        "all_Q_phones_in_H": 0.2,
+        "S_Q_acquisition_disjoint": 0,
+        "S_Q_phone_disjoint": 0
+      }
+    }
+  },
+  "performance_context": {
+    "old_B1": {
+      "protocol": "old54; B1 subset 24 events; A/B acquisition directions",
+      "source": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/stress_uji_20261111/summary.json",
+      "method": "WKNN3_raw_HS",
+      "mean_equal_four_floors": 19.822980554750583,
+      "by_floor": {
+        "B1F0": {
+          "mean": 33.233514860599215,
+          "p90": 114.58810988076449
+        },
+        "B1F1": {
+          "mean": 12.54242714993347,
+          "p90": 19.67724690726356
+        },
+        "B1F2": {
+          "mean": 14.856858568962256,
+          "p90": 35.09104706406001
+        },
+        "B1F3": {
+          "mean": 18.65912163950739,
+          "p90": 37.51382802575427
+        }
+      }
+    },
+    "new_B1": {
+      "protocol": "static-resample-v2; 60 tasks; repeats0..4",
+      "source": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_20261111/wknn_HS.json",
+      "method": "wknn_HS",
+      "by_K": {
+        "1": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 17.48273762325076,
+          "p50": 11.90463064768296,
+          "p90": 38.346264442882706,
+          "query_positions": 660
+        },
+        "3": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 15.966589294769886,
+          "p50": 11.607543699453167,
+          "p90": 33.33602012358974,
+          "query_positions": 660
+        },
+        "5": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 15.75380209982163,
+          "p50": 11.861382348025337,
+          "p90": 31.994181882635143,
+          "query_positions": 660
+        }
+      },
+      "mean_equal_K": 16.401043005947425
+    },
+    "boundary": "Different task draws, weighting/implementation may differ; descriptive side-by-side only, no pooled scores or causal attribution."
+  },
+  "sources": {
+    "csv": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+    "csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+    "old_manifest": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_assets_20261109/manifest.json",
+    "old_manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+    "B1_inventory": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_20261111/task_inventory.json",
+    "B1_inventory_sha256": "c6be183e3a55e761032466d3dcf029e9a297d576b80d8a3adbb15faea5aa7f07",
+    "protocol_sha256": "804461986101fad2904eba94232e533f0bf25128d99a14d2b4ce6346498f8bee"
+  },
+  "acquisition_identities": [
+    [
+      1,
+      14,
+      "2013-06-10"
+    ],
+    [
+      1,
+      14,
+      "2013-06-12"
+    ],
+    [
+      2,
+      23,
+      "2013-06-20"
+    ],
+    [
+      3,
+      16,
+      "2013-06-20"
+    ],
+    [
+      4,
+      18,
+      "2013-06-20"
+    ],
+    [
+      5,
+      3,
+      "2013-06-20"
+    ],
+    [
+      6,
+      19,
+      "2013-06-20"
+    ],
+    [
+      7,
+      6,
+      "2013-06-20"
+    ],
+    [
+      8,
+      1,
+      "2013-06-20"
+    ],
+    [
+      9,
+      14,
+      "2013-06-20"
+    ],
+    [
+      10,
+      8,
+      "2013-06-20"
+    ],
+    [
+      11,
+      13,
+      "2013-05-30"
+    ],
+    [
+      11,
+      13,
+      "2013-05-31"
+    ],
+    [
+      11,
+      13,
+      "2013-06-04"
+    ],
+    [
+      11,
+      13,
+      "2013-06-20"
+    ],
+    [
+      12,
+      24,
+      "2013-06-20"
+    ],
+    [
+      13,
+      17,
+      "2013-06-20"
+    ],
+    [
+      14,
+      7,
+      "2013-06-20"
+    ],
+    [
+      15,
+      11,
+      "2013-06-20"
+    ],
+    [
+      16,
+      14,
+      "2013-06-20"
+    ],
+    [
+      17,
+      22,
+      "2013-06-20"
+    ],
+    [
+      18,
+      10,
+      "2013-06-20"
+    ]
+  ],
+  "tasks": [
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 0,
+      "K": 1,
+      "id": "B1F0_AB_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        19
+      ],
+      "Q_phone_ids": [
+        14
+      ],
+      "S_acquisition_ids": [
+        7
+      ],
+      "Q_acquisitions_in_H": [
+        19
+      ],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 0,
+      "K": 3,
+      "id": "B1F0_AB_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        19
+      ],
+      "Q_phone_ids": [
+        14
+      ],
+      "S_acquisition_ids": [
+        7
+      ],
+      "Q_acquisitions_in_H": [
+        19
+      ],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 0,
+      "K": 5,
+      "id": "B1F0_AB_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        19
+      ],
+      "Q_phone_ids": [
+        14
+      ],
+      "S_acquisition_ids": [
+        7
+      ],
+      "Q_acquisitions_in_H": [
+        19
+      ],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 0,
+      "K": 1,
+      "id": "B1F0_BA_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        7
+      ],
+      "Q_phone_ids": [
+        6
+      ],
+      "S_acquisition_ids": [
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7
+      ],
+      "Q_phones_in_H": [
+        6
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 0,
+      "K": 3,
+      "id": "B1F0_BA_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        7
+      ],
+      "Q_phone_ids": [
+        6
+      ],
+      "S_acquisition_ids": [
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7
+      ],
+      "Q_phones_in_H": [
+        6
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 0,
+      "K": 5,
+      "id": "B1F0_BA_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        7
+      ],
+      "Q_phone_ids": [
+        6
+      ],
+      "S_acquisition_ids": [
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7
+      ],
+      "Q_phones_in_H": [
+        6
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 1,
+      "K": 1,
+      "id": "B1F1_AB_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        17
+      ],
+      "Q_phone_ids": [
+        7
+      ],
+      "S_acquisition_ids": [
+        14
+      ],
+      "Q_acquisitions_in_H": [
+        17
+      ],
+      "Q_phones_in_H": [
+        7
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 1,
+      "K": 3,
+      "id": "B1F1_AB_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        17
+      ],
+      "Q_phone_ids": [
+        7
+      ],
+      "S_acquisition_ids": [
+        14
+      ],
+      "Q_acquisitions_in_H": [
+        17
+      ],
+      "Q_phones_in_H": [
+        7
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 1,
+      "K": 5,
+      "id": "B1F1_AB_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        17
+      ],
+      "Q_phone_ids": [
+        7
+      ],
+      "S_acquisition_ids": [
+        14
+      ],
+      "Q_acquisitions_in_H": [
+        17
+      ],
+      "Q_phones_in_H": [
+        7
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 1,
+      "K": 1,
+      "id": "B1F1_BA_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        14
+      ],
+      "Q_phone_ids": [
+        13
+      ],
+      "S_acquisition_ids": [
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        14
+      ],
+      "Q_phones_in_H": [
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 1,
+      "K": 3,
+      "id": "B1F1_BA_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        14
+      ],
+      "Q_phone_ids": [
+        13
+      ],
+      "S_acquisition_ids": [
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        14
+      ],
+      "Q_phones_in_H": [
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 1,
+      "K": 5,
+      "id": "B1F1_BA_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        14
+      ],
+      "Q_phone_ids": [
+        13
+      ],
+      "S_acquisition_ids": [
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        14
+      ],
+      "Q_phones_in_H": [
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 2,
+      "K": 1,
+      "id": "B1F2_AB_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        4
+      ],
+      "Q_phone_ids": [
+        18
+      ],
+      "S_acquisition_ids": [
+        2
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 2,
+      "K": 3,
+      "id": "B1F2_AB_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        4
+      ],
+      "Q_phone_ids": [
+        18
+      ],
+      "S_acquisition_ids": [
+        2
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 2,
+      "K": 5,
+      "id": "B1F2_AB_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        4
+      ],
+      "Q_phone_ids": [
+        18
+      ],
+      "S_acquisition_ids": [
+        2
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 2,
+      "K": 1,
+      "id": "B1F2_BA_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        2
+      ],
+      "Q_phone_ids": [
+        23
+      ],
+      "S_acquisition_ids": [
+        4
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 2,
+      "K": 3,
+      "id": "B1F2_BA_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        2
+      ],
+      "Q_phone_ids": [
+        23
+      ],
+      "S_acquisition_ids": [
+        4
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 2,
+      "K": 5,
+      "id": "B1F2_BA_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        2
+      ],
+      "Q_phone_ids": [
+        23
+      ],
+      "S_acquisition_ids": [
+        4
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 3,
+      "K": 1,
+      "id": "B1F3_AB_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        21
+      ],
+      "Q_phone_ids": [
+        10
+      ],
+      "S_acquisition_ids": [
+        8
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 3,
+      "K": 3,
+      "id": "B1F3_AB_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        21
+      ],
+      "Q_phone_ids": [
+        10
+      ],
+      "S_acquisition_ids": [
+        8
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 3,
+      "K": 5,
+      "id": "B1F3_AB_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        21
+      ],
+      "Q_phone_ids": [
+        10
+      ],
+      "S_acquisition_ids": [
+        8
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 3,
+      "K": 1,
+      "id": "B1F3_BA_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        8
+      ],
+      "Q_phone_ids": [
+        1
+      ],
+      "S_acquisition_ids": [
+        21
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 3,
+      "K": 3,
+      "id": "B1F3_BA_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        8
+      ],
+      "Q_phone_ids": [
+        1
+      ],
+      "S_acquisition_ids": [
+        21
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B1",
+      "floor": 3,
+      "K": 5,
+      "id": "B1F3_BA_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        8
+      ],
+      "Q_phone_ids": [
+        1
+      ],
+      "S_acquisition_ids": [
+        21
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 0,
+      "K": 1,
+      "id": "B2F0_AB_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        9
+      ],
+      "Q_phone_ids": [
+        14
+      ],
+      "S_acquisition_ids": [
+        8
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 0,
+      "K": 3,
+      "id": "B2F0_AB_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        9
+      ],
+      "Q_phone_ids": [
+        14
+      ],
+      "S_acquisition_ids": [
+        8
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 0,
+      "K": 5,
+      "id": "B2F0_AB_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        9
+      ],
+      "Q_phone_ids": [
+        14
+      ],
+      "S_acquisition_ids": [
+        8
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 0,
+      "K": 1,
+      "id": "B2F0_BA_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        8
+      ],
+      "Q_phone_ids": [
+        1
+      ],
+      "S_acquisition_ids": [
+        9
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 0,
+      "K": 3,
+      "id": "B2F0_BA_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        8
+      ],
+      "Q_phone_ids": [
+        1
+      ],
+      "S_acquisition_ids": [
+        9
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 0,
+      "K": 5,
+      "id": "B2F0_BA_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        8
+      ],
+      "Q_phone_ids": [
+        1
+      ],
+      "S_acquisition_ids": [
+        9
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 1,
+      "K": 1,
+      "id": "B2F1_AB_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        18
+      ],
+      "Q_phone_ids": [
+        11
+      ],
+      "S_acquisition_ids": [
+        7
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 1,
+      "K": 3,
+      "id": "B2F1_AB_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        18
+      ],
+      "Q_phone_ids": [
+        11
+      ],
+      "S_acquisition_ids": [
+        7
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 1,
+      "K": 5,
+      "id": "B2F1_AB_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        18
+      ],
+      "Q_phone_ids": [
+        11
+      ],
+      "S_acquisition_ids": [
+        7
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 1,
+      "K": 1,
+      "id": "B2F1_BA_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        7
+      ],
+      "Q_phone_ids": [
+        6
+      ],
+      "S_acquisition_ids": [
+        18
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 1,
+      "K": 3,
+      "id": "B2F1_BA_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        7
+      ],
+      "Q_phone_ids": [
+        6
+      ],
+      "S_acquisition_ids": [
+        18
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 1,
+      "K": 5,
+      "id": "B2F1_BA_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        7
+      ],
+      "Q_phone_ids": [
+        6
+      ],
+      "S_acquisition_ids": [
+        18
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 2,
+      "K": 1,
+      "id": "B2F2_AB_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        17
+      ],
+      "Q_phone_ids": [
+        7
+      ],
+      "S_acquisition_ids": [
+        14
+      ],
+      "Q_acquisitions_in_H": [
+        17
+      ],
+      "Q_phones_in_H": [
+        7
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 2,
+      "K": 3,
+      "id": "B2F2_AB_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        17
+      ],
+      "Q_phone_ids": [
+        7
+      ],
+      "S_acquisition_ids": [
+        14
+      ],
+      "Q_acquisitions_in_H": [
+        17
+      ],
+      "Q_phones_in_H": [
+        7
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 2,
+      "K": 5,
+      "id": "B2F2_AB_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        17
+      ],
+      "Q_phone_ids": [
+        7
+      ],
+      "S_acquisition_ids": [
+        14
+      ],
+      "Q_acquisitions_in_H": [
+        17
+      ],
+      "Q_phones_in_H": [
+        7
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 2,
+      "K": 1,
+      "id": "B2F2_BA_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        14
+      ],
+      "Q_phone_ids": [
+        13
+      ],
+      "S_acquisition_ids": [
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        14
+      ],
+      "Q_phones_in_H": [
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 2,
+      "K": 3,
+      "id": "B2F2_BA_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        14
+      ],
+      "Q_phone_ids": [
+        13
+      ],
+      "S_acquisition_ids": [
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        14
+      ],
+      "Q_phones_in_H": [
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 2,
+      "K": 5,
+      "id": "B2F2_BA_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        14
+      ],
+      "Q_phone_ids": [
+        13
+      ],
+      "S_acquisition_ids": [
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        14
+      ],
+      "Q_phones_in_H": [
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 3,
+      "K": 1,
+      "id": "B2F3_AB_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        6
+      ],
+      "Q_phone_ids": [
+        19
+      ],
+      "S_acquisition_ids": [
+        2
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 3,
+      "K": 3,
+      "id": "B2F3_AB_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        6
+      ],
+      "Q_phone_ids": [
+        19
+      ],
+      "S_acquisition_ids": [
+        2
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 3,
+      "K": 5,
+      "id": "B2F3_AB_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        6
+      ],
+      "Q_phone_ids": [
+        19
+      ],
+      "S_acquisition_ids": [
+        2
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 3,
+      "K": 1,
+      "id": "B2F3_BA_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        2
+      ],
+      "Q_phone_ids": [
+        23
+      ],
+      "S_acquisition_ids": [
+        6
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 3,
+      "K": 3,
+      "id": "B2F3_BA_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        2
+      ],
+      "Q_phone_ids": [
+        23
+      ],
+      "S_acquisition_ids": [
+        6
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 3,
+      "K": 5,
+      "id": "B2F3_BA_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        2
+      ],
+      "Q_phone_ids": [
+        23
+      ],
+      "S_acquisition_ids": [
+        6
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 4,
+      "K": 1,
+      "id": "B2F4_AB_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        16
+      ],
+      "Q_phone_ids": [
+        17
+      ],
+      "S_acquisition_ids": [
+        6
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 4,
+      "K": 3,
+      "id": "B2F4_AB_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        16
+      ],
+      "Q_phone_ids": [
+        17
+      ],
+      "S_acquisition_ids": [
+        6
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 4,
+      "K": 5,
+      "id": "B2F4_AB_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        16
+      ],
+      "Q_phone_ids": [
+        17
+      ],
+      "S_acquisition_ids": [
+        6
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.0,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 4,
+      "K": 1,
+      "id": "B2F4_BA_K1",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        6
+      ],
+      "Q_phone_ids": [
+        19
+      ],
+      "S_acquisition_ids": [
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 4,
+      "K": 3,
+      "id": "B2F4_BA_K3",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        6
+      ],
+      "Q_phone_ids": [
+        19
+      ],
+      "S_acquisition_ids": [
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "old54",
+      "building": "B2",
+      "floor": 4,
+      "K": 5,
+      "id": "B2F4_BA_K5",
+      "origin": "existing_manifest",
+      "Q_acquisition_ids": [
+        6
+      ],
+      "Q_phone_ids": [
+        19
+      ],
+      "S_acquisition_ids": [
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": true,
+      "S_Q_phone_disjoint": true
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 1,
+      "id": "uji/B1/F0/K1/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 3,
+      "id": "uji/B1/F0/K3/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 5,
+      "id": "uji/B1/F0/K5/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 1,
+      "id": "uji/B1/F0/K1/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 3,
+      "id": "uji/B1/F0/K3/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 5,
+      "id": "uji/B1/F0/K5/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 1,
+      "id": "uji/B1/F0/K1/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 3,
+      "id": "uji/B1/F0/K3/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 5,
+      "id": "uji/B1/F0/K5/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 1,
+      "id": "uji/B1/F0/K1/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 3,
+      "id": "uji/B1/F0/K3/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        16,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 5,
+      "id": "uji/B1/F0/K5/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        16,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 1,
+      "id": "uji/B1/F0/K1/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14
+      ],
+      "S_acquisition_ids": [
+        7
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 3,
+      "id": "uji/B1/F0/K3/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14
+      ],
+      "S_acquisition_ids": [
+        7,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 0,
+      "K": 5,
+      "id": "uji/B1/F0/K5/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14
+      ],
+      "S_acquisition_ids": [
+        7,
+        16,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 1,
+      "id": "uji/B1/F1/K1/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 3,
+      "id": "uji/B1/F1/K3/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 5,
+      "id": "uji/B1/F1/K5/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 1,
+      "id": "uji/B1/F1/K1/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 3,
+      "id": "uji/B1/F1/K3/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        14,
+        16,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 5,
+      "id": "uji/B1/F1/K5/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        14,
+        16,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 1,
+      "id": "uji/B1/F1/K1/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 3,
+      "id": "uji/B1/F1/K3/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 5,
+      "id": "uji/B1/F1/K5/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        17,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 1,
+      "id": "uji/B1/F1/K1/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 3,
+      "id": "uji/B1/F1/K3/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        16,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 5,
+      "id": "uji/B1/F1/K5/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 1,
+      "id": "uji/B1/F1/K1/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 3,
+      "id": "uji/B1/F1/K3/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        16,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 1,
+      "K": 5,
+      "id": "uji/B1/F1/K5/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phone_ids": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "S_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_acquisitions_in_H": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "Q_phones_in_H": [
+        6,
+        7,
+        13,
+        14,
+        17
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 1,
+      "id": "uji/B1/F2/K1/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 3,
+      "id": "uji/B1/F2/K3/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 5,
+      "id": "uji/B1/F2/K5/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 1,
+      "id": "uji/B1/F2/K1/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        9,
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 3,
+      "id": "uji/B1/F2/K3/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 5,
+      "id": "uji/B1/F2/K5/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 1,
+      "id": "uji/B1/F2/K1/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        4
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 3,
+      "id": "uji/B1/F2/K3/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 5,
+      "id": "uji/B1/F2/K5/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 1,
+      "id": "uji/B1/F2/K1/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 3,
+      "id": "uji/B1/F2/K3/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 5,
+      "id": "uji/B1/F2/K5/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 1,
+      "id": "uji/B1/F2/K1/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        4
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 3,
+      "id": "uji/B1/F2/K3/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 2,
+      "K": 5,
+      "id": "uji/B1/F2/K5/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_phone_ids": [
+        8,
+        14,
+        18,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.5,
+      "Q_phone_fraction_in_H": 0.5,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 1,
+      "id": "uji/B1/F3/K1/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 3,
+      "id": "uji/B1/F3/K3/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        9,
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 5,
+      "id": "uji/B1/F3/K5/r0",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 1,
+      "id": "uji/B1/F3/K1/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        21
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 3,
+      "id": "uji/B1/F3/K3/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        20,
+        21
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 5,
+      "id": "uji/B1/F3/K5/r1",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        20,
+        21
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 1,
+      "id": "uji/B1/F3/K1/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 3,
+      "id": "uji/B1/F3/K3/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        10,
+        21
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 5,
+      "id": "uji/B1/F3/K5/r2",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        21
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 1,
+      "id": "uji/B1/F3/K1/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        9,
+        10
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 3,
+      "id": "uji/B1/F3/K3/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 5,
+      "id": "uji/B1/F3/K5/r3",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 1,
+      "id": "uji/B1/F3/K1/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        20
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 3,
+      "id": "uji/B1/F3/K3/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B1",
+      "floor": 3,
+      "K": 5,
+      "id": "uji/B1/F3/K5/r4",
+      "origin": "existing_B1_inventory",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        10,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20,
+        21
+      ],
+      "Q_acquisitions_in_H": [
+        9,
+        10
+      ],
+      "Q_phones_in_H": [
+        8,
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.4,
+      "Q_phone_fraction_in_H": 0.4,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 1,
+      "id": "uji/B2/F0/K1/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        9,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 3,
+      "id": "uji/B2/F0/K3/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 5,
+      "id": "uji/B2/F0/K5/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 1,
+      "id": "uji/B2/F0/K1/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        9,
+        10
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 3,
+      "id": "uji/B2/F0/K3/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 5,
+      "id": "uji/B2/F0/K5/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 1,
+      "id": "uji/B2/F0/K1/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        9,
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 3,
+      "id": "uji/B2/F0/K3/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 5,
+      "id": "uji/B2/F0/K5/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 1,
+      "id": "uji/B2/F0/K1/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 3,
+      "id": "uji/B2/F0/K3/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 5,
+      "id": "uji/B2/F0/K5/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        9,
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 1,
+      "id": "uji/B2/F0/K1/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        9,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 3,
+      "id": "uji/B2/F0/K3/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        9,
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 0,
+      "K": 5,
+      "id": "uji/B2/F0/K5/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_phone_ids": [
+        1,
+        8,
+        14,
+        22
+      ],
+      "S_acquisition_ids": [
+        8,
+        9,
+        10,
+        20
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.25,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 1,
+      "id": "uji/B2/F1/K1/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        15,
+        19
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 3,
+      "id": "uji/B2/F1/K3/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        15,
+        19
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 5,
+      "id": "uji/B2/F1/K5/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        15,
+        18,
+        19
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 1,
+      "id": "uji/B2/F1/K1/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        15,
+        18,
+        19
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 3,
+      "id": "uji/B2/F1/K3/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        15,
+        18,
+        19
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 5,
+      "id": "uji/B2/F1/K5/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        15,
+        18,
+        19
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 1,
+      "id": "uji/B2/F1/K1/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        15,
+        21
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 3,
+      "id": "uji/B2/F1/K3/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        15,
+        18,
+        21
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 5,
+      "id": "uji/B2/F1/K5/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        15,
+        18,
+        21
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 1,
+      "id": "uji/B2/F1/K1/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        18
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 3,
+      "id": "uji/B2/F1/K3/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        15,
+        18,
+        19
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 5,
+      "id": "uji/B2/F1/K5/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        15,
+        18,
+        19
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 1,
+      "id": "uji/B2/F1/K1/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        18
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 3,
+      "id": "uji/B2/F1/K3/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        18
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 1,
+      "K": 5,
+      "id": "uji/B2/F1/K5/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        7,
+        15,
+        18,
+        19,
+        21
+      ],
+      "Q_phone_ids": [
+        6,
+        10,
+        11,
+        14,
+        24
+      ],
+      "S_acquisition_ids": [
+        7,
+        18,
+        19
+      ],
+      "Q_acquisitions_in_H": [],
+      "Q_phones_in_H": [
+        14
+      ],
+      "Q_acquisition_fraction_in_H": 0.0,
+      "Q_phone_fraction_in_H": 0.2,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": false,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 1,
+      "id": "uji/B2/F2/K1/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        5
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 3,
+      "id": "uji/B2/F2/K3/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 5,
+      "id": "uji/B2/F2/K5/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 1,
+      "id": "uji/B2/F2/K1/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 3,
+      "id": "uji/B2/F2/K3/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 5,
+      "id": "uji/B2/F2/K5/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 1,
+      "id": "uji/B2/F2/K1/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 3,
+      "id": "uji/B2/F2/K3/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 5,
+      "id": "uji/B2/F2/K5/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 1,
+      "id": "uji/B2/F2/K1/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        14
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 3,
+      "id": "uji/B2/F2/K3/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 5,
+      "id": "uji/B2/F2/K5/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 1,
+      "id": "uji/B2/F2/K1/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 3,
+      "id": "uji/B2/F2/K3/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 2,
+      "K": 5,
+      "id": "uji/B2/F2/K5/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13
+      ],
+      "S_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13
+      ],
+      "Q_acquisition_fraction_in_H": 1.0,
+      "Q_phone_fraction_in_H": 1.0,
+      "all_Q_acquisitions_in_H": true,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": true,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 1,
+      "id": "uji/B2/F3/K1/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        6
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 3,
+      "id": "uji/B2/F3/K3/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        6,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 5,
+      "id": "uji/B2/F3/K5/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        5,
+        6,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 1,
+      "id": "uji/B2/F3/K1/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        2
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 3,
+      "id": "uji/B2/F3/K3/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        5,
+        6,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 5,
+      "id": "uji/B2/F3/K5/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 1,
+      "id": "uji/B2/F3/K1/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        6
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 3,
+      "id": "uji/B2/F3/K3/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        6
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 5,
+      "id": "uji/B2/F3/K5/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        5,
+        6,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 1,
+      "id": "uji/B2/F3/K1/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        5,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 3,
+      "id": "uji/B2/F3/K3/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 5,
+      "id": "uji/B2/F3/K5/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 1,
+      "id": "uji/B2/F3/K1/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        5,
+        14
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 3,
+      "id": "uji/B2/F3/K3/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        5,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 3,
+      "K": 5,
+      "id": "uji/B2/F3/K5/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phone_ids": [
+        3,
+        7,
+        13,
+        19,
+        23
+      ],
+      "S_acquisition_ids": [
+        2,
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_acquisitions_in_H": [
+        5,
+        6,
+        14,
+        17
+      ],
+      "Q_phones_in_H": [
+        3,
+        7,
+        13,
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.8,
+      "Q_phone_fraction_in_H": 0.8,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 1,
+      "id": "uji/B2/F4/K1/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 3,
+      "id": "uji/B2/F4/K3/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 5,
+      "id": "uji/B2/F4/K5/r0",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 1,
+      "id": "uji/B2/F4/K1/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 3,
+      "id": "uji/B2/F4/K3/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 5,
+      "id": "uji/B2/F4/K5/r1",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 1,
+      "id": "uji/B2/F4/K1/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        6
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 3,
+      "id": "uji/B2/F4/K3/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 5,
+      "id": "uji/B2/F4/K5/r2",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 1,
+      "id": "uji/B2/F4/K1/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 3,
+      "id": "uji/B2/F4/K3/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 5,
+      "id": "uji/B2/F4/K5/r3",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 1,
+      "id": "uji/B2/F4/K1/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 3,
+      "id": "uji/B2/F4/K3/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    },
+    {
+      "protocol": "static-resample-v2",
+      "building": "B2",
+      "floor": 4,
+      "K": 5,
+      "id": "uji/B2/F4/K5/r4",
+      "origin": "frozen_protocol_metadata_only_no_prediction",
+      "Q_acquisition_ids": [
+        3,
+        6,
+        16
+      ],
+      "Q_phone_ids": [
+        16,
+        17,
+        19
+      ],
+      "S_acquisition_ids": [
+        6,
+        16
+      ],
+      "Q_acquisitions_in_H": [
+        6
+      ],
+      "Q_phones_in_H": [
+        19
+      ],
+      "Q_acquisition_fraction_in_H": 0.3333333333333333,
+      "Q_phone_fraction_in_H": 0.3333333333333333,
+      "all_Q_acquisitions_in_H": false,
+      "any_Q_acquisitions_in_H": true,
+      "all_Q_phones_in_H": false,
+      "S_Q_acquisition_disjoint": false,
+      "S_Q_phone_disjoint": false
+    }
+  ],
+  "limitations": [
+    "Acquisition overlap describes shared user/phone/day labels, not duplicate scans or shared target labels.",
+    "Overlap alone does not establish why WKNN performance differs; same-building comparisons still use different S/Q selections and weighting.",
+    "B2 new protocol has metadata only; no new B2 performance was generated."
+  ]
+}
