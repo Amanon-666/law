@@ -1,0 +1,40 @@
+{
+  "created": "2026-11-11T07:59:52.776711+00:00",
+  "binding": {
+    "runner_sha256": "e289e2280eb6c266cbee5e5a37bb4e0dd8688ac9b73cd9fe96de29ed3633a217",
+    "solver_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/source_snapshot/adaptation.py",
+    "solver_sha256": "ea59beed0a92d6a5ecab00ce5729b8e59a9e4fff1d837cab8ef5cca214c1ae87",
+    "prior_evidence_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_B0_softmax_continuation_20261111/complete.json",
+    "prior_evidence_sha256": "f6ebeca0ec738a04a4fd456e24dfcd720623e7e48746a7101c5af01184d78fb9",
+    "original_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+    "failure_log": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_A02_20261111_source/gp_predict2.log",
+    "rule": "Verbatim existing mass-transfer continuation only after all original starts fail by saturation",
+    "objective_changed": false,
+    "history_changed": false,
+    "parameters_changed": false,
+    "query_XY_opened": false,
+    "failure_log_sha256": "5790c1c48b6fb7262a47ce960a5c5a484752051f3d41e578ab14e3eab9baad72"
+  },
+  "reused_successful_tasks": [
+    {
+      "event": "F-2_K1",
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111/F-2_K1/complete.json",
+      "sha256": "091dde80146522ab4f6f66fc2bc357f789bdd1cf7983a802c421989218c2216d"
+    },
+    {
+      "event": "F-3_K1",
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111/F-3_K1/complete.json",
+      "sha256": "e5228de89fe12a9bfa45a65817fd83962f55fd90ffdca99a2f4211c3975dbf8e"
+    },
+    {
+      "event": "F-3_K3",
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111/F-3_K3/complete.json",
+      "sha256": "490b2fff6a12cec4cb1f228e4223a76fcea3d31b5c59df099c431339e3d98ea7"
+    },
+    {
+      "event": "F-3_K5",
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111/F-3_K5/complete.json",
+      "sha256": "a192c0d4c414026c25d204c085130fd4839be90b326b5d81affb06b01862c109"
+    }
+  ]
+}
