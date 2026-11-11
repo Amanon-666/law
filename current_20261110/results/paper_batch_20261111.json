@@ -206,6 +206,43 @@
     ],
     "status": "finished",
     "exit_code": 0,
-    "seconds": 24.45205543190241
+    "seconds": 24.45205543190241,
+    "commit": "5bea1a8a3f4e4e0e47d9a727179e6cd9e1be58c2"
+  },
+  {
+    "dataset": "uts",
+    "building": "New IT",
+    "pid": 831982,
+    "command": [
+      "/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python",
+      "-u",
+      "-m",
+      "paper_bench_20261111.run",
+      "--dataset",
+      "uts",
+      "--building",
+      "New IT",
+      "--repeats",
+      "0",
+      "--methods",
+      "wknn_S",
+      "wknn_HS",
+      "gp_S",
+      "gp_histmean",
+      "refi",
+      "--method-options",
+      "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/paper_bench_20261111/options.json",
+      "--output",
+      "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111",
+      "--source-dataset",
+      "uji",
+      "--source-buildings",
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "status": "finished",
+    "exit_code": 0,
+    "seconds": 727.0100514665246
   }
 ]
