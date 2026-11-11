@@ -59,9 +59,11 @@ class GpHS(GpS):
 
 class OursMethod(Method):
     """variant: full | noM2 | C1 | v1 ; seeds: operator ensemble; theta selected on sources by held-out NLL"""
-    def __init__(self, variant='full', seeds=(1, 2, 3), informative=False, fixed_theta=None):
-        self.variant, self.seeds, self.inf, self.fixed = variant, seeds, informative, fixed_theta
+    def __init__(self, variant='full', seeds=(1, 2, 3), informative=False, fixed_theta=None, draws=8, tag=None):
+        self.variant, self.seeds, self.inf, self.fixed, self.draws = variant, seeds, informative, fixed_theta, draws
         self.name = 'ours' if variant == 'full' else f'ours_{variant}'
+        if tag:
+            self.name += f'_{tag}'
         if informative:
             self.name += '_Ainfo'
 
@@ -83,7 +85,7 @@ class OursMethod(Method):
             theta, self.theta_scores = O.select_theta(b, seed=self.seeds[0], reliability=rel, randomise=rnd)
         self.model = O.Ours(theta=theta or (16.0, 0.0, 1.0, 1.0), seeds=self.seeds, variant=self.variant,
                             informative=self.inf)
-        self.model.ops = [O.Operator(b, s, reliability=rel, randomise=rnd, use_support=sup) for s in self.seeds]
+        self.model.ops = [O.Operator(b, s, draws=self.draws, reliability=rel, randomise=rnd, use_support=sup) for s in self.seeds]
         self.theta = self.model.theta; self.fit_seconds = time.time() - t0
 
     def predict(self, task):

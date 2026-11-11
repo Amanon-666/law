@@ -9,6 +9,8 @@ R.METHODS.setdefault('ours_A', ('methods_claude', 'OursMethod', {'variant': 'A'}
 R.METHODS.setdefault('ours_loaded_fieldonly', ('methods_claude', 'OursLoaded', {'tag': 'fieldonly', 'reader': {'field_only': True}}))
 # count-conditioned reader (conditional Bernoulli on total detections), saved model, no training
 R.METHODS.setdefault('ours_loaded_countcond', ('methods_claude', 'OursLoaded', {'tag': 'countcond', 'reader': {'count_cond': True}}))
+# A4 source diversity: single source building with doubled draws (~matched training cells)
+R.METHODS.setdefault('ours_A_1src', ('methods_claude', 'OursMethod', {'variant': 'A', 'draws': 16, 'tag': '1src'}))
 # A0: number of history floors (saved model, no training)
 for _n in (1, 2):
     R.METHODS.setdefault(f'ours_loaded_h{_n}', ('methods_claude', 'OursLoaded', {'tag': f'h{_n}', 'hfloors': _n}))
