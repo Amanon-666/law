@@ -1,0 +1,306 @@
+{"target": "B0", "source": "B1", "output": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B1_20261111", "log": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B1_20261111.log", "started_utc": "2026-11-11T03:12:44.824126+00:00", "command": ["/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python", "-u", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/bench_a4_driver_20261111.py", "--child", "--dataset", "uji", "--building", "B0", "--source-buildings", "B1", "--methods", "ours_A_1src", "--budgets", "1", "3", "5", "--repeats", "0", "1", "2", "3", "4", "--seed", "20261111", "--R", "3", "--query-positions", "60", "--output", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B1_20261111"], "python_pid": 39729}
+From https://github.com/Amanon-666/law
+ * branch            research/claude-field-posterior-20261111 -> FETCH_HEAD
+mac-net proxy payload bytes: to_mac=1529 from_mac=4596 (excludes SSH/TLS probe overhead)
+[research/claude-field-posterior-20261111 93fc63f] Record A4 UJI B0 single source B1
+ 70 files changed, 48339 insertions(+), 3 deletions(-)
+ create mode 100644 current_20261110/src/claude_field_posterior_20261111/bench_a4_driver_20261111.py
+ create mode 100644 current_20261110/src/results/bench_a4_execution_20261111.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111.log
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F0/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F1/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F2/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/events/ours_A_1src/uji/B0/F3/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/freeze.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/ours_A_1src.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/source_models/ours_A_1src.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/summary.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B1_20261111/task_inventory.json
+To https://github.com/Amanon-666/law.git
+   960f705..93fc63f  HEAD -> research/claude-field-posterior-20261111
+mac-net proxy payload bytes: to_mac=255728 from_mac=6776 (excludes SSH/TLS probe overhead)
+{"target": "B0", "source": "B1", "output": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B1_20261111", "log": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B1_20261111.log", "started_utc": "2026-11-11T03:12:44.824126+00:00", "command": ["/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python", "-u", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/bench_a4_driver_20261111.py", "--child", "--dataset", "uji", "--building", "B0", "--source-buildings", "B1", "--methods", "ours_A_1src", "--budgets", "1", "3", "5", "--repeats", "0", "1", "2", "3", "4", "--seed", "20261111", "--R", "3", "--query-positions", "60", "--output", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B1_20261111"], "python_pid": 39729, "exit_code": 0, "ended_utc": "2026-11-11T03:21:36.849669+00:00", "events": 60, "failed_events": [], "unavailable": [], "commit": "93fc63fef0a73a634b7d2ad9ab5545adc850948e", "pushed": true}
+{"target": "B0", "source": "B2", "output": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B2_20261111", "log": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B2_20261111.log", "started_utc": "2026-11-11T03:21:42.470052+00:00", "command": ["/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python", "-u", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/bench_a4_driver_20261111.py", "--child", "--dataset", "uji", "--building", "B0", "--source-buildings", "B2", "--methods", "ours_A_1src", "--budgets", "1", "3", "5", "--repeats", "0", "1", "2", "3", "4", "--seed", "20261111", "--R", "3", "--query-positions", "60", "--output", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B2_20261111"], "python_pid": 52400}
+From https://github.com/Amanon-666/law
+ * branch            research/claude-field-posterior-20261111 -> FETCH_HEAD
+mac-net proxy payload bytes: to_mac=1529 from_mac=4596 (excludes SSH/TLS probe overhead)
+[research/claude-field-posterior-20261111 500eb00] Record A4 UJI B0 single source B2
+ 68 files changed, 48242 insertions(+), 4 deletions(-)
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111.log
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F0/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F1/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F2/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/events/ours_A_1src/uji/B0/F3/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/freeze.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/ours_A_1src.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/source_models/ours_A_1src.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/summary.json
+ create mode 100644 current_20261110/src/results/bench_uji_B0_1src_B2_20261111/task_inventory.json
+To https://github.com/Amanon-666/law.git
+   93fc63f..500eb00  HEAD -> research/claude-field-posterior-20261111
+mac-net proxy payload bytes: to_mac=253069 from_mac=6725 (excludes SSH/TLS probe overhead)
+{"target": "B0", "source": "B2", "output": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B2_20261111", "log": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B2_20261111.log", "started_utc": "2026-11-11T03:21:42.470052+00:00", "command": ["/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python", "-u", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/bench_a4_driver_20261111.py", "--child", "--dataset", "uji", "--building", "B0", "--source-buildings", "B2", "--methods", "ours_A_1src", "--budgets", "1", "3", "5", "--repeats", "0", "1", "2", "3", "4", "--seed", "20261111", "--R", "3", "--query-positions", "60", "--output", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B0_1src_B2_20261111"], "python_pid": 52400, "exit_code": 0, "ended_utc": "2026-11-11T03:38:52.875998+00:00", "events": 60, "failed_events": [], "unavailable": [], "commit": "500eb00ae15823aa8ab3a4b85b0de9af42358a43", "pushed": true}
+{"target": "B1", "source": "B0", "output": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B0_20261111", "log": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B0_20261111.log", "started_utc": "2026-11-11T03:38:57.438788+00:00", "command": ["/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python", "-u", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/bench_a4_driver_20261111.py", "--child", "--dataset", "uji", "--building", "B1", "--source-buildings", "B0", "--methods", "ours_A_1src", "--budgets", "1", "3", "5", "--repeats", "0", "1", "2", "3", "4", "--seed", "20261111", "--R", "3", "--query-positions", "60", "--output", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B0_20261111"], "python_pid": 76902}
+From https://github.com/Amanon-666/law
+ * branch            research/claude-field-posterior-20261111 -> FETCH_HEAD
+mac-net proxy payload bytes: to_mac=1529 from_mac=4596 (excludes SSH/TLS probe overhead)
+[research/claude-field-posterior-20261111 d663cb2] Record A4 UJI B1 single source B0
+ 67 files changed, 49606 insertions(+)
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111.log
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F0/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F1/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F2/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/events/ours_A_1src/uji/B1/F3/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/freeze.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/ours_A_1src.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/source_models/ours_A_1src.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/summary.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B0_20261111/task_inventory.json
+To https://github.com/Amanon-666/law.git
+   500eb00..d663cb2  HEAD -> research/claude-field-posterior-20261111
+mac-net proxy payload bytes: to_mac=253514 from_mac=6724 (excludes SSH/TLS probe overhead)
+{"target": "B1", "source": "B0", "output": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B0_20261111", "log": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B0_20261111.log", "started_utc": "2026-11-11T03:38:57.438788+00:00", "command": ["/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python", "-u", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/bench_a4_driver_20261111.py", "--child", "--dataset", "uji", "--building", "B1", "--source-buildings", "B0", "--methods", "ours_A_1src", "--budgets", "1", "3", "5", "--repeats", "0", "1", "2", "3", "4", "--seed", "20261111", "--R", "3", "--query-positions", "60", "--output", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B0_20261111"], "python_pid": 76902, "exit_code": 0, "ended_utc": "2026-11-11T03:49:33.622990+00:00", "events": 60, "failed_events": [], "unavailable": [], "commit": "d663cb29921f1556197ef3c7197c1f0ca54c05fc", "pushed": true}
+{"target": "B1", "source": "B2", "output": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B2_20261111", "log": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B2_20261111.log", "started_utc": "2026-11-11T03:49:37.545635+00:00", "command": ["/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python", "-u", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/bench_a4_driver_20261111.py", "--child", "--dataset", "uji", "--building", "B1", "--source-buildings", "B2", "--methods", "ours_A_1src", "--budgets", "1", "3", "5", "--repeats", "0", "1", "2", "3", "4", "--seed", "20261111", "--R", "3", "--query-positions", "60", "--output", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B2_20261111"], "python_pid": 92729}
+From https://github.com/Amanon-666/law
+ * branch            research/claude-field-posterior-20261111 -> FETCH_HEAD
+mac-net proxy payload bytes: to_mac=1529 from_mac=4595 (excludes SSH/TLS probe overhead)
+[research/claude-field-posterior-20261111 3c03a13] Record A4 UJI B1 single source B2
+ 67 files changed, 49606 insertions(+)
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111.log
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F0/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F1/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F2/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K1/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K1/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K1/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K1/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K1/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K3/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K3/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K3/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K3/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K3/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K5/r0.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K5/r1.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K5/r2.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K5/r3.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/events/ours_A_1src/uji/B1/F3/K5/r4.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/freeze.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/ours_A_1src.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/source_models/ours_A_1src.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/summary.json
+ create mode 100644 current_20261110/src/results/bench_uji_B1_1src_B2_20261111/task_inventory.json
+To https://github.com/Amanon-666/law.git
+   d663cb2..3c03a13  HEAD -> research/claude-field-posterior-20261111
+mac-net proxy payload bytes: to_mac=253019 from_mac=6723 (excludes SSH/TLS probe overhead)
+{"target": "B1", "source": "B2", "output": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B2_20261111", "log": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B2_20261111.log", "started_utc": "2026-11-11T03:49:37.545635+00:00", "command": ["/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python", "-u", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/bench_a4_driver_20261111.py", "--child", "--dataset", "uji", "--building", "B1", "--source-buildings", "B2", "--methods", "ours_A_1src", "--budgets", "1", "3", "5", "--repeats", "0", "1", "2", "3", "4", "--seed", "20261111", "--R", "3", "--query-positions", "60", "--output", "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/bench_uji_B1_1src_B2_20261111"], "python_pid": 92729, "exit_code": 0, "ended_utc": "2026-11-11T04:07:57.093058+00:00", "events": 60, "failed_events": [], "unavailable": [], "commit": "3c03a1305211059d07c1e40e8783515fa3bb3762", "pushed": true}
