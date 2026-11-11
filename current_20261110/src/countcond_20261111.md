@@ -2,7 +2,7 @@
 
 服务器 `ray-web` 的独立 worktree `claude_fp_wt`；静态 UJI 三折与严格 54 各运行 `ours_loaded_same`、`ours_loaded_countcond`，均加载各折原 `ours_A.joblib`，未训练。静态协议的 H 为其他楼层、源为另两栋；严格 54 的唯一源为 B0，原 manifest SHA256 `bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496`。两协议不得混合计分。
 
-事前代码审查：H/S 确定 AP 轴与候选；Q 仅向预测传 RSS，真坐标只入评分。加载同一模型，保留候选及温度，仅在读出似然中增加基于检出数的对数概率项。当前 countcond 为 Poisson-binomial 的正态密度近似，非精确 conditional Bernoulli。候选几何边界不变；空 Support、错误历史和覆盖不足的边界未由此消除。这些是实现判断，不代表实际收益。
+事前代码审查：H/S 确定 AP 轴与候选；Q 仅向预测传 RSS，真坐标只入评分。加载同一模型，保留候选及温度，仅从原读出分数中减去当前 H/S 所选 AP 轴上总检出数的正态近似对数概率。当前 countcond 为 Poisson-binomial 的正态密度近似，非精确 conditional Bernoulli。候选几何边界不变；空 Support、错误历史和覆盖不足的边界未由此消除。这些是实现判断，不代表实际收益。
 
 UTC 01:45:36 首次启动 PID 4114379，执行门槛脚本误将 `source_models/ours_loaded_same.json` 当作方法汇总，尚未进入任务推断即退出。仅修正执行脚本，并按原 freeze `--resume` 于 UTC 01:45:52 重启 PID 4114894；最后一折 UTC 02:16:48 完成。`run.main` 自设 nice 10，未叠加；实测子进程 NI=10，OMP/OPENBLAS/MKL/NUMEXPR 线程均为 2，GPU 不可见、离线模式开启。未触及主线程工作树、bridge、IPIN、Tampere。
 
@@ -41,3 +41,5 @@ UTC 01:45:36 首次启动 PID 4114379，执行门槛脚本误将 `source_models/
 完整统计：`claude_field_posterior_20261111/results/countcond_aggregate_20261111.json`；逐任务轻量 JSON 和日志同目录。源文件 `ours.py` SHA256 `91a4850aa59b1e8fec68d1933a2306b44ff71dc29b4f8974fba4e8935724fa4f`，`run_claude.py` SHA256 `89a1d41247e9bb09b2fc48a72cd190bb777b427764cd879d83f96ca12337e135`。
 
 运行仅使用现有数据、模型和依赖，未下载或安装；源码经校园 SSH/scp 同步，Git 经既有 mac-net。模型及原始数据未上传或拉回；校园计费归属未知。
+
+首轮结果提交 `03df73987fc4f6eea3f9b85dac81984179af2907` 已推送到 `research/claude-field-posterior-20261111`，随后本地 HEAD 与 origin 分支一致；远端工作树仅保留原未跟踪 `.bench_uji_runner.sh`。五折进程及 runner 均已退出，UTC 01:45:52—02:16:48 约 31 分钟，未触及 55 分钟边界、未杀进程。首轮 fetch 的 mac-net 代理负载 to_mac=1529/from_mac=4593 字节，提交前 fetch 为 1529/4596，push 为 1985741/11126；均不含 SSH/TLS 探测和 scp，不能当作校园计费流量。
