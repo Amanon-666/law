@@ -1,0 +1,59 @@
+{
+  "created": "2026-11-11T07:38:34.623805+00:00",
+  "A_freeze_sha256": "473405b52fee93de4d4f1c169af86ca9bb92457d4cbf53d5004ebff25ea87fe9",
+  "code": {
+    "candidates/uts_official_evaluation_20261111.py": "8880a827c1702387b61ddf4abe45a1662bb263a7c035b7c693255ca2e8b4dd32",
+    "candidates/uts_official_20261111.py": "6f2c867a383100e5b3a88b13d06b19e22998eb7cb86078f24acb19661d5b7842",
+    "law_bench/task.py": "59646d99097a7f91bf266de8c4e44bcdd444ca0b915644a206ef9e1decaee294",
+    "law_bench/methods_simple.py": "e7319e90b71ce5441d24b4976a894c08f318ee64895e8f586c8017b4856e2217",
+    "law_bench/score.py": "c4abfa7fbe008ac994a6ba4790c7ef3f25da11d07c5391367043936d95af6f3e",
+    "building_information_tab_trial.py": "44a1579a63c5dbe6ceb12abeba90a16f019b474bb8158e68e4a82200bbfdc834"
+  },
+  "methods": [
+    "original_A02",
+    "wknn_S",
+    "wknn_HS"
+  ],
+  "metrics": {
+    "primary": "Within-floor unique-XY balanced Euclidean error, then pooled positions",
+    "secondary": "Scan-weighted errors and equal-floor mean; every floor retained",
+    "summaries": [
+      "mean",
+      "median",
+      "p90",
+      "worst_decile_mean",
+      "within5m",
+      "within10m",
+      "over20m"
+    ],
+    "paired_K": [
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "coverage": [
+      "distance to all H positions",
+      "distance to represented +/-4-floor H",
+      "distance to S",
+      "Query detections absent from H or local H",
+      "A candidate convex-hull output lower bound"
+    ]
+  },
+  "interpretation": {
+    "single_fixed_support_draw": true,
+    "new_training": false,
+    "scoring_after_all_predictions": true,
+    "retained_GP_and_full_system": "Pending; WKNN is a simple reference, not a substitute",
+    "acquisition_identity": "Unknown; no cross-device independence claim",
+    "historical_scope": "All other floors supplied; A directly encodes only offsets +/-1..4"
+  }
+}
