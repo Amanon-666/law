@@ -169,6 +169,43 @@
     ],
     "status": "finished",
     "exit_code": 0,
-    "seconds": 2943.077310785651
+    "seconds": 2943.077310785651,
+    "commit": "93373735d1a0e87777482263b66347852e2549eb"
+  },
+  {
+    "dataset": "sod",
+    "building": "CETC331",
+    "pid": 831415,
+    "command": [
+      "/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python",
+      "-u",
+      "-m",
+      "paper_bench_20261111.run",
+      "--dataset",
+      "sod",
+      "--building",
+      "CETC331",
+      "--repeats",
+      "0",
+      "--methods",
+      "wknn_S",
+      "wknn_HS",
+      "gp_S",
+      "gp_histmean",
+      "refi",
+      "--method-options",
+      "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/paper_bench_20261111/options.json",
+      "--output",
+      "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_sod_CETC331_20261111",
+      "--source-dataset",
+      "uji",
+      "--source-buildings",
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "status": "finished",
+    "exit_code": 0,
+    "seconds": 24.45205543190241
   }
 ]
