@@ -1,0 +1,61 @@
+{
+  "complete": true,
+  "created": "2026-11-11T01:03:41.780503+00:00",
+  "stages": {
+    "prepare": {
+      "exit_code": 0,
+      "started": "2026-11-11T00:50:30Z",
+      "ended": "2026-11-11T00:59:10Z",
+      "wall_seconds": 520.0
+    },
+    "predict": {
+      "exit_code": 0,
+      "started": "2026-11-11T00:59:13Z",
+      "ended": "2026-11-11T01:02:47Z",
+      "wall_seconds": 214.0
+    },
+    "score": {
+      "exit_code": 0,
+      "started": "2026-11-11T01:03:17Z",
+      "ended": "2026-11-11T01:03:19Z",
+      "wall_seconds": 2.0
+    }
+  },
+  "resumes": 0,
+  "contexts": 15,
+  "streams": 30,
+  "actual_source_hashes_unchanged": true,
+  "all_frozen_inputs_unchanged": true,
+  "exact_p_m_candidates_AP_bounds_contexts": 15,
+  "max_GP_difference_m": 0.0,
+  "training_updates": 0,
+  "GP_fits": 0,
+  "GP_adaptations": 0,
+  "GP_sampling": 0,
+  "output_bindings": {
+    "freeze.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_scale_gamma_20261111/freeze.json",
+      "sha256": "49d7e3ebc0fab944c35623a33d1824ce29ebb66ba3e6da0283fe64adf5b5e1a0"
+    },
+    "contexts_complete.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_scale_gamma_20261111/contexts_complete.json",
+      "sha256": "26f5645fea12fbba450e4be81c84fe7016b89db6d769732067e7c36ecd113ac4"
+    },
+    "predictions.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_scale_gamma_20261111/predictions.json",
+      "sha256": "855cd0d5a0b292f043cac1ff7e2e9f2cf4e60a0ed7e432830ceb71e0062eb558"
+    },
+    "cached_GP_parity.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_scale_gamma_20261111/cached_GP_parity.json",
+      "sha256": "2cb8b8e7a75c11986fd1b494f5dc1a9f310153704add7bcd0140e87ab4844977"
+    },
+    "scores.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_scale_gamma_20261111/scores.json",
+      "sha256": "812a7bd9ea07d040f55a0e138eda87f93b3cad4fa813dd14b2cbdf15e1ecbf9c"
+    },
+    "comparison.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_scale_gamma_20261111/comparison.json",
+      "sha256": "3e3ca1b4f6eec8c44df1e7990714b7ce6946d2078519e315f4123e6c00696d79"
+    }
+  }
+}
