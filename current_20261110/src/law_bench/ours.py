@@ -399,7 +399,7 @@ class Ours:
             Sx = (sr, s_xy)
             Xc, f = ensemble_field(self.ops, maps, t, aps, None, Sx)
             fS = ensemble_field(self.ops, maps, t, aps, Ps, Sx)[1] if len(Ps) else None
-        if self.variant == 'A':                                     # original A: v1 scale head as reader variance
+        if self.variant == 'A' or (reader or {}).get('field_only'):   # A / matched w/o-learning ablation: no S conditioning
             p, m, s2 = f['p'], f['m'], f['s2']
         elif self.variant in ('noM2', 'naive_noM2'):
             p, m, s2 = f['p'], f['m'], f['sig2'] + f['tau2']
@@ -407,7 +407,7 @@ class Ours:
             p, m, s2 = condition(Xc, f['p'], f['m'], f['s2'], sr, s_xy, (16.0, 0.3, 1.0, 0.0))
         else:
             p, m, s2 = condition_v2(Xc, f, sr, s_xy, self.theta, fS)
-        reader = reader or {}
+        reader = {k: v for k, v in (reader or {}).items() if k != 'field_only'}
         if reader.get('knn3'):
             return read_knn3(Xc, p, m, sr, s_xy, qr)
         xy, L, bd = read_mass(Xc, p, m, s2, sr, s_xy, qr, self.inf, **{k: v for k, v in reader.items() if k != 'knn3'})

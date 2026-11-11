@@ -5,6 +5,8 @@ file is not modified). Usage (from current_20261110/src):
 from . import run as R
 
 R.METHODS.setdefault('ours_A', ('methods_claude', 'OursMethod', {'variant': 'A'}))
+# matched single-factor 'w/o learning': learned H-only field read WITHOUT S conditioning (vs ours_naive_noM2)
+R.METHODS.setdefault('ours_loaded_fieldonly', ('methods_claude', 'OursLoaded', {'tag': 'fieldonly', 'reader': {'field_only': True}}))
 # A0: number of history floors (saved model, no training)
 for _n in (1, 2):
     R.METHODS.setdefault(f'ours_loaded_h{_n}', ('methods_claude', 'OursLoaded', {'tag': f'h{_n}', 'hfloors': _n}))

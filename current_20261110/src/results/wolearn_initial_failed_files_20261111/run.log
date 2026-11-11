@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/law_bench/run_claude.py", line 23, in <module>
+    R.main()
+  File "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/law_bench/run.py", line 283, in main
+    evaluate(args)
+  File "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/law_bench/run.py", line 168, in evaluate
+    output.mkdir(parents=True, exist_ok=False)
+  File "/usr/lib/python3.12/pathlib.py", line 1313, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/results/legacy54_B1_wolearn_20261111'
