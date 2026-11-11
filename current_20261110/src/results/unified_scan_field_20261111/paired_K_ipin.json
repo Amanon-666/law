@@ -1,0 +1,405 @@
+{
+  "complete": true,
+  "kind": "saved_error_reaggregation",
+  "inputs": {
+    "original": {
+      "path": "results/ipin2025_confirmation_20261110/scores.json",
+      "sha256": "50716b22d18af368b1ffbbe9c48f345d24a1dac5335b5792f0d8b216a387ef04"
+    },
+    "finite_count": {
+      "path": "results/ipin2025_finite_observation_20261111/scores.json",
+      "sha256": "e7505b956a26585a9962740733faa7f27eed9b70379f6d2fcf742865ec90f190"
+    },
+    "acquisition": {
+      "path": "results/ipin2025_acquisition_20261111/scores.json",
+      "sha256": "d5b311012f7eb7d1a2a0c7f32699c104c2152f3e3b8d13204314ebee58bf0080"
+    },
+    "unified": {
+      "path": "results/ipin2025_unified_scan_20261111/scores.json",
+      "sha256": "a68274595c5874086bd3b09027529229e53c526297fe6777883b6964f7a90208"
+    }
+  },
+  "versions": {
+    "original": {
+      "points": 102,
+      "methods": {
+        "hurdle": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 51,
+              "worsened": 51,
+              "tied": 0,
+              "improved_over5m": 5,
+              "worsened_over5m": 5
+            },
+            "3_to_5": {
+              "improved": 59,
+              "worsened": 43,
+              "tied": 0,
+              "improved_over5m": 4,
+              "worsened_over5m": 1
+            },
+            "1_to_5": {
+              "improved": 58,
+              "worsened": 44,
+              "tied": 0,
+              "improved_over5m": 9,
+              "worsened_over5m": 4
+            }
+          },
+          "over20m_by_K": {
+            "1": 54,
+            "3": 52,
+            "5": 53
+          }
+        },
+        "probability_half": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 63,
+              "worsened": 39,
+              "tied": 0,
+              "improved_over5m": 6,
+              "worsened_over5m": 2
+            },
+            "3_to_5": {
+              "improved": 55,
+              "worsened": 47,
+              "tied": 0,
+              "improved_over5m": 9,
+              "worsened_over5m": 0
+            },
+            "1_to_5": {
+              "improved": 59,
+              "worsened": 43,
+              "tied": 0,
+              "improved_over5m": 9,
+              "worsened_over5m": 0
+            }
+          },
+          "over20m_by_K": {
+            "1": 31,
+            "3": 34,
+            "5": 27
+          }
+        },
+        "GP": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 55,
+              "worsened": 47,
+              "tied": 0,
+              "improved_over5m": 7,
+              "worsened_over5m": 1
+            },
+            "3_to_5": {
+              "improved": 64,
+              "worsened": 38,
+              "tied": 0,
+              "improved_over5m": 5,
+              "worsened_over5m": 2
+            },
+            "1_to_5": {
+              "improved": 59,
+              "worsened": 43,
+              "tied": 0,
+              "improved_over5m": 11,
+              "worsened_over5m": 1
+            }
+          },
+          "over20m_by_K": {
+            "1": 24,
+            "3": 22,
+            "5": 18
+          }
+        }
+      }
+    },
+    "finite_count": {
+      "points": 102,
+      "methods": {
+        "hurdle": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 43,
+              "worsened": 59,
+              "tied": 0,
+              "improved_over5m": 11,
+              "worsened_over5m": 6
+            },
+            "3_to_5": {
+              "improved": 46,
+              "worsened": 56,
+              "tied": 0,
+              "improved_over5m": 17,
+              "worsened_over5m": 5
+            },
+            "1_to_5": {
+              "improved": 49,
+              "worsened": 53,
+              "tied": 0,
+              "improved_over5m": 23,
+              "worsened_over5m": 8
+            }
+          },
+          "over20m_by_K": {
+            "1": 37,
+            "3": 36,
+            "5": 31
+          }
+        },
+        "probability_half": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 59,
+              "worsened": 43,
+              "tied": 0,
+              "improved_over5m": 7,
+              "worsened_over5m": 0
+            },
+            "3_to_5": {
+              "improved": 53,
+              "worsened": 49,
+              "tied": 0,
+              "improved_over5m": 5,
+              "worsened_over5m": 3
+            },
+            "1_to_5": {
+              "improved": 62,
+              "worsened": 40,
+              "tied": 0,
+              "improved_over5m": 11,
+              "worsened_over5m": 2
+            }
+          },
+          "over20m_by_K": {
+            "1": 28,
+            "3": 27,
+            "5": 24
+          }
+        },
+        "GP": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 55,
+              "worsened": 47,
+              "tied": 0,
+              "improved_over5m": 7,
+              "worsened_over5m": 1
+            },
+            "3_to_5": {
+              "improved": 64,
+              "worsened": 38,
+              "tied": 0,
+              "improved_over5m": 5,
+              "worsened_over5m": 2
+            },
+            "1_to_5": {
+              "improved": 59,
+              "worsened": 43,
+              "tied": 0,
+              "improved_over5m": 11,
+              "worsened_over5m": 1
+            }
+          },
+          "over20m_by_K": {
+            "1": 24,
+            "3": 22,
+            "5": 18
+          }
+        }
+      }
+    },
+    "acquisition": {
+      "points": 102,
+      "methods": {
+        "hurdle": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 52,
+              "worsened": 50,
+              "tied": 0,
+              "improved_over5m": 18,
+              "worsened_over5m": 3
+            },
+            "3_to_5": {
+              "improved": 36,
+              "worsened": 66,
+              "tied": 0,
+              "improved_over5m": 6,
+              "worsened_over5m": 4
+            },
+            "1_to_5": {
+              "improved": 46,
+              "worsened": 56,
+              "tied": 0,
+              "improved_over5m": 19,
+              "worsened_over5m": 5
+            }
+          },
+          "over20m_by_K": {
+            "1": 54,
+            "3": 47,
+            "5": 48
+          }
+        },
+        "probability_half": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 65,
+              "worsened": 37,
+              "tied": 0,
+              "improved_over5m": 6,
+              "worsened_over5m": 2
+            },
+            "3_to_5": {
+              "improved": 57,
+              "worsened": 45,
+              "tied": 0,
+              "improved_over5m": 8,
+              "worsened_over5m": 1
+            },
+            "1_to_5": {
+              "improved": 59,
+              "worsened": 43,
+              "tied": 0,
+              "improved_over5m": 8,
+              "worsened_over5m": 1
+            }
+          },
+          "over20m_by_K": {
+            "1": 29,
+            "3": 30,
+            "5": 25
+          }
+        },
+        "GP": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 55,
+              "worsened": 47,
+              "tied": 0,
+              "improved_over5m": 7,
+              "worsened_over5m": 1
+            },
+            "3_to_5": {
+              "improved": 64,
+              "worsened": 38,
+              "tied": 0,
+              "improved_over5m": 5,
+              "worsened_over5m": 2
+            },
+            "1_to_5": {
+              "improved": 59,
+              "worsened": 43,
+              "tied": 0,
+              "improved_over5m": 11,
+              "worsened_over5m": 1
+            }
+          },
+          "over20m_by_K": {
+            "1": 24,
+            "3": 22,
+            "5": 18
+          }
+        }
+      }
+    },
+    "unified": {
+      "points": 102,
+      "methods": {
+        "hurdle": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 43,
+              "worsened": 59,
+              "tied": 0,
+              "improved_over5m": 5,
+              "worsened_over5m": 16
+            },
+            "3_to_5": {
+              "improved": 52,
+              "worsened": 50,
+              "tied": 0,
+              "improved_over5m": 9,
+              "worsened_over5m": 7
+            },
+            "1_to_5": {
+              "improved": 42,
+              "worsened": 60,
+              "tied": 0,
+              "improved_over5m": 12,
+              "worsened_over5m": 20
+            }
+          },
+          "over20m_by_K": {
+            "1": 45,
+            "3": 47,
+            "5": 47
+          }
+        },
+        "probability_half": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 60,
+              "worsened": 42,
+              "tied": 0,
+              "improved_over5m": 7,
+              "worsened_over5m": 3
+            },
+            "3_to_5": {
+              "improved": 56,
+              "worsened": 46,
+              "tied": 0,
+              "improved_over5m": 10,
+              "worsened_over5m": 2
+            },
+            "1_to_5": {
+              "improved": 63,
+              "worsened": 39,
+              "tied": 0,
+              "improved_over5m": 16,
+              "worsened_over5m": 1
+            }
+          },
+          "over20m_by_K": {
+            "1": 31,
+            "3": 28,
+            "5": 25
+          }
+        },
+        "GP": {
+          "transitions": {
+            "1_to_3": {
+              "improved": 55,
+              "worsened": 47,
+              "tied": 0,
+              "improved_over5m": 7,
+              "worsened_over5m": 1
+            },
+            "3_to_5": {
+              "improved": 64,
+              "worsened": 38,
+              "tied": 0,
+              "improved_over5m": 5,
+              "worsened_over5m": 2
+            },
+            "1_to_5": {
+              "improved": 59,
+              "worsened": 43,
+              "tied": 0,
+              "improved_over5m": 11,
+              "worsened_over5m": 1
+            }
+          },
+          "over20m_by_K": {
+            "1": 24,
+            "3": 22,
+            "5": 18
+          }
+        }
+      }
+    }
+  },
+  "definition": "Same log and GT-row pairs across K; high K minus low K,1e-8m tie tolerance; descriptive counts from two trajectories"
+}

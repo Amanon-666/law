@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "archive": "results/unified_scan_field_20261111/completed_evidence.tar.gz",
+  "sha256": "548894687f556c38370e5513c746369c0c7f44dcebcd8795f06d7b87e81bf25d",
+  "bytes": 3564935,
+  "files": 111,
+  "adopted": false,
+  "scope": "All source task manifests, model metadata, complete UJI54/IPIN30 comparison JSON, all54 UJI scored arrays and all official IPIN scored points. Models, unscored predictions and probability fields remain at hash-bound server paths.",
+  "recipe": "unified_scan_field_77_v1",
+  "source_freeze_sha256": "62503b5c82297ffdb170e2119f3769b8594cd958419088f277523d082ccc4992",
+  "comparison_rows": 54,
+  "github_archive": {
+    "path": "results/unified_scan_field_20261111/comparison_evidence.tar.gz",
+    "sha256": "cd27ea8b26dac9567213f15d7417ce1f88a2e158d23e82980ca63937a22b927e",
+    "bytes": 186586,
+    "files": 90,
+    "scope": "Complete scored comparisons, model/stream manifests and source metadata; full source row lists, source check and detailed per-event input manifests remain in the full archive and bound server paths"
+  },
+  "all_model_and_eval_runs_exit0": true
+}
