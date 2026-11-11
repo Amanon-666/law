@@ -132,6 +132,43 @@
     ],
     "status": "finished",
     "exit_code": 0,
-    "seconds": 8547.135320298374
+    "seconds": 8547.135320298374,
+    "commit": "1e61929d2254998e51bef7a30fd1160e3a74ef67"
+  },
+  {
+    "dataset": "tampere",
+    "building": "SAH1",
+    "pid": 768106,
+    "command": [
+      "/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python",
+      "-u",
+      "-m",
+      "paper_bench_20261111.run",
+      "--dataset",
+      "tampere",
+      "--building",
+      "SAH1",
+      "--repeats",
+      "0",
+      "--methods",
+      "wknn_S",
+      "wknn_HS",
+      "gp_S",
+      "gp_histmean",
+      "refi",
+      "--method-options",
+      "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/paper_bench_20261111/options.json",
+      "--output",
+      "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_SAH1_20261111",
+      "--source-dataset",
+      "uji",
+      "--source-buildings",
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "status": "finished",
+    "exit_code": 0,
+    "seconds": 2943.077310785651
   }
 ]

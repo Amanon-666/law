@@ -1,0 +1,167 @@
+{
+  "method": "refi",
+  "source_fit": {
+    "status": "completed",
+    "seconds": 2.0757312811911106,
+    "sha256": "f66c785b1989278340d96bcf7c770869aa46363336366944c9bac04d91483212",
+    "source_buildings": [
+      "B0",
+      "B1",
+      "B2"
+    ]
+  },
+  "by_K": {
+    "1": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 13.672471887577897,
+      "p50": 7.42083604068379,
+      "p90": 26.620288039130934,
+      "query_positions": 180
+    },
+    "3": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 11.44712653355776,
+      "p50": 7.182519858044156,
+      "p90": 25.282331085037114,
+      "query_positions": 180
+    },
+    "5": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 11.359930156804007,
+      "p50": 6.9633812658877545,
+      "p90": 24.837405645882757,
+      "query_positions": 180
+    }
+  },
+  "by_floor": {
+    "1": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 12.33042028641376,
+        "p50": 9.810096517594783,
+        "p90": 24.052718115546448,
+        "query_positions": 60
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 13.6061999568459,
+        "p50": 9.55044614071802,
+        "p90": 26.49814061116041,
+        "query_positions": 60
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 13.434403465494755,
+        "p50": 10.160426030532783,
+        "p90": 27.2719951621628,
+        "query_positions": 60
+      }
+    },
+    "2": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 20.55983390265864,
+        "p50": 7.348667944811709,
+        "p90": 68.49099241911256,
+        "query_positions": 60
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 13.025571970861966,
+        "p50": 7.461647540429716,
+        "p90": 27.45015268157621,
+        "query_positions": 60
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 13.259811177968041,
+        "p50": 7.1472376689135375,
+        "p90": 24.932021223211372,
+        "query_positions": 60
+      }
+    },
+    "3": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 8.12716147366129,
+        "p50": 6.1766049009671296,
+        "p90": 15.067095971949218,
+        "query_positions": 60
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 7.709607672965418,
+        "p50": 6.006834975154452,
+        "p90": 13.122864715347356,
+        "query_positions": 60
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 7.385575826949224,
+        "p50": 5.54821332113323,
+        "p90": 13.048087182679723,
+        "query_positions": 60
+      }
+    }
+  },
+  "task_records": [
+    "events/refi/tampere/SAH1/F1/K1/r0.json",
+    "events/refi/tampere/SAH1/F1/K3/r0.json",
+    "events/refi/tampere/SAH1/F1/K5/r0.json",
+    "events/refi/tampere/SAH1/F2/K1/r0.json",
+    "events/refi/tampere/SAH1/F2/K3/r0.json",
+    "events/refi/tampere/SAH1/F2/K5/r0.json",
+    "events/refi/tampere/SAH1/F3/K1/r0.json",
+    "events/refi/tampere/SAH1/F3/K3/r0.json",
+    "events/refi/tampere/SAH1/F3/K5/r0.json"
+  ],
+  "unavailable": []
+}
