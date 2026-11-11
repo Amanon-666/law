@@ -1,0 +1,37 @@
+{
+  "ready": [
+    {
+      "task_id": "uji/B1/F0/K3/r0",
+      "protocol": "static-resample-v2",
+      "seed": 6890959968831237373,
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3
+      ],
+      "query_positions": 38,
+      "query_scans": 114,
+      "split_grid_m": null,
+      "acquisition_separated": false,
+      "sampling": "recorded_positions_first; acquisition_preference_preserves_positions",
+      "acquisition_pair_available": false,
+      "support_acquisition_ids": [
+        7,
+        19
+      ],
+      "query_acquisition_ids": [
+        7,
+        14,
+        16,
+        17,
+        19
+      ],
+      "support_acquisition": null,
+      "query_acquisition": null,
+      "evaluation_status": "exposed_development"
+    }
+  ],
+  "unavailable": []
+}

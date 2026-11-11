@@ -99,9 +99,14 @@ class OursLoaded(Method):
     """Reader ablation WITHOUT retraining: load a saved OursMethod joblib (run.py source_models/<name>.joblib) and
     read its field with a modified reader. reader: dict(offsets=False) | dict(eps=1e-12) | dict(temper=False) |
     dict(knn3=True); {} reproduces the saved method exactly."""
-    def __init__(self, model_path, reader=None, tag='same'):
+    def __init__(self, model_path, reader=None, tag='same', hfloors=None):
         import joblib
         self.loaded = joblib.load(model_path); self.reader = dict(reader or {}); self.name = f'ours_loaded_{tag}'
+        self.hfloors = hfloors          # A0: keep only the n history floors nearest to the target (None = all)
 
     def predict(self, task):
-        return self.loaded.model.predict(task.H, task.floor, task.S['rss'], task.S['xy'], task.Q_rss, reader=self.reader)
+        H = task.H
+        if self.hfloors is not None:
+            keep = sorted(H, key=lambda f: (abs(f - task.floor), f))[:self.hfloors]
+            H = {f: H[f] for f in keep}
+        return self.loaded.model.predict(H, task.floor, task.S['rss'], task.S['xy'], task.Q_rss, reader=self.reader)

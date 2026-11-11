@@ -1,0 +1,44 @@
+{
+  "method": "finetune_dnn",
+  "source_fit": {
+    "status": "completed",
+    "seconds": 74.67349865660071,
+    "sha256": "277d250923ddee0fa050708bd814f0782ee8056e2303be02e317c1d47aeac934",
+    "source_buildings": [
+      "B0",
+      "B2"
+    ]
+  },
+  "by_K": {
+    "3": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 12.958684055425223,
+      "p50": 10.409186382931484,
+      "p90": 23.105604748864813,
+      "query_positions": 38
+    }
+  },
+  "by_floor": {
+    "0": {
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 12.958684055425223,
+        "p50": 10.409186382931484,
+        "p90": 23.105604748864813,
+        "query_positions": 38
+      }
+    }
+  },
+  "task_records": [
+    "events/finetune_dnn/uji/B1/F0/K3/r0.json"
+  ],
+  "unavailable": []
+}
