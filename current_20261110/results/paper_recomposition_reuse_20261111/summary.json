@@ -1,0 +1,280 @@
+{
+  "status": "completed_existing_prediction_pairing",
+  "new_fits": 0,
+  "new_predictions": 0,
+  "comparison": "Final original five-model ReFi vs copied nearest-side history field with source-calibrated variance",
+  "interpretation": "Complete learned field-construction mechanism; shared H/S candidates, empirical S atoms and original scan reader",
+  "protocol": "static-resample-v2; UJI leave-one-building; K1/3/5; r0-2; seed20261111",
+  "metric": "Pooled position errors within each task; repeats and K retained, not independent people or buildings",
+  "evaluation_status": "exposed_development; reader selected on UJI B0",
+  "code_identity": {
+    "copied_ours_sha256": "07733101709d234416dd7d95759094884ce9316c641b4dba3332c83a49a4a777",
+    "copied_ours_git_commit": "5b74abcfe3e8603b0528028c6be207fa2f7fe3c0"
+  },
+  "bindings": [
+    {
+      "building": "B0",
+      "paper_freeze": {
+        "path": "迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/freeze.json",
+        "sha256": "6b7c712e56edef5a3b81a53b7db3b71a1750dec43ae8844c08c009f06824e95d"
+      },
+      "copied_freeze": {
+        "path": "迁移学习/claude_handoff/claude_field_posterior_20261111/results/bench_uji_B0_extra_20261111/freeze.json",
+        "sha256": "5f6a66cf99f784ebfc553484b742f54ad983a8caf9f3b546151f07f2f2637703"
+      }
+    },
+    {
+      "building": "B1",
+      "paper_freeze": {
+        "path": "迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/freeze.json",
+        "sha256": "1f9f15af6f8b241b0082e9119efb57dbcda8671464fb00ff47df558f265136af"
+      },
+      "copied_freeze": {
+        "path": "迁移学习/claude_handoff/claude_field_posterior_20261111/results/bench_uji_B1_extra_20261111/freeze.json",
+        "sha256": "5911928afec09907841913a040736a8c11125c4f4d791752ccb3a8f309019dde"
+      }
+    },
+    {
+      "building": "B2",
+      "paper_freeze": {
+        "path": "迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/freeze.json",
+        "sha256": "c1e5f8cb4e75996ee0d6b6ba29a53bb0e2cfda516b7513d93f907bf552c7115c"
+      },
+      "copied_freeze": {
+        "path": "迁移学习/claude_handoff/claude_field_posterior_20261111/results/bench_uji_B2_extra_20261111/freeze.json",
+        "sha256": "19c5b00d85b901499b4b2abd4b18bb7f225aa06a5948e0f63246af832cb840ef"
+      }
+    }
+  ],
+  "overall": {
+    "tasks": 117,
+    "refi": {
+      "mean": 8.741848775650759,
+      "p90": 17.216058675322834,
+      "position_repeat_budget_count": 4167
+    },
+    "copied": {
+      "mean": 12.330196658079297,
+      "p90": 26.850501105653183,
+      "position_repeat_budget_count": 4167
+    },
+    "mean_reduction_fraction": 0.2910211395596267,
+    "positions_improved": 2830,
+    "positions_worse": 1337,
+    "positions_equal": 0
+  },
+  "by_building_K": {
+    "B0": {
+      "1": {
+        "tasks": 12,
+        "refi": {
+          "mean": 5.288077712874814,
+          "p90": 10.657860335810343,
+          "position_repeat_budget_count": 387
+        },
+        "copied": {
+          "mean": 6.363144434732439,
+          "p90": 11.581031775576784,
+          "position_repeat_budget_count": 387
+        },
+        "mean_reduction_fraction": 0.1689521168165704,
+        "positions_improved": 247,
+        "positions_worse": 140,
+        "positions_equal": 0
+      },
+      "3": {
+        "tasks": 12,
+        "refi": {
+          "mean": 4.908604898668694,
+          "p90": 9.473786669452997,
+          "position_repeat_budget_count": 387
+        },
+        "copied": {
+          "mean": 6.355286365272243,
+          "p90": 11.565621343895419,
+          "position_repeat_budget_count": 387
+        },
+        "mean_reduction_fraction": 0.22763434776264058,
+        "positions_improved": 255,
+        "positions_worse": 132,
+        "positions_equal": 0
+      },
+      "5": {
+        "tasks": 12,
+        "refi": {
+          "mean": 4.773329761976043,
+          "p90": 9.248303243538304,
+          "position_repeat_budget_count": 387
+        },
+        "copied": {
+          "mean": 6.363150717949721,
+          "p90": 11.565621215664057,
+          "position_repeat_budget_count": 387
+        },
+        "mean_reduction_fraction": 0.24984807471068937,
+        "positions_improved": 262,
+        "positions_worse": 125,
+        "positions_equal": 0
+      }
+    },
+    "B1": {
+      "1": {
+        "tasks": 12,
+        "refi": {
+          "mean": 10.660225910888771,
+          "p90": 19.256653337586783,
+          "position_repeat_budget_count": 396
+        },
+        "copied": {
+          "mean": 16.360564386749317,
+          "p90": 34.722373961401935,
+          "position_repeat_budget_count": 396
+        },
+        "mean_reduction_fraction": 0.3484194274176349,
+        "positions_improved": 279,
+        "positions_worse": 117,
+        "positions_equal": 0
+      },
+      "3": {
+        "tasks": 12,
+        "refi": {
+          "mean": 10.499273075553385,
+          "p90": 18.80337549875808,
+          "position_repeat_budget_count": 396
+        },
+        "copied": {
+          "mean": 16.138130126644345,
+          "p90": 34.20694819752329,
+          "position_repeat_budget_count": 396
+        },
+        "mean_reduction_fraction": 0.34941204506593393,
+        "positions_improved": 276,
+        "positions_worse": 120,
+        "positions_equal": 0
+      },
+      "5": {
+        "tasks": 12,
+        "refi": {
+          "mean": 10.293479672822661,
+          "p90": 18.543297247043093,
+          "position_repeat_budget_count": 396
+        },
+        "copied": {
+          "mean": 16.18763843232664,
+          "p90": 34.20695020931926,
+          "position_repeat_budget_count": 396
+        },
+        "mean_reduction_fraction": 0.3641148018066286,
+        "positions_improved": 283,
+        "positions_worse": 113,
+        "positions_equal": 0
+      }
+    },
+    "B2": {
+      "1": {
+        "tasks": 15,
+        "refi": {
+          "mean": 10.551819094568364,
+          "p90": 22.74099934411997,
+          "position_repeat_budget_count": 606
+        },
+        "copied": {
+          "mean": 13.925793769541809,
+          "p90": 29.84025837098693,
+          "position_repeat_budget_count": 606
+        },
+        "mean_reduction_fraction": 0.24228239558975295,
+        "positions_improved": 403,
+        "positions_worse": 203,
+        "positions_equal": 0
+      },
+      "3": {
+        "tasks": 15,
+        "refi": {
+          "mean": 9.997746294070863,
+          "p90": 21.766158725787275,
+          "position_repeat_budget_count": 606
+        },
+        "copied": {
+          "mean": 13.635729214702806,
+          "p90": 29.5883344781925,
+          "position_repeat_budget_count": 606
+        },
+        "mean_reduction_fraction": 0.266797826749835,
+        "positions_improved": 409,
+        "positions_worse": 197,
+        "positions_equal": 0
+      },
+      "5": {
+        "tasks": 15,
+        "refi": {
+          "mean": 9.447975057756448,
+          "p90": 19.486870117491662,
+          "position_repeat_budget_count": 606
+        },
+        "copied": {
+          "mean": 13.223245300017492,
+          "p90": 28.70038400750469,
+          "position_repeat_budget_count": 606
+        },
+        "mean_reduction_fraction": 0.2855025492309403,
+        "positions_improved": 416,
+        "positions_worse": 190,
+        "positions_equal": 0
+      }
+    }
+  },
+  "by_building": {
+    "B0": {
+      "tasks": 36,
+      "refi": {
+        "mean": 4.990004124506517,
+        "p90": 10.078995360164162,
+        "position_repeat_budget_count": 1161
+      },
+      "copied": {
+        "mean": 6.360527172651468,
+        "p90": 11.580520338805707,
+        "position_repeat_budget_count": 1161
+      },
+      "mean_reduction_fraction": 0.21547318499602142,
+      "positions_improved": 764,
+      "positions_worse": 397,
+      "positions_equal": 0
+    },
+    "B1": {
+      "tasks": 36,
+      "refi": {
+        "mean": 10.484326219754939,
+        "p90": 18.96884806426344,
+        "position_repeat_budget_count": 1188
+      },
+      "copied": {
+        "mean": 16.228777648573434,
+        "p90": 34.547340397870116,
+        "position_repeat_budget_count": 1188
+      },
+      "mean_reduction_fraction": 0.3539669809527184,
+      "positions_improved": 838,
+      "positions_worse": 350,
+      "positions_equal": 0
+    },
+    "B2": {
+      "tasks": 45,
+      "refi": {
+        "mean": 9.999180148798558,
+        "p90": 21.46395883270918,
+        "position_repeat_budget_count": 1818
+      },
+      "copied": {
+        "mean": 13.594922761420703,
+        "p90": 29.528952656353432,
+        "position_repeat_budget_count": 1818
+      },
+      "mean_reduction_fraction": 0.26449158084414015,
+      "positions_improved": 1228,
+      "positions_worse": 590,
+      "positions_equal": 0
+    }
+  }
+}
