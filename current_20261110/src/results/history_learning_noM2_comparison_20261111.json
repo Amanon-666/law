@@ -1,0 +1,275 @@
+{
+  "complete": true,
+  "identity": "Existing generic S-conditioned A vs source-calibrated copied field without additional M2 conditioning; same whole-scan reader",
+  "source_commit": "a10fb5b8122a9e0149e78ac29d5d33df34837ebe",
+  "protocol": "static-resample-v2",
+  "evaluation_status": "exposed_development; B0 included reader development",
+  "aggregation": "Equal buildings, equal K=1/3/5; within each building/K use published position-balanced mean; no pooled p90 inferred",
+  "new_inference": 0,
+  "new_training": 0,
+  "task_inventory_blobs_identical_across_methods": true,
+  "methods": {
+    "learned": "ours_A",
+    "copied": "ours_naive_noM2"
+  },
+  "comparison_scope": "Replaces the whole field-construction mechanism (S-conditioned learned 55-feature operator vs copied history with source-calibrated constant variances); empirical S candidates, whole-scan reader and candidate geometry retain the same code path. Not an isolated experiment on model architecture, S-use, per-head learning, or source diversity.",
+  "equal_building_mean": {
+    "learned": 8.87701017875988,
+    "copied": 12.292030617843622,
+    "delta": -3.415020439083742,
+    "relative_reduction": 0.2778239450629383
+  },
+  "rows": [
+    {
+      "building": "B0",
+      "source_buildings": [
+        "B1",
+        "B2"
+      ],
+      "tasks": 60,
+      "A_by_K": {
+        "1": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 5.481302894448561,
+          "p50": 4.283874529554193,
+          "p90": 11.13863862763021,
+          "query_positions": 645
+        },
+        "3": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 5.253195341235267,
+          "p50": 4.274391762504636,
+          "p90": 10.200300041285406,
+          "query_positions": 645
+        },
+        "5": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 5.297648765534484,
+          "p50": 4.359521864854,
+          "p90": 10.476245192902093,
+          "query_positions": 645
+        }
+      },
+      "copy_by_K": {
+        "1": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 6.671747066648639,
+          "p50": 5.626328563807614,
+          "p90": 12.310791545709462,
+          "query_positions": 645
+        },
+        "3": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 6.643113903851008,
+          "p50": 5.68963645961215,
+          "p90": 12.253475359410574,
+          "query_positions": 645
+        },
+        "5": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 6.6742336803163,
+          "p50": 5.686803368099993,
+          "p90": 12.221602599341805,
+          "query_positions": 645
+        }
+      },
+      "mean_A": 5.3440490004061045,
+      "mean_copy": 6.663031550271984,
+      "inventory_git_blob": "1d55b7e574bc1c0ee7d4ee1e0e35dc0df804f23b"
+    },
+    {
+      "building": "B1",
+      "source_buildings": [
+        "B0",
+        "B2"
+      ],
+      "tasks": 60,
+      "A_by_K": {
+        "1": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 11.838216013028093,
+          "p50": 9.19910569017372,
+          "p90": 24.116064053359054,
+          "query_positions": 660
+        },
+        "3": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 11.520662899969674,
+          "p50": 9.117952243371285,
+          "p90": 22.27667640102962,
+          "query_positions": 660
+        },
+        "5": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 11.190683845546234,
+          "p50": 9.028072439496023,
+          "p90": 21.19781847707702,
+          "query_positions": 660
+        }
+      },
+      "copy_by_K": {
+        "1": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 16.839546005764145,
+          "p50": 12.685718120827701,
+          "p90": 34.12304217806613,
+          "query_positions": 660
+        },
+        "3": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 16.47011520276205,
+          "p50": 12.557243505556313,
+          "p90": 33.18623852932154,
+          "query_positions": 660
+        },
+        "5": {
+          "tasks": 20,
+          "completed_tasks": 20,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 16.45005761773956,
+          "p50": 12.493416582784292,
+          "p90": 32.99088116035684,
+          "query_positions": 660
+        }
+      },
+      "mean_A": 11.516520919514667,
+      "mean_copy": 16.586572942088583,
+      "inventory_git_blob": "285909f3e82f7ee089e034a0e10b2399e8af0571"
+    },
+    {
+      "building": "B2",
+      "source_buildings": [
+        "B0",
+        "B1"
+      ],
+      "tasks": 75,
+      "A_by_K": {
+        "1": {
+          "tasks": 25,
+          "completed_tasks": 25,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 9.984028282433739,
+          "p50": 6.695271750013113,
+          "p90": 21.2566452675498,
+          "query_positions": 1010
+        },
+        "3": {
+          "tasks": 25,
+          "completed_tasks": 25,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 9.85741432292951,
+          "p50": 6.744530906266355,
+          "p90": 21.15213192771618,
+          "query_positions": 1010
+        },
+        "5": {
+          "tasks": 25,
+          "completed_tasks": 25,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 9.469939243713362,
+          "p50": 6.685319177975926,
+          "p90": 20.2859126828741,
+          "query_positions": 1010
+        }
+      },
+      "copy_by_K": {
+        "1": {
+          "tasks": 25,
+          "completed_tasks": 25,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 13.98475992718727,
+          "p50": 9.587595235962372,
+          "p90": 30.54324733619387,
+          "query_positions": 1010
+        },
+        "3": {
+          "tasks": 25,
+          "completed_tasks": 25,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 13.684191883267045,
+          "p50": 9.327315975803,
+          "p90": 30.161330618551673,
+          "query_positions": 1010
+        },
+        "5": {
+          "tasks": 25,
+          "completed_tasks": 25,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 13.210510273056581,
+          "p50": 9.12857318981387,
+          "p90": 29.01144345974224,
+          "query_positions": 1010
+        }
+      },
+      "mean_A": 9.77046061635887,
+      "mean_copy": 13.6264873611703,
+      "inventory_git_blob": "dc2f35ca5d2f7e09921581ed135b1674cbd87bbf"
+    }
+  ],
+  "source_paths": [
+    "current_20261110/src/results/bench_uji_B0_A_20261111/ours_A.json",
+    "current_20261110/src/results/bench_uji_B0_extra_20261111/ours_naive_noM2.json",
+    "current_20261110/src/results/bench_uji_B1_A_20261111/ours_A.json",
+    "current_20261110/src/results/bench_uji_B1_extra_20261111/ours_naive_noM2.json",
+    "current_20261110/src/results/bench_uji_B2_A_20261111/ours_A.json",
+    "current_20261110/src/results/bench_uji_B2_extra_20261111/ours_naive_noM2.json"
+  ]
+}
