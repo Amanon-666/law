@@ -1,0 +1,142 @@
+{
+  "complete": true,
+  "created": "2026-11-11T14:39:19.640548+00:00",
+  "code_sha256": "f71164eb908c9db64ae1d172f1f5485aa7a981a33d75fe5ee09a14c6522d0174",
+  "csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+  "source_buildings": [
+    0,
+    2
+  ],
+  "excluded_target_buildings": [
+    1
+  ],
+  "loaded_rows_by_building": {
+    "0": 5249,
+    "2": 9492
+  },
+  "B0_identical_episodes": 12,
+  "B0_all_tables_and_provenance_identical": true,
+  "checked_tasks": [
+    {
+      "building": 0,
+      "floor": 0,
+      "cells": 13110,
+      "feature_sha256": "f1a1321a5e45c7aa8672854073d3521075d997245362a0684a9bac76bdedc743",
+      "actual_S_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "building": 0,
+      "floor": 1,
+      "cells": 17484,
+      "feature_sha256": "d15f26dbffe349e373e661bd04efe0e54565df18e049ef77cc266e493efd7de8",
+      "actual_S_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "building": 0,
+      "floor": 2,
+      "cells": 18906,
+      "feature_sha256": "32ace1b4fb49b27b30f82eb9b5700e120ff715a4dd22587da5759afdde04f862",
+      "actual_S_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "building": 0,
+      "floor": 3,
+      "cells": 16714,
+      "feature_sha256": "e74d40ffa4d19959dba56b2c4c886fead7b4667bee195d105ca6211d231347a9",
+      "actual_S_counts": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "building": 2,
+      "floor": 0,
+      "cells": 2712,
+      "feature_sha256": "cd84bf3b79b1e8893853ac41c4c75a63da3675c5a9ae4c61d379add31dd3554a",
+      "actual_S_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "building": 2,
+      "floor": 1,
+      "cells": 342,
+      "feature_sha256": "011d481bc403c7bb38a62ce39be0f58929ae87918f27367350eebfabe75697c7",
+      "actual_S_counts": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "building": 2,
+      "floor": 2,
+      "cells": 2775,
+      "feature_sha256": "1d82e883134253691844283e13006068fa1023acf11b488f8c811a23c0c05a5d",
+      "actual_S_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "building": 2,
+      "floor": 3,
+      "cells": 1090,
+      "feature_sha256": "986c6506c199b7496bcb51b39fc1d39347c3e7bb4163eee81f5b649b84b0f14f",
+      "actual_S_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "building": 2,
+      "floor": 4,
+      "cells": 2765,
+      "feature_sha256": "670c998e7f2676edc6da40195291ff69691be02f5f549933443652ca0c26581c",
+      "actual_S_counts": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "fits": 0,
+  "models_loaded": 0,
+  "localization_scores": 0,
+  "status": "Source adapter checked; broader-source fitting not started"
+}
