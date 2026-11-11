@@ -5,7 +5,6 @@ import importlib.util
 from pathlib import Path
 import sys
 from types import ModuleType
-from unittest.mock import patch
 
 import numpy as np
 
@@ -64,12 +63,20 @@ upstream core.py, its target manifests, or any B1/B2 RSS/statistics loader.
         spec.loader.exec_module(value)
         return value
 
-    with patch.dict(sys.modules, {'core': C, 'translator': T}):
+    names = ('core', 'translator', 'vt_lib')
+    previous = {name: sys.modules[name] for name in names if name in sys.modules}
+    try:
+        sys.modules.update(core=C, translator=T)
         V = module('finite_observation_original_vt_lib', 'vt_lib.py')
         V.FLOORS = {0: V.FLOORS[0]}
         V.MAPS = {key: value for key, value in V.MAPS.items() if key[0] == 0}
-        with patch.dict(sys.modules, {'vt_lib': V}):
-            H = module('finite_observation_original_hurdle', 'hurdle.py')
+        sys.modules['vt_lib'] = V
+        H = module('finite_observation_original_hurdle', 'hurdle.py')
+    finally:
+        # Restore only injected names; retain imported estimator modules for pickle.
+        for name in names:
+            sys.modules.pop(name, None)
+        sys.modules.update(previous)
     return C, V, H
 
 

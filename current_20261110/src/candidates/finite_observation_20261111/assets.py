@@ -13,6 +13,7 @@ os.environ['HF_HUB_OFFLINE'] = os.environ['TRANSFORMERS_OFFLINE'] = '1'
 import argparse
 from datetime import datetime, timezone
 from importlib.metadata import version
+from io import BytesIO
 import json
 from pathlib import Path
 import shutil
@@ -70,6 +71,13 @@ def source_index(C):
 
 def check(args):
     C, V, H = load_source(args.csv)
+    # Exercise the serialization path that failed before any portable model existed.
+    with BytesIO() as stream:
+        joblib.dump((H.HistGradientBoostingClassifier(), H.HistGradientBoostingRegressor()), stream)
+        stream.seek(0)
+        restored = joblib.load(stream)
+    assert type(restored[0]) is H.HistGradientBoostingClassifier
+    assert type(restored[1]) is H.HistGradientBoostingRegressor
     index = source_index(C)
     assert len(C.RSS) == 5249
     for floor, positions in enumerate((54, 67, 70, 68)):
@@ -139,6 +147,7 @@ def check(args):
         prior_audit='Sol read-only B0 audit relayed by main on2026-11-11:5249 rows,259 positions,n>3 everywhere; rechecked here',
         duplicate_value_check=dict(old55_exact=True, exposure_features_changed=True,
                                    interpretation='Repeated values only; not extra independent evidence'),
+        estimator_serialization_passed=True,
         fits=0, predictions=0, localization_scores=0, target_RSS_parsed=False))
     print(json.dumps(dict(passed=True, source_tasks=4, fits=0, predictions=0,
                          path=str(args.output), sha256=digest(args.output))), flush=True)
