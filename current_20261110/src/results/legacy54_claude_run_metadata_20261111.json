@@ -1,0 +1,118 @@
+{
+  "protocol": "legacy54",
+  "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+  "source_buildings": [
+    "B0"
+  ],
+  "target_buildings": [
+    "B1",
+    "B2"
+  ],
+  "budgets": [
+    1,
+    3,
+    5
+  ],
+  "repeats": [
+    0,
+    1
+  ],
+  "methods": [
+    "wknn_S",
+    "wknn_HS",
+    "gp_histmean",
+    "ours_naive",
+    "ours_v1",
+    "ours_A"
+  ],
+  "method_options": {
+    "gp_histmean": {
+      "readout": "map"
+    }
+  },
+  "runner_pid": 3934607,
+  "runner_status_lines": [
+    "START B1 2026-11-10T23:48:44Z runner=3934607",
+    "END B1 2026-11-11T00:02:59Z elapsed_s=855 rc=0",
+    "START B2 2026-11-11T00:02:59Z runner=3934607",
+    "END B2 2026-11-11T00:19:34Z elapsed_s=995 rc=0"
+  ],
+  "source_training": "B0 only",
+  "task_information": "H and S determine AP axis and candidate geometry; Query coordinates only used for scoring",
+  "evaluation_status": "exposed_development",
+  "p90_definition": "position_mean_p90",
+  "overall_coverage": {
+    "wknn_S": {
+      "tasks": 54,
+      "completed_tasks": 54,
+      "failed_tasks": 0,
+      "complete": true,
+      "failed_task_ids": [],
+      "unfinished_optimization_tasks": [],
+      "mean": 29.777740923077275,
+      "p50": 18.616962481262515,
+      "p90": 72.92839934910839,
+      "query_positions": 648
+    },
+    "wknn_HS": {
+      "tasks": 54,
+      "completed_tasks": 54,
+      "failed_tasks": 0,
+      "complete": true,
+      "failed_task_ids": [],
+      "unfinished_optimization_tasks": [],
+      "mean": 16.825385087365653,
+      "p50": 11.863225484821948,
+      "p90": 33.8590918819255,
+      "query_positions": 648
+    },
+    "gp_histmean": {
+      "tasks": 54,
+      "completed_tasks": 54,
+      "failed_tasks": 0,
+      "complete": true,
+      "failed_task_ids": [],
+      "unfinished_optimization_tasks": [],
+      "mean": 24.465440093742483,
+      "p50": 15.97319816812176,
+      "p90": 55.933474111623106,
+      "query_positions": 648
+    },
+    "ours_naive": {
+      "tasks": 54,
+      "completed_tasks": 54,
+      "failed_tasks": 0,
+      "complete": true,
+      "failed_task_ids": [],
+      "unfinished_optimization_tasks": [],
+      "mean": 15.617170430951884,
+      "p50": 9.950419943047425,
+      "p90": 34.727481658373286,
+      "query_positions": 648
+    },
+    "ours_v1": {
+      "tasks": 54,
+      "completed_tasks": 54,
+      "failed_tasks": 0,
+      "complete": true,
+      "failed_task_ids": [],
+      "unfinished_optimization_tasks": [],
+      "mean": 9.085703874969767,
+      "p50": 6.698551719351646,
+      "p90": 16.276122079181466,
+      "query_positions": 648
+    },
+    "ours_A": {
+      "tasks": 54,
+      "completed_tasks": 54,
+      "failed_tasks": 0,
+      "complete": true,
+      "failed_task_ids": [],
+      "unfinished_optimization_tasks": [],
+      "mean": 9.217417027850525,
+      "p50": 7.068738843738665,
+      "p90": 16.253795966182523,
+      "query_positions": 648
+    }
+  }
+}
