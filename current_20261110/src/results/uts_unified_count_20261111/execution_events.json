@@ -1,0 +1,80 @@
+{
+  "events": [
+    {
+      "segment": 3,
+      "bash_pid": 1037860,
+      "timeout_pid": 1037867,
+      "python_pid": 1037868,
+      "source_script": "predict_1.sh first six lines via temporary environment extraction",
+      "exit_code": null,
+      "sealed": 24,
+      "start_utc_approx": "2026-11-11T14:30:42Z",
+      "end_utc_approx": "2026-11-11T14:39:18Z",
+      "log": "predict_3.log",
+      "incident": "predict_1.log overwritten by accidental sequential continuation; frozen sealed data preserved; exact timeout exit not captured"
+    },
+    {
+      "source_check_exit": 0,
+      "result": "../unified_source_tasks_20261111/check.json",
+      "single_execution": true
+    },
+    {
+      "segment": 4,
+      "bash_pid": 1050147,
+      "script": "predict_4.sh",
+      "log": "predict_4.log",
+      "exit_file": "predict_4.exit.status",
+      "start_epoch": 1794408007.5735395
+    },
+    {
+      "segment": 4,
+      "exit_code": 2,
+      "sealed": 32,
+      "end_epoch": 1794408554.4463477
+    },
+    {
+      "source_label_coverage_exit": 0,
+      "result": "../source_label_coverage_20261111/result.json",
+      "single_execution": true
+    },
+    {
+      "segment": 5,
+      "bash_pid": 1064495,
+      "start_epoch": 1794408657.787367,
+      "script": "predict_5.sh"
+    },
+    {
+      "segment": 5,
+      "exit_code": 2,
+      "sealed": 40,
+      "end_epoch": 1794409192.4955974
+    },
+    {
+      "segment": 6,
+      "bash_pid": 1077171,
+      "start_epoch": 1794409241.1916254,
+      "script": "predict_6.sh"
+    },
+    {
+      "segment": 6,
+      "exit_code": 2,
+      "sealed": 47,
+      "end_epoch": 1794409751.0254683
+    },
+    {
+      "segment": 7,
+      "bash_pid": 1089929,
+      "start_epoch": 1794409832.711316,
+      "script": "predict_7.sh"
+    },
+    {
+      "segment": 7,
+      "exit_code": 0,
+      "sealed": 48,
+      "end_epoch": 1794409926.0532024
+    }
+  ],
+  "complete": true,
+  "prediction_wall_seconds_approx": 3208.90469956398,
+  "segment3_exit_code": null
+}
