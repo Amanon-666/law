@@ -1,0 +1,26 @@
+{
+  "kind": "synthetic_cache_regression_only",
+  "methods": {
+    "FineTuneDNN": {
+      "cache_entries": 2,
+      "finite_shape_2x2": true,
+      "hp": [
+        2,
+        0.001,
+        1,
+        0.0003
+      ]
+    },
+    "MAMLDNN": {
+      "cache_entries": 2,
+      "finite_shape_2x2": true,
+      "hp": [
+        2,
+        0.001,
+        1,
+        0.01,
+        3
+      ]
+    }
+  }
+}
