@@ -1,0 +1,113 @@
+{
+  "created": "2026-11-10T15:52:18.023177+00:00",
+  "eligible_floors": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "K": [
+    1,
+    3,
+    5
+  ],
+  "R": 1,
+  "methods": [
+    "hurdle",
+    "GP",
+    "GP_candidates",
+    "coordinate_half",
+    "probability_half"
+  ],
+  "logs": [
+    {
+      "id": "03",
+      "query_path": "/home/panyushuo/datasets/ipin_t3_2025/2025_IPIN_Competition_Track03/01 Logfiles/03 - Scoring/IPIN2025_T3_ScoringTrial03.txt",
+      "query_sha256": "8dedddc57c07cf8858813cdb77f9407649c60e037a9608c4e05dc19b66a39d4a",
+      "gt_path": "/home/panyushuo/datasets/ipin_t3_2025/2025_IPIN_Competition_Track03/03 Evaluation/GT/GT_IPIN2025_T3_ScoringTrial03.csv",
+      "gt_sha256": "aec42c4c27c2047cad8fa4b486b994212ffd66c08b897bc8e8974ce8ba2a5a8c"
+    },
+    {
+      "id": "04",
+      "query_path": "/home/panyushuo/datasets/ipin_t3_2025/2025_IPIN_Competition_Track03/01 Logfiles/03 - Scoring/IPIN2025_T3_ScoringTrial04sorted.txt",
+      "query_sha256": "d4fbabefad9e693bffe95b88099554206decf7621d73764bf4772fc3049b3e28",
+      "gt_path": "/home/panyushuo/datasets/ipin_t3_2025/2025_IPIN_Competition_Track03/03 Evaluation/GT/GT_IPIN2025_T3_ScoringTrial04.csv",
+      "gt_sha256": "34a36bb0ac6bfbad0c7cf2c08afd66de4f064940553a0269b3606e005b14b0cf"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_history_assets_20261110/complete.json",
+      "sha256": "e627d168e67d9fb35ecbea8b6e986bc0b8a4b311e98abd4dfaf4f31042722232"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_history_assets_20261110/freeze.json",
+      "sha256": "0b1d4c4613a324167af8c2b4e1e0d4d1633b4803cc9fa2bbe8367bd67bd6d587"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_history_assets_20261110/manifest.json",
+      "sha256": "2692c7e0f98d4abfb6a407710a1fe1584206dbc5f3c1cf0b480b4fc9de00b324"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_history_assets_20261110/histories.json",
+      "sha256": "449aa2782f15835ddeb78647670973fea0aa361464f9804c4ed3aec072d16914"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/paired_assets_20261106/parameters.json",
+      "sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/Law-Probabilistic-Transfer-20261023/results/history_learning_stage2_20261027/validation_reservation.json",
+      "sha256": "cda8c6e2307ec9b37bf28a5571243f2978396d8294fd996647f882d37e02e3bd"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/complete.json",
+      "sha256": "57756b1fc23f4eccceeafe91cda14398a5aca623ad76d12998bf34dc259ef111"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/freeze.json",
+      "sha256": "371f5815a44f7c4ddac67cbb1ad7932ba90e3189958d5723f4984f86cf1d08a7"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/deployment_check.json",
+      "sha256": "ab9048993632ef1866fa3f8a644e139d57131aa86ef994a095c2c80b77c5802e"
+    }
+  ],
+  "code": {
+    "ipin2025_confirmation.py": "a83d55ff50657b99cde139d6f2162538dc2e0891d39ef9b6bd664842518ae85f",
+    "ipin2025_observation_data.py": "22a2ff959f3ff09463e503845f3ffe88597ec6a8ae431fe04f9e7f8b99fa0bb1",
+    "ipin2025_score.py": "242941f00b6baf00a4b01f3df36f8c9a257edb2763816e421756b3bb80873365",
+    "frozen_hurdle_translator.py": "ed27ca8798f19de798dedc0d349cc9c3473590cff9688ff23ad25f5d74cbd12a",
+    "vertical_translator/translator.py": "50b51aa05330ec1b7335b8be7f8c72f7200de198a933c950e19a9acfd582eacd",
+    "hurdle_gp_pool.py": "55a80dbf5087eea0961e584c9dee8aeaad6ad68eeba716c4503225f80c81b8f4",
+    "position_fusion_gp.py": "7c1f3397bff78d94fd1140dac52f1c00ba591f32227820f3f4ed2361ee2b9f91",
+    "building_information_gp_trial.py": "dd49fa8b7cd023b8faf1ac1470cf94c4e4f92a2af86447c9a6458ba69ad3eaed",
+    "predict.py": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5",
+    "adaptation.py": "dc6a8a65d427fc573cf19ef0e984dedd6e15316714fb458e8d05d30d4db27fba",
+    "fields.py": "25d9d929d317baf38e16924822d26b77a9d94a35be6dbea0cfda0c16818efbbb",
+    "observations.py": "930fdd3ffe2a2bb40dbcd897aae61b6cf0efc0b4e1ce9548fedc113e9ce059c7",
+    "posterior.py": "72b31b7e548b4b0eaa68a9fd63cfce1d7f3f020902a834ec90da3e37272eca4d",
+    "uji.py": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+    "episodic_tasks.py": "cc2461e847889d4929af1f9be661214b6e6e1c5529d5550cb4d38cd76e94c02f",
+    "building_information_tab_trial.py": "44a1579a63c5dbe6ceb12abeba90a16f019b474bb8158e68e4a82200bbfdc834"
+  },
+  "contract": {
+    "method": "Original B0 seeds1..5 Hurdle; retained GP; fixed half log pool",
+    "source_updates": 0,
+    "parameter_search": false,
+    "history": "Shared frozen FPS128 per other floor",
+    "support": "Nested hash-ranked actual Training receipts K1/3/5, R1",
+    "axes": "BSSID union of selected H and current K S only; ignore Query-only APs",
+    "geometry": "9011 common metric frame, H/currentS bounds rounded on absolute 2m lattice",
+    "timing": "Absolute 2Hz; last already received WiFi snapshot; sensor AppTimestamp horizon",
+    "coverage": "All eligible floors independently predicted; Level1 stays in site denominator",
+    "scoring": "After all30 streams sealed; known true floor 2D, last time <= GT+.01",
+    "primary": "probability_half vs both constituent paths and fixed coordinate_half",
+    "metrics": "Covered mean/p90 and full-site coverage, by K/log/floor; no outcome-based exclusions",
+    "source_selection": "B0-only reader selection corroborates fixed constants; UJI remains development",
+    "resources": "Existing offline assets; CPU2 and at most one naturally idle GPU; explicit bounded resume"
+  },
+  "selfcal_status": "exposed post-hoc mechanism test",
+  "selfcal_mode": "baseline"
+}

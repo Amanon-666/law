@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/run.py", line 190, in <module>
+    elif sys.argv[1]=='ipin': ipin(model)
+                              ^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/run.py", line 123, in ipin
+    calibrations = {str(f):fit_calibration(model, history_only(manifest,f), R=1) for f in range(2,7)}
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/selfcal.py", line 47, in fit_calibration
+    raise ValueError(f'{name}: no non-support receipt within 4m of learned candidates')
+ValueError: IPIN2025_B2025F6: no non-support receipt within 4m of learned candidates

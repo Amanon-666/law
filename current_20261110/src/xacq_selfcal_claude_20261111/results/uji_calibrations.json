@@ -1,0 +1,928 @@
+{
+  "B1F0": {
+    "alpha": -0.03969855526059113,
+    "beta": 1.0229098624578072,
+    "loss": 0.15710712585637254,
+    "gradient_max": 6.049025646122826e-09,
+    "c": 1.4078499627898535,
+    "b": -1.94769403435226,
+    "status": "fitted",
+    "seed": 20261111,
+    "pseudo_K": 3,
+    "R": 3,
+    "floors": [
+      {
+        "floor": "B1F1",
+        "support_rows": [
+          29,
+          1361,
+          1396,
+          891,
+          859,
+          929,
+          469,
+          1289,
+          327
+        ],
+        "support_positions": [
+          57,
+          29,
+          13
+        ],
+        "eligible_receipts": 1213,
+        "rejected_distance": 211,
+        "cells": 238961,
+        "detections": 22188,
+        "mean_p": 0.07481711395277153,
+        "detected_fraction": 0.09285197166064756
+      },
+      {
+        "floor": "B1F2",
+        "support_rows": [
+          901,
+          1243,
+          1290,
+          625,
+          550,
+          733,
+          566,
+          830,
+          530
+        ],
+        "support_positions": [
+          75,
+          38,
+          17
+        ],
+        "eligible_receipts": 1156,
+        "rejected_distance": 190,
+        "cells": 212704,
+        "detections": 21251,
+        "mean_p": 0.07993445418140126,
+        "detected_fraction": 0.09990879344064992
+      },
+      {
+        "floor": "B1F3",
+        "support_rows": [
+          227,
+          395,
+          435,
+          821,
+          770,
+          886,
+          122,
+          947,
+          62
+        ],
+        "support_positions": [
+          47,
+          24,
+          10
+        ],
+        "eligible_receipts": 818,
+        "rejected_distance": 60,
+        "cells": 165236,
+        "detections": 8435,
+        "mean_p": 0.09952149018199027,
+        "detected_fraction": 0.05104819772930838
+      }
+    ]
+  },
+  "B1F1": {
+    "alpha": -0.14123073959875002,
+    "beta": 1.024317882333675,
+    "loss": 0.1752673722768324,
+    "gradient_max": 4.4164637803360364e-11,
+    "c": 1.219909116866844,
+    "b": -0.3723428142820069,
+    "status": "fitted",
+    "seed": 20261111,
+    "pseudo_K": 3,
+    "R": 3,
+    "floors": [
+      {
+        "floor": "B1F0",
+        "support_rows": [
+          87,
+          1064,
+          1160,
+          1218,
+          1367,
+          1317,
+          706,
+          756,
+          698
+        ],
+        "support_positions": [
+          72,
+          36,
+          16
+        ],
+        "eligible_receipts": 753,
+        "rejected_distance": 565,
+        "cells": 148341,
+        "detections": 10460,
+        "mean_p": 0.1277447620524335,
+        "detected_fraction": 0.07051320942962498
+      },
+      {
+        "floor": "B1F2",
+        "support_rows": [
+          901,
+          1243,
+          1290,
+          625,
+          550,
+          733,
+          566,
+          830,
+          530
+        ],
+        "support_positions": [
+          75,
+          38,
+          17
+        ],
+        "eligible_receipts": 923,
+        "rejected_distance": 423,
+        "cells": 157833,
+        "detections": 16842,
+        "mean_p": 0.06188621033592701,
+        "detected_fraction": 0.10670772271958336
+      },
+      {
+        "floor": "B1F3",
+        "support_rows": [
+          227,
+          395,
+          435,
+          821,
+          770,
+          886,
+          122,
+          947,
+          62
+        ],
+        "support_positions": [
+          47,
+          24,
+          10
+        ],
+        "eligible_receipts": 828,
+        "rejected_distance": 50,
+        "cells": 160632,
+        "detections": 8545,
+        "mean_p": 0.06888296272711106,
+        "detected_fraction": 0.05319612530504507
+      }
+    ]
+  },
+  "B1F2": {
+    "alpha": -0.3721038716020384,
+    "beta": 0.9542802139246306,
+    "loss": 0.1690959857327,
+    "gradient_max": 6.270642755046296e-10,
+    "c": 1.4004964948355072,
+    "b": -0.28585635155459954,
+    "status": "fitted",
+    "seed": 20261111,
+    "pseudo_K": 3,
+    "R": 3,
+    "floors": [
+      {
+        "floor": "B1F0",
+        "support_rows": [
+          87,
+          1064,
+          1160,
+          1218,
+          1367,
+          1317,
+          706,
+          756,
+          698
+        ],
+        "support_positions": [
+          72,
+          36,
+          16
+        ],
+        "eligible_receipts": 723,
+        "rejected_distance": 595,
+        "cells": 133032,
+        "detections": 10015,
+        "mean_p": 0.1092939289716727,
+        "detected_fraction": 0.07528263876360575
+      },
+      {
+        "floor": "B1F1",
+        "support_rows": [
+          29,
+          1361,
+          1396,
+          891,
+          859,
+          929,
+          469,
+          1289,
+          327
+        ],
+        "support_positions": [
+          57,
+          29,
+          13
+        ],
+        "eligible_receipts": 791,
+        "rejected_distance": 633,
+        "cells": 135261,
+        "detections": 13365,
+        "mean_p": 0.08839238755230673,
+        "detected_fraction": 0.09880896932596979
+      },
+      {
+        "floor": "B1F3",
+        "support_rows": [
+          227,
+          395,
+          435,
+          821,
+          770,
+          886,
+          122,
+          947,
+          62
+        ],
+        "support_positions": [
+          47,
+          24,
+          10
+        ],
+        "eligible_receipts": 708,
+        "rejected_distance": 170,
+        "cells": 121068,
+        "detections": 7811,
+        "mean_p": 0.0831833704467745,
+        "detected_fraction": 0.06451746126143985
+      }
+    ]
+  },
+  "B1F3": {
+    "alpha": -0.10055823371655424,
+    "beta": 0.9349858569409154,
+    "loss": 0.1647307041333693,
+    "gradient_max": 1.1831695923928778e-10,
+    "c": 1.504122554653635,
+    "b": -0.9675059381266777,
+    "status": "fitted",
+    "seed": 20261111,
+    "pseudo_K": 3,
+    "R": 3,
+    "floors": [
+      {
+        "floor": "B1F0",
+        "support_rows": [
+          87,
+          1064,
+          1160,
+          1218,
+          1367,
+          1317,
+          706,
+          756,
+          698
+        ],
+        "support_positions": [
+          72,
+          36,
+          16
+        ],
+        "eligible_receipts": 733,
+        "rejected_distance": 585,
+        "cells": 148066,
+        "detections": 10367,
+        "mean_p": 0.07389278781878378,
+        "detected_fraction": 0.07001607391298476
+      },
+      {
+        "floor": "B1F1",
+        "support_rows": [
+          29,
+          1361,
+          1396,
+          891,
+          859,
+          929,
+          469,
+          1289,
+          327
+        ],
+        "support_positions": [
+          57,
+          29,
+          13
+        ],
+        "eligible_receipts": 1213,
+        "rejected_distance": 211,
+        "cells": 234109,
+        "detections": 22114,
+        "mean_p": 0.09462691411511041,
+        "detected_fraction": 0.09446027277891922
+      },
+      {
+        "floor": "B1F2",
+        "support_rows": [
+          901,
+          1243,
+          1290,
+          625,
+          550,
+          733,
+          566,
+          830,
+          530
+        ],
+        "support_positions": [
+          75,
+          38,
+          17
+        ],
+        "eligible_receipts": 1119,
+        "rejected_distance": 227,
+        "cells": 190230,
+        "detections": 20793,
+        "mean_p": 0.10426969889329994,
+        "detected_fraction": 0.10930452609998423
+      }
+    ]
+  },
+  "B2F0": {
+    "alpha": -0.03344964726535377,
+    "beta": 0.8268489959889882,
+    "loss": 0.1984424989920686,
+    "gradient_max": 1.0696281143793285e-10,
+    "c": 1.7933987770526483,
+    "b": -0.1016269423495686,
+    "status": "fitted",
+    "seed": 20261111,
+    "pseudo_K": 3,
+    "R": 3,
+    "floors": [
+      {
+        "floor": "B2F1",
+        "support_rows": [
+          38,
+          427,
+          486,
+          1671,
+          1554,
+          1818,
+          331,
+          1288,
+          137
+        ],
+        "support_positions": [
+          85,
+          43,
+          19
+        ],
+        "eligible_receipts": 1941,
+        "rejected_distance": 155,
+        "cells": 376554,
+        "detections": 42465,
+        "mean_p": 0.0682712091385753,
+        "detected_fraction": 0.11277267005529087
+      },
+      {
+        "floor": "B2F2",
+        "support_rows": [
+          295,
+          1156,
+          1281,
+          1209,
+          1093,
+          1400,
+          584,
+          581,
+          348
+        ],
+        "support_positions": [
+          70,
+          35,
+          15
+        ],
+        "eligible_receipts": 1479,
+        "rejected_distance": 20,
+        "cells": 289884,
+        "detections": 32837,
+        "mean_p": 0.12588154682452077,
+        "detected_fraction": 0.11327634502076693
+      },
+      {
+        "floor": "B2F3",
+        "support_rows": [
+          1676,
+          2166,
+          2301,
+          2137,
+          2014,
+          2479,
+          345,
+          1522,
+          158
+        ],
+        "support_positions": [
+          109,
+          55,
+          24
+        ],
+        "eligible_receipts": 2499,
+        "rejected_distance": 110,
+        "cells": 462315,
+        "detections": 49585,
+        "mean_p": 0.11155800688751145,
+        "detected_fraction": 0.10725371229572911
+      },
+      {
+        "floor": "B2F4",
+        "support_rows": [
+          260,
+          795,
+          886,
+          864,
+          775,
+          996,
+          53,
+          187,
+          30
+        ],
+        "support_positions": [
+          64,
+          32,
+          14
+        ],
+        "eligible_receipts": 1052,
+        "rejected_distance": 0,
+        "cells": 209348,
+        "detections": 21675,
+        "mean_p": 0.08385501637982438,
+        "detected_fraction": 0.10353573953417276
+      }
+    ]
+  },
+  "B2F1": {
+    "alpha": -0.09892811072565308,
+    "beta": 0.8924707867798005,
+    "loss": 0.23444779677633196,
+    "gradient_max": 8.578524886976302e-09,
+    "c": 1.812256482132791,
+    "b": -0.6365892622324054,
+    "status": "fitted",
+    "seed": 20261111,
+    "pseudo_K": 3,
+    "R": 3,
+    "floors": [
+      {
+        "floor": "B2F0",
+        "support_rows": [
+          115,
+          1298,
+          1564,
+          1542,
+          1328,
+          1752,
+          1145,
+          1896,
+          983
+        ],
+        "support_positions": [
+          64,
+          32,
+          14
+        ],
+        "eligible_receipts": 1605,
+        "rejected_distance": 217,
+        "cells": 306555,
+        "detections": 27388,
+        "mean_p": 0.10474178772876395,
+        "detected_fraction": 0.08934122751219194
+      },
+      {
+        "floor": "B2F2",
+        "support_rows": [
+          295,
+          1156,
+          1281,
+          1209,
+          1093,
+          1400,
+          584,
+          581,
+          348
+        ],
+        "support_positions": [
+          70,
+          35,
+          15
+        ],
+        "eligible_receipts": 1459,
+        "rejected_distance": 40,
+        "cells": 268456,
+        "detections": 32495,
+        "mean_p": 0.07930972185715207,
+        "detected_fraction": 0.12104404446166224
+      },
+      {
+        "floor": "B2F3",
+        "support_rows": [
+          1676,
+          2166,
+          2301,
+          2137,
+          2014,
+          2479,
+          345,
+          1522,
+          158
+        ],
+        "support_positions": [
+          109,
+          55,
+          24
+        ],
+        "eligible_receipts": 2429,
+        "rejected_distance": 180,
+        "cells": 410501,
+        "detections": 47865,
+        "mean_p": 0.117229081171362,
+        "detected_fraction": 0.11660142119020417
+      },
+      {
+        "floor": "B2F4",
+        "support_rows": [
+          260,
+          795,
+          886,
+          864,
+          775,
+          996,
+          53,
+          187,
+          30
+        ],
+        "support_positions": [
+          64,
+          32,
+          14
+        ],
+        "eligible_receipts": 1052,
+        "rejected_distance": 0,
+        "cells": 198828,
+        "detections": 21675,
+        "mean_p": 0.11359403988694894,
+        "detected_fraction": 0.1090138209910073
+      }
+    ]
+  },
+  "B2F2": {
+    "alpha": 0.12252952858123069,
+    "beta": 0.9171178231397817,
+    "loss": 0.22115568163697086,
+    "gradient_max": 6.4929225343729816e-09,
+    "c": 1.9388165218544802,
+    "b": 1.1125060357688596,
+    "status": "fitted",
+    "seed": 20261111,
+    "pseudo_K": 3,
+    "R": 3,
+    "floors": [
+      {
+        "floor": "B2F0",
+        "support_rows": [
+          115,
+          1298,
+          1564,
+          1542,
+          1328,
+          1752,
+          1145,
+          1896,
+          983
+        ],
+        "support_positions": [
+          64,
+          32,
+          14
+        ],
+        "eligible_receipts": 1762,
+        "rejected_distance": 60,
+        "cells": 345352,
+        "detections": 28977,
+        "mean_p": 0.08241900431001484,
+        "detected_fraction": 0.08390569621719289
+      },
+      {
+        "floor": "B2F1",
+        "support_rows": [
+          38,
+          427,
+          486,
+          1671,
+          1554,
+          1818,
+          331,
+          1288,
+          137
+        ],
+        "support_positions": [
+          85,
+          43,
+          19
+        ],
+        "eligible_receipts": 2009,
+        "rejected_distance": 87,
+        "cells": 375683,
+        "detections": 43594,
+        "mean_p": 0.0867790766380676,
+        "detected_fraction": 0.11603932038447308
+      },
+      {
+        "floor": "B2F3",
+        "support_rows": [
+          1676,
+          2166,
+          2301,
+          2137,
+          2014,
+          2479,
+          345,
+          1522,
+          158
+        ],
+        "support_positions": [
+          109,
+          55,
+          24
+        ],
+        "eligible_receipts": 2529,
+        "rejected_distance": 80,
+        "cells": 447633,
+        "detections": 50103,
+        "mean_p": 0.09099800076980748,
+        "detected_fraction": 0.11192874519975068
+      },
+      {
+        "floor": "B2F4",
+        "support_rows": [
+          260,
+          795,
+          886,
+          864,
+          775,
+          996,
+          53,
+          187,
+          30
+        ],
+        "support_positions": [
+          64,
+          32,
+          14
+        ],
+        "eligible_receipts": 1052,
+        "rejected_distance": 0,
+        "cells": 204088,
+        "detections": 21675,
+        "mean_p": 0.0964438310221856,
+        "detected_fraction": 0.10620418642938341
+      }
+    ]
+  },
+  "B2F3": {
+    "alpha": 0.08974964148059619,
+    "beta": 0.9623429834567064,
+    "loss": 0.22255089025342778,
+    "gradient_max": 5.2020491725021656e-09,
+    "c": 1.346395376244216,
+    "b": -0.16782451354222871,
+    "status": "fitted",
+    "seed": 20261111,
+    "pseudo_K": 3,
+    "R": 3,
+    "floors": [
+      {
+        "floor": "B2F0",
+        "support_rows": [
+          115,
+          1298,
+          1564,
+          1542,
+          1328,
+          1752,
+          1145,
+          1896,
+          983
+        ],
+        "support_positions": [
+          64,
+          32,
+          14
+        ],
+        "eligible_receipts": 1722,
+        "rejected_distance": 100,
+        "cells": 316848,
+        "detections": 28438,
+        "mean_p": 0.08849969333440467,
+        "detected_fraction": 0.08975281523001566
+      },
+      {
+        "floor": "B2F1",
+        "support_rows": [
+          38,
+          427,
+          486,
+          1671,
+          1554,
+          1818,
+          331,
+          1288,
+          137
+        ],
+        "support_positions": [
+          85,
+          43,
+          19
+        ],
+        "eligible_receipts": 1902,
+        "rejected_distance": 194,
+        "cells": 325242,
+        "detections": 40192,
+        "mean_p": 0.11109397731690028,
+        "detected_fraction": 0.12357567595820958
+      },
+      {
+        "floor": "B2F2",
+        "support_rows": [
+          295,
+          1156,
+          1281,
+          1209,
+          1093,
+          1400,
+          584,
+          581,
+          348
+        ],
+        "support_positions": [
+          70,
+          35,
+          15
+        ],
+        "eligible_receipts": 1459,
+        "rejected_distance": 40,
+        "cells": 256784,
+        "detections": 32321,
+        "mean_p": 0.1296476810736349,
+        "detected_fraction": 0.1258684341703533
+      },
+      {
+        "floor": "B2F4",
+        "support_rows": [
+          260,
+          795,
+          886,
+          864,
+          775,
+          996,
+          53,
+          187,
+          30
+        ],
+        "support_positions": [
+          64,
+          32,
+          14
+        ],
+        "eligible_receipts": 992,
+        "rejected_distance": 60,
+        "cells": 178560,
+        "detections": 20483,
+        "mean_p": 0.08840774844384754,
+        "detected_fraction": 0.11471214157706093
+      }
+    ]
+  },
+  "B2F4": {
+    "alpha": 0.006031126886730243,
+    "beta": 0.894460784991323,
+    "loss": 0.18223887701655095,
+    "gradient_max": 3.3994182648130426e-09,
+    "c": 1.336060742704376,
+    "b": -0.43529945120002367,
+    "status": "fitted",
+    "seed": 20261111,
+    "pseudo_K": 3,
+    "R": 3,
+    "floors": [
+      {
+        "floor": "B2F0",
+        "support_rows": [
+          115,
+          1298,
+          1564,
+          1542,
+          1328,
+          1752,
+          1145,
+          1896,
+          983
+        ],
+        "support_positions": [
+          64,
+          32,
+          14
+        ],
+        "eligible_receipts": 1762,
+        "rejected_distance": 60,
+        "cells": 348876,
+        "detections": 28977,
+        "mean_p": 0.0661141276580363,
+        "detected_fraction": 0.08305816393217075
+      },
+      {
+        "floor": "B2F1",
+        "support_rows": [
+          38,
+          427,
+          486,
+          1671,
+          1554,
+          1818,
+          331,
+          1288,
+          137
+        ],
+        "support_positions": [
+          85,
+          43,
+          19
+        ],
+        "eligible_receipts": 2036,
+        "rejected_distance": 60,
+        "cells": 388876,
+        "detections": 44169,
+        "mean_p": 0.09792978706042953,
+        "detected_fraction": 0.11358119297668151
+      },
+      {
+        "floor": "B2F2",
+        "support_rows": [
+          295,
+          1156,
+          1281,
+          1209,
+          1093,
+          1400,
+          584,
+          581,
+          348
+        ],
+        "support_positions": [
+          70,
+          35,
+          15
+        ],
+        "eligible_receipts": 1479,
+        "rejected_distance": 20,
+        "cells": 285447,
+        "detections": 32837,
+        "mean_p": 0.13085641938493559,
+        "detected_fraction": 0.11503711722316227
+      },
+      {
+        "floor": "B2F3",
+        "support_rows": [
+          1676,
+          2166,
+          2301,
+          2137,
+          2014,
+          2479,
+          345,
+          1522,
+          158
+        ],
+        "support_positions": [
+          109,
+          55,
+          24
+        ],
+        "eligible_receipts": 2429,
+        "rejected_distance": 180,
+        "cells": 434791,
+        "detections": 47779,
+        "mean_p": 0.09544767178327193,
+        "detected_fraction": 0.10988957913112277
+      }
+    ]
+  }
+}

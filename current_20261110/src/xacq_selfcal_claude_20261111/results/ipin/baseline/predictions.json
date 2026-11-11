@@ -1,0 +1,379 @@
+{
+  "complete": true,
+  "phase": "predictions",
+  "created": "2026-11-10T17:10:32.925396+00:00",
+  "freeze_sha256": "37fad9aa97dbe812ed16e22471bc5295bf81bfbc409dcbd500b44eb4773ee5b5",
+  "contexts_complete_sha256": "de03679c06d5b3f22b7b5d67c057e78971beb5ce2391cf2289af6fb21370a1f8",
+  "eligible_floors": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "K": [
+    1,
+    3,
+    5
+  ],
+  "methods": [
+    "hurdle",
+    "GP",
+    "GP_candidates",
+    "coordinate_half",
+    "probability_half"
+  ],
+  "logs": [
+    {
+      "id": "03",
+      "query_path": "/home/panyushuo/datasets/ipin_t3_2025/2025_IPIN_Competition_Track03/01 Logfiles/03 - Scoring/IPIN2025_T3_ScoringTrial03.txt",
+      "query_sha256": "8dedddc57c07cf8858813cdb77f9407649c60e037a9608c4e05dc19b66a39d4a",
+      "gt_path": "/home/panyushuo/datasets/ipin_t3_2025/2025_IPIN_Competition_Track03/03 Evaluation/GT/GT_IPIN2025_T3_ScoringTrial03.csv",
+      "gt_sha256": "aec42c4c27c2047cad8fa4b486b994212ffd66c08b897bc8e8974ce8ba2a5a8c"
+    },
+    {
+      "id": "04",
+      "query_path": "/home/panyushuo/datasets/ipin_t3_2025/2025_IPIN_Competition_Track03/01 Logfiles/03 - Scoring/IPIN2025_T3_ScoringTrial04sorted.txt",
+      "query_sha256": "d4fbabefad9e693bffe95b88099554206decf7621d73764bf4772fc3049b3e28",
+      "gt_path": "/home/panyushuo/datasets/ipin_t3_2025/2025_IPIN_Competition_Track03/03 Evaluation/GT/GT_IPIN2025_T3_ScoringTrial04.csv",
+      "gt_sha256": "34a36bb0ac6bfbad0c7cf2c08afd66de4f064940553a0269b3606e005b14b0cf"
+    }
+  ],
+  "predictions": [
+    {
+      "log_id": "03",
+      "floor": 2,
+      "K": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F2_K1_log03.npz",
+      "sha256": "58cc45b3022eb9f80c7f47cd56fecf3b2a00d15d19d3b3193306bb0868f24b90",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 2,
+      "K": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F2_K1_log04.npz",
+      "sha256": "d0b31754c3bd8c78ecd248fb908dc58e42b4a16b116bb861e99a730ca58bc30a",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 2,
+      "K": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F2_K3_log03.npz",
+      "sha256": "5dd99d948b8dda11db6107dd4a19c34c95e444bd15e97af162eb1d74f1738eb6",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 2,
+      "K": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F2_K3_log04.npz",
+      "sha256": "3717a81d26888a08e4c47689e4ddd23a23294827bc875b19b34f91b490e0f4e9",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 2,
+      "K": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F2_K5_log03.npz",
+      "sha256": "3a877fc23f9cd08eab4494514d4851fb6d1fe83057efbfeaa963eae0fb7684a5",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 2,
+      "K": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F2_K5_log04.npz",
+      "sha256": "998abfb217a5cfca97846f4bf874a8afda987df1970de35a8ad4668ce09f78a3",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 3,
+      "K": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F3_K1_log03.npz",
+      "sha256": "c857aa93c89e101992d1cb0f355d45f6307ad6141936ea06031bda6213c71e3c",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 3,
+      "K": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F3_K1_log04.npz",
+      "sha256": "a6a45c14012eada5396917b91bc88fec42ffe03df39bb446e9e13abe8e65aaec",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 3,
+      "K": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F3_K3_log03.npz",
+      "sha256": "85b7b1d40e4fb53bacf0371fec6a639b8c98fd4756a4700ecf1e5b067d822cf7",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 3,
+      "K": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F3_K3_log04.npz",
+      "sha256": "8550d3786bdc2b680f646f28a2da5a778e1f494d059b98b2de3fac5c681715ec",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 3,
+      "K": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F3_K5_log03.npz",
+      "sha256": "b5ce7f3aa2f0a1eb5409212daa509efb6710eebe4389ec0c5f573e98a805920f",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 3,
+      "K": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F3_K5_log04.npz",
+      "sha256": "353d53535e96f75d52675300f25ceba7927b9755a00f489250681598c1502df1",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 4,
+      "K": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F4_K1_log03.npz",
+      "sha256": "55f96c37b7b652efb5aabfedd232e78de5fc1f076c420c5fe23be2eb1e68d152",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 4,
+      "K": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F4_K1_log04.npz",
+      "sha256": "8397b319e1f8e41b651a1dda039c836e498c8bc69d2ce3f7e1a5f42c4a4bb363",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 4,
+      "K": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F4_K3_log03.npz",
+      "sha256": "6fa1fd38332f6eccefced2c0ff12495e61b8ef44a52c546fac166c900abda617",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 4,
+      "K": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F4_K3_log04.npz",
+      "sha256": "d24fdbcf65c2e5c9fcedf733cf487a58a34b6afb5b758d0c5091caa891b91828",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 4,
+      "K": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F4_K5_log03.npz",
+      "sha256": "698335bdc3aa853746db5462adea2d733b3658a28b8717f6135376dadb6dc541",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 4,
+      "K": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F4_K5_log04.npz",
+      "sha256": "91f310080a87d0e528ac82ffb80288dc3f4a27dc524bdc2f3f80d8a4475c3929",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 5,
+      "K": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F5_K1_log03.npz",
+      "sha256": "f1347a3ec2ba49a881855695ce3e94a306edac4e210bc197dc98570794129d1f",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 5,
+      "K": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F5_K1_log04.npz",
+      "sha256": "35225c5fbf51d7808c39ff5247759ab12e4bf8b14eeeed94bd83fc5a998e96a9",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 5,
+      "K": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F5_K3_log03.npz",
+      "sha256": "cf8df5955b1666499e06a604b9ef58410755dae6470303a16b51fe94dfd996ee",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 5,
+      "K": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F5_K3_log04.npz",
+      "sha256": "eb3ad310b3d48752253e9529fa34a1a92ed53220d2e1451b2a60a8bc6b04ea20",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 5,
+      "K": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F5_K5_log03.npz",
+      "sha256": "b50791f565bb7865aecf71f375be551d76bdb372ac83cf2d43e5ed31cd3f4141",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 5,
+      "K": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F5_K5_log04.npz",
+      "sha256": "07679c05f976153adc33fe7c538693cf44240f2960b77f0257f4bea986ba15cf",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 6,
+      "K": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F6_K1_log03.npz",
+      "sha256": "fabdd8fa71f46af07367e38423ac396deef54a876480a7070b73c306c8079b69",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 6,
+      "K": 1,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F6_K1_log04.npz",
+      "sha256": "7650696e0fdb5b6dbacc4d800fcb96a6c56fbd407b2149a0e8df38b3b8761472",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 6,
+      "K": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F6_K3_log03.npz",
+      "sha256": "fd18ff478fb7ac3535cbb531ae905a4085a8ece78f1327a57cc36b5ad9d578ff",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 6,
+      "K": 3,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F6_K3_log04.npz",
+      "sha256": "69f06669d42c07b2cfdfa3ca30cbaf82f8f520c1ee5c6e4486f64319b7517e0f",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "03",
+      "floor": 6,
+      "K": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F6_K5_log03.npz",
+      "sha256": "b2a01aa10201fb0d62351ad6e876dac0d3106cec6348e8b0b6acf88e15857466",
+      "receipt_predictions": 437,
+      "ticks": 3493,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    },
+    {
+      "log_id": "04",
+      "floor": 6,
+      "K": 5,
+      "path": "/home/panyushuo/projects/panyushuo/claude_xacq_wt/current_20261110/src/xacq_selfcal_claude_20261111/results/ipin/baseline/IPIN2025_B2025F6_K5_log04.npz",
+      "sha256": "6ddf9ce1a980505f6259aeef3d9bf70f62518a872d17d45fc6f878733d41e8a5",
+      "receipt_predictions": 741,
+      "ticks": 3504,
+      "duplicate_bssid_rows": 0,
+      "conflicting_rss_rows": 0
+    }
+  ],
+  "GT_opened": false,
+  "readout_execution": {
+    "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/cached_readout_execution.json",
+    "sha256": "56022e657ac665c3b5424e6907673651d9cff0ccdf4abad250f614f3a83faff9"
+  }
+}
