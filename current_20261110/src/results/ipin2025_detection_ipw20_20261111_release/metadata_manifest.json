@@ -1,0 +1,961 @@
+{
+  "created": "2026-11-11T00:16:26.526158+00:00",
+  "status": "Exposed IPIN post-hoc det-IPW20 mechanism confirmation, no parameter selection",
+  "result": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111",
+  "source": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source",
+  "original_baseline": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110",
+  "candidate_models": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_detipw20_ens5_20261111",
+  "excluded": "Original GP state/grid/fields, new 15 hurdle probability fields, trained model files remain at bound server paths",
+  "server_result_files": [
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K1/complete.json",
+      "sha256": "50dc1fedb6a1eb6c527f0491d7c73316aa0c2b3fad1ccb79a2c91a8fd468b8a0",
+      "bytes": 526258,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K1/hurdle.npz",
+      "sha256": "8b497826de25d2b0a95c7a41f2cd82e365590c48e09d31ab4b8f1bb657bce17f",
+      "bytes": 4313861,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K1_log03.npz",
+      "sha256": "ba55fc5f8c57076dc163705791ecfd610ff149dbad26134c9b0d8804687760a7",
+      "bytes": 43964,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K1_log04.npz",
+      "sha256": "9be2d5552f960815f15e9e53e8587385f6327164a280cf5491a7ad84f3364b0b",
+      "bytes": 68982,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K3/complete.json",
+      "sha256": "06733eda6217d15067ec0029b7080483f5524f2d4feab1261b7919034ab07152",
+      "bytes": 526182,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K3/hurdle.npz",
+      "sha256": "34f3fb96e841c9cf9c18dbc91535a6afbdce980a7f4f11da9ff03430784eeee0",
+      "bytes": 4824564,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K3_log03.npz",
+      "sha256": "abe66f814ecd8b3b36c0f967ba9f0d8932bee95f7ed5e595043201e8a909c747",
+      "bytes": 43918,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K3_log04.npz",
+      "sha256": "57e1d2df55423f7318cc18044bfd1603ade35fd1dc11dd29bec48648a078296b",
+      "bytes": 68825,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K5/complete.json",
+      "sha256": "0e471d1a79e45c45c04acb4108f6987a485aa5c40b7af811e4acafe8ec4f5733",
+      "bytes": 530454,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K5/hurdle.npz",
+      "sha256": "4f97a166492e47c266a0bdcbcd35f3ad0c5442938d325628d91e0e21c450900c",
+      "bytes": 5159302,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K5_log03.npz",
+      "sha256": "0a82158603f870345e38135c315b74df61fe181c0b72e59862c95d7e5628139f",
+      "bytes": 43943,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K5_log04.npz",
+      "sha256": "f9dacb28efeb9a60869e356f0fb7ac713414e73de0010f0cae78e08079dcbf68",
+      "bytes": 68922,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K1/complete.json",
+      "sha256": "332e5e8d8aa19e55f1c967777af2ffd2fdea6c69abd981c67eefcfe0b25a43b4",
+      "bytes": 446760,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K1/hurdle.npz",
+      "sha256": "934ef975d30703c9fcc5ece665abedc0ea325532c5e964e71120bcd6bf2f5e7b",
+      "bytes": 4088574,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K1_log03.npz",
+      "sha256": "98613b8495327e4a06ed469eaece2018f76528414c67666a19b1056c3f786b49",
+      "bytes": 44065,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K1_log04.npz",
+      "sha256": "50369004fc1b4e07a34ae223de77b18acea67462461b4151e5179ee08ee160fe",
+      "bytes": 68994,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K3/complete.json",
+      "sha256": "7dd51b54f0f196ea8d27d2a080887d8e3d37742392c8a89e123ff000e0b9ea64",
+      "bytes": 454486,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K3/hurdle.npz",
+      "sha256": "6a8070cdb8b142bfa246f9eb991b27889add6afcac4e8c6c4aac1ea5521f8167",
+      "bytes": 4253752,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K3_log03.npz",
+      "sha256": "a5248190fd0ad41b561b304b6f52cb7add77f0bc1ac297ce40576f228f583d7b",
+      "bytes": 44030,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K3_log04.npz",
+      "sha256": "d129daf4ca38be2fe2ba3548e5e2c9cc4833dea3ed27974822f318b2933b0887",
+      "bytes": 68901,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K5/complete.json",
+      "sha256": "f1a69726a3d7a9b164754a17ddad9ed6fccb30fc58c00017d9f73e98ddf2a41b",
+      "bytes": 468972,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K5/hurdle.npz",
+      "sha256": "d60d28a865decc27b685c6866a9011a77676d396d7333beff1a213c858710aa2",
+      "bytes": 4302824,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K5_log03.npz",
+      "sha256": "484b9b50d1d418f9cf1166459efcbfb869a54309f164d93f5ec772c6a27f83ba",
+      "bytes": 44020,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K5_log04.npz",
+      "sha256": "b1988a0ad1b583ffdb6de0f7393f689e7ab1f69e7dc1503f952e6a22db93afb5",
+      "bytes": 68946,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K1/complete.json",
+      "sha256": "dff76407d183edec931c12066770da619a4ff331e1bd7b5cb3d8ad12e480e931",
+      "bytes": 488278,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K1/hurdle.npz",
+      "sha256": "121a2a42678b0000d244fd723a0ab6a22a775f0f3a1c3704bdce3a882c69bc89",
+      "bytes": 4888219,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K1_log03.npz",
+      "sha256": "ced98ddc6998e047d3c4ce6b469256b9366c5cd9cb90e099aff3c677bcc520d3",
+      "bytes": 44104,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K1_log04.npz",
+      "sha256": "a3be72ec3a7dc42cc4282b360c2184d1ed2aa75d4c9e408db97a366d41571aea",
+      "bytes": 69181,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K3/complete.json",
+      "sha256": "6b558ce37392ccabf141f2e2f6fb4171ef384ef85e63da30d5bdaad29813bf35",
+      "bytes": 488692,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K3/hurdle.npz",
+      "sha256": "0231f702b1c5ab01d87d26c247bc301a0639dcf7983242a5164e522265e52d6c",
+      "bytes": 5102609,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K3_log03.npz",
+      "sha256": "aa6ffb212f9c4ac963d9ef018b9fc19d4e0e3a8008db6f41676990640f93b18f",
+      "bytes": 44155,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K3_log04.npz",
+      "sha256": "1335b96285765693effe6e6fcde4b2b85f30ccadfa696f190a8df0c28a19e122",
+      "bytes": 69374,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K5/complete.json",
+      "sha256": "344c96fd196d37bfab71de7eb8e20fe5247f863d47d787b9ffb05df538233bc5",
+      "bytes": 495975,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K5/hurdle.npz",
+      "sha256": "f3905fddc7b7f1dcdf448276209080040700cf9990b8ef807dc4b5ee417cde33",
+      "bytes": 5249212,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K5_log03.npz",
+      "sha256": "5cf3fa44ae405eef1c798b62889da1f733f7c88fddfecd69cd2d817e374daa3d",
+      "bytes": 44144,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K5_log04.npz",
+      "sha256": "14317b67bcb83e7b24278b68a36aacd85c3ce18a66c08b0554ff530aa9461b21",
+      "bytes": 69266,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K1/complete.json",
+      "sha256": "92fb34ed6793fba71e3eb54c223d6d481624572503f1b277572f6b0ed63c3525",
+      "bytes": 519528,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K1/hurdle.npz",
+      "sha256": "9e885b81411223c27c6aa13704b8652ce7a5eb2fc60f4046eec83b5a64c038b3",
+      "bytes": 4810687,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K1_log03.npz",
+      "sha256": "b41ee5e2f148ec6e4d645a7ab45135fea32b00f92b6605ab1adaa691a36a0199",
+      "bytes": 44073,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K1_log04.npz",
+      "sha256": "8833471fdec97939a846665a56fda2d8ce491fa6bb1b0fda9ff47b4fc819ace5",
+      "bytes": 69319,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K3/complete.json",
+      "sha256": "7bf9b94763ba588a046a7666ab705cdc4482a61c7d47ba748879de245028a636",
+      "bytes": 526201,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K3/hurdle.npz",
+      "sha256": "f84b8cb6651362d50c1173075f34810a8e4f69830c6bdaeead7c4451021a5a3b",
+      "bytes": 4933517,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K3_log03.npz",
+      "sha256": "3317bc03b25bf5d97dc64970d4c7adbe76de7d88e087c4d31f3b9b5b39e373ea",
+      "bytes": 44136,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K3_log04.npz",
+      "sha256": "c9219d48ceb33f2c57d0830ee5334bb8dd4132d17126bbd91a2d13d49251f32a",
+      "bytes": 69376,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K5/complete.json",
+      "sha256": "2e3c1bdfd3c183a74dd10744c80a4ee63f3d021dd518b2a3c23141d2929c99d5",
+      "bytes": 526248,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K5/hurdle.npz",
+      "sha256": "063046ed99b66fdfec9c99585e59eed34af327d7b8f8baed02d2b1759da5f33a",
+      "bytes": 5144992,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K5_log03.npz",
+      "sha256": "5d763ec40aa43db2ba098d08e970b3db98e4af291f65191582c29febd60a557d",
+      "bytes": 44168,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K5_log04.npz",
+      "sha256": "fcf506f984d32e3ebf36cc0e863da53be772ba76bc4a4a6134061865a2900276",
+      "bytes": 69377,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K1/complete.json",
+      "sha256": "51cb857afdf579cdc805db1e2e647cb59354596d8bce01a5db0f20c53a5d50cd",
+      "bytes": 539865,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K1/hurdle.npz",
+      "sha256": "78c6622ef3a7eafe8b6aeb43e56933337913f19a4c5786ca9eb42462d4c95cb1",
+      "bytes": 5071037,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K1_log03.npz",
+      "sha256": "9679500c033cbd12e2354681378be8ee55f5dd3a25a445093138e7fe7de99e52",
+      "bytes": 44352,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K1_log04.npz",
+      "sha256": "820fcd8c48b2a532a594f81ab4b52619460f5326ab5ca8cbd0f69805219b0df8",
+      "bytes": 69579,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K3/complete.json",
+      "sha256": "592423efaf74b71c2a49b2cc150992cdc000b0b8c7762ee8797ecf68c44cb967",
+      "bytes": 539817,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K3/hurdle.npz",
+      "sha256": "c4752cff1bc6ef392f089956a407bdcc615eef8b386df2892fee0eb039aa85bd",
+      "bytes": 5126097,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K3_log03.npz",
+      "sha256": "203f6a7e6760f657b1dde07a907f5216614c7d1f916febc03689d989848466bc",
+      "bytes": 44390,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K3_log04.npz",
+      "sha256": "214280042bf82e71945083cd8fb4585fb76286f0abdb4a7bdd12b2021c2440db",
+      "bytes": 69612,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K5/complete.json",
+      "sha256": "9910f22d2fe117b6da06f7375a80487553941a47bf85b95be4f5d2c0f4f44154",
+      "bytes": 539767,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K5/hurdle.npz",
+      "sha256": "125a6228413de57ef14d13e85d15153bb5372bda8c16421b383060231b1cd113",
+      "bytes": 5136095,
+      "role": "server_only_probability_field"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K5_log03.npz",
+      "sha256": "d2bd004cea34bfd66f95272a114c787ace9410a380e9842cb547776a141a0edc",
+      "bytes": 44338,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K5_log04.npz",
+      "sha256": "6a7a932dbf50e5f4b4542021cc7cedd3dedefcacf8913e45865847982b98efb0",
+      "bytes": 69574,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/cached_GP_parity.json",
+      "sha256": "862e8115e81ad87af212e3db3d3ae5f647e5909708bce30b192edeb0b78af659",
+      "bytes": 5010,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/comparison.json",
+      "sha256": "4ae1f3d4a96d00958adc1077fb1d4408d987b6746c4934b4df8357ad4f34f982",
+      "bytes": 141785,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/contexts_complete.json",
+      "sha256": "6164fef1189ec205424f4c7c62b1fe76c9225261600f6467c742a7c49febd42c",
+      "bytes": 4990,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/freeze.json",
+      "sha256": "13d96425a1c06f624d2fd4b153624965b6015d470c4f61a65b5e31d5d89a8227",
+      "bytes": 21215,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/predictions.json",
+      "sha256": "176094621bf9b58ffd68b1016a26290d93168d8c4b150023ba53703a8378f787",
+      "bytes": 14083,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/predictions_progress.json",
+      "sha256": "a9097f12a196b1d6edfb0d6c8223d871db3004b172081f10218fc604bda791b8",
+      "bytes": 11883,
+      "role": "released_metadata_or_stream"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/scores.json",
+      "sha256": "ded68944e8ef9045d52b728f492e41d3fc8d926f62b51a12f9f277f1dc515588",
+      "bytes": 298628,
+      "role": "released_metadata_or_stream"
+    }
+  ],
+  "metadata_files": [
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K1/complete.json",
+      "sha256": "50dc1fedb6a1eb6c527f0491d7c73316aa0c2b3fad1ccb79a2c91a8fd468b8a0",
+      "bytes": 526258,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K1/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K3/complete.json",
+      "sha256": "06733eda6217d15067ec0029b7080483f5524f2d4feab1261b7919034ab07152",
+      "bytes": 526182,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K3/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K5/complete.json",
+      "sha256": "0e471d1a79e45c45c04acb4108f6987a485aa5c40b7af811e4acafe8ec4f5733",
+      "bytes": 530454,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F2_K5/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K1/complete.json",
+      "sha256": "332e5e8d8aa19e55f1c967777af2ffd2fdea6c69abd981c67eefcfe0b25a43b4",
+      "bytes": 446760,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K1/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K3/complete.json",
+      "sha256": "7dd51b54f0f196ea8d27d2a080887d8e3d37742392c8a89e123ff000e0b9ea64",
+      "bytes": 454486,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K3/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K5/complete.json",
+      "sha256": "f1a69726a3d7a9b164754a17ddad9ed6fccb30fc58c00017d9f73e98ddf2a41b",
+      "bytes": 468972,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F3_K5/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K1/complete.json",
+      "sha256": "dff76407d183edec931c12066770da619a4ff331e1bd7b5cb3d8ad12e480e931",
+      "bytes": 488278,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K1/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K3/complete.json",
+      "sha256": "6b558ce37392ccabf141f2e2f6fb4171ef384ef85e63da30d5bdaad29813bf35",
+      "bytes": 488692,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K3/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K5/complete.json",
+      "sha256": "344c96fd196d37bfab71de7eb8e20fe5247f863d47d787b9ffb05df538233bc5",
+      "bytes": 495975,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F4_K5/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K1/complete.json",
+      "sha256": "92fb34ed6793fba71e3eb54c223d6d481624572503f1b277572f6b0ed63c3525",
+      "bytes": 519528,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K1/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K3/complete.json",
+      "sha256": "7bf9b94763ba588a046a7666ab705cdc4482a61c7d47ba748879de245028a636",
+      "bytes": 526201,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K3/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K5/complete.json",
+      "sha256": "2e3c1bdfd3c183a74dd10744c80a4ee63f3d021dd518b2a3c23141d2929c99d5",
+      "bytes": 526248,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F5_K5/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K1/complete.json",
+      "sha256": "51cb857afdf579cdc805db1e2e647cb59354596d8bce01a5db0f20c53a5d50cd",
+      "bytes": 539865,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K1/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K3/complete.json",
+      "sha256": "592423efaf74b71c2a49b2cc150992cdc000b0b8c7762ee8797ecf68c44cb967",
+      "bytes": 539817,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K3/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K5/complete.json",
+      "sha256": "9910f22d2fe117b6da06f7375a80487553941a47bf85b95be4f5d2c0f4f44154",
+      "bytes": 539767,
+      "member": "results/ipin2025_detection_ipw20_20261111/IPIN2025_B2025F6_K5/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/cached_GP_parity.json",
+      "sha256": "862e8115e81ad87af212e3db3d3ae5f647e5909708bce30b192edeb0b78af659",
+      "bytes": 5010,
+      "member": "results/ipin2025_detection_ipw20_20261111/cached_GP_parity.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/comparison.json",
+      "sha256": "4ae1f3d4a96d00958adc1077fb1d4408d987b6746c4934b4df8357ad4f34f982",
+      "bytes": 141785,
+      "member": "results/ipin2025_detection_ipw20_20261111/comparison.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/contexts_complete.json",
+      "sha256": "6164fef1189ec205424f4c7c62b1fe76c9225261600f6467c742a7c49febd42c",
+      "bytes": 4990,
+      "member": "results/ipin2025_detection_ipw20_20261111/contexts_complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/freeze.json",
+      "sha256": "13d96425a1c06f624d2fd4b153624965b6015d470c4f61a65b5e31d5d89a8227",
+      "bytes": 21215,
+      "member": "results/ipin2025_detection_ipw20_20261111/freeze.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/predictions.json",
+      "sha256": "176094621bf9b58ffd68b1016a26290d93168d8c4b150023ba53703a8378f787",
+      "bytes": 14083,
+      "member": "results/ipin2025_detection_ipw20_20261111/predictions.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/predictions_progress.json",
+      "sha256": "a9097f12a196b1d6edfb0d6c8223d871db3004b172081f10218fc604bda791b8",
+      "bytes": 11883,
+      "member": "results/ipin2025_detection_ipw20_20261111/predictions_progress.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111/scores.json",
+      "sha256": "ded68944e8ef9045d52b728f492e41d3fc8d926f62b51a12f9f277f1dc515588",
+      "bytes": 298628,
+      "member": "results/ipin2025_detection_ipw20_20261111/scores.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/execution_check.json",
+      "sha256": "fd32d595410bcda4debc634207c4a03c44b2d74f45ae01ae55e5308727f3689e",
+      "bytes": 3015,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/execution_check.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/launch_freeze.json",
+      "sha256": "46aedbdf0584687a06f8e6b151c35b40faaab09034750bbaacc6b72c578b92e5",
+      "bytes": 4535,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/launch_freeze.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/network_usage.json",
+      "sha256": "bb36f9aa50127859e21d48bacaf20456e365eb4d08523adad37873f8526c7132",
+      "bytes": 891,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/network_usage.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/package_results.py",
+      "sha256": "5058bfb1ae4eef4786d9ba748cd6bbc263bfffa0cedae1fb8f0f15017ee70149",
+      "bytes": 4164,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/package_results.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/predict.ended",
+      "sha256": "0318593b7cac53ce2d7d4600d47f1a6d81d7fa5e53e62fc2e238821dd85dd464",
+      "bytes": 21,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/predict.ended"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/predict.exit.status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/predict.exit.status"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/predict.launcher.pid",
+      "sha256": "c9eee609520d6da9ffa68ac230a7ca661b233e508e956709142aff7f094247d6",
+      "bytes": 8,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/predict.launcher.pid"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/predict.log",
+      "sha256": "9b45cd0d3c9f37f801dcedda6b18695aa8fb180d9d77783adad6ca60d5a6b24f",
+      "bytes": 1791,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/predict.log"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/predict.sh",
+      "sha256": "e43cff860f278c088003327767bd64771622b8c030f3eb2676e5722e5ff02179",
+      "bytes": 1336,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/predict.sh"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/predict.started",
+      "sha256": "2f92923290a0c9939c13b8e1e74cbf23e306873df42dc43d2efb19f18bf5a454",
+      "bytes": 21,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/predict.started"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/predict_resume1.sh",
+      "sha256": "1720f150f3438a6adb5f292f31231d2bfc54c00ffe565362c64decb6e5f014ee",
+      "bytes": 1369,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/predict_resume1.sh"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/prepare.ended",
+      "sha256": "6b2e5fdc2bb89a70c42e4c5c2705a3e7b21853f16cf19472536e3fdafd97203f",
+      "bytes": 21,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/prepare.ended"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/prepare.exit.status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/prepare.exit.status"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/prepare.launcher.pid",
+      "sha256": "d89e16a588f14c589989008630653034c72272e1c71867f47df6249b8674efca",
+      "bytes": 8,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/prepare.launcher.pid"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/prepare.log",
+      "sha256": "73b514f0a3290c675d573f76608b8db657262ea9a60013bb29980b480e8cfc5e",
+      "bytes": 486,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/prepare.log"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/prepare.sh",
+      "sha256": "01af09ed6910d1cd5910d7b471001c3052344f4a3de15aff65343f9daea6525c",
+      "bytes": 1336,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/prepare.sh"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/prepare.started",
+      "sha256": "463417ffbf35187ffaaeb21c7dd3014b93c87412c6875f030d3e68681220e418",
+      "bytes": 21,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/prepare.started"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/prepare_resume1.sh",
+      "sha256": "71a46d0e36037659982a2ad6c33408c568aca56c9718a6d10c18c37b8f8f9947",
+      "bytes": 1369,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/prepare_resume1.sh"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/score.ended",
+      "sha256": "e4b6c623826717a2c10d51358cc713ee1306df956c2fae22222cdd1d5e92e6df",
+      "bytes": 21,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/score.ended"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/score.exit.status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/score.exit.status"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/score.launcher.pid",
+      "sha256": "07227a222faee31781c2faeb1a165c0dd56b4471bfbd67770cd3378adb492313",
+      "bytes": 8,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/score.launcher.pid"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/score.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/score.log"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/score.sh",
+      "sha256": "d3ba9c81735a513cd227ebf4b5212bc5bf11db197b70727489d563d7cb1fdf28",
+      "bytes": 1328,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/score.sh"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/score.started",
+      "sha256": "977deff7661d8e939c04aa8acbce5bdfa58f298ba060cc7d0ac95fd3fadec002",
+      "bytes": 21,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/score.started"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/score_resume1.sh",
+      "sha256": "9e599a4077f6d8c2b6e86257f1c9b79bc7a1daf1630bcf92772c26ca4cd60c58",
+      "bytes": 1361,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/score_resume1.sh"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/adaptation.py",
+      "sha256": "dc6a8a65d427fc573cf19ef0e984dedd6e15316714fb458e8d05d30d4db27fba",
+      "bytes": 11783,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/adaptation.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/building_information_gp_trial.py",
+      "sha256": "dd49fa8b7cd023b8faf1ac1470cf94c4e4f92a2af86447c9a6458ba69ad3eaed",
+      "bytes": 19898,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/building_information_gp_trial.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/building_information_tab_trial.py",
+      "sha256": "44a1579a63c5dbe6ceb12abeba90a16f019b474bb8158e68e4a82200bbfdc834",
+      "bytes": 16130,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/building_information_tab_trial.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/cached_retained_readout.py",
+      "sha256": "13384ea458e522b01fba46609114bb752827246b6bfae9d0b2b74afdcc08616c",
+      "bytes": 4260,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/cached_retained_readout.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/episodic_tasks.py",
+      "sha256": "cc2461e847889d4929af1f9be661214b6e6e1c5529d5550cb4d38cd76e94c02f",
+      "bytes": 5162,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/episodic_tasks.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/fields.py",
+      "sha256": "25d9d929d317baf38e16924822d26b77a9d94a35be6dbea0cfda0c16818efbbb",
+      "bytes": 6213,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/fields.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/frozen_hurdle_translator.py",
+      "sha256": "7ea5c52b7b94aac540cb9928e583e0c8f2c228f63e38a790aab0505938c1eeac",
+      "bytes": 8619,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/frozen_hurdle_translator.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/hurdle_gp_pool.py",
+      "sha256": "55a80dbf5087eea0961e584c9dee8aeaad6ad68eeba716c4503225f80c81b8f4",
+      "bytes": 6358,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/hurdle_gp_pool.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/ipin2025_confirmation.py",
+      "sha256": "a83d55ff50657b99cde139d6f2162538dc2e0891d39ef9b6bd664842518ae85f",
+      "bytes": 17144,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/ipin2025_confirmation.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/ipin2025_detection_ipw.py",
+      "sha256": "43499fdae5bfdb081072d31c1d5dd5ad75b85b95a437aebed4687e0d999f662a",
+      "bytes": 16095,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/ipin2025_detection_ipw.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/ipin2025_observation_data.py",
+      "sha256": "22a2ff959f3ff09463e503845f3ffe88597ec6a8ae431fe04f9e7f8b99fa0bb1",
+      "bytes": 13460,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/ipin2025_observation_data.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/ipin2025_score.py",
+      "sha256": "242941f00b6baf00a4b01f3df36f8c9a257edb2763816e421756b3bb80873365",
+      "bytes": 10831,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/ipin2025_score.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/observations.py",
+      "sha256": "930fdd3ffe2a2bb40dbcd897aae61b6cf0efc0b4e1ce9548fedc113e9ce059c7",
+      "bytes": 5187,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/observations.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/position_fusion_gp.py",
+      "sha256": "7c1f3397bff78d94fd1140dac52f1c00ba591f32227820f3f4ed2361ee2b9f91",
+      "bytes": 8986,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/position_fusion_gp.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/posterior.py",
+      "sha256": "72b31b7e548b4b0eaa68a9fd63cfce1d7f3f020902a834ec90da3e37272eca4d",
+      "bytes": 8808,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/posterior.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/predict.py",
+      "sha256": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5",
+      "bytes": 2610,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/predict.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/uji.py",
+      "sha256": "b3a83ebeb30c3d3d1d79486d1289c8325dabdf54c5fd1577378ec2abdd8a3444",
+      "bytes": 3647,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/uji.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_detection_ipw20_20261111_source/source_snapshot/vertical_translator/translator.py",
+      "sha256": "50b51aa05330ec1b7335b8be7f8c72f7200de198a933c950e19a9acfd582eacd",
+      "bytes": 5488,
+      "member": "results/ipin2025_detection_ipw20_20261111_source/source_snapshot/vertical_translator/translator.py"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/freeze.json",
+      "sha256": "6fc0475cb9e23014645d1a31853bb8e8b606a68c027d2f6ddc937c6f821d648c",
+      "bytes": 6078,
+      "member": "results/ipin2025_confirmation_20261110/freeze.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/contexts_complete.json",
+      "sha256": "de03679c06d5b3f22b7b5d67c057e78971beb5ce2391cf2289af6fb21370a1f8",
+      "bytes": 4945,
+      "member": "results/ipin2025_confirmation_20261110/contexts_complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/predictions.json",
+      "sha256": "10fad9325ec3b0ee08837624ee7e0f4f67ce32feb64fb9499b30e7c17a297026",
+      "bytes": 14246,
+      "member": "results/ipin2025_confirmation_20261110/predictions.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/scores.json",
+      "sha256": "50716b22d18af368b1ffbbe9c48f345d24a1dac5335b5792f0d8b216a387ef04",
+      "bytes": 298686,
+      "member": "results/ipin2025_confirmation_20261110/scores.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/cached_readout_check.json",
+      "sha256": "1507e4a7c4048d50d41a4dc97cbb18bbbf6f62bee8d53dda163b88d95bfabc35",
+      "bytes": 2792,
+      "member": "results/ipin2025_confirmation_20261110/cached_readout_check.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/cached_readout_execution.json",
+      "sha256": "56022e657ac665c3b5424e6907673651d9cff0ccdf4abad250f614f3a83faff9",
+      "bytes": 721,
+      "member": "results/ipin2025_confirmation_20261110/cached_readout_execution.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/training_readout_cost.json",
+      "sha256": "cc5485614495336b27d81625e0069bb0264964af4cdbe4bf28edebffe00db71c",
+      "bytes": 1486,
+      "member": "results/ipin2025_confirmation_20261110/training_readout_cost.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/query_stream_inventory.json",
+      "sha256": "36eff2db49f8b19ca9c557cf2a085cb1a63bd23f4ff8407b37c1cc6d7cce5db7",
+      "bytes": 1563,
+      "member": "results/ipin2025_confirmation_20261110/query_stream_inventory.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K1/complete.json",
+      "sha256": "d73d071124f5e74f64b13778d94801789e39aa7ea3ba1bafce07a5e5ed7b4ab9",
+      "bytes": 525721,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K1/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K3/complete.json",
+      "sha256": "3dec77815168f11c11d0a94d4a2c7d7a646ef713261247b3c3439287871ae580",
+      "bytes": 525645,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K3/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K5/complete.json",
+      "sha256": "813d3fe11656e7d76e31b0a4485d22d766576637dec815dcda0d2dc398f40b21",
+      "bytes": 529917,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F2_K5/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F3_K1/complete.json",
+      "sha256": "ec6b7a2c7a2642a88b7b67ac8755a91fbe0e5281b43180ce6709a71d486cddf0",
+      "bytes": 446222,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F3_K1/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F3_K3/complete.json",
+      "sha256": "d0b789115dd01252656b5982cdc3b93b4eef2bbabdf9d490dc93201e7ef92994",
+      "bytes": 453949,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F3_K3/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F3_K5/complete.json",
+      "sha256": "e2622de6b2601732f81239dc07fe078234a1c33de1c134e9e02beff9d4ff3552",
+      "bytes": 468435,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F3_K5/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F4_K1/complete.json",
+      "sha256": "994f2915e1e83a0f6611ef319ab8896405f2b701aa78051625f56fd2efb16a3b",
+      "bytes": 487742,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F4_K1/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F4_K3/complete.json",
+      "sha256": "f6dbec702f9c5767d589213c051f36ef9d809e7ec364fcf1c36deb01792004a2",
+      "bytes": 488153,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F4_K3/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F4_K5/complete.json",
+      "sha256": "0b79cff577fbf3e974f7508589092ba8806d9271a1eca78ea1a3565f1a6c9a63",
+      "bytes": 495438,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F4_K5/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F5_K1/complete.json",
+      "sha256": "71d63d9a4268fd71d2895dd45ae5bd34a7218fb26e14e6881c2032750eed3dd1",
+      "bytes": 518992,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F5_K1/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F5_K3/complete.json",
+      "sha256": "999b540d89cd53de60c0b376e5ec9534b3f005f0a52c1a2e8090dad0907ad068",
+      "bytes": 525665,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F5_K3/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F5_K5/complete.json",
+      "sha256": "f4e8a59e247d057a3061b12574cfeacf4475e2ad7a2e21838c09e8a540c53b9a",
+      "bytes": 525712,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F5_K5/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F6_K1/complete.json",
+      "sha256": "9f55274ca21f9267ee0fe68008b9afda57895798d084df7c7f5d20145e6d71e6",
+      "bytes": 539328,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F6_K1/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F6_K3/complete.json",
+      "sha256": "2e68ef86b33a62252598c523f3ffb2764f2ce68e1c99b386bf0b750d806d99b8",
+      "bytes": 539279,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F6_K3/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/IPIN2025_B2025F6_K5/complete.json",
+      "sha256": "9c5b36ba4c4017a1b7fed4a169cd329288184870939d1784c2190331d45446b6",
+      "bytes": 539230,
+      "member": "results/ipin2025_confirmation_20261110/IPIN2025_B2025F6_K5/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_detipw20_ens5_20261111/freeze.json",
+      "sha256": "419a16553719343694f31d9d231a0af04ba2be1374eee3c3cbee8024eb186deb",
+      "bytes": 7395,
+      "member": "results/claude_hurdle_b0_detipw20_ens5_20261111/freeze.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_detipw20_ens5_20261111/complete.json",
+      "sha256": "3c3e738e6e7237a3379b6f70237099662e1673fa2bc53a666f2cc973c86119ef",
+      "bytes": 3810,
+      "member": "results/claude_hurdle_b0_detipw20_ens5_20261111/complete.json"
+    },
+    {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_detipw20_ens5_20261111/inheritance_check.json",
+      "sha256": "d6b002a6bffb16d3f98677849c633e8ed6f9a8d631f8ca50f6f290594d4500db",
+      "bytes": 2953,
+      "member": "results/claude_hurdle_b0_detipw20_ens5_20261111/inheritance_check.json"
+    }
+  ]
+}

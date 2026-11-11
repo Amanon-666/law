@@ -1,0 +1,1141 @@
+{
+  "complete": true,
+  "methods": {
+    "wknn_S": {
+      "requested_tasks": 9,
+      "completed_tasks": 9,
+      "complete": true,
+      "mean": 52.386541258484286,
+      "p90": 93.04277372034994,
+      "by_K": {
+        "1": {
+          "tasks": 3,
+          "completed_tasks": 3,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 68.37445457702998,
+          "p50": 68.45172371456908,
+          "p90": 123.89155142920247,
+          "query_positions": 180
+        },
+        "3": {
+          "tasks": 3,
+          "completed_tasks": 3,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 45.90191174379385,
+          "p50": 47.437511008341204,
+          "p90": 75.83443352248736,
+          "query_positions": 180
+        },
+        "5": {
+          "tasks": 3,
+          "completed_tasks": 3,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 42.88325745462905,
+          "p50": 39.92784896661357,
+          "p90": 78.7195465391119,
+          "query_positions": 180
+        }
+      }
+    },
+    "wknn_HS": {
+      "requested_tasks": 9,
+      "completed_tasks": 9,
+      "complete": true,
+      "mean": 16.14954689776826,
+      "p90": 32.526248255752044,
+      "by_K": {
+        "1": {
+          "tasks": 3,
+          "completed_tasks": 3,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 17.309751138115352,
+          "p50": 8.501905458596408,
+          "p90": 33.800306197950405,
+          "query_positions": 180
+        },
+        "3": {
+          "tasks": 3,
+          "completed_tasks": 3,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 15.78137144228741,
+          "p50": 8.357623763691048,
+          "p90": 32.826134434564565,
+          "query_positions": 180
+        },
+        "5": {
+          "tasks": 3,
+          "completed_tasks": 3,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 15.357518112902017,
+          "p50": 8.388026439579585,
+          "p90": 30.35894183227903,
+          "query_positions": 180
+        }
+      }
+    },
+    "original_A": {
+      "requested_tasks": 9,
+      "completed_tasks": 9,
+      "complete": true,
+      "mean": 10.76414888165922,
+      "p90": 22.768346113500204,
+      "by_K": {
+        "1": {
+          "tasks": 3,
+          "completed_tasks": 3,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 11.5030400923437,
+          "p50": 6.597000079837212,
+          "p90": 24.32329377760537,
+          "query_positions": 180
+        },
+        "3": {
+          "tasks": 3,
+          "completed_tasks": 3,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 10.349398810370795,
+          "p50": 6.662230856103969,
+          "p90": 21.927736570446474,
+          "query_positions": 180
+        },
+        "5": {
+          "tasks": 3,
+          "completed_tasks": 3,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 10.440007742263166,
+          "p50": 6.509740925699185,
+          "p90": 21.902770149832435,
+          "query_positions": 180
+        }
+      }
+    }
+  },
+  "by_floor": {
+    "1": {
+      "wknn_S": {
+        "requested_tasks": 3,
+        "completed_tasks": 3,
+        "complete": true,
+        "mean": 64.80780772888312,
+        "p90": 107.63272854520548,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 89.44430900828266,
+            "p50": 84.55719553802719,
+            "p90": 124.53076047460783,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 53.15235639004689,
+            "p50": 51.00376640808436,
+            "p90": 82.72954200605058,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 51.826757788319824,
+            "p50": 54.70265670319966,
+            "p90": 83.36648028833103,
+            "query_positions": 60
+          }
+        }
+      },
+      "wknn_HS": {
+        "requested_tasks": 3,
+        "completed_tasks": 3,
+        "complete": true,
+        "mean": 15.984032361804111,
+        "p90": 33.35524526032877,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 16.78700491797815,
+            "p50": 10.941310246820436,
+            "p90": 33.800306197950405,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 15.89901962078037,
+            "p50": 9.592480529281247,
+            "p90": 33.35524526032877,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 15.266072546653795,
+            "p50": 9.59248052928124,
+            "p90": 30.925701893136953,
+            "query_positions": 60
+          }
+        }
+      },
+      "original_A": {
+        "requested_tasks": 3,
+        "completed_tasks": 3,
+        "complete": true,
+        "mean": 9.21707915212935,
+        "p90": 18.667437242925196,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.488434638418507,
+            "p50": 7.061287750916657,
+            "p90": 19.042591276063987,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.076636803720767,
+            "p50": 7.052657918460202,
+            "p90": 18.52886863973263,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 9.086166014248768,
+            "p50": 6.634402194350035,
+            "p90": 17.925168634527473,
+            "query_positions": 60
+          }
+        }
+      }
+    },
+    "2": {
+      "wknn_S": {
+        "requested_tasks": 3,
+        "completed_tasks": 3,
+        "complete": true,
+        "mean": 54.4422584058343,
+        "p90": 108.10634140725747,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 69.13390689255539,
+            "p50": 58.760465528018614,
+            "p90": 133.81574613720056,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 50.95398054451847,
+            "p50": 53.742162923761555,
+            "p90": 77.998624809036,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 43.23888778042904,
+            "p50": 36.037425074710995,
+            "p90": 79.04175533529565,
+            "query_positions": 60
+          }
+        }
+      },
+      "wknn_HS": {
+        "requested_tasks": 3,
+        "completed_tasks": 3,
+        "complete": true,
+        "mean": 19.57365142099902,
+        "p90": 59.38991954492205,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 22.192496102812378,
+            "p50": 8.353032413034821,
+            "p90": 107.37858579539935,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 18.98613015564222,
+            "p50": 8.353032413034821,
+            "p90": 59.38991954492207,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 17.54232800454247,
+            "p50": 6.841810459440297,
+            "p90": 29.01633813568926,
+            "query_positions": 60
+          }
+        }
+      },
+      "original_A": {
+        "requested_tasks": 3,
+        "completed_tasks": 3,
+        "complete": true,
+        "mean": 11.402384759909092,
+        "p90": 25.19936140649947,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 12.793293462319513,
+            "p50": 6.39438402932012,
+            "p90": 28.300930302837877,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.511478185098104,
+            "p50": 7.260608598850316,
+            "p90": 24.658590599107878,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.902382632309651,
+            "p50": 6.998615597528335,
+            "p90": 22.121653671586476,
+            "query_positions": 60
+          }
+        }
+      }
+    },
+    "3": {
+      "wknn_S": {
+        "requested_tasks": 3,
+        "completed_tasks": 3,
+        "complete": true,
+        "mean": 37.90955764073546,
+        "p90": 67.92736158855037,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 46.54514783025191,
+            "p50": 44.758186350346996,
+            "p90": 78.94063203665594,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 33.599398296816176,
+            "p50": 28.92797601670693,
+            "p90": 57.7458259237565,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 33.58412679513829,
+            "p50": 34.26568425005817,
+            "p90": 53.13600835376574,
+            "query_positions": 60
+          }
+        }
+      },
+      "wknn_HS": {
+        "requested_tasks": 3,
+        "completed_tasks": 3,
+        "complete": true,
+        "mean": 12.890956910501654,
+        "p90": 30.939096221375113,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 12.94975239355552,
+            "p50": 7.947186435750466,
+            "p90": 31.095080859710976,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 12.458964550439648,
+            "p50": 7.1623753105012264,
+            "p90": 29.084448455948458,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 13.26415378750979,
+            "p50": 8.173332870149707,
+            "p90": 30.3812244132557,
+            "query_positions": 60
+          }
+        }
+      },
+      "original_A": {
+        "requested_tasks": 3,
+        "completed_tasks": 3,
+        "complete": true,
+        "mean": 11.672982732939223,
+        "p90": 30.1575834855025,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 12.22739217629308,
+            "p50": 6.251110261161976,
+            "p90": 30.237902229568025,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 11.460081442293513,
+            "p50": 5.8098276843857874,
+            "p90": 30.190011385806116,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 11.331474580231077,
+            "p50": 5.523742479320132,
+            "p90": 29.70058958206596,
+            "query_positions": 60
+          }
+        }
+      }
+    }
+  },
+  "common_completed_tasks": {
+    "task_ids": [
+      "tampere/SAH1/F1/K1/r0",
+      "tampere/SAH1/F1/K3/r0",
+      "tampere/SAH1/F1/K5/r0",
+      "tampere/SAH1/F2/K1/r0",
+      "tampere/SAH1/F2/K3/r0",
+      "tampere/SAH1/F2/K5/r0",
+      "tampere/SAH1/F3/K1/r0",
+      "tampere/SAH1/F3/K3/r0",
+      "tampere/SAH1/F3/K5/r0"
+    ],
+    "methods": {
+      "wknn_S": {
+        "requested_tasks": 9,
+        "completed_tasks": 9,
+        "complete": true,
+        "mean": 52.386541258484286,
+        "p90": 93.04277372034994,
+        "by_K": {
+          "1": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 68.37445457702998,
+            "p50": 68.45172371456908,
+            "p90": 123.89155142920247,
+            "query_positions": 180
+          },
+          "3": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 45.90191174379385,
+            "p50": 47.437511008341204,
+            "p90": 75.83443352248736,
+            "query_positions": 180
+          },
+          "5": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 42.88325745462905,
+            "p50": 39.92784896661357,
+            "p90": 78.7195465391119,
+            "query_positions": 180
+          }
+        }
+      },
+      "wknn_HS": {
+        "requested_tasks": 9,
+        "completed_tasks": 9,
+        "complete": true,
+        "mean": 16.14954689776826,
+        "p90": 32.526248255752044,
+        "by_K": {
+          "1": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 17.309751138115352,
+            "p50": 8.501905458596408,
+            "p90": 33.800306197950405,
+            "query_positions": 180
+          },
+          "3": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 15.78137144228741,
+            "p50": 8.357623763691048,
+            "p90": 32.826134434564565,
+            "query_positions": 180
+          },
+          "5": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 15.357518112902017,
+            "p50": 8.388026439579585,
+            "p90": 30.35894183227903,
+            "query_positions": 180
+          }
+        }
+      },
+      "original_A": {
+        "requested_tasks": 9,
+        "completed_tasks": 9,
+        "complete": true,
+        "mean": 10.76414888165922,
+        "p90": 22.768346113500204,
+        "by_K": {
+          "1": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 11.5030400923437,
+            "p50": 6.597000079837212,
+            "p90": 24.32329377760537,
+            "query_positions": 180
+          },
+          "3": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.349398810370795,
+            "p50": 6.662230856103969,
+            "p90": 21.927736570446474,
+            "query_positions": 180
+          },
+          "5": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.440007742263166,
+            "p50": 6.509740925699185,
+            "p90": 21.902770149832435,
+            "query_positions": 180
+          }
+        }
+      }
+    }
+  },
+  "F2_existing_GP_and_coordinate_control": {
+    "complete": true,
+    "methods": {
+      "wknn_S": {
+        "tasks": 3,
+        "mean": 54.4422584058343,
+        "p90": 108.10634140725747,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 69.13390689255539,
+            "p50": 58.760465528018614,
+            "p90": 133.81574613720056,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 50.95398054451847,
+            "p50": 53.742162923761555,
+            "p90": 77.998624809036,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 43.23888778042904,
+            "p50": 36.037425074710995,
+            "p90": 79.04175533529565,
+            "query_positions": 60
+          }
+        }
+      },
+      "wknn_HS": {
+        "tasks": 3,
+        "mean": 19.57365142099902,
+        "p90": 59.38991954492205,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 22.192496102812378,
+            "p50": 8.353032413034821,
+            "p90": 107.37858579539935,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 18.98613015564222,
+            "p50": 8.353032413034821,
+            "p90": 59.38991954492207,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 17.54232800454247,
+            "p50": 6.841810459440297,
+            "p90": 29.01633813568926,
+            "query_positions": 60
+          }
+        }
+      },
+      "original_A02": {
+        "tasks": 3,
+        "mean": 11.402384759909092,
+        "p90": 25.19936140649947,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 12.793293462319513,
+            "p50": 6.39438402932012,
+            "p90": 28.300930302837877,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.511478185098104,
+            "p50": 7.260608598850316,
+            "p90": 24.658590599107878,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.902382632309651,
+            "p50": 6.998615597528335,
+            "p90": 22.121653671586476,
+            "query_positions": 60
+          }
+        }
+      },
+      "legacy_GP": {
+        "tasks": 3,
+        "mean": 9.02261803723302,
+        "p90": 22.362654383437697,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.277818922239904,
+            "p50": 7.406598686979921,
+            "p90": 22.799143236714265,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.953623390586165,
+            "p50": 6.358181170950976,
+            "p90": 22.144762556287095,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 7.836411798872984,
+            "p50": 5.866704916238426,
+            "p90": 13.666369865153294,
+            "query_positions": 60
+          }
+        }
+      },
+      "coordinate_half": {
+        "tasks": 3,
+        "mean": 9.1797157960199,
+        "p90": 21.569262562943393,
+        "by_K": {
+          "1": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 10.514876325138603,
+            "p50": 6.250178062364048,
+            "p90": 23.479959487197323,
+            "query_positions": 60
+          },
+          "3": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.772002299198641,
+            "p50": 5.606372156311548,
+            "p90": 19.41278347859015,
+            "query_positions": 60
+          },
+          "5": {
+            "tasks": 1,
+            "completed_tasks": 1,
+            "failed_tasks": 0,
+            "complete": true,
+            "unfinished_optimization_tasks": [],
+            "mean": 8.252268763722448,
+            "p50": 4.979285234134855,
+            "p90": 18.584425066176617,
+            "query_positions": 60
+          }
+        }
+      }
+    },
+    "coordinate_half": ".5*(saved original A02 projected + saved original GP posterior mean); fixed coordinate combination",
+    "identities": {
+      "A": "Original B0+B2 five-model HurdleField, full55 features/full candidate positions",
+      "GP": "Original4m aggregation of all3998 H scans, existing756 fields and B0-source parameters",
+      "sources": "A uses B0+B2 training; GP parameters fitted only B0 F0-F2"
+    },
+    "scope": "SAH1 F2 static recorded-position resampling, actualR1, unknown acquisition/device identity, already studied external dataset",
+    "new_A_GP_inference_calls": 0,
+    "inputs_sha256": {
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/freeze.json": "c32d09fbbb54fe14d265146ab4b70f17f7a553641100fdae77383958f5e665a2",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_legacyGP_F2_r0_20261111/freeze.json": "fb7979dc3fdbfa54175b3eb7e00910af586585c0212696d88274ddd01f9c7653",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/original_A/tampere/SAH1/F2/K1/r0.json": "608292232e000c766b6e0a42429f39d7453bd843de65e4cf8593c821d5459205",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_legacyGP_F2_r0_20261111/events/tampere_legacy_gp/tampere/SAH1/F2/K1/r0.json": "d58126b7f75df2fefee87e73872180e534ac96f5e032df279b9a79b2f9e3d710",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_S/tampere/SAH1/F2/K1/r0.json": "f6124d39a27c21c480a9026f9e8908b8981497a132ab7ae18717bc097bd011de",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_HS/tampere/SAH1/F2/K1/r0.json": "f08fced46dc0c26fc439a54a7026cc196b874f12fc91a59f633767329e7e224b",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/original_A/tampere/SAH1/F2/K3/r0.json": "82eef446934ff3739155edb86c3a5017b1f469424cecf0e878f8ec95c0f4332b",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_legacyGP_F2_r0_20261111/events/tampere_legacy_gp/tampere/SAH1/F2/K3/r0.json": "f39fcf12cfd6e2620ab1107e4b15c02cd97ec5ee4149eb4b8e313909db45ff1f",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_S/tampere/SAH1/F2/K3/r0.json": "7a61ad6536fccde276e3f856d0d98c804662df66986fb19444bac8c7ec2983ff",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_HS/tampere/SAH1/F2/K3/r0.json": "c7ac331d03c5761b0b2d23860ebfa1a84594f83e800c8a9132915c54675682b7",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/original_A/tampere/SAH1/F2/K5/r0.json": "fa36e270b9e07bc144e43f99bee03a2b8fa66c357b96c3326ee509dcf95a9433",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_legacyGP_F2_r0_20261111/events/tampere_legacy_gp/tampere/SAH1/F2/K5/r0.json": "b9d95ea8b3e002d85445f136b93508c9df4e1cdf68f3f160143b86ec5ff0837a",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_S/tampere/SAH1/F2/K5/r0.json": "72a40c797521e18bb78e89dfe402e5fa80934e567a056f9a72139793ea930236",
+      "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_HS/tampere/SAH1/F2/K5/r0.json": "5555737cf21ce5e31a99a924d327460eb9863ba34b201bb72e4e7381ac85ffe6"
+    },
+    "code_sha256": "f2fdcf9e93967b8450789f6b8144463deb992dda93f7ffb21c607c89e6aa43dc"
+  },
+  "execution_segments": [
+    {
+      "floor": 1,
+      "runner_pid": 3924632,
+      "time_pid": 3924636,
+      "started_at": "2026-11-10T23:42:02Z",
+      "ended_at": "2026-11-10T23:56:58Z",
+      "exit_code": 124,
+      "elapsed_seconds": 896,
+      "state": "exited",
+      "outer_timeout_seconds": 900,
+      "peak_RSS_kbytes": 10948724,
+      "CPU_user_seconds": 1542.02,
+      "CPU_system_seconds": 157.97,
+      "segment": "F1",
+      "record_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/F1.runtime.json",
+      "thread_configuration": {
+        "CPU_threads": 2
+      }
+    },
+    {
+      "floor": 1,
+      "runner_pid": 3947664,
+      "time_pid": 3947668,
+      "started_at": "2026-11-10T23:57:56Z",
+      "ended_at": "2026-11-11T00:02:11Z",
+      "exit_code": 0,
+      "elapsed_seconds": 255,
+      "state": "exited",
+      "outer_timeout_seconds": 900,
+      "peak_RSS_kbytes": 10574800,
+      "CPU_user_seconds": 811.15,
+      "CPU_system_seconds": 109.41,
+      "segment": "F1_resume1",
+      "record_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/F1_resume1.runtime.json",
+      "thread_configuration": {
+        "CPU_threads": 4,
+        "effective_threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+            "version": "0.3.31.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Haswell"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+            "version": "0.3.29",
+            "threading_layer": "pthreads",
+            "architecture": "Haswell"
+          }
+        ],
+        "pending_events": [
+          {
+            "method": "original_A",
+            "task_id": "tampere/SAH1/F1/K5/r0"
+          }
+        ],
+        "wrapper_sha256": "626e000426978fe6229cc78b808d8f051299bd96aedd66483af7216616e999c3",
+        "snapshot_run_sha256": "f4b2784394650557b0dff62d5c593536c56fa4d107589a412926f366d18a1c00",
+        "resource_change_only": true
+      }
+    },
+    {
+      "floor": 2,
+      "runner_pid": 3881814,
+      "time_pid": 3881818,
+      "started_at": "2026-11-10T23:19:02Z",
+      "ended_at": "2026-11-10T23:27:36Z",
+      "exit_code": 0,
+      "elapsed_seconds": 514,
+      "state": "exited",
+      "outer_timeout_seconds": 900,
+      "peak_RSS_kbytes": 5771340,
+      "CPU_user_seconds": 949.52,
+      "CPU_system_seconds": 25.81,
+      "segment": "F2",
+      "record_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/F2.runtime.json",
+      "thread_configuration": {
+        "CPU_threads": 2
+      }
+    },
+    {
+      "floor": 3,
+      "runner_pid": 3956087,
+      "time_pid": 3956091,
+      "started_at": "2026-11-11T00:03:44Z",
+      "ended_at": "2026-11-11T00:17:57Z",
+      "exit_code": 0,
+      "elapsed_seconds": 853,
+      "state": "exited",
+      "outer_timeout_seconds": 900,
+      "peak_RSS_kbytes": 11456896,
+      "CPU_user_seconds": 2688.0,
+      "CPU_system_seconds": 390.2,
+      "segment": "F3_threads4",
+      "record_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/F3_threads4.runtime.json",
+      "thread_configuration": {
+        "CPU_threads": 4,
+        "effective_threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+            "version": "0.3.31.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Haswell"
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+            "version": "0.3.29",
+            "threading_layer": "pthreads",
+            "architecture": "Haswell"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+            "version": null
+          }
+        ],
+        "pending_events": [
+          {
+            "method": "wknn_S",
+            "task_id": "tampere/SAH1/F3/K1/r0"
+          },
+          {
+            "method": "wknn_S",
+            "task_id": "tampere/SAH1/F3/K3/r0"
+          },
+          {
+            "method": "wknn_S",
+            "task_id": "tampere/SAH1/F3/K5/r0"
+          },
+          {
+            "method": "wknn_HS",
+            "task_id": "tampere/SAH1/F3/K1/r0"
+          },
+          {
+            "method": "wknn_HS",
+            "task_id": "tampere/SAH1/F3/K3/r0"
+          },
+          {
+            "method": "wknn_HS",
+            "task_id": "tampere/SAH1/F3/K5/r0"
+          },
+          {
+            "method": "original_A",
+            "task_id": "tampere/SAH1/F3/K1/r0"
+          },
+          {
+            "method": "original_A",
+            "task_id": "tampere/SAH1/F3/K3/r0"
+          },
+          {
+            "method": "original_A",
+            "task_id": "tampere/SAH1/F3/K5/r0"
+          }
+        ],
+        "wrapper_sha256": "626e000426978fe6229cc78b808d8f051299bd96aedd66483af7216616e999c3",
+        "snapshot_run_sha256": "f4b2784394650557b0dff62d5c593536c56fa4d107589a412926f366d18a1c00",
+        "resource_change_only": true
+      }
+    }
+  ],
+  "cumulative_wall_seconds": 2518,
+  "cumulative_CPU_seconds": 6674.08,
+  "peak_RSS_kbytes": 11456896,
+  "GP_execution": {
+    "floor": 2,
+    "runner_pid": 3903562,
+    "time_pid": 3903566,
+    "started_at": "2026-11-10T23:30:28Z",
+    "ended_at": "2026-11-10T23:40:20Z",
+    "exit_code": 0,
+    "elapsed_seconds": 592,
+    "state": "exited",
+    "outer_timeout_seconds": 900,
+    "peak_RSS_kbytes": 1834600,
+    "CPU_seconds": 930.02
+  },
+  "total_A_and_GP_wall_seconds": 3110,
+  "total_A_and_GP_CPU_seconds": 7604.1,
+  "identity": "Fixed original five-model HurdleField trained on UJI B0+B2, unmodified55 features and full H/S candidate atoms; resource-only thread override on recorded resumed/later events",
+  "scope": "External SAH1, already studied data, static recorded-position resampling, actualR1, acquisitions unknown, fixed same Query across K. Not cross-device or blind validation.",
+  "boundaries": "GP available only F2:4m aggregation of all3998 H scans and B0-only fitted parameters. Coordinate_half is fixed saved-coordinate averaging, not a log-score probability pool.",
+  "inputs_sha256": {
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/preflight.json": "1e02523d248cbd01e822d75af53f2ffaa4dc260bdf0ad259ba743af358c305b2",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F1_r0_20261111/freeze.json": "db410f01868a1872a41be94dc664cced63aa78c1852b6a8bf72b2e909148be20",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F1_r0_20261111/events/wknn_S/tampere/SAH1/F1/K1/r0.json": "60c46a2761a22af0e8a638e24650fbdca46587db2f8294d3749c19a169374259",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F1_r0_20261111/events/wknn_HS/tampere/SAH1/F1/K1/r0.json": "2157a640a300335a811475ea7fd869155693a344c45c5bec1a95657de7ab8e77",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F1_r0_20261111/events/original_A/tampere/SAH1/F1/K1/r0.json": "fd4ef499a2d6779b7db16a6237d46ff55aeb3206b8ac608bd8a0611129df406e",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F1_r0_20261111/events/wknn_S/tampere/SAH1/F1/K3/r0.json": "f74c1797c59f6e21c33595674a055fd44973bab6fef6f87b65bbf85043f6edbd",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F1_r0_20261111/events/wknn_HS/tampere/SAH1/F1/K3/r0.json": "cb806c96d24868fd67ab1cb9e30aee2b6da65165ac6b2c9e960ddbb6a41d4407",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F1_r0_20261111/events/original_A/tampere/SAH1/F1/K3/r0.json": "292c1d87db23556d38380ce1b252775411a10ab81321e0930a8a2687fde8eb99",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F1_r0_20261111/events/wknn_S/tampere/SAH1/F1/K5/r0.json": "86499ac6d142c70b488564672d852dfa92b0ab35d967a82ccc5aa28619a9b110",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F1_r0_20261111/events/wknn_HS/tampere/SAH1/F1/K5/r0.json": "3ced87554c54d3800aaef35bdd0679d9710bad0e89458b09b52f9dfd36a70440",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F1_r0_20261111/events/original_A/tampere/SAH1/F1/K5/r0.json": "4ca7bbce755ff59c6d73ca9bfa00a06c837508906e20da1503b548bc1dc74192",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/freeze.json": "c32d09fbbb54fe14d265146ab4b70f17f7a553641100fdae77383958f5e665a2",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_S/tampere/SAH1/F2/K1/r0.json": "f6124d39a27c21c480a9026f9e8908b8981497a132ab7ae18717bc097bd011de",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_HS/tampere/SAH1/F2/K1/r0.json": "f08fced46dc0c26fc439a54a7026cc196b874f12fc91a59f633767329e7e224b",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/original_A/tampere/SAH1/F2/K1/r0.json": "608292232e000c766b6e0a42429f39d7453bd843de65e4cf8593c821d5459205",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_S/tampere/SAH1/F2/K3/r0.json": "7a61ad6536fccde276e3f856d0d98c804662df66986fb19444bac8c7ec2983ff",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_HS/tampere/SAH1/F2/K3/r0.json": "c7ac331d03c5761b0b2d23860ebfa1a84594f83e800c8a9132915c54675682b7",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/original_A/tampere/SAH1/F2/K3/r0.json": "82eef446934ff3739155edb86c3a5017b1f469424cecf0e878f8ec95c0f4332b",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_S/tampere/SAH1/F2/K5/r0.json": "72a40c797521e18bb78e89dfe402e5fa80934e567a056f9a72139793ea930236",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/wknn_HS/tampere/SAH1/F2/K5/r0.json": "5555737cf21ce5e31a99a924d327460eb9863ba34b201bb72e4e7381ac85ffe6",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F2_r0_20261111/events/original_A/tampere/SAH1/F2/K5/r0.json": "fa36e270b9e07bc144e43f99bee03a2b8fa66c357b96c3326ee509dcf95a9433",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F3_r0_20261111/freeze.json": "f199bec2769ff67e4ee738c00eeab6313cf55365fe51d80efd6bc8d964f19908",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F3_r0_20261111/events/wknn_S/tampere/SAH1/F3/K1/r0.json": "130faa771326b174f7cc3a9feccb02db6dc99287c96eddaf1ebeb9cd9c8eb99f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F3_r0_20261111/events/wknn_HS/tampere/SAH1/F3/K1/r0.json": "7fe418646eaba8205a4e39c50d579903cba76c6558b5270ed5cb3f36fd913181",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F3_r0_20261111/events/original_A/tampere/SAH1/F3/K1/r0.json": "e67892277b2bed6f0864dfe65239954f714769dc1e772bb4ce0118118c0ea7a1",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F3_r0_20261111/events/wknn_S/tampere/SAH1/F3/K3/r0.json": "29e613dd97c233c8ca384d8abbbdd1e0854dccf37e48b284ed205536f2321b8f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F3_r0_20261111/events/wknn_HS/tampere/SAH1/F3/K3/r0.json": "47f0f7d7cb775ef668391b14cbd32034b2710161d7166da4b4e781096b15fcf9",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F3_r0_20261111/events/original_A/tampere/SAH1/F3/K3/r0.json": "3c4fbe784fcc938cbacdb991e396257a813f05c95a983108716fb1db46c2b89f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F3_r0_20261111/events/wknn_S/tampere/SAH1/F3/K5/r0.json": "23eb74ffc5de1c131a984bc0228bf2c9a38c294f902c0923a473618b16b1a11c",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F3_r0_20261111/events/wknn_HS/tampere/SAH1/F3/K5/r0.json": "e6f2856cb509c497aa1903ad18af9b932ea92072a93afe6e08d84c807945008f",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_F3_r0_20261111/events/original_A/tampere/SAH1/F3/K5/r0.json": "8329ef4b0456129ba8204699dabad3bd226ce5dd6c1e81a18df0b1e1dda50520",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/F1.runtime.json": "79a2707673f610650897288bf0e3361fb42f18cf7ce111aa53cbc17258ef3261",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/F1_resume1.runtime.json": "6ff1abab51c6ec71c5b309bb97cc43553a18c390f2d209a575305e9faeb87127",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/F1_resume1.threadpools.json": "54d2b4f05c5c77d792fb2acab477609cbfa4799a1ecaeecf9ccbc0331197bde0",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/F2.runtime.json": "31e9a653e51adc7c352b222edd4f570475921dd9842b2075c3c5b672f8da9bfd",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/F3_threads4.runtime.json": "c8b417dc427fafa635f6994b78f0c6b0d0297e5ae5c466c2874f2f3cb3770da0",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_originalA02_r0_20261111_source/F3_threads4.threadpools.json": "8e5a24c4526c3741fea7a30c0de9ca8dd1a8ab646c539e54ac07fdf381d8bb71",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_legacyGP_F2_r0_20261111_source/F2.runtime.json": "4f96bf4e68390cc4d804b70550f1be14f4f9e8f39d0c065e76d89ee2b60a8617",
+    "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_tampere_SAH1_legacyGP_F2_r0_20261111/F2_comparison.json": "041849171f2677eda99113c1039c8dec724afa31c027dc31326a29f9a92d1401"
+  },
+  "code_sha256": "bb220f588f277aaff37bb50ef6f2b484b6ce9a3b97e61ec068114984312a9d33",
+  "new_training": 0,
+  "new_history_fits": 0
+}
