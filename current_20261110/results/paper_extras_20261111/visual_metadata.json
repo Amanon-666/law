@@ -1,0 +1,39 @@
+{
+  "selections": [
+    {
+      "building": "B2",
+      "floor": 2,
+      "ap": "WAP517",
+      "target_detected_positions": 73,
+      "history_detected_positions": 292,
+      "rule": "max target detected-position count; ties max history detected-position count, then AP name",
+      "source_buildings": [
+        "B0",
+        "B1"
+      ],
+      "K": 3,
+      "repeat": 0
+    },
+    {
+      "building": "B2",
+      "floor": 4,
+      "ap": "WAP087",
+      "target_detected_positions": 67,
+      "history_detected_positions": 256,
+      "rule": "max target detected-position count; ties max history detected-position count, then AP name",
+      "source_buildings": [
+        "B0",
+        "B1"
+      ],
+      "K": 3,
+      "repeat": 0
+    }
+  ],
+  "rows": 20000,
+  "seed": 20261111,
+  "population": "all history-candidate x H/S-detected AP cells, all 13 UJI floors; support candidates excluded",
+  "truth": "nearest recorded target position within R_LABEL=4m; unmatched truth blank; exact distances exported",
+  "intensity": "encoded dBm: p*m+(1-p)*(-105); history_strength is original translator history ref",
+  "protocol": "original paper_uji budgets 1,3,5; K3/r0; target truth used only after prepare",
+  "scope": "exposed development, not independent validation"
+}

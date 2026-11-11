@@ -1,0 +1,57 @@
+{
+  "methods": [
+    {
+      "method": "wknn_S",
+      "completed_tasks": 117,
+      "mean_task_seconds": 0.03422735246200847,
+      "mean_source_fit_stage_seconds": 0.0007009208202362061,
+      "total_source_fit_stage_seconds": 0.002102762460708618
+    },
+    {
+      "method": "wknn_HS",
+      "completed_tasks": 117,
+      "mean_task_seconds": 0.16735946734109494,
+      "mean_source_fit_stage_seconds": 0.00020282094677289328,
+      "total_source_fit_stage_seconds": 0.0006084628403186798
+    },
+    {
+      "method": "gp_S",
+      "completed_tasks": 117,
+      "mean_task_seconds": 0.1121694954414653,
+      "mean_source_fit_stage_seconds": 0.1458351376156012,
+      "total_source_fit_stage_seconds": 0.43750541284680367
+    },
+    {
+      "method": "gp_histmean",
+      "completed_tasks": 117,
+      "mean_task_seconds": 0.8106037313357378,
+      "mean_source_fit_stage_seconds": 0.11584832767645518,
+      "total_source_fit_stage_seconds": 0.34754498302936554
+    },
+    {
+      "method": "refi",
+      "completed_tasks": 117,
+      "mean_task_seconds": 2.736798717107019,
+      "mean_source_fit_stage_seconds": 478.713489399602,
+      "total_source_fit_stage_seconds": 1436.140468198806
+    }
+  ],
+  "deployment": {
+    "building": "B2",
+    "floor": 4,
+    "K": 3,
+    "repeat": 0,
+    "prepare_seconds": 3.9357414729893208,
+    "one_scan_seconds": 0.0017327219247817993,
+    "model_load_excluded": true,
+    "candidates": 279
+  },
+  "caveat": "Original source-fit stage includes fit/load and serialization; not pure optimizer time. Concurrent batch load affects wall times. Single-scan timing is one observation.",
+  "original_refi_training_seconds_by_fold": {
+    "B0": 471.5872529633343,
+    "B1": 509.9246523864567,
+    "B2": 450.6786869764328
+  },
+  "original_refi_mean_training_seconds": 477.3968641087413,
+  "training_timer_scope": "Original refi.py seed timers: field training plus joblib export; no new training in extras."
+}

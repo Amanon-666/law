@@ -1,0 +1,77 @@
+{
+  "protocol": "static-resample-v2",
+  "configuration": {
+    "dataset": "uji",
+    "building": "B0",
+    "protocol": "static-resample-v2",
+    "manifest": null,
+    "root": null,
+    "source_dataset": null,
+    "source_root": null,
+    "source_buildings": null,
+    "floors": null,
+    "budgets": [
+      1,
+      3,
+      5,
+      10,
+      20
+    ],
+    "repeats": [
+      0,
+      1,
+      2
+    ],
+    "seed": 20261111,
+    "R": 3,
+    "query_positions": 60,
+    "methods": [
+      "wknn_HS",
+      "gp_histmean",
+      "refi"
+    ],
+    "method_options": {
+      "gp_S": {
+        "readout": "map"
+      },
+      "gp_histmean": {
+        "readout": "map"
+      },
+      "refi": {
+        "cache_dir": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_refi_models_20261111"
+      }
+    }
+  },
+  "target_data": {
+    "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9"
+  },
+  "source_data": {
+    "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11",
+    "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+  },
+  "code": {
+    "__init__.py": "6647f153fcd3bdd10261969bd07b3695936399968561b582ff25666629af2c5e",
+    "data.py": "a383d8f733f79db41181fa0bacdb123e4106da863a482a9bca7a621f1b6d02bd",
+    "data_ipin2025.py": "bd4c12003db5f51c78f5abdc2873e48a1eae14de484c37f36b966b37c102408b",
+    "evaluate_saved_stress.py": "b04cf4d6d4b7d8ea135a9c67ebaeecf2265b92e6a2db6661772e60fb962cad64",
+    "gp_lit.py": "26e158ecac34ba2b617682798b803f906324c263ff09b942cb97f80473b32ef7",
+    "import_b1_b0_fields.py": "edb3957d47787afb48f32697c6a295e0cd88a1c654a9dc7c1f4ceaa091d0f799",
+    "legacy54.py": "6a0236046991b6517e66e7e9d76b8acc0f94155d17f75b1aeecdb6a369ec37e0",
+    "method_adopted.py": "8400f4e855f0b7e5130863d93065daef06f62364cb5ffd5e4d0fbbef577fe954",
+    "method_frozen_field.py": "2d5a089211aa4f3d28f9b731faefc0c0a6859aa3aa8e8623bbda41c83fd13e07",
+    "method_retained_gp.py": "7d47af9151f59269ee8eb18813ac2e26bd9cc62deedafffa8d3d9bdfebd0f749",
+    "method_scaml.py": "de98aba42600750c976bbc5aa96bb9902fc2571a89dbd4695966b0bc2f4e7008",
+    "method_tabicl.py": "c2d710fc8318c23d3f99ea7720c132a086063db8c632da20c075c6855f96d0b0",
+    "method_tampere_legacy_gp.py": "e9a3567e177db8d7a6e96fc69a8d06aaf7ccf254ae7543b153e48512103c72a4",
+    "method_tcms.py": "edf75ece349fd5a9b34cdcbaae2d15b93993f10f4bc0ebdc9fe748d3bd42a401",
+    "method_trained_field_gp.py": "2e816861dd328153d94c5d440ca85a9bc1351da617e0643b8db7dcc0a39f26fd",
+    "methods_claude.py": "0ea96b65e6fa8622808d0978e5215477fe0c1ca0dba5f44ce1ca00735f1e784b",
+    "methods_simple.py": "e7319e90b71ce5441d24b4976a894c08f318ee64895e8f586c8017b4856e2217",
+    "ours.py": "1e9a526126cf5a9580aeac696aeef3435048daf5827630a858779f697e5688d8",
+    "protocol.py": "804461986101fad2904eba94232e533f0bf25128d99a14d2b4ce6346498f8bee",
+    "run.py": "a9950525f75cb0eab22538f525c226a30e8e9285cdd459ac2c640eb9cf9bc60e",
+    "run_claude.py": "5ba3962353556e55ae91f74ca7f758601736e3f18a7ef6fc1e001ea013b9bdfc",
+    "score.py": "c4abfa7fbe008ac994a6ba4790c7ef3f25da11d07c5391367043936d95af6f3e",
+    "task.py": "e903b275f67700970f676551668b74e8dedf60a7a3a4d7b4062742901f76f28d"
+  }
+}
