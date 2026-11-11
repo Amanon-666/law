@@ -1,0 +1,78 @@
+{
+  "complete": true,
+  "created": "2026-11-11T02:34:16.737894+00:00",
+  "stages": {
+    "freeze": {
+      "exit_code": 0,
+      "started": "2026-11-11T02:27:25Z",
+      "ended": "2026-11-11T02:27:51Z",
+      "wall_seconds": 26.0
+    },
+    "predict": {
+      "exit_code": 0,
+      "started": "2026-11-11T02:27:51Z",
+      "ended": "2026-11-11T02:31:28Z",
+      "wall_seconds": 217.0
+    },
+    "score": {
+      "exit_code": 0,
+      "started": "2026-11-11T02:32:28Z",
+      "ended": "2026-11-11T02:32:30Z",
+      "wall_seconds": 2.0
+    }
+  },
+  "resumes": 0,
+  "contexts": 15,
+  "streams": 30,
+  "actual_source_hashes_unchanged": true,
+  "all_frozen_inputs_unchanged": true,
+  "support_transform_checks_passed": 15,
+  "max_GP_difference_m": 0.0,
+  "training_updates": 0,
+  "GP_fits": 0,
+  "GP_adaptations": 0,
+  "field_preparations": 0,
+  "aggregation": {
+    "initial_exit_code": 1,
+    "error": "AttributeError: str has no read_text; fixed path conversion in saved-error/H-count aggregation helper",
+    "final_exit_code": 0
+  },
+  "output_bindings": {
+    "freeze.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/freeze.json",
+      "sha256": "5545e0e072b7423560146e3f832327755617ca32497c21fc3168fd54ccbfb6d5"
+    },
+    "contexts_complete.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/contexts_complete.json",
+      "sha256": "8c064393f6247275d170bd21b14f06850b67b1799e705a8d67d0242b616cf3a7"
+    },
+    "predictions.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/predictions.json",
+      "sha256": "39dbc0c3bd7439d42f3f0648ad3847d69208db321dda083df802fffe63258642"
+    },
+    "cached_GP_parity.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/cached_GP_parity.json",
+      "sha256": "e94b903466e034de2480a0da9321cc68135dd56fc0d37529ed98d25a4baefb38"
+    },
+    "support_prior_checks.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/support_prior_checks.json",
+      "sha256": "ed20f1de41942120c138245fc4cab643c535acddbc6ba4709de41da020936c8c"
+    },
+    "scores.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/scores.json",
+      "sha256": "29ff43eb5084b7a0dcbec8f9012ceaf70041d73391bdee6ee9af46ca19c25126"
+    },
+    "comparison.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/comparison.json",
+      "sha256": "4b361a3af604bdaa38307be64bda964bb2b42e82abf7977171b23f531aed24a7"
+    },
+    "paired_K.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/paired_K.json",
+      "sha256": "acbb713b76daa972a947397a66edaf5cde32d09d3311e9e8ec978450ca004e18"
+    },
+    "support_prior_counts.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/support_prior_counts.json",
+      "sha256": "dd564435c449a34b18c11f230f6eb4fcce0cefb14e250d4100bb6394b4475f47"
+    }
+  }
+}

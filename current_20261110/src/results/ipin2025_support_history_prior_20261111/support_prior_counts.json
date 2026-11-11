@@ -1,0 +1,356 @@
+{
+  "complete": true,
+  "created": "2026-11-11T02:33:56.721385+00:00",
+  "status": "Read-only summary of the same actual H/S arrays, no model predictions or field construction",
+  "source_check": {
+    "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/support_prior_checks.json",
+    "sha256": "ed20f1de41942120c138245fc4cab643c535acddbc6ba4709de41da020936c8c"
+  },
+  "contexts": {
+    "IPIN2025_B2025F2_K1": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F5": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 1009,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 435,
+      "zero_H_detected_APs": 6,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9786516853932584,
+      "prior_expected_detections": 50.36966292134832,
+      "support_candidates": 1,
+      "support_rows_per_location": [
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F2_K3": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F5": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 1009,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 435,
+      "zero_H_detected_APs": 6,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9786516853932584,
+      "prior_expected_detections": 50.36966292134832,
+      "support_candidates": 3,
+      "support_rows_per_location": [
+        1,
+        1,
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F2_K5": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F5": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 1017,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 435,
+      "zero_H_detected_APs": 14,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9786516853932584,
+      "prior_expected_detections": 50.378651685393265,
+      "support_candidates": 5,
+      "support_rows_per_location": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F3_K1": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F5": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 856,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 436,
+      "zero_H_detected_APs": 19,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9808988764044944,
+      "prior_expected_detections": 44.092134831460676,
+      "support_candidates": 1,
+      "support_rows_per_location": [
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F3_K3": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F5": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 871,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 436,
+      "zero_H_detected_APs": 34,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9808988764044944,
+      "prior_expected_detections": 44.10898876404494,
+      "support_candidates": 3,
+      "support_rows_per_location": [
+        1,
+        1,
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F3_K5": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F5": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 899,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 436,
+      "zero_H_detected_APs": 62,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9808988764044944,
+      "prior_expected_detections": 44.140449438202246,
+      "support_candidates": 5,
+      "support_rows_per_location": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F4_K1": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F5": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 936,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 439,
+      "zero_H_detected_APs": 1,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9876404494382023,
+      "prior_expected_detections": 45.89887640449439,
+      "support_candidates": 1,
+      "support_rows_per_location": [
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F4_K3": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F5": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 937,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 439,
+      "zero_H_detected_APs": 2,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9876404494382023,
+      "prior_expected_detections": 45.900000000000006,
+      "support_candidates": 3,
+      "support_rows_per_location": [
+        1,
+        1,
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F4_K5": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F5": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 951,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 439,
+      "zero_H_detected_APs": 16,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9876404494382023,
+      "prior_expected_detections": 45.91573033707865,
+      "support_candidates": 5,
+      "support_rows_per_location": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F5_K1": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 996,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 435,
+      "zero_H_detected_APs": 1,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9786516853932584,
+      "prior_expected_detections": 39.379775280898876,
+      "support_candidates": 1,
+      "support_rows_per_location": [
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F5_K3": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 1009,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 435,
+      "zero_H_detected_APs": 14,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9786516853932584,
+      "prior_expected_detections": 39.394382022471916,
+      "support_candidates": 3,
+      "support_rows_per_location": [
+        1,
+        1,
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F5_K5": {
+      "nH": 444,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F6": 60
+      },
+      "AP_count": 1009,
+      "H_detected_count_min": 0,
+      "H_detected_count_max": 435,
+      "zero_H_detected_APs": 14,
+      "p0_min": 0.0011235955056179776,
+      "p0_max": 0.9786516853932584,
+      "prior_expected_detections": 39.394382022471916,
+      "support_candidates": 5,
+      "support_rows_per_location": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_p_change": 0.24943820224719104
+    },
+    "IPIN2025_B2025F6_K1": {
+      "nH": 512,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F5": 128
+      },
+      "AP_count": 1035,
+      "H_detected_count_min": 1,
+      "H_detected_count_max": 503,
+      "zero_H_detected_APs": 0,
+      "p0_min": 0.0029239766081871343,
+      "p0_max": 0.9814814814814815,
+      "prior_expected_detections": 43.765107212475634,
+      "support_candidates": 1,
+      "support_rows_per_location": [
+        1
+      ],
+      "max_p_change": 0.24853801169590645
+    },
+    "IPIN2025_B2025F6_K3": {
+      "nH": 512,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F5": 128
+      },
+      "AP_count": 1035,
+      "H_detected_count_min": 1,
+      "H_detected_count_max": 503,
+      "zero_H_detected_APs": 0,
+      "p0_min": 0.0029239766081871343,
+      "p0_max": 0.9814814814814815,
+      "prior_expected_detections": 43.765107212475634,
+      "support_candidates": 3,
+      "support_rows_per_location": [
+        1,
+        1,
+        1
+      ],
+      "max_p_change": 0.24853801169590645
+    },
+    "IPIN2025_B2025F6_K5": {
+      "nH": 512,
+      "H_rows_by_source": {
+        "IPIN2025_B2025F2": 128,
+        "IPIN2025_B2025F3": 128,
+        "IPIN2025_B2025F4": 128,
+        "IPIN2025_B2025F5": 128
+      },
+      "AP_count": 1035,
+      "H_detected_count_min": 1,
+      "H_detected_count_max": 503,
+      "zero_H_detected_APs": 0,
+      "p0_min": 0.0029239766081871343,
+      "p0_max": 0.9814814814814815,
+      "prior_expected_detections": 43.765107212475634,
+      "support_candidates": 5,
+      "support_rows_per_location": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_p_change": 0.24853801169590645
+    }
+  }
+}

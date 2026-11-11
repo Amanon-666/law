@@ -1,0 +1,4533 @@
+{
+  "complete": true,
+  "created": "2026-11-11T02:32:30.402401+00:00",
+  "status": "Exposed-data post-hoc H-only empirical Support prior correction; no automatic adoption",
+  "baseline": {
+    "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_confirmation_20261110/scores.json",
+    "sha256": "50716b22d18af368b1ffbbe9c48f345d24a1dac5335b5792f0d8b216a387ef04"
+  },
+  "current": {
+    "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/scores.json",
+    "sha256": "29ff43eb5084b7a0dcbec8f9012ceaf70041d73391bdee6ee9af46ca19c25126"
+  },
+  "support_prior_check": {
+    "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/support_prior_checks.json",
+    "sha256": "ed20f1de41942120c138245fc4cab643c535acddbc6ba4709de41da020936c8c"
+  },
+  "GP_parity": {
+    "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/ipin2025_support_history_prior_20261111/cached_GP_parity.json",
+    "sha256": "e94b903466e034de2480a0da9321cc68135dd56fc0d37529ed98d25a4baefb38"
+  },
+  "delta_convention": "Current minus original; per-K overall/log/floor/log-floor mean and p90; no K pooling",
+  "by_K": {
+    "1": {
+      "overall": {
+        "coverage": {
+          "total_points": 102,
+          "covered_points": 102,
+          "coverage": 1.0,
+          "unsupported_floor": 0,
+          "no_prior_prediction": 0
+        },
+        "methods": {
+          "hurdle": {
+            "mean": {
+              "baseline": 37.21064688991812,
+              "current": 30.20347980841944,
+              "delta": -7.007167081498675
+            },
+            "p90": {
+              "baseline": 91.76942663765749,
+              "current": 91.27463295521132,
+              "delta": -0.49479368244617206
+            }
+          },
+          "GP": {
+            "mean": {
+              "baseline": 16.0023621939739,
+              "current": 16.0023621939739,
+              "delta": 0.0
+            },
+            "p90": {
+              "baseline": 33.039450027636285,
+              "current": 33.039450027636285,
+              "delta": 0.0
+            }
+          },
+          "GP_candidates": {
+            "mean": {
+              "baseline": 16.697318923149574,
+              "current": 16.697318923149574,
+              "delta": 0.0
+            },
+            "p90": {
+              "baseline": 40.30890122942014,
+              "current": 40.30890122942014,
+              "delta": 0.0
+            }
+          },
+          "coordinate_half": {
+            "mean": {
+              "baseline": 24.699854087083498,
+              "current": 21.767039759994685,
+              "delta": -2.9328143270888134
+            },
+            "p90": {
+              "baseline": 54.368877664630894,
+              "current": 49.26005224213127,
+              "delta": -5.108825422499621
+            }
+          },
+          "probability_half": {
+            "mean": {
+              "baseline": 19.42862336074874,
+              "current": 19.385776426468652,
+              "delta": -0.04284693428008879
+            },
+            "p90": {
+              "baseline": 46.432019749087445,
+              "current": 45.09887491319564,
+              "delta": -1.333144835891808
+            }
+          }
+        }
+      },
+      "by_log": {
+        "03": {
+          "coverage": {
+            "total_points": 51,
+            "covered_points": 51,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 38.035981356938386,
+                "current": 31.27527348180223,
+                "delta": -6.760707875136156
+              },
+              "p90": {
+                "baseline": 91.76942663765749,
+                "current": 71.83664832312735,
+                "delta": -19.93277831453014
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 16.197617290665118,
+                "current": 16.197617290665118,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 33.039450027636285,
+                "current": 33.039450027636285,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 16.906113054518332,
+                "current": 16.906113054518332,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 40.30890122942014,
+                "current": 40.30890122942014,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 24.96447438733847,
+                "current": 22.48574514904852,
+                "delta": -2.478729238289951
+              },
+              "p90": {
+                "baseline": 52.62564987273392,
+                "current": 47.520017958427324,
+                "delta": -5.105631914306599
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 19.130873994371683,
+                "current": 19.51127842063669,
+                "delta": 0.3804044262650059
+              },
+              "p90": {
+                "baseline": 46.50121315778966,
+                "current": 41.47743845475622,
+                "delta": -5.023774703033439
+              }
+            }
+          }
+        },
+        "04": {
+          "coverage": {
+            "total_points": 51,
+            "covered_points": 51,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 36.38531242289785,
+                "current": 29.131686135036645,
+                "delta": -7.253626287861202
+              },
+              "p90": {
+                "baseline": 91.75433297501485,
+                "current": 91.53603065144279,
+                "delta": -0.21830232357206114
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 15.807107097282676,
+                "current": 15.807107097282676,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 31.892379933404555,
+                "current": 31.892379933404555,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 16.488524791780815,
+                "current": 16.488524791780815,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 35.249481857160454,
+                "current": 35.249481857160454,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 24.435233786828526,
+                "current": 21.048334370940836,
+                "delta": -3.38689941588769
+              },
+              "p90": {
+                "baseline": 54.368877664630894,
+                "current": 49.26005224213127,
+                "delta": -5.108825422499621
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 19.7263727271258,
+                "current": 19.260274432300616,
+                "delta": -0.4660982948251835
+              },
+              "p90": {
+                "baseline": 45.10130012230243,
+                "current": 45.09887491319564,
+                "delta": -0.0024252091067964443
+              }
+            }
+          }
+        }
+      },
+      "by_floor": {
+        "1": {
+          "coverage": {
+            "total_points": 0,
+            "covered_points": 0,
+            "coverage": null,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            }
+          }
+        },
+        "2": {
+          "coverage": {
+            "total_points": 22,
+            "covered_points": 22,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 86.93037455044409,
+                "current": 57.07942750697414,
+                "delta": -29.850947043469944
+              },
+              "p90": {
+                "baseline": 103.72978401385774,
+                "current": 97.48840097750264,
+                "delta": -6.241383036355103
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 8.054736357624524,
+                "current": 8.054736357624524,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 16.86494455112572,
+                "current": 16.86494455112572,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 8.067060605632394,
+                "current": 8.067060605632394,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 17.43292449618388,
+                "current": 17.43292449618388,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 44.06292762585547,
+                "current": 31.165410831204827,
+                "delta": -12.897516794650645
+              },
+              "p90": {
+                "baseline": 61.000210905202685,
+                "current": 51.90952858657378,
+                "delta": -9.090682318628907
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 18.426377600060444,
+                "current": 18.156940180358735,
+                "delta": -0.26943741970170976
+              },
+              "p90": {
+                "baseline": 45.10130012230243,
+                "current": 45.09887491319564,
+                "delta": -0.0024252091067964443
+              }
+            }
+          }
+        },
+        "3": {
+          "coverage": {
+            "total_points": 38,
+            "covered_points": 38,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 23.005090508947386,
+                "current": 22.62353504525608,
+                "delta": -0.38155546369130633
+              },
+              "p90": {
+                "baseline": 51.08007489634993,
+                "current": 51.96589440839094,
+                "delta": 0.8858195120410102
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 15.056555490762895,
+                "current": 15.056555490762895,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 39.368313510145065,
+                "current": 39.368313510145065,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 15.466518431710519,
+                "current": 15.466518431710519,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 44.528772407082954,
+                "current": 44.528772407082954,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 18.071280875394514,
+                "current": 18.029339807381497,
+                "delta": -0.041941068013017
+              },
+              "p90": {
+                "baseline": 39.88170349330016,
+                "current": 37.17545711513466,
+                "delta": -2.7062463781654955
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 16.590086917973878,
+                "current": 16.654151576666415,
+                "delta": 0.06406465869253708
+              },
+              "p90": {
+                "baseline": 42.517033356817166,
+                "current": 41.157410616478096,
+                "delta": -1.35962274033907
+              }
+            }
+          }
+        },
+        "4": {
+          "coverage": {
+            "total_points": 26,
+            "covered_points": 26,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 21.500673987383614,
+                "current": 19.852055431170747,
+                "delta": -1.6486185562128668
+              },
+              "p90": {
+                "baseline": 37.32817281595373,
+                "current": 37.32818044889024,
+                "delta": 7.632936508628063e-06
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 14.346260567299339,
+                "current": 14.346260567299339,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 22.323738599634623,
+                "current": 22.323738599634623,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 16.017103638483285,
+                "current": 16.017103638483285,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 26.931126765634634,
+                "current": 26.931126765634634,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 16.785231363455605,
+                "current": 16.239907832505814,
+                "delta": -0.5453235309497906
+              },
+              "p90": {
+                "baseline": 29.477456519705534,
+                "current": 29.47747134479462,
+                "delta": 1.4825089085235277e-05
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 16.759503009385586,
+                "current": 16.40693508142437,
+                "delta": -0.3525679279612177
+              },
+              "p90": {
+                "baseline": 34.703389456087756,
+                "current": 34.70369768748361,
+                "delta": 0.00030823139585578474
+              }
+            }
+          }
+        },
+        "5": {
+          "coverage": {
+            "total_points": 14,
+            "covered_points": 14,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 31.320492720745545,
+                "current": 31.255752962581898,
+                "delta": -0.06473975816364685
+              },
+              "p90": {
+                "baseline": 71.86349032331682,
+                "current": 71.83664832312735,
+                "delta": -0.026842000189475357
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 35.94148614644439,
+                "current": 35.94148614644439,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 74.5225934097918,
+                "current": 74.5225934097918,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 36.785350202662165,
+                "current": 36.785350202662165,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 83.11731307814316,
+                "current": 83.11731307814316,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 29.89751588968807,
+                "current": 29.89981043278063,
+                "delta": 0.002294543092560275
+              },
+              "p90": {
+                "baseline": 57.77744476356596,
+                "current": 57.77741841529108,
+                "delta": -2.6348274879239852e-05
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 35.949752277559305,
+                "current": 36.36325672166712,
+                "delta": 0.41350444410781506
+              },
+              "p90": {
+                "baseline": 77.66385913310528,
+                "current": 77.66384598685534,
+                "delta": -1.3146249941087262e-05
+              }
+            }
+          }
+        },
+        "6": {
+          "coverage": {
+            "total_points": 2,
+            "covered_points": 2,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 5.659940779732843,
+                "current": 5.789610449517237,
+                "delta": 0.12966966978439398
+              },
+              "p90": {
+                "baseline": 8.70001691942245,
+                "current": 6.320319674994572,
+                "delta": -2.379697244427879
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 3.352027234301929,
+                "current": 3.352027234301929,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 5.780670965384377,
+                "current": 5.780670965384377,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 3.2419494972543266,
+                "current": 3.2419494972543266,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 3.6069120885788517,
+                "current": 3.6069120885788517,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 4.155398971613128,
+                "current": 4.32457742418711,
+                "delta": 0.16917845257398234
+              },
+              "p90": {
+                "baseline": 6.553946046261205,
+                "current": 5.590968243700783,
+                "delta": -0.9629778025604221
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 3.4361812910895124,
+                "current": 4.686422699106654,
+                "delta": 1.2502414080171413
+              },
+              "p90": {
+                "baseline": 3.885611111023889,
+                "current": 4.709000907378741,
+                "delta": 0.8233897963548515
+              }
+            }
+          }
+        }
+      },
+      "by_log_floor": {
+        "03": {
+          "1": {
+            "coverage": {
+              "total_points": 0,
+              "covered_points": 0,
+              "coverage": null,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              }
+            }
+          },
+          "2": {
+            "coverage": {
+              "total_points": 11,
+              "covered_points": 11,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 86.87461836445348,
+                  "current": 56.64542746453686,
+                  "delta": -30.229190899916624
+                },
+                "p90": {
+                  "baseline": 102.94641005145704,
+                  "current": 97.48840097750264,
+                  "delta": -5.4580090739544005
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 8.286635909017873,
+                  "current": 8.286635909017873,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 16.86494455112572,
+                  "current": 16.86494455112572,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 8.537909000757596,
+                  "current": 8.537909000757596,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 17.43292449618388,
+                  "current": 17.43292449618388,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 43.92011744146367,
+                  "current": 32.1065622768248,
+                  "delta": -11.813555164638863
+                },
+                "p90": {
+                  "baseline": 56.39112355840918,
+                  "current": 51.90952858657378,
+                  "delta": -4.481594971835399
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 17.639448331071325,
+                  "current": 18.83069831159786,
+                  "delta": 1.1912499805265355
+                },
+                "p90": {
+                  "baseline": 18.674149356079948,
+                  "current": 29.73506647678361,
+                  "delta": 11.060917120703664
+                }
+              }
+            }
+          },
+          "3": {
+            "coverage": {
+              "total_points": 19,
+              "covered_points": 19,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 24.42070769259698,
+                  "current": 24.425532031499294,
+                  "delta": 0.004824338902313485
+                },
+                "p90": {
+                  "baseline": 61.33869532648979,
+                  "current": 61.2254676145499,
+                  "delta": -0.11322771193989212
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 15.072647290564078,
+                  "current": 15.072647290564078,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 42.2178822539148,
+                  "current": 42.2178822539148,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 15.637683716933036,
+                  "current": 15.637683716933036,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 49.20693788182921,
+                  "current": 49.20693788182921,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 18.566049214414463,
+                  "current": 18.800520568207208,
+                  "delta": 0.23447135379274542
+                },
+                "p90": {
+                  "baseline": 42.17950670363171,
+                  "current": 38.42626119540734,
+                  "delta": -3.753245508224367
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 16.292186825126397,
+                  "current": 16.647697702750666,
+                  "delta": 0.35551087762426903
+                },
+                "p90": {
+                  "baseline": 47.89381870550316,
+                  "current": 41.47743845475622,
+                  "delta": -6.41638025074694
+                }
+              }
+            }
+          },
+          "4": {
+            "coverage": {
+              "total_points": 13,
+              "covered_points": 13,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 21.472060024535782,
+                  "current": 20.362622761398875,
+                  "delta": -1.1094372631369076
+                },
+                "p90": {
+                  "baseline": 33.44155836109852,
+                  "current": 33.441588393681826,
+                  "delta": 3.0032583303807314e-05
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 14.469715584209153,
+                  "current": 14.469715584209153,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 22.323738599634623,
+                  "current": 22.323738599634623,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 15.888735104864661,
+                  "current": 15.888735104864661,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 24.19279706987029,
+                  "current": 24.19279706987029,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 16.594809186580424,
+                  "current": 16.41211228504877,
+                  "delta": -0.18269690153165286
+                },
+                "p90": {
+                  "baseline": 27.807220938739746,
+                  "current": 27.807239571642075,
+                  "delta": 1.863290232861914e-05
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 16.23127902984704,
+                  "current": 15.891582301777637,
+                  "delta": -0.3396967280694039
+                },
+                "p90": {
+                  "baseline": 26.397200810128368,
+                  "current": 26.397387803152608,
+                  "delta": 0.00018699302423996755
+                }
+              }
+            }
+          },
+          "5": {
+            "coverage": {
+              "total_points": 7,
+              "covered_points": 7,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 34.066308010931195,
+                  "current": 33.98301996304235,
+                  "delta": -0.0832880478888427
+                },
+                "p90": {
+                  "baseline": 71.86349032331682,
+                  "current": 71.83664832312735,
+                  "delta": -0.026842000189475357
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 37.07364317229552,
+                  "current": 37.07364317229552,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 113.66671873125857,
+                  "current": 113.66671873125857,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 37.39260469731476,
+                  "current": 37.39260469731476,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 113.65172913245476,
+                  "current": 113.65172913245476,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 31.403227928825203,
+                  "current": 31.42504006430817,
+                  "delta": 0.021812135482967676
+                },
+                "p90": {
+                  "baseline": 86.21037340354387,
+                  "current": 86.21036186673298,
+                  "delta": -1.1536810887946558e-05
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 36.87081621922899,
+                  "current": 37.19024154887772,
+                  "delta": 0.3194253296487304
+                },
+                "p90": {
+                  "baseline": 112.81773826703072,
+                  "current": 112.81773813006302,
+                  "delta": -1.3696769940452214e-07
+                }
+              }
+            }
+          },
+          "6": {
+            "coverage": {
+              "total_points": 1,
+              "covered_points": 1,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 2.619864640043236,
+                  "current": 5.258901224039902,
+                  "delta": 2.639036583996666
+                },
+                "p90": {
+                  "baseline": 2.619864640043236,
+                  "current": 5.258901224039902,
+                  "delta": 2.639036583996666
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 0.9233835032194813,
+                  "current": 0.9233835032194813,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 0.9233835032194813,
+                  "current": 0.9233835032194813,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 2.876986905929802,
+                  "current": 2.876986905929802,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 2.876986905929802,
+                  "current": 2.876986905929802,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 1.756851896965049,
+                  "current": 3.0581866046734363,
+                  "delta": 1.3013347077083872
+                },
+                "p90": {
+                  "baseline": 1.756851896965049,
+                  "current": 3.0581866046734363,
+                  "delta": 1.3013347077083872
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 2.9867514711551357,
+                  "current": 4.709000907378741,
+                  "delta": 1.722249436223605
+                },
+                "p90": {
+                  "baseline": 2.9867514711551357,
+                  "current": 4.709000907378741,
+                  "delta": 1.722249436223605
+                }
+              }
+            }
+          }
+        },
+        "04": {
+          "1": {
+            "coverage": {
+              "total_points": 0,
+              "covered_points": 0,
+              "coverage": null,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              }
+            }
+          },
+          "2": {
+            "coverage": {
+              "total_points": 11,
+              "covered_points": 11,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 86.9861307364347,
+                  "current": 57.513427549411446,
+                  "delta": -29.472703187023257
+                },
+                "p90": {
+                  "baseline": 103.72978401385774,
+                  "current": 95.30124607436733,
+                  "delta": -8.428537939490411
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 7.822836806231179,
+                  "current": 7.822836806231179,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 14.702523261868915,
+                  "current": 14.702523261868915,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 7.596212210507191,
+                  "current": 7.596212210507191,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 14.293139623347225,
+                  "current": 14.293139623347225,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 44.20573781024727,
+                  "current": 30.22425938558486,
+                  "delta": -13.981478424662413
+                },
+                "p90": {
+                  "baseline": 61.000210905202685,
+                  "current": 50.39360922954866,
+                  "delta": -10.606601675654026
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 19.213306869049557,
+                  "current": 17.483182049119613,
+                  "delta": -1.7301248199299444
+                },
+                "p90": {
+                  "baseline": 45.10130012230243,
+                  "current": 45.09887491319564,
+                  "delta": -0.0024252091067964443
+                }
+              }
+            }
+          },
+          "3": {
+            "coverage": {
+              "total_points": 19,
+              "covered_points": 19,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 21.589473325297785,
+                  "current": 20.821538059012855,
+                  "delta": -0.7679352662849297
+                },
+                "p90": {
+                  "baseline": 49.102560291873964,
+                  "current": 48.170277422036094,
+                  "delta": -0.93228286983787
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 15.04046369096171,
+                  "current": 15.04046369096171,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 39.368313510145065,
+                  "current": 39.368313510145065,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 15.295353146487999,
+                  "current": 15.295353146487999,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 44.528772407082954,
+                  "current": 44.528772407082954,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 17.576512536374565,
+                  "current": 17.258159046555793,
+                  "delta": -0.3183534898187723
+                },
+                "p90": {
+                  "baseline": 39.88170349330016,
+                  "current": 34.10985709207181,
+                  "delta": -5.771846401228345
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 16.887987010821348,
+                  "current": 16.660605450582164,
+                  "delta": -0.2273815602391842
+                },
+                "p90": {
+                  "baseline": 42.517033356817166,
+                  "current": 38.832444295865926,
+                  "delta": -3.6845890609512395
+                }
+              }
+            }
+          },
+          "4": {
+            "coverage": {
+              "total_points": 13,
+              "covered_points": 13,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 21.529287950231442,
+                  "current": 19.341488100942623,
+                  "delta": -2.187799849288819
+                },
+                "p90": {
+                  "baseline": 37.32817281595373,
+                  "current": 37.32818044889024,
+                  "delta": 7.632936508628063e-06
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 14.222805550389525,
+                  "current": 14.222805550389525,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 21.74171347829033,
+                  "current": 21.74171347829033,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 16.145472172101893,
+                  "current": 16.145472172101893,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 26.931126765634634,
+                  "current": 26.931126765634634,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 16.975653540330786,
+                  "current": 16.067703379962843,
+                  "delta": -0.9079501603679425
+                },
+                "p90": {
+                  "baseline": 29.477456519705534,
+                  "current": 29.47747134479462,
+                  "delta": 1.4825089085235277e-05
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 17.28772698892414,
+                  "current": 16.922287861071105,
+                  "delta": -0.36543912785303334
+                },
+                "p90": {
+                  "baseline": 34.703389456087756,
+                  "current": 34.70369768748361,
+                  "delta": 0.00030823139585578474
+                }
+              }
+            }
+          },
+          "5": {
+            "coverage": {
+              "total_points": 7,
+              "covered_points": 7,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 28.57467743055989,
+                  "current": 28.528485962121447,
+                  "delta": -0.046191468438443906
+                },
+                "p90": {
+                  "baseline": 81.20241727514848,
+                  "current": 80.7686049863094,
+                  "delta": -0.4338122888390785
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 34.80932912059327,
+                  "current": 34.80932912059327,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 74.5225934097918,
+                  "current": 74.5225934097918,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 36.17809570800957,
+                  "current": 36.17809570800957,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 83.11731307814316,
+                  "current": 83.11731307814316,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 28.391803850550946,
+                  "current": 28.374580801253092,
+                  "delta": -0.01722304929785423
+                },
+                "p90": {
+                  "baseline": 57.77744476356596,
+                  "current": 57.77741841529108,
+                  "delta": -2.6348274879239852e-05
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 35.028688335889626,
+                  "current": 35.536271894456526,
+                  "delta": 0.5075835585668997
+                },
+                "p90": {
+                  "baseline": 77.66385913310528,
+                  "current": 77.66384598685534,
+                  "delta": -1.3146249941087262e-05
+                }
+              }
+            }
+          },
+          "6": {
+            "coverage": {
+              "total_points": 1,
+              "covered_points": 1,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 8.70001691942245,
+                  "current": 6.320319674994572,
+                  "delta": -2.379697244427879
+                },
+                "p90": {
+                  "baseline": 8.70001691942245,
+                  "current": 6.320319674994572,
+                  "delta": -2.379697244427879
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 5.780670965384377,
+                  "current": 5.780670965384377,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 5.780670965384377,
+                  "current": 5.780670965384377,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 3.6069120885788517,
+                  "current": 3.6069120885788517,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 3.6069120885788517,
+                  "current": 3.6069120885788517,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 6.553946046261205,
+                  "current": 5.590968243700783,
+                  "delta": -0.9629778025604221
+                },
+                "p90": {
+                  "baseline": 6.553946046261205,
+                  "current": 5.590968243700783,
+                  "delta": -0.9629778025604221
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 3.885611111023889,
+                  "current": 4.663844490834566,
+                  "delta": 0.7782333798106769
+                },
+                "p90": {
+                  "baseline": 3.885611111023889,
+                  "current": 4.663844490834566,
+                  "delta": 0.7782333798106769
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "3": {
+      "overall": {
+        "coverage": {
+          "total_points": 102,
+          "covered_points": 102,
+          "coverage": 1.0,
+          "unsupported_floor": 0,
+          "no_prior_prediction": 0
+        },
+        "methods": {
+          "hurdle": {
+            "mean": {
+              "baseline": 37.10905201985321,
+              "current": 29.713095924658997,
+              "delta": -7.395956095194212
+            },
+            "p90": {
+              "baseline": 91.58515997329444,
+              "current": 87.5720646700213,
+              "delta": -4.013095303273133
+            }
+          },
+          "GP": {
+            "mean": {
+              "baseline": 15.304526879435576,
+              "current": 15.304526879435576,
+              "delta": 0.0
+            },
+            "p90": {
+              "baseline": 28.90274960911033,
+              "current": 28.90274960911033,
+              "delta": 0.0
+            }
+          },
+          "GP_candidates": {
+            "mean": {
+              "baseline": 15.57472862865137,
+              "current": 15.57472862865137,
+              "delta": 0.0
+            },
+            "p90": {
+              "baseline": 28.937300600339313,
+              "current": 28.937300600339313,
+              "delta": 0.0
+            }
+          },
+          "coordinate_half": {
+            "mean": {
+              "baseline": 24.31315701842371,
+              "current": 21.16449209595089,
+              "delta": -3.1486649224728183
+            },
+            "p90": {
+              "baseline": 53.83896736891241,
+              "current": 46.98578520420266,
+              "delta": -6.85318216470975
+            }
+          },
+          "probability_half": {
+            "mean": {
+              "baseline": 17.79613141191504,
+              "current": 17.510699885595557,
+              "delta": -0.2854315263194849
+            },
+            "p90": {
+              "baseline": 40.629001287797706,
+              "current": 37.634857362539556,
+              "delta": -2.9941439252581503
+            }
+          }
+        }
+      },
+      "by_log": {
+        "03": {
+          "coverage": {
+            "total_points": 51,
+            "covered_points": 51,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 37.87018741512749,
+                "current": 31.434280228947127,
+                "delta": -6.435907186180362
+              },
+              "p90": {
+                "baseline": 91.5709531390728,
+                "current": 86.51044155584582,
+                "delta": -5.060511583226983
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 15.843494999216773,
+                "current": 15.843494999216773,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 28.40046603065188,
+                "current": 28.40046603065188,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 16.534724408010362,
+                "current": 16.534724408010362,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 27.9879030299554,
+                "current": 27.9879030299554,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 24.836398229892904,
+                "current": 22.543232898164607,
+                "delta": -2.2931653317282965
+              },
+              "p90": {
+                "baseline": 53.83896736891241,
+                "current": 46.98578520420266,
+                "delta": -6.85318216470975
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 18.203045614039713,
+                "current": 18.297326758146472,
+                "delta": 0.09428114410675903
+              },
+              "p90": {
+                "baseline": 40.94723088535862,
+                "current": 39.363787215920446,
+                "delta": -1.583443669438175
+              }
+            }
+          }
+        },
+        "04": {
+          "coverage": {
+            "total_points": 51,
+            "covered_points": 51,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 36.34791662457893,
+                "current": 27.991911620370868,
+                "delta": -8.356005004208061
+              },
+              "p90": {
+                "baseline": 91.58515997329444,
+                "current": 88.55134009195704,
+                "delta": -3.0338198813373936
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 14.765558759654377,
+                "current": 14.765558759654377,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 28.90274960911033,
+                "current": 28.90274960911033,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 14.614732849292366,
+                "current": 14.614732849292366,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 28.937300600339313,
+                "current": 28.937300600339313,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 23.789915806954507,
+                "current": 19.785751293737178,
+                "delta": -4.004164513217329
+              },
+              "p90": {
+                "baseline": 52.8364098176376,
+                "current": 44.90884366293731,
+                "delta": -7.927566154700294
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 17.389217209790374,
+                "current": 16.724073013044638,
+                "delta": -0.6651441967457359
+              },
+              "p90": {
+                "baseline": 36.72257297971027,
+                "current": 35.562625160633715,
+                "delta": -1.1599478190765566
+              }
+            }
+          }
+        }
+      },
+      "by_floor": {
+        "1": {
+          "coverage": {
+            "total_points": 0,
+            "covered_points": 0,
+            "coverage": null,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            }
+          }
+        },
+        "2": {
+          "coverage": {
+            "total_points": 22,
+            "covered_points": 22,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 88.23305137735098,
+                "current": 60.11113629845575,
+                "delta": -28.121915078895228
+              },
+              "p90": {
+                "baseline": 106.20030990921694,
+                "current": 99.83266399167996,
+                "delta": -6.367645917536976
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 7.872987065046626,
+                "current": 7.872987065046626,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 16.04841230458552,
+                "current": 16.04841230458552,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 7.652357902569481,
+                "current": 7.652357902569481,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 16.714871438700175,
+                "current": 16.714871438700175,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 44.91501516336762,
+                "current": 32.473755958760755,
+                "delta": -12.441259204606865
+              },
+              "p90": {
+                "baseline": 60.99712572552472,
+                "current": 53.16468693451395,
+                "delta": -7.832438791010766
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 15.849263175490783,
+                "current": 14.584166006178195,
+                "delta": -1.2650971693125879
+              },
+              "p90": {
+                "baseline": 36.572445671189925,
+                "current": 31.922783444552664,
+                "delta": -4.649662226637261
+              }
+            }
+          }
+        },
+        "3": {
+          "coverage": {
+            "total_points": 38,
+            "covered_points": 38,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 22.966956004524516,
+                "current": 22.261790876245758,
+                "delta": -0.7051651282787574
+              },
+              "p90": {
+                "baseline": 50.56560049835203,
+                "current": 50.75468519185449,
+                "delta": 0.18908469350245838
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 14.773928889193296,
+                "current": 14.773928889193296,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 26.997897497679574,
+                "current": 26.997897497679574,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 14.427196719416848,
+                "current": 14.427196719416848,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 27.370646674684675,
+                "current": 27.370646674684675,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 17.914351679676784,
+                "current": 17.73591762971893,
+                "delta": -0.17843404995785406
+              },
+              "p90": {
+                "baseline": 37.03588192415425,
+                "current": 35.69424270465834,
+                "delta": -1.3416392194959101
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 16.392254857235596,
+                "current": 16.11509293560474,
+                "delta": -0.2771619216308565
+              },
+              "p90": {
+                "baseline": 40.629001287797706,
+                "current": 37.634857362539556,
+                "delta": -2.9941439252581503
+              }
+            }
+          }
+        },
+        "4": {
+          "coverage": {
+            "total_points": 26,
+            "covered_points": 26,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 22.33452482228751,
+                "current": 20.051849178324566,
+                "delta": -2.2826756439629428
+              },
+              "p90": {
+                "baseline": 44.360978467025745,
+                "current": 37.612954265831874,
+                "delta": -6.748024201193871
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 14.90140831849303,
+                "current": 14.90140831849303,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 24.637378783927325,
+                "current": 24.637378783927325,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 16.332543857058212,
+                "current": 16.332543857058212,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 28.365188846244088,
+                "current": 28.365188846244088,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 17.40838884963916,
+                "current": 16.658700609151868,
+                "delta": -0.7496882404872913
+              },
+              "p90": {
+                "baseline": 30.866609372318404,
+                "current": 30.86664809913563,
+                "delta": 3.872681722683069e-05
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 16.814744269779588,
+                "current": 16.72044287647657,
+                "delta": -0.09430139330301657
+              },
+              "p90": {
+                "baseline": 35.56237104283782,
+                "current": 35.562625160633715,
+                "delta": 0.0002541177958974572
+              }
+            }
+          }
+        },
+        "5": {
+          "coverage": {
+            "total_points": 14,
+            "covered_points": 14,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 27.13200023455138,
+                "current": 23.778749597794523,
+                "delta": -3.353250636756858
+              },
+              "p90": {
+                "baseline": 64.36656485651221,
+                "current": 53.761851298115744,
+                "delta": -10.604713558396469
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 30.84753225098238,
+                "current": 30.84753225098238,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 45.318632629084725,
+                "current": 45.318632629084725,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 31.542489327209555,
+                "current": 31.542489327209555,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 46.82816515093994,
+                "current": 46.82816515093994,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 25.050145090645465,
+                "current": 23.578255794141267,
+                "delta": -1.471889296504198
+              },
+              "p90": {
+                "baseline": 56.99248682629571,
+                "current": 38.71250032443242,
+                "delta": -18.27998650186329
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 28.6292198793314,
+                "current": 29.332483867275176,
+                "delta": 0.7032639879437745
+              },
+              "p90": {
+                "baseline": 46.25250836236731,
+                "current": 46.25250834401611,
+                "delta": -1.8351201447330823e-08
+              }
+            }
+          }
+        },
+        "6": {
+          "coverage": {
+            "total_points": 2,
+            "covered_points": 2,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 5.353099444089991,
+                "current": 4.0460797231452466,
+                "delta": -1.3070197209447443
+              },
+              "p90": {
+                "baseline": 7.338067656008602,
+                "current": 4.8016504964337905,
+                "delta": -2.5364171595748113
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 3.572330343742782,
+                "current": 3.572330343742782,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 5.675885147707837,
+                "current": 5.675885147707837,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 2.8979900318115654,
+                "current": 2.8979900318115654,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 2.927380258326169,
+                "current": 2.927380258326169,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 3.8730885488789273,
+                "current": 3.584447904504483,
+                "delta": -0.2886406443744445
+              },
+              "p90": {
+                "baseline": 5.432256496464101,
+                "current": 4.814718868122491,
+                "delta": -0.6175376283416094
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 2.811750127337734,
+                "current": 3.739957855801367,
+                "delta": 0.928207728463633
+              },
+              "p90": {
+                "baseline": 2.8827534878930736,
+                "current": 4.210144660872295,
+                "delta": 1.3273911729792216
+              }
+            }
+          }
+        }
+      },
+      "by_log_floor": {
+        "03": {
+          "1": {
+            "coverage": {
+              "total_points": 0,
+              "covered_points": 0,
+              "coverage": null,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              }
+            }
+          },
+          "2": {
+            "coverage": {
+              "total_points": 11,
+              "covered_points": 11,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 88.35155620317455,
+                  "current": 60.68410452138563,
+                  "delta": -27.667451681788926
+                },
+                "p90": {
+                  "baseline": 104.2682583434419,
+                  "current": 99.83266399167996,
+                  "delta": -4.435594351761935
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 8.101602176223153,
+                  "current": 8.101602176223153,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 16.04841230458552,
+                  "current": 16.04841230458552,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 8.000186670371228,
+                  "current": 8.000186670371228,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 16.714871438700175,
+                  "current": 16.714871438700175,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 44.851419061072015,
+                  "current": 34.06230499811584,
+                  "delta": -10.789114062956173
+                },
+                "p90": {
+                  "baseline": 58.51435258396839,
+                  "current": 53.16468693451395,
+                  "delta": -5.349665649454437
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 16.78587521446726,
+                  "current": 15.782937696264508,
+                  "delta": -1.002937518202753
+                },
+                "p90": {
+                  "baseline": 18.616261596148334,
+                  "current": 20.42126240482814,
+                  "delta": 1.8050008086798073
+                }
+              }
+            }
+          },
+          "3": {
+            "coverage": {
+              "total_points": 19,
+              "covered_points": 19,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 24.370034782068572,
+                  "current": 24.687823500509168,
+                  "delta": 0.3177887184405961
+                },
+                "p90": {
+                  "baseline": 60.68110598051138,
+                  "current": 62.61556577894838,
+                  "delta": 1.934459798436997
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 14.701668336973404,
+                  "current": 14.701668336973404,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 32.789940158809245,
+                  "current": 32.789940158809245,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 14.904785077628734,
+                  "current": 14.904785077628734,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 39.5285814023954,
+                  "current": 39.5285814023954,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 18.339490904736216,
+                  "current": 18.823453069141834,
+                  "delta": 0.483962164405618
+                },
+                "p90": {
+                  "baseline": 37.04851256303114,
+                  "current": 36.694849674348305,
+                  "delta": -0.3536628886828339
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 16.09632333148622,
+                  "current": 16.56083099909383,
+                  "delta": 0.4645076676076094
+                },
+                "p90": {
+                  "baseline": 40.94723088535862,
+                  "current": 39.363787215920446,
+                  "delta": -1.583443669438175
+                }
+              }
+            }
+          },
+          "4": {
+            "coverage": {
+              "total_points": 13,
+              "covered_points": 13,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 22.36070588030581,
+                  "current": 20.838747497875552,
+                  "delta": -1.5219583824302596
+                },
+                "p90": {
+                  "baseline": 36.40364080877965,
+                  "current": 35.0406462557347,
+                  "delta": -1.362994553044949
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 15.139413767040462,
+                  "current": 15.139413767040462,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 24.637378783927325,
+                  "current": 24.637378783927325,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 16.66423095467317,
+                  "current": 16.66423095467317,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 26.52418882769126,
+                  "current": 26.52418882769126,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 17.36567504129283,
+                  "current": 17.11219194919118,
+                  "delta": -0.25348309210165
+                },
+                "p90": {
+                  "baseline": 29.606854489144812,
+                  "current": 29.606881689245004,
+                  "delta": 2.720010019174879e-05
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 16.561544998875792,
+                  "current": 16.728827636496668,
+                  "delta": 0.16728263762087536
+                },
+                "p90": {
+                  "baseline": 26.77243852944484,
+                  "current": 26.772495386142374,
+                  "delta": 5.685669753319189e-05
+                }
+              }
+            }
+          },
+          "5": {
+            "coverage": {
+              "total_points": 7,
+              "covered_points": 7,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 28.91778162873316,
+                  "current": 27.480038429878363,
+                  "delta": -1.4377431988547968
+                },
+                "p90": {
+                  "baseline": 64.36656485651221,
+                  "current": 63.57029383584936,
+                  "delta": -0.79627102066285
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 34.46968115825747,
+                  "current": 34.46968115825747,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 108.44612370097751,
+                  "current": 108.44612370097751,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 36.07365604148886,
+                  "current": 36.07365604148886,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 108.80241056534287,
+                  "current": 108.80241056534287,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 28.110382389236765,
+                  "current": 27.50874889043632,
+                  "delta": -0.6016334988004459
+                },
+                "p90": {
+                  "baseline": 83.68370990819572,
+                  "current": 83.68366171855284,
+                  "delta": -4.818964288233474e-05
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 31.385388169338377,
+                  "current": 32.02157581408435,
+                  "delta": 0.6361876447459736
+                },
+                "p90": {
+                  "baseline": 86.24726056118497,
+                  "current": 86.2472605387087,
+                  "delta": -2.24762715106408e-08
+                }
+              }
+            }
+          },
+          "6": {
+            "coverage": {
+              "total_points": 1,
+              "covered_points": 1,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 3.36813123217138,
+                  "current": 3.290508949856703,
+                  "delta": -0.07762228231467683
+                },
+                "p90": {
+                  "baseline": 3.36813123217138,
+                  "current": 3.290508949856703,
+                  "delta": -0.07762228231467683
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 1.4687755397777262,
+                  "current": 1.4687755397777262,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 1.4687755397777262,
+                  "current": 1.4687755397777262,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 2.927380258326169,
+                  "current": 2.927380258326169,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 2.927380258326169,
+                  "current": 2.927380258326169,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 2.3139206012937543,
+                  "current": 2.354176940886474,
+                  "delta": 0.04025633959271957
+                },
+                "p90": {
+                  "baseline": 2.3139206012937543,
+                  "current": 2.354176940886474,
+                  "delta": 0.04025633959271957
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 2.8827534878930736,
+                  "current": 3.2697710507304385,
+                  "delta": 0.3870175628373649
+                },
+                "p90": {
+                  "baseline": 2.8827534878930736,
+                  "current": 3.2697710507304385,
+                  "delta": 0.3870175628373649
+                }
+              }
+            }
+          }
+        },
+        "04": {
+          "1": {
+            "coverage": {
+              "total_points": 0,
+              "covered_points": 0,
+              "coverage": null,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              }
+            }
+          },
+          "2": {
+            "coverage": {
+              "total_points": 11,
+              "covered_points": 11,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 88.11454655152737,
+                  "current": 59.538168075525874,
+                  "delta": -28.576378476001494
+                },
+                "p90": {
+                  "baseline": 106.20030990921694,
+                  "current": 98.7181400394917,
+                  "delta": -7.48216986972524
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 7.644371953870095,
+                  "current": 7.644371953870095,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 14.059564869016274,
+                  "current": 14.059564869016274,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 7.304529134767734,
+                  "current": 7.304529134767734,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 13.493095948474522,
+                  "current": 13.493095948474522,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 44.97861126566324,
+                  "current": 30.88520691940565,
+                  "delta": -14.09340434625759
+                },
+                "p90": {
+                  "baseline": 60.99712572552472,
+                  "current": 52.02230743329502,
+                  "delta": -8.974818292229699
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 14.9126511365143,
+                  "current": 13.38539431609188,
+                  "delta": -1.527256820422421
+                },
+                "p90": {
+                  "baseline": 36.572445671189925,
+                  "current": 31.922783444552664,
+                  "delta": -4.649662226637261
+                }
+              }
+            }
+          },
+          "3": {
+            "coverage": {
+              "total_points": 19,
+              "covered_points": 19,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 21.563877226980452,
+                  "current": 19.83575825198234,
+                  "delta": -1.728118974998111
+                },
+                "p90": {
+                  "baseline": 48.67873844168182,
+                  "current": 48.63916528100148,
+                  "delta": -0.03957316068034089
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 14.846189441413195,
+                  "current": 14.846189441413195,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 26.997897497679574,
+                  "current": 26.997897497679574,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 13.949608361204968,
+                  "current": 13.949608361204968,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 27.370646674684675,
+                  "current": 27.370646674684675,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 17.489212454617356,
+                  "current": 16.64838219029603,
+                  "delta": -0.8408302643213261
+                },
+                "p90": {
+                  "baseline": 35.49320983354672,
+                  "current": 31.33055082264515,
+                  "delta": -4.162659010901571
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 16.68818638298497,
+                  "current": 15.669354872115656,
+                  "delta": -1.0188315108693136
+                },
+                "p90": {
+                  "baseline": 40.629001287797706,
+                  "current": 37.634857362539556,
+                  "delta": -2.9941439252581503
+                }
+              }
+            }
+          },
+          "4": {
+            "coverage": {
+              "total_points": 13,
+              "covered_points": 13,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 22.308343764269218,
+                  "current": 19.26495085877358,
+                  "delta": -3.0433929054956366
+                },
+                "p90": {
+                  "baseline": 44.360978467025745,
+                  "current": 37.612954265831874,
+                  "delta": -6.748024201193871
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 14.663402869945592,
+                  "current": 14.663402869945592,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 24.56404707916417,
+                  "current": 24.56404707916417,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 16.00085675944326,
+                  "current": 16.00085675944326,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 28.365188846244088,
+                  "current": 28.365188846244088,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 17.451102657985494,
+                  "current": 16.20520926911256,
+                  "delta": -1.2458933888729327
+                },
+                "p90": {
+                  "baseline": 30.866609372318404,
+                  "current": 30.86664809913563,
+                  "delta": 3.872681722683069e-05
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 17.067943540683384,
+                  "current": 16.71205811645647,
+                  "delta": -0.3558854242269156
+                },
+                "p90": {
+                  "baseline": 35.56237104283782,
+                  "current": 35.562625160633715,
+                  "delta": 0.0002541177958974572
+                }
+              }
+            }
+          },
+          "5": {
+            "coverage": {
+              "total_points": 7,
+              "covered_points": 7,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 25.346218840369602,
+                  "current": 20.077460765710676,
+                  "delta": -5.268758074658926
+                },
+                "p90": {
+                  "baseline": 81.71032979145836,
+                  "current": 40.754698659034595,
+                  "delta": -40.95563113242377
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 27.225383343707275,
+                  "current": 27.225383343707275,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 45.318632629084725,
+                  "current": 45.318632629084725,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 27.011322612930257,
+                  "current": 27.011322612930257,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 46.749937252028154,
+                  "current": 46.749937252028154,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 21.989907792054158,
+                  "current": 19.647762697846222,
+                  "delta": -2.342145094207936
+                },
+                "p90": {
+                  "baseline": 56.99248682629571,
+                  "current": 38.71250032443242,
+                  "delta": -18.27998650186329
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 25.873051589324422,
+                  "current": 26.64339192046601,
+                  "delta": 0.7703403311415862
+                },
+                "p90": {
+                  "baseline": 46.15895419804558,
+                  "current": 46.15895419541689,
+                  "delta": -2.6286883780812786e-09
+                }
+              }
+            }
+          },
+          "6": {
+            "coverage": {
+              "total_points": 1,
+              "covered_points": 1,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 7.338067656008602,
+                  "current": 4.8016504964337905,
+                  "delta": -2.5364171595748113
+                },
+                "p90": {
+                  "baseline": 7.338067656008602,
+                  "current": 4.8016504964337905,
+                  "delta": -2.5364171595748113
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 5.675885147707837,
+                  "current": 5.675885147707837,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 5.675885147707837,
+                  "current": 5.675885147707837,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 2.8685998052969617,
+                  "current": 2.8685998052969617,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 2.8685998052969617,
+                  "current": 2.8685998052969617,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 5.432256496464101,
+                  "current": 4.814718868122491,
+                  "delta": -0.6175376283416094
+                },
+                "p90": {
+                  "baseline": 5.432256496464101,
+                  "current": 4.814718868122491,
+                  "delta": -0.6175376283416094
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 2.740746766782394,
+                  "current": 4.210144660872295,
+                  "delta": 1.469397894089901
+                },
+                "p90": {
+                  "baseline": 2.740746766782394,
+                  "current": 4.210144660872295,
+                  "delta": 1.469397894089901
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "5": {
+      "overall": {
+        "coverage": {
+          "total_points": 102,
+          "covered_points": 102,
+          "coverage": 1.0,
+          "unsupported_floor": 0,
+          "no_prior_prediction": 0
+        },
+        "methods": {
+          "hurdle": {
+            "mean": {
+              "baseline": 36.09871469050925,
+              "current": 22.439476039105166,
+              "delta": -13.659238651404081
+            },
+            "p90": {
+              "baseline": 91.49441854431622,
+              "current": 50.855856112256205,
+              "delta": -40.63856243206001
+            }
+          },
+          "GP": {
+            "mean": {
+              "baseline": 13.527416614709443,
+              "current": 13.527416614709443,
+              "delta": 0.0
+            },
+            "p90": {
+              "baseline": 25.667245852903093,
+              "current": 25.667245852903093,
+              "delta": 0.0
+            }
+          },
+          "GP_candidates": {
+            "mean": {
+              "baseline": 14.021778760292143,
+              "current": 14.021778760292143,
+              "delta": 0.0
+            },
+            "p90": {
+              "baseline": 27.680579399536406,
+              "current": 27.680579399536406,
+              "delta": 0.0
+            }
+          },
+          "coordinate_half": {
+            "mean": {
+              "baseline": 23.122844827378035,
+              "current": 16.879922234767406,
+              "delta": -6.242922592610629
+            },
+            "p90": {
+              "baseline": 51.671508379292014,
+              "current": 34.152446080025754,
+              "delta": -17.51906229926626
+            }
+          },
+          "probability_half": {
+            "mean": {
+              "baseline": 15.603808189331,
+              "current": 14.899749795684677,
+              "delta": -0.7040583936463225
+            },
+            "p90": {
+              "baseline": 37.41733977666604,
+              "current": 31.297692389486247,
+              "delta": -6.119647387179793
+            }
+          }
+        }
+      },
+      "by_log": {
+        "03": {
+          "coverage": {
+            "total_points": 51,
+            "covered_points": 51,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 36.737521598294066,
+                "current": 23.79006549968024,
+                "delta": -12.947456098613827
+              },
+              "p90": {
+                "baseline": 91.51094938926154,
+                "current": 58.114536779291875,
+                "delta": -33.396412609969666
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 13.330152755118156,
+                "current": 13.330152755118156,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 25.667245852903093,
+                "current": 25.667245852903093,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 14.064864501775116,
+                "current": 14.064864501775116,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 26.34109246479777,
+                "current": 26.34109246479777,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 23.16499153720665,
+                "current": 17.630834566221218,
+                "delta": -5.534156970985432
+              },
+              "p90": {
+                "baseline": 50.68682525399618,
+                "current": 34.95577248264358,
+                "delta": -15.731052771352601
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 15.78357318013603,
+                "current": 14.864899893004425,
+                "delta": -0.9186732871316039
+              },
+              "p90": {
+                "baseline": 40.18057779460195,
+                "current": 26.538677092890595,
+                "delta": -13.641900701711357
+              }
+            }
+          }
+        },
+        "04": {
+          "coverage": {
+            "total_points": 51,
+            "covered_points": 51,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 35.45990778272443,
+                "current": 21.08888657853007,
+                "delta": -14.37102120419436
+              },
+              "p90": {
+                "baseline": 91.48945179369322,
+                "current": 41.82029634606045,
+                "delta": -49.66915544763277
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 13.724680474300733,
+                "current": 13.724680474300733,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 25.592815551288666,
+                "current": 25.592815551288666,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 13.97869301880917,
+                "current": 13.97869301880917,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 27.680579399536406,
+                "current": 27.680579399536406,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 23.080698117549424,
+                "current": 16.12900990331359,
+                "delta": -6.951688214235833
+              },
+              "p90": {
+                "baseline": 51.671508379292014,
+                "current": 30.36446575305452,
+                "delta": -21.307042626237493
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 15.424043198525974,
+                "current": 14.934599698364929,
+                "delta": -0.48944350016104465
+              },
+              "p90": {
+                "baseline": 36.87414566026884,
+                "current": 31.297692389486247,
+                "delta": -5.57645327078259
+              }
+            }
+          }
+        }
+      },
+      "by_floor": {
+        "1": {
+          "coverage": {
+            "total_points": 0,
+            "covered_points": 0,
+            "coverage": null,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              },
+              "p90": {
+                "baseline": null,
+                "current": null,
+                "delta": null
+              }
+            }
+          }
+        },
+        "2": {
+          "coverage": {
+            "total_points": 22,
+            "covered_points": 22,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 87.4929288332774,
+                "current": 31.590790451538837,
+                "delta": -55.90213838173857
+              },
+              "p90": {
+                "baseline": 105.15820029767774,
+                "current": 82.68164562500941,
+                "delta": -22.47655467266833
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 7.602065417575236,
+                "current": 7.602065417575236,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 15.639056748809011,
+                "current": 15.639056748809011,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 7.445959485288102,
+                "current": 7.445959485288102,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 16.46118284849495,
+                "current": 16.46118284849495,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 44.362538075129095,
+                "current": 18.054839192711555,
+                "delta": -26.30769888241754
+              },
+              "p90": {
+                "baseline": 61.02134401197243,
+                "current": 41.94095807333126,
+                "delta": -19.08038593864117
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 12.151311355070298,
+                "current": 9.994479083186915,
+                "delta": -2.156832271883383
+              },
+              "p90": {
+                "baseline": 18.539921238380913,
+                "current": 19.10175629872802,
+                "delta": 0.5618350603471072
+              }
+            }
+          }
+        },
+        "3": {
+          "coverage": {
+            "total_points": 38,
+            "covered_points": 38,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 22.50049331892426,
+                "current": 20.806588955332334,
+                "delta": -1.6939043635919262
+              },
+              "p90": {
+                "baseline": 48.31904871472282,
+                "current": 50.23207806352064,
+                "delta": 1.9130293487978207
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 14.7019526165696,
+                "current": 14.7019526165696,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 32.78575760647188,
+                "current": 32.78575760647188,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 14.603334254043354,
+                "current": 14.603334254043354,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 33.5648371263167,
+                "current": 33.5648371263167,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 17.768602182816025,
+                "current": 17.136034307929236,
+                "delta": -0.6325678748867887
+              },
+              "p90": {
+                "baseline": 37.61202548901122,
+                "current": 34.152446080025754,
+                "delta": -3.459579408985462
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 16.083991652477483,
+                "current": 15.275452640911872,
+                "delta": -0.8085390115656104
+              },
+              "p90": {
+                "baseline": 40.18057779460195,
+                "current": 35.757026931035696,
+                "delta": -4.4235508635662555
+              }
+            }
+          }
+        },
+        "4": {
+          "coverage": {
+            "total_points": 26,
+            "covered_points": 26,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 21.89220347296869,
+                "current": 20.930500721618383,
+                "delta": -0.9617027513503054
+              },
+              "p90": {
+                "baseline": 46.37104226154721,
+                "current": 37.420432715208854,
+                "delta": -8.950609546338356
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 14.63112850323016,
+                "current": 14.63112850323016,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 22.541079254354123,
+                "current": 22.541079254354123,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 16.490970605600896,
+                "current": 16.490970605600896,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 26.665163103441454,
+                "current": 26.665163103441454,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 16.927030020246708,
+                "current": 16.835150170548502,
+                "delta": -0.09187984969820562
+              },
+              "p90": {
+                "baseline": 28.452404491826442,
+                "current": 28.45260813607144,
+                "delta": 0.00020364424499774714
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 16.8814311808665,
+                "current": 16.756738816711785,
+                "delta": -0.12469236415471485
+              },
+              "p90": {
+                "baseline": 32.96667849486205,
+                "current": 32.97055565217872,
+                "delta": 0.0038771573166656026
+              }
+            }
+          }
+        },
+        "5": {
+          "coverage": {
+            "total_points": 14,
+            "covered_points": 14,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 23.1634975866123,
+                "current": 17.941435046754172,
+                "delta": -5.222062539858129
+              },
+              "p90": {
+                "baseline": 58.67439165448559,
+                "current": 41.765452073832115,
+                "delta": -16.908939580653474
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 19.038624121292703,
+                "current": 19.038624121292703,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 45.07146066989494,
+                "current": 45.07146066989494,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 19.744247456359282,
+                "current": 19.744247456359282,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 46.572364501072734,
+                "current": 46.572364501072734,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 18.597832753394133,
+                "current": 16.326713764058187,
+                "delta": -2.271118989335946
+              },
+              "p90": {
+                "baseline": 28.897732010238574,
+                "current": 25.41153445211289,
+                "delta": -3.486197558125685
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 19.167506281904743,
+                "current": 19.739176926982417,
+                "delta": 0.5716706450776741
+              },
+              "p90": {
+                "baseline": 44.35549048864137,
+                "current": 44.3554904659328,
+                "delta": -2.270856924724285e-08
+              }
+            }
+          }
+        },
+        "6": {
+          "coverage": {
+            "total_points": 2,
+            "covered_points": 2,
+            "coverage": 1.0,
+            "unsupported_floor": 0,
+            "no_prior_prediction": 0
+          },
+          "methods": {
+            "hurdle": {
+              "mean": {
+                "baseline": 4.359730735480004,
+                "current": 3.9028381678032615,
+                "delta": -0.45689256767674236
+              },
+              "p90": {
+                "baseline": 5.149156362129069,
+                "current": 4.515077584779081,
+                "delta": -0.6340787773499876
+              }
+            },
+            "GP": {
+              "mean": {
+                "baseline": 3.4633886509907414,
+                "current": 3.4633886509907414,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 5.562868010747384,
+                "current": 5.562868010747384,
+                "delta": 0.0
+              }
+            },
+            "GP_candidates": {
+              "mean": {
+                "baseline": 3.1494615425797834,
+                "current": 3.1494615425797834,
+                "delta": 0.0
+              },
+              "p90": {
+                "baseline": 3.404186249723553,
+                "current": 3.404186249723553,
+                "delta": 0.0
+              }
+            },
+            "coordinate_half": {
+              "mean": {
+                "baseline": 3.4375063593892863,
+                "current": 3.5442024371169834,
+                "delta": 0.10669607772769707
+              },
+              "p90": {
+                "baseline": 4.537884565759208,
+                "current": 4.789613038278723,
+                "delta": 0.251728472519515
+              }
+            },
+            "probability_half": {
+              "mean": {
+                "baseline": 2.9028020284379505,
+                "current": 3.702526381406873,
+                "delta": 0.7997243529689224
+              },
+              "p90": {
+                "baseline": 2.943754446165136,
+                "current": 4.136762871629194,
+                "delta": 1.1930084254640576
+              }
+            }
+          }
+        }
+      },
+      "by_log_floor": {
+        "03": {
+          "1": {
+            "coverage": {
+              "total_points": 0,
+              "covered_points": 0,
+              "coverage": null,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              }
+            }
+          },
+          "2": {
+            "coverage": {
+              "total_points": 11,
+              "covered_points": 11,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 87.78163637704823,
+                  "current": 33.11307362528419,
+                  "delta": -54.66856275176404
+                },
+                "p90": {
+                  "baseline": 103.53241374537275,
+                  "current": 80.61881444179548,
+                  "delta": -22.91359930357727
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 7.804667795403102,
+                  "current": 7.804667795403102,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 15.639056748809011,
+                  "current": 15.639056748809011,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 7.828383838866756,
+                  "current": 7.828383838866756,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 16.46118284849495,
+                  "current": 16.46118284849495,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 44.35753447102793,
+                  "current": 19.965045584658522,
+                  "delta": -24.39248888636941
+                },
+                "p90": {
+                  "baseline": 58.06073811770912,
+                  "current": 44.886578411119366,
+                  "delta": -13.174159706589755
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 14.704312745145891,
+                  "current": 10.685046168331906,
+                  "delta": -4.019266576813985
+                },
+                "p90": {
+                  "baseline": 18.539921238380913,
+                  "current": 20.29593452923715,
+                  "delta": 1.756013290856238
+                }
+              }
+            }
+          },
+          "3": {
+            "coverage": {
+              "total_points": 19,
+              "covered_points": 19,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 23.916083953006584,
+                  "current": 23.073984769945785,
+                  "delta": -0.8420991830607996
+                },
+                "p90": {
+                  "baseline": 56.56100463509965,
+                  "current": 58.114536779291875,
+                  "delta": 1.553532144192225
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 14.54159773192446,
+                  "current": 14.54159773192446,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 33.448990769658316,
+                  "current": 33.448990769658316,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 15.089832623960834,
+                  "current": 15.089832623960834,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 39.61289321155396,
+                  "current": 39.61289321155396,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 18.172585843256606,
+                  "current": 18.09081502695068,
+                  "delta": -0.08177081630592653
+                },
+                "p90": {
+                  "baseline": 38.562175452735886,
+                  "current": 34.95577248264358,
+                  "delta": -3.6064029700923044
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 15.838577521867819,
+                  "current": 15.568157743913119,
+                  "delta": -0.2704197779547002
+                },
+                "p90": {
+                  "baseline": 42.9801987380988,
+                  "current": 39.78630914145851,
+                  "delta": -3.1938895966402896
+                }
+              }
+            }
+          },
+          "4": {
+            "coverage": {
+              "total_points": 13,
+              "covered_points": 13,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 21.544117104958016,
+                  "current": 20.624162605198627,
+                  "delta": -0.9199544997593883
+                },
+                "p90": {
+                  "baseline": 34.369017377783386,
+                  "current": 34.36916277496871,
+                  "delta": 0.00014539718532091683
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 14.723194306206572,
+                  "current": 14.723194306206572,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 22.541079254354123,
+                  "current": 22.541079254354123,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 16.37857248551203,
+                  "current": 16.37857248551203,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 25.793386882217458,
+                  "current": 25.793386882217458,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 16.80621941525577,
+                  "current": 16.88349125775609,
+                  "delta": 0.07727184250031982
+                },
+                "p90": {
+                  "baseline": 28.205762309822372,
+                  "current": 28.205850184492984,
+                  "delta": 8.787467061210918e-05
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 16.433754382486303,
+                  "current": 16.45969061980048,
+                  "delta": 0.025936237314176935
+                },
+                "p90": {
+                  "baseline": 25.440669886440492,
+                  "current": 25.44080650742952,
+                  "delta": 0.00013662098902855746
+                }
+              }
+            }
+          },
+          "5": {
+            "coverage": {
+              "total_points": 7,
+              "covered_points": 7,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 24.28088268357953,
+                  "current": 19.891301051169528,
+                  "delta": -4.389581632410003
+                },
+                "p90": {
+                  "baseline": 58.67439165448559,
+                  "current": 50.855856112256205,
+                  "delta": -7.818535542229384
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 17.8472360833011,
+                  "current": 17.8472360833011,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 45.07146066989494,
+                  "current": 45.07146066989494,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 18.381838337235486,
+                  "current": 18.381838337235486,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 46.652560428488506,
+                  "current": 46.652560428488506,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 18.197796806144556,
+                  "current": 16.29248539245584,
+                  "delta": -1.9053114136887146
+                },
+                "p90": {
+                  "baseline": 28.897732010238574,
+                  "current": 25.41153445211289,
+                  "delta": -3.486197558125685
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 17.9687374988302,
+                  "current": 18.219303086947775,
+                  "delta": 0.2505655881175741
+                },
+                "p90": {
+                  "baseline": 44.99133365719211,
+                  "current": 44.99133357085915,
+                  "delta": -8.633296033622173e-08
+                }
+              }
+            }
+          },
+          "6": {
+            "coverage": {
+              "total_points": 1,
+              "covered_points": 1,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 3.5703051088309397,
+                  "current": 3.290598750827442,
+                  "delta": -0.2797063580034975
+                },
+                "p90": {
+                  "baseline": 3.5703051088309397,
+                  "current": 3.290598750827442,
+                  "delta": -0.2797063580034975
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 1.363909291234099,
+                  "current": 1.363909291234099,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 1.363909291234099,
+                  "current": 1.363909291234099,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 2.8947368354360132,
+                  "current": 2.8947368354360132,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 2.8947368354360132,
+                  "current": 2.8947368354360132,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 2.3371281530193646,
+                  "current": 2.2987918359552433,
+                  "delta": -0.03833631706412133
+                },
+                "p90": {
+                  "baseline": 2.3371281530193646,
+                  "current": 2.2987918359552433,
+                  "delta": -0.03833631706412133
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 2.861849610710765,
+                  "current": 3.268289891184552,
+                  "delta": 0.4064402804737872
+                },
+                "p90": {
+                  "baseline": 2.861849610710765,
+                  "current": 3.268289891184552,
+                  "delta": 0.4064402804737872
+                }
+              }
+            }
+          }
+        },
+        "04": {
+          "1": {
+            "coverage": {
+              "total_points": 0,
+              "covered_points": 0,
+              "coverage": null,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                },
+                "p90": {
+                  "baseline": null,
+                  "current": null,
+                  "delta": null
+                }
+              }
+            }
+          },
+          "2": {
+            "coverage": {
+              "total_points": 11,
+              "covered_points": 11,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 87.20422128950658,
+                  "current": 30.068507277793472,
+                  "delta": -57.135714011713105
+                },
+                "p90": {
+                  "baseline": 105.15820029767774,
+                  "current": 82.68164562500941,
+                  "delta": -22.47655467266833
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 7.399463039747371,
+                  "current": 7.399463039747371,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 13.390304121268052,
+                  "current": 13.390304121268052,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 7.063535131709449,
+                  "current": 7.063535131709449,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 13.149823433736525,
+                  "current": 13.149823433736525,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 44.36754167923022,
+                  "current": 16.144632800764594,
+                  "delta": -28.222908878465628
+                },
+                "p90": {
+                  "baseline": 61.02134401197243,
+                  "current": 41.152059924356465,
+                  "delta": -19.869284087615966
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 9.598309964994701,
+                  "current": 9.303911998041919,
+                  "delta": -0.29439796695278275
+                },
+                "p90": {
+                  "baseline": 15.80916166495069,
+                  "current": 16.526572289891863,
+                  "delta": 0.7174106249411736
+                }
+              }
+            }
+          },
+          "3": {
+            "coverage": {
+              "total_points": 19,
+              "covered_points": 19,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 21.084902684841946,
+                  "current": 18.539193140718886,
+                  "delta": -2.54570954412306
+                },
+                "p90": {
+                  "baseline": 48.01332186924614,
+                  "current": 45.385554840742195,
+                  "delta": -2.6277670285039463
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 14.862307501214744,
+                  "current": 14.862307501214744,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 32.78575760647188,
+                  "current": 32.78575760647188,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 14.116835884125875,
+                  "current": 14.116835884125875,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 31.722966384331112,
+                  "current": 31.722966384331112,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 17.36461852237544,
+                  "current": 16.1812535889078,
+                  "delta": -1.1833649334676402
+                },
+                "p90": {
+                  "baseline": 37.61202548901122,
+                  "current": 30.36446575305452,
+                  "delta": -7.2475597359566954
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 16.329405783087147,
+                  "current": 14.982747537910612,
+                  "delta": -1.3466582451765348
+                },
+                "p90": {
+                  "baseline": 38.235541139373126,
+                  "current": 35.757026931035696,
+                  "delta": -2.4785142083374296
+                }
+              }
+            }
+          },
+          "4": {
+            "coverage": {
+              "total_points": 13,
+              "covered_points": 13,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 22.240289840979365,
+                  "current": 21.23683883803814,
+                  "delta": -1.003451002941226
+                },
+                "p90": {
+                  "baseline": 46.37104226154721,
+                  "current": 37.420432715208854,
+                  "delta": -8.950609546338356
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 14.53906270025375,
+                  "current": 14.53906270025375,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 19.821274692726192,
+                  "current": 19.821274692726192,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 16.603368725689766,
+                  "current": 16.603368725689766,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 26.665163103441454,
+                  "current": 26.665163103441454,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 17.047840625237647,
+                  "current": 16.78680908334092,
+                  "delta": -0.2610315418967275
+                },
+                "p90": {
+                  "baseline": 28.452404491826442,
+                  "current": 28.45260813607144,
+                  "delta": 0.00020364424499774714
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 17.329107979246693,
+                  "current": 17.053787013623083,
+                  "delta": -0.2753209656236102
+                },
+                "p90": {
+                  "baseline": 32.96667849486205,
+                  "current": 32.97055565217872,
+                  "delta": 0.0038771573166656026
+                }
+              }
+            }
+          },
+          "5": {
+            "coverage": {
+              "total_points": 7,
+              "covered_points": 7,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 22.04611248964508,
+                  "current": 15.991569042338828,
+                  "delta": -6.054543447306251
+                },
+                "p90": {
+                  "baseline": 83.7317904533324,
+                  "current": 41.765452073832115,
+                  "delta": -41.96633837950028
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 20.230012159284293,
+                  "current": 20.230012159284293,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 45.142460132029065,
+                  "current": 45.142460132029065,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 21.106656575483075,
+                  "current": 21.106656575483075,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 46.572364501072734,
+                  "current": 46.572364501072734,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 18.997868700643714,
+                  "current": 16.360942135660533,
+                  "delta": -2.636926564983181
+                },
+                "p90": {
+                  "baseline": 54.342669757400515,
+                  "current": 33.40686805746903,
+                  "delta": -20.93580169993148
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 20.366275064979288,
+                  "current": 21.259050767017055,
+                  "delta": 0.8927757020377669
+                },
+                "p90": {
+                  "baseline": 44.35549048864137,
+                  "current": 44.3554904659328,
+                  "delta": -2.270856924724285e-08
+                }
+              }
+            }
+          },
+          "6": {
+            "coverage": {
+              "total_points": 1,
+              "covered_points": 1,
+              "coverage": 1.0,
+              "unsupported_floor": 0,
+              "no_prior_prediction": 0
+            },
+            "methods": {
+              "hurdle": {
+                "mean": {
+                  "baseline": 5.149156362129069,
+                  "current": 4.515077584779081,
+                  "delta": -0.6340787773499876
+                },
+                "p90": {
+                  "baseline": 5.149156362129069,
+                  "current": 4.515077584779081,
+                  "delta": -0.6340787773499876
+                }
+              },
+              "GP": {
+                "mean": {
+                  "baseline": 5.562868010747384,
+                  "current": 5.562868010747384,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 5.562868010747384,
+                  "current": 5.562868010747384,
+                  "delta": 0.0
+                }
+              },
+              "GP_candidates": {
+                "mean": {
+                  "baseline": 3.404186249723553,
+                  "current": 3.404186249723553,
+                  "delta": 0.0
+                },
+                "p90": {
+                  "baseline": 3.404186249723553,
+                  "current": 3.404186249723553,
+                  "delta": 0.0
+                }
+              },
+              "coordinate_half": {
+                "mean": {
+                  "baseline": 4.537884565759208,
+                  "current": 4.789613038278723,
+                  "delta": 0.251728472519515
+                },
+                "p90": {
+                  "baseline": 4.537884565759208,
+                  "current": 4.789613038278723,
+                  "delta": 0.251728472519515
+                }
+              },
+              "probability_half": {
+                "mean": {
+                  "baseline": 2.943754446165136,
+                  "current": 4.136762871629194,
+                  "delta": 1.1930084254640576
+                },
+                "p90": {
+                  "baseline": 2.943754446165136,
+                  "current": 4.136762871629194,
+                  "delta": 1.1930084254640576
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
