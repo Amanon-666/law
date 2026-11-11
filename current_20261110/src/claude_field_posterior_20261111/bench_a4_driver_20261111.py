@@ -30,12 +30,18 @@ if len(sys.argv) > 1 and sys.argv[1] == '--child':
     run_claude.R.main()
     sys.exit(0)
 
+if len(sys.argv) > 1 and sys.argv[1] == '--continue':
+    previous_pid = int(sys.argv[2])
+    while Path(f'/proc/{previous_pid}').exists():
+        time.sleep(30)
+
 os.chdir(SRC)
 os.environ.update(OMP_NUM_THREADS='2', OPENBLAS_NUM_THREADS='2', MKL_NUM_THREADS='2', NUMEXPR_NUM_THREADS='2', CUDA_VISIBLE_DEVICES='', PYTHONDONTWRITEBYTECODE='1', HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', HF_DATASETS_OFFLINE='1',
     PYTHONPATH='/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages:/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/python_dependencies:/home/panyushuo/projects/panyushuo/multifloor-check-20261026/env/lib/python3.12/site-packages',
     VT_DIR=str(SRC / 'claude_hurdle_20261110'), LAW_UJI_CSV='/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv')
 started = time.time()
-state = {'started_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'driver_pid': os.getpid(), 'runs': []}
+state = json.loads(STATE.read_text()) if len(sys.argv) > 1 and sys.argv[1] == '--continue' else {'started_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'driver_pid': os.getpid(), 'runs': []}
+state['active_driver_pid'] = os.getpid()
 def save():
     STATE.write_text(json.dumps(state, indent=2) + '\n')
 def git(*args):
@@ -43,9 +49,8 @@ def git(*args):
 save()
 try:
     for target, source in [('B0','B1'), ('B0','B2'), ('B1','B0'), ('B1','B2'), ('B2','B0'), ('B2','B1')]:
-        if time.time() - started >= 55 * 60:
-            state['status'] = 'time_limit_no_new_run'
-            break
+        if any(r['target'] == target and r['source'] == source and r.get('pushed') for r in state['runs']):
+            continue
         freeze = json.loads((RESULTS / f'bench_uji_{target}_A_20261111/freeze.json').read_text())['configuration']
         output = RESULTS / f'bench_uji_{target}_1src_{source}_20261111'
         log_path = output.with_suffix('.log')
