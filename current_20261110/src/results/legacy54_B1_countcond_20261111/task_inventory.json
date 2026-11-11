@@ -1,0 +1,893 @@
+{
+  "ready": [
+    {
+      "task_id": "uji/B1/legacy54/B1F0_AB_K1",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F0_AB_K1",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        7,
+        6,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        16,
+        14,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F0_AB_K3",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F0_AB_K3",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        7,
+        6,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        16,
+        14,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F0_AB_K5",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F0_AB_K5",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        7,
+        6,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        16,
+        14,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F0_BA_K1",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F0_BA_K1",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        16,
+        14,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        7,
+        6,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F0_BA_K3",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F0_BA_K3",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        16,
+        14,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        7,
+        6,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F0_BA_K5",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F0_BA_K5",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        16,
+        14,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        7,
+        6,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F1_AB_K1",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F1_AB_K1",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        11,
+        13,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        14,
+        7,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F1_AB_K3",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F1_AB_K3",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        11,
+        13,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        14,
+        7,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F1_AB_K5",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F1_AB_K5",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        11,
+        13,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        14,
+        7,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F1_BA_K1",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F1_BA_K1",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        14,
+        7,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        11,
+        13,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F1_BA_K3",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F1_BA_K3",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        14,
+        7,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        11,
+        13,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F1_BA_K5",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F1_BA_K5",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        14,
+        7,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        11,
+        13,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F2_AB_K1",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F2_AB_K1",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        2,
+        23,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        4,
+        18,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F2_AB_K3",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F2_AB_K3",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        2,
+        23,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        4,
+        18,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F2_AB_K5",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F2_AB_K5",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        2,
+        23,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        4,
+        18,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F2_BA_K1",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F2_BA_K1",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        4,
+        18,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        2,
+        23,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F2_BA_K3",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F2_BA_K3",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        4,
+        18,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        2,
+        23,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F2_BA_K5",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F2_BA_K5",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        4,
+        18,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        2,
+        23,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F3_AB_K1",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F3_AB_K1",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        8,
+        1,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        18,
+        10,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F3_AB_K3",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F3_AB_K3",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        8,
+        1,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        18,
+        10,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F3_AB_K5",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F3_AB_K5",
+      "direction": "AB",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        8,
+        1,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        18,
+        10,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F3_BA_K1",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F3_BA_K1",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        18,
+        10,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        8,
+        1,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F3_BA_K3",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F3_BA_K3",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        18,
+        10,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        8,
+        1,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    },
+    {
+      "task_id": "uji/B1/legacy54/B1F3_BA_K5",
+      "protocol": "legacy54",
+      "legacy_event_id": "B1F3_BA_K5",
+      "direction": "BA",
+      "seed": 11509159,
+      "tabicl_seed": 11509159,
+      "manifest_sha256": "bb7db6eb8ce070a400f18057af46dc68f734f5db6f60235f4c60189e62d3c496",
+      "source_csv_path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "manifest_row_index_kind": "csv_one_based",
+      "query_row_index_kind": "csv_zero_based",
+      "R_requested": 3,
+      "R_limit": 3,
+      "support_scans_per_position": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "query_positions": 12,
+      "query_scans": 36,
+      "acquisition_separated": true,
+      "support_acquisition": [
+        18,
+        10,
+        "2013-06-20"
+      ],
+      "query_acquisition": [
+        8,
+        1,
+        "2013-06-20"
+      ],
+      "acquisition_definition": "USERID,PHONEID,UTC date; observed groups, not certified independent replicates",
+      "evaluation_status": "exposed_development",
+      "legacy_event_weight": 0.020833333333333332,
+      "legacy_floors_in_building": 4
+    }
+  ],
+  "unavailable": []
+}

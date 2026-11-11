@@ -334,10 +334,14 @@ def condition_v2(Xc, f, s_rss, s_xy, theta, fS=None, r_prior=4.0):
     return p, m, s2
 
 
-def read_mass(cand_xy, p, m, s2, s_rss, s_xy, q_rss, informative=False, offsets=True, eps=None, temper=True):
+def read_mass(cand_xy, p, m, s2, s_rss, s_xy, q_rss, informative=False, offsets=True, eps=None, temper=True,
+              count_cond=False):
     """frozen M3 reader -> (candidate xy incl. empirical S entries, normalised log position mass [n_q, n_c], bounds).
     Ablation switches (defaults = frozen reader): offsets (device-offset integration), eps (robust mixture weight;
-    1e-12 ~ off), temper (beta/A temperature)."""
+    1e-12 ~ off), temper (beta/A temperature), count_cond (conditional-Bernoulli: subtract, per candidate, the log
+    probability of the query's TOTAL number of detected APs under the candidate's effective detection probabilities,
+    normal approximation to the Poisson-binomial; removes a scan-wide detection-rate shift between acquisitions while
+    keeping which APs are detected and their RSS as spatial evidence)."""
     EPS_ = EPS if eps is None else eps; OFF = OFFSETS if offsets else np.array([0.0])
     Ps, n, nd, mean, var = det_stats(s_rss, s_xy)
     xy = np.vstack([cand_xy, Ps]); p = np.clip(np.vstack([p, (nd + 0.5) / (n[:, None] + 1.0)]), 1e-4, 1 - 1e-4)
@@ -350,6 +354,10 @@ def read_mass(cand_xy, p, m, s2, s_rss, s_xy, q_rss, informative=False, offsets=
         per = [np.logaddexp(np.log(1 - EPS_) + logp[:, d] + lnorm[:, d] - 0.5 * (v - o - m[:, d]) ** 2 / s2[:, d],
                             np.log(EPS_ * U_DET)).sum(1) for o in OFF]
         L[i] = logsumexp(np.stack(per), 0) - np.log(len(OFF)) + lmiss[:, ~d].sum(1)
+        if count_cond:
+            pe = (1 - EPS_) * p + EPS_ * (1 - U_MISS)                      # effective detection probability
+            mu = pe.sum(1); var = np.maximum((pe * (1 - pe)).sum(1), 1e-6); n_det = d.sum()
+            L[i] = L[i] - (-0.5 * np.log(2 * np.pi * var) - 0.5 * (n_det - mu) ** 2 / var)
         if temper:
             L[i] = L[i] * BETA / ((d | pmax).sum() if informative else A)
     return xy, L - logsumexp(L, 1, keepdims=True), bd
