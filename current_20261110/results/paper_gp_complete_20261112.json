@@ -1,0 +1,153 @@
+{
+  "status": "completed",
+  "tasks_per_method": 117,
+  "protocol": "static-resample-v2; UJI B0/B1/B2; K1/3/5; r0-2; seed20261111",
+  "original_refi_predictions_unchanged": true,
+  "GP_fit_missing_history": false,
+  "GP_history_precomputation_not_in_current_runtime": true,
+  "source_models": "Original completed five-seed ReFi per heldout building",
+  "overall": {
+    "refi": {
+      "tasks": 117,
+      "mean": 8.741848775650759,
+      "p90": 17.216058675322834,
+      "position_repeat_budget_count": 4167
+    },
+    "refi_GP": {
+      "tasks": 117,
+      "mean": 8.149020588582529,
+      "p90": 16.419454977098184,
+      "position_repeat_budget_count": 4167
+    },
+    "retained_gp": {
+      "tasks": 117,
+      "mean": 12.033331977795497,
+      "p90": 25.015721153923476,
+      "position_repeat_budget_count": 4167
+    }
+  },
+  "by_building": {
+    "B0": {
+      "refi": {
+        "tasks": 36,
+        "mean": 4.990004124506517,
+        "p90": 10.078995360164162,
+        "position_repeat_budget_count": 1161
+      },
+      "refi_GP": {
+        "tasks": 36,
+        "mean": 5.447041392380146,
+        "p90": 11.063083377722592,
+        "position_repeat_budget_count": 1161
+      },
+      "retained_gp": {
+        "tasks": 36,
+        "mean": 9.716880543312133,
+        "p90": 17.152667711045222,
+        "position_repeat_budget_count": 1161
+      }
+    },
+    "B1": {
+      "refi": {
+        "tasks": 36,
+        "mean": 10.484326219754939,
+        "p90": 18.96884806426344,
+        "position_repeat_budget_count": 1188
+      },
+      "refi_GP": {
+        "tasks": 36,
+        "mean": 9.568813116818113,
+        "p90": 17.09764441689939,
+        "position_repeat_budget_count": 1188
+      },
+      "retained_gp": {
+        "tasks": 36,
+        "mean": 11.546563443546097,
+        "p90": 20.767928356166742,
+        "position_repeat_budget_count": 1188
+      }
+    },
+    "B2": {
+      "refi": {
+        "tasks": 45,
+        "mean": 9.999180148798558,
+        "p90": 21.46395883270918,
+        "position_repeat_budget_count": 1818
+      },
+      "refi_GP": {
+        "tasks": 45,
+        "mean": 8.94675673998357,
+        "p90": 18.26914036205372,
+        "position_repeat_budget_count": 1818
+      },
+      "retained_gp": {
+        "tasks": 45,
+        "mean": 13.830736341999826,
+        "p90": 31.810169202935246,
+        "position_repeat_budget_count": 1818
+      }
+    }
+  },
+  "by_K": {
+    "1": {
+      "refi": {
+        "tasks": 39,
+        "mean": 9.116154000650061,
+        "p90": 17.68585712988531,
+        "position_repeat_budget_count": 1389
+      },
+      "refi_GP": {
+        "tasks": 39,
+        "mean": 8.289957573084287,
+        "p90": 16.880197640097634,
+        "position_repeat_budget_count": 1389
+      },
+      "retained_gp": {
+        "tasks": 39,
+        "mean": 12.817538768513533,
+        "p90": 28.374922746261696,
+        "position_repeat_budget_count": 1389
+      }
+    },
+    "3": {
+      "refi": {
+        "tasks": 39,
+        "mean": 8.722805246876074,
+        "p90": 17.398431897356488,
+        "position_repeat_budget_count": 1389
+      },
+      "refi_GP": {
+        "tasks": 39,
+        "mean": 8.133853355233239,
+        "p90": 16.304214564716755,
+        "position_repeat_budget_count": 1389
+      },
+      "retained_gp": {
+        "tasks": 39,
+        "mean": 11.649472043333256,
+        "p90": 23.231981278287858,
+        "position_repeat_budget_count": 1389
+      }
+    },
+    "5": {
+      "refi": {
+        "tasks": 39,
+        "mean": 8.38658707942614,
+        "p90": 16.914129941947397,
+        "position_repeat_budget_count": 1389
+      },
+      "refi_GP": {
+        "tasks": 39,
+        "mean": 8.02325083743006,
+        "p90": 16.149454400844355,
+        "position_repeat_budget_count": 1389
+      },
+      "retained_gp": {
+        "tasks": 39,
+        "mean": 11.6329851215397,
+        "p90": 23.62924511527234,
+        "position_repeat_budget_count": 1389
+      }
+    }
+  }
+}
