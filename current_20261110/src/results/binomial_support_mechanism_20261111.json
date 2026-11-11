@@ -1,0 +1,43 @@
+{
+  "recorded_at": "2026-11-11T06:10:13Z",
+  "passed": true,
+  "prior": [
+    [
+      0.02,
+      0.2,
+      0.6,
+      0.9
+    ]
+  ],
+  "missed": [
+    [
+      0.019619065842820783,
+      0.1736540498356261,
+      0.4811002288932773,
+      0.8015039400801595
+    ]
+  ],
+  "hit": [
+    [
+      0.05011887447416081,
+      0.32853303983773585,
+      0.6749240031150672,
+      0.9079821721675735
+    ]
+  ],
+  "legacy_missed": [
+    [
+      0.04188515046525919,
+      0.21284924958402732,
+      0.498815547644267,
+      0.7855588405572136
+    ]
+  ],
+  "max_gradient": 2.4854274194296977e-10,
+  "fits": 0,
+  "localization_predictions": 0,
+  "code_sha256": "fe514b986f814704cf069f3e66fb5ec6d488c560c3c28223dcbec6720b1e516d",
+  "exit_code": 0,
+  "scope": "Synthetic mechanism and symmetry checks only; no dataset scoring, source fit or original asset changes",
+  "source": "https://gaussianprocess.org/gpml/chapters/RW3.pdf"
+}
