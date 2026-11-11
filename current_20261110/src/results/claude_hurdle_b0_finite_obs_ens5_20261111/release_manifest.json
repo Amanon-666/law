@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "stage": "Five source models generated; IPIN comparison running, no new localization outcome yet",
+  "source_freeze_sha256": "bf2e06052a67a85560987a79c5da28fda85f4af85cacbdb6a38934aaa33f0c9e",
+  "metadata_files": {
+    "freeze.json": "bf2e06052a67a85560987a79c5da28fda85f4af85cacbdb6a38934aaa33f0c9e",
+    "complete.json": "e286b4c3e0b62988d5ac0323621d7482d6befabcec9987e7eebf54e6eb9e00aa",
+    "portable_load.json": "c9fcfc68fcb882a7131bd7b668310ed1fe5fd92389a4dc6441045c8dffbd0f78",
+    "mode_coverage.json": "2b0ae0234ea55b90b39cd404c23775baede0f15c6f04fc99eb2155019c630995"
+  },
+  "provenance_archive": {
+    "path": "source_provenance.zip",
+    "sha256": "8747545427208b0ccc09863be0bead7697f18d049b81c933aeb7bff9aa67cadc",
+    "bytes": 396563,
+    "files": 48
+  },
+  "models_location": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_finite_obs_ens5_20261111",
+  "model_files_published": false,
+  "raw_RSS_published": false,
+  "failed_attempts_retained": [
+    "before_fit_metadata_failure",
+    "first_fit_serialization_failure"
+  ],
+  "exploration_branch": "research/cross-acquisition-exploration-20261111",
+  "adopted_assets_modified": false
+}

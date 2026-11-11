@@ -1,0 +1,237 @@
+{
+  "created": "2026-11-11T03:37:57.726783+00:00",
+  "kind": "claude_hurdle_finite_observation_v1",
+  "schema_id": "finite_observation_55_plus_20_v1",
+  "feature_width": 75,
+  "feature_schema": [
+    "H-4_nearest_encoded",
+    "H-4_smooth_encoded",
+    "H-4_nearest_detection",
+    "H-4_floor_max",
+    "H-4_floor_mean",
+    "H-3_nearest_encoded",
+    "H-3_smooth_encoded",
+    "H-3_nearest_detection",
+    "H-3_floor_max",
+    "H-3_floor_mean",
+    "H-2_nearest_encoded",
+    "H-2_smooth_encoded",
+    "H-2_nearest_detection",
+    "H-2_floor_max",
+    "H-2_floor_mean",
+    "H-1_nearest_encoded",
+    "H-1_smooth_encoded",
+    "H-1_nearest_detection",
+    "H-1_floor_max",
+    "H-1_floor_mean",
+    "H+1_nearest_encoded",
+    "H+1_smooth_encoded",
+    "H+1_nearest_detection",
+    "H+1_floor_max",
+    "H+1_floor_mean",
+    "H+2_nearest_encoded",
+    "H+2_smooth_encoded",
+    "H+2_nearest_detection",
+    "H+2_floor_max",
+    "H+2_floor_mean",
+    "H+3_nearest_encoded",
+    "H+3_smooth_encoded",
+    "H+3_nearest_detection",
+    "H+3_floor_max",
+    "H+3_floor_mean",
+    "H+4_nearest_encoded",
+    "H+4_smooth_encoded",
+    "H+4_nearest_detection",
+    "H+4_floor_max",
+    "H+4_floor_mean",
+    "history_reference",
+    "floor_gap_below",
+    "floor_gap_above",
+    "S_delta_mean",
+    "S_max",
+    "S_mean",
+    "S_pooled_delta",
+    "S_home_delta",
+    "S_strength_delta",
+    "S_nearest_delta",
+    "S_nearest_encoded",
+    "S_nearest_reference",
+    "S_nearest_distance",
+    "S_position_count",
+    "S_informative_position_fraction",
+    "H-4_log1p_n_nearest",
+    "H-4_log1p_n_eff_smooth",
+    "H-3_log1p_n_nearest",
+    "H-3_log1p_n_eff_smooth",
+    "H-2_log1p_n_nearest",
+    "H-2_log1p_n_eff_smooth",
+    "H-1_log1p_n_nearest",
+    "H-1_log1p_n_eff_smooth",
+    "H+1_log1p_n_nearest",
+    "H+1_log1p_n_eff_smooth",
+    "H+2_log1p_n_nearest",
+    "H+2_log1p_n_eff_smooth",
+    "H+3_log1p_n_nearest",
+    "H+3_log1p_n_eff_smooth",
+    "H+4_log1p_n_nearest",
+    "H+4_log1p_n_eff_smooth",
+    "S_log1p_n_nearest",
+    "S_nearest_detection_rate",
+    "S_log1p_n_eff_all",
+    "S_mean_detection_rate"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "draws": 4,
+  "K": [
+    1,
+    3,
+    5
+  ],
+  "source_buildings": [
+    0
+  ],
+  "source_floors": {
+    "0": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "source_rows_by_floor": {
+    "B0F0": 1059,
+    "B0F1": 1356,
+    "B0F2": 1443,
+    "B0F3": 1391
+  },
+  "original_B0_exposure": {
+    "0": {
+      "positions": 54,
+      "minimum": 10,
+      "median": 20.0,
+      "maximum": 42,
+      "positions_at_most3": 0
+    },
+    "1": {
+      "positions": 67,
+      "minimum": 10,
+      "median": 20.0,
+      "maximum": 30,
+      "positions_at_most3": 0
+    },
+    "2": {
+      "positions": 70,
+      "minimum": 9,
+      "median": 20.0,
+      "maximum": 30,
+      "positions_at_most3": 0
+    },
+    "3": {
+      "positions": 68,
+      "minimum": 16,
+      "median": 20.0,
+      "maximum": 30,
+      "positions_at_most3": 0
+    }
+  },
+  "original_B0_support": "Every sampled source position has >3 rows, so original base S is exactly3 rows/position",
+  "source_check_sha256": "adbbadac993439d40370e75715537c2569d68674890200b5ed57a28e1e38bd53",
+  "source_index_sha256": "49786ca7815b1c747613edf6c3ff8598d41383f191eff848f48cc30eb10a973e",
+  "inputs": {
+    "csv": {
+      "path": "/home/panyushuo/projects/panyushuo/UJIIndoorLoc/data/raw/UJIndoorLoc/trainingData.csv",
+      "sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168"
+    },
+    "baseline_complete": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/complete.json",
+      "sha256": "57756b1fc23f4eccceeafe91cda14398a5aca623ad76d12998bf34dc259ef111"
+    },
+    "baseline_freeze": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/claude_hurdle_b0_ens5_20261110/freeze.json",
+      "sha256": "371f5815a44f7c4ddac67cbb1ad7932ba90e3189958d5723f4984f86cf1d08a7"
+    }
+  },
+  "code": {
+    "candidates/finite_observation_20261111/features.py": "fc2e678112411f65b625e17804c7a6543d3bcf66b34657b6e821586b032a20e9",
+    "candidates/finite_observation_20261111/source.py": "4699aafe219529ff221f3913cf347dd7baf4f151f48cd4678095c4b8f5862a70",
+    "candidates/finite_observation_20261111/deployment.py": "becb6dc10a7f32177e026c046cbf95089bb625c64c51ac3ed2cebbc6131abcd4",
+    "candidates/finite_observation_20261111/assets.py": "76cc42f7544c3cd183077e22c80c69fe13d9bc436558767e94f49e2469d20328",
+    "claude_hurdle_assets.py": "321d86b3de9c95d864947b860e21bf217489007a4c26070e0f0e6ed3927e14a8",
+    "frozen_hurdle_translator.py": "7ea5c52b7b94aac540cb9928e583e0c8f2c228f63e38a790aab0505938c1eeac",
+    "vertical_translator/translator.py": "50b51aa05330ec1b7335b8be7f8c72f7200de198a933c950e19a9acfd582eacd",
+    "claude_hurdle_20261110/translator.py": "50b51aa05330ec1b7335b8be7f8c72f7200de198a933c950e19a9acfd582eacd",
+    "claude_hurdle_20261110/vt_lib.py": "6342988bb2ccdf49ae7a29152ac2e7276b2fa92629a41d51f28af82856a579bd",
+    "claude_hurdle_20261110/hurdle.py": "768775984a59f365680b7cb4162a5a705279ce542a37596a3396eb9d7cf0d862"
+  },
+  "deployment_code": {
+    "candidates/finite_observation_20261111/features.py": "fc2e678112411f65b625e17804c7a6543d3bcf66b34657b6e821586b032a20e9",
+    "candidates/finite_observation_20261111/deployment.py": "becb6dc10a7f32177e026c046cbf95089bb625c64c51ac3ed2cebbc6131abcd4",
+    "vertical_translator/translator.py": "50b51aa05330ec1b7335b8be7f8c72f7200de198a933c950e19a9acfd582eacd",
+    "frozen_hurdle_translator.py": "7ea5c52b7b94aac540cb9928e583e0c8f2c228f63e38a790aab0505938c1eeac"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "upstream_commit": "a9e353712e6112a5b33998a47cb409292dfcf069",
+  "upstream_git_blobs": {
+    "translator.py": "6f02006dcc539447222ca91ea75d4104ee218c79",
+    "vt_lib.py": "672a54c8bb1a134c798eab6ce6eac9aea7ddb755",
+    "hurdle.py": "72d427d08a0e834dacd78a6b13c59dcce1adf526"
+  },
+  "fit": "Verbatim HurdleField([0],seed,draws=4), with only its cell_table replaced",
+  "recipe": {
+    "draw_modes": [
+      "Hfull_Sfull",
+      "Hsingle_Sfull",
+      "Hfull_Ssingle",
+      "Hsingle_Ssingle"
+    ],
+    "support": "Original sample_support(...,False), K positions and min(3,available) real scans; thin only within base S",
+    "history": "All original B0 history positions; full rows or one real row per position",
+    "exposure_rng": "default_rng([20261111,seed,parity_group,building,floor,K,draw]); independent of original selection RNG",
+    "query": "Target source rows excluding ALL base S rows, including reserved rows not used by low-exposure S",
+    "labels": "Original nearest target position within4m; skip if no remaining Q, never remap to another position",
+    "AP_axis": "Visible H/S only; no full-H or Q AP supplementation",
+    "selection": "Original info plus5% negative sampling, max6000 cells/task; original n/nd weights",
+    "attribution": "Joint finite-observation task construction and information representation; not an n-only ablation",
+    "effective_n": "Equal-position exposure summary L^2/sum(1/n), not independent sample size",
+    "limits": "Does not identify unknown query detection shift b or assume bS=bQ"
+  },
+  "reader": {
+    "beta": 128.0,
+    "eps": 0.02,
+    "offsets": [
+      -8.0,
+      -4.0,
+      0.0,
+      4.0,
+      8.0
+    ],
+    "empirical_S": "Original _support_fields, appended once after ensemble",
+    "return_type": "Original PreparedFrozenHurdle; no count/IPW/Gamma/S-prior inside"
+  },
+  "resources": {
+    "CPU_threads": 2,
+    "GPU": 0,
+    "segment_seconds": 840.0,
+    "max_seeds_per_segment": 5,
+    "natural_save": "One completed seed",
+    "external_timeout_seconds": 900,
+    "downloads": 0
+  },
+  "runtime": {
+    "python": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python"
+  },
+  "predictions": 0,
+  "localization_scores": 0
+}
