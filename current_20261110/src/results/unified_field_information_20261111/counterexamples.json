@@ -1,0 +1,203 @@
+{
+  "complete": true,
+  "phase": "synthetic_information_counterexample",
+  "cases": {
+    "detection_strength_alias": {
+      "scans": [
+        [
+          -45.0,
+          -45.0,
+          100.0
+        ],
+        [
+          -65.0,
+          -65.0,
+          -65.0
+        ]
+      ],
+      "same_original55": true,
+      "same_finite75": false,
+      "original55_max_finite_difference": 0.0,
+      "empirical": [
+        {
+          "detection_probability": [
+            0.625
+          ],
+          "detected_mean": [
+            -45.0
+          ],
+          "variance": [
+            25.0
+          ]
+        },
+        {
+          "detection_probability": [
+            0.875
+          ],
+          "detected_mean": [
+            -65.0
+          ],
+          "variance": [
+            25.0
+          ]
+        }
+      ],
+      "available_statistics": [
+        {
+          "xy": [
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "n": [
+            3.0
+          ],
+          "nd": [
+            [
+              2.0
+            ]
+          ],
+          "rss_sum": [
+            [
+              -90.0
+            ]
+          ],
+          "rss_square_sum": [
+            [
+              4050.0
+            ]
+          ]
+        },
+        {
+          "xy": [
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "n": [
+            3.0
+          ],
+          "nd": [
+            [
+              3.0
+            ]
+          ],
+          "rss_sum": [
+            [
+              -195.0
+            ]
+          ],
+          "rss_square_sum": [
+            [
+              12675.0
+            ]
+          ]
+        }
+      ]
+    },
+    "variance_alias": {
+      "scans": [
+        [
+          -55.0,
+          -65.0,
+          -75.0
+        ],
+        [
+          -65.0,
+          -65.0,
+          -65.0
+        ]
+      ],
+      "same_original55": true,
+      "same_finite75": true,
+      "original55_max_finite_difference": 0.0,
+      "empirical": [
+        {
+          "detection_probability": [
+            0.875
+          ],
+          "detected_mean": [
+            -65.0
+          ],
+          "variance": [
+            91.66666666666697
+          ]
+        },
+        {
+          "detection_probability": [
+            0.875
+          ],
+          "detected_mean": [
+            -65.0
+          ],
+          "variance": [
+            25.0
+          ]
+        }
+      ],
+      "available_statistics": [
+        {
+          "xy": [
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "n": [
+            3.0
+          ],
+          "nd": [
+            [
+              3.0
+            ]
+          ],
+          "rss_sum": [
+            [
+              -195.0
+            ]
+          ],
+          "rss_square_sum": [
+            [
+              12875.0
+            ]
+          ]
+        },
+        {
+          "xy": [
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "n": [
+            3.0
+          ],
+          "nd": [
+            [
+              3.0
+            ]
+          ],
+          "rss_sum": [
+            [
+              -195.0
+            ]
+          ],
+          "rss_square_sum": [
+            [
+              12675.0
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "conclusion": "Do not replace empirical S with current55/75 learned inputs while claiming to preserve its observation information",
+  "recovery": "Use the already available raw sufficient statistics in a unified conditioning/learning path",
+  "fits": 0,
+  "models_loaded": 0,
+  "dataset_files_read": 0,
+  "localization_scores": 0,
+  "code_sha256": "1a8947c648666e6246fc717702c634fc3a931c6e6a803a8f7e0e074ec0336155"
+}
