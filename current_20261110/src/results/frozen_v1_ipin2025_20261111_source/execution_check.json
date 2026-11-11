@@ -1,0 +1,332 @@
+{
+  "complete": true,
+  "created": "2026-11-11T06:18:39.989038+00:00",
+  "stages": {
+    "check": {
+      "exit_code": 0,
+      "started": "2026-11-11T05:49:39Z",
+      "ended": "2026-11-11T05:51:57Z",
+      "wall_seconds": 138.0
+    },
+    "prepare": {
+      "exit_code": 2,
+      "started": "2026-11-11T05:52:11Z",
+      "ended": "2026-11-11T06:05:36Z",
+      "wall_seconds": 805.0
+    },
+    "prepare_resume1": {
+      "exit_code": 0,
+      "started": "2026-11-11T06:06:03Z",
+      "ended": "2026-11-11T06:08:53Z",
+      "wall_seconds": 170.0
+    },
+    "predict": {
+      "exit_code": 0,
+      "started": "2026-11-11T06:09:48Z",
+      "ended": "2026-11-11T06:16:55Z",
+      "wall_seconds": 427.0
+    },
+    "score": {
+      "exit_code": 0,
+      "started": "2026-11-11T06:17:19Z",
+      "ended": "2026-11-11T06:17:22Z",
+      "wall_seconds": 3.0
+    }
+  },
+  "phase_wall_seconds": 1543.0,
+  "elapsed_including_stage_handoffs_seconds": 1663.0,
+  "planned_prepare_resume_after_check": true,
+  "native_exit2_continuations": [
+    "prepare_resume1"
+  ],
+  "contexts": 15,
+  "prepared_fields": 45,
+  "streams": 90,
+  "GP_parity": {
+    "full_v1": {
+      "streams": 30,
+      "max_GP_endpoint_difference_m": 0.0
+    },
+    "without_field_conditioning": {
+      "streams": 30,
+      "max_GP_endpoint_difference_m": 0.0
+    },
+    "exact_support_prior": {
+      "streams": 30,
+      "max_GP_endpoint_difference_m": 0.0
+    }
+  },
+  "point_counts": {
+    "full_v1": {
+      "1": 102,
+      "3": 102,
+      "5": 102
+    },
+    "without_field_conditioning": {
+      "1": 102,
+      "3": 102,
+      "5": 102
+    },
+    "exact_support_prior": {
+      "1": 102,
+      "3": 102,
+      "5": 102
+    }
+  },
+  "equivalence": {
+    "complete": true,
+    "freeze_sha256": "b1c0d73672d9ee3a17f0e47ee009f4013b96fb9ebb46bffe7e4af504fb62ba7a",
+    "preparation": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/frozen_v1_ipin2025_20261111/IPIN2025_B2025F2_K1/complete.json",
+      "sha256": "eb375e33b253ed41eda1d7b442f78ff08d27e9d08de02325e86dd5a4731aa5c4"
+    },
+    "passed": true,
+    "event": "IPIN2025_B2025F2_K1",
+    "max_abs_H_prior_difference": {
+      "p": 0.0,
+      "m": 0.0,
+      "s2": 0.0
+    },
+    "tolerance": 1e-10,
+    "extra_ensemble_calls": 1,
+    "query_used": false,
+    "scores_computed": false
+  },
+  "all_frozen_inputs_unchanged": true,
+  "actual_source_hashes_unchanged": true,
+  "source_provenance": {
+    "source_dir": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_v2_jitter_20261111/source_snapshot/claude_field_posterior_20261111",
+    "code_sha256": {
+      "law_bench_ours.py": "1d3761feaf964497f3408df01cc639ad3b6619743ae0592bcbd1d16165990705",
+      "nine_floor_v2.py": "5f0aefb4a4142901ff84671cb88a09fc738a1bf0e2a4075dcfd641dcc8527038"
+    },
+    "models": [
+      {
+        "seed": 1,
+        "path": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/nine_v2_20261111/models/v1_seed1.joblib",
+        "sha256": "a5c8523c61325d4bfd664dc0fdf0d3da591c7b0112a9c7c137e45e5f962e83e3"
+      },
+      {
+        "seed": 2,
+        "path": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/nine_v2_20261111/models/v1_seed2.joblib",
+        "sha256": "2e106093f80305a77c6c15c1051a3b17c69077bcc158de3cadc5848a447d0676"
+      },
+      {
+        "seed": 3,
+        "path": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/nine_v2_20261111/models/v1_seed3.joblib",
+        "sha256": "f9e7ca05c4ddd96867b3a328ec6cf478d4712b4faea1c035d958021599818e74"
+      },
+      {
+        "seed": 4,
+        "path": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/nine_v2_20261111/models/v1_seed4.joblib",
+        "sha256": "8b9c220d3665187e61a5b42c1d6e07935bbaf5b3273fb0aa5c108a3e1d94dfb9"
+      },
+      {
+        "seed": 5,
+        "path": "/home/panyushuo/projects/panyushuo/claude_fp_wt/current_20261110/src/claude_field_posterior_20261111/results/nine_v2_20261111/models/v1_seed5.joblib",
+        "sha256": "fe3cc4cc59a5f60a9ca79e766e627b74a3d68fb27263501a1f31e6e7398f5262"
+      }
+    ],
+    "training_sources": [
+      {
+        "dataset": "uji",
+        "building": "B0"
+      }
+    ],
+    "source_floors": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+    "source_permission": "Original complete B0 four-floor corpus",
+    "conditioning": [
+      16.0,
+      0.3,
+      1.0,
+      0.0
+    ],
+    "model_training": false
+  },
+  "score_files": {
+    "full_v1": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/frozen_v1_ipin2025_20261111/full_v1/scores.json",
+      "sha256": "c0cb95bed09bdd46237711d2c446d842ce81c36925f043ef4a9cc75ae751ed39"
+    },
+    "without_field_conditioning": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/frozen_v1_ipin2025_20261111/without_field_conditioning/scores.json",
+      "sha256": "b1b208c23ba7dbba4431183a3cf57ac22640d9eb559e55954fc564cfc49681e3"
+    },
+    "exact_support_prior": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/frozen_v1_ipin2025_20261111/exact_support_prior/scores.json",
+      "sha256": "49eb37283e5d01833e6f224b3b531a6a2dbe2d115ce7b9b493855eb19872e59b"
+    }
+  },
+  "geometry": {
+    "IPIN2025_B2025F2_K1": {
+      "S_to_H_distance": [
+        10.023837817101036
+      ],
+      "old_ignored_count": 1,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F2_K3": {
+      "S_to_H_distance": [
+        10.023837817101036,
+        5.65810641010775,
+        2.115693570701164
+      ],
+      "old_ignored_count": 2,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F2_K5": {
+      "S_to_H_distance": [
+        10.023837817101036,
+        5.65810641010775,
+        2.115693570701164,
+        0.7480560608519204,
+        1.7702594551644468
+      ],
+      "old_ignored_count": 2,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F3_K1": {
+      "S_to_H_distance": [
+        3.5311376674550945
+      ],
+      "old_ignored_count": 0,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F3_K3": {
+      "S_to_H_distance": [
+        4.897765977712554,
+        3.5311376674550945,
+        5.549989426205285
+      ],
+      "old_ignored_count": 2,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F3_K5": {
+      "S_to_H_distance": [
+        28.401372950141276,
+        8.621560394907132,
+        4.897765977712554,
+        3.5311376674550945,
+        5.549989426205285
+      ],
+      "old_ignored_count": 4,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F4_K1": {
+      "S_to_H_distance": [
+        5.828934626120168
+      ],
+      "old_ignored_count": 1,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F4_K3": {
+      "S_to_H_distance": [
+        5.828934626120168,
+        1.8331283943387275,
+        0.46712930348285686
+      ],
+      "old_ignored_count": 1,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F4_K5": {
+      "S_to_H_distance": [
+        4.615401316676154,
+        5.828934626120168,
+        0.7978374830245343,
+        1.8331283943387275,
+        0.46712930348285686
+      ],
+      "old_ignored_count": 2,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F5_K1": {
+      "S_to_H_distance": [
+        1.9917568241694288
+      ],
+      "old_ignored_count": 0,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F5_K3": {
+      "S_to_H_distance": [
+        1.9917568241694288,
+        2.314606052331563,
+        1.97044265074822
+      ],
+      "old_ignored_count": 0,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F5_K5": {
+      "S_to_H_distance": [
+        1.4364966949048465,
+        1.9917568241694288,
+        2.314606052331563,
+        1.97044265074822,
+        1.1548112774418062
+      ],
+      "old_ignored_count": 0,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F6_K1": {
+      "S_to_H_distance": [
+        0.8770970113489591
+      ],
+      "old_ignored_count": 0,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F6_K3": {
+      "S_to_H_distance": [
+        1.256939118743109,
+        0.6173483300862678,
+        0.8770970113489591
+      ],
+      "old_ignored_count": 0,
+      "exact_ignored_count": 0
+    },
+    "IPIN2025_B2025F6_K5": {
+      "S_to_H_distance": [
+        1.256939118743109,
+        1.3808149357970856,
+        0.45561882534856185,
+        0.6173483300862678,
+        0.8770970113489591
+      ],
+      "old_ignored_count": 0,
+      "exact_ignored_count": 0
+    }
+  },
+  "training_updates": 0,
+  "GP_adaptations": 0,
+  "GP_sampling": 0,
+  "metadata": {
+    "freeze.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/frozen_v1_ipin2025_20261111/freeze.json",
+      "sha256": "b1c0d73672d9ee3a17f0e47ee009f4013b96fb9ebb46bffe7e4af504fb62ba7a"
+    },
+    "contexts_complete.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/frozen_v1_ipin2025_20261111/contexts_complete.json",
+      "sha256": "a4f3075b585652675669432dbc479a8f5ba16d7f3e199a47c2a9237c3934ce32"
+    },
+    "equivalence_check.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/frozen_v1_ipin2025_20261111/equivalence_check.json",
+      "sha256": "d97e6b5b00443a66411ed3efd0d1f652a18c06c07c2a3786d743fec3a2d0132c"
+    },
+    "predictions_complete.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/frozen_v1_ipin2025_20261111/predictions_complete.json",
+      "sha256": "8c4c82fdbe7fcf8e4354e3cf335574b0b12bbac4a1ce1becbfbd40fead2ffe13"
+    },
+    "scoring_progress.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/frozen_v1_ipin2025_20261111/scoring_progress.json",
+      "sha256": "544f83d1fb911615bce97b116c60fe8a409f84ecf250a030d6b3705a495d6e2a"
+    },
+    "comparison.json": {
+      "path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/frozen_v1_ipin2025_20261111/comparison.json",
+      "sha256": "5984c645c342c192d43a5632e8f1b34a73b75ba2d40c086847ae1971caf59432"
+    }
+  }
+}

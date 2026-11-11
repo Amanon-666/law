@@ -1,0 +1,155 @@
+{
+  "scope": "Descriptive same-GT paired K response, computed from sealed scores; no refit or selection",
+  "arms": {
+    "full_v1": {
+      "1to3": {
+        "hurdle": {
+          "n": 102,
+          "improved": 58,
+          "worsened": 44,
+          "mean_delta": 0.33056229801221737,
+          "median_delta": -0.018143379854522745
+        },
+        "probability_half": {
+          "n": 102,
+          "improved": 67,
+          "worsened": 35,
+          "mean_delta": -2.038949520136111,
+          "median_delta": -0.3250209577847851
+        }
+      },
+      "3to5": {
+        "hurdle": {
+          "n": 102,
+          "improved": 65,
+          "worsened": 37,
+          "mean_delta": 0.2731775424831891,
+          "median_delta": -0.019680517003605402
+        },
+        "probability_half": {
+          "n": 102,
+          "improved": 52,
+          "worsened": 49,
+          "mean_delta": -2.549709226053943,
+          "median_delta": -0.014410091085557575
+        }
+      },
+      "1to5": {
+        "hurdle": {
+          "n": 102,
+          "improved": 66,
+          "worsened": 36,
+          "mean_delta": 0.6037398404954064,
+          "median_delta": -0.0596657142645487
+        },
+        "probability_half": {
+          "n": 102,
+          "improved": 65,
+          "worsened": 37,
+          "mean_delta": -4.588658746190054,
+          "median_delta": -0.2339054739209141
+        }
+      }
+    },
+    "without_field_conditioning": {
+      "1to3": {
+        "hurdle": {
+          "n": 102,
+          "improved": 47,
+          "worsened": 33,
+          "mean_delta": -0.015191892770980611,
+          "median_delta": -7.86783971307159e-11
+        },
+        "probability_half": {
+          "n": 102,
+          "improved": 67,
+          "worsened": 35,
+          "mean_delta": -2.012991856098488,
+          "median_delta": -0.32037440076135937
+        }
+      },
+      "3to5": {
+        "hurdle": {
+          "n": 102,
+          "improved": 57,
+          "worsened": 31,
+          "mean_delta": -0.027266537633530426,
+          "median_delta": -0.005308851993683916
+        },
+        "probability_half": {
+          "n": 102,
+          "improved": 57,
+          "worsened": 44,
+          "mean_delta": -2.515953075439412,
+          "median_delta": -0.02814460758470161
+        }
+      },
+      "1to5": {
+        "hurdle": {
+          "n": 102,
+          "improved": 64,
+          "worsened": 38,
+          "mean_delta": -0.04245843040451104,
+          "median_delta": -0.008379908102774891
+        },
+        "probability_half": {
+          "n": 102,
+          "improved": 68,
+          "worsened": 34,
+          "mean_delta": -4.5289449315379,
+          "median_delta": -0.30734358442671583
+        }
+      }
+    },
+    "exact_support_prior": {
+      "1to3": {
+        "hurdle": {
+          "n": 102,
+          "improved": 60,
+          "worsened": 42,
+          "mean_delta": 0.24553645923870993,
+          "median_delta": -0.04774006693039823
+        },
+        "probability_half": {
+          "n": 102,
+          "improved": 63,
+          "worsened": 39,
+          "mean_delta": -2.2436916942148026,
+          "median_delta": -0.41711176844741615
+        }
+      },
+      "3to5": {
+        "hurdle": {
+          "n": 102,
+          "improved": 63,
+          "worsened": 39,
+          "mean_delta": -0.4158622917707943,
+          "median_delta": -0.04220054059837253
+        },
+        "probability_half": {
+          "n": 102,
+          "improved": 56,
+          "worsened": 46,
+          "mean_delta": -2.5295389214224286,
+          "median_delta": -0.036323793267146964
+        }
+      },
+      "1to5": {
+        "hurdle": {
+          "n": 102,
+          "improved": 67,
+          "worsened": 35,
+          "mean_delta": -0.17032583253208441,
+          "median_delta": -0.14300330973761533
+        },
+        "probability_half": {
+          "n": 102,
+          "improved": 69,
+          "worsened": 33,
+          "mean_delta": -4.773230615637231,
+          "median_delta": -0.3058863404244381
+        }
+      }
+    }
+  }
+}
