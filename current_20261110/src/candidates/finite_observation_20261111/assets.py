@@ -169,7 +169,8 @@ def train(args):
         base_freeze = read(BASELINE/'freeze.json')
         assert base['complete'] and base['freeze_sha256'] == digest(BASELINE/'freeze.json')
         assert base_freeze['source_buildings'] == [0] and base_freeze['seeds'] == SEEDS
-        assert base_freeze['source_rows_by_floor'] == index['source_rows_by_floor'] and base_freeze['draws'] == 4
+        assert {f'B0F{f}': n for f, n in base['source_rows_by_floor'].items()} == index['source_rows_by_floor']
+        assert base_freeze['draws'] == 4
         args.output.mkdir(parents=True, exist_ok=False)
         shutil.copyfile(args.source_check, args.output/'source_check.json')
         write(args.output/'source_index.json', index)
