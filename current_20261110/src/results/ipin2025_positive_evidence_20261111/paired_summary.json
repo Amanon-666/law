@@ -1,0 +1,395 @@
+{
+  "created": "2026-11-11T06:44:12.040413+00:00",
+  "complete": true,
+  "scope": "Same 102 covered GT points perK, descriptive paired effects; no new predictions or outcome selection",
+  "methods": {
+    "original": {
+      "scores_sha256": "50716b22d18af368b1ffbbe9c48f345d24a1dac5335b5792f0d8b216a387ef04",
+      "paired": {
+        "1to3": {
+          "hurdle": {
+            "n": 102,
+            "improved": 51,
+            "worsened": 51,
+            "mean_delta": -0.10159487006490668,
+            "median_delta": 0.0015428626617861596
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 63,
+            "worsened": 39,
+            "mean_delta": -1.632491948833699,
+            "median_delta": -0.15948715055736917
+          }
+        },
+        "3to5": {
+          "hurdle": {
+            "n": 102,
+            "improved": 59,
+            "worsened": 43,
+            "mean_delta": -1.010337329343962,
+            "median_delta": -0.048828706984450854
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 55,
+            "worsened": 47,
+            "mean_delta": -2.1923232225840406,
+            "median_delta": -0.01888754140406612
+          }
+        },
+        "1to5": {
+          "hurdle": {
+            "n": 102,
+            "improved": 58,
+            "worsened": 44,
+            "mean_delta": -1.1119321994088684,
+            "median_delta": -0.09534689027673693
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 59,
+            "worsened": 43,
+            "mean_delta": -3.8248151714177396,
+            "median_delta": -0.15165902581752633
+          }
+        }
+      },
+      "by_K": {
+        "1": {
+          "hurdle": {
+            "mean": 37.21064688991812,
+            "p90": 91.76942663765749
+          },
+          "GP": {
+            "mean": 16.0023621939739,
+            "p90": 33.039450027636285
+          },
+          "probability_half": {
+            "mean": 19.42862336074874,
+            "p90": 46.432019749087445
+          }
+        },
+        "3": {
+          "hurdle": {
+            "mean": 37.10905201985321,
+            "p90": 91.58515997329444
+          },
+          "GP": {
+            "mean": 15.304526879435576,
+            "p90": 28.90274960911033
+          },
+          "probability_half": {
+            "mean": 17.79613141191504,
+            "p90": 40.629001287797706
+          }
+        },
+        "5": {
+          "hurdle": {
+            "mean": 36.09871469050925,
+            "p90": 91.49441854431622
+          },
+          "GP": {
+            "mean": 13.527416614709443,
+            "p90": 25.667245852903093
+          },
+          "probability_half": {
+            "mean": 15.603808189331,
+            "p90": 37.41733977666604
+          }
+        }
+      }
+    },
+    "count": {
+      "scores_sha256": "1b75d463d24c64335a09abab3e9fcd4ff598be43762ec6c4f83777d118078019",
+      "paired": {
+        "1to3": {
+          "hurdle": {
+            "n": 102,
+            "improved": 44,
+            "worsened": 58,
+            "mean_delta": 0.34466190335907404,
+            "median_delta": 0.06832096116328579
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 61,
+            "worsened": 41,
+            "mean_delta": -1.4138732575339135,
+            "median_delta": -0.09775823932063754
+          }
+        },
+        "3to5": {
+          "hurdle": {
+            "n": 102,
+            "improved": 50,
+            "worsened": 52,
+            "mean_delta": -2.2675433072995874,
+            "median_delta": 0.0022148871807088355
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 59,
+            "worsened": 43,
+            "mean_delta": -1.2225260441539392,
+            "median_delta": -0.04511940741735687
+          }
+        },
+        "1to5": {
+          "hurdle": {
+            "n": 102,
+            "improved": 51,
+            "worsened": 51,
+            "mean_delta": -1.9228814039405133,
+            "median_delta": 0.0015450521379560822
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 59,
+            "worsened": 43,
+            "mean_delta": -2.636399301687853,
+            "median_delta": -0.21890290705414717
+          }
+        }
+      },
+      "by_K": {
+        "1": {
+          "hurdle": {
+            "mean": 21.62485203462419,
+            "p90": 52.84754991703451
+          },
+          "GP": {
+            "mean": 16.0023621939739,
+            "p90": 33.039450027636285
+          },
+          "probability_half": {
+            "mean": 16.497551991291083,
+            "p90": 39.27786520105613
+          }
+        },
+        "3": {
+          "hurdle": {
+            "mean": 21.96951393798327,
+            "p90": 55.21079061153263
+          },
+          "GP": {
+            "mean": 15.304526879435576,
+            "p90": 28.90274960911033
+          },
+          "probability_half": {
+            "mean": 15.083678733757164,
+            "p90": 32.39062707675824
+          }
+        },
+        "5": {
+          "hurdle": {
+            "mean": 19.70197063068368,
+            "p90": 45.887373634490665
+          },
+          "GP": {
+            "mean": 13.527416614709443,
+            "p90": 25.667245852903093
+          },
+          "probability_half": {
+            "mean": 13.861152689603223,
+            "p90": 29.95292333490554
+          }
+        }
+      }
+    },
+    "finite": {
+      "scores_sha256": "e7505b956a26585a9962740733faa7f27eed9b70379f6d2fcf742865ec90f190",
+      "paired": {
+        "1to3": {
+          "hurdle": {
+            "n": 102,
+            "improved": 43,
+            "worsened": 59,
+            "mean_delta": -0.9208633589811059,
+            "median_delta": 0.13672430193208207
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 59,
+            "worsened": 43,
+            "mean_delta": -1.5503952345519483,
+            "median_delta": -0.17650103669971262
+          }
+        },
+        "3to5": {
+          "hurdle": {
+            "n": 102,
+            "improved": 46,
+            "worsened": 56,
+            "mean_delta": -3.9914479964139193,
+            "median_delta": 0.03197161083485023
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 53,
+            "worsened": 49,
+            "mean_delta": -0.7011409312578506,
+            "median_delta": -0.0119551825743196
+          }
+        },
+        "1to5": {
+          "hurdle": {
+            "n": 102,
+            "improved": 49,
+            "worsened": 53,
+            "mean_delta": -4.912311355395025,
+            "median_delta": 0.00847355061746402
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 62,
+            "worsened": 40,
+            "mean_delta": -2.251536165809799,
+            "median_delta": -0.300323717084538
+          }
+        }
+      },
+      "by_K": {
+        "1": {
+          "hurdle": {
+            "mean": 21.70380884213445,
+            "p90": 55.02848611430692
+          },
+          "GP": {
+            "mean": 16.0023621939739,
+            "p90": 33.039450027636285
+          },
+          "probability_half": {
+            "mean": 16.063764531682175,
+            "p90": 36.01609888089403
+          }
+        },
+        "3": {
+          "hurdle": {
+            "mean": 20.782945483153348,
+            "p90": 55.02468256799747
+          },
+          "GP": {
+            "mean": 15.304526879435576,
+            "p90": 28.90274960911033
+          },
+          "probability_half": {
+            "mean": 14.513369297130227,
+            "p90": 29.197072792466056
+          }
+        },
+        "5": {
+          "hurdle": {
+            "mean": 16.79149748673943,
+            "p90": 35.959517376768545
+          },
+          "GP": {
+            "mean": 13.527416614709443,
+            "p90": 25.667245852903093
+          },
+          "probability_half": {
+            "mean": 13.812228365872384,
+            "p90": 26.642100845377563
+          }
+        }
+      }
+    },
+    "positive": {
+      "scores_sha256": "37b02da418672edb535e43e994ed340ece4a0e06fb32314f7bdc33123d003b16",
+      "paired": {
+        "1to3": {
+          "hurdle": {
+            "n": 102,
+            "improved": 54,
+            "worsened": 48,
+            "mean_delta": -0.7722369480213466,
+            "median_delta": -0.011961062269022715
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 57,
+            "worsened": 45,
+            "mean_delta": -1.3806444617724722,
+            "median_delta": -0.11130198481013875
+          }
+        },
+        "3to5": {
+          "hurdle": {
+            "n": 102,
+            "improved": 52,
+            "worsened": 50,
+            "mean_delta": -2.080293818001419,
+            "median_delta": -0.0009175585999128266
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 59,
+            "worsened": 43,
+            "mean_delta": -0.71588371221663,
+            "median_delta": -0.041637309650009335
+          }
+        },
+        "1to5": {
+          "hurdle": {
+            "n": 102,
+            "improved": 50,
+            "worsened": 52,
+            "mean_delta": -2.852530766022766,
+            "median_delta": 0.01245505817712722
+          },
+          "probability_half": {
+            "n": 102,
+            "improved": 59,
+            "worsened": 43,
+            "mean_delta": -2.0965281739891024,
+            "median_delta": -0.29866026040510896
+          }
+        }
+      },
+      "by_K": {
+        "1": {
+          "hurdle": {
+            "mean": 23.763475838598822,
+            "p90": 51.534905171888106
+          },
+          "GP": {
+            "mean": 16.0023621939739,
+            "p90": 33.039450027636285
+          },
+          "probability_half": {
+            "mean": 16.086430479318416,
+            "p90": 34.165472577739806
+          }
+        },
+        "3": {
+          "hurdle": {
+            "mean": 22.991238890577478,
+            "p90": 55.43422544218009
+          },
+          "GP": {
+            "mean": 15.304526879435576,
+            "p90": 28.90274960911033
+          },
+          "probability_half": {
+            "mean": 14.705786017545947,
+            "p90": 32.32930181206957
+          }
+        },
+        "5": {
+          "hurdle": {
+            "mean": 20.91094507257606,
+            "p90": 44.68978590956336
+          },
+          "GP": {
+            "mean": 13.527416614709443,
+            "p90": 25.667245852903093
+          },
+          "probability_half": {
+            "mean": 13.989902305329315,
+            "p90": 29.117184669822585
+          }
+        }
+      }
+    }
+  }
+}
