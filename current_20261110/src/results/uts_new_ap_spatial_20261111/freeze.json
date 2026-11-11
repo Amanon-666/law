@@ -1,0 +1,22 @@
+{
+  "created": "2026-11-11T09:22:29.304005+00:00",
+  "code_sha256": "8eaa983354b706e5a6b3af077cd2989381e34c47498464d5fb8ea14e0e8f46ed",
+  "A_complete_sha256": "a6c7d07907866f73a9c55d507bee5f0d7e343d749fcf00be8ad109c2411367ff",
+  "GP_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+  "GP_solver_execution_sha256": "a22611054331aef56c0cce5c7d600e20a0695584c209b1a49410124cc45929dd",
+  "diagnostic_scores_sha256": "f81dcfef6a82201cb323b1d119c924cf1babe425a6ca452ea7f7031fe6622910",
+  "scope": "Same48 official UTS tasks; no selected floors, APs selected by H/S only",
+  "information_rule": "H-absent and S-detected AP: shared spatial RBF, separate acquisition intercept",
+  "changed": "Restore only spatial cross covariance for new AP likelihoods in original A reader",
+  "preserved": "Original full-K A for every H-supported AP; GP state, parameters, sampler, reader constants, candidates and fixed pool",
+  "required_runtime_state": "Existing full H/S GP adaptation; its upstream computation cost still belongs to this candidate",
+  "hypothesis": "Use newly calibrated signals without extrapolating an unsupported learned history field",
+  "timing": "Post-score development follow-up; not independent generalization evidence",
+  "source_fits": 0,
+  "new_hyperparameters": 0,
+  "resources": {
+    "CPU_threads": 2,
+    "GPU": 0,
+    "segment_seconds": 540
+  }
+}
