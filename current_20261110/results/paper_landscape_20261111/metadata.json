@@ -1,0 +1,22 @@
+{
+  "task_id": "uji/B2/F4/K3/r0",
+  "source_buildings": [
+    "B0",
+    "B1"
+  ],
+  "query_scan_indices": [
+    27,
+    35,
+    1
+  ],
+  "query_row_ids": [
+    769,
+    647,
+    771
+  ],
+  "selection": "Two lowest ReFi scan errors among copied>10m at distinct true positions, then largest min(copied,refi) error among remaining scans; post-hoc illustration, not representative performance",
+  "coordinates": "map_* columns are original reader posterior-mean predictions; peaks.csv contains argmax",
+  "copied": "Existing naive_field nearest floor B2F3; variance=64+25; identical empirical S candidates and original frozen reader",
+  "duplicates": "H/S coordinate duplicates retained as in original reader",
+  "validation": "Query rows and all ReFi scan errors match original paper task; log masses normalized"
+}
