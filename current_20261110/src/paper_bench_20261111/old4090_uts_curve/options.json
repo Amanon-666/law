@@ -1,0 +1,20 @@
+{
+  "retained_gp": {
+    "parameters_path": "/data/users/yanrongen/projects/panyushuo/PaperGP-20261113/assets/parameters.json",
+    "provenance": {
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "training_sources": [
+        {
+          "dataset": "uji",
+          "building": "B0"
+        }
+      ],
+      "evidence": "/data/users/yanrongen/projects/panyushuo/PaperGP-20261113/assets/gp_source_freeze.json#source_calibration"
+    },
+    "cache_dir": "/data/users/yanrongen/projects/panyushuo/PaperGP-20261113/cache/retained_fullH",
+    "fit_missing_history": false
+  },
+  "refi": {
+    "cache_dir": "/data/users/yanrongen/projects/panyushuo/PaperGP-20261113/refi_rebuild/cache"
+  }
+}
