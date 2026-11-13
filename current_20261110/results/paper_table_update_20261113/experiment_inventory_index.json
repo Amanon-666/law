@@ -1,0 +1,5663 @@
+{
+ "schema": "refi-experiment-inventory-index-v1",
+ "created": "2026-11-13T09:47:36.327952+00:00",
+ "rules": [
+  "Only direct method summaries and their events scanned; original/archives/tar/restart traces are not independent experiments",
+  "Exact duplicate event bytes are alias-linked across original and reused directories",
+  "Same task IDs under different budgets/source recipes/protocols must not be merged automatically",
+  "Aggregates are references to existing results, never extra observations",
+  "Completed does not imply optimizer convergence, independence, blind evaluation or method adoption",
+  "Main-table missing entries and pending jobs remain explicit; negative/exploratory results retained"
+ ],
+ "main_table_coverage": [
+  {
+   "dataset_group": "UJI (3 bldg.)",
+   "method": "wknn_S",
+   "status": "present",
+   "entry_ids": [
+    "paper_uji_B0_20261111/wknn_S",
+    "paper_uji_B1_20261111/wknn_S",
+    "paper_uji_B2_20261111/wknn_S"
+   ]
+  },
+  {
+   "dataset_group": "UJI (3 bldg.)",
+   "method": "wknn_HS",
+   "status": "present",
+   "entry_ids": [
+    "paper_uji_B0_20261111/wknn_HS",
+    "paper_uji_B1_20261111/wknn_HS",
+    "paper_uji_B2_20261111/wknn_HS"
+   ]
+  },
+  {
+   "dataset_group": "UJI (3 bldg.)",
+   "method": "gp_histmean",
+   "status": "present",
+   "entry_ids": [
+    "paper_uji_B0_20261111/gp_histmean",
+    "paper_uji_B1_20261111/gp_histmean",
+    "paper_uji_B2_20261111/gp_histmean"
+   ]
+  },
+  {
+   "dataset_group": "UJI (3 bldg.)",
+   "method": "retained_gp",
+   "status": "present",
+   "entry_ids": [
+    "paper_uji_B0_ext_20261111/retained_gp",
+    "paper_uji_B1_ext_20261111/retained_gp",
+    "paper_uji_B2_ext_20261111/retained_gp"
+   ]
+  },
+  {
+   "dataset_group": "UJI (3 bldg.)",
+   "method": "tabicl",
+   "status": "present",
+   "entry_ids": [
+    "paper_uji_B1_tabicl_r0_reused_20261112/tabicl",
+    "paper_uji_B0_tabicl_20261112/tabicl",
+    "paper_uji_B1_tabicl_20261112/tabicl",
+    "paper_uji_B2_tabicl_20261112/tabicl"
+   ]
+  },
+  {
+   "dataset_group": "UJI (3 bldg.)",
+   "method": "refi",
+   "status": "present",
+   "entry_ids": [
+    "paper_uji_B0_20261111/refi",
+    "paper_uji_B1_20261111/refi",
+    "paper_uji_B2_20261111/refi"
+   ]
+  },
+  {
+   "dataset_group": "UJI (3 bldg.)",
+   "method": "refi_GP",
+   "status": "present",
+   "entry_ids": [
+    "paper_uji_B0_ext_20261111/refi_GP",
+    "paper_uji_B1_ext_20261111/refi_GP",
+    "paper_uji_B2_ext_20261111/refi_GP"
+   ]
+  },
+  {
+   "dataset_group": "Tampere TIE1",
+   "method": "wknn_S",
+   "status": "present",
+   "entry_ids": [
+    "paper_tampere_TIE1_20261111/wknn_S"
+   ]
+  },
+  {
+   "dataset_group": "Tampere TIE1",
+   "method": "wknn_HS",
+   "status": "present",
+   "entry_ids": [
+    "paper_tampere_TIE1_20261111/wknn_HS"
+   ]
+  },
+  {
+   "dataset_group": "Tampere TIE1",
+   "method": "gp_histmean",
+   "status": "present",
+   "entry_ids": [
+    "paper_tampere_TIE1_20261111/gp_histmean"
+   ]
+  },
+  {
+   "dataset_group": "Tampere TIE1",
+   "method": "retained_gp",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "Tampere TIE1",
+   "method": "tabicl",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "Tampere TIE1",
+   "method": "refi",
+   "status": "present",
+   "entry_ids": [
+    "paper_tampere_TIE1_20261111/refi"
+   ]
+  },
+  {
+   "dataset_group": "Tampere TIE1",
+   "method": "refi_GP",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "Tampere SAH1",
+   "method": "wknn_S",
+   "status": "present",
+   "entry_ids": [
+    "paper_tampere_SAH1_20261111/wknn_S"
+   ]
+  },
+  {
+   "dataset_group": "Tampere SAH1",
+   "method": "wknn_HS",
+   "status": "present",
+   "entry_ids": [
+    "paper_tampere_SAH1_20261111/wknn_HS"
+   ]
+  },
+  {
+   "dataset_group": "Tampere SAH1",
+   "method": "gp_histmean",
+   "status": "present",
+   "entry_ids": [
+    "paper_tampere_SAH1_20261111/gp_histmean"
+   ]
+  },
+  {
+   "dataset_group": "Tampere SAH1",
+   "method": "retained_gp",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "Tampere SAH1",
+   "method": "tabicl",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "Tampere SAH1",
+   "method": "refi",
+   "status": "present",
+   "entry_ids": [
+    "paper_tampere_SAH1_20261111/refi"
+   ]
+  },
+  {
+   "dataset_group": "Tampere SAH1",
+   "method": "refi_GP",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "SOD CETC331",
+   "method": "wknn_S",
+   "status": "present",
+   "entry_ids": [
+    "paper_sod_CETC331_20261111/wknn_S"
+   ]
+  },
+  {
+   "dataset_group": "SOD CETC331",
+   "method": "wknn_HS",
+   "status": "present",
+   "entry_ids": [
+    "paper_sod_CETC331_20261111/wknn_HS"
+   ]
+  },
+  {
+   "dataset_group": "SOD CETC331",
+   "method": "gp_histmean",
+   "status": "present",
+   "entry_ids": [
+    "paper_sod_CETC331_20261111/gp_histmean"
+   ]
+  },
+  {
+   "dataset_group": "SOD CETC331",
+   "method": "retained_gp",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "SOD CETC331",
+   "method": "tabicl",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "SOD CETC331",
+   "method": "refi",
+   "status": "present",
+   "entry_ids": [
+    "paper_sod_CETC331_20261111/refi"
+   ]
+  },
+  {
+   "dataset_group": "SOD CETC331",
+   "method": "refi_GP",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "UTS tower",
+   "method": "wknn_S",
+   "status": "present",
+   "entry_ids": [
+    "paper_uts_New_IT_20261111/wknn_S"
+   ]
+  },
+  {
+   "dataset_group": "UTS tower",
+   "method": "wknn_HS",
+   "status": "present",
+   "entry_ids": [
+    "paper_uts_New_IT_20261111/wknn_HS"
+   ]
+  },
+  {
+   "dataset_group": "UTS tower",
+   "method": "gp_histmean",
+   "status": "present",
+   "entry_ids": [
+    "paper_uts_New_IT_20261111/gp_histmean"
+   ]
+  },
+  {
+   "dataset_group": "UTS tower",
+   "method": "retained_gp",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "UTS tower",
+   "method": "tabicl",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  },
+  {
+   "dataset_group": "UTS tower",
+   "method": "refi",
+   "status": "present",
+   "entry_ids": [
+    "paper_uts_New_IT_20261111/refi"
+   ]
+  },
+  {
+   "dataset_group": "UTS tower",
+   "method": "refi_GP",
+   "status": "missing_from_current_main_spec_directories",
+   "entry_ids": []
+  }
+ ],
+ "missing": [
+  {
+   "scope": "Tampere TIE1",
+   "method": "retained_gp",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "Tampere TIE1",
+   "method": "tabicl",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "Tampere TIE1",
+   "method": "refi_GP",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "Tampere SAH1",
+   "method": "retained_gp",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "Tampere SAH1",
+   "method": "tabicl",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "Tampere SAH1",
+   "method": "refi_GP",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "SOD CETC331",
+   "method": "retained_gp",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "SOD CETC331",
+   "method": "tabicl",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "SOD CETC331",
+   "method": "refi_GP",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "UTS tower",
+   "method": "retained_gp",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "UTS tower",
+   "method": "tabicl",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  },
+  {
+   "scope": "UTS tower",
+   "method": "refi_GP",
+   "reason": "No method summary in current main_table_spec directories; queued work is not a result"
+  }
+ ],
+ "pending_or_running": [
+  {
+   "dataset": "tampere",
+   "building": "TIE1",
+   "method": "retained_gp",
+   "protocol": "static-resample-v2",
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "repeats": [
+    0
+   ],
+   "seed": 20261111,
+   "expected_tasks": 18,
+   "status": "PENDING",
+   "job_id": "26719",
+   "reason": "QOSMaxJobsPerUserLimit",
+   "result_status": "no_results_at_last_report",
+   "resource": "CPU2/24G; GPU request updated to0",
+   "evidence": {
+    "type": "collaborator_status_report",
+    "agent": "acquisition_train_watch",
+    "absolute_observation_time": null,
+    "note": "Latest report to this inventory task; not independently polled. Scheduler status can change.",
+    "remote_submission": "/data/users/yanrongen/projects/panyushuo/PaperGP-20261113/logs/TIE1.submit.txt"
+   },
+   "count_as_completed": false
+  },
+  {
+   "job_id": "26720",
+   "method": "same_recipe_refi_rebuild",
+   "status": "PENDING",
+   "dependency": "afterany:26719",
+   "evidence": "executor message; not a completed experiment"
+  }
+ ],
+ "coverage_notes": [
+  "UJI source/building folds and external frozen-corpus transfer must remain separate",
+  "ScaML/TCMS runtime dependency gaps are retained in respective reuse.json",
+  "SOD published averaged fingerprints and unverified cross-floor registration remain limitations",
+  "IPIN27.77/30.24/29.88 belongs to unified77, not original55; original confirmation source unchanged",
+  "Public117 and GP117 rollups reference constituent per-task entries",
+  "Original failures and previous_attempts remain in byte-preserved event artifacts; completed final status does not erase earlier execution failures. Execution records are catalogued separately."
+ ],
+ "counts": {
+  "method_entries": 145,
+  "aggregate_products": 5,
+  "unique_event_file_hashes": 2295,
+  "missing_items": 12,
+  "pending_jobs": 1,
+  "execution_records": 3
+ },
+ "full_inventory": {
+  "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/experiment_inventory.json",
+  "sha256": "807e7df9e7e12329ac926f8d8f7c3c1f2816533cd76f75dfbb229c172914f245",
+  "bytes": 2218916,
+  "contains": "per-event path/hash, source/configuration provenance and per-K/per-floor source summaries"
+ },
+ "entries": [
+  {
+   "id": "paper_uji_B1_tabicl_r0_reused_20261112/tabicl",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "tabicl",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 12,
+   "local_task_count": 12,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 12
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_tabicl_r0_reused_20261112/tabicl.json",
+    "sha256": "c35da6cfc957abcae227bebe33afc3536cdc05a85cb50ff3b28fecbf80a42781",
+    "bytes": 5410
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_tabicl_r0_reused_20261112/freeze.json",
+    "sha256": "b80ce1c79d497f5ba3396863d125bfe3596918fe483b15c9c33c9db80158abfd",
+    "bytes": 3504
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_sod_CETC331_20261111/wknn_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "sod",
+   "building": "CETC331",
+   "method": "wknn_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 9,
+   "local_task_count": 9,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 9
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_sod_CETC331_20261111/wknn_S.json",
+    "sha256": "eecb1b6b41838c07015028bd370d362007a2408d00af7680f1f62aa319ba3b6b",
+    "bytes": 4404
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_sod_CETC331_20261111/freeze.json",
+    "sha256": "4f8dafd51bc91d369be5faef1afcc61fa62f4ad14410c3b41d7a5e13a6cefcf0",
+    "bytes": 3339
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_sod_CETC331_20261111/wknn_HS",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "sod",
+   "building": "CETC331",
+   "method": "wknn_HS",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 9,
+   "local_task_count": 9,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 9
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_sod_CETC331_20261111/wknn_HS.json",
+    "sha256": "fcbd9aa7938b749ec2e65a9ff781722eb359dddceedbbe3623968c08303e4893",
+    "bytes": 4410
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_sod_CETC331_20261111/freeze.json",
+    "sha256": "4f8dafd51bc91d369be5faef1afcc61fa62f4ad14410c3b41d7a5e13a6cefcf0",
+    "bytes": 3339
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_sod_CETC331_20261111/gp_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "sod",
+   "building": "CETC331",
+   "method": "gp_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 9,
+   "local_task_count": 9,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 9
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_sod_CETC331_20261111/gp_S.json",
+    "sha256": "7fc797770b9a0a3d18f40ee9888cae619d383b55d3bba9b20fda452fde993952",
+    "bytes": 4379
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_sod_CETC331_20261111/freeze.json",
+    "sha256": "4f8dafd51bc91d369be5faef1afcc61fa62f4ad14410c3b41d7a5e13a6cefcf0",
+    "bytes": 3339
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_sod_CETC331_20261111/gp_histmean",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "sod",
+   "building": "CETC331",
+   "method": "gp_histmean",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 9,
+   "local_task_count": 9,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 9
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_sod_CETC331_20261111/gp_histmean.json",
+    "sha256": "ccf20e63d59ff623297d21d5febf9ab51f63e0157a16d2a3f9220d230d97509b",
+    "bytes": 4445
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_sod_CETC331_20261111/freeze.json",
+    "sha256": "4f8dafd51bc91d369be5faef1afcc61fa62f4ad14410c3b41d7a5e13a6cefcf0",
+    "bytes": 3339
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_sod_CETC331_20261111/refi",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "sod",
+   "building": "CETC331",
+   "method": "refi",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 9,
+   "local_task_count": 9,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 9
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_sod_CETC331_20261111/refi.json",
+    "sha256": "632eb8098795f18e5341fceca8a721810ae48ce1d185df9b89b3eae8b7367dd7",
+    "bytes": 4369
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_sod_CETC331_20261111/freeze.json",
+    "sha256": "4f8dafd51bc91d369be5faef1afcc61fa62f4ad14410c3b41d7a5e13a6cefcf0",
+    "bytes": 3339
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_tampere_SAH1_20261111/wknn_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "tampere",
+   "building": "SAH1",
+   "method": "wknn_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 9,
+   "local_task_count": 9,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 9
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_SAH1_20261111/wknn_S.json",
+    "sha256": "32c3d5d3682cbc536adefffb4574ef9df4d8ebdc898b116d0e21019ea27cb385",
+    "bytes": 4405
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_SAH1_20261111/freeze.json",
+    "sha256": "0a9386f0df49240a9d9fc95326f321a3061fd270a696c6e5fcfdc578493c1e17",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_tampere_SAH1_20261111/wknn_HS",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "tampere",
+   "building": "SAH1",
+   "method": "wknn_HS",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 9,
+   "local_task_count": 9,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 9
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_SAH1_20261111/wknn_HS.json",
+    "sha256": "db55461b497fb913ffa4577a51d10e9da5e5f4991cb6893a615b0814406a56c8",
+    "bytes": 4421
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_SAH1_20261111/freeze.json",
+    "sha256": "0a9386f0df49240a9d9fc95326f321a3061fd270a696c6e5fcfdc578493c1e17",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_tampere_SAH1_20261111/gp_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "tampere",
+   "building": "SAH1",
+   "method": "gp_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 9,
+   "local_task_count": 9,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 9
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_SAH1_20261111/gp_S.json",
+    "sha256": "b21b8aff7ab1ff5dcbd336702947a1939dcb2f91c030cc7684c4af9ce56138b9",
+    "bytes": 4394
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_SAH1_20261111/freeze.json",
+    "sha256": "0a9386f0df49240a9d9fc95326f321a3061fd270a696c6e5fcfdc578493c1e17",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_tampere_SAH1_20261111/gp_histmean",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "tampere",
+   "building": "SAH1",
+   "method": "gp_histmean",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 9,
+   "local_task_count": 9,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 9
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_SAH1_20261111/gp_histmean.json",
+    "sha256": "3ed234714a96652fd96c5d962498d702337f6dd1e139d2f95bdb7c67d13c1bb1",
+    "bytes": 4458
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_SAH1_20261111/freeze.json",
+    "sha256": "0a9386f0df49240a9d9fc95326f321a3061fd270a696c6e5fcfdc578493c1e17",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_tampere_SAH1_20261111/refi",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "tampere",
+   "building": "SAH1",
+   "method": "refi",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 9,
+   "local_task_count": 9,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 9
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_SAH1_20261111/refi.json",
+    "sha256": "15756bbce4260c444d784ca09138e90bb32101bcb4c63b10d50fd7bec3deb1bc",
+    "bytes": 4387
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_SAH1_20261111/freeze.json",
+    "sha256": "0a9386f0df49240a9d9fc95326f321a3061fd270a696c6e5fcfdc578493c1e17",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_tampere_TIE1_20261111/wknn_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "tampere",
+   "building": "TIE1",
+   "method": "wknn_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 18,
+   "local_task_count": 18,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 18
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111/wknn_S.json",
+    "sha256": "de616b3095e10616b24f43adcf8fa9f6c848faa2e7886c05176512660264ff65",
+    "bytes": 7642
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111/freeze.json",
+    "sha256": "f5b3a525b94ad992b5c262ff94fa6c695944523a03268ecd526a1d5914ad4056",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_tampere_TIE1_20261111/wknn_HS",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "tampere",
+   "building": "TIE1",
+   "method": "wknn_HS",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 18,
+   "local_task_count": 18,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 18
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111/wknn_HS.json",
+    "sha256": "3facb423233f679bfdcba3d789602f463fd0a9f1609a7710ddeff1dec5efdabb",
+    "bytes": 7655
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111/freeze.json",
+    "sha256": "f5b3a525b94ad992b5c262ff94fa6c695944523a03268ecd526a1d5914ad4056",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_tampere_TIE1_20261111/gp_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "tampere",
+   "building": "TIE1",
+   "method": "gp_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 18,
+   "local_task_count": 18,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 18
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111/gp_S.json",
+    "sha256": "7d3426ca84cbee48163274d1138b2c7e875da5c8e85124aaabcf90c668624c00",
+    "bytes": 7595
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111/freeze.json",
+    "sha256": "f5b3a525b94ad992b5c262ff94fa6c695944523a03268ecd526a1d5914ad4056",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_tampere_TIE1_20261111/gp_histmean",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "tampere",
+   "building": "TIE1",
+   "method": "gp_histmean",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 18,
+   "local_task_count": 18,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 18
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111/gp_histmean.json",
+    "sha256": "989bd47e1ab122426fd3223419e5a42e84c87484ab09ca7a30b9cfef0765c196",
+    "bytes": 7733
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111/freeze.json",
+    "sha256": "f5b3a525b94ad992b5c262ff94fa6c695944523a03268ecd526a1d5914ad4056",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_tampere_TIE1_20261111/refi",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "tampere",
+   "building": "TIE1",
+   "method": "refi",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 18,
+   "local_task_count": 18,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 18
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111/refi.json",
+    "sha256": "ccae47d79db9cc6bc9a9e791f263e416fb1b9b2b48165a0525b20bb5d042363a",
+    "bytes": 7583
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111/freeze.json",
+    "sha256": "f5b3a525b94ad992b5c262ff94fa6c695944523a03268ecd526a1d5914ad4056",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_20261111/wknn_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "wknn_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/wknn_S.json",
+    "sha256": "3d96607f9f249d6fe3118d4d611ff0cf026118964c2101a2421db3bd1b287ea9",
+    "bytes": 6419
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/freeze.json",
+    "sha256": "6b7c712e56edef5a3b81a53b7db3b71a1750dec43ae8844c08c009f06824e95d",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_20261111/wknn_HS",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "wknn_HS",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/wknn_HS.json",
+    "sha256": "1e22fb25c753d74d2fb4a45fbcc8455736ac2c0788240e81141a6ddb2d7ea0d4",
+    "bytes": 6450
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/freeze.json",
+    "sha256": "6b7c712e56edef5a3b81a53b7db3b71a1750dec43ae8844c08c009f06824e95d",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_20261111/gp_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "gp_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/gp_S.json",
+    "sha256": "0426dff05d227c1b90f5ca3edbe6a0e3ca9469092078861cda712276f8b96477",
+    "bytes": 6349
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/freeze.json",
+    "sha256": "6b7c712e56edef5a3b81a53b7db3b71a1750dec43ae8844c08c009f06824e95d",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_20261111/gp_histmean",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "gp_histmean",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/gp_histmean.json",
+    "sha256": "1ccf67e54a4a253d12903b2d45762ec1621f3b259f59328eb8103f4af4a52c8c",
+    "bytes": 6615
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/freeze.json",
+    "sha256": "6b7c712e56edef5a3b81a53b7db3b71a1750dec43ae8844c08c009f06824e95d",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_20261111/refi",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "refi",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/refi.json",
+    "sha256": "0f8e86e2ffd0dbd29e66862607a66e6c5a44cd70f1b1f3296d5446794b172181",
+    "bytes": 6337
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_20261111/freeze.json",
+    "sha256": "6b7c712e56edef5a3b81a53b7db3b71a1750dec43ae8844c08c009f06824e95d",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_ext_20261111/refi_GP",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "refi_GP",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_ext_20261111/refi_GP.json",
+    "sha256": "147c51e1e12e2c417ece19a43eb1143ec4c32cc493d016af8f4d19fdf9082d05",
+    "bytes": 6444
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_ext_20261111/freeze.json",
+    "sha256": "6e5d3d8cd780a30bfa5a89d6bd9a5d8d91948fd41db8b5b272463b5007e76370",
+    "bytes": 4212
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_ext_20261111/retained_gp",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "retained_gp",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_ext_20261111/retained_gp.json",
+    "sha256": "6322bb13346ee4652a156d8802c37af79fdf3552792edf82b761a8ab370a6abd",
+    "bytes": 6444
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_ext_20261111/freeze.json",
+    "sha256": "6e5d3d8cd780a30bfa5a89d6bd9a5d8d91948fd41db8b5b272463b5007e76370",
+    "bytes": 4212
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_tabicl_20261112/tabicl",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "tabicl",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_tabicl_20261112/tabicl.json",
+    "sha256": "657e007d75a6948323b1ac9fb8cbcea1c690f2aa770e781777bdfad5abdf8013",
+    "bytes": 6416
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_tabicl_20261112/freeze.json",
+    "sha256": "2b92fc2c90ba5c0806aadec63b9e3f3fd1a2c0f5a0ceaa7cf401cfaeda5836c7",
+    "bytes": 3039
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_20261111/wknn_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "wknn_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/wknn_S.json",
+    "sha256": "e05c7aa4e6205af7e022064e176cdaa8ef960cdd5fdf29842cea91e6cbbe52c6",
+    "bytes": 6421
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/freeze.json",
+    "sha256": "1f9f15af6f8b241b0082e9119efb57dbcda8671464fb00ff47df558f265136af",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_20261111/wknn_HS",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "wknn_HS",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/wknn_HS.json",
+    "sha256": "1c114abf8c6472eab323d1aae4ec345c0fe897ac76489e206df339cd88267587",
+    "bytes": 6474
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/freeze.json",
+    "sha256": "1f9f15af6f8b241b0082e9119efb57dbcda8671464fb00ff47df558f265136af",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_20261111/gp_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "gp_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/gp_S.json",
+    "sha256": "2616ee51e4466234b16939c435f36584dafa1ed9f01df740bce6705a9ca725d5",
+    "bytes": 6358
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/freeze.json",
+    "sha256": "1f9f15af6f8b241b0082e9119efb57dbcda8671464fb00ff47df558f265136af",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_20261111/gp_histmean",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "gp_histmean",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/gp_histmean.json",
+    "sha256": "348d048f32840a216875d53e6e26fddf9e0fc9918642a1e523b56383b8218b2a",
+    "bytes": 6600
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/freeze.json",
+    "sha256": "1f9f15af6f8b241b0082e9119efb57dbcda8671464fb00ff47df558f265136af",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_20261111/refi",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "refi",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/refi.json",
+    "sha256": "4db619f5080602a2e1f3faa1c8944197fb20f7d33e57cd7a94e9ae687f03a57e",
+    "bytes": 6342
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_20261111/freeze.json",
+    "sha256": "1f9f15af6f8b241b0082e9119efb57dbcda8671464fb00ff47df558f265136af",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_ext_20261111/refi_GP",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "refi_GP",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_ext_20261111/refi_GP.json",
+    "sha256": "7e219979c9a53f1bcd03386351d3f73767caa240e868d58d404accc9985e78fd",
+    "bytes": 6446
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_ext_20261111/freeze.json",
+    "sha256": "01af1fbef3381528aaac4505fb52dbf0db5ff7879b92d7668c1a1fbc93452864",
+    "bytes": 3859
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_ext_20261111/retained_gp",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "retained_gp",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_ext_20261111/retained_gp.json",
+    "sha256": "f167586c02cfe53b5da0466d5fa63bd36fa45286d4ea8ef176b3e909cb3d97a2",
+    "bytes": 6455
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_ext_20261111/freeze.json",
+    "sha256": "01af1fbef3381528aaac4505fb52dbf0db5ff7879b92d7668c1a1fbc93452864",
+    "bytes": 3859
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_tabicl_20261112/tabicl",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "tabicl",
+   "base_seed": 20261111,
+   "repeats": [
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 24,
+   "local_task_count": 24,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 24
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_tabicl_20261112/tabicl.json",
+    "sha256": "d94992c213437bebb9c169ee9020bfd6ec1ab346cf6edb1b0679cb795d53e608",
+    "bytes": 5912
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_tabicl_20261112/freeze.json",
+    "sha256": "633d8c1a53a220e82988ee17bdfdb02bbdc2efc1691ee6442a623335bc6c806b",
+    "bytes": 3030
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_20261111/wknn_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "wknn_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 45,
+   "local_task_count": 45,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 45
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/wknn_S.json",
+    "sha256": "b21c9d5a5028d3f62a09cc33a77437631171e348002d0b45093196f3db66873e",
+    "bytes": 7728
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/freeze.json",
+    "sha256": "c1e5f8cb4e75996ee0d6b6ba29a53bb0e2cfda516b7513d93f907bf552c7115c",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_20261111/wknn_HS",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "wknn_HS",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 45,
+   "local_task_count": 45,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 45
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/wknn_HS.json",
+    "sha256": "d51300f73bde89aabf5fd8a773aeed611e3ee7769a23cd30fc49692036b058cc",
+    "bytes": 7787
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/freeze.json",
+    "sha256": "c1e5f8cb4e75996ee0d6b6ba29a53bb0e2cfda516b7513d93f907bf552c7115c",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_20261111/gp_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "gp_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 45,
+   "local_task_count": 45,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 45
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/gp_S.json",
+    "sha256": "52c975d9727a4fe610c188db59521d8061d473f0fb003a9295bfbd2431c09e7a",
+    "bytes": 7637
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/freeze.json",
+    "sha256": "c1e5f8cb4e75996ee0d6b6ba29a53bb0e2cfda516b7513d93f907bf552c7115c",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_20261111/gp_histmean",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "gp_histmean",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 45,
+   "local_task_count": 45,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 45
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/gp_histmean.json",
+    "sha256": "2279130a6e14430d142f58bf610ac84f005fd4b664b1c337cdfb22987c252e39",
+    "bytes": 7964
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/freeze.json",
+    "sha256": "c1e5f8cb4e75996ee0d6b6ba29a53bb0e2cfda516b7513d93f907bf552c7115c",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_20261111/refi",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "refi",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 45,
+   "local_task_count": 45,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 45
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/refi.json",
+    "sha256": "3483d6d57982b3327beb353f769ca5af20494310e26f30a57deb7d856d9c2e55",
+    "bytes": 7635
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_20261111/freeze.json",
+    "sha256": "c1e5f8cb4e75996ee0d6b6ba29a53bb0e2cfda516b7513d93f907bf552c7115c",
+    "bytes": 3230
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_ext_20261111/refi_GP",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "refi_GP",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 45,
+   "local_task_count": 45,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 45
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_ext_20261111/refi_GP.json",
+    "sha256": "08f8bc3a9bc5a2a9189b8272c394a76b55b73bee082d2b195f1c8f3b8e337797",
+    "bytes": 7769
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_ext_20261111/freeze.json",
+    "sha256": "e03b0e70aba5875c4163f55fe19b157dff44403c36585cb09dda9bc02fcea748",
+    "bytes": 3859
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_ext_20261111/retained_gp",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "retained_gp",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 45,
+   "local_task_count": 45,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 45
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_ext_20261111/retained_gp.json",
+    "sha256": "215dd19490a36fc1f2444fe6572d59034aec3b3d89e99459cde535b9715f18cb",
+    "bytes": 7808
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_ext_20261111/freeze.json",
+    "sha256": "e03b0e70aba5875c4163f55fe19b157dff44403c36585cb09dda9bc02fcea748",
+    "bytes": 3859
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_tabicl_20261112/tabicl",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "tabicl",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 45,
+   "local_task_count": 45,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 45
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_tabicl_20261112/tabicl.json",
+    "sha256": "476d71e30b892b4b9b9996a4a19350d2d0a914f8beb2136ccf00664d27a4dca9",
+    "bytes": 7731
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_tabicl_20261112/freeze.json",
+    "sha256": "83c6556c42af4d1b64fc5b2cd0839753904692e6ef36dbf79364f49234db0443",
+    "bytes": 3039
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uts_New_IT_20261111/wknn_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uts",
+   "building": "New IT",
+   "method": "wknn_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "status": "completed",
+   "declared_task_count": 27,
+   "local_task_count": 27,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 27
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uts_New_IT_20261111/wknn_S.json",
+    "sha256": "775ddc78ed94349f1a77b34badb8fc1e7312008fdc9c3b80d960e3c238e16a50",
+    "bytes": 10823
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uts_New_IT_20261111/freeze.json",
+    "sha256": "19b952752452be7dc69ea38dfb22b4bf2a81343f2fa949d8492a3c07223f21e2",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uts_New_IT_20261111/wknn_HS",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uts",
+   "building": "New IT",
+   "method": "wknn_HS",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "status": "completed",
+   "declared_task_count": 27,
+   "local_task_count": 27,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 27
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uts_New_IT_20261111/wknn_HS.json",
+    "sha256": "436ca23bba59ed37b9f2491037ef3c0996923205b0617cb82c7e84ac04ff1d02",
+    "bytes": 10849
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uts_New_IT_20261111/freeze.json",
+    "sha256": "19b952752452be7dc69ea38dfb22b4bf2a81343f2fa949d8492a3c07223f21e2",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uts_New_IT_20261111/gp_S",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uts",
+   "building": "New IT",
+   "method": "gp_S",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "status": "completed",
+   "declared_task_count": 27,
+   "local_task_count": 27,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 27
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uts_New_IT_20261111/gp_S.json",
+    "sha256": "9615b42a9cb39c9cd700e50763d097ab9bca939c3f9da889b395bfdd9efaf5d3",
+    "bytes": 10748
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uts_New_IT_20261111/freeze.json",
+    "sha256": "19b952752452be7dc69ea38dfb22b4bf2a81343f2fa949d8492a3c07223f21e2",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uts_New_IT_20261111/gp_histmean",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uts",
+   "building": "New IT",
+   "method": "gp_histmean",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "status": "completed",
+   "declared_task_count": 27,
+   "local_task_count": 27,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 27
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uts_New_IT_20261111/gp_histmean.json",
+    "sha256": "53a6e23e201bf46d8496ac755ab7ae60ee3bcea0420d3c993f434dce150f3f80",
+    "bytes": 10955
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uts_New_IT_20261111/freeze.json",
+    "sha256": "19b952752452be7dc69ea38dfb22b4bf2a81343f2fa949d8492a3c07223f21e2",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uts_New_IT_20261111/refi",
+   "category": "formal_main_table",
+   "protocol": "static-resample-v2",
+   "dataset": "uts",
+   "building": "New IT",
+   "method": "refi",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "status": "completed",
+   "declared_task_count": 27,
+   "local_task_count": 27,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 27
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uts_New_IT_20261111/refi.json",
+    "sha256": "4e66303d5a5871b114b68ce93109c49e2d63a5502bd93adf6b8cfced57195ae8",
+    "bytes": 10755
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uts_New_IT_20261111/freeze.json",
+    "sha256": "19b952752452be7dc69ea38dfb22b4bf2a81343f2fa949d8492a3c07223f21e2",
+    "bytes": 3337
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_scaml_r0_reused_20261112/scaml",
+   "category": "reused_external_comparator",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "scaml",
+   "base_seed": null,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 12,
+   "local_task_count": 12,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 12
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_scaml_r0_reused_20261112/scaml.json",
+    "sha256": "60ccb0d02251a3be40363c7d577f1197027657882e7391fa1459c0898cd0a5c8",
+    "bytes": 5943
+   },
+   "freeze_source": null,
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_tcms_r0_reused_20261112/tcms",
+   "category": "reused_external_comparator",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "tcms",
+   "base_seed": null,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 12,
+   "local_task_count": 12,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 12
+   },
+   "unfinished_optimization_tasks": [
+    "uji/B1/F2/K3/r0"
+   ],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_tcms_r0_reused_20261112/tcms.json",
+    "sha256": "9634a422e59d5613b6764191f5b101a39c28a8da1f3f7500d98d0ee1070eb086",
+    "bytes": 5448
+   },
+   "freeze_source": null,
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B1_frozen_r0_20261111/adopted_A",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "adopted_A",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 12,
+   "local_task_count": 12,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 12
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/adopted_A.json",
+    "sha256": "f377d02ce96bf057264e9eec3118b3e42f0d2f371aa6140490474ed59db9784b",
+    "bytes": 5448
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/freeze.json",
+    "sha256": "184026020e8dcf3335caed90895a93dda778d7ca1d119350a9030e4a803915f6",
+    "bytes": 5283
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B1_frozen_r0_20261111/frozen_v1",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "frozen_v1",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 12,
+   "local_task_count": 12,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 12
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/frozen_v1.json",
+    "sha256": "e37897a4ab9c8c5019de9c54643ad5c8f6d1efeab6fdb6242a73442ebb7eb7ec",
+    "bytes": 5442
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/freeze.json",
+    "sha256": "184026020e8dcf3335caed90895a93dda778d7ca1d119350a9030e4a803915f6",
+    "bytes": 5283
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B1_frozen_r0_20261111/retained_gp",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "retained_gp",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 12,
+   "local_task_count": 12,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 12
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/retained_gp.json",
+    "sha256": "96712809c33f7bb8cb54f742ec9c0750282a68a1b68a4fb6c859e751668490c2",
+    "bytes": 5461
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/freeze.json",
+    "sha256": "184026020e8dcf3335caed90895a93dda778d7ca1d119350a9030e4a803915f6",
+    "bytes": 5283
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B1_frozen_r0_20261111/adopted_A_GP",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "adopted_A_GP",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 12,
+   "local_task_count": 12,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 12
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/adopted_A_GP.json",
+    "sha256": "f8eeab68da5164925a735bf4906ec751d3c4320f1fc276d2341e6465201ff910",
+    "bytes": 5470
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/freeze.json",
+    "sha256": "184026020e8dcf3335caed90895a93dda778d7ca1d119350a9030e4a803915f6",
+    "bytes": 5283
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B1_frozen_r0_20261111/frozen_v1_GP",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "frozen_v1_GP",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 12,
+   "local_task_count": 12,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 12
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/frozen_v1_GP.json",
+    "sha256": "8265611034432dc19776dd6b9383f9e8a5948b06509695f3377b415280480da7",
+    "bytes": 5477
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/freeze.json",
+    "sha256": "184026020e8dcf3335caed90895a93dda778d7ca1d119350a9030e4a803915f6",
+    "bytes": 5283
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B1_frozen_r0_20261111/tcms",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "tcms",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 12,
+   "local_task_count": 12,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 12
+   },
+   "unfinished_optimization_tasks": [
+    "uji/B1/F2/K3/r0"
+   ],
+   "all_events_are_duplicate_aliases": true,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/tcms.json",
+    "sha256": "9634a422e59d5613b6764191f5b101a39c28a8da1f3f7500d98d0ee1070eb086",
+    "bytes": 5448
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_frozen_r0_20261111/freeze.json",
+    "sha256": "184026020e8dcf3335caed90895a93dda778d7ca1d119350a9030e4a803915f6",
+    "bytes": 5283
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B1_scaml_F0_r0_20261111/scaml",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "scaml",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0
+   ],
+   "status": "completed",
+   "declared_task_count": 3,
+   "local_task_count": 3,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 3
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": true,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_scaml_F0_r0_20261111/scaml.json",
+    "sha256": "ad3911618cf1372ef7f9ea3373fe95b9e24ff41469b09f3449f7a7c5ba5fcd02",
+    "bytes": 2230
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_scaml_F0_r0_20261111/freeze.json",
+    "sha256": "ba6a9ae007950ed225633660cf4070049cc6242acc647584e99ba94a76ddb024",
+    "bytes": 2729
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B1_scaml_F1_r0_20261111/scaml",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "scaml",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    1
+   ],
+   "status": "completed",
+   "declared_task_count": 3,
+   "local_task_count": 3,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 3
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": true,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_scaml_F1_r0_20261111/scaml.json",
+    "sha256": "a89ea743eba573782ccc3e4359146a63590c72cfb84609e8c9a3c29292c8afad",
+    "bytes": 2230
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_scaml_F1_r0_20261111/freeze.json",
+    "sha256": "26fe0721070949cd4518a74430f81c9f1965659c850693ab111c903523b8f39b",
+    "bytes": 2729
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B1_scaml_F2_r0_20261111/scaml",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "scaml",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    2
+   ],
+   "status": "completed",
+   "declared_task_count": 3,
+   "local_task_count": 3,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 3
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": true,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_scaml_F2_r0_20261111/scaml.json",
+    "sha256": "1f3ad05c4126abf3031f7456934d5e29db4369b8abb00026baf233b515509c1b",
+    "bytes": 2232
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_scaml_F2_r0_20261111/freeze.json",
+    "sha256": "680cf6ce6bc75e0c61486a0262d4901b69908937ba1730a41a515207455d609d",
+    "bytes": 2729
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B1_scaml_F3_r0_20261111/scaml",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "scaml",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 3,
+   "local_task_count": 3,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 3
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": true,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_scaml_F3_r0_20261111/scaml.json",
+    "sha256": "92d3f13b8d14c26c8d4fd068ff822010e6a247290c0aab00ba55619b0bcc7248",
+    "bytes": 2233
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B1_scaml_F3_r0_20261111/freeze.json",
+    "sha256": "b007f1b7f6f38f113a559d9e36996e70ecb24adee938f08bfa5e73ca26dde1d1",
+    "bytes": 2729
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "law_bench_B2_retainedGP_recovery_r0_20261111/retained_gp",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "retained_gp",
+   "base_seed": 20261111,
+   "repeats": [
+    0
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 15,
+   "local_task_count": 15,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 15
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B2_retainedGP_recovery_r0_20261111/retained_gp.json",
+    "sha256": "c0e8c573140eaa21654229ecae758ccf39cd31ef50f87883623a122fc526be86",
+    "bytes": 6537
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/law_bench_B2_retainedGP_recovery_r0_20261111/freeze.json",
+    "sha256": "ac782c07bac975293b9e482b32ba022a92726f75def5b45810a96db896c669cd",
+    "bytes": 3403
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_kcurve_20261111/wknn_HS",
+   "category": "calibration_budget",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "wknn_HS",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5,
+    10,
+    20
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 60,
+   "local_task_count": 60,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 60
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_kcurve_20261111/wknn_HS.json",
+    "sha256": "46f8aae49b8b37643f3b5a39b9e14c373038c05d530a7faf629c4a44b9887548",
+    "bytes": 10514
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_kcurve_20261111/freeze.json",
+    "sha256": "af914f89e724b3e51fb4a3e16d0df17aa138e9e94c10ef70c3417c97312b8804",
+    "bytes": 3220
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_kcurve_20261111/gp_histmean",
+   "category": "calibration_budget",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "gp_histmean",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5,
+    10,
+    20
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 60,
+   "local_task_count": 60,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 60
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_kcurve_20261111/gp_histmean.json",
+    "sha256": "5e9c30b2a5ec2fb8cf4263cee6d363ce9eed645f066b4929f2abc4adfd743722",
+    "bytes": 10781
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_kcurve_20261111/freeze.json",
+    "sha256": "af914f89e724b3e51fb4a3e16d0df17aa138e9e94c10ef70c3417c97312b8804",
+    "bytes": 3220
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_kcurve_20261111/refi",
+   "category": "calibration_budget",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "refi",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5,
+    10,
+    20
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 60,
+   "local_task_count": 60,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 60
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_kcurve_20261111/refi.json",
+    "sha256": "4d7959cddddcc5174110e98cc922427f088e4349463b64b491b108dfb99e6b84",
+    "bytes": 10332
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_kcurve_20261111/freeze.json",
+    "sha256": "af914f89e724b3e51fb4a3e16d0df17aa138e9e94c10ef70c3417c97312b8804",
+    "bytes": 3220
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B0_scaml_20261111/scaml",
+   "category": "supplementary_existing_benchmark",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B0",
+   "method": "scaml",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 36,
+   "local_task_count": 36,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 36
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_scaml_20261111/scaml.json",
+    "sha256": "29454b1162a8afc376dae1dc7948d90b8ebb5bc6c7f1250deaf32befc869b2f4",
+    "bytes": 6398
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B0_scaml_20261111/freeze.json",
+    "sha256": "ae22bbabec38cbbf6e7ac7cd98c2f9d9c810af99c5b75d5c503ec1b45ca29bc1",
+    "bytes": 2902
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_kcurve_20261111/wknn_HS",
+   "category": "calibration_budget",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "wknn_HS",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5,
+    10,
+    20
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 60,
+   "local_task_count": 60,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 60
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_kcurve_20261111/wknn_HS.json",
+    "sha256": "dd7c74240b95a4b5384731b9c76fd66ff7478a8b15188bdaedbcaceaa79af919",
+    "bytes": 10552
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_kcurve_20261111/freeze.json",
+    "sha256": "f1d3b81c2843c1337efd6e4ab0bd6b71a2d78f23d0d45669ac7a2c48ecdafcf2",
+    "bytes": 3220
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_kcurve_20261111/gp_histmean",
+   "category": "calibration_budget",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "gp_histmean",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5,
+    10,
+    20
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 60,
+   "local_task_count": 60,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 60
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_kcurve_20261111/gp_histmean.json",
+    "sha256": "1353b789993ea69768c9981b171aa6c725fd4f616b3a6de3d5a629945f44bdd6",
+    "bytes": 10777
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_kcurve_20261111/freeze.json",
+    "sha256": "f1d3b81c2843c1337efd6e4ab0bd6b71a2d78f23d0d45669ac7a2c48ecdafcf2",
+    "bytes": 3220
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B1_kcurve_20261111/refi",
+   "category": "calibration_budget",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "refi",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5,
+    10,
+    20
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 60,
+   "local_task_count": 60,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 60
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_kcurve_20261111/refi.json",
+    "sha256": "15f86ff8fbcc36bf6aaedf23c2b28fe9b464831c85461a6688b2c9470a0cdbec",
+    "bytes": 10338
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B1_kcurve_20261111/freeze.json",
+    "sha256": "f1d3b81c2843c1337efd6e4ab0bd6b71a2d78f23d0d45669ac7a2c48ecdafcf2",
+    "bytes": 3220
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_kcurve_20261111/wknn_HS",
+   "category": "calibration_budget",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "wknn_HS",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5,
+    10,
+    20
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 75,
+   "local_task_count": 75,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 75
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_kcurve_20261111/wknn_HS.json",
+    "sha256": "4e5e31f4786cbba9e47879f3aff685167dbfd7668560b5c2b87dec93be4caeb4",
+    "bytes": 12742
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_kcurve_20261111/freeze.json",
+    "sha256": "24493fb715e37eaf923864d78d23ef05199420d850c80bdc6e7de51122560297",
+    "bytes": 3220
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_kcurve_20261111/gp_histmean",
+   "category": "calibration_budget",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "gp_histmean",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5,
+    10,
+    20
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 75,
+   "local_task_count": 75,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 75
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_kcurve_20261111/gp_histmean.json",
+    "sha256": "cdc61b99158a323d61052025e14aa03767215e84c862170b5b901f1a3bbe1222",
+    "bytes": 13044
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_kcurve_20261111/freeze.json",
+    "sha256": "24493fb715e37eaf923864d78d23ef05199420d850c80bdc6e7de51122560297",
+    "bytes": 3220
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "paper_uji_B2_kcurve_20261111/refi",
+   "category": "calibration_budget",
+   "protocol": "static-resample-v2",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "refi",
+   "base_seed": 20261111,
+   "repeats": [
+    0,
+    1,
+    2
+   ],
+   "K": [
+    1,
+    3,
+    5,
+    10,
+    20
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 75,
+   "local_task_count": 75,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 75
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_kcurve_20261111/refi.json",
+    "sha256": "5d706b6a839c056b7a1a5e5e73e39096b88d6a2dd452e9b9ae91404aa58eec53",
+    "bytes": 12487
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_uji_B2_kcurve_20261111/freeze.json",
+    "sha256": "24493fb715e37eaf923864d78d23ef05199420d850c80bdc6e7de51122560297",
+    "bytes": 3220
+   },
+   "metric": "Static benchmark: mean scan error within each query position, then pool position errors; repeats and K counted separately; p90 pooled over positions, not average of task p90"
+  },
+  {
+   "id": "legacy54_B1_claude_20261111/wknn_S",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "wknn_S",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 24,
+   "local_task_count": 24,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 24
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/wknn_S.json",
+    "sha256": "d2cf7167fba47c8353d5cc95b9bfcba784f2ca3c1384c2a4a50f526f516de450",
+    "bytes": 6998
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/freeze.json",
+    "sha256": "e31d8196e39f02009e8a495601f16be15834a3254cf24ed31b24194a44bda696",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B1_claude_20261111/wknn_HS",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "wknn_HS",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 24,
+   "local_task_count": 24,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 24
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/wknn_HS.json",
+    "sha256": "5f39517032281762fca094998d45d8e955913e2ea7f10e4a4f633b4d431a0fd2",
+    "bytes": 7023
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/freeze.json",
+    "sha256": "e31d8196e39f02009e8a495601f16be15834a3254cf24ed31b24194a44bda696",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B1_claude_20261111/gp_histmean",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "gp_histmean",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 24,
+   "local_task_count": 24,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 24
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/gp_histmean.json",
+    "sha256": "02b8e9c57b432bf32c2da8a357dea1e581a745f7d7a6416c4e299a113ce6fa0f",
+    "bytes": 7124
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/freeze.json",
+    "sha256": "e31d8196e39f02009e8a495601f16be15834a3254cf24ed31b24194a44bda696",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B1_claude_20261111/ours_naive",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "ours_naive",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 24,
+   "local_task_count": 24,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 24
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/ours_naive.json",
+    "sha256": "865364ed7e1af0bb1fb91c7878c5a02cbd79d5bc10bb58140fa06feee52b81a7",
+    "bytes": 7097
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/freeze.json",
+    "sha256": "e31d8196e39f02009e8a495601f16be15834a3254cf24ed31b24194a44bda696",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B1_claude_20261111/ours_v1",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "ours_v1",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 24,
+   "local_task_count": 24,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 24
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/ours_v1.json",
+    "sha256": "32ab1bbb806c7900a5f53161c65f1e688b5a9f840e566f6c40d07e3913f6d109",
+    "bytes": 7010
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/freeze.json",
+    "sha256": "e31d8196e39f02009e8a495601f16be15834a3254cf24ed31b24194a44bda696",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B1_claude_20261111/ours_A",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B1",
+   "method": "ours_A",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "status": "completed",
+   "declared_task_count": 24,
+   "local_task_count": 24,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 24
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/ours_A.json",
+    "sha256": "5e5287c87fef305b31104fd646ebc9238a6e1670a044bef62f583237c77d6043",
+    "bytes": 6980
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B1_claude_20261111/freeze.json",
+    "sha256": "e31d8196e39f02009e8a495601f16be15834a3254cf24ed31b24194a44bda696",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B2_claude_20261111/wknn_S",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "wknn_S",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 30,
+   "local_task_count": 30,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 30
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/wknn_S.json",
+    "sha256": "315ea52afbb4169d6fca0f7f3f80bd051d43b5c95a48e0601a4501b4ddd72e65",
+    "bytes": 8342
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/freeze.json",
+    "sha256": "24f4217fdc9af60e9abed9913dd66998cf0f8e07c871c7522f0d3394d539b24c",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B2_claude_20261111/wknn_HS",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "wknn_HS",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 30,
+   "local_task_count": 30,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 30
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/wknn_HS.json",
+    "sha256": "e0feb0e5b86ec88e0fd04cfd058dd9dd9fdd4174d44bc1cd10c12473e3c4ec0c",
+    "bytes": 8385
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/freeze.json",
+    "sha256": "24f4217fdc9af60e9abed9913dd66998cf0f8e07c871c7522f0d3394d539b24c",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B2_claude_20261111/gp_histmean",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "gp_histmean",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 30,
+   "local_task_count": 30,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 30
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/gp_histmean.json",
+    "sha256": "629f983b038555beba4cf9cd83bd1a21eaec12729ab4a51d31c27cc4cff93177",
+    "bytes": 8506
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/freeze.json",
+    "sha256": "24f4217fdc9af60e9abed9913dd66998cf0f8e07c871c7522f0d3394d539b24c",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B2_claude_20261111/ours_naive",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "ours_naive",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 30,
+   "local_task_count": 30,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 30
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/ours_naive.json",
+    "sha256": "e798af9f9d31c26d582ebbf10368ee38a22696bd298d2507c88255481368762a",
+    "bytes": 8470
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/freeze.json",
+    "sha256": "24f4217fdc9af60e9abed9913dd66998cf0f8e07c871c7522f0d3394d539b24c",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B2_claude_20261111/ours_v1",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "ours_v1",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 30,
+   "local_task_count": 30,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 30
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/ours_v1.json",
+    "sha256": "95f0a96490c6f4e60bb88d1af369430751f67b45459ac8fa834155f36545b8fe",
+    "bytes": 8359
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/freeze.json",
+    "sha256": "24f4217fdc9af60e9abed9913dd66998cf0f8e07c871c7522f0d3394d539b24c",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "legacy54_B2_claude_20261111/ours_A",
+   "category": "cross_acquisition_legacy54",
+   "protocol": "legacy54",
+   "dataset": "uji",
+   "building": "B2",
+   "method": "ours_A",
+   "base_seed": 11509159,
+   "repeats": [
+    0,
+    1
+   ],
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "floors": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "status": "completed",
+   "declared_task_count": 30,
+   "local_task_count": 30,
+   "local_missing_task_count": 0,
+   "local_status_counts": {
+    "completed": 30
+   },
+   "unfinished_optimization_tasks": [],
+   "all_events_are_duplicate_aliases": false,
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/ours_A.json",
+    "sha256": "a69db544625d8638de64f394df7bf5a21106f95e9df7683d9d0ef3d26e5f7478",
+    "bytes": 8334
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/claude_handoff/claude_field_posterior_20261111/results/legacy54_B2_claude_20261111/freeze.json",
+    "sha256": "24f4217fdc9af60e9abed9913dd66998cf0f8e07c871c7522f0d3394d539b24c",
+    "bytes": 3398
+   },
+   "metric": "legacy54: equal building/floor/direction/K/position, discrete weighted p90"
+  },
+  {
+   "id": "ipin2025_acquisition_20261111/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_acquisition_20261111/scores.json",
+    "sha256": "d5b311012f7eb7d1a2a0c7f32699c104c2152f3e3b8d13204314ebee58bf0080",
+    "bytes": 298728
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_acquisition_20261111/freeze.json",
+    "sha256": "440f0e1156708aa26ad7f41ebb98d3c96b9a024ac9c8ec999f4691d8b63b73a6",
+    "bytes": 12444
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_acquisition_20261111/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_acquisition_20261111/scores.json",
+    "sha256": "d5b311012f7eb7d1a2a0c7f32699c104c2152f3e3b8d13204314ebee58bf0080",
+    "bytes": 298728
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_acquisition_20261111/freeze.json",
+    "sha256": "440f0e1156708aa26ad7f41ebb98d3c96b9a024ac9c8ec999f4691d8b63b73a6",
+    "bytes": 12444
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_acquisition_20261111/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_acquisition_20261111/scores.json",
+    "sha256": "d5b311012f7eb7d1a2a0c7f32699c104c2152f3e3b8d13204314ebee58bf0080",
+    "bytes": 298728
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_acquisition_20261111/freeze.json",
+    "sha256": "440f0e1156708aa26ad7f41ebb98d3c96b9a024ac9c8ec999f4691d8b63b73a6",
+    "bytes": 12444
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_acquisition_20261111/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_acquisition_20261111/scores.json",
+    "sha256": "d5b311012f7eb7d1a2a0c7f32699c104c2152f3e3b8d13204314ebee58bf0080",
+    "bytes": 298728
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_acquisition_20261111/freeze.json",
+    "sha256": "440f0e1156708aa26ad7f41ebb98d3c96b9a024ac9c8ec999f4691d8b63b73a6",
+    "bytes": 12444
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_acquisition_20261111/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_acquisition_20261111/scores.json",
+    "sha256": "d5b311012f7eb7d1a2a0c7f32699c104c2152f3e3b8d13204314ebee58bf0080",
+    "bytes": 298728
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_acquisition_20261111/freeze.json",
+    "sha256": "440f0e1156708aa26ad7f41ebb98d3c96b9a024ac9c8ec999f4691d8b63b73a6",
+    "bytes": 12444
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_confirmation_20261110/ipin/hurdle",
+   "category": "original_IPIN_confirmation",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_confirmation_20261110/scores.json",
+    "sha256": "50716b22d18af368b1ffbbe9c48f345d24a1dac5335b5792f0d8b216a387ef04",
+    "bytes": 298686
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_confirmation_20261110/freeze.json",
+    "sha256": "6fc0475cb9e23014645d1a31853bb8e8b606a68c027d2f6ddc937c6f821d648c",
+    "bytes": 6078
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_confirmation_20261110/ipin/GP",
+   "category": "original_IPIN_confirmation",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_confirmation_20261110/scores.json",
+    "sha256": "50716b22d18af368b1ffbbe9c48f345d24a1dac5335b5792f0d8b216a387ef04",
+    "bytes": 298686
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_confirmation_20261110/freeze.json",
+    "sha256": "6fc0475cb9e23014645d1a31853bb8e8b606a68c027d2f6ddc937c6f821d648c",
+    "bytes": 6078
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_confirmation_20261110/ipin/GP_candidates",
+   "category": "original_IPIN_confirmation",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_confirmation_20261110/scores.json",
+    "sha256": "50716b22d18af368b1ffbbe9c48f345d24a1dac5335b5792f0d8b216a387ef04",
+    "bytes": 298686
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_confirmation_20261110/freeze.json",
+    "sha256": "6fc0475cb9e23014645d1a31853bb8e8b606a68c027d2f6ddc937c6f821d648c",
+    "bytes": 6078
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_confirmation_20261110/ipin/coordinate_half",
+   "category": "original_IPIN_confirmation",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_confirmation_20261110/scores.json",
+    "sha256": "50716b22d18af368b1ffbbe9c48f345d24a1dac5335b5792f0d8b216a387ef04",
+    "bytes": 298686
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_confirmation_20261110/freeze.json",
+    "sha256": "6fc0475cb9e23014645d1a31853bb8e8b606a68c027d2f6ddc937c6f821d648c",
+    "bytes": 6078
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_confirmation_20261110/ipin/probability_half",
+   "category": "original_IPIN_confirmation",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_confirmation_20261110/scores.json",
+    "sha256": "50716b22d18af368b1ffbbe9c48f345d24a1dac5335b5792f0d8b216a387ef04",
+    "bytes": 298686
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_confirmation_20261110/freeze.json",
+    "sha256": "6fc0475cb9e23014645d1a31853bb8e8b606a68c027d2f6ddc937c6f821d648c",
+    "bytes": 6078
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_count_conditioned_20261111/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_count_conditioned_20261111/scores.json",
+    "sha256": "1b75d463d24c64335a09abab3e9fcd4ff598be43762ec6c4f83777d118078019",
+    "bytes": 298762
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_count_conditioned_20261111/freeze.json",
+    "sha256": "30b7ef08df96bdc1c93ff2583416096f1aac22effa13ec75f34ccd14d6e48880",
+    "bytes": 18456
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_count_conditioned_20261111/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_count_conditioned_20261111/scores.json",
+    "sha256": "1b75d463d24c64335a09abab3e9fcd4ff598be43762ec6c4f83777d118078019",
+    "bytes": 298762
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_count_conditioned_20261111/freeze.json",
+    "sha256": "30b7ef08df96bdc1c93ff2583416096f1aac22effa13ec75f34ccd14d6e48880",
+    "bytes": 18456
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_count_conditioned_20261111/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_count_conditioned_20261111/scores.json",
+    "sha256": "1b75d463d24c64335a09abab3e9fcd4ff598be43762ec6c4f83777d118078019",
+    "bytes": 298762
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_count_conditioned_20261111/freeze.json",
+    "sha256": "30b7ef08df96bdc1c93ff2583416096f1aac22effa13ec75f34ccd14d6e48880",
+    "bytes": 18456
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_count_conditioned_20261111/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_count_conditioned_20261111/scores.json",
+    "sha256": "1b75d463d24c64335a09abab3e9fcd4ff598be43762ec6c4f83777d118078019",
+    "bytes": 298762
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_count_conditioned_20261111/freeze.json",
+    "sha256": "30b7ef08df96bdc1c93ff2583416096f1aac22effa13ec75f34ccd14d6e48880",
+    "bytes": 18456
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_count_conditioned_20261111/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_count_conditioned_20261111/scores.json",
+    "sha256": "1b75d463d24c64335a09abab3e9fcd4ff598be43762ec6c4f83777d118078019",
+    "bytes": 298762
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_count_conditioned_20261111/freeze.json",
+    "sha256": "30b7ef08df96bdc1c93ff2583416096f1aac22effa13ec75f34ccd14d6e48880",
+    "bytes": 18456
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_detection_ipw20_20261111/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_detection_ipw20_20261111/scores.json",
+    "sha256": "ded68944e8ef9045d52b728f492e41d3fc8d926f62b51a12f9f277f1dc515588",
+    "bytes": 298628
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_detection_ipw20_20261111/freeze.json",
+    "sha256": "13d96425a1c06f624d2fd4b153624965b6015d470c4f61a65b5e31d5d89a8227",
+    "bytes": 21215
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_detection_ipw20_20261111/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_detection_ipw20_20261111/scores.json",
+    "sha256": "ded68944e8ef9045d52b728f492e41d3fc8d926f62b51a12f9f277f1dc515588",
+    "bytes": 298628
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_detection_ipw20_20261111/freeze.json",
+    "sha256": "13d96425a1c06f624d2fd4b153624965b6015d470c4f61a65b5e31d5d89a8227",
+    "bytes": 21215
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_detection_ipw20_20261111/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_detection_ipw20_20261111/scores.json",
+    "sha256": "ded68944e8ef9045d52b728f492e41d3fc8d926f62b51a12f9f277f1dc515588",
+    "bytes": 298628
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_detection_ipw20_20261111/freeze.json",
+    "sha256": "13d96425a1c06f624d2fd4b153624965b6015d470c4f61a65b5e31d5d89a8227",
+    "bytes": 21215
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_detection_ipw20_20261111/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_detection_ipw20_20261111/scores.json",
+    "sha256": "ded68944e8ef9045d52b728f492e41d3fc8d926f62b51a12f9f277f1dc515588",
+    "bytes": 298628
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_detection_ipw20_20261111/freeze.json",
+    "sha256": "13d96425a1c06f624d2fd4b153624965b6015d470c4f61a65b5e31d5d89a8227",
+    "bytes": 21215
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_detection_ipw20_20261111/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_detection_ipw20_20261111/scores.json",
+    "sha256": "ded68944e8ef9045d52b728f492e41d3fc8d926f62b51a12f9f277f1dc515588",
+    "bytes": 298628
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_detection_ipw20_20261111/freeze.json",
+    "sha256": "13d96425a1c06f624d2fd4b153624965b6015d470c4f61a65b5e31d5d89a8227",
+    "bytes": 21215
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_finite_observation_20261111/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_finite_observation_20261111/scores.json",
+    "sha256": "e7505b956a26585a9962740733faa7f27eed9b70379f6d2fcf742865ec90f190",
+    "bytes": 298683
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_finite_observation_20261111/freeze.json",
+    "sha256": "4aea1d8f03918af3d7d03b40c7590803caa6a99d6ae38683c3ee0b37cc8707e8",
+    "bytes": 16494
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_finite_observation_20261111/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_finite_observation_20261111/scores.json",
+    "sha256": "e7505b956a26585a9962740733faa7f27eed9b70379f6d2fcf742865ec90f190",
+    "bytes": 298683
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_finite_observation_20261111/freeze.json",
+    "sha256": "4aea1d8f03918af3d7d03b40c7590803caa6a99d6ae38683c3ee0b37cc8707e8",
+    "bytes": 16494
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_finite_observation_20261111/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_finite_observation_20261111/scores.json",
+    "sha256": "e7505b956a26585a9962740733faa7f27eed9b70379f6d2fcf742865ec90f190",
+    "bytes": 298683
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_finite_observation_20261111/freeze.json",
+    "sha256": "4aea1d8f03918af3d7d03b40c7590803caa6a99d6ae38683c3ee0b37cc8707e8",
+    "bytes": 16494
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_finite_observation_20261111/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_finite_observation_20261111/scores.json",
+    "sha256": "e7505b956a26585a9962740733faa7f27eed9b70379f6d2fcf742865ec90f190",
+    "bytes": 298683
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_finite_observation_20261111/freeze.json",
+    "sha256": "4aea1d8f03918af3d7d03b40c7590803caa6a99d6ae38683c3ee0b37cc8707e8",
+    "bytes": 16494
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_finite_observation_20261111/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_finite_observation_20261111/scores.json",
+    "sha256": "e7505b956a26585a9962740733faa7f27eed9b70379f6d2fcf742865ec90f190",
+    "bytes": 298683
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_finite_observation_20261111/freeze.json",
+    "sha256": "4aea1d8f03918af3d7d03b40c7590803caa6a99d6ae38683c3ee0b37cc8707e8",
+    "bytes": 16494
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_positive_evidence_20261111/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_positive_evidence_20261111/scores.json",
+    "sha256": "37b02da418672edb535e43e994ed340ece4a0e06fb32314f7bdc33123d003b16",
+    "bytes": 298754
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_positive_evidence_20261111/freeze.json",
+    "sha256": "52346a4cc3b283d21aa41d6cc43bf1bcc69ec48027742792a436435c8fb637be",
+    "bytes": 19224
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_positive_evidence_20261111/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_positive_evidence_20261111/scores.json",
+    "sha256": "37b02da418672edb535e43e994ed340ece4a0e06fb32314f7bdc33123d003b16",
+    "bytes": 298754
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_positive_evidence_20261111/freeze.json",
+    "sha256": "52346a4cc3b283d21aa41d6cc43bf1bcc69ec48027742792a436435c8fb637be",
+    "bytes": 19224
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_positive_evidence_20261111/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_positive_evidence_20261111/scores.json",
+    "sha256": "37b02da418672edb535e43e994ed340ece4a0e06fb32314f7bdc33123d003b16",
+    "bytes": 298754
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_positive_evidence_20261111/freeze.json",
+    "sha256": "52346a4cc3b283d21aa41d6cc43bf1bcc69ec48027742792a436435c8fb637be",
+    "bytes": 19224
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_positive_evidence_20261111/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_positive_evidence_20261111/scores.json",
+    "sha256": "37b02da418672edb535e43e994ed340ece4a0e06fb32314f7bdc33123d003b16",
+    "bytes": 298754
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_positive_evidence_20261111/freeze.json",
+    "sha256": "52346a4cc3b283d21aa41d6cc43bf1bcc69ec48027742792a436435c8fb637be",
+    "bytes": 19224
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_positive_evidence_20261111/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_positive_evidence_20261111/scores.json",
+    "sha256": "37b02da418672edb535e43e994ed340ece4a0e06fb32314f7bdc33123d003b16",
+    "bytes": 298754
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_positive_evidence_20261111/freeze.json",
+    "sha256": "52346a4cc3b283d21aa41d6cc43bf1bcc69ec48027742792a436435c8fb637be",
+    "bytes": 19224
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_scale_gamma_20261111/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_scale_gamma_20261111/scores.json",
+    "sha256": "812a7bd9ea07d040f55a0e138eda87f93b3cad4fa813dd14b2cbdf15e1ecbf9c",
+    "bytes": 298724
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_scale_gamma_20261111/freeze.json",
+    "sha256": "49d7e3ebc0fab944c35623a33d1824ce29ebb66ba3e6da0283fe64adf5b5e1a0",
+    "bytes": 23803
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_scale_gamma_20261111/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_scale_gamma_20261111/scores.json",
+    "sha256": "812a7bd9ea07d040f55a0e138eda87f93b3cad4fa813dd14b2cbdf15e1ecbf9c",
+    "bytes": 298724
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_scale_gamma_20261111/freeze.json",
+    "sha256": "49d7e3ebc0fab944c35623a33d1824ce29ebb66ba3e6da0283fe64adf5b5e1a0",
+    "bytes": 23803
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_scale_gamma_20261111/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_scale_gamma_20261111/scores.json",
+    "sha256": "812a7bd9ea07d040f55a0e138eda87f93b3cad4fa813dd14b2cbdf15e1ecbf9c",
+    "bytes": 298724
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_scale_gamma_20261111/freeze.json",
+    "sha256": "49d7e3ebc0fab944c35623a33d1824ce29ebb66ba3e6da0283fe64adf5b5e1a0",
+    "bytes": 23803
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_scale_gamma_20261111/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_scale_gamma_20261111/scores.json",
+    "sha256": "812a7bd9ea07d040f55a0e138eda87f93b3cad4fa813dd14b2cbdf15e1ecbf9c",
+    "bytes": 298724
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_scale_gamma_20261111/freeze.json",
+    "sha256": "49d7e3ebc0fab944c35623a33d1824ce29ebb66ba3e6da0283fe64adf5b5e1a0",
+    "bytes": 23803
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_scale_gamma_20261111/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_scale_gamma_20261111/scores.json",
+    "sha256": "812a7bd9ea07d040f55a0e138eda87f93b3cad4fa813dd14b2cbdf15e1ecbf9c",
+    "bytes": 298724
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_scale_gamma_20261111/freeze.json",
+    "sha256": "49d7e3ebc0fab944c35623a33d1824ce29ebb66ba3e6da0283fe64adf5b5e1a0",
+    "bytes": 23803
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_support_history_prior_20261111/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_support_history_prior_20261111/scores.json",
+    "sha256": "29ff43eb5084b7a0dcbec8f9012ceaf70041d73391bdee6ee9af46ca19c25126",
+    "bytes": 298723
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_support_history_prior_20261111/freeze.json",
+    "sha256": "5545e0e072b7423560146e3f832327755617ca32497c21fc3168fd54ccbfb6d5",
+    "bytes": 21201
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_support_history_prior_20261111/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_support_history_prior_20261111/scores.json",
+    "sha256": "29ff43eb5084b7a0dcbec8f9012ceaf70041d73391bdee6ee9af46ca19c25126",
+    "bytes": 298723
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_support_history_prior_20261111/freeze.json",
+    "sha256": "5545e0e072b7423560146e3f832327755617ca32497c21fc3168fd54ccbfb6d5",
+    "bytes": 21201
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_support_history_prior_20261111/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_support_history_prior_20261111/scores.json",
+    "sha256": "29ff43eb5084b7a0dcbec8f9012ceaf70041d73391bdee6ee9af46ca19c25126",
+    "bytes": 298723
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_support_history_prior_20261111/freeze.json",
+    "sha256": "5545e0e072b7423560146e3f832327755617ca32497c21fc3168fd54ccbfb6d5",
+    "bytes": 21201
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_support_history_prior_20261111/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_support_history_prior_20261111/scores.json",
+    "sha256": "29ff43eb5084b7a0dcbec8f9012ceaf70041d73391bdee6ee9af46ca19c25126",
+    "bytes": 298723
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_support_history_prior_20261111/freeze.json",
+    "sha256": "5545e0e072b7423560146e3f832327755617ca32497c21fc3168fd54ccbfb6d5",
+    "bytes": 21201
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_support_history_prior_20261111/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_support_history_prior_20261111/scores.json",
+    "sha256": "29ff43eb5084b7a0dcbec8f9012ceaf70041d73391bdee6ee9af46ca19c25126",
+    "bytes": 298723
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_support_history_prior_20261111/freeze.json",
+    "sha256": "5545e0e072b7423560146e3f832327755617ca32497c21fc3168fd54ccbfb6d5",
+    "bytes": 21201
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_unified_count_20261111/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_count_20261111/scores.json",
+    "sha256": "e8fcc7ebbc094c03a468233a611dae1c73cde2e956e418a12cd9d009dbc0c1d7",
+    "bytes": 298731
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_count_20261111/freeze.json",
+    "sha256": "05070aaf231f03e58a081d43007445a1e63a7ef023b0583401b0e86182027801",
+    "bytes": 26175
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_unified_count_20261111/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_count_20261111/scores.json",
+    "sha256": "e8fcc7ebbc094c03a468233a611dae1c73cde2e956e418a12cd9d009dbc0c1d7",
+    "bytes": 298731
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_count_20261111/freeze.json",
+    "sha256": "05070aaf231f03e58a081d43007445a1e63a7ef023b0583401b0e86182027801",
+    "bytes": 26175
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_unified_count_20261111/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_count_20261111/scores.json",
+    "sha256": "e8fcc7ebbc094c03a468233a611dae1c73cde2e956e418a12cd9d009dbc0c1d7",
+    "bytes": 298731
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_count_20261111/freeze.json",
+    "sha256": "05070aaf231f03e58a081d43007445a1e63a7ef023b0583401b0e86182027801",
+    "bytes": 26175
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_unified_count_20261111/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_count_20261111/scores.json",
+    "sha256": "e8fcc7ebbc094c03a468233a611dae1c73cde2e956e418a12cd9d009dbc0c1d7",
+    "bytes": 298731
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_count_20261111/freeze.json",
+    "sha256": "05070aaf231f03e58a081d43007445a1e63a7ef023b0583401b0e86182027801",
+    "bytes": 26175
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_unified_count_20261111/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_count_20261111/scores.json",
+    "sha256": "e8fcc7ebbc094c03a468233a611dae1c73cde2e956e418a12cd9d009dbc0c1d7",
+    "bytes": 298731
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_count_20261111/freeze.json",
+    "sha256": "05070aaf231f03e58a081d43007445a1e63a7ef023b0583401b0e86182027801",
+    "bytes": 26175
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_unified_scan_20261111/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_scan_20261111/scores.json",
+    "sha256": "a68274595c5874086bd3b09027529229e53c526297fe6777883b6964f7a90208",
+    "bytes": 298750
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_scan_20261111/freeze.json",
+    "sha256": "a9d4368fb040755bb15d67ef4cf41be507e4f572a75eb71b08e00214fca9a25c",
+    "bytes": 12571
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_unified_scan_20261111/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_scan_20261111/scores.json",
+    "sha256": "a68274595c5874086bd3b09027529229e53c526297fe6777883b6964f7a90208",
+    "bytes": 298750
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_scan_20261111/freeze.json",
+    "sha256": "a9d4368fb040755bb15d67ef4cf41be507e4f572a75eb71b08e00214fca9a25c",
+    "bytes": 12571
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_unified_scan_20261111/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_scan_20261111/scores.json",
+    "sha256": "a68274595c5874086bd3b09027529229e53c526297fe6777883b6964f7a90208",
+    "bytes": 298750
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_scan_20261111/freeze.json",
+    "sha256": "a9d4368fb040755bb15d67ef4cf41be507e4f572a75eb71b08e00214fca9a25c",
+    "bytes": 12571
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_unified_scan_20261111/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_scan_20261111/scores.json",
+    "sha256": "a68274595c5874086bd3b09027529229e53c526297fe6777883b6964f7a90208",
+    "bytes": 298750
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_scan_20261111/freeze.json",
+    "sha256": "a9d4368fb040755bb15d67ef4cf41be507e4f572a75eb71b08e00214fca9a25c",
+    "bytes": 12571
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "ipin2025_unified_scan_20261111/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_scan_20261111/scores.json",
+    "sha256": "a68274595c5874086bd3b09027529229e53c526297fe6777883b6964f7a90208",
+    "bytes": 298750
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/ipin2025_unified_scan_20261111/freeze.json",
+    "sha256": "a9d4368fb040755bb15d67ef4cf41be507e4f572a75eb71b08e00214fca9a25c",
+    "bytes": 12571
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "exact_support_prior/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/exact_support_prior/scores.json",
+    "sha256": "49eb37283e5d01833e6f224b3b531a6a2dbe2d115ce7b9b493855eb19872e59b",
+    "bytes": 298644
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/exact_support_prior/freeze.json",
+    "sha256": "261e35fe3bf74938349e1e2e0040cc0af0001c827721db4ef8c30c19ea928cf0",
+    "bytes": 35043
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "exact_support_prior/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/exact_support_prior/scores.json",
+    "sha256": "49eb37283e5d01833e6f224b3b531a6a2dbe2d115ce7b9b493855eb19872e59b",
+    "bytes": 298644
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/exact_support_prior/freeze.json",
+    "sha256": "261e35fe3bf74938349e1e2e0040cc0af0001c827721db4ef8c30c19ea928cf0",
+    "bytes": 35043
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "exact_support_prior/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/exact_support_prior/scores.json",
+    "sha256": "49eb37283e5d01833e6f224b3b531a6a2dbe2d115ce7b9b493855eb19872e59b",
+    "bytes": 298644
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/exact_support_prior/freeze.json",
+    "sha256": "261e35fe3bf74938349e1e2e0040cc0af0001c827721db4ef8c30c19ea928cf0",
+    "bytes": 35043
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "exact_support_prior/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/exact_support_prior/scores.json",
+    "sha256": "49eb37283e5d01833e6f224b3b531a6a2dbe2d115ce7b9b493855eb19872e59b",
+    "bytes": 298644
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/exact_support_prior/freeze.json",
+    "sha256": "261e35fe3bf74938349e1e2e0040cc0af0001c827721db4ef8c30c19ea928cf0",
+    "bytes": 35043
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "exact_support_prior/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/exact_support_prior/scores.json",
+    "sha256": "49eb37283e5d01833e6f224b3b531a6a2dbe2d115ce7b9b493855eb19872e59b",
+    "bytes": 298644
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/exact_support_prior/freeze.json",
+    "sha256": "261e35fe3bf74938349e1e2e0040cc0af0001c827721db4ef8c30c19ea928cf0",
+    "bytes": 35043
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "full_v1/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/full_v1/scores.json",
+    "sha256": "c0cb95bed09bdd46237711d2c446d842ce81c36925f043ef4a9cc75ae751ed39",
+    "bytes": 298706
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/full_v1/freeze.json",
+    "sha256": "16bf6bf7a15a62edc8889f85c8788fa54e889079a3ac8367cadd8d4f8b82d9b4",
+    "bytes": 35031
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "full_v1/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/full_v1/scores.json",
+    "sha256": "c0cb95bed09bdd46237711d2c446d842ce81c36925f043ef4a9cc75ae751ed39",
+    "bytes": 298706
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/full_v1/freeze.json",
+    "sha256": "16bf6bf7a15a62edc8889f85c8788fa54e889079a3ac8367cadd8d4f8b82d9b4",
+    "bytes": 35031
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "full_v1/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/full_v1/scores.json",
+    "sha256": "c0cb95bed09bdd46237711d2c446d842ce81c36925f043ef4a9cc75ae751ed39",
+    "bytes": 298706
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/full_v1/freeze.json",
+    "sha256": "16bf6bf7a15a62edc8889f85c8788fa54e889079a3ac8367cadd8d4f8b82d9b4",
+    "bytes": 35031
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "full_v1/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/full_v1/scores.json",
+    "sha256": "c0cb95bed09bdd46237711d2c446d842ce81c36925f043ef4a9cc75ae751ed39",
+    "bytes": 298706
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/full_v1/freeze.json",
+    "sha256": "16bf6bf7a15a62edc8889f85c8788fa54e889079a3ac8367cadd8d4f8b82d9b4",
+    "bytes": 35031
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "full_v1/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/full_v1/scores.json",
+    "sha256": "c0cb95bed09bdd46237711d2c446d842ce81c36925f043ef4a9cc75ae751ed39",
+    "bytes": 298706
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/full_v1/freeze.json",
+    "sha256": "16bf6bf7a15a62edc8889f85c8788fa54e889079a3ac8367cadd8d4f8b82d9b4",
+    "bytes": 35031
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "without_field_conditioning/ipin/hurdle",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "hurdle",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/without_field_conditioning/scores.json",
+    "sha256": "b1b208c23ba7dbba4431183a3cf57ac22640d9eb559e55954fc564cfc49681e3",
+    "bytes": 298757
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/without_field_conditioning/freeze.json",
+    "sha256": "3155e3201a36fcd6975195751a77b34c558e422f6f6119970b7e554b7ba9c51d",
+    "bytes": 35050
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "without_field_conditioning/ipin/GP",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/without_field_conditioning/scores.json",
+    "sha256": "b1b208c23ba7dbba4431183a3cf57ac22640d9eb559e55954fc564cfc49681e3",
+    "bytes": 298757
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/without_field_conditioning/freeze.json",
+    "sha256": "3155e3201a36fcd6975195751a77b34c558e422f6f6119970b7e554b7ba9c51d",
+    "bytes": 35050
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "without_field_conditioning/ipin/GP_candidates",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "GP_candidates",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/without_field_conditioning/scores.json",
+    "sha256": "b1b208c23ba7dbba4431183a3cf57ac22640d9eb559e55954fc564cfc49681e3",
+    "bytes": 298757
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/without_field_conditioning/freeze.json",
+    "sha256": "3155e3201a36fcd6975195751a77b34c558e422f6f6119970b7e554b7ba9c51d",
+    "bytes": 35050
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "without_field_conditioning/ipin/coordinate_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "coordinate_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/without_field_conditioning/scores.json",
+    "sha256": "b1b208c23ba7dbba4431183a3cf57ac22640d9eb559e55954fc564cfc49681e3",
+    "bytes": 298757
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/without_field_conditioning/freeze.json",
+    "sha256": "3155e3201a36fcd6975195751a77b34c558e422f6f6119970b7e554b7ba9c51d",
+    "bytes": 35050
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  },
+  {
+   "id": "without_field_conditioning/ipin/probability_half",
+   "category": "IPIN_exploration_not_original_main_method",
+   "protocol": "ipin2025-known-floor-score-v1",
+   "dataset": "ipin2025",
+   "building": "B2025",
+   "method": "probability_half",
+   "repeats": null,
+   "K": [
+    1,
+    3,
+    5
+   ],
+   "status": "completed",
+   "summary_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/without_field_conditioning/scores.json",
+    "sha256": "b1b208c23ba7dbba4431183a3cf57ac22640d9eb559e55954fc564cfc49681e3",
+    "bytes": 298757
+   },
+   "freeze_source": {
+    "path": "/Users/Admin/Desktop/project/迁移学习/ReFi-UJI-Core-20261031-recovered/results/frozen_v1_ipin2025_20261111/without_field_conditioning/freeze.json",
+    "sha256": "3155e3201a36fcd6975195751a77b34c558e422f6f6119970b7e554b7ba9c51d",
+    "bytes": 35050
+   },
+   "metric": "Known-floor 2D metres in fixed 9011 frame; all GT rows point-weighted; covered p90 inverse empirical CDF"
+  }
+ ]
+}
