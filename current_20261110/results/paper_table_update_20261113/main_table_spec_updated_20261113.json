@@ -1,0 +1,96 @@
+{
+ "datasets": [
+  {
+   "label": "UJI (3 bldg.)",
+   "dirs": [
+    "results/paper_uji_B0_20261111",
+    "results/paper_uji_B1_20261111",
+    "results/paper_uji_B2_20261111",
+    "results/paper_uji_B0_ext_20261111",
+    "results/paper_uji_B1_ext_20261111",
+    "results/paper_uji_B2_ext_20261111",
+    "results/paper_uji_B0_tabicl_20261112",
+    "results/paper_uji_B1_tabicl_r0_reused_20261112",
+    "results/paper_uji_B1_tabicl_20261112",
+    "results/paper_uji_B2_tabicl_20261112"
+   ]
+  },
+  {
+   "label": "Tampere TIE1",
+   "dirs": [
+    "results/paper_tampere_TIE1_20261111"
+   ]
+  },
+  {
+   "label": "Tampere SAH1",
+   "dirs": [
+    "results/paper_tampere_SAH1_20261111"
+   ]
+  },
+  {
+   "label": "SOD CETC331",
+   "dirs": [
+    "results/paper_sod_CETC331_20261111"
+   ]
+  },
+  {
+   "label": "UTS tower",
+   "dirs": [
+    "results/paper_uts_New_IT_20261111"
+   ]
+  }
+ ],
+ "methods": [
+  {
+   "key": "wknn_S",
+   "label": "WKNN(S)",
+   "group": "Simple baselines"
+  },
+  {
+   "key": "wknn_HS",
+   "label": "WKNN(H+S)",
+   "group": "Simple baselines"
+  },
+  {
+   "key": "gp_S",
+   "label": "GP(S)",
+   "group": "Established methods"
+  },
+  {
+   "key": "gp_histmean",
+   "label": "GP (history prior)",
+   "group": "Established methods"
+  },
+  {
+   "key": "retained_gp",
+   "label": "HistGP (retained GP)",
+   "group": "Established methods"
+  },
+  {
+   "key": "tabicl",
+   "label": "TabICL (public)",
+   "group": "Established methods"
+  },
+  {
+   "key": "refi",
+   "label": "ReFi",
+   "group": "Ours"
+  },
+  {
+   "key": "refi_GP",
+   "label": "ReFi+GP",
+   "group": "Ours"
+  }
+ ],
+ "xmax": 40,
+ "styles": {
+  "wknn_S": "gray, dashed",
+  "wknn_HS": "blue",
+  "gp_S": "gray, dotted",
+  "gp_histmean": "orange",
+  "refi": "red, very thick",
+  "retained_gp": "green!60!black",
+  "tabicl": "violet",
+  "refi_GP": "red, dashed, thick"
+ }
+}
