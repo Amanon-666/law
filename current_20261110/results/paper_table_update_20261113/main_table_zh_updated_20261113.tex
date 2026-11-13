@@ -1,0 +1,30 @@
+\begin{table*}[t]\centering\small
+\caption{统一协议下五组评价的定位误差（m，越低越好） ($K\in\{1,3,5\}$ 合并). 粗体/下划线：各列最优/次优； ``--'': 尚无结果或覆盖不完整。新增强对照当前仅覆盖UJI。}\label{tab:main}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+方法 & \multicolumn{2}{c}{UJI（3栋）} & \multicolumn{2}{c}{Tampere TIE1} & \multicolumn{2}{c}{Tampere SAH1} & \multicolumn{2}{c}{SOD CETC331} & \multicolumn{2}{c}{UTS塔楼} & 平均\\
+ & 均值 & P90 & 均值 & P90 & 均值 & P90 & 均值 & P90 & 均值 & P90 & 排名\\
+\midrule
+\multicolumn{12}{l}{\emph{简单基线}}\\
+WKNN(S) & 39.56 & 83.70 & 25.51 & 55.10 & 52.39 & 93.04 & 9.42 & 18.24 & 22.37 & 46.87 & 4.6\\
+WKNN(H+S) & 14.03 & 31.26 & 18.23 & \textbf{47.26} & \underline{16.15} & \underline{32.53} & 7.55 & 16.54 & \underline{14.19} & \underline{27.16} & 3.0\\
+\midrule
+\multicolumn{12}{l}{\emph{成熟方法}}\\
+GP(S) & 51.42 & 114.58 & 45.43 & 117.43 & 66.63 & 159.56 & 10.94 & 26.62 & 31.18 & 74.48 & 5.6\\
+GP（历史先验） & 22.31 & 49.11 & \underline{18.05} & \underline{47.30} & 49.80 & 109.63 & \underline{6.68} & \underline{13.60} & 17.90 & 36.01 & 3.2\\
+HistGP（retained GP） & 12.03 & 25.02 & -- & -- & -- & -- & -- & -- & -- & -- & --\\
+TabICL（公开模型） & 11.31 & 23.11 & -- & -- & -- & -- & -- & -- & -- & -- & --\\
+\midrule
+\rowcolor{refirow}
+\multicolumn{12}{l}{\emph{本文}}\\
+\rowcolor{refirow}
+ReFi & \underline{8.74} & \underline{17.22} & \textbf{16.01} & 48.02 & \textbf{12.16} & \textbf{25.63} & \textbf{6.04} & \textbf{11.71} & \textbf{9.97} & \textbf{20.82} & 1.2\\
+\rowcolor{refirow}
+ReFi+GP & \textbf{8.15} & \textbf{16.42} & -- & -- & -- & -- & -- & -- & -- & -- & --\\
+\midrule
+\emph{相对最优基线降幅} & \multicolumn{2}{c}{\gain{22.7\%}$^\dagger$} & \multicolumn{2}{c}{\gain{11.3\%}} & \multicolumn{2}{c}{\gain{24.7\%}$^\dagger$} & \multicolumn{2}{c}{\gain{9.6\%}} & \multicolumn{2}{c}{\gain{29.7\%}$^\dagger$} & \\
+\bottomrule
+\end{tabular}\par\smallskip
+\begin{minipage}{0.98\textwidth}\footnotesize 降幅：ReFi平均误差相对该数据集上已有最优基线的下降比例。各列按已有方法排名；外部HistGP、公开TabICL和ReFi+GP结果待补。$^\dagger$：按任务配对bootstrap的95\%区间不含零。ReFi仅在UJIIndoorLoc上训练；在UJI上留出目标建筑。UJI在方法开发中使用过；其余四栋建筑在方法冻结后评估。\end{minipage}
+\end{table*}
