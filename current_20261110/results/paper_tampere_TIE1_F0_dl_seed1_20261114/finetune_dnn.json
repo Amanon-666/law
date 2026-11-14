@@ -1,0 +1,91 @@
+{
+  "method": "finetune_dnn",
+  "source_fit": {
+    "status": "completed",
+    "seconds": 79.5338754504919,
+    "sha256": "218a10eb79b990b689d4e017833111d330d84bdd1aafceacb14316e3a0a850eb",
+    "source_buildings": [
+      "B0",
+      "B1",
+      "B2"
+    ]
+  },
+  "by_K": {
+    "1": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 23.92466678430889,
+      "p50": 15.52208895566876,
+      "p90": 60.701144443764576,
+      "query_positions": 60
+    },
+    "3": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 24.935474117067614,
+      "p50": 16.63758588818162,
+      "p90": 63.409773429801724,
+      "query_positions": 60
+    },
+    "5": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 21.758732288688392,
+      "p50": 13.76236243695486,
+      "p90": 44.494175560048966,
+      "query_positions": 60
+    }
+  },
+  "by_floor": {
+    "0": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 23.92466678430889,
+        "p50": 15.52208895566876,
+        "p90": 60.701144443764576,
+        "query_positions": 60
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 24.935474117067614,
+        "p50": 16.63758588818162,
+        "p90": 63.409773429801724,
+        "query_positions": 60
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 21.758732288688392,
+        "p50": 13.76236243695486,
+        "p90": 44.494175560048966,
+        "query_positions": 60
+      }
+    }
+  },
+  "task_records": [
+    "events/finetune_dnn/tampere/TIE1/F0/K1/r0.json",
+    "events/finetune_dnn/tampere/TIE1/F0/K3/r0.json",
+    "events/finetune_dnn/tampere/TIE1/F0/K5/r0.json"
+  ],
+  "unavailable": []
+}

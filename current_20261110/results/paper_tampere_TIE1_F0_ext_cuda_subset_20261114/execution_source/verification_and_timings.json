@@ -1,0 +1,152 @@
+{
+  "status": "completed",
+  "scope": "TIE1 target floor F0 only; K1/3/5 r0; no six-floor aggregate",
+  "target_data_identity": {
+    "TIE1": "6f08773eaf86a1b4f11f4d2e263dcbb096b0ff894682593964ff17ebd92b4669"
+  },
+  "source_data_identity": {
+    "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+    "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11",
+    "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+  },
+  "target_data_matches_reference": true,
+  "source_data_matches_reference": true,
+  "reference_directory": "/Users/Admin/Desktop/project/\u8fc1\u79fb\u5b66\u4e60/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111",
+  "comparisons": [
+    {
+      "method": "refi_GP",
+      "task_id": "tampere/TIE1/F0/K1/r0",
+      "mean": 20.53128521499987,
+      "p90": 38.77694446877378,
+      "query_scans": 60,
+      "query_positions": 60,
+      "query_rows_match": true,
+      "query_groups_match": true,
+      "H_S_meta_match": true
+    },
+    {
+      "method": "refi_GP",
+      "task_id": "tampere/TIE1/F0/K3/r0",
+      "mean": 16.800975906194612,
+      "p90": 30.13568548974444,
+      "query_scans": 60,
+      "query_positions": 60,
+      "query_rows_match": true,
+      "query_groups_match": true,
+      "H_S_meta_match": true
+    },
+    {
+      "method": "refi_GP",
+      "task_id": "tampere/TIE1/F0/K5/r0",
+      "mean": 15.507302869722995,
+      "p90": 30.916976856968507,
+      "query_scans": 60,
+      "query_positions": 60,
+      "query_rows_match": true,
+      "query_groups_match": true,
+      "H_S_meta_match": true
+    },
+    {
+      "method": "retained_gp",
+      "task_id": "tampere/TIE1/F0/K1/r0",
+      "mean": 15.608208875356699,
+      "p90": 33.33722602457215,
+      "query_scans": 60,
+      "query_positions": 60,
+      "query_rows_match": true,
+      "query_groups_match": true,
+      "H_S_meta_match": true
+    },
+    {
+      "method": "retained_gp",
+      "task_id": "tampere/TIE1/F0/K3/r0",
+      "mean": 15.541854984211083,
+      "p90": 32.81884966263069,
+      "query_scans": 60,
+      "query_positions": 60,
+      "query_rows_match": true,
+      "query_groups_match": true,
+      "H_S_meta_match": true
+    },
+    {
+      "method": "retained_gp",
+      "task_id": "tampere/TIE1/F0/K5/r0",
+      "mean": 13.636348680867979,
+      "p90": 27.80588655138681,
+      "query_scans": 60,
+      "query_positions": 60,
+      "query_rows_match": true,
+      "query_groups_match": true,
+      "H_S_meta_match": true
+    }
+  ],
+  "guard": {
+    "pid": 1920676,
+    "start_epoch": 1794650408.0851681,
+    "end_epoch": 1794661854.7690992,
+    "returncode": 0,
+    "reason": "completed",
+    "completed_tasks": 3,
+    "expected_tasks": 3,
+    "failed_paths": [],
+    "export_returncode": 0,
+    "peak_group_rss_bytes": 6710681600,
+    "min_available_bytes": 28666540032,
+    "memory_events_before": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 7\noom_group_kill 0\n",
+    "memory_events_after": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 7\noom_group_kill 0\n"
+  },
+  "run": {
+    "start_epoch": 1794650408,
+    "end_epoch": 1794661851,
+    "elapsed_seconds": 11443,
+    "exit_code": 0
+  },
+  "history_fit_timings": {
+    "completed_cuda_fields": 725,
+    "by_positions": {
+      "78": {
+        "fields": 19,
+        "sum_seconds": 0.7902767658233643,
+        "mean_seconds": 0.04159351399070338,
+        "median_seconds": 0.0415956974029541,
+        "p90_seconds": 0.04865937232971191,
+        "max_seconds": 0.05920743942260742
+      },
+      "171": {
+        "fields": 114,
+        "sum_seconds": 10.408328294754028,
+        "mean_seconds": 0.0913011253925792,
+        "median_seconds": 0.08853769302368164,
+        "p90_seconds": 0.10270235538482667,
+        "max_seconds": 0.31452250480651855
+      },
+      "930": {
+        "fields": 119,
+        "sum_seconds": 253.12383389472961,
+        "mean_seconds": 2.1270910411321817,
+        "median_seconds": 2.1506617069244385,
+        "p90_seconds": 2.39272723197937,
+        "max_seconds": 2.833693504333496
+      },
+      "1007": {
+        "fields": 177,
+        "sum_seconds": 467.44212007522583,
+        "mean_seconds": 2.6409159326283946,
+        "median_seconds": 2.6664090156555176,
+        "p90_seconds": 3.1176219940185548,
+        "max_seconds": 4.032856464385986
+      },
+      "2475": {
+        "fields": 296,
+        "sum_seconds": 6630.653232097626,
+        "mean_seconds": 22.40085551384333,
+        "median_seconds": 22.136532306671143,
+        "p90_seconds": 24.962199926376343,
+        "max_seconds": 34.18541646003723
+      }
+    },
+    "gpu_peak_memory_per_field_recorded": false,
+    "timing_source": "execution_source/run.log infer.cuda.begin/end; ordinal only, no AP/source label was logged"
+  },
+  "source_parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de"
+}

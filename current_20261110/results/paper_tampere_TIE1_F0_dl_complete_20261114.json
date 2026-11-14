@@ -1,0 +1,664 @@
+{
+  "status": "completed",
+  "dataset": "tampere",
+  "building": "TIE1",
+  "target_floor": 0,
+  "protocol": "static-resample-v2",
+  "base_seed": 20261111,
+  "calibration_repeats": [
+    0
+  ],
+  "budgets": [
+    1,
+    3,
+    5
+  ],
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_training_seed": 0,
+  "completed_tasks": 27,
+  "expected_tasks": 27,
+  "all_query_rows_and_groups_match_reference": true,
+  "all_H_S_task_metadata_match_reference": true,
+  "reference": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_20261111",
+  "source_information": "Target deployment H/S for each network. Original source HP selector sees available UJI B0/B1/B2, uses first two sources B0/B1 and first two floors of each.",
+  "cpu_threads": 2,
+  "gpu_used": false,
+  "source_code": {
+    "methods_dl.py": "fa981e883ea6dcbaa15c0b2ca7537a83091aca27afd6ea849c963dd73419c60a",
+    "run_claude.py": "dff15deb8202dc722b8ac14c4cc59dec9f89adce65e39ffee361827045631613",
+    "run.py": "a9950525f75cb0eab22538f525c226a30e8e9285cdd459ac2c640eb9cf9bc60e",
+    "protocol.py": "804461986101fad2904eba94232e533f0bf25128d99a14d2b4ce6346498f8bee",
+    "data.py": "a383d8f733f79db41181fa0bacdb123e4106da863a482a9bca7a621f1b6d02bd",
+    "score.py": "c4abfa7fbe008ac994a6ba4790c7ef3f25da11d07c5391367043936d95af6f3e"
+  },
+  "actual_batch_elapsed_seconds": 801.9641637541354,
+  "seeds": {
+    "0": {
+      "training_seed": 0,
+      "whole_scene_seed_elapsed_seconds": 268.32140040397644,
+      "methods": {
+        "finetune_dnn": {
+          "training_seed": 0,
+          "role": "primary_seed0",
+          "hp": [
+            3000,
+            0.001,
+            100,
+            0.0003
+          ],
+          "hp_scores": {
+            "(3000, 0.001, 100, 0.0003)": 12.568370009998977,
+            "(3000, 0.001, 300, 0.0003)": 12.96616135651066,
+            "(3000, 0.001, 100, 0.001)": 13.824093142578324
+          },
+          "source_selection_seconds": 84.15511002391577,
+          "pooled_over_K": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "position_repeat_budget_count": 180,
+            "mean": 23.224507919816947,
+            "p90": 61.29770790374205,
+            "target_training_adaptation_prediction_seconds": 24.938537806272507
+          },
+          "by_K": {
+            "1": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 22.864289251201004,
+              "p90": 56.75474065686724,
+              "target_training_adaptation_prediction_seconds": 8.39697416126728
+            },
+            "3": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 24.74977265484657,
+              "p90": 61.29770790374206,
+              "target_training_adaptation_prediction_seconds": 8.161889646202326
+            },
+            "5": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 22.059461853403267,
+              "p90": 56.07104847393505,
+              "target_training_adaptation_prediction_seconds": 8.3796739988029
+            }
+          },
+          "events": [
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed0_20261114/events/finetune_dnn/tampere/TIE1/F0/K1/r0.json",
+              "sha256": "f4d9cb18dd97e09c2c174fc2743d9fe9f4b0224d1afe4b78bd5140078541f2b7",
+              "task_id": "tampere/TIE1/F0/K1/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed0_20261114/events/finetune_dnn/tampere/TIE1/F0/K3/r0.json",
+              "sha256": "a92d72ddf7f27e532fd3a287ae569e902896ca6e0bfb39713f7ebdcef7070c05",
+              "task_id": "tampere/TIE1/F0/K3/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed0_20261114/events/finetune_dnn/tampere/TIE1/F0/K5/r0.json",
+              "sha256": "cb0a51a8037c29d18123256e7176b4d8d451b84f9bedef58b9a984ef17d254cb",
+              "task_id": "tampere/TIE1/F0/K5/r0"
+            }
+          ]
+        },
+        "maml_dnn": {
+          "training_seed": 0,
+          "role": "primary_seed0",
+          "hp": [
+            1500,
+            0.001,
+            5,
+            0.01,
+            3
+          ],
+          "hp_scores": {
+            "(1500, 0.001, 5, 0.01, 3)": 12.175647762066301,
+            "(1500, 0.001, 10, 0.01, 3)": 12.71179347790937,
+            "(1500, 0.001, 5, 0.003, 3)": 12.739586313476737
+          },
+          "source_selection_seconds": 86.4399975463748,
+          "pooled_over_K": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "position_repeat_budget_count": 180,
+            "mean": 24.211978255076307,
+            "p90": 63.86807200350417,
+            "target_training_adaptation_prediction_seconds": 20.56736882776022
+          },
+          "by_K": {
+            "1": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 24.051301909748783,
+              "p90": 62.148815876778045,
+              "target_training_adaptation_prediction_seconds": 6.7957117184996605
+            },
+            "3": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 24.609383245534396,
+              "p90": 67.6294174127583,
+              "target_training_adaptation_prediction_seconds": 6.859591316431761
+            },
+            "5": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 23.97524960994576,
+              "p90": 61.296954611764946,
+              "target_training_adaptation_prediction_seconds": 6.912065792828798
+            }
+          },
+          "events": [
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed0_20261114/events/maml_dnn/tampere/TIE1/F0/K1/r0.json",
+              "sha256": "b10564436de33789d540c52a9df26c7a0f8d04cbe33e590570d8fc0be1217975",
+              "task_id": "tampere/TIE1/F0/K1/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed0_20261114/events/maml_dnn/tampere/TIE1/F0/K3/r0.json",
+              "sha256": "7ba77e7bab21b2d55d7fe3452dd7953d95415b771d6ec2e91afefc3993abb8eb",
+              "task_id": "tampere/TIE1/F0/K3/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed0_20261114/events/maml_dnn/tampere/TIE1/F0/K5/r0.json",
+              "sha256": "22f3f40b31768f8e025416b45b30f05799316021e78bd5288cc2a3aa10eb0606",
+              "task_id": "tampere/TIE1/F0/K5/r0"
+            }
+          ]
+        },
+        "pretrain_dnn": {
+          "training_seed": 0,
+          "role": "primary_seed0",
+          "hp": [
+            3000,
+            0.001,
+            0,
+            0.0
+          ],
+          "hp_scores": {
+            "(3000, 0.001, 0, 0.0)": 12.922030076768966
+          },
+          "source_selection_seconds": 25.825569666922092,
+          "pooled_over_K": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "position_repeat_budget_count": 180,
+            "mean": 22.027231663655922,
+            "p90": 57.40883806090725,
+            "target_training_adaptation_prediction_seconds": 25.092573888599873
+          },
+          "by_K": {
+            "1": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 21.559819027892708,
+              "p90": 54.53720626619279,
+              "target_training_adaptation_prediction_seconds": 8.418551057577133
+            },
+            "3": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 22.443084925702557,
+              "p90": 57.40883806090727,
+              "target_training_adaptation_prediction_seconds": 8.275704190135002
+            },
+            "5": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 22.078791037372515,
+              "p90": 55.384785914852515,
+              "target_training_adaptation_prediction_seconds": 8.398318640887737
+            }
+          },
+          "events": [
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed0_20261114/events/pretrain_dnn/tampere/TIE1/F0/K1/r0.json",
+              "sha256": "cdf08ee223906974beeb263de9a11ff19f5a59fa42b0b06feacf7182528f315a",
+              "task_id": "tampere/TIE1/F0/K1/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed0_20261114/events/pretrain_dnn/tampere/TIE1/F0/K3/r0.json",
+              "sha256": "6d5bb35a3c6b8dd1fa850c8d5c6dadd49f8c26de05ef37af899f2b795f520818",
+              "task_id": "tampere/TIE1/F0/K3/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed0_20261114/events/pretrain_dnn/tampere/TIE1/F0/K5/r0.json",
+              "sha256": "810093861a331c05ee782232d7d40ee17107247533a15ce3efb6ca3fe741884f",
+              "task_id": "tampere/TIE1/F0/K5/r0"
+            }
+          ]
+        }
+      }
+    },
+    "1": {
+      "training_seed": 1,
+      "whole_scene_seed_elapsed_seconds": 265.24148715659976,
+      "methods": {
+        "finetune_dnn": {
+          "training_seed": 1,
+          "role": "stability_auxiliary",
+          "hp": [
+            3000,
+            0.001,
+            300,
+            0.0003
+          ],
+          "hp_scores": {
+            "(3000, 0.001, 100, 0.0003)": 14.286819943037113,
+            "(3000, 0.001, 300, 0.0003)": 13.672897143977218,
+            "(3000, 0.001, 100, 0.001)": 14.311383540315813
+          },
+          "source_selection_seconds": 79.5338754504919,
+          "pooled_over_K": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "position_repeat_budget_count": 180,
+            "mean": 23.5396243966883,
+            "p90": 60.63622941198192,
+            "target_training_adaptation_prediction_seconds": 26.011323790997267
+          },
+          "by_K": {
+            "1": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 23.92466678430889,
+              "p90": 60.701144443764576,
+              "target_training_adaptation_prediction_seconds": 8.562266517430544
+            },
+            "3": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 24.935474117067614,
+              "p90": 63.409773429801724,
+              "target_training_adaptation_prediction_seconds": 8.704776022583246
+            },
+            "5": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 21.758732288688392,
+              "p90": 44.494175560048966,
+              "target_training_adaptation_prediction_seconds": 8.744281250983477
+            }
+          },
+          "events": [
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed1_20261114/events/finetune_dnn/tampere/TIE1/F0/K1/r0.json",
+              "sha256": "dd2466980772ae16ccb2f27bf9c06f91d23fca1187b1babf7c39553a17c9851f",
+              "task_id": "tampere/TIE1/F0/K1/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed1_20261114/events/finetune_dnn/tampere/TIE1/F0/K3/r0.json",
+              "sha256": "668a5d5b91bbf799370980263e93e487df6ea1c53c4944ac4632944ab8014b65",
+              "task_id": "tampere/TIE1/F0/K3/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed1_20261114/events/finetune_dnn/tampere/TIE1/F0/K5/r0.json",
+              "sha256": "95600e6024a21fe49c23794aa83db0cf04dd416b26350fad4bc65d3117081957",
+              "task_id": "tampere/TIE1/F0/K5/r0"
+            }
+          ]
+        },
+        "maml_dnn": {
+          "training_seed": 1,
+          "role": "stability_auxiliary",
+          "hp": [
+            1500,
+            0.001,
+            5,
+            0.01,
+            3
+          ],
+          "hp_scores": {
+            "(1500, 0.001, 5, 0.01, 3)": 12.951899551865901,
+            "(1500, 0.001, 10, 0.01, 3)": 13.1275092505498,
+            "(1500, 0.001, 5, 0.003, 3)": 13.539466022420775
+          },
+          "source_selection_seconds": 87.17295351624489,
+          "pooled_over_K": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "position_repeat_budget_count": 180,
+            "mean": 23.340583372082786,
+            "p90": 66.66422213754166,
+            "target_training_adaptation_prediction_seconds": 20.578989140689373
+          },
+          "by_K": {
+            "1": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 23.514647856187867,
+              "p90": 64.53738267952413,
+              "target_training_adaptation_prediction_seconds": 6.756828419864178
+            },
+            "3": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 23.137609992685643,
+              "p90": 66.93265432632298,
+              "target_training_adaptation_prediction_seconds": 6.96472093462944
+            },
+            "5": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 23.36949226737484,
+              "p90": 66.35666258620708,
+              "target_training_adaptation_prediction_seconds": 6.857439786195755
+            }
+          },
+          "events": [
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed1_20261114/events/maml_dnn/tampere/TIE1/F0/K1/r0.json",
+              "sha256": "94ab2f408ccd687b594565a38495420e771d9b8f16962176a1275416edac35ce",
+              "task_id": "tampere/TIE1/F0/K1/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed1_20261114/events/maml_dnn/tampere/TIE1/F0/K3/r0.json",
+              "sha256": "998a4b15cb775ad02f5d3950c80c50a294b0112185ebee5814dfb90dfa4dc434",
+              "task_id": "tampere/TIE1/F0/K3/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed1_20261114/events/maml_dnn/tampere/TIE1/F0/K5/r0.json",
+              "sha256": "991756e83888640557491c75173351b65228e3fbf5f40e88255fd67d44687225",
+              "task_id": "tampere/TIE1/F0/K5/r0"
+            }
+          ]
+        },
+        "pretrain_dnn": {
+          "training_seed": 1,
+          "role": "stability_auxiliary",
+          "hp": [
+            3000,
+            0.001,
+            0,
+            0.0
+          ],
+          "hp_scores": {
+            "(3000, 0.001, 0, 0.0)": 12.711405665583404
+          },
+          "source_selection_seconds": 25.57711573317647,
+          "pooled_over_K": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "position_repeat_budget_count": 180,
+            "mean": 21.69621981324764,
+            "p90": 57.89662481013603,
+            "target_training_adaptation_prediction_seconds": 25.134163197129965
+          },
+          "by_K": {
+            "1": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 23.05825179318149,
+              "p90": 57.47836900624765,
+              "target_training_adaptation_prediction_seconds": 8.299836724996567
+            },
+            "3": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 21.462372319592866,
+              "p90": 58.81764546309101,
+              "target_training_adaptation_prediction_seconds": 8.415520939975977
+            },
+            "5": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 20.568035326968584,
+              "p90": 46.86840459879909,
+              "target_training_adaptation_prediction_seconds": 8.418805532157421
+            }
+          },
+          "events": [
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed1_20261114/events/pretrain_dnn/tampere/TIE1/F0/K1/r0.json",
+              "sha256": "d4df815d4e7c892e6217de7cf1e3c5cf5b6944e85474530851d2949a54917309",
+              "task_id": "tampere/TIE1/F0/K1/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed1_20261114/events/pretrain_dnn/tampere/TIE1/F0/K3/r0.json",
+              "sha256": "695551a406dd995dbaa9de16df8eb2f579562614e23608fe89b5f7e95a7c456a",
+              "task_id": "tampere/TIE1/F0/K3/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed1_20261114/events/pretrain_dnn/tampere/TIE1/F0/K5/r0.json",
+              "sha256": "525fe5e9139eaf426224c83406730f0bb7b51b9c6d615d74c8024c027bec7988",
+              "task_id": "tampere/TIE1/F0/K5/r0"
+            }
+          ]
+        }
+      }
+    },
+    "2": {
+      "training_seed": 2,
+      "whole_scene_seed_elapsed_seconds": 267.4310107305646,
+      "methods": {
+        "finetune_dnn": {
+          "training_seed": 2,
+          "role": "stability_auxiliary",
+          "hp": [
+            3000,
+            0.001,
+            100,
+            0.0003
+          ],
+          "hp_scores": {
+            "(3000, 0.001, 100, 0.0003)": 15.40508655855362,
+            "(3000, 0.001, 300, 0.0003)": 16.01784129012278,
+            "(3000, 0.001, 100, 0.001)": 17.569708339327377
+          },
+          "source_selection_seconds": 79.97377597913146,
+          "pooled_over_K": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "position_repeat_budget_count": 180,
+            "mean": 22.33482795827731,
+            "p90": 56.84293039255762,
+            "target_training_adaptation_prediction_seconds": 25.69741627201438
+          },
+          "by_K": {
+            "1": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 22.856725414152542,
+              "p90": 65.77425881403191,
+              "target_training_adaptation_prediction_seconds": 8.474142968654633
+            },
+            "3": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 23.024407931396567,
+              "p90": 52.608500534434015,
+              "target_training_adaptation_prediction_seconds": 8.616390500217676
+            },
+            "5": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 21.123350529282828,
+              "p90": 50.415537046063804,
+              "target_training_adaptation_prediction_seconds": 8.60688280314207
+            }
+          },
+          "events": [
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed2_20261114/events/finetune_dnn/tampere/TIE1/F0/K1/r0.json",
+              "sha256": "288d045ce69d70ae7e0550addfa7a99d4ea6fbd480d8aff28070ef1a17ed2f39",
+              "task_id": "tampere/TIE1/F0/K1/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed2_20261114/events/finetune_dnn/tampere/TIE1/F0/K3/r0.json",
+              "sha256": "17718a84f315e66af3ba69601b748713525e5643c0b83da2475839bb959b4cc4",
+              "task_id": "tampere/TIE1/F0/K3/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed2_20261114/events/finetune_dnn/tampere/TIE1/F0/K5/r0.json",
+              "sha256": "273e2539a6caa4a031edbe80508ccfd7684ed3fb059a42a74382b7ca1ff9352d",
+              "task_id": "tampere/TIE1/F0/K5/r0"
+            }
+          ]
+        },
+        "maml_dnn": {
+          "training_seed": 2,
+          "role": "stability_auxiliary",
+          "hp": [
+            1500,
+            0.001,
+            5,
+            0.003,
+            3
+          ],
+          "hp_scores": {
+            "(1500, 0.001, 5, 0.01, 3)": 12.454005508182085,
+            "(1500, 0.001, 10, 0.01, 3)": 13.264395697567366,
+            "(1500, 0.001, 5, 0.003, 3)": 12.079648122956783
+          },
+          "source_selection_seconds": 88.2556286342442,
+          "pooled_over_K": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "position_repeat_budget_count": 180,
+            "mean": 22.88766736112198,
+            "p90": 63.515568186145835,
+            "target_training_adaptation_prediction_seconds": 20.70144223794341
+          },
+          "by_K": {
+            "1": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 22.76377814024769,
+              "p90": 63.40342278482363,
+              "target_training_adaptation_prediction_seconds": 6.83687637001276
+            },
+            "3": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 23.39301774561974,
+              "p90": 66.57594302982385,
+              "target_training_adaptation_prediction_seconds": 6.989078838378191
+            },
+            "5": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 22.50620619749851,
+              "p90": 64.14970296912706,
+              "target_training_adaptation_prediction_seconds": 6.87548702955246
+            }
+          },
+          "events": [
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed2_20261114/events/maml_dnn/tampere/TIE1/F0/K1/r0.json",
+              "sha256": "934cff2ed8df34a95f5e22dd8620d32b83d35c2304720e6b3470a400bbcd46c5",
+              "task_id": "tampere/TIE1/F0/K1/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed2_20261114/events/maml_dnn/tampere/TIE1/F0/K3/r0.json",
+              "sha256": "0fb658f36a13c0747e9ac1460997a764913ce22120b34f329bff1e0c4083cbb2",
+              "task_id": "tampere/TIE1/F0/K3/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed2_20261114/events/maml_dnn/tampere/TIE1/F0/K5/r0.json",
+              "sha256": "885b37798a1e4443302aea3f3799c02baef770f7793a0cac3603376574dfdf28",
+              "task_id": "tampere/TIE1/F0/K5/r0"
+            }
+          ]
+        },
+        "pretrain_dnn": {
+          "training_seed": 2,
+          "role": "stability_auxiliary",
+          "hp": [
+            3000,
+            0.001,
+            0,
+            0.0
+          ],
+          "hp_scores": {
+            "(3000, 0.001, 0, 0.0)": 12.876961140939102
+          },
+          "source_selection_seconds": 25.98792415857315,
+          "pooled_over_K": {
+            "tasks": 3,
+            "completed_tasks": 3,
+            "position_repeat_budget_count": 180,
+            "mean": 22.26782012948064,
+            "p90": 61.90465348392404,
+            "target_training_adaptation_prediction_seconds": 25.609628476202488
+          },
+          "by_K": {
+            "1": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 22.970955341361073,
+              "p90": 66.80667074324641,
+              "target_training_adaptation_prediction_seconds": 8.526679504662752
+            },
+            "3": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 22.77994194317113,
+              "p90": 55.77343991685305,
+              "target_training_adaptation_prediction_seconds": 8.608589481562376
+            },
+            "5": {
+              "tasks": 1,
+              "completed_tasks": 1,
+              "position_repeat_budget_count": 60,
+              "mean": 21.052563103909712,
+              "p90": 51.66743902914203,
+              "target_training_adaptation_prediction_seconds": 8.47435948997736
+            }
+          },
+          "events": [
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed2_20261114/events/pretrain_dnn/tampere/TIE1/F0/K1/r0.json",
+              "sha256": "a8509580eb47ed201210fbc333939dfa7b934cc310949c273c92cda190957061",
+              "task_id": "tampere/TIE1/F0/K1/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed2_20261114/events/pretrain_dnn/tampere/TIE1/F0/K3/r0.json",
+              "sha256": "678f86d135abeacb1b0e485b5d5a8c3e0c87ac946852c0e3c5e9a8e1081a2d7a",
+              "task_id": "tampere/TIE1/F0/K3/r0"
+            },
+            {
+              "path": "/Users/Admin/Desktop/project/迁移学习/ReFi_v2_20261111/results/paper_tampere_TIE1_F0_dl_seed2_20261114/events/pretrain_dnn/tampere/TIE1/F0/K5/r0.json",
+              "sha256": "af7711667c95e3a960abda8ebfcc686c96702244c0405bbf6ebd258c609310ce",
+              "task_id": "tampere/TIE1/F0/K5/r0"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "metric": "Pool position errors within each training_seed/method and K block. pooled_over_K counts a repeated position separately at each budget, not 180 unique positions. No best-seed selection or across-seed merging.",
+  "new_training": true,
+  "source_selection_program": "Original methods_dl._Base.fit_source default grid, no manual HP injection",
+  "server_work": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_dl_execution_20261114",
+  "stability_seed_scope": "The method seed drives both the original source-only HP selection draws and network training/adaptation RNG. Seeds 1/2 quantify this complete procedure, not only fixed-HP weight initialization."
+}

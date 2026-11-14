@@ -1,0 +1,746 @@
+{
+  "status": "completed",
+  "prepared_on": "2026-11-14",
+  "dataset": "tampere",
+  "building": "TIE1",
+  "target_floor": 0,
+  "protocol": "static-resample-v2",
+  "base_seed": 20261111,
+  "calibration_repeats": [
+    0
+  ],
+  "budgets": [
+    1,
+    3,
+    5
+  ],
+  "primary_training_seed": 0,
+  "unique_query_positions": 60,
+  "tasks_per_method": 3,
+  "metric": "Pool scan-mean errors for each query position across the three budgets. P90 is computed from the pooled errors, not averaged task P90. Same 60 positions recur across K.",
+  "scope_selection": "User requested subset of scenes and lower load; choose target F0 by source-field cost before localization results",
+  "comparison_condition": "Shared TIE1 F0 deployment H/S/Q. Training assets differ as declared. This subset is separate from the full six-floor TIE1 aggregate.",
+  "method_order": [
+    "wknn_S",
+    "gp_S",
+    "wknn_HS",
+    "pretrain_dnn",
+    "finetune_dnn",
+    "maml_dnn",
+    "tabicl",
+    "refi",
+    "retained_gp",
+    "refi_GP"
+  ],
+  "method_metadata": {
+    "wknn_S": {
+      "label": "WKNN(S)",
+      "role": "simple_baseline",
+      "training_profile": "target_S",
+      "training_information": "No learned source model. Matching and coordinate bounds use target S."
+    },
+    "gp_S": {
+      "label": "GP(S)",
+      "role": "simple_baseline",
+      "training_profile": "source_hyperparameters_target_S",
+      "training_information": "UJI source-calibrated hyperparameters. Target field fits S. Deployment H/S determine AP availability and coordinate bounds.",
+      "readout": "MAP"
+    },
+    "wknn_HS": {
+      "label": "WKNN(H+S)",
+      "role": "simple_history_baseline",
+      "training_profile": "deployment_H_S",
+      "training_information": "No learned source model. Matching uses all deployment H and current S."
+    },
+    "pretrain_dnn": {
+      "label": "Supervised DNN, no target gradient update",
+      "role": "auxiliary_training_reference",
+      "training_profile": "local_H_supervision_source_HP_selection",
+      "training_information": "Project RSS-to-coordinate DNN trained on current building H. Hyperparameters selected on source UJI buildings B0/B1 via the original source-only selector. H/S determine AP axis and coordinate normalization.",
+      "training_seed": 0
+    },
+    "finetune_dnn": {
+      "label": "Supervised DNN + S fine-tuning",
+      "role": "supervised_transfer_baseline",
+      "training_profile": "local_H_supervision_S_finetuning_source_HP_selection",
+      "training_information": "Project RSS-to-coordinate DNN trained on current building H, then all parameters fine-tuned on S. Hyperparameters selected on source UJI buildings B0/B1 via the original source-only selector.",
+      "training_seed": 0
+    },
+    "maml_dnn": {
+      "label": "First-order MAML (RSS regression)",
+      "role": "meta_learning_baseline",
+      "training_profile": "local_H_meta_training_S_adaptation_source_HP_selection",
+      "training_information": "Project first-order MAML using history-floor support/query episodes from current building H, then S adaptation. Hyperparameters selected on source UJI buildings B0/B1 via the original source-only selector.",
+      "training_seed": 0
+    },
+    "tabicl": {
+      "label": "Public TabICL",
+      "role": "external_pretrained_method",
+      "training_profile": "public_checkpoint_with_deployment_H_S",
+      "training_information": "Public pretrained checkpoint, zero project source-training updates. Deployment context is full H and current S. Public pretraining corpus is not audited.",
+      "variant": "public"
+    },
+    "refi": {
+      "label": "ReFi learning path",
+      "role": "internal_component",
+      "training_profile": "heldout_building_relation_learning_deployment_H_S",
+      "training_information": "Five-seed relationship learner trained on all three UJI buildings and frozen. TIE1 deployment uses its five legal H floors and current S.",
+      "ensemble_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "retained_gp": {
+      "label": "ReFi GP path",
+      "role": "internal_component",
+      "training_profile": "source_base_obs_calibration_deployment_H_fields_S_adaptation",
+      "training_information": "Base/observation parameters fixed from UJI B0. Full TIE1 H from floors -1,1,2,3,4 builds history fields. S fits source weights/intercept and conditions the field."
+    },
+    "refi_GP": {
+      "label": "ReFi (complete)",
+      "role": "complete_proposed_method",
+      "training_profile": "heldout_building_relation_learning_plus_calibrated_GP",
+      "training_information": "Frozen UJI relationship learner and fixed multi-source GP path combined by the original equal log-pooling rule, with the same TIE1 H/S/Q.",
+      "ensemble_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "task_manifest": [
+    {
+      "task_id": "tampere/TIE1/F0/K1/r0",
+      "K": 1,
+      "repeat": 0,
+      "query_positions": 60,
+      "reference_path": "paper_tampere_TIE1_20261111/events/refi/tampere/TIE1/F0/K1/r0.json"
+    },
+    {
+      "task_id": "tampere/TIE1/F0/K3/r0",
+      "K": 3,
+      "repeat": 0,
+      "query_positions": 60,
+      "reference_path": "paper_tampere_TIE1_20261111/events/refi/tampere/TIE1/F0/K3/r0.json"
+    },
+    {
+      "task_id": "tampere/TIE1/F0/K5/r0",
+      "K": 5,
+      "repeat": 0,
+      "query_positions": 60,
+      "reference_path": "paper_tampere_TIE1_20261111/events/refi/tampere/TIE1/F0/K5/r0.json"
+    }
+  ],
+  "overall": {
+    "wknn_S": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "position_repeat_budget_count": 180,
+      "mean": 39.372909238024505,
+      "p90": 78.05847999009589
+    },
+    "gp_S": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "position_repeat_budget_count": 180,
+      "mean": 48.62281333650062,
+      "p90": 108.23745706474682
+    },
+    "wknn_HS": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "position_repeat_budget_count": 180,
+      "mean": 31.105773215083957,
+      "p90": 100.37243350656237
+    },
+    "pretrain_dnn": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "position_repeat_budget_count": 180,
+      "mean": 22.027231663655922,
+      "p90": 57.40883806090725
+    },
+    "finetune_dnn": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "position_repeat_budget_count": 180,
+      "mean": 23.224507919816947,
+      "p90": 61.29770790374205
+    },
+    "maml_dnn": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "position_repeat_budget_count": 180,
+      "mean": 24.211978255076307,
+      "p90": 63.86807200350417
+    },
+    "tabicl": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "position_repeat_budget_count": 180,
+      "mean": 22.862133439677898,
+      "p90": 73.72315586399587
+    },
+    "refi": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "position_repeat_budget_count": 180,
+      "mean": 31.615774160543403,
+      "p90": 117.45283913937034
+    },
+    "retained_gp": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "position_repeat_budget_count": 180,
+      "mean": 14.928804180145253,
+      "p90": 32.777772013395634
+    },
+    "refi_GP": {
+      "tasks": 3,
+      "completed_tasks": 3,
+      "position_repeat_budget_count": 180,
+      "mean": 17.613187996972492,
+      "p90": 35.622306305419855
+    }
+  },
+  "by_K": {
+    "1": {
+      "wknn_S": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 45.80350671892176,
+        "p90": 71.09262490722622
+      },
+      "gp_S": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 75.47675202412748,
+        "p90": 141.0614723586828
+      },
+      "wknn_HS": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 31.44414315943015,
+        "p90": 100.37243350656237
+      },
+      "pretrain_dnn": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 21.559819027892708,
+        "p90": 54.53720626619279
+      },
+      "finetune_dnn": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 22.864289251201004,
+        "p90": 56.75474065686724
+      },
+      "maml_dnn": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 24.051301909748783,
+        "p90": 62.148815876778045
+      },
+      "tabicl": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 22.49529572077296,
+        "p90": 69.81419355129532
+      },
+      "refi": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 34.75261458146716,
+        "p90": 117.57773485265761
+      },
+      "retained_gp": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 15.608208875356699,
+        "p90": 33.33722602457215
+      },
+      "refi_GP": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 20.53128521499987,
+        "p90": 38.77694446877378
+      }
+    },
+    "3": {
+      "wknn_S": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 38.52489444899977,
+        "p90": 89.8541814376532
+      },
+      "gp_S": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 41.725388236003496,
+        "p90": 98.46994195446217
+      },
+      "wknn_HS": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 31.42567565430702,
+        "p90": 100.37243350656237
+      },
+      "pretrain_dnn": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 22.443084925702557,
+        "p90": 57.40883806090727
+      },
+      "finetune_dnn": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 24.74977265484657,
+        "p90": 61.29770790374206
+      },
+      "maml_dnn": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 24.609383245534396,
+        "p90": 67.6294174127583
+      },
+      "tabicl": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 23.43901904628222,
+        "p90": 79.57851896625236
+      },
+      "refi": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 31.071445293361204,
+        "p90": 115.13452375670724
+      },
+      "retained_gp": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 15.541854984211083,
+        "p90": 32.81884966263069
+      },
+      "refi_GP": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 16.800975906194612,
+        "p90": 30.13568548974444
+      }
+    },
+    "5": {
+      "wknn_S": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 33.790326546151974,
+        "p90": 78.05847999009589
+      },
+      "gp_S": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 28.666299749370907,
+        "p90": 86.61867309265314
+      },
+      "wknn_HS": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 30.44750083151471,
+        "p90": 100.37243350656237
+      },
+      "pretrain_dnn": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 22.078791037372515,
+        "p90": 55.384785914852515
+      },
+      "finetune_dnn": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 22.059461853403267,
+        "p90": 56.07104847393505
+      },
+      "maml_dnn": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 23.97524960994576,
+        "p90": 61.296954611764946
+      },
+      "tabicl": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 22.652085551978516,
+        "p90": 70.35833599751318
+      },
+      "refi": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 29.02326260680185,
+        "p90": 109.36661850873207
+      },
+      "retained_gp": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 13.636348680867979,
+        "p90": 27.80588655138681
+      },
+      "refi_GP": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "position_repeat_budget_count": 60,
+        "mean": 15.507302869722995,
+        "p90": 30.916976856968507
+      }
+    }
+  },
+  "source_paths_relative_to": "results/",
+  "event_sources": {
+    "wknn_S": [
+      {
+        "task_id": "tampere/TIE1/F0/K1/r0",
+        "path": "paper_tampere_TIE1_20261111/events/wknn_S/tampere/TIE1/F0/K1/r0.json",
+        "sha256": "de030e14d0c2bdd074421f43d9fcbf981b010bb2163bc5e113309b00ddcb0c89",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K3/r0",
+        "path": "paper_tampere_TIE1_20261111/events/wknn_S/tampere/TIE1/F0/K3/r0.json",
+        "sha256": "c8eae673b9953a4a16c69ca5e9fd16629c8abff68c9a6d3037a22cdc699300ad",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K5/r0",
+        "path": "paper_tampere_TIE1_20261111/events/wknn_S/tampere/TIE1/F0/K5/r0.json",
+        "sha256": "1d67cf882fb52eadbfde2174ee5ff644509383e13fbdfd95357120994f444c18",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      }
+    ],
+    "gp_S": [
+      {
+        "task_id": "tampere/TIE1/F0/K1/r0",
+        "path": "paper_tampere_TIE1_20261111/events/gp_S/tampere/TIE1/F0/K1/r0.json",
+        "sha256": "d1545fb31068a6589d58686a5116aa9bc96cc8499c754f3ba1c5b657c51058dc",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K3/r0",
+        "path": "paper_tampere_TIE1_20261111/events/gp_S/tampere/TIE1/F0/K3/r0.json",
+        "sha256": "d2f6740b4a5aa448673a9e99ceabcd56c044da1ac2ec982fcb1bfc2014ae6653",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K5/r0",
+        "path": "paper_tampere_TIE1_20261111/events/gp_S/tampere/TIE1/F0/K5/r0.json",
+        "sha256": "954b1c9a0f6d5074d5575a30a2e6f5f7e8b5ae11f00e9f7444d0ae71562fd5f8",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      }
+    ],
+    "wknn_HS": [
+      {
+        "task_id": "tampere/TIE1/F0/K1/r0",
+        "path": "paper_tampere_TIE1_20261111/events/wknn_HS/tampere/TIE1/F0/K1/r0.json",
+        "sha256": "3ad40af6f9322f3323a8b879aaf087e36c7fcaa01011df029f4a8ef1ab549390",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K3/r0",
+        "path": "paper_tampere_TIE1_20261111/events/wknn_HS/tampere/TIE1/F0/K3/r0.json",
+        "sha256": "027fccc1b046b600051f1e9f6ad9981ec9645a60383dcfa70d0c8c6e37b38c39",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K5/r0",
+        "path": "paper_tampere_TIE1_20261111/events/wknn_HS/tampere/TIE1/F0/K5/r0.json",
+        "sha256": "c0c09a20eeec6b8574fcadd889bfc25f966aa35703ffdace6fa2a1ba46418e21",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      }
+    ],
+    "refi": [
+      {
+        "task_id": "tampere/TIE1/F0/K1/r0",
+        "path": "paper_tampere_TIE1_20261111/events/refi/tampere/TIE1/F0/K1/r0.json",
+        "sha256": "334bb60d451eede1163edbb3502fc7647a5356b593ce1a8634e77ae75d1f795d",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K3/r0",
+        "path": "paper_tampere_TIE1_20261111/events/refi/tampere/TIE1/F0/K3/r0.json",
+        "sha256": "cfaf5cde08201fb6944b3cd162d1f6300fe0842899c7f9ac5be4cc37f220d213",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K5/r0",
+        "path": "paper_tampere_TIE1_20261111/events/refi/tampere/TIE1/F0/K5/r0.json",
+        "sha256": "178d8d23104aad45ad541db145e57eb5812378a9ac79fdf94d53f2f60b37d620",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      }
+    ],
+    "tabicl": [
+      {
+        "task_id": "tampere/TIE1/F0/K1/r0",
+        "path": "paper_tampere_TIE1_public_tabicl_r0_20261113/events/tabicl/tampere/TIE1/F0/K1/r0.json",
+        "sha256": "65b42787d652561ad8b9c93a71360110a107b84f4819976bf31e238d69453a55",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K3/r0",
+        "path": "paper_tampere_TIE1_public_tabicl_r0_20261113/events/tabicl/tampere/TIE1/F0/K3/r0.json",
+        "sha256": "ff985df68619432d49d280fee799f3c9c4802c4f5806e98c9ef99d1366b6cb76",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K5/r0",
+        "path": "paper_tampere_TIE1_public_tabicl_r0_20261113/events/tabicl/tampere/TIE1/F0/K5/r0.json",
+        "sha256": "e759d896a6f1d16bd2da8cef1535e3019837f9f10c34f56e1d0bb5a86615249e",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      }
+    ],
+    "pretrain_dnn": [
+      {
+        "task_id": "tampere/TIE1/F0/K1/r0",
+        "path": "paper_tampere_TIE1_F0_dl_seed0_20261114/events/pretrain_dnn/tampere/TIE1/F0/K1/r0.json",
+        "sha256": "cdf08ee223906974beeb263de9a11ff19f5a59fa42b0b06feacf7182528f315a",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K3/r0",
+        "path": "paper_tampere_TIE1_F0_dl_seed0_20261114/events/pretrain_dnn/tampere/TIE1/F0/K3/r0.json",
+        "sha256": "6d5bb35a3c6b8dd1fa850c8d5c6dadd49f8c26de05ef37af899f2b795f520818",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K5/r0",
+        "path": "paper_tampere_TIE1_F0_dl_seed0_20261114/events/pretrain_dnn/tampere/TIE1/F0/K5/r0.json",
+        "sha256": "810093861a331c05ee782232d7d40ee17107247533a15ce3efb6ca3fe741884f",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      }
+    ],
+    "finetune_dnn": [
+      {
+        "task_id": "tampere/TIE1/F0/K1/r0",
+        "path": "paper_tampere_TIE1_F0_dl_seed0_20261114/events/finetune_dnn/tampere/TIE1/F0/K1/r0.json",
+        "sha256": "f4d9cb18dd97e09c2c174fc2743d9fe9f4b0224d1afe4b78bd5140078541f2b7",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K3/r0",
+        "path": "paper_tampere_TIE1_F0_dl_seed0_20261114/events/finetune_dnn/tampere/TIE1/F0/K3/r0.json",
+        "sha256": "a92d72ddf7f27e532fd3a287ae569e902896ca6e0bfb39713f7ebdcef7070c05",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K5/r0",
+        "path": "paper_tampere_TIE1_F0_dl_seed0_20261114/events/finetune_dnn/tampere/TIE1/F0/K5/r0.json",
+        "sha256": "cb0a51a8037c29d18123256e7176b4d8d451b84f9bedef58b9a984ef17d254cb",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      }
+    ],
+    "maml_dnn": [
+      {
+        "task_id": "tampere/TIE1/F0/K1/r0",
+        "path": "paper_tampere_TIE1_F0_dl_seed0_20261114/events/maml_dnn/tampere/TIE1/F0/K1/r0.json",
+        "sha256": "b10564436de33789d540c52a9df26c7a0f8d04cbe33e590570d8fc0be1217975",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K3/r0",
+        "path": "paper_tampere_TIE1_F0_dl_seed0_20261114/events/maml_dnn/tampere/TIE1/F0/K3/r0.json",
+        "sha256": "7ba77e7bab21b2d55d7fe3452dd7953d95415b771d6ec2e91afefc3993abb8eb",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K5/r0",
+        "path": "paper_tampere_TIE1_F0_dl_seed0_20261114/events/maml_dnn/tampere/TIE1/F0/K5/r0.json",
+        "sha256": "22f3f40b31768f8e025416b45b30f05799316021e78bd5288cc2a3aa10eb0606",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      }
+    ],
+    "retained_gp": [
+      {
+        "task_id": "tampere/TIE1/F0/K1/r0",
+        "path": "paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/retained_gp/tampere/TIE1/F0/K1/r0.json",
+        "sha256": "6ddb44da497e312fe3948422e80f16a92a8b9af9310230053ea826c14c2692ad",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K3/r0",
+        "path": "paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/retained_gp/tampere/TIE1/F0/K3/r0.json",
+        "sha256": "db7e1e04ab6af5bcf648b591e8b62a621cac248274c4ed830db516c695e16b0c",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K5/r0",
+        "path": "paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/retained_gp/tampere/TIE1/F0/K5/r0.json",
+        "sha256": "90f3b6c7288116ad957d686d8dbf801c2487b03ee5a7b6654f9a9db0197ab3bf",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      }
+    ],
+    "refi_GP": [
+      {
+        "task_id": "tampere/TIE1/F0/K1/r0",
+        "path": "paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/refi_GP/tampere/TIE1/F0/K1/r0.json",
+        "sha256": "664eccb21ddfc68d7cd817c5aef479481ce61f5b436d8bd76d78f8452c3ae1f8",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K3/r0",
+        "path": "paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/refi_GP/tampere/TIE1/F0/K3/r0.json",
+        "sha256": "f2741fbdd3034e609fb27a870e62a02a2bbe18056752a9af6d22662490d1f3a9",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      },
+      {
+        "task_id": "tampere/TIE1/F0/K5/r0",
+        "path": "paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/refi_GP/tampere/TIE1/F0/K5/r0.json",
+        "sha256": "61b05df64ac99b0dab985084b49435da7f89c67d8f1c2f90ff36a4df5a34226c",
+        "query_rows_equal": true,
+        "query_groups_equal": true,
+        "task_metadata_equal": true
+      }
+    ]
+  },
+  "target_data": {
+    "TIE1": "6f08773eaf86a1b4f11f4d2e263dcbb096b0ff894682593964ff17ebd92b4669"
+  },
+  "source_data": {
+    "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+    "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11",
+    "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+  },
+  "neural_training_stability": "paper_tampere_TIE1_F0_dl_complete_20261114.json",
+  "gp_execution": {
+    "run_exit": {
+      "start_epoch": 1794650408,
+      "end_epoch": 1794661851,
+      "elapsed_seconds": 11443,
+      "exit_code": 0
+    },
+    "guard_result": {
+      "pid": 1920676,
+      "start_epoch": 1794650408.0851681,
+      "end_epoch": 1794661854.7690992,
+      "returncode": 0,
+      "reason": "completed",
+      "completed_tasks": 3,
+      "expected_tasks": 3,
+      "failed_paths": [],
+      "export_returncode": 0,
+      "peak_group_rss_bytes": 6710681600,
+      "min_available_bytes": 28666540032,
+      "memory_events_before": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 7\noom_group_kill 0\n",
+      "memory_events_after": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 7\noom_group_kill 0\n"
+    },
+    "scope_file": "paper_tampere_TIE1_F0_ext_cuda_subset_20261114/execution_source/scope.json",
+    "history_fields_total": 772,
+    "history_fields_cached_before_run": 47,
+    "timing_note": "This run reused 47 existing fields. Its first task includes remaining history preparation. This is not a fully cold timing.",
+    "task_seconds": {
+      "1": {
+        "total": 9036.591371502727,
+        "learning": 92.10848441720009,
+        "gp": 8944.342352129519
+      },
+      "3": {
+        "total": 1236.5375111661851,
+        "learning": 99.19654702022672,
+        "gp": 1137.2769347056746
+      },
+      "5": {
+        "total": 1165.384042352438,
+        "learning": 95.3644313775003,
+        "gp": 1069.9679209962487
+      }
+    }
+  },
+  "interpretation": "On this F0 subset, the complete system has lower pooled mean/P90 than the external comparison methods included here. The GP component has lower mean than the complete system at all three budgets. Preserve this boundary without switching the adopted method by dataset."
+}

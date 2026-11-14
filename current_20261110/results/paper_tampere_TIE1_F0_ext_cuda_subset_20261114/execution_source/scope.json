@@ -1,0 +1,60 @@
+{
+  "created": 1794650407.9681325,
+  "reason": "User requested subset of scenes and lower load; choose target F0 by source-field cost before localization results",
+  "dataset": "tampere",
+  "building": "TIE1",
+  "target_floor": 0,
+  "budgets": [
+    1,
+    3,
+    5
+  ],
+  "repeat": 0,
+  "tasks": 3,
+  "full_allowed_history": [
+    {
+      "floor": -1,
+      "positions": 171,
+      "needed_fields": 114,
+      "cached_fields": 0,
+      "history_key": "c5315ee4c1657cc3a524efeaf32c2cb899da685ed8aa334df6c96d6261150fa2"
+    },
+    {
+      "floor": 1,
+      "positions": 2475,
+      "needed_fields": 332,
+      "cached_fields": 36,
+      "history_key": "c12a5217f7777166af79ceadf8ad61525c6944526886343fa11c0819190e05fb"
+    },
+    {
+      "floor": 2,
+      "positions": 1007,
+      "needed_fields": 188,
+      "cached_fields": 11,
+      "history_key": "0188c510996f6494cf69d6fa31f42a8637cfcf5fb710c3c09720313d3512477b"
+    },
+    {
+      "floor": 3,
+      "positions": 930,
+      "needed_fields": 119,
+      "cached_fields": 0,
+      "history_key": "15d6b5063d222667748e8eb735ddbce4d627ef146508e3c1fc6c743126a5ef83"
+    },
+    {
+      "floor": 4,
+      "positions": 78,
+      "needed_fields": 19,
+      "cached_fields": 0,
+      "history_key": "3bc71ba46e5ec353690dbcb6d9a0920c315f7f306c6a4f366ce4ed15d20c1245"
+    }
+  ],
+  "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+  "output": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114",
+  "source_run": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_20261111",
+  "query_rows_match_original": true,
+  "files": {
+    "guard.py": "cf568a09c9dbcc04fe40eef2b50fc4142b44b435c13c2e612712fe4d48c1672b",
+    "resume_cuda.py": "55956b293fae8d10b494a927917339e537f2b7185434279dc9f6dee24a6138df",
+    "run.sh": "7b6ebf7ba6a2d74c35b39ad790abd0dd96513a797fdbd9d7894e66613039775b"
+  }
+}

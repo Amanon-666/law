@@ -1,0 +1,91 @@
+{
+  "method": "maml_dnn",
+  "source_fit": {
+    "status": "completed",
+    "seconds": 87.17295351624489,
+    "sha256": "96f39a68821ccb6f6a4bca387de03fcab1088897b8c42f4ad28ec0f13644e557",
+    "source_buildings": [
+      "B0",
+      "B1",
+      "B2"
+    ]
+  },
+  "by_K": {
+    "1": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 23.514647856187867,
+      "p50": 13.851926957962878,
+      "p90": 64.53738267952413,
+      "query_positions": 60
+    },
+    "3": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 23.137609992685643,
+      "p50": 12.972750095842564,
+      "p90": 66.93265432632298,
+      "query_positions": 60
+    },
+    "5": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 23.36949226737484,
+      "p50": 13.946191576216222,
+      "p90": 66.35666258620708,
+      "query_positions": 60
+    }
+  },
+  "by_floor": {
+    "0": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 23.514647856187867,
+        "p50": 13.851926957962878,
+        "p90": 64.53738267952413,
+        "query_positions": 60
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 23.137609992685643,
+        "p50": 12.972750095842564,
+        "p90": 66.93265432632298,
+        "query_positions": 60
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 23.36949226737484,
+        "p50": 13.946191576216222,
+        "p90": 66.35666258620708,
+        "query_positions": 60
+      }
+    }
+  },
+  "task_records": [
+    "events/maml_dnn/tampere/TIE1/F0/K1/r0.json",
+    "events/maml_dnn/tampere/TIE1/F0/K3/r0.json",
+    "events/maml_dnn/tampere/TIE1/F0/K5/r0.json"
+  ],
+  "unavailable": []
+}

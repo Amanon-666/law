@@ -1,0 +1,177 @@
+method,label,role,training_profile,scope,building,K,tasks,position_repeat_budget_count,mean_m,p90_m
+wknn_S,WKNN(S),simple_baseline,target_S,overall,all,all,117,4167,39.563451,83.696616
+wknn_S,WKNN(S),simple_baseline,target_S,by_K,all,1,39,1389,56.092943,98.728971
+wknn_S,WKNN(S),simple_baseline,target_S,by_K,all,3,39,1389,35.179252,72.959044
+wknn_S,WKNN(S),simple_baseline,target_S,by_K,all,5,39,1389,27.418159,60.257459
+wknn_S,WKNN(S),simple_baseline,target_S,by_building,B0,all,36,1161,34.389994,76.150822
+wknn_S,WKNN(S),simple_baseline,target_S,by_building,B1,all,36,1188,52.472156,111.907791
+wknn_S,WKNN(S),simple_baseline,target_S,by_building,B2,all,45,1818,34.431902,71.190850
+wknn_S,WKNN(S),simple_baseline,target_S,by_building_and_K,B0,1,12,387,48.794387,86.395956
+wknn_S,WKNN(S),simple_baseline,target_S,by_building_and_K,B0,3,12,387,31.718508,71.640910
+wknn_S,WKNN(S),simple_baseline,target_S,by_building_and_K,B0,5,12,387,22.657086,46.085407
+wknn_S,WKNN(S),simple_baseline,target_S,by_building_and_K,B1,1,12,396,73.809319,127.967466
+wknn_S,WKNN(S),simple_baseline,target_S,by_building_and_K,B1,3,12,396,46.113644,97.420460
+wknn_S,WKNN(S),simple_baseline,target_S,by_building_and_K,B1,5,12,396,37.493504,85.794460
+wknn_S,WKNN(S),simple_baseline,target_S,by_building_and_K,B2,1,15,606,49.176863,80.824841
+wknn_S,WKNN(S),simple_baseline,target_S,by_building_and_K,B2,3,15,606,30.244086,64.237117
+wknn_S,WKNN(S),simple_baseline,target_S,by_building_and_K,B2,5,15,606,23.874756,57.771470
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,overall,all,all,117,4167,51.419726,114.577037
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_K,all,1,39,1389,88.534935,133.059809
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_K,all,3,39,1389,36.980844,81.626825
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_K,all,5,39,1389,28.743398,60.332503
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building,B0,all,36,1161,45.010359,105.258664
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building,B1,all,36,1188,62.980537,142.359289
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building,B2,all,45,1818,47.958247,109.168329
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building_and_K,B0,1,12,387,73.855400,121.969007
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building_and_K,B0,3,12,387,35.216506,77.446098
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building_and_K,B0,5,12,387,25.959172,50.017510
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building_and_K,B1,1,12,396,107.845202,166.312873
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building_and_K,B1,3,12,396,47.187751,102.236183
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building_and_K,B1,5,12,396,33.908658,72.680116
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building_and_K,B2,1,15,606,85.290898,119.096226
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building_and_K,B2,3,15,606,31.437715,63.619443
+gp_S,GP(S),simple_baseline,source_hyperparameters_target_S,by_building_and_K,B2,5,15,606,27.146126,57.622447
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,overall,all,all,117,4167,14.032423,31.260534
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_K,all,1,39,1389,14.759953,33.909772
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_K,all,3,39,1389,13.820897,30.086727
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_K,all,5,39,1389,13.516420,29.425032
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building,B0,all,36,1161,9.025420,18.817872
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building,B1,all,36,1188,16.235357,35.632567
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building,B2,all,45,1818,15.790424,36.710123
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building_and_K,B0,1,12,387,8.865067,18.362744
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building_and_K,B0,3,12,387,9.145090,19.059169
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building_and_K,B0,5,12,387,9.066104,18.883692
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building_and_K,B1,1,12,396,17.599903,41.320607
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building_and_K,B1,3,12,396,15.548706,31.291332
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building_and_K,B1,5,12,396,15.557463,31.184330
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building_and_K,B2,1,15,606,16.668700,37.776590
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building_and_K,B2,3,15,606,15.677869,36.171725
+wknn_HS,WKNN(H+S),simple_history_baseline,deployment_H_S,by_building_and_K,B2,5,15,606,15.024702,33.452691
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,overall,all,all,117,4167,11.312595,23.108489
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_K,all,1,39,1389,12.111179,25.071612
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_K,all,3,39,1389,11.187446,22.644118
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_K,all,5,39,1389,10.639161,21.974658
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building,B0,all,36,1161,7.768154,14.435762
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building,B1,all,36,1188,12.144148,21.910420
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building,B2,all,45,1818,13.032734,27.644021
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building_and_K,B0,1,12,387,7.845521,14.675174
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building_and_K,B0,3,12,387,7.801860,14.432884
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building_and_K,B0,5,12,387,7.657082,14.251912
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building_and_K,B1,1,12,396,12.161463,21.837984
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building_and_K,B1,3,12,396,12.263143,22.075298
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building_and_K,B1,5,12,396,12.007838,21.642670
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building_and_K,B2,1,15,606,14.802429,32.042743
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building_and_K,B2,3,15,606,12.646597,26.019491
+tabicl,Public TabICL,external_pretrained_method,public_checkpoint_with_deployment_H_S,by_building_and_K,B2,5,15,606,11.649175,24.585461
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,overall,all,all,117,4167,24.695343,46.764329
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_K,all,1,39,1389,29.946992,52.554002
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_K,all,3,39,1389,23.053629,44.471949
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_K,all,5,39,1389,21.085408,39.775158
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building,B0,all,36,1161,17.832317,34.273105
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building,B1,all,36,1188,27.637194,53.045984
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building,B2,all,45,1818,27.155769,48.902720
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building_and_K,B0,1,12,387,22.453513,41.449471
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building_and_K,B0,3,12,387,16.346673,29.894607
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building_and_K,B0,5,12,387,14.696765,26.182516
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building_and_K,B1,1,12,396,32.926297,59.976257
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building_and_K,B1,3,12,396,25.415869,49.236855
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building_and_K,B1,5,12,396,24.569415,47.101457
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building_and_K,B2,1,15,606,32.785559,53.697388
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building_and_K,B2,3,15,606,25.793142,47.510108
+scaml,ScaML-GP (RSS-to-coordinate adaptation),literature_method_adaptation,deployment_H_source_GPs_target_S_GP,by_building_and_K,B2,5,15,606,22.888607,41.928453
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,overall,all,all,117,4167,15.870022,33.953301
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_K,all,1,39,1389,15.894800,33.893401
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_K,all,3,39,1389,15.844674,33.812548
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_K,all,5,39,1389,15.870592,34.062368
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building,B0,all,36,1161,8.687340,15.556570
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building,B1,all,36,1188,16.593062,30.438806
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building,B2,all,45,1818,19.984500,41.230048
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building_and_K,B0,1,12,387,8.746912,15.224871
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building_and_K,B0,3,12,387,8.658174,15.074431
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building_and_K,B0,5,12,387,8.656935,15.933702
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building_and_K,B1,1,12,396,16.691426,30.497653
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building_and_K,B1,3,12,396,16.542320,30.271288
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building_and_K,B1,5,12,396,16.545440,30.271288
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building_and_K,B2,1,15,606,19.938973,40.904687
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building_and_K,B2,3,15,606,19.978185,40.707693
+pretrain_dnn,"Supervised DNN, no target gradient update",auxiliary_training_reference,local_H_supervision_source_HP_selection,by_building_and_K,B2,5,15,606,20.036342,41.738139
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,overall,all,all,117,4167,16.608988,34.733030
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_K,all,1,39,1389,18.771128,38.664060
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_K,all,3,39,1389,16.363953,34.069655
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_K,all,5,39,1389,14.691882,31.097725
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building,B0,all,36,1161,9.530575,17.280744
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building,B1,all,36,1188,19.370085,35.269185
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building,B2,all,45,1818,19.325079,41.182816
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building_and_K,B0,1,12,387,10.356825,19.368431
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building_and_K,B0,3,12,387,9.397002,16.004338
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building_and_K,B0,5,12,387,8.837898,15.554057
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building_and_K,B1,1,12,396,21.652087,40.087116
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building_and_K,B1,3,12,396,19.446918,35.785911
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building_and_K,B1,5,12,396,17.011249,30.574860
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building_and_K,B2,1,15,606,22.262012,43.500955
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building_and_K,B2,3,15,606,18.798535,39.024385
+finetune_dnn,Supervised DNN + S fine-tuning,supervised_transfer_baseline,local_H_supervision_S_finetuning_source_HP_selection,by_building_and_K,B2,5,15,606,16.914691,37.532436
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,overall,all,all,117,4167,15.644406,32.687169
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_K,all,1,39,1389,15.952513,32.807861
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_K,all,3,39,1389,15.443184,32.543705
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_K,all,5,39,1389,15.537521,32.675151
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building,B0,all,36,1161,8.352455,15.115631
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building,B1,all,36,1188,17.284450,30.616736
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building,B2,all,45,1818,19.229434,39.466725
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building_and_K,B0,1,12,387,8.587037,15.520858
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building_and_K,B0,3,12,387,8.271445,14.770739
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building_and_K,B0,5,12,387,8.198884,15.034072
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building_and_K,B1,1,12,396,17.451846,30.881297
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building_and_K,B1,3,12,396,17.179032,29.964998
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building_and_K,B1,5,12,396,17.222472,30.441355
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building_and_K,B2,1,15,606,19.676446,39.686472
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building_and_K,B2,3,15,606,18.888839,38.955252
+maml_dnn,First-order MAML (RSS regression),meta_learning_baseline,local_H_meta_training_S_adaptation_source_HP_selection,by_building_and_K,B2,5,15,606,19.123018,40.119530
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,overall,all,all,117,4167,8.741849,17.216059
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_K,all,1,39,1389,9.116154,17.685857
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_K,all,3,39,1389,8.722805,17.398432
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_K,all,5,39,1389,8.386587,16.914130
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building,B0,all,36,1161,4.990004,10.078995
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building,B1,all,36,1188,10.484326,18.968848
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building,B2,all,45,1818,9.999180,21.463959
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building_and_K,B0,1,12,387,5.288078,10.657860
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building_and_K,B0,3,12,387,4.908605,9.473787
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building_and_K,B0,5,12,387,4.773330,9.248303
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building_and_K,B1,1,12,396,10.660226,19.256653
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building_and_K,B1,3,12,396,10.499273,18.803375
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building_and_K,B1,5,12,396,10.293480,18.543297
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building_and_K,B2,1,15,606,10.551819,22.740999
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building_and_K,B2,3,15,606,9.997746,21.766159
+refi,ReFi learning path,internal_component,heldout_building_relation_learning_deployment_H_S,by_building_and_K,B2,5,15,606,9.447975,19.486870
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,overall,all,all,117,4167,12.033332,25.015721
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_K,all,1,39,1389,12.817539,28.374923
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_K,all,3,39,1389,11.649472,23.231981
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_K,all,5,39,1389,11.632985,23.629245
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building,B0,all,36,1161,9.716881,17.152668
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building,B1,all,36,1188,11.546563,20.767928
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building,B2,all,45,1818,13.830736,31.810169
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building_and_K,B0,1,12,387,10.040713,18.432994
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building_and_K,B0,3,12,387,9.650152,16.602414
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building_and_K,B0,5,12,387,9.459777,16.622594
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building_and_K,B1,1,12,396,12.011701,22.247459
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building_and_K,B1,3,12,396,11.564461,20.615342
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building_and_K,B1,5,12,396,11.063528,19.805930
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building_and_K,B2,1,15,606,15.117445,36.422319
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building_and_K,B2,3,15,606,12.981818,29.459538
+retained_gp,ReFi GP path,internal_component,source_base_obs_calibration_deployment_H_fields_S_adaptation,by_building_and_K,B2,5,15,606,13.392946,30.394298
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,overall,all,all,117,4167,8.149021,16.419455
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_K,all,1,39,1389,8.289958,16.880198
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_K,all,3,39,1389,8.133853,16.304215
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_K,all,5,39,1389,8.023251,16.149454
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building,B0,all,36,1161,5.447041,11.063083
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building,B1,all,36,1188,9.568813,17.097644
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building,B2,all,45,1818,8.946757,18.269140
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building_and_K,B0,1,12,387,5.660015,11.540618
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building_and_K,B0,3,12,387,5.410179,10.962207
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building_and_K,B0,5,12,387,5.270930,10.003733
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building_and_K,B1,1,12,396,9.633752,17.002039
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building_and_K,B1,3,12,396,9.588809,17.120059
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building_and_K,B1,5,12,396,9.483878,17.102270
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building_and_K,B2,1,15,606,9.091352,18.710702
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building_and_K,B2,3,15,606,8.922466,18.125154
+refi_GP,ReFi (complete),complete_proposed_method,heldout_building_relation_learning_plus_calibrated_GP,by_building_and_K,B2,5,15,606,8.826452,17.477458

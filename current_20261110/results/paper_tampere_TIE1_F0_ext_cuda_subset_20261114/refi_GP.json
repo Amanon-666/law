@@ -1,0 +1,91 @@
+{
+  "method": "refi_GP",
+  "source_fit": {
+    "status": "completed",
+    "seconds": 2.162487868219614,
+    "sha256": "c9f904f00ebef358d9f6ef5ac1223429cad395e0672d8d16c55721d79d442b14",
+    "source_buildings": [
+      "B0",
+      "B1",
+      "B2"
+    ]
+  },
+  "by_K": {
+    "1": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 20.53128521499987,
+      "p50": 10.009886684950244,
+      "p90": 38.77694446877378,
+      "query_positions": 60
+    },
+    "3": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 16.800975906194612,
+      "p50": 9.971521513016091,
+      "p90": 30.13568548974444,
+      "query_positions": 60
+    },
+    "5": {
+      "tasks": 1,
+      "completed_tasks": 1,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 15.507302869722995,
+      "p50": 9.736641369498889,
+      "p90": 30.916976856968507,
+      "query_positions": 60
+    }
+  },
+  "by_floor": {
+    "0": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 20.53128521499987,
+        "p50": 10.009886684950244,
+        "p90": 38.77694446877378,
+        "query_positions": 60
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 16.800975906194612,
+        "p50": 9.971521513016091,
+        "p90": 30.13568548974444,
+        "query_positions": 60
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 15.507302869722995,
+        "p50": 9.736641369498889,
+        "p90": 30.916976856968507,
+        "query_positions": 60
+      }
+    }
+  },
+  "task_records": [
+    "events/refi_GP/tampere/TIE1/F0/K1/r0.json",
+    "events/refi_GP/tampere/TIE1/F0/K3/r0.json",
+    "events/refi_GP/tampere/TIE1/F0/K5/r0.json"
+  ],
+  "unavailable": []
+}

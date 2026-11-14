@@ -1,0 +1,175 @@
+{
+  "server_result_directory": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114",
+  "server_execution_directory": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_TIE1_F0_subset_20261114",
+  "excluded": [
+    "*.joblib",
+    "*.npz",
+    "model caches"
+  ],
+  "files": [
+    {
+      "path": "events/refi_GP/tampere/TIE1/F0/K1/r0.json",
+      "bytes": 1171726,
+      "sha256": "664eccb21ddfc68d7cd817c5aef479481ce61f5b436d8bd76d78f8452c3ae1f8",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/refi_GP/tampere/TIE1/F0/K1/r0.json",
+      "derived_from": null
+    },
+    {
+      "path": "events/refi_GP/tampere/TIE1/F0/K3/r0.json",
+      "bytes": 1170650,
+      "sha256": "f2741fbdd3034e609fb27a870e62a02a2bbe18056752a9af6d22662490d1f3a9",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/refi_GP/tampere/TIE1/F0/K3/r0.json",
+      "derived_from": null
+    },
+    {
+      "path": "events/refi_GP/tampere/TIE1/F0/K5/r0.json",
+      "bytes": 1170884,
+      "sha256": "61b05df64ac99b0dab985084b49435da7f89c67d8f1c2f90ff36a4df5a34226c",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/refi_GP/tampere/TIE1/F0/K5/r0.json",
+      "derived_from": null
+    },
+    {
+      "path": "events/retained_gp/tampere/TIE1/F0/K1/r0.json",
+      "bytes": 1093080,
+      "sha256": "6ddb44da497e312fe3948422e80f16a92a8b9af9310230053ea826c14c2692ad",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/retained_gp/tampere/TIE1/F0/K1/r0.json",
+      "derived_from": null
+    },
+    {
+      "path": "events/retained_gp/tampere/TIE1/F0/K3/r0.json",
+      "bytes": 1091983,
+      "sha256": "db7e1e04ab6af5bcf648b591e8b62a621cac248274c4ed830db516c695e16b0c",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/retained_gp/tampere/TIE1/F0/K3/r0.json",
+      "derived_from": null
+    },
+    {
+      "path": "events/retained_gp/tampere/TIE1/F0/K5/r0.json",
+      "bytes": 1092173,
+      "sha256": "90f3b6c7288116ad957d686d8dbf801c2487b03ee5a7b6654f9a9db0197ab3bf",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/events/retained_gp/tampere/TIE1/F0/K5/r0.json",
+      "derived_from": null
+    },
+    {
+      "path": "execution_source/cuda_infer_timings.jsonl",
+      "bytes": 189788,
+      "sha256": "21de33ceca9d7911abaf60c1b1657dee75f56e6a5d91d2b378fd4092a82060ec",
+      "server_source": null,
+      "derived_from": "execution_source/run.log and copied result metadata"
+    },
+    {
+      "path": "execution_source/export_gp.log",
+      "bytes": 657,
+      "sha256": "ed17ad56993596c05b8bd825c3b43b35df8d6f77d5e685568ef6d42b2392bdb9",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_TIE1_F0_subset_20261114/export_gp.log",
+      "derived_from": null
+    },
+    {
+      "path": "execution_source/guard.py",
+      "bytes": 4307,
+      "sha256": "cf568a09c9dbcc04fe40eef2b50fc4142b44b435c13c2e612712fe4d48c1672b",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_TIE1_F0_subset_20261114/guard.py",
+      "derived_from": null
+    },
+    {
+      "path": "execution_source/guard_result.json",
+      "bytes": 485,
+      "sha256": "5838af4182f953bfb34bdd5d6a4f204013fb51092e6a04408bc15e525fe01ffd",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_TIE1_F0_subset_20261114/guard_result.json",
+      "derived_from": null
+    },
+    {
+      "path": "execution_source/guard_start.json",
+      "bytes": 140,
+      "sha256": "f8ca002b055fd17fbf7b82ba1023a1d66093a513aaa72f96dc5173051547d9da",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_TIE1_F0_subset_20261114/guard_start.json",
+      "derived_from": null
+    },
+    {
+      "path": "execution_source/resume_cuda.py",
+      "bytes": 3256,
+      "sha256": "55956b293fae8d10b494a927917339e537f2b7185434279dc9f6dee24a6138df",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_TIE1_F0_subset_20261114/resume_cuda.py",
+      "derived_from": null
+    },
+    {
+      "path": "execution_source/run.exit.json",
+      "bytes": 88,
+      "sha256": "c5b9ccbff2117712b2fbad8c8c44a586cd67092d9f4d69a7cf468ce850c1c513",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_TIE1_F0_subset_20261114/run.exit.json",
+      "derived_from": null
+    },
+    {
+      "path": "execution_source/run.log",
+      "bytes": 4433164,
+      "sha256": "991f8a699f572993be9a57f2fe6e22a0c628f75fb4033c884916733a7fc78286",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_TIE1_F0_subset_20261114/run.log",
+      "derived_from": null
+    },
+    {
+      "path": "execution_source/run.sh",
+      "bytes": 1850,
+      "sha256": "7b6ebf7ba6a2d74c35b39ad790abd0dd96513a797fdbd9d7894e66613039775b",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_TIE1_F0_subset_20261114/run.sh",
+      "derived_from": null
+    },
+    {
+      "path": "execution_source/scope.json",
+      "bytes": 1981,
+      "sha256": "ade24feabc560d87bbc50288bfec5ee4eca472f8d08fd107e93cf358e417453b",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_TIE1_F0_subset_20261114/scope.json",
+      "derived_from": null
+    },
+    {
+      "path": "execution_source/verification_and_timings.json",
+      "bytes": 4844,
+      "sha256": "2965e00f9d80c81f52fc84862658378d2613a189f5f478adbba69f5438009a33",
+      "server_source": null,
+      "derived_from": "execution_source/run.log and copied result metadata"
+    },
+    {
+      "path": "freeze.json",
+      "bytes": 3992,
+      "sha256": "132e146811aa3a68f22211a1e274d65670340586f22fdfc626066a37cc457e7f",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/freeze.json",
+      "derived_from": null
+    },
+    {
+      "path": "refi_GP.json",
+      "bytes": 2264,
+      "sha256": "160493a4ca1ae791286dd6e1654b566b37640b70c6ea68d96467989798fe7c4b",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/refi_GP.json",
+      "derived_from": null
+    },
+    {
+      "path": "retained_gp.json",
+      "bytes": 2118,
+      "sha256": "df7011077580198306c138afc8785a94acb8ede3d199f7693d80d487710f2d3c",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/retained_gp.json",
+      "derived_from": null
+    },
+    {
+      "path": "source_models/refi_GP.json",
+      "bytes": 198,
+      "sha256": "e0a17e1c46102eacd0b73f7bda9796f4189b14adb91e7454399e6499ca6dd081",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/source_models/refi_GP.json",
+      "derived_from": null
+    },
+    {
+      "path": "summary.json",
+      "bytes": 4759,
+      "sha256": "c83bf42a9511383953c7fbe178a107fb23bf3e1cc70e7d409138a3ea9f42f28a",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/summary.json",
+      "derived_from": null
+    },
+    {
+      "path": "task_inventory.json",
+      "bytes": 2216,
+      "sha256": "6609b9885e49dac9ef06a4b214bd849ef9d8fb8b375efc8b4f7f0bd879ac7d0d",
+      "server_source": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_ext_cuda_subset_20261114/task_inventory.json",
+      "derived_from": null
+    }
+  ],
+  "total_files": 23,
+  "total_bytes": 11446603,
+  "size_semantics": "File sizes, not measured SSH traffic or campus billing"
+}
