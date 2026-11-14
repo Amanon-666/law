@@ -1,0 +1,85 @@
+{
+  "finetune_dnn": {
+    "seed": 0,
+    "hp": [
+      3000,
+      0.001,
+      100,
+      0.0003
+    ],
+    "hp_scores": {
+      "(3000, 0.001, 100, 0.0003)": 12.568370009998977,
+      "(3000, 0.001, 300, 0.0003)": 12.96616135651066,
+      "(3000, 0.001, 100, 0.001)": 13.824093142578324
+    },
+    "source_selection_seconds": 76.13663774728775,
+    "source_fit_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/source_models/finetune_dnn.json",
+    "source_fit_sha256": "6428c87f286431c5f1134ffdd21d4dd02be4f36ae57c7b03ce12d69a23e1bf5d",
+    "model_sha256": "2655a277aa7e69c7af9fe866a9353f64b19b7cd50db58360009b8e32a680b710",
+    "source_buildings_available": [
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "source_buildings_used_by_existing_selector": [
+      "B0",
+      "B1"
+    ],
+    "selector_floors": "first two source floors per building"
+  },
+  "maml_dnn": {
+    "seed": 0,
+    "hp": [
+      1500,
+      0.001,
+      5,
+      0.01,
+      3
+    ],
+    "hp_scores": {
+      "(1500, 0.001, 5, 0.01, 3)": 12.175647762066301,
+      "(1500, 0.001, 10, 0.01, 3)": 12.71179347790937,
+      "(1500, 0.001, 5, 0.003, 3)": 12.739586313476737
+    },
+    "source_selection_seconds": 84.85252743586898,
+    "source_fit_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/source_models/maml_dnn.json",
+    "source_fit_sha256": "9e3914da708420dce0321fc705765097a1090ee8f8ba616fadd874635f9ba00f",
+    "model_sha256": "71186378137a00a916c858cb53cfa5b309660130e99368edaa71dfe66dbaa586",
+    "source_buildings_available": [
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "source_buildings_used_by_existing_selector": [
+      "B0",
+      "B1"
+    ],
+    "selector_floors": "first two source floors per building"
+  },
+  "pretrain_dnn": {
+    "seed": 0,
+    "hp": [
+      3000,
+      0.001,
+      0,
+      0.0
+    ],
+    "hp_scores": {
+      "(3000, 0.001, 0, 0.0)": 12.922030076768966
+    },
+    "source_selection_seconds": 24.5929233469069,
+    "source_fit_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/source_models/pretrain_dnn.json",
+    "source_fit_sha256": "8c5ba9d772beba114adbf7e9bde7096d0f28f408dd23bd4652814f40a23ab4aa",
+    "model_sha256": "9d9efa14e73fc46191516e43a9f26d8a4748bfbc7b66369043001bbb6484f014",
+    "source_buildings_available": [
+      "B0",
+      "B1",
+      "B2"
+    ],
+    "source_buildings_used_by_existing_selector": [
+      "B0",
+      "B1"
+    ],
+    "selector_floors": "first two source floors per building"
+  }
+}

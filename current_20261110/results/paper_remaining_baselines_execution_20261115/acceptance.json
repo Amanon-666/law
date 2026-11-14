@@ -1,0 +1,1107 @@
+{
+  "status": "accepted",
+  "verified_after_completion_utc": "2026-11-14T18:32:56.148097+00:00",
+  "expected_events": 27,
+  "completed_and_validated_events": 27,
+  "all_H_S_Q_meta_data_match": true,
+  "all_scores_recomputed_from_original_truth": true,
+  "scope_data": {
+    "uts_dl_seed0": {
+      "target_data": {
+        "New IT": "fed7fa2bb0f37debe608ba87d894d784efe561853fd77bd6903871c84f5a3f1f"
+      },
+      "source_data": {
+        "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+        "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11",
+        "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+      },
+      "original_freeze_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111/freeze.json",
+      "original_freeze_sha256": "19b952752452be7dc69ea38dfb22b4bf2a81343f2fa949d8492a3c07223f21e2"
+    },
+    "uts_scaml": {
+      "target_data": {
+        "New IT": "fed7fa2bb0f37debe608ba87d894d784efe561853fd77bd6903871c84f5a3f1f"
+      },
+      "source_data": {
+        "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+        "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11",
+        "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+      },
+      "original_freeze_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111/freeze.json",
+      "original_freeze_sha256": "19b952752452be7dc69ea38dfb22b4bf2a81343f2fa949d8492a3c07223f21e2"
+    },
+    "tampere_scaml": {
+      "target_data": {
+        "TIE1": "6f08773eaf86a1b4f11f4d2e263dcbb096b0ff894682593964ff17ebd92b4669"
+      },
+      "source_data": {
+        "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+        "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11",
+        "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+      },
+      "original_freeze_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_20261111/freeze.json",
+      "original_freeze_sha256": "f5b3a525b94ad992b5c262ff94fa6c695944523a03268ecd526a1d5914ad4056"
+    }
+  },
+  "records": [
+    {
+      "stage": "uts_dl_seed0",
+      "method": "finetune_dnn",
+      "task_id": "uts/New IT/F4/K1/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/finetune_dnn/uts/New IT/F4/K1/r0.json",
+      "source_sha256": "74be97fe8c691398321f6c32ec60aa637d8d3b6ccba8fbf0db1deb0f756876f3",
+      "seconds": 7.366745304316282,
+      "mean": 11.47866959053099,
+      "p90": 18.759805280170742,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "finetune_dnn",
+      "task_id": "uts/New IT/F4/K3/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/finetune_dnn/uts/New IT/F4/K3/r0.json",
+      "source_sha256": "ef3ea188607b61bf79f99693bd3ba01812d585c40bc40f75621fb865bfe27677",
+      "seconds": 7.407877258956432,
+      "mean": 10.256950347588388,
+      "p90": 19.123032270017696,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "finetune_dnn",
+      "task_id": "uts/New IT/F4/K5/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/finetune_dnn/uts/New IT/F4/K5/r0.json",
+      "source_sha256": "a84a0d0962733187f3b5df2b44008ec3511f224c1296f99eecc642b2daca3292",
+      "seconds": 7.385975401848555,
+      "mean": 10.706949705088826,
+      "p90": 18.987957509485064,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "finetune_dnn",
+      "task_id": "uts/New IT/F8/K1/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/finetune_dnn/uts/New IT/F8/K1/r0.json",
+      "source_sha256": "821afae068177b2ba8ba8db0a14b3686f82bd504f4cb2ecea9ba07e378a1bec4",
+      "seconds": 7.3110251650214195,
+      "mean": 18.803414512245634,
+      "p90": 37.55431292991001,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "finetune_dnn",
+      "task_id": "uts/New IT/F8/K3/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/finetune_dnn/uts/New IT/F8/K3/r0.json",
+      "source_sha256": "e2db0bfbfafc3c65d219b5237fdc811f7e31eff5a2c05fc680968e01799bd53d",
+      "seconds": 7.63567103818059,
+      "mean": 18.22884081928996,
+      "p90": 31.227972283508,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "finetune_dnn",
+      "task_id": "uts/New IT/F8/K5/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/finetune_dnn/uts/New IT/F8/K5/r0.json",
+      "source_sha256": "861514ad401cbab6d54cfc9a675ed47902112dead222a25dcb12b5d3b9500c3a",
+      "seconds": 7.500213135033846,
+      "mean": 19.216815530993355,
+      "p90": 38.26454601167924,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "maml_dnn",
+      "task_id": "uts/New IT/F4/K1/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/maml_dnn/uts/New IT/F4/K1/r0.json",
+      "source_sha256": "4422425e8a4b5c8078af9c14a9374d876b4d885fa58d1332fc0b265b3e938070",
+      "seconds": 6.266818221658468,
+      "mean": 10.1667267667594,
+      "p90": 17.481182339069406,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "maml_dnn",
+      "task_id": "uts/New IT/F4/K3/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/maml_dnn/uts/New IT/F4/K3/r0.json",
+      "source_sha256": "463f7c15e456298262aa799c90482706e14cd36a785031cecbd5067adb0994c3",
+      "seconds": 6.269327286630869,
+      "mean": 10.69358708869793,
+      "p90": 20.95446888168967,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "maml_dnn",
+      "task_id": "uts/New IT/F4/K5/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/maml_dnn/uts/New IT/F4/K5/r0.json",
+      "source_sha256": "2f92c2c7b01d99f1c94319c54fd459b358a243b46c9b39307bbc471ebfde557b",
+      "seconds": 6.328912898898125,
+      "mean": 11.663331477315468,
+      "p90": 23.854203173383944,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "maml_dnn",
+      "task_id": "uts/New IT/F8/K1/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/maml_dnn/uts/New IT/F8/K1/r0.json",
+      "source_sha256": "9c48b496f491db11e98ae719e20d8e620147840a642f469baf1c32849350e4bb",
+      "seconds": 6.285273756831884,
+      "mean": 18.043627057378185,
+      "p90": 28.866442982402717,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "maml_dnn",
+      "task_id": "uts/New IT/F8/K3/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/maml_dnn/uts/New IT/F8/K3/r0.json",
+      "source_sha256": "1da7633ec4b1d55d6d7af260f956b6bab8cfe89efe1c909d2cb8489699b9dfac",
+      "seconds": 6.414077967405319,
+      "mean": 17.60954475527345,
+      "p90": 29.607317233408033,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "maml_dnn",
+      "task_id": "uts/New IT/F8/K5/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/maml_dnn/uts/New IT/F8/K5/r0.json",
+      "source_sha256": "3c0b46bbf63ef3ffc3878375807031f92ba99dc6d5dd159982ef00ee858836be",
+      "seconds": 6.392689660191536,
+      "mean": 17.527266117684256,
+      "p90": 28.195114300819444,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "pretrain_dnn",
+      "task_id": "uts/New IT/F4/K1/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/pretrain_dnn/uts/New IT/F4/K1/r0.json",
+      "source_sha256": "aa7c7f9adbe45e372b20f9db4acf388b047873fc836007c478ce0adcb8353d59",
+      "seconds": 7.212592970579863,
+      "mean": 10.063766870278885,
+      "p90": 17.365056533875524,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "pretrain_dnn",
+      "task_id": "uts/New IT/F4/K3/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/pretrain_dnn/uts/New IT/F4/K3/r0.json",
+      "source_sha256": "9145844b47e9a90309bfbadce0c4d0e1d1dbb00d2bb6b07f982be997cd7c2eb2",
+      "seconds": 7.273775562644005,
+      "mean": 10.445796773781103,
+      "p90": 20.004097068573707,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "pretrain_dnn",
+      "task_id": "uts/New IT/F4/K5/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/pretrain_dnn/uts/New IT/F4/K5/r0.json",
+      "source_sha256": "84d2b077e0bc305f518a2e1fa1e7624fb038687b95f38bdd8c2e615c3ae9338a",
+      "seconds": 7.30518464744091,
+      "mean": 10.952903458192738,
+      "p90": 19.81944419191062,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "pretrain_dnn",
+      "task_id": "uts/New IT/F8/K1/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/pretrain_dnn/uts/New IT/F8/K1/r0.json",
+      "source_sha256": "61fcd0fa958d2bb1afe76ec28177bcfab6a2944520b514247d371df7cd45b4d0",
+      "seconds": 7.20229309424758,
+      "mean": 18.254745097574457,
+      "p90": 27.062777407020878,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "pretrain_dnn",
+      "task_id": "uts/New IT/F8/K3/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/pretrain_dnn/uts/New IT/F8/K3/r0.json",
+      "source_sha256": "34a2a23203878cba7274b741089d25630b689fba6e496844522358c489f6e07a",
+      "seconds": 7.485626593232155,
+      "mean": 20.16050585414181,
+      "p90": 36.02740969787084,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_dl_seed0",
+      "method": "pretrain_dnn",
+      "task_id": "uts/New IT/F8/K5/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/events/pretrain_dnn/uts/New IT/F8/K5/r0.json",
+      "source_sha256": "f73d1570cc68d7867128a3b91ba3fdac18a3006f68891dddb7efde7c856d45cf",
+      "seconds": 7.393674444407225,
+      "mean": 20.264237534753445,
+      "p90": 35.16615969529433,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_scaml",
+      "method": "scaml",
+      "task_id": "uts/New IT/F4/K1/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_scaml_20261115/events/scaml/uts/New IT/F4/K1/r0.json",
+      "source_sha256": "5093278485def1e2e1291d3a8e09be59a28bf219bb099c93cea6ad218eedfc19",
+      "seconds": 141.30046314746141,
+      "mean": 24.42509157694385,
+      "p90": 42.33565270364558,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_scaml",
+      "method": "scaml",
+      "task_id": "uts/New IT/F4/K3/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_scaml_20261115/events/scaml/uts/New IT/F4/K3/r0.json",
+      "source_sha256": "74c4646e05f1b42cbffd333e0851670c4a63d749ff326531ca18b417ad0f46ff",
+      "seconds": 168.18424700945616,
+      "mean": 24.905542729306596,
+      "p90": 45.56155280924013,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_scaml",
+      "method": "scaml",
+      "task_id": "uts/New IT/F4/K5/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_scaml_20261115/events/scaml/uts/New IT/F4/K5/r0.json",
+      "source_sha256": "3ab84d96b38fb2fe7f644e641d99329edf73d24947560d0485ac45450f8b3efa",
+      "seconds": 164.72529288381338,
+      "mean": 18.87820020900547,
+      "p90": 31.822987319458907,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_scaml",
+      "method": "scaml",
+      "task_id": "uts/New IT/F8/K1/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_scaml_20261115/events/scaml/uts/New IT/F8/K1/r0.json",
+      "source_sha256": "45fc51833d388dac0fca081c6a0f73122f8fecd04e9c244316766077d20de898",
+      "seconds": 215.20189900696278,
+      "mean": 24.32258355214249,
+      "p90": 44.69940706716145,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_scaml",
+      "method": "scaml",
+      "task_id": "uts/New IT/F8/K3/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_scaml_20261115/events/scaml/uts/New IT/F8/K3/r0.json",
+      "source_sha256": "33fa564c98bd53fbc026b04ade4f3f29fc3f15226c5a0c069cea6e39a61d9f6d",
+      "seconds": 226.69589553773403,
+      "mean": 19.18113768657836,
+      "p90": 33.409220019446515,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "uts_scaml",
+      "method": "scaml",
+      "task_id": "uts/New IT/F8/K5/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_scaml_20261115/events/scaml/uts/New IT/F8/K5/r0.json",
+      "source_sha256": "f841a80b1bdbee6339b6c63f7af0c9677e13cb33fadbeeb2f5ddbeb20d063e90",
+      "seconds": 227.41328036412597,
+      "mean": 19.060639792976943,
+      "p90": 33.504275413496245,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "tampere_scaml",
+      "method": "scaml",
+      "task_id": "tampere/TIE1/F0/K1/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_scaml_20261115/events/scaml/tampere/TIE1/F0/K1/r0.json",
+      "source_sha256": "affd3e92824acc8df6ad530f7db407fa08ff6aa96c71135c296de3b289a670c9",
+      "seconds": 1031.0188204944134,
+      "mean": 24.72994542009043,
+      "p90": 49.08555166879336,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "tampere_scaml",
+      "method": "scaml",
+      "task_id": "tampere/TIE1/F0/K3/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_scaml_20261115/events/scaml/tampere/TIE1/F0/K3/r0.json",
+      "source_sha256": "1408dd72eaf2948b27a5ceeb2d897c6246205aa4391cf6d8af5e8e094336c1b3",
+      "seconds": 1047.2988407984376,
+      "mean": 27.214950251925714,
+      "p90": 46.10229033315886,
+      "H_S_Q_meta_data_match": true
+    },
+    {
+      "stage": "tampere_scaml",
+      "method": "scaml",
+      "task_id": "tampere/TIE1/F0/K5/r0",
+      "status": "completed",
+      "source_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_scaml_20261115/events/scaml/tampere/TIE1/F0/K5/r0.json",
+      "source_sha256": "c8e241e6e9589d257e7c95efee5bd9ea002be316e5fc7f50cc995562230ca15f",
+      "seconds": 1100.312928918749,
+      "mean": 27.513262431031865,
+      "p90": 46.51400556821504,
+      "H_S_Q_meta_data_match": true
+    }
+  ],
+  "DL_selection": {
+    "finetune_dnn": {
+      "seed": 0,
+      "hp": [
+        3000,
+        0.001,
+        100,
+        0.0003
+      ],
+      "hp_scores": {
+        "(3000, 0.001, 100, 0.0003)": 12.568370009998977,
+        "(3000, 0.001, 300, 0.0003)": 12.96616135651066,
+        "(3000, 0.001, 100, 0.001)": 13.824093142578324
+      },
+      "source_selection_seconds": 76.13663774728775,
+      "source_fit_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/source_models/finetune_dnn.json",
+      "source_fit_sha256": "6428c87f286431c5f1134ffdd21d4dd02be4f36ae57c7b03ce12d69a23e1bf5d",
+      "model_sha256": "2655a277aa7e69c7af9fe866a9353f64b19b7cd50db58360009b8e32a680b710",
+      "source_buildings_available": [
+        "B0",
+        "B1",
+        "B2"
+      ],
+      "source_buildings_used_by_existing_selector": [
+        "B0",
+        "B1"
+      ],
+      "selector_floors": "first two source floors per building"
+    },
+    "maml_dnn": {
+      "seed": 0,
+      "hp": [
+        1500,
+        0.001,
+        5,
+        0.01,
+        3
+      ],
+      "hp_scores": {
+        "(1500, 0.001, 5, 0.01, 3)": 12.175647762066301,
+        "(1500, 0.001, 10, 0.01, 3)": 12.71179347790937,
+        "(1500, 0.001, 5, 0.003, 3)": 12.739586313476737
+      },
+      "source_selection_seconds": 84.85252743586898,
+      "source_fit_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/source_models/maml_dnn.json",
+      "source_fit_sha256": "9e3914da708420dce0321fc705765097a1090ee8f8ba616fadd874635f9ba00f",
+      "model_sha256": "71186378137a00a916c858cb53cfa5b309660130e99368edaa71dfe66dbaa586",
+      "source_buildings_available": [
+        "B0",
+        "B1",
+        "B2"
+      ],
+      "source_buildings_used_by_existing_selector": [
+        "B0",
+        "B1"
+      ],
+      "selector_floors": "first two source floors per building"
+    },
+    "pretrain_dnn": {
+      "seed": 0,
+      "hp": [
+        3000,
+        0.001,
+        0,
+        0.0
+      ],
+      "hp_scores": {
+        "(3000, 0.001, 0, 0.0)": 12.922030076768966
+      },
+      "source_selection_seconds": 24.5929233469069,
+      "source_fit_path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115/source_models/pretrain_dnn.json",
+      "source_fit_sha256": "8c5ba9d772beba114adbf7e9bde7096d0f28f408dd23bd4652814f40a23ab4aa",
+      "model_sha256": "9d9efa14e73fc46191516e43a9f26d8a4748bfbc7b66369043001bbb6484f014",
+      "source_buildings_available": [
+        "B0",
+        "B1",
+        "B2"
+      ],
+      "source_buildings_used_by_existing_selector": [
+        "B0",
+        "B1"
+      ],
+      "selector_floors": "first two source floors per building"
+    }
+  },
+  "ScaML_optimization": [
+    {
+      "stage": "uts_scaml",
+      "task_id": "uts/New IT/F4/K1/r0",
+      "source_key": "0360914e66b6287613052af73394ef5ed1b8cf0fff5799c403e065dd51bd617f",
+      "cached_source": false,
+      "APs": 371,
+      "H_rows": [
+        453,
+        486,
+        419,
+        470,
+        917,
+        963,
+        750,
+        915
+      ],
+      "S_rows": 3,
+      "source_fit": {
+        "selected_models": 16,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 96,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 56,
+        "selected_parameter_sha256": [
+          "9377e72432713b8d4cba30ba0ff896649ed815801226e35cf6afe597db699c94",
+          "2d4085b68be6aa73dc6292f23ef19adecbb4aeeb38ebc202af3f8a9dee0e947a",
+          "c5800eb676534b7a533090639e4cd66c8396cbb688ab54fd53b0ef60c68e2ad3",
+          "b64334eb1aae4624404a9978e4dd235148323a8d310843423d24ecccae3458b2",
+          "6e1c1342df4a50327362e2d7a26829609da6f8042e4116615cb1c8c3f4ce684e",
+          "723fe7aea734d196c9dea4219e9ab76b62c85981feb750782f501876c10f4998",
+          "68b74e8f95051628b7d68afcb978f9380df50f576201ac744ec0efec81d65acb",
+          "970f746cdbe8a54c8b8c040d89b93bf1f7f2b8244da83c28e9d14ed4b0c3a199",
+          "04f25895277619316eb937235d8e24ae925618a63397513d0b407b91def09f10",
+          "364896bf54009b38d3c1d1d86d1194ca239857ea1ee51dfbc2c9354c4fbabae3",
+          "09e74f4daab07b29a50a31be4302aab8d5fc96b3555b12994498d38f7a426330",
+          "c21bd3da68aa146dfb79dfdac9ce4d542e67c28c18e51807484bcbef98435812",
+          "d55b2989ea93e887e725157e45923dd596ff38dcc97ea40ffa289aaab60c9d96",
+          "063cc87b753e00114e07b7dc1982886b8c12af8eb6fe799d8008544270b04664",
+          "fe9cfb97cd1c3c9199249a13c4c85231cffc0bad21163dc682671dced1a17524",
+          "bb40df8014caadf74749679b01b6c70ed294cd84a61b2a357165a3aabca179c2"
+        ]
+      },
+      "target_fit": {
+        "selected_models": 2,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 11,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 64,
+        "selected_parameter_sha256": [
+          "f0a5a3a95e93532c798ac96d45a160d4d6ee9c8ae14946680f69411d9dd91bfb",
+          "60cf1770ed0af427b5d248715a008d027b92e301e471b6b8df09daaf4007aff8"
+        ]
+      }
+    },
+    {
+      "stage": "uts_scaml",
+      "task_id": "uts/New IT/F4/K3/r0",
+      "source_key": "50e1202b3e027092d9a262c2808a194c897e741699a5fd1548905b2e8c3a90d4",
+      "cached_source": false,
+      "APs": 372,
+      "H_rows": [
+        453,
+        486,
+        419,
+        470,
+        917,
+        963,
+        750,
+        915
+      ],
+      "S_rows": 9,
+      "source_fit": {
+        "selected_models": 16,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 96,
+        "unsuccessful_optimizer_attempts": 1,
+        "max_recorded_iterations": 65,
+        "selected_parameter_sha256": [
+          "11abb3d636d9621c2f8f18ec69bf85e4b83587f217187fdb9bf2f45313140f35",
+          "21d7b6f0bf50ea2e5656f4045a3a974a93db1cde74290de65813e5cfd296adfe",
+          "6d4df7bf1b9b7f015105b7ad1745c33596cd16f73d231b34a711d30973729e90",
+          "9fd673aa2ea788ffa3d741a736f1378cce96090081f049d1aebfb2795d91f23f",
+          "456160976e39434a45b53fb3f6dadd4233c2f8ea21e01810cf1c95140eebf73d",
+          "2f5508ff78e01efce0786975f551de04396bce282a13881862ee8d0ce03ac722",
+          "96a454b055962f22dbdc213d72686cec72d5841da6abadcc9fe2f6f7262c4fb7",
+          "d5d69f6f4483252df83e2e133e4cf13b973359c5e5c692b475a9ea1ba70eb853",
+          "fa3df633784eeecdbc8fd073e9df3a54074dedc2aead1d61dc2329d80e4f9002",
+          "d5fbe6c5df598223f89cbaffd10dfc858c8d1d9abba3a7b4ecb25c5d9a53b4b8",
+          "da3572872bc9624b255ca4ce29d835ef071ef59788296fc886caadd86fca0a84",
+          "8955609951b74f3047d4622749793d6f141cb517c2681cae8c57e761382a2095",
+          "e93b466ad04175fc72aa66598a2813b211838f5406a1f55c1b1edce938efd477",
+          "29681a14167dadfcd722a7c4cbf6f0d5540280745ddea5b291db0912b25ed142",
+          "0550e3ac57a295e6e83b9a736d27c025c1190366f5d4ee6e34298574f0d4141b",
+          "23af33457aebd256bce4d84087d8ee958a747875a40bac296444f59a2bc3e842"
+        ]
+      },
+      "target_fit": {
+        "selected_models": 2,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 11,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 47,
+        "selected_parameter_sha256": [
+          "f277e01b56750d889539d4beb4c4e4dec367b6dd45f6212d8497ab7b6fb03dbb",
+          "e4fcd1ea5b0f79b4933faa399d75904daa30ec6e4726d24616101d02c619159b"
+        ]
+      }
+    },
+    {
+      "stage": "uts_scaml",
+      "task_id": "uts/New IT/F4/K5/r0",
+      "source_key": "441def5716e74cf609cc8d6808173f17368fa2fa74b93f70ed30cd451db880b9",
+      "cached_source": false,
+      "APs": 375,
+      "H_rows": [
+        453,
+        486,
+        419,
+        470,
+        917,
+        963,
+        750,
+        915
+      ],
+      "S_rows": 15,
+      "source_fit": {
+        "selected_models": 16,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 96,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 69,
+        "selected_parameter_sha256": [
+          "270066ea9e6df8551cf8cbf091898ebe16f4004b75402fbfed0e84e752e16623",
+          "53bfc872d869ccb85b41e49b703135f9f146bcac0b61987983c3c05a41a3b1d6",
+          "da27f7e6eec1743c7bf23d9ac0be43dc6b1d09ad1e9e54fa61f42d83c3d90a0b",
+          "7f8fe120082189976ff5be8b3109abd754a76795af020002e2f23bc32c07aad4",
+          "96e3621159908860a026cce0c25114d38cc80c1bda661898f986a5f1bdaff63e",
+          "208a240a68cb1057dcb365ce681496fb4898c97dc378d028d093ead2654f1391",
+          "bb03dbf0528df5e5388639ec17851f09a1f1b90751d4a4dec907ce034e92911f",
+          "82c7c81ab2f680188f1e0f68fff9e2b810353011fd3780d4c37df726e9395882",
+          "639286ce0c9e39350df507414c0f04f06fbb2c855569485327882184b8462733",
+          "816f37d7eec685657e23010fa2d8c2537702662063adfaa2b11b8ced2fb08b2d",
+          "a142c8d02abe6643484c77e4771cd70da74fee48194f1ab7f14ae60fd33efe31",
+          "ad34c80c4e0612e8e3c721a7788f2b97c3fb1aeb774a19cc1e5bac4175e7f14d",
+          "55dc5ef1498f0a3909f17ea823875c8f0fc2f1750c8555358a5830f874dd4442",
+          "c3bca1c432b4d02716a3aa95d6fc9757720e181762521e1e90e577df1260776c",
+          "11ea8524b85099c8fc62182eb9033204d2702ae6328ed950b9ec779732e18ccf",
+          "b25d89e730744f313c187cc4a62240f876fcabbfc24ab80e8afbd28535e8df03"
+        ]
+      },
+      "target_fit": {
+        "selected_models": 2,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 11,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 42,
+        "selected_parameter_sha256": [
+          "adb65db8b266e33f1e94d8801359dc6cf7ab597995eac1d202ed0063cdb6c709",
+          "b30b6826ef8a47694e49b41c7441bd212abfc2b5e1e578d00b23380003c4fca3"
+        ]
+      }
+    },
+    {
+      "stage": "uts_scaml",
+      "task_id": "uts/New IT/F8/K1/r0",
+      "source_key": "ad0497a8e03c18007da50fb72ea4001203e6bde3eb0509ec0370dfcbabe61019",
+      "cached_source": false,
+      "APs": 362,
+      "H_rows": [
+        1095,
+        453,
+        486,
+        419,
+        917,
+        963,
+        750,
+        915
+      ],
+      "S_rows": 3,
+      "source_fit": {
+        "selected_models": 16,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 96,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 65,
+        "selected_parameter_sha256": [
+          "26fe17e24be699e04a33e585b8794aee54ec6f0abd12e73b5961e9a684850b87",
+          "e6a15c2a03071aa689da1b50abb0340b9240b5eb6b72c29d0f97c45ba3310fa5",
+          "8590dfcc96311f3f6bc531fc895e6c0db8a4f10c03e243b733dfff4718813223",
+          "a8c664386027b7b441cd1fb98dc99d0072179069c3410cf31695e99f7c6fc3c7",
+          "fc30e4954ad37b143480ba9f5b4669b7b8ffc81b93f3921750c983c65ebb776b",
+          "a793403627e3cb45ce667781a88696ae5cfb3568b88e41882c9db2f420e38285",
+          "ec2ae969c0c67b78fb53fbe944b298be5c27f377bf89a5be0524e70380f4e59d",
+          "308b93d895ca49127b58f0658fcd8ea3f9a5c8be480c85087b2742404cdc654a",
+          "77b953eaabc070e9049195e9a2135431dc6d654b52cae3ddc5e7b6820b1dd4b9",
+          "bf3ef890159953687ed5fd1b15d0104d2a588128b3bdacacb398c9dd08987e9b",
+          "88a3381fca0ddc7d00d4a45cca7d00d4e7e4b442857a2af8295484fc472a8442",
+          "fadbbdc4c759c7cd4c1aa4c1c629504c1c24b61bf2f0933c2da683f98317e7e0",
+          "563671ea26e1f8ee48d428ff31e677f12502ebc9173ad753a5cf986d60e8e976",
+          "d4ccdacaf59bfe16a500d13bf76e7ede16eeab8fac3b1a0b8556dfa35c9697ac",
+          "67294985cd8fb3d6fa1942a5412fcfc66ddb528c3da278d44a5425a06ef03cf4",
+          "6bdac56d13a8cf949802dffcdf5114ee266cdcd43559f42f17fc4e4f81ab1a4e"
+        ]
+      },
+      "target_fit": {
+        "selected_models": 2,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 9,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 44,
+        "selected_parameter_sha256": [
+          "afa1543f1c5b861513a0241e4c72d3abab2ff51b44013b3ca4f85bdeac70820d",
+          "3360096a797be67c749442f61896694d2446b89e7e93484c9ab0815a6d503d3a"
+        ]
+      }
+    },
+    {
+      "stage": "uts_scaml",
+      "task_id": "uts/New IT/F8/K3/r0",
+      "source_key": "f777beed362cdb62764805849141cc15ba2b158fcc4a74b81255ab7306b11c73",
+      "cached_source": false,
+      "APs": 377,
+      "H_rows": [
+        1095,
+        453,
+        486,
+        419,
+        917,
+        963,
+        750,
+        915
+      ],
+      "S_rows": 9,
+      "source_fit": {
+        "selected_models": 16,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 96,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 54,
+        "selected_parameter_sha256": [
+          "283b2ed40c939d0f8d5c309a910e94de299cf7bfac71c6ca65fea231469ccc78",
+          "f5f18479c23a46521314d177180eb86cde797a48c552a25b6d513d5df501380a",
+          "8bb6cdfa70c30f1ff5a695378478356660787bfcf46a8e31d85c679d77b72007",
+          "3d0379b3d89c790cc8c3bab673106238d47a6685e08ee663cd66a05a670273c5",
+          "8ebbb50c160b4a3f3a5dbfd5dc5cc50313d88b96af5cfe2b6172389b800baa02",
+          "d3a7d6fc178e89eb0ab7ec2faebabe4004dbdf1cbd4785e0a823b5e1988097b7",
+          "f5550f4f5e6aa6836c2f1c6af3075080d9ce764e716848a486a54f8262295b3e",
+          "7605a1800d44737d8270fb2ae1a47a1b4e2b73d4753ba504c0892aa74763f948",
+          "9e75fbe79dccff22268d5fe8b7a023614eacef8966707b3fba815e3bc7cd85c3",
+          "152f2fd8684b8afef2a4513258cf7bc47e64579959948f06d932c413a271e511",
+          "5256bee1a536dc24eeb768113498c9402ddccef99324ebabf8910cf6ea075cf6",
+          "b8684fe11bf5daa43324508ad6f7b7653dd84759c4b63f896b99bc27290c40e5",
+          "5b84e6d314f747d01c9af02d2cfd55c581a3e92e6412bbca13ae54cd4baf3ae5",
+          "0af141aeb04a49206c119123c68b3f0cc7d3936629fe42667a3ec15f7e6a0c4b",
+          "6f7460aaeaffdbec05e7c3a164ce49086578522e791328f5d7eae6a23f412676",
+          "21f768dbd45f3f532e0718e36f929cf30402cc3fcaf8577438a328951dcdbbf9"
+        ]
+      },
+      "target_fit": {
+        "selected_models": 2,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 12,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 39,
+        "selected_parameter_sha256": [
+          "e2fc2e993f19ab3a55e1a4b55b144f031b305ff2b79b182ddafa3e1383af52a6",
+          "2cff018e063de4ebce05adb165b257b52e2f644b519b705e4b12d02c5a7a5225"
+        ]
+      }
+    },
+    {
+      "stage": "uts_scaml",
+      "task_id": "uts/New IT/F8/K5/r0",
+      "source_key": "da3049e7b790aec5ff24e7304fc7a2d9f75a3cb14052bcecf3ea2663270356d7",
+      "cached_source": false,
+      "APs": 378,
+      "H_rows": [
+        1095,
+        453,
+        486,
+        419,
+        917,
+        963,
+        750,
+        915
+      ],
+      "S_rows": 14,
+      "source_fit": {
+        "selected_models": 16,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 96,
+        "unsuccessful_optimizer_attempts": 1,
+        "max_recorded_iterations": 61,
+        "selected_parameter_sha256": [
+          "f73c7a239f88634293812d4742aaeb6515f6b364748c85045d0118201432965b",
+          "2e694e31fb55a166a061b08bb5839edf53bc3afead68c3592101b58c0513fd30",
+          "1c6a4a61e1523c063c169c6fbf6d166eea6d0948e838b0fe673f9b89918ba7ba",
+          "ab83ee2efb9f8bd27dcecfa528461c90642ab370d677ff253d1cf2db9900b5d0",
+          "d8fc46d786d6da6d1230d6728ba6737e2e0dbb1efa33c04e2777b9cffeccbdab",
+          "fd80a4b15b010a6ffd70585dee60f0977ccd4468b34534832526afd3bb3ff29e",
+          "ba6625d87183f005f9aaa5d5a24dec82ebae1c00d0d834d272b75e5bbe031aeb",
+          "109c1baecaaea6bd9e2c00c9272c930563944448526bdf17b68efed0971e1859",
+          "b2fdf4ef5241917f5ced0ac24d46f249984d391265bed9df2c71be82b8a55df9",
+          "b1cb91371c444d296c17b63e8754159d2d8a496b8b5736b4154dfc44b6819227",
+          "98dbd88a9f8221574a5bef58c529ce92922f6bf8831e4e1d296489e6131309fb",
+          "40dba853e45dee732e7235e45b3cd97189cf8e5447d16c49b3eeb039344b98f8",
+          "767b7e598a9b90163ef06d8f91c4c81bc9cf13bd901772a0df2412f4b8f5d9fc",
+          "8fe721791936c2123912021213fd696bcf4c72768c43a72c3e6835ec14173d4d",
+          "3b0404b82c89181ddad1ac20c535d4d2f7705be98fa5f2d116b563c3fafc32b8",
+          "f564dd8f1e3717cd8471a1c36e4bb7bbc32047df56af41de8dcf5add27bfdf76"
+        ]
+      },
+      "target_fit": {
+        "selected_models": 2,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 11,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 47,
+        "selected_parameter_sha256": [
+          "1da730a75d100b231c9ef06cb84afb6f80b04dd0f023d1b5f3824907229c0d53",
+          "7b072153c622cc7690a9d1f0ed32d93b2817ab7d0c3502836ec72adac19ffab3"
+        ]
+      }
+    },
+    {
+      "stage": "tampere_scaml",
+      "task_id": "tampere/TIE1/F0/K1/r0",
+      "source_key": "510b2e5919766e126a21041be84d9c92239647601c0e300957d3226d64673735",
+      "cached_source": false,
+      "APs": 447,
+      "H_rows": [
+        171,
+        2475,
+        1007,
+        930,
+        78
+      ],
+      "S_rows": 1,
+      "source_fit": {
+        "selected_models": 10,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 60,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 96,
+        "selected_parameter_sha256": [
+          "4d43a6f8d2e93be24e7f0dc5c044266c4490af142a9b7cc4f02f1ea19f82d8eb",
+          "1a8cb630fe9230bd51e0a9d834d3acd847f1c6ffb46527205201923bc965c7c1",
+          "eb06057e4484aca785f65597cd8410bc383abc8373f0e3d9eb48b81352753486",
+          "2e421e9daa5c0a05f41b09fe7d70b7360e0718be5034c6e52eda54b63ec77b3d",
+          "833b6e96c8401091ea9319f4bbb7fac65a48e9643e941ac11749e68b4d3bb995",
+          "644dbeb473b0d87654952cc915267d0a728cd147fbb1127b9cef352bc04dc9e9",
+          "f708e07ae586038029c31f591bd60ae843fac005828c22dd0e25b85e82a116f4",
+          "3e0479c26655758c1062b01134a222e4be567e3a13834ae4692aa0b9eb83787e",
+          "54b267a735c8a0811ea29fea9e902620067c0d49b2470bc8478a2996b5de1d95",
+          "5fc59c63098edf1adfe0aad0011e2dd24fe6909d9627c760e4942ab05ce4c098"
+        ]
+      },
+      "target_fit": {
+        "selected_models": 2,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 7,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 58,
+        "selected_parameter_sha256": [
+          "5fe586d43507ce5d2641e839f95ca2d981a1309338632d7b12042c3a71a0663e",
+          "57e139e8a83f6a17ce8fa416e4de7e2ba549ba51f2d42e76605397d59933e56f"
+        ]
+      }
+    },
+    {
+      "stage": "tampere_scaml",
+      "task_id": "tampere/TIE1/F0/K3/r0",
+      "source_key": "f9eb7c2f6b5de920356049123557589d459825c96e32d60db9381043d1847196",
+      "cached_source": false,
+      "APs": 449,
+      "H_rows": [
+        171,
+        2475,
+        1007,
+        930,
+        78
+      ],
+      "S_rows": 3,
+      "source_fit": {
+        "selected_models": 10,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 60,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 96,
+        "selected_parameter_sha256": [
+          "466333b92000963ecd8d6ee7db412f2576ae4fe1d74ddf50cfe3b1223f519395",
+          "9c4a2bad8bccaf9067dcc01c24386eb8c924d6dceba360858a4b759ddfdeae3f",
+          "b37c96554a895585428b4ce1bc3e8bef4f08b7c9cb257b3a0ba58a4870028f60",
+          "f1dde2ae6883f319f020632bca1e87626b1434ee588f5eb7b1f606f5cb5e528b",
+          "0c77b5d7a28de4881f86d480a1c2fee0063a21b4328bb21538e8edb52e3b41cd",
+          "679386f797346281c5d1f2dbe7113b44ef431f6c4b4e1cdd0324557863e77ccd",
+          "51d6b142068834fcf54bdfce331aee1921e2ddad5d38b6cf6ed041ee7dd1f3af",
+          "36f11efae7f8fd90a93c0fa6a6664ed19b671ece9b3eda7f11bae72d203b961a",
+          "aa4d1294e207f8717c420f0f5d29502fc370efece08ee67aa78b765d34921b6b",
+          "dbe8c5afbdf9521bce04369d404f019e05b24e1f5afaae35b5a64074a891f34e"
+        ]
+      },
+      "target_fit": {
+        "selected_models": 2,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 9,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 35,
+        "selected_parameter_sha256": [
+          "6e5239b4a051e1be4a516be4d9c21113f04ba9759e51c3b10e35fef5eba0954f",
+          "ee11f3db75c6a13788873a988ddd2b35cd85e1c64672b3e79a52caa4e6200dff"
+        ]
+      }
+    },
+    {
+      "stage": "tampere_scaml",
+      "task_id": "tampere/TIE1/F0/K5/r0",
+      "source_key": "6a56353e1c614f5fe1482c028e76084210337e13287bbcf439733f6deed7f32e",
+      "cached_source": false,
+      "APs": 450,
+      "H_rows": [
+        171,
+        2475,
+        1007,
+        930,
+        78
+      ],
+      "S_rows": 5,
+      "source_fit": {
+        "selected_models": 10,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 60,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 96,
+        "selected_parameter_sha256": [
+          "79d7c57e282486fb0f247adaa305794b36441abc6066c9faf4b007b5ff236a07",
+          "ddc28207f02701f857abdb5e39fc1fcaa65e7629afc7e460166073048e9d1657",
+          "823e28b63c581ec141a4ecb61db02bdf8ad143c8d5045de43d9b20fad76f361d",
+          "47062b1c9b4928e6e2f16aa752f88bbae4af74525281fa7660c6b71a0c885415",
+          "6bb029058f46e3870cbbd9a2f3642fa55a4029bfc6c982dfcbeac202902c5056",
+          "440b8a4f3c09d45e0503d91451c3b3a4f2325fe573a87ab69f76889c40f11762",
+          "d035fde2ff84e6a25369195e21c82a2a05d4626b4b3af8a21f5399499bd5831b",
+          "dfb43a801392f26e65d5936e28d965b2bb52b11fc16f5d05d30674b0ef9de6a7",
+          "967fa4e979b6b23f07ec0601752df7a72cdccb5baf5750ea1f0eec34fb6c8b54",
+          "201cb475a4553fabee0e8a7a9d7534d25e418c19894fe66b1fe022d1aead4823"
+        ]
+      },
+      "target_fit": {
+        "selected_models": 2,
+        "all_selected_optimizer_success": true,
+        "selected_training_objectives_match_best_successful": true,
+        "recorded_optimizer_attempts": 11,
+        "unsuccessful_optimizer_attempts": 0,
+        "max_recorded_iterations": 38,
+        "selected_parameter_sha256": [
+          "0eb730da849ff084d3f868df8e8929bfb07073552ab759fbaa6d2112a16dcb7d",
+          "3c193998347b1a20ff419dc6c19ad2b49460a8e834d36a9ebbaa8f018c67ed37"
+        ]
+      }
+    }
+  ],
+  "warning_records": {
+    "uts_scaml": {
+      "raw_log": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_remaining_baselines_execution_20261115/uts_scaml.log",
+      "raw_log_sha256": "492ce10d80b4864303a881107b81b7d5c84142414a9de67ffd5876a34de63364",
+      "logged_restart_skip_lines": 9,
+      "logged_sampling_retry_lines": 61,
+      "logged_numerical_warning_lines": 5,
+      "preserved_warning_lines": [
+        "Error occurred while optimizing the model hyperparameters: `Matrix not positive definite after repeatedly adding jitter up to 1.0e-06.` This restart will be skipped.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.",
+        "Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 4 times in a row.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/botorch/fit.py:75: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal",
+        "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/botorch/fit.py:75: NumericalWarning: A not p.d., added jitter of 1.0e-07 to the diagonal",
+        "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/botorch/fit.py:75: NumericalWarning: A not p.d., added jitter of 1.0e-06 to the diagonal",
+        "WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `All attempts to fit the model have failed.` This restart will be skipped.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/botorch/fit.py:75: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal",
+        "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/botorch/fit.py:75: NumericalWarning: A not p.d., added jitter of 1.0e-07 to the diagonal",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 4 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.outputscale_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 4 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 3 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 4 times in a row.",
+        "WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row."
+      ]
+    },
+    "tampere_scaml": {
+      "raw_log": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_remaining_baselines_execution_20261115/tampere_scaml.log",
+      "raw_log_sha256": "e818f839eace333b26ac2c87e499a66ddfd4c846fee4bf4312c79cfe6ccb5261",
+      "logged_restart_skip_lines": 9,
+      "logged_sampling_retry_lines": 22,
+      "logged_numerical_warning_lines": 0,
+      "preserved_warning_lines": [
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.",
+        "Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.",
+        "Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 4 times in a row.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.",
+        "Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.",
+        "Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.",
+        "Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row."
+      ]
+    }
+  },
+  "batch": {
+    "status": "completed",
+    "start_epoch": 1794672609.0424116,
+    "attempts": [
+      {
+        "stage": "uts_dl_seed0",
+        "pid": 2430029,
+        "returncode": 0,
+        "seconds": 313.698477268219,
+        "validated_events": 18
+      },
+      {
+        "stage": "uts_scaml",
+        "pid": 2436808,
+        "returncode": 0,
+        "seconds": 1144.5239000320435,
+        "validated_events": 6
+      },
+      {
+        "stage": "tampere_scaml",
+        "pid": 2460482,
+        "returncode": 0,
+        "seconds": 3179.7797050476074,
+        "validated_events": 3
+      }
+    ],
+    "outputs": [
+      "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115",
+      "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_scaml_20261115",
+      "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_scaml_20261115"
+    ],
+    "end_epoch": 1794677247.05992,
+    "elapsed_seconds": 4638.017508506775
+  },
+  "run": {
+    "start_epoch": 1794672608,
+    "end_epoch": 1794677247,
+    "elapsed_seconds": 4639,
+    "exit_code": 0
+  },
+  "limitations": [
+    "ScaML final selected models optimized successfully; sampling failures and skipped restarts remain in original logs, so equal configured restart counts do not imply equal successful restart samples",
+    "Optimization success does not certify a global optimum",
+    "Seed0 DL main comparison only; UTS F4/F8 and TIE1F0 subsets do not represent all floors"
+  ]
+}

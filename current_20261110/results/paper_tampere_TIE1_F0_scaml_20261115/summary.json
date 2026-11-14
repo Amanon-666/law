@@ -1,0 +1,93 @@
+{
+  "scaml": {
+    "method": "scaml",
+    "source_fit": {
+      "status": "completed",
+      "seconds": 0.001477811485528946,
+      "sha256": "3a5e0f123b07dcd06683f2ccf7d839dddac87cbc6f5c80a407c12f5bc82df2da",
+      "source_buildings": [
+        "B0",
+        "B1",
+        "B2"
+      ]
+    },
+    "by_K": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 24.72994542009043,
+        "p50": 23.04150442477976,
+        "p90": 49.08555166879336,
+        "query_positions": 60
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 27.214950251925714,
+        "p50": 27.053798123163624,
+        "p90": 46.10229033315886,
+        "query_positions": 60
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 27.513262431031865,
+        "p50": 28.187675741679982,
+        "p90": 46.51400556821504,
+        "query_positions": 60
+      }
+    },
+    "by_floor": {
+      "0": {
+        "1": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 24.72994542009043,
+          "p50": 23.04150442477976,
+          "p90": 49.08555166879336,
+          "query_positions": 60
+        },
+        "3": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 27.214950251925714,
+          "p50": 27.053798123163624,
+          "p90": 46.10229033315886,
+          "query_positions": 60
+        },
+        "5": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 27.513262431031865,
+          "p50": 28.187675741679982,
+          "p90": 46.51400556821504,
+          "query_positions": 60
+        }
+      }
+    },
+    "task_records": [
+      "events/scaml/tampere/TIE1/F0/K1/r0.json",
+      "events/scaml/tampere/TIE1/F0/K3/r0.json",
+      "events/scaml/tampere/TIE1/F0/K5/r0.json"
+    ],
+    "unavailable": []
+  }
+}

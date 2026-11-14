@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "start_epoch": 1794672609.0424116,
+  "attempts": [
+    {
+      "stage": "uts_dl_seed0",
+      "pid": 2430029,
+      "returncode": 0,
+      "seconds": 313.698477268219,
+      "validated_events": 18
+    },
+    {
+      "stage": "uts_scaml",
+      "pid": 2436808,
+      "returncode": 0,
+      "seconds": 1144.5239000320435,
+      "validated_events": 6
+    },
+    {
+      "stage": "tampere_scaml",
+      "pid": 2460482,
+      "returncode": 0,
+      "seconds": 3179.7797050476074,
+      "validated_events": 3
+    }
+  ],
+  "outputs": [
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_dl_seed0_20261115",
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_scaml_20261115",
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_F0_scaml_20261115"
+  ],
+  "end_epoch": 1794677247.05992,
+  "elapsed_seconds": 4638.017508506775
+}

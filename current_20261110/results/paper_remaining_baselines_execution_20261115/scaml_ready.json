@@ -1,0 +1,54 @@
+{
+  "status": "locked_dependencies_prechecked_without_fitting",
+  "utc": "2026-11-14T16:10:21.251251+00:00",
+  "botorch": "0.7.3",
+  "gpytorch": "1.9.0",
+  "torch": "2.8.0+cu128",
+  "device": "cpu",
+  "torch_threads": 2,
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/lib/libgomp.so.1",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-56d6093b.so",
+      "version": "0.3.29",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    }
+  ],
+  "LAW_ROOT": "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/Law-Probabilistic-Transfer-20261023",
+  "legacy_code_sha256": {
+    "external_baselines/scaml_adapter.py": "c73f74b5b4dddeea71e112c3be3f14b7656e367f199cdab4e6c6fd91c517c3b7",
+    "external_baselines/scaml_training_selection.py": "b295bd11e47cebcb8e2de7d7490630651754d5c45f8d04ea467798f6f340a919",
+    "external_baselines/scaml_run.py": "4b2f63fedb73193a95f33f16ec0d1bc8e2cce8bf60c5ad9ab8dfc0dd582b5da5"
+  },
+  "cache_assessment": "Original H/AP/frame keys differ for all K1/3/5 in F4/F8/F0, so nine separate source fits are retained; no retained-GP field reuse"
+}

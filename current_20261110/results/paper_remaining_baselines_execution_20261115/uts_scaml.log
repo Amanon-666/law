@@ -1,0 +1,89 @@
+Error occurred while optimizing the model hyperparameters: `Matrix not positive definite after repeatedly adding jitter up to 1.0e-06.` This restart will be skipped.
+Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.
+Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.
+Sampling from covar_module.base_kernel.lengthscale_prior failed 4 times in a row.
+/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/linear_operator/utils/interpolation.py:69: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:653.)
+  summing_matrix = cls(summing_matrix_indices, summing_matrix_values, size)
+{"method": "scaml", "task": "uts/New IT/F4/K1/r0", "status": "completed"}
+Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/botorch/fit.py:75: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warn(w.message, w.category)
+/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/botorch/fit.py:75: NumericalWarning: A not p.d., added jitter of 1.0e-07 to the diagonal
+  warn(w.message, w.category)
+/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/botorch/fit.py:75: NumericalWarning: A not p.d., added jitter of 1.0e-06 to the diagonal
+  warn(w.message, w.category)
+WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `All attempts to fit the model have failed.` This restart will be skipped.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+{"method": "scaml", "task": "uts/New IT/F4/K3/r0", "status": "completed"}
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/botorch/fit.py:75: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warn(w.message, w.category)
+/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/scamlgp-reference-6717858/deps/botorch/fit.py:75: NumericalWarning: A not p.d., added jitter of 1.0e-07 to the diagonal
+  warn(w.message, w.category)
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.
+WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+{"method": "scaml", "task": "uts/New IT/F4/K5/r0", "status": "completed"}
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.
+WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.
+{"method": "scaml", "task": "uts/New IT/F8/K1/r0", "status": "completed"}
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 4 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.outputscale_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 4 times in a row.
+{"method": "scaml", "task": "uts/New IT/F8/K3/r0", "status": "completed"}
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 3 times in a row.
+WARNING:blackboxopt:Error occurred while optimizing model's hyperparameters: `All attempts to fit the model have failed.` Will continue with restarts to find a stable set of hyperparameters.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Error occurred while optimizing the model hyperparameters: `Sampling of covar_module.base_kernel.lengthscale_prior failed 5 times. Please check the compatibility between prior support and the constraint.` This restart will be skipped.
+WARNING:blackboxopt:Sampling from likelihood.noise_covar.noise_prior failed 1 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 3 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 4 times in a row.
+WARNING:blackboxopt:Sampling from covar_module.base_kernel.lengthscale_prior failed 2 times in a row.
+{"method": "scaml", "task": "uts/New IT/F8/K5/r0", "status": "completed"}

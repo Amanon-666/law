@@ -1,0 +1,129 @@
+{
+  "method": "maml_dnn",
+  "source_fit": {
+    "status": "completed",
+    "seconds": 84.85252743586898,
+    "sha256": "71186378137a00a916c858cb53cfa5b309660130e99368edaa71dfe66dbaa586",
+    "source_buildings": [
+      "B0",
+      "B1",
+      "B2"
+    ]
+  },
+  "by_K": {
+    "1": {
+      "tasks": 2,
+      "completed_tasks": 2,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 14.138273131777275,
+      "p50": 11.058255573237027,
+      "p90": 27.189742217273707,
+      "query_positions": 119
+    },
+    "3": {
+      "tasks": 2,
+      "completed_tasks": 2,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 14.180624567643571,
+      "p50": 11.75464984436014,
+      "p90": 27.096033241850197,
+      "query_positions": 119
+    },
+    "5": {
+      "tasks": 2,
+      "completed_tasks": 2,
+      "failed_tasks": 0,
+      "complete": true,
+      "unfinished_optimization_tasks": [],
+      "mean": 14.619937178341749,
+      "p50": 12.612940530655328,
+      "p90": 25.95288006946735,
+      "query_positions": 119
+    }
+  },
+  "by_floor": {
+    "4": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 10.1667267667594,
+        "p50": 8.213902664035729,
+        "p90": 17.481182339069406,
+        "query_positions": 59
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 10.69358708869793,
+        "p50": 7.520748207232482,
+        "p90": 20.95446888168967,
+        "query_positions": 59
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 11.663331477315468,
+        "p50": 10.018739763385554,
+        "p90": 23.854203173383944,
+        "query_positions": 59
+      }
+    },
+    "8": {
+      "1": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 18.043627057378185,
+        "p50": 14.812881477547123,
+        "p90": 28.866442982402717,
+        "query_positions": 60
+      },
+      "3": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 17.60954475527345,
+        "p50": 15.748191194547331,
+        "p90": 29.607317233408033,
+        "query_positions": 60
+      },
+      "5": {
+        "tasks": 1,
+        "completed_tasks": 1,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 17.527266117684256,
+        "p50": 15.997811716285582,
+        "p90": 28.195114300819444,
+        "query_positions": 60
+      }
+    }
+  },
+  "task_records": [
+    "events/maml_dnn/uts/New IT/F4/K1/r0.json",
+    "events/maml_dnn/uts/New IT/F4/K3/r0.json",
+    "events/maml_dnn/uts/New IT/F4/K5/r0.json",
+    "events/maml_dnn/uts/New IT/F8/K1/r0.json",
+    "events/maml_dnn/uts/New IT/F8/K3/r0.json",
+    "events/maml_dnn/uts/New IT/F8/K5/r0.json"
+  ],
+  "unavailable": []
+}

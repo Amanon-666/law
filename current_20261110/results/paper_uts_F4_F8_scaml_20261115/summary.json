@@ -1,0 +1,131 @@
+{
+  "scaml": {
+    "method": "scaml",
+    "source_fit": {
+      "status": "completed",
+      "seconds": 0.0014430135488510132,
+      "sha256": "3a5e0f123b07dcd06683f2ccf7d839dddac87cbc6f5c80a407c12f5bc82df2da",
+      "source_buildings": [
+        "B0",
+        "B1",
+        "B2"
+      ]
+    },
+    "by_K": {
+      "1": {
+        "tasks": 2,
+        "completed_tasks": 2,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 24.37340685855661,
+        "p50": 22.77237821630612,
+        "p90": 42.777690724537294,
+        "query_positions": 119
+      },
+      "3": {
+        "tasks": 2,
+        "completed_tasks": 2,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 22.01928808591421,
+        "p50": 19.449450319243304,
+        "p90": 38.65425847101795,
+        "query_positions": 119
+      },
+      "5": {
+        "tasks": 2,
+        "completed_tasks": 2,
+        "failed_tasks": 0,
+        "complete": true,
+        "unfinished_optimization_tasks": [],
+        "mean": 18.970186553865037,
+        "p50": 17.412606985962125,
+        "p90": 33.2694237349417,
+        "query_positions": 119
+      }
+    },
+    "by_floor": {
+      "4": {
+        "1": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 24.42509157694385,
+          "p50": 23.083198049988976,
+          "p90": 42.33565270364558,
+          "query_positions": 59
+        },
+        "3": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 24.905542729306596,
+          "p50": 21.72088752542912,
+          "p90": 45.56155280924013,
+          "query_positions": 59
+        },
+        "5": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 18.87820020900547,
+          "p50": 16.995831993243872,
+          "p90": 31.822987319458907,
+          "query_positions": 59
+        }
+      },
+      "8": {
+        "1": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 24.32258355214249,
+          "p50": 22.618925939960043,
+          "p90": 44.69940706716145,
+          "query_positions": 60
+        },
+        "3": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 19.18113768657836,
+          "p50": 17.681419558009733,
+          "p90": 33.409220019446515,
+          "query_positions": 60
+        },
+        "5": {
+          "tasks": 1,
+          "completed_tasks": 1,
+          "failed_tasks": 0,
+          "complete": true,
+          "unfinished_optimization_tasks": [],
+          "mean": 19.060639792976943,
+          "p50": 17.75268122276188,
+          "p90": 33.504275413496245,
+          "query_positions": 60
+        }
+      }
+    },
+    "task_records": [
+      "events/scaml/uts/New IT/F4/K1/r0.json",
+      "events/scaml/uts/New IT/F4/K3/r0.json",
+      "events/scaml/uts/New IT/F4/K5/r0.json",
+      "events/scaml/uts/New IT/F8/K1/r0.json",
+      "events/scaml/uts/New IT/F8/K3/r0.json",
+      "events/scaml/uts/New IT/F8/K5/r0.json"
+    ],
+    "unavailable": []
+  }
+}
