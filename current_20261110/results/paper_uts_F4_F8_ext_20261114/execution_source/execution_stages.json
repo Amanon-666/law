@@ -1,0 +1,154 @@
+[
+  {
+    "stage": "cuda_preflight",
+    "device": "cuda:0",
+    "name": "NVIDIA RTX A4000"
+  },
+  {
+    "stage": "execution_model",
+    "model_type": "paper_bench_20261111.ext_gp_cuda_diagnostic.ReFiGPCUDADiagnostic",
+    "mro": [
+      "paper_bench_20261111.ext_gp_cuda_diagnostic.ReFiGPCUDADiagnostic",
+      "paper_bench_20261111.ext_gp_cuda.ReFiGPCUDA",
+      "paper_bench_20261111.ext_gp_streaming.ReFiGPStreaming",
+      "paper_bench_20261111.ext_gp_fullhistory.ReFiGPFullHistory",
+      "paper_bench_20261111.ext_gp.ReFiGP",
+      "builtins.object"
+    ],
+    "field_cache_type": "_NoFieldCache",
+    "training_performed": false,
+    "model_sha256": "f66c785b1989278340d96bcf7c770869aa46363336366944c9bac04d91483212"
+  },
+  {
+    "stage": "fitted_execution_model",
+    "model_type": "paper_bench_20261111.ext_gp_cuda_diagnostic.ReFiGPCUDADiagnostic",
+    "field_cache_type": "_NoFieldCache",
+    "backend": "cuda"
+  },
+  {
+    "stage": "prediction_backend",
+    "task_id": "uts/New IT/F4/K1/r0",
+    "model_type": "paper_bench_20261111.ext_gp_cuda_diagnostic.ReFiGPCUDADiagnostic",
+    "field_cache_type": "_NoFieldCache",
+    "backend": "cuda"
+  },
+  {
+    "stage": "task.begin",
+    "time": 1794666029.0165446,
+    "VmHWM": "1111788 kB",
+    "VmRSS": "1069796 kB",
+    "task_id": "uts/New IT/F4/K1/r0"
+  },
+  {
+    "stage": "task.end",
+    "time": 1794666097.373723,
+    "VmHWM": "1763936 kB",
+    "VmRSS": "1260460 kB",
+    "task_id": "uts/New IT/F4/K1/r0"
+  },
+  {
+    "stage": "prediction_backend",
+    "task_id": "uts/New IT/F4/K3/r0",
+    "model_type": "paper_bench_20261111.ext_gp_cuda_diagnostic.ReFiGPCUDADiagnostic",
+    "field_cache_type": "_NoFieldCache",
+    "backend": "cuda"
+  },
+  {
+    "stage": "task.begin",
+    "time": 1794666097.4070153,
+    "VmHWM": "1763936 kB",
+    "VmRSS": "1261512 kB",
+    "task_id": "uts/New IT/F4/K3/r0"
+  },
+  {
+    "stage": "task.end",
+    "time": 1794666175.1577957,
+    "VmHWM": "1845628 kB",
+    "VmRSS": "1246552 kB",
+    "task_id": "uts/New IT/F4/K3/r0"
+  },
+  {
+    "stage": "prediction_backend",
+    "task_id": "uts/New IT/F4/K5/r0",
+    "model_type": "paper_bench_20261111.ext_gp_cuda_diagnostic.ReFiGPCUDADiagnostic",
+    "field_cache_type": "_NoFieldCache",
+    "backend": "cuda"
+  },
+  {
+    "stage": "task.begin",
+    "time": 1794666175.1891866,
+    "VmHWM": "1845628 kB",
+    "VmRSS": "1246552 kB",
+    "task_id": "uts/New IT/F4/K5/r0"
+  },
+  {
+    "stage": "task.end",
+    "time": 1794666260.187381,
+    "VmHWM": "1845628 kB",
+    "VmRSS": "1252156 kB",
+    "task_id": "uts/New IT/F4/K5/r0"
+  },
+  {
+    "stage": "prediction_backend",
+    "task_id": "uts/New IT/F8/K1/r0",
+    "model_type": "paper_bench_20261111.ext_gp_cuda_diagnostic.ReFiGPCUDADiagnostic",
+    "field_cache_type": "_NoFieldCache",
+    "backend": "cuda"
+  },
+  {
+    "stage": "task.begin",
+    "time": 1794666260.2186375,
+    "VmHWM": "1845628 kB",
+    "VmRSS": "1252500 kB",
+    "task_id": "uts/New IT/F8/K1/r0"
+  },
+  {
+    "stage": "task.end",
+    "time": 1794666327.1387718,
+    "VmHWM": "1845628 kB",
+    "VmRSS": "1254988 kB",
+    "task_id": "uts/New IT/F8/K1/r0"
+  },
+  {
+    "stage": "prediction_backend",
+    "task_id": "uts/New IT/F8/K3/r0",
+    "model_type": "paper_bench_20261111.ext_gp_cuda_diagnostic.ReFiGPCUDADiagnostic",
+    "field_cache_type": "_NoFieldCache",
+    "backend": "cuda"
+  },
+  {
+    "stage": "task.begin",
+    "time": 1794666327.1700118,
+    "VmHWM": "1845628 kB",
+    "VmRSS": "1255424 kB",
+    "task_id": "uts/New IT/F8/K3/r0"
+  },
+  {
+    "stage": "task.end",
+    "time": 1794666404.103336,
+    "VmHWM": "1860096 kB",
+    "VmRSS": "1258472 kB",
+    "task_id": "uts/New IT/F8/K3/r0"
+  },
+  {
+    "stage": "prediction_backend",
+    "task_id": "uts/New IT/F8/K5/r0",
+    "model_type": "paper_bench_20261111.ext_gp_cuda_diagnostic.ReFiGPCUDADiagnostic",
+    "field_cache_type": "_NoFieldCache",
+    "backend": "cuda"
+  },
+  {
+    "stage": "task.begin",
+    "time": 1794666404.1351063,
+    "VmHWM": "1860096 kB",
+    "VmRSS": "1258516 kB",
+    "task_id": "uts/New IT/F8/K5/r0"
+  },
+  {
+    "stage": "task.end",
+    "time": 1794666487.5125396,
+    "VmHWM": "1865036 kB",
+    "VmRSS": "1262600 kB",
+    "task_id": "uts/New IT/F8/K5/r0"
+  }
+]

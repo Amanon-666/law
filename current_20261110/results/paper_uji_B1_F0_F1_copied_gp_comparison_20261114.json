@@ -1,0 +1,386 @@
+{
+  "status": "completed",
+  "prepared_on": "2026-11-14",
+  "scope": "UJI B1 F0/F1, K1/3/5, r0. Six exposed-development mechanism tasks.",
+  "comparison": "Replace only the learned observation field by the existing source-calibrated copied field in the same GP/log-pooling system.",
+  "source_paths_relative_to": "results/",
+  "metric": "Pool per-position scan-mean errors over six tasks. Identical positions recur across K.",
+  "overall": {
+    "refi_GP": {
+      "tasks": 6,
+      "position_repeat_budget_count": 204,
+      "mean": 9.749486083401715,
+      "p90": 16.856491228642206
+    },
+    "retained_gp": {
+      "tasks": 6,
+      "position_repeat_budget_count": 204,
+      "mean": 10.722437977466903,
+      "p90": 17.51805981332458
+    },
+    "refi": {
+      "tasks": 6,
+      "position_repeat_budget_count": 204,
+      "mean": 9.571778233333083,
+      "p90": 17.490540571291586
+    },
+    "copied": {
+      "tasks": 6,
+      "position_repeat_budget_count": 204,
+      "mean": 15.283657805897835,
+      "p90": 31.26751680926643
+    },
+    "copied_gp": {
+      "tasks": 6,
+      "position_repeat_budget_count": 204,
+      "mean": 11.203847862715868,
+      "p90": 17.574911948758377
+    }
+  },
+  "by_K": {
+    "1": {
+      "refi_GP": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 9.792211461891933,
+        "p90": 17.10773067112215
+      },
+      "retained_gp": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 10.688724731579313,
+        "p90": 18.154561870951692
+      },
+      "refi": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 9.560520392290131,
+        "p90": 17.364062611522478
+      },
+      "copied": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 15.26365543770775,
+        "p90": 30.966584024847577
+      },
+      "copied_gp": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 10.726301297752542,
+        "p90": 17.384391514366225
+      }
+    },
+    "3": {
+      "refi_GP": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 9.6545713324808,
+        "p90": 16.623164079717938
+      },
+      "retained_gp": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 10.928838346630148,
+        "p90": 18.381172704686243
+      },
+      "refi": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 9.501499175782214,
+        "p90": 17.136448620417802
+      },
+      "copied": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 15.207844416411497,
+        "p90": 30.941317893019534
+      },
+      "copied_gp": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 11.425072248460584,
+        "p90": 17.107202650966943
+      }
+    },
+    "5": {
+      "refi_GP": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 9.801675455832411,
+        "p90": 16.72005268768025
+      },
+      "retained_gp": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 10.54975085419124,
+        "p90": 16.08206504611557
+      },
+      "refi": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 9.653315131926906,
+        "p90": 17.79598748666525
+      },
+      "copied": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 15.379473563574262,
+        "p90": 30.914552078761073
+      },
+      "copied_gp": {
+        "tasks": 2,
+        "position_repeat_budget_count": 68,
+        "mean": 11.46017004193448,
+        "p90": 17.642683875059614
+      }
+    }
+  },
+  "by_floor": {
+    "0": {
+      "refi_GP": {
+        "tasks": 3,
+        "position_repeat_budget_count": 114,
+        "mean": 10.744323113097334,
+        "p90": 17.06561578748737
+      },
+      "retained_gp": {
+        "tasks": 3,
+        "position_repeat_budget_count": 114,
+        "mean": 12.306118290053382,
+        "p90": 20.20063288074075
+      },
+      "refi": {
+        "tasks": 3,
+        "position_repeat_budget_count": 114,
+        "mean": 10.256105561502787,
+        "p90": 18.434375714967643
+      },
+      "copied": {
+        "tasks": 3,
+        "position_repeat_budget_count": 114,
+        "mean": 18.802631470817197,
+        "p90": 41.5192124859887
+      },
+      "copied_gp": {
+        "tasks": 3,
+        "position_repeat_budget_count": 114,
+        "mean": 12.784675264806667,
+        "p90": 18.194886614435415
+      }
+    },
+    "1": {
+      "refi_GP": {
+        "tasks": 3,
+        "position_repeat_budget_count": 90,
+        "mean": 8.489359179120594,
+        "p90": 15.552239780217814
+      },
+      "retained_gp": {
+        "tasks": 3,
+        "position_repeat_budget_count": 90,
+        "mean": 8.716442914857359,
+        "p90": 14.738182727869406
+      },
+      "refi": {
+        "tasks": 3,
+        "position_repeat_budget_count": 90,
+        "mean": 8.70496361765146,
+        "p90": 16.498882364722594
+      },
+      "copied": {
+        "tasks": 3,
+        "position_repeat_budget_count": 90,
+        "mean": 10.826291163666642,
+        "p90": 18.118648589856285
+      },
+      "copied_gp": {
+        "tasks": 3,
+        "position_repeat_budget_count": 90,
+        "mean": 9.201466486734192,
+        "p90": 14.492379082454725
+      }
+    }
+  },
+  "event_sources": {
+    "refi_GP": [
+      {
+        "task_id": "uji/B1/F0/K1/r0",
+        "path": "paper_uji_B1_ext_20261111/events/refi_GP/uji/B1/F0/K1/r0.json",
+        "sha256": "6a52653c56e4f2d7f5f0c15883e08570cd0b815daca6223378bd0974b0fe27e7"
+      },
+      {
+        "task_id": "uji/B1/F0/K3/r0",
+        "path": "paper_uji_B1_ext_20261111/events/refi_GP/uji/B1/F0/K3/r0.json",
+        "sha256": "643446a692731cc9479e3048bd1460bde662fdcf81f7f39e661c93262d5b07e4"
+      },
+      {
+        "task_id": "uji/B1/F0/K5/r0",
+        "path": "paper_uji_B1_ext_20261111/events/refi_GP/uji/B1/F0/K5/r0.json",
+        "sha256": "cead0eeecd806f1794065f159c913d268a7e996c910b9b1bb79c20fbaa2a8b0c"
+      },
+      {
+        "task_id": "uji/B1/F1/K1/r0",
+        "path": "paper_uji_B1_ext_20261111/events/refi_GP/uji/B1/F1/K1/r0.json",
+        "sha256": "28b4e74787f4429167b7430387ff46ec9f135c44cd2e21a3b2e5da75b8622317"
+      },
+      {
+        "task_id": "uji/B1/F1/K3/r0",
+        "path": "paper_uji_B1_ext_20261111/events/refi_GP/uji/B1/F1/K3/r0.json",
+        "sha256": "ed240d1faaba94e57d0a50026265d3551b56d5ea05f4929b92d0bbb5d00f3199"
+      },
+      {
+        "task_id": "uji/B1/F1/K5/r0",
+        "path": "paper_uji_B1_ext_20261111/events/refi_GP/uji/B1/F1/K5/r0.json",
+        "sha256": "e2088e7b09197028b34da9270c769efdb6593d3c298ef78fe990e313f15d41a4"
+      }
+    ],
+    "retained_gp": [
+      {
+        "task_id": "uji/B1/F0/K1/r0",
+        "path": "paper_uji_B1_ext_20261111/events/retained_gp/uji/B1/F0/K1/r0.json",
+        "sha256": "54d523b26aa3dfbd48b282a396e95cfa191e93e388d2670cf81ba9f5fdf9d621"
+      },
+      {
+        "task_id": "uji/B1/F0/K3/r0",
+        "path": "paper_uji_B1_ext_20261111/events/retained_gp/uji/B1/F0/K3/r0.json",
+        "sha256": "ffbffce874b9b0e5708c78fc5c8d2d76b1b1707f49223919fa1e1b2333a37a24"
+      },
+      {
+        "task_id": "uji/B1/F0/K5/r0",
+        "path": "paper_uji_B1_ext_20261111/events/retained_gp/uji/B1/F0/K5/r0.json",
+        "sha256": "e1ff1f49c554c52604efe0a86564b58bfa6ca41acbe0074f3fee27c32b9e952b"
+      },
+      {
+        "task_id": "uji/B1/F1/K1/r0",
+        "path": "paper_uji_B1_ext_20261111/events/retained_gp/uji/B1/F1/K1/r0.json",
+        "sha256": "6a75473482d4a5c205e6518aa95d5bb686a5e8a76575b3620f780de7cde1cceb"
+      },
+      {
+        "task_id": "uji/B1/F1/K3/r0",
+        "path": "paper_uji_B1_ext_20261111/events/retained_gp/uji/B1/F1/K3/r0.json",
+        "sha256": "88e767571282012a0efdecd4bc09a442f32d55d309ab3c4f30d9d305165e27c9"
+      },
+      {
+        "task_id": "uji/B1/F1/K5/r0",
+        "path": "paper_uji_B1_ext_20261111/events/retained_gp/uji/B1/F1/K5/r0.json",
+        "sha256": "6d2b5872889d369fe97b1c9c32305a6721325a379581316bfb6a655462742575"
+      }
+    ],
+    "refi": [
+      {
+        "task_id": "uji/B1/F0/K1/r0",
+        "path": "paper_uji_B1_20261111/events/refi/uji/B1/F0/K1/r0.json",
+        "sha256": "85f7a4938da650b2b5d79e069f7913da091a6cbc5859645674d03e30e9df085e"
+      },
+      {
+        "task_id": "uji/B1/F0/K3/r0",
+        "path": "paper_uji_B1_20261111/events/refi/uji/B1/F0/K3/r0.json",
+        "sha256": "b6f472a8511a0ea54f732ddd266aa98e774b2da7e3e3c8c63f81b4cdbe99ff8e"
+      },
+      {
+        "task_id": "uji/B1/F0/K5/r0",
+        "path": "paper_uji_B1_20261111/events/refi/uji/B1/F0/K5/r0.json",
+        "sha256": "67499db432193ae2d4b38aa6b9077dab5af171b2f32fcd424f32fbb587168625"
+      },
+      {
+        "task_id": "uji/B1/F1/K1/r0",
+        "path": "paper_uji_B1_20261111/events/refi/uji/B1/F1/K1/r0.json",
+        "sha256": "2db6a63a541a02b6aa94ac2bcefd2c757d99ff13cc3b4b316a1450a8332082ae"
+      },
+      {
+        "task_id": "uji/B1/F1/K3/r0",
+        "path": "paper_uji_B1_20261111/events/refi/uji/B1/F1/K3/r0.json",
+        "sha256": "4d72815729dab1c00338cffb70a4bc91dc7424767d1b4715dc37da6d46132214"
+      },
+      {
+        "task_id": "uji/B1/F1/K5/r0",
+        "path": "paper_uji_B1_20261111/events/refi/uji/B1/F1/K5/r0.json",
+        "sha256": "24f3a2887b5d40301455d9cafc8a06d224d34892f90cf2a75b7f2fead4a71723"
+      }
+    ],
+    "copied": [
+      {
+        "task_id": "uji/B1/F0/K1/r0",
+        "path": "../../claude_handoff/claude_field_posterior_20261111/results/bench_uji_B1_extra_20261111/events/ours_naive_noM2/uji/B1/F0/K1/r0.json",
+        "sha256": "920d87a53f505ce043fa66c3dca31cef3be3d0e84cfba143e00c856335ee5008"
+      },
+      {
+        "task_id": "uji/B1/F0/K3/r0",
+        "path": "../../claude_handoff/claude_field_posterior_20261111/results/bench_uji_B1_extra_20261111/events/ours_naive_noM2/uji/B1/F0/K3/r0.json",
+        "sha256": "ad7d19622796388c4fb4ba20a16e94eb508254e243c4dd771e53ffd607f28594"
+      },
+      {
+        "task_id": "uji/B1/F0/K5/r0",
+        "path": "../../claude_handoff/claude_field_posterior_20261111/results/bench_uji_B1_extra_20261111/events/ours_naive_noM2/uji/B1/F0/K5/r0.json",
+        "sha256": "61aec6cdd6c9e8491db67d4e9a205ed61d3589835ebcce7ed4667ee0f1a3a74c"
+      },
+      {
+        "task_id": "uji/B1/F1/K1/r0",
+        "path": "../../claude_handoff/claude_field_posterior_20261111/results/bench_uji_B1_extra_20261111/events/ours_naive_noM2/uji/B1/F1/K1/r0.json",
+        "sha256": "afa7ecc8498fff5306dec72303b13fcbd1d88cf8791053779702cfbcaf01f72b"
+      },
+      {
+        "task_id": "uji/B1/F1/K3/r0",
+        "path": "../../claude_handoff/claude_field_posterior_20261111/results/bench_uji_B1_extra_20261111/events/ours_naive_noM2/uji/B1/F1/K3/r0.json",
+        "sha256": "83cb1634e5077509aac98a930cd4161be0ff31d863e95345c54df731b2938566"
+      },
+      {
+        "task_id": "uji/B1/F1/K5/r0",
+        "path": "../../claude_handoff/claude_field_posterior_20261111/results/bench_uji_B1_extra_20261111/events/ours_naive_noM2/uji/B1/F1/K5/r0.json",
+        "sha256": "17c2ea7f673acccbaf900257613f56a416c67a64c2231f7828486dc93ec575b1"
+      }
+    ],
+    "copied_gp": [
+      {
+        "task_id": "uji/B1/F0/K1/r0",
+        "path": "paper_uji_B1_F0_F1_copied_gp_20261114/events/copied_gp/uji/B1/F0/K1/r0.json",
+        "sha256": "5f09653ae6f1bab051cef4c3bf8cb7f7a9e6fee907f9707844c9ec528c5eb629"
+      },
+      {
+        "task_id": "uji/B1/F0/K3/r0",
+        "path": "paper_uji_B1_F0_F1_copied_gp_20261114/events/copied_gp/uji/B1/F0/K3/r0.json",
+        "sha256": "45deebe4895c9a92e06513e7cb092709effefc20fac269f80d7a760ad8146a60"
+      },
+      {
+        "task_id": "uji/B1/F0/K5/r0",
+        "path": "paper_uji_B1_F0_F1_copied_gp_20261114/events/copied_gp/uji/B1/F0/K5/r0.json",
+        "sha256": "1d125c23c8942e73d69b1adf479b41679efd312ff9c86b75c8dc51fc50f4207e"
+      },
+      {
+        "task_id": "uji/B1/F1/K1/r0",
+        "path": "paper_uji_B1_F0_F1_copied_gp_20261114/events/copied_gp/uji/B1/F1/K1/r0.json",
+        "sha256": "bb93be23b2c4527652a2feaf2a441b48eb24314077e3f5b4acbd56860b1a9ecf"
+      },
+      {
+        "task_id": "uji/B1/F1/K3/r0",
+        "path": "paper_uji_B1_F0_F1_copied_gp_20261114/events/copied_gp/uji/B1/F1/K3/r0.json",
+        "sha256": "a73bd413d51f0863fec849e98d1f463b4077fbd0dfe4a2a949fde2b0e3cab65d"
+      },
+      {
+        "task_id": "uji/B1/F1/K5/r0",
+        "path": "paper_uji_B1_F0_F1_copied_gp_20261114/events/copied_gp/uji/B1/F1/K5/r0.json",
+        "sha256": "d8078010cae0d55d528a1ced4e3e1d3c4f22e2927cd117cee6bd8e704d9d0bca"
+      }
+    ]
+  },
+  "source_variance": [
+    118.83144295716258,
+    30.336819498441304
+  ],
+  "execution": {
+    "exit_code": 0,
+    "start_epoch": 1794666445,
+    "end_epoch": 1794666623,
+    "elapsed_seconds": 178
+  },
+  "pre_execution_check": {
+    "completed": true,
+    "tasks": 6,
+    "max_copied_prediction_difference": 6.146728992462158e-08,
+    "code_sha256": "bf30b77e77c878fabc25723cb2276921717ea69f00631ed1dd200e31c0452d44"
+  },
+  "reused_GP_state": true,
+  "new_history_fits": 0,
+  "source_training_performed": false,
+  "first_precheck": "A 1e-8m coordinate-difference gate stopped before GP inference at 4.84e-8m. The original log/code/freeze is retained. A 1e-6m numerical gate was frozen before the six comparisons; final copied-coordinate maximum difference is 6.15e-8m and GP projection difference is zero."
+}

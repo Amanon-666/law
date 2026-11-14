@@ -1,0 +1,352 @@
+{
+  "status": "prepared_before_formal_run",
+  "task_count": 6,
+  "tasks": [
+    {
+      "task_id": "uts/New IT/F4/K1/r0",
+      "source_event": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111/events/refi/uts/New IT/F4/K1/r0.json",
+      "source_event_sha256": "c5c4565a9823229a4322f1e2781bf840a9351bc99b9a3027b9327f3bac733a6a",
+      "H_floors": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "query_scans": 176,
+      "query_positions": 59,
+      "Q_rows_groups_meta_match": true,
+      "original_refi_seconds": 23.63315987214446
+    },
+    {
+      "task_id": "uts/New IT/F4/K3/r0",
+      "source_event": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111/events/refi/uts/New IT/F4/K3/r0.json",
+      "source_event_sha256": "63ac908f073e19bad73106d6a1181e2eae5fc293835f83ec273db3fc84005126",
+      "H_floors": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "query_scans": 176,
+      "query_positions": 59,
+      "Q_rows_groups_meta_match": true,
+      "original_refi_seconds": 24.031372487545013
+    },
+    {
+      "task_id": "uts/New IT/F4/K5/r0",
+      "source_event": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111/events/refi/uts/New IT/F4/K5/r0.json",
+      "source_event_sha256": "3243739ca749d9a5343c2ca1a6d795a61cd32a20b89809556e4268fba013bb2d",
+      "H_floors": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "query_scans": 176,
+      "query_positions": 59,
+      "Q_rows_groups_meta_match": true,
+      "original_refi_seconds": 24.04317118600011
+    },
+    {
+      "task_id": "uts/New IT/F8/K1/r0",
+      "source_event": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111/events/refi/uts/New IT/F8/K1/r0.json",
+      "source_event_sha256": "f57ca37f712cade5743155427eb67e7fc2ac6fd04c22de1ad71664cf02e58d81",
+      "H_floors": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "query_scans": 172,
+      "query_positions": 60,
+      "Q_rows_groups_meta_match": true,
+      "original_refi_seconds": 23.475284945219755
+    },
+    {
+      "task_id": "uts/New IT/F8/K3/r0",
+      "source_event": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111/events/refi/uts/New IT/F8/K3/r0.json",
+      "source_event_sha256": "7313802860583d7614e9c7ae397a8dbb3b0c8bdbf5df8f9568708d3794d33461",
+      "H_floors": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "query_scans": 172,
+      "query_positions": 60,
+      "Q_rows_groups_meta_match": true,
+      "original_refi_seconds": 24.60243021324277
+    },
+    {
+      "task_id": "uts/New IT/F8/K5/r0",
+      "source_event": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111/events/refi/uts/New IT/F8/K5/r0.json",
+      "source_event_sha256": "4332e4925d8a7e15d7217670e42f7623027f2caccae5bc9682a1c3669c6d737e",
+      "H_floors": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "query_scans": 172,
+      "query_positions": 60,
+      "Q_rows_groups_meta_match": true,
+      "original_refi_seconds": 24.49971203505993
+    }
+  ],
+  "target_data": {
+    "New IT": "fed7fa2bb0f37debe608ba87d894d784efe561853fd77bd6903871c84f5a3f1f"
+  },
+  "source_data": {
+    "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+    "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11",
+    "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+  },
+  "source_run": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111",
+  "source_model_sha256": "f66c785b1989278340d96bcf7c770869aa46363336366944c9bac04d91483212",
+  "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+  "imported_histories": [
+    {
+      "kind": "uts_official_GP_20261111_verified_single_source_import",
+      "source": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111",
+      "source_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+      "source_complete_sha256": "23e4a7030d9e5b9788a7f47a0a7246167c23ce466a890f726745c66b7dc3df8e",
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "floor": 4,
+      "legacy_history_key": "34f3c59e2724ae1f13afbdd2ef02f7c5d5efe0c15c5804294b1df71bf8824913",
+      "history_key": "d5e408d355c990c80c8897dc33ee44bcd32a0067697d1261c1a65a78fe8d103f",
+      "rows": 1095,
+      "positions": 119,
+      "origin": [
+        59.38965744292237,
+        17.932758283105105
+      ],
+      "fields": 193,
+      "verified": "Full H rss/xy/acq and raw AP axis reproduce original history key",
+      "transformation": "Only building and AP namespace labels changed; npz bytes unchanged",
+      "reused_legacy_system_predictions": false,
+      "original_field_fit_seconds": 12.22995537891984
+    },
+    {
+      "kind": "uts_official_GP_20261111_verified_single_source_import",
+      "source": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111",
+      "source_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+      "source_complete_sha256": "23e4a7030d9e5b9788a7f47a0a7246167c23ce466a890f726745c66b7dc3df8e",
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "floor": 5,
+      "legacy_history_key": "fbf579d478be4fde912b6b98c901778130093ecefaef0b3e301e83c09350d83c",
+      "history_key": "121586813d2aef2eabb71f57662414c548d1f5b784b33849d5b9bdbe1f033feb",
+      "rows": 453,
+      "positions": 96,
+      "origin": [
+        61.811540838852075,
+        19.13566920529803
+      ],
+      "fields": 189,
+      "verified": "Full H rss/xy/acq and raw AP axis reproduce original history key",
+      "transformation": "Only building and AP namespace labels changed; npz bytes unchanged",
+      "reused_legacy_system_predictions": false,
+      "original_field_fit_seconds": 8.153585065156221
+    },
+    {
+      "kind": "uts_official_GP_20261111_verified_single_source_import",
+      "source": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111",
+      "source_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+      "source_complete_sha256": "23e4a7030d9e5b9788a7f47a0a7246167c23ce466a890f726745c66b7dc3df8e",
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "floor": 6,
+      "legacy_history_key": "e70ff57efd97e8eb8135c44c8ea10fc1dd4b6de470d3615959e300dcf896503d",
+      "history_key": "b9832a19005411173489f494c4859820c69acab17236342ddb0f396fbbd3d8f0",
+      "rows": 486,
+      "positions": 117,
+      "origin": [
+        54.11375473251026,
+        14.497560370370396
+      ],
+      "fields": 185,
+      "verified": "Full H rss/xy/acq and raw AP axis reproduce original history key",
+      "transformation": "Only building and AP namespace labels changed; npz bytes unchanged",
+      "reused_legacy_system_predictions": false,
+      "original_field_fit_seconds": 10.251633498817682
+    },
+    {
+      "kind": "uts_official_GP_20261111_verified_single_source_import",
+      "source": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111",
+      "source_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+      "source_complete_sha256": "23e4a7030d9e5b9788a7f47a0a7246167c23ce466a890f726745c66b7dc3df8e",
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "floor": 7,
+      "legacy_history_key": "b9ee4f87e90c1132292bc91e959b84727775b55d51f15dc538cc8c2f863e9c4e",
+      "history_key": "ad9bab39b527f441342441c953dc758aa2c9840c3c60b37102d955d5ceb0461a",
+      "rows": 419,
+      "positions": 130,
+      "origin": [
+        52.64057040572775,
+        15.63168899761337
+      ],
+      "fields": 193,
+      "verified": "Full H rss/xy/acq and raw AP axis reproduce original history key",
+      "transformation": "Only building and AP namespace labels changed; npz bytes unchanged",
+      "reused_legacy_system_predictions": false,
+      "original_field_fit_seconds": 12.500595178455114
+    },
+    {
+      "kind": "uts_official_GP_20261111_verified_single_source_import",
+      "source": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111",
+      "source_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+      "source_complete_sha256": "23e4a7030d9e5b9788a7f47a0a7246167c23ce466a890f726745c66b7dc3df8e",
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "floor": 8,
+      "legacy_history_key": "ba84985b3b0161252cffec3c1759588dc7c61d012d11024b722281b619fa94e1",
+      "history_key": "3d366f2094d2ac8599702acf850f6d1735fa4d1b35b428fc66a799f9ec2df656",
+      "rows": 470,
+      "positions": 146,
+      "origin": [
+        52.818796297872325,
+        16.509242234042542
+      ],
+      "fields": 196,
+      "verified": "Full H rss/xy/acq and raw AP axis reproduce original history key",
+      "transformation": "Only building and AP namespace labels changed; npz bytes unchanged",
+      "reused_legacy_system_predictions": false,
+      "original_field_fit_seconds": 15.33014502003789
+    },
+    {
+      "kind": "uts_official_GP_20261111_verified_single_source_import",
+      "source": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111",
+      "source_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+      "source_complete_sha256": "23e4a7030d9e5b9788a7f47a0a7246167c23ce466a890f726745c66b7dc3df8e",
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "floor": 9,
+      "legacy_history_key": "ace912ce87ad22aff7d9a47a0bd1ccd07c0ffaaf2c3a313ef1875fc077797dd1",
+      "history_key": "f3dce541059eaa0150c8271ba589b88e688ef7cf36f6c2c0c95e9895f7026b33",
+      "rows": 917,
+      "positions": 96,
+      "origin": [
+        64.57961254089415,
+        15.183372508178875
+      ],
+      "fields": 151,
+      "verified": "Full H rss/xy/acq and raw AP axis reproduce original history key",
+      "transformation": "Only building and AP namespace labels changed; npz bytes unchanged",
+      "reused_legacy_system_predictions": false,
+      "original_field_fit_seconds": 7.159470982849598
+    },
+    {
+      "kind": "uts_official_GP_20261111_verified_single_source_import",
+      "source": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111",
+      "source_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+      "source_complete_sha256": "23e4a7030d9e5b9788a7f47a0a7246167c23ce466a890f726745c66b7dc3df8e",
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "floor": 10,
+      "legacy_history_key": "c85e51966af98517e7d3af1e2371d1cd52e5c429a1df347b34819c2ac63fb190",
+      "history_key": "3716dc9bb4a6f7d771b60d5b0ffc0a787184ff58952052616247bcf74b181217",
+      "rows": 963,
+      "positions": 84,
+      "origin": [
+        56.68857601246085,
+        15.303494413291837
+      ],
+      "fields": 144,
+      "verified": "Full H rss/xy/acq and raw AP axis reproduce original history key",
+      "transformation": "Only building and AP namespace labels changed; npz bytes unchanged",
+      "reused_legacy_system_predictions": false,
+      "original_field_fit_seconds": 6.238983381539583
+    },
+    {
+      "kind": "uts_official_GP_20261111_verified_single_source_import",
+      "source": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111",
+      "source_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+      "source_complete_sha256": "23e4a7030d9e5b9788a7f47a0a7246167c23ce466a890f726745c66b7dc3df8e",
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "floor": 11,
+      "legacy_history_key": "40cec3e753b65d29738fbafc87b5cb43d16d79d78acbe62b8cc261c752e7df08",
+      "history_key": "aa9c5f65e53fa8ad4a250982ac0e8061c6fa0c67ad618b1db9c4a0d9cc4b89cc",
+      "rows": 750,
+      "positions": 86,
+      "origin": [
+        61.6785321333332,
+        14.94277340000001
+      ],
+      "fields": 143,
+      "verified": "Full H rss/xy/acq and raw AP axis reproduce original history key",
+      "transformation": "Only building and AP namespace labels changed; npz bytes unchanged",
+      "reused_legacy_system_predictions": false,
+      "original_field_fit_seconds": 6.095523357391357
+    },
+    {
+      "kind": "uts_official_GP_20261111_verified_single_source_import",
+      "source": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/uts_official_GP_20261111",
+      "source_freeze_sha256": "841f423acb32efaf373ef997207c46329c8b3ed5deacf6f26d890ade0f96c210",
+      "source_complete_sha256": "23e4a7030d9e5b9788a7f47a0a7246167c23ce466a890f726745c66b7dc3df8e",
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "floor": 12,
+      "legacy_history_key": "199f5866c35871eec88006fcab412a9fc8b13f060a1a95564c7d0331ca72a707",
+      "history_key": "77584a04384ebcfbe478b53bcb81491c5cfa8605e1b23cfdd2d1c9f424667d21",
+      "rows": 915,
+      "positions": 97,
+      "origin": [
+        67.77082928961745,
+        17.886145497267762
+      ],
+      "fields": 141,
+      "verified": "Full H rss/xy/acq and raw AP axis reproduce original history key",
+      "transformation": "Only building and AP namespace labels changed; npz bytes unchanged",
+      "reused_legacy_system_predictions": false,
+      "original_field_fit_seconds": 7.063721101731062
+    }
+  ],
+  "reused_fields": 1535,
+  "expected_new_GP_field_fits": 0,
+  "scope": "UTS tower F4 edge/F8 middle only; K1/3/5 r0, all other tower H floors",
+  "data_policy": "Frozen three-UJI five-model; unchanged H/S, no Query labels in adaptation",
+  "comparison_boundary": "Legacy 16-floor/B0B2 system scores are not reused",
+  "prelaunch_utc": "2026-11-14T14:20:24.648349+00:00",
+  "execution_files_sha256": {
+    "prepare_uts.py": "3764e997cdedfe1756acd568b52e3f54850fe085dff0fa111936a77266505e3a",
+    "run.sh": "fc6429b4c174b29754f848218f1af64e8fa06ebacce5f7470e593d88e303b045",
+    "guard.py": "16ffa92c0aaba76e4f48ce8c0b9e53301af2fd5d973138a2c5e4f80b9668e538",
+    "resume_cuda.py": "01e98f93fd976875e50255ef80cb9bd1f6a825879167a4220f133fedb90807e6",
+    "options.json": "5aa66dd0d494392f952c19efb325bea82a56df5828ccd7e9eeb406e12171fa60"
+  },
+  "resources": {
+    "CPU_threads": 2,
+    "GPU": "0, CUDA allocation checked in writer",
+    "rss_limit_GiB": 18,
+    "min_available_GiB": 8,
+    "planning_budget_seconds": 3600
+  },
+  "review_before_execution": {
+    "scope": "User-selected F4 edge/F8 middle, independent subset; no performance-based floor choice",
+    "frozen_model": "Three-UJI-building five-seed model and source-calibrated GP parameters; no training",
+    "reverse_flow": "Fixed probability-half output <- original learning and GP fields on identical H/S bounds <- unchanged support-only adaptation <- full single-source H fields",
+    "query_isolation": "Only Q RSS passed to prediction; Q labels retained solely by original scorer",
+    "H_permissions": "Every task excludes its target floor and retains all other eight tower floors; source fields contain only their own H scans",
+    "cache_scope": "Only individually verified full-H GP fields imported; no prior 16-floor/B0B2 task predictions or learned model reused",
+    "execution_equivalence": "Existing CUDA/streaming executor already full-pipeline validated; only scope/path and CPU2 wrapper differ",
+    "cost_uncertainty": "Zero new history fits expected; GP support adaptation/readout on this six-task protocol not previously timed; update after first task"
+  }
+}

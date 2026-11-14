@@ -1,0 +1,333 @@
+{
+  "status": "completed",
+  "verified_utc": "2026-11-14T14:30:21.929631+00:00",
+  "scope": "UTS tower F4 edge/F8 middle only, K1/3/5 r0; no nine-floor aggregate",
+  "server_output": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_ext_20261114",
+  "server_work": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_F4_F8_ext_execution_20261114",
+  "reference_directory": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uts_New_IT_20261111",
+  "source_model_sha256": "f66c785b1989278340d96bcf7c770869aa46363336366944c9bac04d91483212",
+  "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+  "target_data": {
+    "New IT": "fed7fa2bb0f37debe608ba87d894d784efe561853fd77bd6903871c84f5a3f1f"
+  },
+  "source_data": {
+    "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+    "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11",
+    "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+  },
+  "data_and_protocol_match": true,
+  "comparisons": [
+    {
+      "task_id": "uts/New IT/F4/K1/r0",
+      "floor": 4,
+      "K": 1,
+      "repeat": 0,
+      "query_rows_groups_meta_match": true,
+      "query_positions": 59,
+      "query_scans": 176,
+      "max_refi_prediction_difference": 0.0,
+      "H_floors": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "refi_GP": {
+        "mean": 7.1306661057106355,
+        "p90": 12.826928511287548
+      },
+      "retained_gp": {
+        "mean": 8.22098838526081,
+        "p90": 15.229673662707365
+      },
+      "refi": {
+        "mean": 7.4279681489391605,
+        "p90": 12.156370829425452
+      },
+      "seconds": 68.35765603557229,
+      "refi_seconds": 25.035708252340555,
+      "gp_seconds": 43.007508642971516
+    },
+    {
+      "task_id": "uts/New IT/F4/K3/r0",
+      "floor": 4,
+      "K": 3,
+      "repeat": 0,
+      "query_rows_groups_meta_match": true,
+      "query_positions": 59,
+      "query_scans": 176,
+      "max_refi_prediction_difference": 0.0,
+      "H_floors": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "refi_GP": {
+        "mean": 7.090192615770887,
+        "p90": 13.190009593738136
+      },
+      "retained_gp": {
+        "mean": 8.011582998387965,
+        "p90": 13.895178390558154
+      },
+      "refi": {
+        "mean": 7.367791932492081,
+        "p90": 12.54227710029663
+      },
+      "seconds": 77.75120144709945,
+      "refi_seconds": 25.378826268017292,
+      "gp_seconds": 52.350405625998974
+    },
+    {
+      "task_id": "uts/New IT/F4/K5/r0",
+      "floor": 4,
+      "K": 5,
+      "repeat": 0,
+      "query_rows_groups_meta_match": true,
+      "query_positions": 59,
+      "query_scans": 176,
+      "max_refi_prediction_difference": 0.0,
+      "H_floors": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "refi_GP": {
+        "mean": 6.867939978986546,
+        "p90": 12.250223582993486
+      },
+      "retained_gp": {
+        "mean": 7.867831296368326,
+        "p90": 14.059438237874692
+      },
+      "refi": {
+        "mean": 6.891322303518464,
+        "p90": 11.292302001455024
+      },
+      "seconds": 84.99862682819366,
+      "refi_seconds": 25.19530789926648,
+      "gp_seconds": 59.78198104351759
+    },
+    {
+      "task_id": "uts/New IT/F8/K1/r0",
+      "floor": 8,
+      "K": 1,
+      "repeat": 0,
+      "query_rows_groups_meta_match": true,
+      "query_positions": 60,
+      "query_scans": 172,
+      "max_refi_prediction_difference": 0.0,
+      "H_floors": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "refi_GP": {
+        "mean": 12.893868013961667,
+        "p90": 24.06406455229504
+      },
+      "retained_gp": {
+        "mean": 16.497624887842566,
+        "p90": 33.09342718889981
+      },
+      "refi": {
+        "mean": 14.227984110091752,
+        "p90": 25.88382483401232
+      },
+      "seconds": 66.92060995474458,
+      "refi_seconds": 24.67096895352006,
+      "gp_seconds": 42.228153593838215
+    },
+    {
+      "task_id": "uts/New IT/F8/K3/r0",
+      "floor": 8,
+      "K": 3,
+      "repeat": 0,
+      "query_rows_groups_meta_match": true,
+      "query_positions": 60,
+      "query_scans": 172,
+      "max_refi_prediction_difference": 0.0,
+      "H_floors": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "refi_GP": {
+        "mean": 13.090407274317432,
+        "p90": 24.516192848930253
+      },
+      "retained_gp": {
+        "mean": 15.415806479510403,
+        "p90": 30.36858721125435
+      },
+      "refi": {
+        "mean": 16.24322795144888,
+        "p90": 37.18030774675474
+      },
+      "seconds": 76.93375292792916,
+      "refi_seconds": 25.693894639611244,
+      "gp_seconds": 51.21961761265993
+    },
+    {
+      "task_id": "uts/New IT/F8/K5/r0",
+      "floor": 8,
+      "K": 5,
+      "repeat": 0,
+      "query_rows_groups_meta_match": true,
+      "query_positions": 60,
+      "query_scans": 172,
+      "max_refi_prediction_difference": 0.0,
+      "H_floors": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "refi_GP": {
+        "mean": 12.838746375416276,
+        "p90": 23.206909819360696
+      },
+      "retained_gp": {
+        "mean": 14.976948348680935,
+        "p90": 31.567864804911004
+      },
+      "refi": {
+        "mean": 15.836899226807361,
+        "p90": 35.384309796672355
+      },
+      "seconds": 83.3778424859047,
+      "refi_seconds": 25.713470585644245,
+      "gp_seconds": 57.64322702214122
+    }
+  ],
+  "pooled_by_K": [
+    {
+      "method": "refi",
+      "K": 1,
+      "scope": "F4+F8 pooled position errors",
+      "n": 119,
+      "mean": 10.85654762515055,
+      "p90": 24.367946767662815
+    },
+    {
+      "method": "refi",
+      "K": 3,
+      "scope": "F4+F8 pooled position errors",
+      "n": 119,
+      "mean": 11.842801689949292,
+      "p90": 25.473716208746037
+    },
+    {
+      "method": "refi",
+      "K": 5,
+      "scope": "F4+F8 pooled position errors",
+      "n": 119,
+      "mean": 11.401697222823792,
+      "p90": 22.057052008783874
+    },
+    {
+      "method": "refi_GP",
+      "K": 1,
+      "scope": "F4+F8 pooled position errors",
+      "n": 119,
+      "mean": 10.03648219390443,
+      "p90": 21.996574866786975
+    },
+    {
+      "method": "refi_GP",
+      "K": 3,
+      "scope": "F4+F8 pooled position errors",
+      "n": 119,
+      "mean": 10.115510931004438,
+      "p90": 22.024247600402763
+    },
+    {
+      "method": "refi_GP",
+      "K": 5,
+      "scope": "F4+F8 pooled position errors",
+      "n": 119,
+      "mean": 9.878430599035147,
+      "p90": 21.709066610771693
+    },
+    {
+      "method": "retained_gp",
+      "K": 1,
+      "scope": "F4+F8 pooled position errors",
+      "n": 119,
+      "mean": 12.394082420175984,
+      "p90": 28.417783423378214
+    },
+    {
+      "method": "retained_gp",
+      "K": 3,
+      "scope": "F4+F8 pooled position errors",
+      "n": 119,
+      "mean": 11.744804921642979,
+      "p90": 26.78384955776195
+    },
+    {
+      "method": "retained_gp",
+      "K": 5,
+      "scope": "F4+F8 pooled position errors",
+      "n": 119,
+      "mean": 11.452260062240232,
+      "p90": 24.481833381380195
+    }
+  ],
+  "guard": {
+    "pid": 2291975,
+    "start_epoch": 1794666024.6745074,
+    "end_epoch": 1794666490.2195685,
+    "returncode": 0,
+    "reason": "completed",
+    "completed_tasks": 6,
+    "expected_tasks": 6,
+    "failed_paths": [],
+    "export_returncode": 0,
+    "peak_group_rss_bytes": 1916461056,
+    "min_available_bytes": 33867055104,
+    "memory_events_before": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 7\noom_group_kill 0\n",
+    "memory_events_after": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 7\noom_group_kill 0\n"
+  },
+  "run": {
+    "start_epoch": 1794666024,
+    "end_epoch": 1794666488,
+    "elapsed_seconds": 464,
+    "exit_code": 0
+  },
+  "reused_available_fields": 1535,
+  "used_unique_fields": 1535,
+  "history_field_loads": {
+    "disk": 24129
+  },
+  "new_history_fits": 0,
+  "source_training_performed": false
+}
