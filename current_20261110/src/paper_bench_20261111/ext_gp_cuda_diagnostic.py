@@ -51,7 +51,20 @@ def trace(name, fn):
 
 
 class ReFiGPCUDADiagnostic(ext_gp_cuda.ReFiGPCUDA):
+    def fit_source(self, sources):
+        result = super().fit_source(sources)
+        print(json.dumps(dict(stage='execution_model',
+            model_type=type(self).__module__ + '.' + type(self).__name__,
+            mro=[c.__module__ + '.' + c.__name__ for c in type(self).__mro__],
+            field_cache_type=type(self.gp._fields).__name__,
+            training_performed=False,
+            model_sha256=self.provenance['model_sha256'])), flush=True)
+        return result
+
     def predict(self, task):
+        print(json.dumps(dict(stage='prediction_backend', task_id=task.task_id,
+            model_type=type(self).__module__ + '.' + type(self).__name__,
+            field_cache_type=type(self.gp._fields).__name__, backend='cuda')), flush=True)
         if os.environ.get('REFI_GP_TRACE', '1') != '0':
             faulthandler.enable()
             faulthandler.dump_traceback_later(60, repeat=True)

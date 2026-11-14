@@ -1,0 +1,39 @@
+Component 0 died because of too few (3) samples.
+Component 0 died because of too few (2) samples.
+{"task_id": "uji/B0/F0/K1/r0", "max_prediction_difference": 2.2351741790771484e-08, "max_gp_prediction_difference": 9.094947017729282e-13, "seconds": 22.108680825680494, "max_adaptation_weight_difference": 0.0, "intercept_std": 15.0, "retained_history_objects": 0}
+Component 0 died because of too few (2) samples.
+Component 0 died because of too few (1) samples.
+{"task_id": "uji/B0/F0/K3/r0", "max_prediction_difference": 3.166496753692627e-08, "max_gp_prediction_difference": 9.094947017729282e-13, "seconds": 23.743778493255377, "max_adaptation_weight_difference": 0.0, "intercept_std": 15.0, "retained_history_objects": 0}
+Component 0 died because of too few (0) samples.
+Component 0 died because of too few (0) samples.
+Traceback (most recent call last):
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_class_verified_20261114/check_uji_complete.py", line 75, in <module>
+    main()
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_class_verified_20261114/check_uji_complete.py", line 53, in main
+    assert weight_delta <= 1e-7, (task.task_id, weight_delta)
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('uji/B0/F0/K5/r0', 1.2561973762592604e-07)
+Command exited with non-zero status 1
+	Command being timed: "timeout 1200 /home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python -u /home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_class_verified_20261114/check_uji_complete.py"
+	User time (seconds): 364.31
+	System time (seconds): 1.02
+	Percent of CPU this job got: 470%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1115344
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 68
+	Minor (reclaiming a frame) page faults: 204970
+	Voluntary context switches: 20989
+	Involuntary context switches: 3063
+	Swaps: 0
+	File system inputs: 118032
+	File system outputs: 48
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

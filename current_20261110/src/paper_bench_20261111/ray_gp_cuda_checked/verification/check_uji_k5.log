@@ -1,0 +1,29 @@
+Component 0 died because of too few (0) samples.
+Component 0 died because of too few (0) samples.
+Component 0 died because of too few (0) samples.
+Component 0 died because of too few (0) samples.
+{"stage": "positive_current_execution_model", "model_type": "paper_bench_20261111.ext_gp_cuda_diagnostic.ReFiGPCUDADiagnostic", "field_cache_type": "_NoFieldCache", "backend": "cuda"}
+{"passed": true, "task_id": "uji/B0/F0/K5/r0", "threads": 4, "seconds": 57.77069103345275, "differences": {"same_thread_complete": 0.0, "same_thread_gp": 0.0, "same_thread_weights": 0.0, "stored_complete": 6.245449185371399e-06, "stored_gp": 1.2796006558346562e-05, "stored_weights": 1.2561973762592604e-07}, "intercept_std": 15.0, "retained_history_objects": 0, "old_model_rejected": true}
+	Command being timed: "timeout 600 /home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python -u /home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_tampere_TIE1_ext_execution_20261113/cuda_class_verified_20261114/check_uji_k5_same_threads.py"
+	User time (seconds): 284.55
+	System time (seconds): 1.04
+	Percent of CPU this job got: 468%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:01.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1234800
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 235827
+	Voluntary context switches: 15854
+	Involuntary context switches: 3810
+	Swaps: 0
+	File system inputs: 40504
+	File system outputs: 40
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
