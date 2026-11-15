@@ -1,0 +1,449 @@
+[
+  {
+    "role": "det",
+    "context_row_budget": 256,
+    "actual_context_rows": 252,
+    "context_units": 12,
+    "query_rows": 256,
+    "query_units": 255,
+    "context_query_unit_overlap": 0,
+    "raw_features": 55,
+    "transformed_features": 40,
+    "source_training_examples": 582952,
+    "loss_count_normalizer": 22.498722021710194,
+    "context_preprocessing_seconds": 0.005000445991754532,
+    "parameters": {
+      "total": 27552258,
+      "trainable": 27552250,
+      "fixed": [
+        "row_interactor.tf_row.rope.freqs"
+      ],
+      "dropout": 0.0
+    },
+    "class_shuffles": [
+      [
+        0,
+        1
+      ]
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "loss": 0.32597047090530396,
+        "gradient_norm": 4.044023513793945,
+        "parameters_with_gradient": 27552250,
+        "parameters_with_nonzero_gradient": 27552250,
+        "seconds": 1.6775826998054981,
+        "peak_GPU_MiB": 557.42724609375
+      },
+      {
+        "step": 2,
+        "loss": 0.2977597415447235,
+        "gradient_norm": 1.8949477672576904,
+        "parameters_with_gradient": 27552250,
+        "parameters_with_nonzero_gradient": 27552250,
+        "seconds": 0.13392402231693268,
+        "peak_GPU_MiB": 812.42822265625
+      }
+    ],
+    "native_predict_seconds": 0.11492839828133583,
+    "train_path_vs_native_prediction_max_abs_difference": 1.1920928955078125e-07,
+    "one_full_training_example_pass_extrapolated_seconds": 2073.9287239419646,
+    "full_source_table_examples": 648000,
+    "full_source_table_pass_extrapolated_seconds": 2305.34557410283
+  },
+  {
+    "role": "det",
+    "context_row_budget": 1024,
+    "actual_context_rows": 1011,
+    "context_units": 47,
+    "query_rows": 256,
+    "query_units": 256,
+    "context_query_unit_overlap": 0,
+    "raw_features": 55,
+    "transformed_features": 51,
+    "source_training_examples": 582952,
+    "loss_count_normalizer": 22.498722021710194,
+    "context_preprocessing_seconds": 0.006201043725013733,
+    "parameters": {
+      "total": 27552258,
+      "trainable": 27552250,
+      "fixed": [
+        "row_interactor.tf_row.rope.freqs"
+      ],
+      "dropout": 0.0
+    },
+    "class_shuffles": [
+      [
+        0,
+        1
+      ]
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "loss": 0.4356258511543274,
+        "gradient_norm": 4.761539459228516,
+        "parameters_with_gradient": 27552250,
+        "parameters_with_nonzero_gradient": 27552250,
+        "seconds": 0.3276250995695591,
+        "peak_GPU_MiB": 1197.4013671875
+      },
+      {
+        "step": 2,
+        "loss": 0.42705386877059937,
+        "gradient_norm": 4.817087173461914,
+        "parameters_with_gradient": 27552250,
+        "parameters_with_nonzero_gradient": 27552250,
+        "seconds": 0.32985930889844894,
+        "peak_GPU_MiB": 1316.20703125
+      }
+    ],
+    "native_predict_seconds": 0.10193316638469696,
+    "train_path_vs_native_prediction_max_abs_difference": 5.960464477539063e-08,
+    "one_full_training_example_pass_extrapolated_seconds": 762.718110485177,
+    "full_source_table_examples": 648000,
+    "full_source_table_pass_extrapolated_seconds": 847.8250963962637
+  },
+  {
+    "role": "det",
+    "context_row_budget": 2048,
+    "actual_context_rows": 2046,
+    "context_units": 94,
+    "query_rows": 256,
+    "query_units": 254,
+    "context_query_unit_overlap": 0,
+    "raw_features": 55,
+    "transformed_features": 50,
+    "source_training_examples": 582952,
+    "loss_count_normalizer": 22.498722021710194,
+    "context_preprocessing_seconds": 0.03900296613574028,
+    "parameters": {
+      "total": 27552258,
+      "trainable": 27552250,
+      "fixed": [
+        "row_interactor.tf_row.rope.freqs"
+      ],
+      "dropout": 0.0
+    },
+    "class_shuffles": [
+      [
+        0,
+        1
+      ]
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "loss": 0.35495293140411377,
+        "gradient_norm": 3.189685344696045,
+        "parameters_with_gradient": 27552250,
+        "parameters_with_nonzero_gradient": 27552250,
+        "seconds": 0.6405049413442612,
+        "peak_GPU_MiB": 1783.30322265625
+      },
+      {
+        "step": 2,
+        "loss": 0.34975603222846985,
+        "gradient_norm": 3.2363197803497314,
+        "parameters_with_gradient": 27552250,
+        "parameters_with_nonzero_gradient": 27552250,
+        "seconds": 0.6396762505173683,
+        "peak_GPU_MiB": 1893.34814453125
+      }
+    ],
+    "native_predict_seconds": 0.17507274076342583,
+    "train_path_vs_native_prediction_max_abs_difference": 1.1920928955078125e-07,
+    "one_full_training_example_pass_extrapolated_seconds": 1546.4021491946187,
+    "full_source_table_examples": 648000,
+    "full_source_table_pass_extrapolated_seconds": 1718.9555789809674
+  },
+  {
+    "role": "mean",
+    "context_row_budget": 256,
+    "actual_context_rows": 242,
+    "context_units": 18,
+    "query_rows": 256,
+    "query_units": 255,
+    "context_query_unit_overlap": 0,
+    "raw_features": 55,
+    "transformed_features": 52,
+    "source_training_examples": 250404,
+    "loss_count_normalizer": 11.312379195220524,
+    "context_preprocessing_seconds": 0.005004670470952988,
+    "parameters": {
+      "total": 28544991,
+      "trainable": 28544983,
+      "fixed": [
+        "row_interactor.tf_row.rope.freqs"
+      ],
+      "dropout": 0.0
+    },
+    "class_shuffles": [],
+    "steps": [
+      {
+        "step": 1,
+        "loss": 108.34542083740234,
+        "gradient_norm": 2192.910400390625,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.16386212408542633,
+        "peak_GPU_MiB": 567.09375
+      },
+      {
+        "step": 2,
+        "loss": 92.54275512695312,
+        "gradient_norm": 666.3289184570312,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.14525296539068222,
+        "peak_GPU_MiB": 890.330078125
+      }
+    ],
+    "native_predict_seconds": 0.12280533090233803,
+    "train_path_vs_native_prediction_max_abs_difference": 7.62939453125e-06,
+    "one_full_training_example_pass_extrapolated_seconds": 156.07428491092287,
+    "full_source_table_examples": 278280,
+    "full_source_table_pass_extrapolated_seconds": 173.44911425141618
+  },
+  {
+    "role": "mean",
+    "context_row_budget": 1024,
+    "actual_context_rows": 1021,
+    "context_units": 94,
+    "query_rows": 256,
+    "query_units": 256,
+    "context_query_unit_overlap": 0,
+    "raw_features": 55,
+    "transformed_features": 53,
+    "source_training_examples": 250404,
+    "loss_count_normalizer": 11.312379195220524,
+    "context_preprocessing_seconds": 0.006485752761363983,
+    "parameters": {
+      "total": 28544991,
+      "trainable": 28544983,
+      "fixed": [
+        "row_interactor.tf_row.rope.freqs"
+      ],
+      "dropout": 0.0
+    },
+    "class_shuffles": [],
+    "steps": [
+      {
+        "step": 1,
+        "loss": 133.46868896484375,
+        "gradient_norm": 3074.9130859375,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.34277304261922836,
+        "peak_GPU_MiB": 1237.5908203125
+      },
+      {
+        "step": 2,
+        "loss": 110.82793426513672,
+        "gradient_norm": 2475.908203125,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.33965693041682243,
+        "peak_GPU_MiB": 1361.5458984375
+      }
+    ],
+    "native_predict_seconds": 0.09825367107987404,
+    "train_path_vs_native_prediction_max_abs_difference": 7.62939453125e-06,
+    "one_full_training_example_pass_extrapolated_seconds": 340.100218431704,
+    "full_source_table_examples": 278280,
+    "full_source_table_pass_extrapolated_seconds": 377.96156924479874
+  },
+  {
+    "role": "mean",
+    "context_row_budget": 2048,
+    "actual_context_rows": 2035,
+    "context_units": 171,
+    "query_rows": 256,
+    "query_units": 254,
+    "context_query_unit_overlap": 0,
+    "raw_features": 55,
+    "transformed_features": 53,
+    "source_training_examples": 250404,
+    "loss_count_normalizer": 11.312379195220524,
+    "context_preprocessing_seconds": 0.008224409073591232,
+    "parameters": {
+      "total": 28544991,
+      "trainable": 28544983,
+      "fixed": [
+        "row_interactor.tf_row.rope.freqs"
+      ],
+      "dropout": 0.0
+    },
+    "class_shuffles": [],
+    "steps": [
+      {
+        "step": 1,
+        "loss": 54.82942581176758,
+        "gradient_norm": 638.0172729492188,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.6685472503304482,
+        "peak_GPU_MiB": 1843.43115234375
+      },
+      {
+        "step": 2,
+        "loss": 53.65107345581055,
+        "gradient_norm": 879.5228271484375,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.6591603793203831,
+        "peak_GPU_MiB": 1960.15771484375
+      }
+    ],
+    "native_predict_seconds": 0.18265234678983688,
+    "train_path_vs_native_prediction_max_abs_difference": 7.62939453125e-06,
+    "one_full_training_example_pass_extrapolated_seconds": 657.3870139734645,
+    "full_source_table_examples": 278280,
+    "full_source_table_pass_extrapolated_seconds": 730.5700318227173
+  },
+  {
+    "role": "scale",
+    "context_row_budget": 256,
+    "actual_context_rows": 242,
+    "context_units": 18,
+    "query_rows": 256,
+    "query_units": 255,
+    "context_query_unit_overlap": 0,
+    "raw_features": 56,
+    "transformed_features": 53,
+    "source_training_examples": 250404,
+    "loss_count_normalizer": 11.312379195220524,
+    "context_preprocessing_seconds": 0.004870470613241196,
+    "parameters": {
+      "total": 28544991,
+      "trainable": 28544983,
+      "fixed": [
+        "row_interactor.tf_row.rope.freqs"
+      ],
+      "dropout": 0.0
+    },
+    "class_shuffles": [],
+    "steps": [
+      {
+        "step": 1,
+        "loss": 1.392354130744934,
+        "gradient_norm": 40.64454650878906,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.15008027479052544,
+        "peak_GPU_MiB": 568.240234375
+      },
+      {
+        "step": 2,
+        "loss": 1.1029813289642334,
+        "gradient_norm": 23.113981246948242,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.1458333432674408,
+        "peak_GPU_MiB": 896.8876953125
+      }
+    ],
+    "native_predict_seconds": 0.04632297903299332,
+    "train_path_vs_native_prediction_max_abs_difference": 4.76837158203125e-07,
+    "one_full_training_example_pass_extrapolated_seconds": 149.48657082629506,
+    "full_source_table_examples": 278280,
+    "full_source_table_pass_extrapolated_seconds": 166.12802882358665
+  },
+  {
+    "role": "scale",
+    "context_row_budget": 1024,
+    "actual_context_rows": 1021,
+    "context_units": 94,
+    "query_rows": 256,
+    "query_units": 256,
+    "context_query_unit_overlap": 0,
+    "raw_features": 56,
+    "transformed_features": 54,
+    "source_training_examples": 250404,
+    "loss_count_normalizer": 11.312379195220524,
+    "context_preprocessing_seconds": 0.00622669979929924,
+    "parameters": {
+      "total": 28544991,
+      "trainable": 28544983,
+      "fixed": [
+        "row_interactor.tf_row.rope.freqs"
+      ],
+      "dropout": 0.0
+    },
+    "class_shuffles": [],
+    "steps": [
+      {
+        "step": 1,
+        "loss": 1.6943210363388062,
+        "gradient_norm": 25.87491798400879,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.34416360780596733,
+        "peak_GPU_MiB": 1242.74609375
+      },
+      {
+        "step": 2,
+        "loss": 1.6514078378677368,
+        "gradient_norm": 22.90349006652832,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.3420170843601227,
+        "peak_GPU_MiB": 1362.52587890625
+      }
+    ],
+    "native_predict_seconds": 0.10415412113070488,
+    "train_path_vs_native_prediction_max_abs_difference": 2.384185791015625e-07,
+    "one_full_training_example_pass_extrapolated_seconds": 341.6811935825099,
+    "full_source_table_examples": 278280,
+    "full_source_table_pass_extrapolated_seconds": 379.718545031792
+  },
+  {
+    "role": "scale",
+    "context_row_budget": 2048,
+    "actual_context_rows": 2035,
+    "context_units": 171,
+    "query_rows": 256,
+    "query_units": 254,
+    "context_query_unit_overlap": 0,
+    "raw_features": 56,
+    "transformed_features": 54,
+    "source_training_examples": 250404,
+    "loss_count_normalizer": 11.312379195220524,
+    "context_preprocessing_seconds": 0.008384570479393005,
+    "parameters": {
+      "total": 28544991,
+      "trainable": 28544983,
+      "fixed": [
+        "row_interactor.tf_row.rope.freqs"
+      ],
+      "dropout": 0.0
+    },
+    "class_shuffles": [],
+    "steps": [
+      {
+        "step": 1,
+        "loss": 1.0101954936981201,
+        "gradient_norm": 16.847612380981445,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.6665256582200527,
+        "peak_GPU_MiB": 1859.6201171875
+      },
+      {
+        "step": 2,
+        "loss": 0.9631462693214417,
+        "gradient_norm": 14.049100875854492,
+        "parameters_with_gradient": 28544983,
+        "parameters_with_nonzero_gradient": 28544983,
+        "seconds": 0.668789703398943,
+        "peak_GPU_MiB": 1974.37451171875
+      }
+    ],
+    "native_predict_seconds": 0.18645761162042618,
+    "train_path_vs_native_prediction_max_abs_difference": 4.76837158203125e-07,
+    "one_full_training_example_pass_extrapolated_seconds": 661.2643902021227,
+    "full_source_table_examples": 278280,
+    "full_source_table_pass_extrapolated_seconds": 734.8790534713771
+  }
+]

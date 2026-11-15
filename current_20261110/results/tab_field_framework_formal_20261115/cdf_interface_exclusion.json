@@ -1,0 +1,51 @@
+{
+  "status": "excluded_before_source_training",
+  "decision_date": "2026-11-15",
+  "public_regressor_sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a",
+  "package_version": "2.2.0",
+  "regressor_config": {
+    "max_classes": 0,
+    "num_quantiles": 999
+  },
+  "tested_on": "CPU tensors only, no optimizer or target data",
+  "cases": [
+    {
+      "quantiles": "all zero",
+      "threshold": 0.5,
+      "target_detection_fraction": 0.5,
+      "native_1_minus_CDF": {
+        "probability": 0,
+        "cross_entropy": "infinite",
+        "gradient_finite": false
+      },
+      "existing_log_survival": {
+        "log_loss_float32": 28.45388412475586,
+        "gradient_finite": false
+      }
+    },
+    {
+      "quantiles": "all 0.5",
+      "threshold": 0.5,
+      "target_detection_fraction": 0.5,
+      "native_CDF_endpoint_rule": {
+        "probability_float32": 0.0009999871253967285,
+        "cross_entropy_float32": 3.4543843269348145,
+        "gradient_nonzero_entries": 0
+      }
+    },
+    {
+      "quantiles": "linspace(-6,-5,999)",
+      "threshold": 0.5,
+      "existing_log_survival": {
+        "log_loss_float32": 278.4538879394531,
+        "gradient_finite": false
+      }
+    }
+  ],
+  "scope_of_exclusion": "This frozen-inference CDF implementation is unsuitable as the proposed native CE training interface. The framework and TabICLv2 family remain separate research questions.",
+  "selected_interface": "Official same-version native classifier for det, native regressor for mean/scale; full-parameter training.",
+  "source_function": {
+    "path": "ReFi-UJI-Core-20261031-recovered/tabicl_observation_quantiles.py",
+    "sha256": "1e17a6ce7adab2ee2c2be5f16ae3beb2b65f7ebe3804f29c19cce085c8fc40d5"
+  }
+}

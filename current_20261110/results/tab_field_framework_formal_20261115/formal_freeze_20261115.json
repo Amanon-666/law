@@ -1,0 +1,97 @@
+{
+  "status": "frozen_before_formal_source_training",
+  "date": "2026-11-15",
+  "question": "HGB versus native TabICLv2 under the same observation-field representation, source statistics and reader; field learning versus same-family direct-coordinate fine-tuning.",
+  "source_development": {
+    "training_buildings": [
+      "B0"
+    ],
+    "development_buildings": [
+      "B2"
+    ],
+    "selection_seed": 1,
+    "epochs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "field_metric": "Pooled position error on B2 original H/S/Q static-resample-v2 floor0..4,K1/3/5,r0,base20261111; observation NLL auxiliary",
+    "direct_metric": "Pooled position error on the same B2 development tasks"
+  },
+  "final": {
+    "source_buildings": [
+      "B0",
+      "B2"
+    ],
+    "target_building": "B1",
+    "target_protocol": "Original 36 static-resample-v2 tasks, K1/3/5,r0/1/2,base20261111,R3,Q60",
+    "training_seeds": [
+      1,
+      2,
+      3
+    ],
+    "model_selection": "Select common source epoch before final source restarts; report all three final seeds",
+    "field_source_rows": 648000,
+    "source_label_unit_definition": [
+      "building",
+      "target_floor",
+      "target_position_index",
+      "AP_column"
+    ],
+    "field_source_subsample": false
+  },
+  "methods": {
+    "A": "Original full-source HGB observation-field seed1/2/3, same count losses and full reader plus identical GP",
+    "B": "Full-parameter native classifier/regressor/regressor observation-field models with own Tab two-half OOF means for scale",
+    "C": "Full-parameter native regressor, two shared coordinate axes, source episodic H+S RSS\u2192XY pinball and independent direct readout",
+    "D": "Same native three field predictors with public weights frozen and their own frozen-Tab OOF context labels; include only with identical valid source contexts"
+  },
+  "fixed": {
+    "field_dimensions": [
+      55,
+      55,
+      56
+    ],
+    "context_max_count_rows": 1024,
+    "whole_label_unit_context_query_isolation": true,
+    "detection_context_class_coverage": "Both actual binary source classes",
+    "training_and_deployment_views": 1,
+    "normalization": [
+      "none"
+    ],
+    "classifier_temperature": 1,
+    "field_precision": "float32",
+    "direct_precision": "Original AMP fp16/scaler1024",
+    "full_H_and_AP_axes": true,
+    "reader": "Unchanged PreparedFrozenHurdle with empirical S candidates, beta128/eps.02/offsets and original fixed probability-half GP log pool",
+    "C_GP": "Independent coordinate readout only"
+  },
+  "reference": "Previously adopted five-seed complete ReFi stays a separate reference. The new mechanism comparison uses matched single models per training seed.",
+  "resources": {
+    "one_GPU": "NVIDIA RTX A4000 cuda0",
+    "CPU_threads": 2,
+    "maximum_new_formal_GPU_hours": 8,
+    "capacity_choice": "1024 chosen by source throughput before B1 scoring"
+  },
+  "source_code_sha256": {
+    "formal_source.py": "b99fe8613ad230568d727aa82398ee7722dc344a6bd184a6f137f9245f1c0c97",
+    "field_predictor.py": "2babdbaac4baee620cdb3379879a172f55ac92aa8f5704b2d1385382b0d9819d",
+    "native_tab.py": "47654798a0fa56f9855475f233dcaea82242a7a79ea47a7761b1d4b184f8f63e",
+    "source_cells.py": "b181c649564b99cce48ace8467a8edad50ad902c7d3cdf2447ba97e1f54fa89e",
+    "direct_coordinate.py": "9a18f3f037306b17a514288c3b133c7c3bbd76882d28968a8b0e57ff0f57d42b",
+    "formal_direct.py": "f431f922ad887104676bd251094fc3b77ad64a4af12935a2e4d11c829f697809"
+  },
+  "public_classifier": {
+    "filename": "tabicl-classifier-v2-20260212.ckpt",
+    "official_revision": "4dcd344ece2c00be9e831fdd35bed57b5ad83e19",
+    "bytes": 110368038,
+    "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+  },
+  "public_regressor": {
+    "filename": "tabicl-regressor-v2-20260212.ckpt",
+    "bytes": 114324594,
+    "sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a"
+  },
+  "pretraining_condition": "Same TabICLv2 family with task-specific pretrained classifier/regressor heads; public pretraining corpus not audited."
+}
