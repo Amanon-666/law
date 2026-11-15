@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-15",
+  "recorded_epoch": 1794730471.9884858,
+  "scope": "Pre-target-evaluation file enumeration correction",
+  "reason": "Task IDs contain directory separators. Enumerate reference events recursively and retain their full relative task IDs.",
+  "before_sha256": "ded29300770efb0ca27fa89540765c1bfb3c87f0060e6fed8f34bec04e2a3786",
+  "after_sha256": "a3d3ae212ef2e597c3f890cd75ec84cdb5d926936a662c21a46700bd770783e3",
+  "file": "evaluate_final.py",
+  "prior_driver_launcher": 3612051,
+  "prior_driver_controlled_stop": true,
+  "source_training_interrupted": false,
+  "GP_cache_interrupted": false,
+  "target_evaluation_started": false,
+  "source_training_source_sha256": {
+    "formal_source.py": "b99fe8613ad230568d727aa82398ee7722dc344a6bd184a6f137f9245f1c0c97",
+    "field_predictor.py": "2babdbaac4baee620cdb3379879a172f55ac92aa8f5704b2d1385382b0d9819d",
+    "native_tab.py": "47654798a0fa56f9855475f233dcaea82242a7a79ea47a7761b1d4b184f8f63e",
+    "source_cells.py": "b181c649564b99cce48ace8467a8edad50ad902c7d3cdf2447ba97e1f54fa89e",
+    "direct_coordinate.py": "9a18f3f037306b17a514288c3b133c7c3bbd76882d28968a8b0e57ff0f57d42b",
+    "formal_direct.py": "f431f922ad887104676bd251094fc3b77ad64a4af12935a2e4d11c829f697809"
+  },
+  "source_and_model_choices_changed": false,
+  "budget_start_epoch": 1794727402,
+  "budget_deadline_epoch": 1794756202,
+  "prior_driver_files": "verification/driver_path_amendment_20261115/v1",
+  "prior_GitHub_commit": "84745a06c91c633a535b3362ff1aca08e13903b5"
+}

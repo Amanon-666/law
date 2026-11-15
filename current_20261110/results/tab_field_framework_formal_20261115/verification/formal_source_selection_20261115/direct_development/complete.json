@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "phase": "development",
+  "seed": 1,
+  "source_only": true,
+  "target_evaluation": false,
+  "completed_source_epochs": 3,
+  "source_updates": 108,
+  "freeze_sha256": "2385ddf472a6318b76ec062c1837aacc53d416741bfc4d53ac3a06febc9aba36",
+  "committed_training_seconds": 289.852337885648,
+  "invocation_wall_seconds": 417.8759073205292,
+  "selected_source_epoch": 3,
+  "source_validation": [
+    {
+      "source_epoch": 0,
+      "mean_position_error": 14.408547585746868,
+      "query_position_budget_count": 606,
+      "tasks": 15,
+      "seconds": 23.969679575413465,
+      "path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/direct_development/source_validation/epoch_0.json",
+      "sha256": "4816cbab6fdd7f2f175f69cbc89afba0338230c05b39865b6e5e2799f35730eb"
+    },
+    {
+      "source_epoch": 1,
+      "mean_position_error": 11.307755599365384,
+      "query_position_budget_count": 606,
+      "tasks": 15,
+      "seconds": 23.59103597700596,
+      "path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/direct_development/source_validation/epoch_1.json",
+      "sha256": "054afa405b13b2ae17807c07179774dc6966d2584ffdbad79aa2337432ddf1ae"
+    },
+    {
+      "source_epoch": 2,
+      "mean_position_error": 10.46525850799128,
+      "query_position_budget_count": 606,
+      "tasks": 15,
+      "seconds": 23.493671242147684,
+      "path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/direct_development/source_validation/epoch_2.json",
+      "sha256": "38b90cbbe15ea3f672e3100db9ec61576e9158ee8142e2225a12e995b7f9d165"
+    },
+    {
+      "source_epoch": 3,
+      "mean_position_error": 10.360984223882285,
+      "query_position_budget_count": 606,
+      "tasks": 15,
+      "seconds": 23.547359872609377,
+      "path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/direct_development/source_validation/epoch_3.json",
+      "sha256": "d5ffcb107803ee12fee9e5d62bb5ab73a218d819a4f0a94a079df290d2cde119"
+    }
+  ],
+  "selected_model": {
+    "checkpoint": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/direct_development/checkpoints/epoch_3.ckpt",
+    "sha256": "507776b6e280bbed9f17af4573a0f33ec8af53e4833258c40287a28a2020c0ce",
+    "source_epoch": 3,
+    "source_updates": 108
+  }
+}

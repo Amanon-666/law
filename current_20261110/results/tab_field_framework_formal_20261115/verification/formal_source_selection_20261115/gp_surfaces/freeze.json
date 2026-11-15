@@ -1,0 +1,30 @@
+{
+  "reference_freeze_sha256": "01af1fbef3381528aaac4505fb52dbf0db5ff7879b92d7668c1a1fbc93452864",
+  "target_data": {
+    "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11"
+  },
+  "source_data": {
+    "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+    "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+  },
+  "gp_options": {
+    "parameters_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/paired_assets_20261106/parameters.json",
+    "provenance": {
+      "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+      "training_sources": [
+        {
+          "dataset": "uji",
+          "building": "B0"
+        }
+      ],
+      "evidence": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_assets_20261109/freeze.json#source_calibration; B0F0/B0F1/B0F2"
+    },
+    "cache_dir": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111",
+    "fit_missing_history": false
+  },
+  "code_sha256": "0c2a0d5b315ad176bad4cff6e66931847f7bc883a37f00e93c67f854001b9e68",
+  "purpose": "Reuse original exact GP adaptation state and score surface across all new field arms.",
+  "target_GT_scored": false,
+  "training_performed": false,
+  "new_history_fitting_allowed": false
+}

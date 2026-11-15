@@ -180,7 +180,10 @@ def main(args):
             episodes.extend(make_tasks('uji','B1',buildings['B1'],axes['B1'],floor,
                 budgets=(1,3,5),repeat=repeat,seed=config['seed'],R=config['R'],query_positions=config['query_positions']))
     assert len(episodes) == 36
-    assert {t.task_id for t,_ in episodes} == {p.stem for p in (GP_REFERENCE/'events/refi_GP').glob('*.json')}
+    reference_events = GP_REFERENCE/'events/refi_GP'
+    assert {t.task_id for t,_ in episodes} == {
+        p.relative_to(reference_events).with_suffix('').as_posix()
+        for p in reference_events.rglob('*.json')}
     original_model_path = ORIGINAL/'source_models/refi.joblib'
     source_info = json.loads(original_model_path.with_suffix('.json').read_text())
     assert source_info['source_buildings'] == ['B0','B2'] and run._sha(original_model_path) == source_info['sha256']
