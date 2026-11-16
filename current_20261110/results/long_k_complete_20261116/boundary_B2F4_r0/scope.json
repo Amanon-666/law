@@ -1,0 +1,27 @@
+{
+  "post_failure_boundary_check": true,
+  "family": "uji/B2/F4/r0",
+  "budgets": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "full_sampling_budgets": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "Query": "Keep the exact original max-K20 Query for every budget.",
+  "source_freeze_sha256": "c28434490795b129ec0be78201fcc16ef19223e4e19d5478fc467149f6dbcfc3",
+  "original_K20_failure_sha256": "c0c055926d9fb42a18cfebd802ff55bb132a5fa1783bb9b86a4ecaa5109a36ae",
+  "code_sha256": "ea0ec5fdb2bb37bb0ee2015e3e89437d9c8ed4088635ba1b10618014256fdda4",
+  "solver_or_seed_or_tolerance_changed": false,
+  "source_training": false,
+  "new_history_fitting": false,
+  "CPU_threads": 2,
+  "maximum_wall_seconds": 1800,
+  "rule": "Retain each success or failure at the predeclared same family. No task substitution or posterior-solver change."
+}

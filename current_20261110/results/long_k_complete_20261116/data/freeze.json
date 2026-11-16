@@ -1,0 +1,132 @@
+{
+  "scope": "Original 195 long-K tasks and same Query/nested Support within each floor/repeat.",
+  "folds": {
+    "B0": {
+      "source_run": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uji_B0_kcurve_20261111",
+      "main_GP_run": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uji_B0_ext_20261111",
+      "original_freeze_sha256": "af914f89e724b3e51fb4a3e16d0df17aa138e9e94c10ef70c3417c97312b8804",
+      "main_GP_freeze_sha256": "6e5d3d8cd780a30bfa5a89d6bd9a5d8d91948fd41db8b5b272463b5007e76370",
+      "source_model_sha256": "a85b84cfcbb5734a2db9836940422fd82dedecd41d54b29ac538c962f2b46338",
+      "source_data": {
+        "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11",
+        "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+      },
+      "target_data": {
+        "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9"
+      },
+      "gp_options": {
+        "parameters_path": "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/Law-Probabilistic-Transfer-20261023/results/source_base_B1_20261028/parameters.json",
+        "cache_dir": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_B1parameters_fullH_cache_20261111",
+        "fit_missing_history": false,
+        "provenance": {
+          "parameters_sha256": "ef59c9a4335fd4398c945cd2fc138f847f8a7a6599e77b5e742033bd039588db",
+          "training_sources": [
+            {
+              "dataset": "uji",
+              "building": "B1"
+            }
+          ],
+          "evidence": {
+            "freeze_path": "/home/panyushuo/projects/panyushuo/LAW-source-resume-20261025-01a164d0/Law-Probabilistic-Transfer-20261023/results/source_base_B1_20261028/freeze.json",
+            "freeze_sha256": "b5bc8db9cdfa0eb2167b922c83410a693b5de76adac149fbb8c82c36ed111b26",
+            "source_floors": [
+              "B1F0",
+              "B1F1",
+              "B1F2",
+              "B1F3"
+            ]
+          }
+        }
+      }
+    },
+    "B1": {
+      "source_run": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uji_B1_kcurve_20261111",
+      "main_GP_run": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uji_B1_ext_20261111",
+      "original_freeze_sha256": "f1d3b81c2843c1337efd6e4ab0bd6b71a2d78f23d0d45669ac7a2c48ecdafcf2",
+      "main_GP_freeze_sha256": "01af1fbef3381528aaac4505fb52dbf0db5ff7879b92d7668c1a1fbc93452864",
+      "source_model_sha256": "cfecc4827d34ecaa496ee807a514232111399a05e9339a093fcbed89c6e9d970",
+      "source_data": {
+        "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+        "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+      },
+      "target_data": {
+        "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11"
+      },
+      "gp_options": {
+        "parameters_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/paired_assets_20261106/parameters.json",
+        "provenance": {
+          "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+          "training_sources": [
+            {
+              "dataset": "uji",
+              "building": "B0"
+            }
+          ],
+          "evidence": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_assets_20261109/freeze.json#source_calibration; B0F0/B0F1/B0F2"
+        },
+        "cache_dir": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111",
+        "fit_missing_history": false
+      }
+    },
+    "B2": {
+      "source_run": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uji_B2_kcurve_20261111",
+      "main_GP_run": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_uji_B2_ext_20261111",
+      "original_freeze_sha256": "24493fb715e37eaf923864d78d23ef05199420d850c80bdc6e7de51122560297",
+      "main_GP_freeze_sha256": "e03b0e70aba5875c4163f55fe19b157dff44403c36585cb09dda9bc02fcea748",
+      "source_model_sha256": "19b1f0ebcbe9b06a7ce216a47a390186a0a96475dc04d7d07d6b0e8706a1db6c",
+      "source_data": {
+        "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+        "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11"
+      },
+      "target_data": {
+        "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+      },
+      "gp_options": {
+        "parameters_path": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/paired_assets_20261106/parameters.json",
+        "provenance": {
+          "parameters_sha256": "f14dbededc1fb40630ec1c11a4ae49abd0f1098d01d31987141c99529ef369de",
+          "training_sources": [
+            {
+              "dataset": "uji",
+              "building": "B0"
+            }
+          ],
+          "evidence": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/building_information_assets_20261109/freeze.json#source_calibration; B0F0/B0F1/B0F2"
+        },
+        "cache_dir": "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/results/law_bench_uji_fullH_cache_20261111",
+        "fit_missing_history": false
+      }
+    }
+  },
+  "budgets": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "task_count": 195,
+  "learning_model": "Original 55-feature five-member ReFi, trained at K1/3/5. K10/20 are frozen-model calibration-budget extrapolation.",
+  "GP": "Existing complete raw-H covariance fields and fold-specific parameters. fit_missing_history=False. Original adaptation/proposal/ESS/solver settings.",
+  "state_reuse": "Only for identical actual H keys, S RSS/XY/acquisition arrays, AP axis, K and parameters. New long-K Query RSS is rescored.",
+  "reader": "Original log_position_mass and fixed probability_half pooling, same candidate atoms and bounds.",
+  "permissions": "ReFi and GP receive only H/S and Query RSS. Truth XY is used after both predictions for scoring.",
+  "review": {
+    "input": "Old long-K Query rows/groups/meta and complete nested actual S arrays are checked before prediction.",
+    "sampling": "Retained-field proposal seeds retain original task_id and K. Source code and random/ESS policy are unchanged.",
+    "edge_cases": "K1, missing/new APs, zero residuals, bad priors, coordinate frame and clipping follow the original implementations. No new mechanism or fallback is introduced.",
+    "interpretation": "More S may saturate or worsen individual predictions. No monotonicity or K10/20 source-training claim is made."
+  },
+  "training_performed": false,
+  "new_history_fitting_allowed": false,
+  "code_sha256": {
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/long_k_complete_20261116/source/run_long_k.py": "ec74199502ea86ad319ccf77e7197fd341e90aa1fd5467cb49f0df5a33cee0b4",
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/paper_bench_20261111/ext_gp.py": "a965654f53b61f378fe7d7c82bde31d6e3b4054cd105d3a910a6479a51aa0d24",
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/law_bench/run.py": "a9950525f75cb0eab22538f525c226a30e8e9285cdd459ac2c640eb9cf9bc60e",
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/law_bench/protocol.py": "804461986101fad2904eba94232e533f0bf25128d99a14d2b4ce6346498f8bee",
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/law_bench/score.py": "c4abfa7fbe008ac994a6ba4790c7ef3f25da11d07c5391367043936d95af6f3e",
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/predict.py": "4c9e18addc4cdd4a49704da99db394ab5ca6d51771df04fe50411cd57854b6d5",
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/position_fusion_gp.py": "7c1f3397bff78d94fd1140dac52f1c00ba591f32227820f3f4ed2361ee2b9f91",
+    "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/cached_retained_readout.py": "13384ea458e522b01fba46609114bb752827246b6bfae9d0b2b74afdcc08616c"
+  }
+}

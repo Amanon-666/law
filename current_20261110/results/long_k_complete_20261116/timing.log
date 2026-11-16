@@ -1,0 +1,37 @@
+{"stage": "source_review_complete", "tasks": 195, "reused_states": 108, "fixed_timing_task": "uji/B2/F4/K20/r0"}
+Traceback (most recent call last):
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/long_k_complete_20261116/source/run_long_k.py", line 264, in <module>
+    main(args)
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/long_k_complete_20261116/source/run_long_k.py", line 219, in main
+    prediction = model.predict(task)
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/paper_bench_20261111/ext_gp.py", line 70, in predict
+    gp = self.gp.predict_scores(task)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/law_bench/method_retained_gp.py", line 302, in predict_scores
+    prepared = prepare_retained_fields(context, self.state, task.task_id, task.K)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/long_k_complete_20261116/source/run_long_k.py", line 156, in call
+    return function(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/position_fusion_gp.py", line 146, in prepare_retained_fields
+    value, diagnostic = _retained_field(task, state, ap, case, event_id, k, relation_collector)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/position_fusion_gp.py", line 83, in _retained_field
+    numerical, info = cpu_proposal(prepared, obs, sm.new_zeros(10), seed)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/building_information_gp_trial.py", line 105, in cpu_proposal
+    numerical, diagnostics = original_proposal(cpu, obs, theta.detach().cpu(), seed)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/src/posterior.py", line 151, in proposal
+    raise RuntimeError(f'Fixed-budget source QMC failed: {record}')
+RuntimeError: Fixed-budget source QMC failed: {'sampler': 'rss_gaussian_two_scrambles', 'seed': 1134527432, 'original_ESS': 8.824006872276076, 'ESS': [44.92303115044266, 69.68143951264292], 'gaps': {'mean': 0.805780112667108, 'covariance': 0.4523231402358115, 'log_evidence': 0.10011433842128525}, 'samples': 524288, 'accepted': False}

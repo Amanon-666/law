@@ -1,0 +1,94 @@
+{
+  "scope": "Post-failure same-family boundary evidence",
+  "family": "uji/B2/F4/r0",
+  "full_sampling_budgets": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "metric": "Original per-position mean scan errors and pooled position P90 in metres",
+  "same_Query_rows_groups": true,
+  "Query_binding_sha256": "4bd3c307012a3ed2fd72884a7b157455305f4bf977b5d7cf29fb3f32dd741e6b",
+  "rows": [
+    {
+      "K": 1,
+      "status": "completed",
+      "query_positions": 33,
+      "query_scans": 99,
+      "complete": {
+        "mean": 11.929222927397971,
+        "p90": 17.511788061971455
+      },
+      "retained_gp": {
+        "mean": 18.49914383126922,
+        "p90": 36.230989345360676
+      },
+      "source_event": "boundary_B2F4_r0/events/uji/B2/F4/K1/r0.json",
+      "source_event_sha256": "7c6bf2e9f508f4a8586c2e3a92090c5f98931ab89782705ce354c5dcff6075de"
+    },
+    {
+      "K": 3,
+      "status": "completed",
+      "query_positions": 33,
+      "query_scans": 99,
+      "complete": {
+        "mean": 11.624565380226235,
+        "p90": 15.93949160407167
+      },
+      "retained_gp": {
+        "mean": 18.1577792679179,
+        "p90": 35.37576112700477
+      },
+      "source_event": "boundary_B2F4_r0/events/uji/B2/F4/K3/r0.json",
+      "source_event_sha256": "db99e3d8bfe8518c3f6782ed00656495a9c0de0bb9c58c7d3b2480f60f0cde5f"
+    },
+    {
+      "K": 5,
+      "status": "completed",
+      "query_positions": 33,
+      "query_scans": 99,
+      "complete": {
+        "mean": 12.17469455343138,
+        "p90": 17.055787597004905
+      },
+      "retained_gp": {
+        "mean": 18.596026722442833,
+        "p90": 33.15331803380436
+      },
+      "source_event": "boundary_B2F4_r0/events/uji/B2/F4/K5/r0.json",
+      "source_event_sha256": "f572bc5057bcb0c31614f861891642f77caadbccf6560667a77f8ca71aba9709"
+    },
+    {
+      "K": 10,
+      "status": "completed",
+      "query_positions": 33,
+      "query_scans": 99,
+      "complete": {
+        "mean": 12.089757247008416,
+        "p90": 19.45762178161091
+      },
+      "retained_gp": {
+        "mean": 19.19884879453724,
+        "p90": 33.94239158737281
+      },
+      "source_event": "boundary_B2F4_r0/events/uji/B2/F4/K10/r0.json",
+      "source_event_sha256": "ea341db37717700555a0d4f94fd6eec2c7cfeab8776a0be548431c32d07ef2c7"
+    },
+    {
+      "K": 20,
+      "status": "numerical_acceptance_failed",
+      "query_positions": 33,
+      "query_scans": 99,
+      "complete": null,
+      "retained_gp": null,
+      "source_event": "data/failures/uji/B2/F4/K20/r0.json",
+      "source_event_sha256": "c0c055926d9fb42a18cfebd802ff55bb132a5fa1783bb9b86a4ecaa5109a36ae"
+    }
+  ],
+  "original195_batch_status": "stopped",
+  "numerical_policy_changed": false,
+  "source_model": "Original five-member55-feature ReFi, source-trained at K1/3/5; larger budgets are frozen-model extrapolation",
+  "boundary_scope_sha256": "e9b337da163dcccf72e4b329fa24765bac3301a4482d012755474d546acd9a12"
+}

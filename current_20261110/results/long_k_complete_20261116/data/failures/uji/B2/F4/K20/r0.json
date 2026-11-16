@@ -1,0 +1,30 @@
+{
+  "task_id": "uji/B2/F4/K20/r0",
+  "status": "failed",
+  "error": "RuntimeError(\"Fixed-budget source QMC failed: {'sampler': 'rss_gaussian_two_scrambles', 'seed': 1134527432, 'original_ESS': 8.824006872276076, 'ESS': [44.92303115044266, 69.68143951264292], 'gaps': {'mean': 0.805780112667108, 'covariance': 0.4523231402358115, 'log_evidence': 0.10011433842128525}, 'samples': 524288, 'accepted': False}\")",
+  "seconds": 33.32169799134135,
+  "timings": {
+    "adaptation_seconds": 6.615833654999733,
+    "retained_construction_seconds": 18.884492620825768
+  },
+  "input_binding": {
+    "task_id": "uji/B2/F4/K20/r0",
+    "building": "B2",
+    "floor": 4,
+    "repeat": 0,
+    "K": 20,
+    "H_rows": 8390,
+    "S_rows": 60,
+    "query_scans": 99,
+    "query_positions": 33,
+    "original_learning_event_sha256": "317327ddfbac615b021f5b6ff75ec0ce69ce5ec360af00ff39d141ed78e2556b",
+    "GP_context_sha256": "b68b0050013bde29e8a06edf94f8c74a07b195afcd8f6fcb945934679ae3d807",
+    "history_keys": {
+      "0": "8454c817631d022275ab912e8063c9e41e02489659bd30e476db9b3ebab06af3",
+      "1": "2ba41877e97f078e892852e5f1e52087f9d0ba4423852745026a7d4188f711e2",
+      "2": "7c999fb2ab234a91be28b5775b44206e5d418e799bdffa37c6ff4ba3071457ab",
+      "3": "82bf78b92661fb45e58751edc16209f06876d6ff18b33f3120c4b988af439c86"
+    },
+    "state_reused": false
+  }
+}

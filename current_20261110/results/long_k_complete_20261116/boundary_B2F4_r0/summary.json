@@ -1,0 +1,48 @@
+{
+  "post_failure_boundary_check": true,
+  "family": "uji/B2/F4/r0",
+  "requested_tasks": 4,
+  "completed_tasks": 4,
+  "failed_tasks": 0,
+  "results": [
+    {
+      "task_id": "uji/B2/F4/K1/r0",
+      "K": 1,
+      "status": "completed",
+      "seconds": 29.10588065907359,
+      "complete_mean": 11.929222927397971,
+      "GP_mean": 18.49914383126922,
+      "error": null
+    },
+    {
+      "task_id": "uji/B2/F4/K3/r0",
+      "K": 3,
+      "status": "completed",
+      "seconds": 32.16319143772125,
+      "complete_mean": 11.624565380226235,
+      "GP_mean": 18.1577792679179,
+      "error": null
+    },
+    {
+      "task_id": "uji/B2/F4/K5/r0",
+      "K": 5,
+      "status": "completed",
+      "seconds": 34.71118524298072,
+      "complete_mean": 12.17469455343138,
+      "GP_mean": 18.596026722442833,
+      "error": null
+    },
+    {
+      "task_id": "uji/B2/F4/K10/r0",
+      "K": 10,
+      "status": "completed",
+      "seconds": 46.59348301589489,
+      "complete_mean": 12.089757247008416,
+      "GP_mean": 19.19884879453724,
+      "error": null
+    }
+  ],
+  "seconds": 143.46634596958756,
+  "Query_binding": "Original long-K Query, unchanged across all four budgets.",
+  "original_195_batch_status": "stopped after the original K20 fixed-budget numerical rejection"
+}
