@@ -1,0 +1,27 @@
+{
+  "launcher_pid": 1155523,
+  "started_epoch": 1794813644.275591,
+  "started_UTC": "2026-11-16T07:20:44.275592+00:00",
+  "CPU_threads": 2,
+  "GPU_devices": [],
+  "output": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/relation_encoding_ablation_20261115",
+  "freeze_sha256": "92c221c1c346afb6cdc553699c8b5a532c97d5bacbd49ac2a5db15abacba0e2e",
+  "source_audit_sha256": "9d54b08ac630e323007df12ab5bb8675958898ac38cc37390c66411d4bcc2f34",
+  "GP_complete_sha256": "28a78c839480b45147e6d77a2889c0f63cce75908a76af6905b994be44b7ba36",
+  "script_sha256": {
+    "evaluate.py": "4443d1b797ad92378bcdd6f0e1624d70c48bd6e9e13c8e0ec06745c59cc68734",
+    "run_after_tab.sh": "ec8b4d012c982ae1e16625ecd3109498c9b1315e4c87209ff456fd86e76bdfaa",
+    "run_formal.sh": "d537f6604f0eced69dfb0b7c678c49c1bca31271690da76330912e38109b0c8f",
+    "source_candidate.py": "359dc8c4cdb9bcbcd223d829b0ed784507359441245df3c06648172118e0ce60"
+  },
+  "training_seeds": [
+    1,
+    2,
+    3
+  ],
+  "unique_task_scenarios": 36,
+  "original_A_member_total_training_seconds": 304.7978838868439,
+  "source_preparation_seconds": 10.576700333505869,
+  "original_A_members_retrained": false,
+  "GP_fields_rebuilt": false
+}
