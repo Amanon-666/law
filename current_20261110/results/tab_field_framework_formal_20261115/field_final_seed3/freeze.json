@@ -1,0 +1,56 @@
+{
+  "phase": "final",
+  "seed": 3,
+  "maximum_source_epochs": 1,
+  "training_buildings": [
+    0,
+    2
+  ],
+  "development_building": null,
+  "source_dev_query_permissions": "B2 has no training-label or training-context role in development. Final models restart from public weights and use all permitted B0+B2.",
+  "source_selection": "Minimum B2 source-only field localization pooled MDE among epochs 0/1/2/3; exact tie takes earlier. Fixed B2 floors, K1/3/5, r0, static-resample-v2 base seed20261111. Observation NLL is auxiliary.",
+  "context_count_rows": 1024,
+  "query_rows": 256,
+  "views": 1,
+  "normalization": [
+    "none"
+  ],
+  "precision": "float32",
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "clip": 1.0
+  },
+  "context_sampling": "Whole source label units, with one random original K/draw alias per unit and exact n/nd count expansion. Exclude all aliases of every query unit.",
+  "detection_context": "Include real source observations of both known classes, as required by the native classifier label encoder.",
+  "source_data": "Original HGB 55-feature table and scan sufficient statistics; scale appends the opposite-floor-half Tab mean as feature 56.",
+  "scale_training": "Independent native Tab means trained only on each opposite original floor half produce OOF labels. Scale target is log(var+(mu-OOF_mean)^2+9), with nd weights.",
+  "losses": {
+    "det": "Count-weighted native two-class CE after inverse class shuffle, temperature 1.",
+    "mean": "nd-weighted RSS-unit MSE of the inverse-scaled native quantile mean.",
+    "scale": "nd-weighted log-variance-unit MSE of the inverse-scaled native quantile mean."
+  },
+  "code_sha256": {
+    "formal_source.py": "b99fe8613ad230568d727aa82398ee7722dc344a6bd184a6f137f9245f1c0c97",
+    "field_predictor.py": "2babdbaac4baee620cdb3379879a172f55ac92aa8f5704b2d1385382b0d9819d",
+    "native_tab.py": "47654798a0fa56f9855475f233dcaea82242a7a79ea47a7761b1d4b184f8f63e",
+    "source_cells.py": "b181c649564b99cce48ace8467a8edad50ad902c7d3cdf2447ba97e1f54fa89e",
+    "source_probe.py": "0d473d723f1fe56ba53f2ed49eb6c1800e8c3fef49008966e072a02fe2b01851"
+  },
+  "reader_code_sha256": {
+    "frozen_hurdle_translator.py": "7ea5c52b7b94aac540cb9928e583e0c8f2c228f63e38a790aab0505938c1eeac",
+    "vertical_translator/translator.py": "50b51aa05330ec1b7335b8be7f8c72f7200de198a933c950e19a9acfd582eacd"
+  },
+  "raw_source_CSV_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+  "public_checkpoints": {
+    "det": {
+      "path": "/home/panyushuo/projects/panyushuo/RNP-UJI/tabicl_weights/tabicl-classifier-v2-20260212.ckpt",
+      "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+    },
+    "reg": {
+      "path": "/home/panyushuo/projects/panyushuo/RNP-UJI/tabicl_weights/tabicl-regressor-v2-20260212.ckpt",
+      "sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a"
+    }
+  }
+}

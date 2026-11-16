@@ -1,0 +1,42 @@
+{
+  "recorded_epoch": 1794751131.9132612,
+  "reason": "Multi-task CUDA allocation fragmentation during original full-H C backpropagation",
+  "evidence": {
+    "allocated_GiB": 10.22,
+    "reserved_unallocated_GiB": 4.54,
+    "requested_MiB": 792.0,
+    "physical_free_MiB": 637.25,
+    "recorded_committed_updates": 54,
+    "next_resume_task": "uji/B2/F2/K1/r0",
+    "exact_failed_task_known": false
+  },
+  "change": "Set PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True before the unchanged Python entrypoint.",
+  "official_reference": "https://docs.pytorch.org/docs/2.8/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf",
+  "wrapper_before_sha256": "a38a2fdb64cca018a5e1ae5063e2df8fee41f0338506a821e524172ca46d6c9b",
+  "wrapper_after_sha256": "065923ace5ad1d15108934f879b490bb49fdcd809543e631f3ada29e00038ff1",
+  "unchanged_source_code_sha256": {
+    "formal_driver.py": "ceef565609d9de8a4abe947049e8c93f2893a2cacd9365960ea7cc9fc4386ec8",
+    "formal_direct.py": "f431f922ad887104676bd251094fc3b77ad64a4af12935a2e4d11c829f697809",
+    "direct_coordinate.py": "9a18f3f037306b17a514288c3b133c7c3bbd76882d28968a8b0e57ff0f57d42b",
+    "formal_source.py": "b99fe8613ad230568d727aa82398ee7722dc344a6bd184a6f137f9245f1c0c97",
+    "native_tab.py": "47654798a0fa56f9855475f233dcaea82242a7a79ea47a7761b1d4b184f8f63e",
+    "field_predictor.py": "2babdbaac4baee620cdb3379879a172f55ac92aa8f5704b2d1385382b0d9819d",
+    "evaluate_final.py": "a3d3ae212ef2e597c3f890cd75ec84cdb5d926936a662c21a46700bd770783e3"
+  },
+  "mathematical_changes": false,
+  "history_or_AP_reduction": false,
+  "epochs_or_objective_change": false,
+  "resume": "Original latest model, optimizer, GradScaler and all saved RNG states after54 committed updates. At most the unfinished nine-task block is replayed.",
+  "completed_B_seeds": [
+    1,
+    2,
+    3
+  ],
+  "completed_D_seeds": [
+    1
+  ],
+  "completed_C_seeds": [],
+  "budget_start_epoch": 1794727402,
+  "budget_deadline_epoch": 1794756202,
+  "target_evaluation_started": false
+}

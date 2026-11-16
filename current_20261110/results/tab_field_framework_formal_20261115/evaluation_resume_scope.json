@@ -1,0 +1,21 @@
+{
+  "recorded_epoch": 1794800654.232439,
+  "purpose": "Finish only40 missing target inference events after conservative wall-clock stop",
+  "original_driver_terminal_status": "TimeoutExpired at original wall deadline1794756202; preserve original driver.exit/status/log",
+  "completed_target_events": 824,
+  "required_target_events": 864,
+  "missing_events": 40,
+  "missing_scope": "D seed3 field and complete, B1F3/r2/K3 and K5; C seed3 all36 fixed tasks",
+  "source_models_all_complete": true,
+  "training_performed": false,
+  "model_or_data_or_selection_changes": false,
+  "source_selection_sha256": "40c7d6a28cd546b86dc387186c8fc9f2fc1fff24aec48b8de954c3e37deed691",
+  "inference_code_sha256": "a3d3ae212ef2e597c3f890cd75ec84cdb5d926936a662c21a46700bd770783e3",
+  "prior_conservative_GPU_process_seconds": 15943.9439,
+  "authorized_maximum_GPU_process_seconds": 28800,
+  "resume_timeout_seconds": 1200,
+  "maximum_after_this_resume_seconds": 17143.9439,
+  "accounting": "Sum real GPU stage process wall times including source preparation, failed C attempt, target timeout and216s engineering probes. Exclude the non-GPU outer driver idle time. No stage is counted twice.",
+  "original_scope_preserved": "All original36 scenes and training seeds1/2/3, frozen source epochs field1/direct3, fixed H/S/Q and original GP/readout.",
+  "resume_policy": "Existing824 completed events are checksum-bound reused by the unchanged evaluation entrypoint; original timeout remains visible."
+}

@@ -1,0 +1,31 @@
+{
+  "seed": 1,
+  "source_epoch": 0,
+  "contexts": {
+    "det": {
+      "path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/frozen_field_seed1/det_context.npz",
+      "sha256": "947d9fea22e225eccbbca1459613319bd2f59f3218af5e99b229e1a6d5f9360a",
+      "count_rows": 1018,
+      "units": 45,
+      "checkpoint": "/home/panyushuo/projects/panyushuo/RNP-UJI/tabicl_weights/tabicl-classifier-v2-20260212.ckpt",
+      "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+    },
+    "mean": {
+      "path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/frozen_field_seed1/mean_context.npz",
+      "sha256": "fe0a63c7fda72fd883cad08eac35eb96a6cdad1292e96b999f6bb7153af92ad4",
+      "count_rows": 1024,
+      "units": 112,
+      "checkpoint": "/home/panyushuo/projects/panyushuo/RNP-UJI/tabicl_weights/tabicl-regressor-v2-20260212.ckpt",
+      "checkpoint_sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a"
+    },
+    "scale": {
+      "path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/frozen_field_seed1/scale_context.npz",
+      "sha256": "236b82f23f30f70295436ff5943dd9e17e5052277fa793f6b0057bf69e69013a",
+      "count_rows": 1024,
+      "units": 112,
+      "checkpoint": "/home/panyushuo/projects/panyushuo/RNP-UJI/tabicl_weights/tabicl-regressor-v2-20260212.ckpt",
+      "checkpoint_sha256": "0db9cb538f114e79026bf08f45f41ad8dd7ad2de2aaca9a5ca8cd3bd9748ae7a"
+    }
+  },
+  "source_only": true
+}

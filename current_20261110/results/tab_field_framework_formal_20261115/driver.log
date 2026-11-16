@@ -1,0 +1,29 @@
+{"stage": "reuse_completed_stage", "name": "direct_development"}
+{"stage": "source_selection_frozen", "field_epochs": 1, "direct_epochs": 3, "source_training_buildings": ["B0"], "source_development_building": "B2", "target_evaluation_used": false, "rule": "Minimum source B2 pooled position MDE among epochs0/1/2/3, earliest exact tie.", "field_complete_sha256": "08d66955fe9b56154186091583843c658aee5e598f02e680ed32e89ad3a4a5ae", "field_curve_sha256": "2ff339c113a6fd111c8d1654e96a0ae583547fc71894808ab5875bb6c054c298", "direct_complete_sha256": "4fef80f7776957a42dfe06b5d974d46e2a8d1c13b8219ec8ac44d4f9b49b7fba", "driver_plan_sha256": "4798cdea1cdd65395c2ff7561bdc3348d037972df4c96401e08803b78c2e0253"}
+{"stage": "reuse_completed_stage", "name": "field_final_seed1"}
+{"stage": "reuse_completed_stage", "name": "field_final_seed2"}
+{"stage": "reuse_completed_stage", "name": "field_final_seed3"}
+{"stage": "reuse_completed_stage", "name": "frozen_field_seed1"}
+Traceback (most recent call last):
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/source/formal_driver.py", line 172, in <module>
+    main(arguments)
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/source/formal_driver.py", line 155, in main
+    result = stage(work,'target_evaluation','evaluate_final.py',['--work',str(work)],work/'target_B1',deadline)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/source/formal_driver.py", line 65, in stage
+    result = subprocess.run(command,stdout=log,stderr=subprocess.STDOUT,timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2141, in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+  File "/usr/lib/python3.12/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2045, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/home/panyushuo/projects/panyushuo/DKT-UJI/env/bin/python', '-u', '/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/source/evaluate_final.py', '--work', '/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115']' timed out after 1970.999982174486 seconds

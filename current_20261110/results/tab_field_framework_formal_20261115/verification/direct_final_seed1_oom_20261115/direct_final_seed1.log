@@ -1,0 +1,59 @@
+{"stage": "source_checkpoint_saved", "phase": "final", "seed": 1, "training_epoch": 1, "next_event": 9, "events_per_epoch": 81, "source_updates": 9, "last_task_id": "uji/B0/F0/K5/r2", "last_pinball_loss": 0.06335756555199623, "gradient_norm": 2.3897318840026855, "committed_training_seconds": 26.281165577471256}
+{"stage": "source_checkpoint_saved", "phase": "final", "seed": 1, "training_epoch": 1, "next_event": 18, "events_per_epoch": 81, "source_updates": 18, "last_task_id": "uji/B0/F1/K5/r2", "last_pinball_loss": 0.06820737197995186, "gradient_norm": 0.9734296202659607, "committed_training_seconds": 51.299994211643934}
+{"stage": "source_checkpoint_saved", "phase": "final", "seed": 1, "training_epoch": 1, "next_event": 27, "events_per_epoch": 81, "source_updates": 27, "last_task_id": "uji/B0/F2/K5/r2", "last_pinball_loss": 0.04027417488396168, "gradient_norm": 0.8051487803459167, "committed_training_seconds": 74.04431787878275}
+{"stage": "source_checkpoint_saved", "phase": "final", "seed": 1, "training_epoch": 1, "next_event": 36, "events_per_epoch": 81, "source_updates": 36, "last_task_id": "uji/B0/F3/K5/r2", "last_pinball_loss": 0.03805801086127758, "gradient_norm": 1.2614785432815552, "committed_training_seconds": 96.82240837067366}
+{"stage": "source_checkpoint_saved", "phase": "final", "seed": 1, "training_epoch": 1, "next_event": 45, "events_per_epoch": 81, "source_updates": 45, "last_task_id": "uji/B2/F0/K5/r2", "last_pinball_loss": 0.10654320567846298, "gradient_norm": 1.480645775794983, "committed_training_seconds": 145.9225207604468}
+{"stage": "source_checkpoint_saved", "phase": "final", "seed": 1, "training_epoch": 1, "next_event": 54, "events_per_epoch": 81, "source_updates": 54, "last_task_id": "uji/B2/F1/K5/r2", "last_pinball_loss": 0.07286610454320908, "gradient_norm": 1.4211974143981934, "committed_training_seconds": 191.7697108387947}
+Traceback (most recent call last):
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/source/formal_direct.py", line 307, in <module>
+    main(arguments)
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/source/formal_direct.py", line 249, in main
+    loss = model.source_task_loss(task, truth)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/source/direct_coordinate.py", line 91, in source_task_loss
+    return self.backward(task.Q_rss, truth['xy'], scaler=self.scaler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/ReFi-UJI-Core-20261031/tabicl_history_learning.py", line 76, in backward
+    (scaler.scale(loss) if scaler is not None else loss).backward()
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/_tensor.py", line 647, in backward
+    torch.autograd.backward(
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/autograd/graph.py", line 829, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/utils/checkpoint.py", line 1146, in unpack_hook
+    _run_fn_with_dynamo_disabled(frame.recompute_fn, *args)
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/_compile.py", line 53, in inner
+    return disable_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 929, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/utils/checkpoint.py", line 1116, in _run_fn_with_dynamo_disabled
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/utils/checkpoint.py", line 1542, in recompute_fn
+    fn(*args, **kwargs)
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/RNP-UJI/.deps_tabicl/tabicl/_model/layers.py", line 472, in forward
+    x = x + self._ff_block(self.norm2(x))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/RNP-UJI/.deps_tabicl/tabicl/_model/layers.py", line 524, in _ff_block
+    x = self.linear2(self.dropout(self.activation(self.linear1(x))))
+                                                  ^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/panyushuo/projects/panyushuo/DKT-UJI/env/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 792.00 MiB. GPU 0 has a total capacity of 15.59 GiB of which 637.25 MiB is free. Including non-PyTorch memory, this process has 14.96 GiB memory in use. Of the allocated memory 10.22 GiB is allocated by PyTorch, and 4.54 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

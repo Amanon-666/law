@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "phase": "final",
+  "seed": 2,
+  "source_only": true,
+  "target_evaluation": false,
+  "completed_source_epochs": 3,
+  "source_updates": 243,
+  "freeze_sha256": "d6119de4d51ba5fd76144f411bb6e64d7e637dd6e4e7f50851eec24cc630e3a0",
+  "committed_training_seconds": 1006.8123265951872,
+  "invocation_wall_seconds": 1071.8379909917712,
+  "selected_source_epoch": 3,
+  "model_assets": {
+    "checkpoint": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/direct_final_seed2/checkpoints/epoch_3.ckpt",
+    "sha256": "e9b25534f2c675087545bc49a32f2dd43fe68544aee17ac48f380abc0531c910",
+    "source_epoch": 3,
+    "source_updates": 243,
+    "seed": 2,
+    "training_buildings": [
+      "B0",
+      "B2"
+    ],
+    "source_only": true,
+    "target_evaluation": false,
+    "views": 1,
+    "norm_methods": [
+      "none"
+    ]
+  }
+}

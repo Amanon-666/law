@@ -1,0 +1,31 @@
+{
+  "seed": 1,
+  "source_epoch": 1,
+  "contexts": {
+    "det": {
+      "path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/field_final_seed1/det_context.npz",
+      "sha256": "947d9fea22e225eccbbca1459613319bd2f59f3218af5e99b229e1a6d5f9360a",
+      "count_rows": 1018,
+      "units": 45,
+      "checkpoint": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/field_final_seed1/det/epoch_1.ckpt",
+      "checkpoint_sha256": "30e551ce687f0571039f2a024a907625cf5da8b5ae99eeb95367486d0867fa9c"
+    },
+    "mean": {
+      "path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/field_final_seed1/mean_context.npz",
+      "sha256": "fe0a63c7fda72fd883cad08eac35eb96a6cdad1292e96b999f6bb7153af92ad4",
+      "count_rows": 1024,
+      "units": 112,
+      "checkpoint": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/field_final_seed1/mean/epoch_1.ckpt",
+      "checkpoint_sha256": "d5a78efe064c6b44f87b0ca9a67bbcfb862fb1e40f662c42fb50b4ec292b08dc"
+    },
+    "scale": {
+      "path": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/field_final_seed1/scale_context.npz",
+      "sha256": "371278e108a4a01f0c53e328428a6eea36a3fecd13a7d39f2cca878c3bc1f262",
+      "count_rows": 1024,
+      "units": 112,
+      "checkpoint": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/tab_field_framework_formal_20261115/field_final_seed1/scale_for_epoch_1/epoch_1.ckpt",
+      "checkpoint_sha256": "32990de11fbf948ea4ecd688d16a1faf61d42cc5e1aae5cca68d4d0fcbc37a03"
+    }
+  },
+  "source_only": true
+}

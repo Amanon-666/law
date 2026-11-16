@@ -1,0 +1,149 @@
+{
+  "original": {
+    "seed": 3,
+    "source_buildings": [
+      0,
+      2
+    ],
+    "source_floor_pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "rows": 648000,
+    "features": 55,
+    "unique_label_units": 89380,
+    "training_units": 80442,
+    "validation_units": 8938,
+    "training_rows": 583220,
+    "validation_rows": 64780,
+    "detected_training_rows": 251657,
+    "unit_definition": [
+      "building",
+      "target_floor",
+      "target_position_index",
+      "AP_column"
+    ],
+    "repeated_K_draw_aliases_share_split": true,
+    "validation_fraction": 0.1,
+    "original_cell_table_parity": [
+      {
+        "half": 0,
+        "pairs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "rows": 360000,
+        "array_sha256": [
+          "7e941449a743d64ac12c24f1e551fccc55e2e7f18ce08e390dc3fb8877b47f7b",
+          "5512e2aff738de57ac8546e1c9d069f1fa17baa39d6a82f3a1090f84033828aa",
+          "99c5160f9982b18beffd57c628fa775203320df67dfe59d803ae28bad714af87",
+          "57fb46a4b8001510fe3941118c1f7dbb0bd2309485937e4d050a2d137b5c6909",
+          "c0fc9dd6417f5196108f2f156246c4caae3c6c22bbee61742d44af464eb15286"
+        ],
+        "exact_equal": true
+      },
+      {
+        "half": 1,
+        "pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "rows": 288000,
+        "array_sha256": [
+          "a536b4ac09cfb9706867a1a424aeb7728e2c719db100b73ae929124688262cf4",
+          "13d9e3f4efd9966d60bae42c0e345f99b80b4d642ab6448403cf08595740f248",
+          "49e26fbaac16cb9f41b296d25821bd7128a017ba6af87cfd0613dd7583ba3666",
+          "c161c22f7c695c6356b2b58dd13ecceab156dd5c08302cb634f1d7e2a21f8af4",
+          "d89d7087aad0766ca67cffdbc09e230d3c3aec3f7862a5ecd120131a6c9c90b7"
+        ],
+        "exact_equal": true
+      }
+    ],
+    "unit_sha256": "a7e56eff1707e45fb4ec8cacd6d04debc49998393d9b227dd50c718481f08b83",
+    "unit_train_sha256": "6a09fda87403d3385957969158085be7895d9d80a678f6cbcd0241aa89f89714",
+    "scan_count_range": [
+      2.0,
+      60.0
+    ]
+  },
+  "formal_training_rows": 648000,
+  "formal_training_units": 89380,
+  "training_mask_sha256": "a1975eac46fdb33614b0019ef879a82948def9c101bd508bc26650ead1ce37d3",
+  "pilot_random_unit_split_used": false,
+  "source_rows_by_building": {
+    "0": {
+      "rows": 288000,
+      "detected_rows": 117102
+    },
+    "2": {
+      "rows": 360000,
+      "detected_rows": 162376
+    }
+  }
+}

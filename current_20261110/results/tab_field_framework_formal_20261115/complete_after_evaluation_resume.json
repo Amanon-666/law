@@ -1,0 +1,55 @@
+{
+  "complete": true,
+  "completion_type": "target_evaluation_resume_after_original_wall_timeout",
+  "recorded_UTC": "2026-11-16T03:48:47.531133+00:00",
+  "source_models_all_complete": true,
+  "training_performed_during_resume": false,
+  "events": 864,
+  "unique_task_scenarios": 36,
+  "training_seeds": [
+    1,
+    2,
+    3
+  ],
+  "target_complete": {
+    "path": "target_B1/complete.json",
+    "sha256": "38ea540f3e2434ab81a1f04742c3eb1ba48988d1a644a12ccf0653debee61fa2"
+  },
+  "original_driver_exit": {
+    "path": "driver.exit.json",
+    "sha256": "6a460420040f7840ca15576373c0fa9ae45a177cf5f360162e1cc4113109dd76",
+    "exit_code": 1
+  },
+  "original_driver_status": {
+    "path": "driver_status.json",
+    "sha256": "ce23f11d7f4067e776abd4e26ca9d84ac9f0b5857251abb1c1414c9307d99f36"
+  },
+  "evaluation_resume_exit": {
+    "path": "evaluation_resume.exit.json",
+    "sha256": "ee6720bfa17b46ffb6b0a4f20384d34460f1cbc90305eea35998df88ca428921",
+    "exit_code": 0,
+    "elapsed_seconds": 81
+  },
+  "evaluation_resume_scope": {
+    "path": "evaluation_resume_scope.json",
+    "sha256": "5af61bf000a8044d77d06087e5dcf96523e6a75986d57d04d72421ee285d2035"
+  },
+  "source_selection": {
+    "path": "selected_epochs.json",
+    "sha256": "40c7d6a28cd546b86dc387186c8fc9f2fc1fff24aec48b8de954c3e37deed691"
+  },
+  "model_manifest": {
+    "path": "model_manifest.json",
+    "sha256": "223b250ed0b803ce7ae26b14c0d1cd5b0792ecccbec74b97f13cd108b4a4437d"
+  },
+  "GP_surface_complete": {
+    "path": "gp_surfaces/complete.json",
+    "sha256": "28a78c839480b45147e6d77a2889c0f63cce75908a76af6905b994be44b7ba36"
+  },
+  "prior_light_manifest_sha256": "6b59ab163fd0a3113ee6b41337fda2ea79946e743def96225eace7203dbf8fb0",
+  "prior_completed_events": 824,
+  "prior_event_files_unchanged": 824,
+  "new_target_events": 40,
+  "conservative_GPU_process_seconds": 16024.9439,
+  "authorized_maximum_GPU_process_seconds": 28800
+}

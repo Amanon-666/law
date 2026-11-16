@@ -1,0 +1,121 @@
+{
+  "source_selection_sha256": "40c7d6a28cd546b86dc387186c8fc9f2fc1fff24aec48b8de954c3e37deed691",
+  "model_manifest_sha256": "223b250ed0b803ce7ae26b14c0d1cd5b0792ecccbec74b97f13cd108b4a4437d",
+  "gp_cache_complete_sha256": "28a78c839480b45147e6d77a2889c0f63cce75908a76af6905b994be44b7ba36",
+  "original_task_freeze_sha256": "1f9f15af6f8b241b0082e9119efb57dbcda8671464fb00ff47df558f265136af",
+  "B_D_source_context_matches": {
+    "1": {
+      "det": {
+        "identical_source_units_and_aliases": true,
+        "units": 45,
+        "count_rows": 1018
+      },
+      "mean": {
+        "identical_source_units_and_aliases": true,
+        "units": 112,
+        "count_rows": 1024
+      },
+      "scale": {
+        "identical_source_units_and_aliases": true,
+        "units": 112,
+        "count_rows": 1024
+      }
+    },
+    "2": {
+      "det": {
+        "identical_source_units_and_aliases": true,
+        "units": 44,
+        "count_rows": 1013
+      },
+      "mean": {
+        "identical_source_units_and_aliases": true,
+        "units": 94,
+        "count_rows": 1013
+      },
+      "scale": {
+        "identical_source_units_and_aliases": true,
+        "units": 94,
+        "count_rows": 1013
+      }
+    },
+    "3": {
+      "det": {
+        "identical_source_units_and_aliases": true,
+        "units": 46,
+        "count_rows": 1004
+      },
+      "mean": {
+        "identical_source_units_and_aliases": true,
+        "units": 99,
+        "count_rows": 1016
+      },
+      "scale": {
+        "identical_source_units_and_aliases": true,
+        "units": 99,
+        "count_rows": 1016
+      }
+    }
+  },
+  "protocol": {
+    "dataset": "uji",
+    "building": "B1",
+    "protocol": "static-resample-v2",
+    "manifest": null,
+    "root": null,
+    "source_dataset": null,
+    "source_root": null,
+    "source_buildings": null,
+    "floors": null,
+    "budgets": [
+      1,
+      3,
+      5
+    ],
+    "repeats": [
+      0,
+      1,
+      2
+    ],
+    "seed": 20261111,
+    "R": 3,
+    "query_positions": 60,
+    "methods": [
+      "wknn_S",
+      "wknn_HS",
+      "gp_S",
+      "gp_histmean",
+      "refi"
+    ],
+    "method_options": {
+      "gp_S": {
+        "readout": "map"
+      },
+      "gp_histmean": {
+        "readout": "map"
+      },
+      "refi": {
+        "cache_dir": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/paper_refi_models_20261111"
+      }
+    }
+  },
+  "source_data": {
+    "B0": "5263d99477329d5e70163707b62c048856d22530ad196919f3aa5dee21565bb9",
+    "B2": "3f55af80b8d54e86734dd38c68ae2df493687a6df6e9cdaacae4f91fe402a843"
+  },
+  "target_data": {
+    "B1": "525701d1ecbdb94dafd60a5426e4eba2eb1bdaddb7aa93aae2075ca3a74bae11"
+  },
+  "code_sha256": {
+    "evaluate_final.py": "a3d3ae212ef2e597c3f890cd75ec84cdb5d926936a662c21a46700bd770783e3",
+    "field_predictor.py": "2babdbaac4baee620cdb3379879a172f55ac92aa8f5704b2d1385382b0d9819d",
+    "native_tab.py": "47654798a0fa56f9855475f233dcaea82242a7a79ea47a7761b1d4b184f8f63e",
+    "direct_coordinate.py": "9a18f3f037306b17a514288c3b133c7c3bbd76882d28968a8b0e57ff0f57d42b"
+  },
+  "comparison_scope": {
+    "A_B": "Matched original 55/56 features, scan-count objectives, source rows per seed, candidate construction and fixed reader/GP. Different estimator families and pretraining.",
+    "B_C": "Complete field-learning pipeline versus ordinary episodic direct-coordinate fine-tuning with the same public regressor family, legal source buildings and H/S. Representation, supervision and inference all differ. C has one shared backbone, B has three task-specific native backbones.",
+    "B_D": "Train all native field weights versus frozen public weights. Same source context unit/alias selections per seed; each version uses its own legal opposite-half Tab means for scale labels.",
+    "reference": "Original five-HGB-seed complete and field predictions and native GP remain separate internal references.",
+    "exposed_development": "B1 has prior project results. This is frozen target evaluation after B0-to-B2 source selection, not a never-exposed external benchmark."
+  }
+}

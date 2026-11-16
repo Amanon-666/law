@@ -1,0 +1,38 @@
+{
+  "formal_freeze_sha256": "016310ef9445b90418d1baecc55db31160949a68659ffbe6bed57a7c57b82595",
+  "code_sha256": {
+    "formal_driver.py": "ceef565609d9de8a4abe947049e8c93f2893a2cacd9365960ea7cc9fc4386ec8",
+    "formal_source.py": "b99fe8613ad230568d727aa82398ee7722dc344a6bd184a6f137f9245f1c0c97",
+    "formal_direct.py": "f431f922ad887104676bd251094fc3b77ad64a4af12935a2e4d11c829f697809",
+    "evaluate_final.py": "a3d3ae212ef2e597c3f890cd75ec84cdb5d926936a662c21a46700bd770783e3",
+    "field_predictor.py": "2babdbaac4baee620cdb3379879a172f55ac92aa8f5704b2d1385382b0d9819d",
+    "native_tab.py": "47654798a0fa56f9855475f233dcaea82242a7a79ea47a7761b1d4b184f8f63e",
+    "source_cells.py": "b181c649564b99cce48ace8467a8edad50ad902c7d3cdf2447ba97e1f54fa89e",
+    "source_probe.py": "0d473d723f1fe56ba53f2ed49eb6c1800e8c3fef49008966e072a02fe2b01851",
+    "direct_coordinate.py": "9a18f3f037306b17a514288c3b133c7c3bbd76882d28968a8b0e57ff0f57d42b",
+    "cache_original_gp.py": "0c2a0d5b315ad176bad4cff6e66931847f7bc883a37f00e93c67f854001b9e68"
+  },
+  "source_development_start_epoch": 1794727402,
+  "source_development_start_evidence": "Actual launcher3563650 ps lstart, read by independent execution monitor",
+  "deadline_epoch": 1794756202,
+  "maximum_formal_single_GPU_wall_seconds": 28800,
+  "accounting": "Conservatively count all wall time since the first formal source stage, including CPU preparation, OOF, source validation and target evaluation.",
+  "source_selection": "B0 train, B2 development only, choose epoch0/1/2/3 independently for B and C before B1 evaluation.",
+  "final": "Restart seeds1/2/3 from public weights on B0+B2. Report all seeds. D uses frozen public weights and its own OOF labels.",
+  "target_evaluation": "Only after all source selections and final model assets are committed. Original B1 36 tasks.",
+  "stages": [
+    "existing field_development",
+    "direct_development",
+    "field_final_seed1..3",
+    "frozen_field_seed1..3",
+    "direct_final_seed1..3",
+    "target_B1"
+  ],
+  "resources": {
+    "gpu": 1,
+    "GPU_index": 0,
+    "CPU_threads": 2,
+    "shared_GP_cache_CPU_threads": 2
+  },
+  "relation_encoding_ablation": "Separate later CPU-only stage, outside this driver and the A/B/C/D comparison."
+}
