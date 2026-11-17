@@ -1,0 +1,2110 @@
+{
+  "complete": true,
+  "method_identity": "Empirical target-only sufficient-calibration WKNN reference",
+  "unique_query_units": 39,
+  "original_sparse_events_reused": 195,
+  "freeze_sha256": "bc9c31b4120b67e84d527ff376e199088997815e511571c265a327ed80a1d4c3",
+  "dense": {
+    "overall": {
+      "query_units": 39,
+      "query_positions": 1389,
+      "mean": 10.174796021335652,
+      "p90": 19.38642583215621,
+      "calibration_positions_mean": 36.12820512820513,
+      "calibration_positions_min": 25,
+      "calibration_positions_max": 57,
+      "calibration_scans_mean": 740.4102564102565,
+      "calibration_scans_min": 343,
+      "calibration_scans_max": 1428
+    },
+    "by_building": {
+      "B0": {
+        "query_units": 12,
+        "query_positions": 387,
+        "mean": 7.989952428657979,
+        "p90": 16.258062902101447,
+        "calibration_positions_mean": 32.416666666666664,
+        "calibration_positions_min": 27,
+        "calibration_positions_max": 35,
+        "calibration_scans_mean": 552.1666666666666,
+        "calibration_scans_min": 343,
+        "calibration_scans_max": 723
+      },
+      "B1": {
+        "query_units": 12,
+        "query_positions": 396,
+        "mean": 13.492323687351597,
+        "p90": 23.782959136931183,
+        "calibration_positions_mean": 33.25,
+        "calibration_positions_min": 25,
+        "calibration_positions_max": 40,
+        "calibration_scans_mean": 650.25,
+        "calibration_scans_min": 436,
+        "calibration_scans_max": 807
+      },
+      "B2": {
+        "query_units": 15,
+        "query_positions": 606,
+        "mean": 9.402178058668897,
+        "p90": 18.56259472122168,
+        "calibration_positions_mean": 41.4,
+        "calibration_positions_min": 34,
+        "calibration_positions_max": 57,
+        "calibration_scans_mean": 963.1333333333333,
+        "calibration_scans_min": 522,
+        "calibration_scans_max": 1428
+      }
+    },
+    "by_floor": {
+      "B0F0": {
+        "query_units": 3,
+        "query_positions": 81,
+        "mean": 7.00851661467007,
+        "p90": 13.694545658318196,
+        "calibration_positions_mean": 27.0,
+        "calibration_positions_min": 27,
+        "calibration_positions_max": 27,
+        "calibration_scans_mean": 536.0,
+        "calibration_scans_min": 521,
+        "calibration_scans_max": 545
+      },
+      "B0F1": {
+        "query_units": 3,
+        "query_positions": 99,
+        "mean": 8.280383938408123,
+        "p90": 17.359829585692857,
+        "calibration_positions_mean": 33.666666666666664,
+        "calibration_positions_min": 33,
+        "calibration_positions_max": 34,
+        "calibration_scans_mean": 600.6666666666666,
+        "calibration_scans_min": 417,
+        "calibration_scans_max": 705
+      },
+      "B0F2": {
+        "query_units": 3,
+        "query_positions": 105,
+        "mean": 7.373266986706099,
+        "p90": 14.017861085638655,
+        "calibration_positions_mean": 35.0,
+        "calibration_positions_min": 35,
+        "calibration_positions_max": 35,
+        "calibration_scans_mean": 712.6666666666666,
+        "calibration_scans_min": 695,
+        "calibration_scans_max": 723
+      },
+      "B0F3": {
+        "query_units": 3,
+        "query_positions": 102,
+        "mean": 9.12226177054723,
+        "p90": 16.865980261206374,
+        "calibration_positions_mean": 34.0,
+        "calibration_positions_min": 34,
+        "calibration_positions_max": 34,
+        "calibration_scans_mean": 359.3333333333333,
+        "calibration_scans_min": 343,
+        "calibration_scans_max": 379
+      },
+      "B1F0": {
+        "query_units": 3,
+        "query_positions": 114,
+        "mean": 10.25775843850415,
+        "p90": 17.16981213787936,
+        "calibration_positions_mean": 38.0,
+        "calibration_positions_min": 38,
+        "calibration_positions_max": 38,
+        "calibration_scans_mean": 695.0,
+        "calibration_scans_min": 683,
+        "calibration_scans_max": 717
+      },
+      "B1F1": {
+        "query_units": 3,
+        "query_positions": 90,
+        "mean": 15.749322153223789,
+        "p90": 24.015746932104285,
+        "calibration_positions_mean": 30.0,
+        "calibration_positions_min": 30,
+        "calibration_positions_max": 30,
+        "calibration_scans_mean": 738.3333333333334,
+        "calibration_scans_min": 639,
+        "calibration_scans_max": 807
+      },
+      "B1F2": {
+        "query_units": 3,
+        "query_positions": 117,
+        "mean": 12.872435209342084,
+        "p90": 23.816380651760003,
+        "calibration_positions_mean": 40.0,
+        "calibration_positions_min": 40,
+        "calibration_positions_max": 40,
+        "calibration_scans_mean": 702.3333333333334,
+        "calibration_scans_min": 646,
+        "calibration_scans_max": 731
+      },
+      "B1F3": {
+        "query_units": 3,
+        "query_positions": 75,
+        "mean": 16.667490732247906,
+        "p90": 35.05413166417152,
+        "calibration_positions_mean": 25.0,
+        "calibration_positions_min": 25,
+        "calibration_positions_max": 25,
+        "calibration_scans_mean": 465.3333333333333,
+        "calibration_scans_min": 436,
+        "calibration_scans_max": 500
+      },
+      "B2F0": {
+        "query_units": 3,
+        "query_positions": 99,
+        "mean": 10.612075594613954,
+        "p90": 21.041357294725326,
+        "calibration_positions_mean": 34.0,
+        "calibration_positions_min": 34,
+        "calibration_positions_max": 34,
+        "calibration_scans_mean": 991.3333333333334,
+        "calibration_scans_min": 969,
+        "calibration_scans_max": 1034
+      },
+      "B2F1": {
+        "query_units": 3,
+        "query_positions": 132,
+        "mean": 9.078531231632125,
+        "p90": 15.268306187422219,
+        "calibration_positions_mean": 45.0,
+        "calibration_positions_min": 45,
+        "calibration_positions_max": 45,
+        "calibration_scans_mean": 1099.3333333333333,
+        "calibration_scans_min": 1093,
+        "calibration_scans_max": 1105
+      },
+      "B2F2": {
+        "query_units": 3,
+        "query_positions": 108,
+        "mean": 8.878707105528857,
+        "p90": 17.766561041334267,
+        "calibration_positions_mean": 37.0,
+        "calibration_positions_min": 37,
+        "calibration_positions_max": 37,
+        "calibration_scans_mean": 784.6666666666666,
+        "calibration_scans_min": 761,
+        "calibration_scans_max": 818
+      },
+      "B2F3": {
+        "query_units": 3,
+        "query_positions": 168,
+        "mean": 8.595448655280112,
+        "p90": 16.446028580536385,
+        "calibration_positions_mean": 57.0,
+        "calibration_positions_min": 57,
+        "calibration_positions_max": 57,
+        "calibration_scans_mean": 1400.0,
+        "calibration_scans_min": 1367,
+        "calibration_scans_max": 1428
+      },
+      "B2F4": {
+        "query_units": 3,
+        "query_positions": 99,
+        "mean": 10.56386419825206,
+        "p90": 19.142777442423252,
+        "calibration_positions_mean": 34.0,
+        "calibration_positions_min": 34,
+        "calibration_positions_max": 34,
+        "calibration_scans_mean": 540.3333333333334,
+        "calibration_scans_min": 522,
+        "calibration_scans_max": 550
+      }
+    },
+    "by_draw": {
+      "0": {
+        "query_units": 13,
+        "query_positions": 463,
+        "mean": 9.939845749966544,
+        "p90": 18.88875439102535,
+        "calibration_positions_mean": 36.07692307692308,
+        "calibration_positions_min": 25,
+        "calibration_positions_max": 57,
+        "calibration_scans_mean": 739.3846153846154,
+        "calibration_scans_min": 343,
+        "calibration_scans_max": 1428
+      },
+      "1": {
+        "query_units": 13,
+        "query_positions": 463,
+        "mean": 10.019232973708663,
+        "p90": 17.739332160353346,
+        "calibration_positions_mean": 36.15384615384615,
+        "calibration_positions_min": 25,
+        "calibration_positions_max": 57,
+        "calibration_scans_mean": 738.1538461538462,
+        "calibration_scans_min": 379,
+        "calibration_scans_max": 1367
+      },
+      "2": {
+        "query_units": 13,
+        "query_positions": 463,
+        "mean": 10.565309340331748,
+        "p90": 21.158982988338582,
+        "calibration_positions_mean": 36.15384615384615,
+        "calibration_positions_min": 25,
+        "calibration_positions_max": 57,
+        "calibration_scans_mean": 743.6923076923077,
+        "calibration_scans_min": 356,
+        "calibration_scans_max": 1405
+      }
+    }
+  },
+  "sparse_by_K": {
+    "1": {
+      "overall": {
+        "query_units": 39,
+        "query_positions": 1389,
+        "mean": 56.09294253699074,
+        "p90": 98.72897094708735,
+        "calibration_positions_mean": 1.0,
+        "calibration_positions_min": 1,
+        "calibration_positions_max": 1,
+        "calibration_scans_mean": 3.0,
+        "calibration_scans_min": 3,
+        "calibration_scans_max": 3
+      },
+      "by_building": {
+        "B0": {
+          "query_units": 12,
+          "query_positions": 387,
+          "mean": 48.79438705165201,
+          "p90": 86.39595631709442,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B1": {
+          "query_units": 12,
+          "query_positions": 396,
+          "mean": 73.80931911120594,
+          "p90": 127.96746564653674,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B2": {
+          "query_units": 15,
+          "query_positions": 606,
+          "mean": 49.17686308061594,
+          "p90": 80.82484110488915,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        }
+      },
+      "by_floor": {
+        "B0F0": {
+          "query_units": 3,
+          "query_positions": 81,
+          "mean": 49.43172595469769,
+          "p90": 86.77029823805957,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B0F1": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 46.055868701067105,
+          "p90": 82.47204841044461,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B0F2": {
+          "query_units": 3,
+          "query_positions": 105,
+          "mean": 52.50564615068786,
+          "p90": 93.92438139635594,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B0F3": {
+          "query_units": 3,
+          "query_positions": 102,
+          "mean": 47.12582489638184,
+          "p90": 80.23201811945125,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B1F0": {
+          "query_units": 3,
+          "query_positions": 114,
+          "mean": 63.628631180035605,
+          "p90": 127.96558581463074,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B1F1": {
+          "query_units": 3,
+          "query_positions": 90,
+          "mean": 79.31475803183253,
+          "p90": 127.20332119097223,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B1F2": {
+          "query_units": 3,
+          "query_positions": 117,
+          "mean": 71.3852190899492,
+          "p90": 110.16539287230559,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B1F3": {
+          "query_units": 3,
+          "query_positions": 75,
+          "mean": 86.45903409499348,
+          "p90": 136.74239642831733,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B2F0": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 52.41319298436332,
+          "p90": 84.01326277723346,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B2F1": {
+          "query_units": 3,
+          "query_positions": 132,
+          "mean": 48.55515543558648,
+          "p90": 75.4235481914417,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B2F2": {
+          "query_units": 3,
+          "query_positions": 108,
+          "mean": 50.26027077539204,
+          "p90": 85.57834675297218,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B2F3": {
+          "query_units": 3,
+          "query_positions": 168,
+          "mean": 47.22690314041866,
+          "p90": 75.69319723090102,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "B2F4": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 48.896600329002005,
+          "p90": 79.13247538992029,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        }
+      },
+      "by_draw": {
+        "0": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 54.39960726041402,
+          "p90": 97.19335380856184,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "1": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 59.045422082809885,
+          "p90": 107.55635781698231,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        },
+        "2": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 54.833798267748314,
+          "p90": 93.61676395071214,
+          "calibration_positions_mean": 1.0,
+          "calibration_positions_min": 1,
+          "calibration_positions_max": 1,
+          "calibration_scans_mean": 3.0,
+          "calibration_scans_min": 3,
+          "calibration_scans_max": 3
+        }
+      }
+    },
+    "3": {
+      "overall": {
+        "query_units": 39,
+        "query_positions": 1389,
+        "mean": 35.40366316808393,
+        "p90": 73.8044078637097,
+        "calibration_positions_mean": 3.0,
+        "calibration_positions_min": 3,
+        "calibration_positions_max": 3,
+        "calibration_scans_mean": 9.0,
+        "calibration_scans_min": 9,
+        "calibration_scans_max": 9
+      },
+      "by_building": {
+        "B0": {
+          "query_units": 12,
+          "query_positions": 387,
+          "mean": 31.889285811863637,
+          "p90": 70.96182086194975,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B1": {
+          "query_units": 12,
+          "query_positions": 396,
+          "mean": 46.301561905085755,
+          "p90": 98.64156415255181,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B2": {
+          "query_units": 15,
+          "query_positions": 606,
+          "mean": 30.526594087233335,
+          "p90": 65.20229292317579,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        }
+      },
+      "by_floor": {
+        "B0F0": {
+          "query_units": 3,
+          "query_positions": 81,
+          "mean": 37.84759486382453,
+          "p90": 73.21295593104588,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B0F1": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 22.244310328728265,
+          "p90": 44.81443367066921,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B0F2": {
+          "query_units": 3,
+          "query_positions": 105,
+          "mean": 37.82022339622052,
+          "p90": 80.4685218377285,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B0F3": {
+          "query_units": 3,
+          "query_positions": 102,
+          "mean": 30.41361025562929,
+          "p90": 71.8614872889589,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B1F0": {
+          "query_units": 3,
+          "query_positions": 114,
+          "mean": 39.79851644279822,
+          "p90": 97.57634689545318,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B1F1": {
+          "query_units": 3,
+          "query_positions": 90,
+          "mean": 52.71718043798096,
+          "p90": 114.75067013593308,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B1F2": {
+          "query_units": 3,
+          "query_positions": 117,
+          "mean": 45.06603537793814,
+          "p90": 89.7613086173018,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B1F3": {
+          "query_units": 3,
+          "query_positions": 75,
+          "mean": 50.41487015063886,
+          "p90": 94.40771404654588,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B2F0": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 29.705175999860234,
+          "p90": 48.934052467222216,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B2F1": {
+          "query_units": 3,
+          "query_positions": 132,
+          "mean": 32.77243539190479,
+          "p90": 64.45159128094494,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B2F2": {
+          "query_units": 3,
+          "query_positions": 108,
+          "mean": 30.132910816868065,
+          "p90": 73.01907996613568,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B2F3": {
+          "query_units": 3,
+          "query_positions": 168,
+          "mean": 29.06333954176889,
+          "p90": 69.95802285095856,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "B2F4": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 31.266128382897808,
+          "p90": 64.27481349236832,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        }
+      },
+      "by_draw": {
+        "0": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 35.301212459825315,
+          "p90": 72.53302259502578,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "1": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 34.12020595675676,
+          "p90": 66.49440555569373,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        },
+        "2": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 36.789571087669735,
+          "p90": 81.32562482494868,
+          "calibration_positions_mean": 3.0,
+          "calibration_positions_min": 3,
+          "calibration_positions_max": 3,
+          "calibration_scans_mean": 9.0,
+          "calibration_scans_min": 9,
+          "calibration_scans_max": 9
+        }
+      }
+    },
+    "5": {
+      "overall": {
+        "query_units": 39,
+        "query_positions": 1389,
+        "mean": 27.526138000790677,
+        "p90": 59.132679029522095,
+        "calibration_positions_mean": 5.0,
+        "calibration_positions_min": 5,
+        "calibration_positions_max": 5,
+        "calibration_scans_mean": 15.0,
+        "calibration_scans_min": 15,
+        "calibration_scans_max": 15
+      },
+      "by_building": {
+        "B0": {
+          "query_units": 12,
+          "query_positions": 387,
+          "mean": 22.326948574552404,
+          "p90": 47.42635541698631,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B1": {
+          "query_units": 12,
+          "query_positions": 396,
+          "mean": 37.95931438399944,
+          "p90": 86.86813517549243,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B2": {
+          "query_units": 15,
+          "query_positions": 606,
+          "mean": 24.028693215648016,
+          "p90": 58.19174212189985,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        }
+      },
+      "by_floor": {
+        "B0F0": {
+          "query_units": 3,
+          "query_positions": 81,
+          "mean": 32.63795798262703,
+          "p90": 80.48033847861201,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B0F1": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 14.023680575520274,
+          "p90": 24.167121451014662,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B0F2": {
+          "query_units": 3,
+          "query_positions": 105,
+          "mean": 22.265898669081174,
+          "p90": 44.80189379663326,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B0F3": {
+          "query_units": 3,
+          "query_positions": 102,
+          "mean": 22.260693769891777,
+          "p90": 40.996714472333196,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B1F0": {
+          "query_units": 3,
+          "query_positions": 114,
+          "mean": 30.356252589657256,
+          "p90": 47.16798085864893,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B1F1": {
+          "query_units": 3,
+          "query_positions": 90,
+          "mean": 48.42499583751272,
+          "p90": 106.70521513701046,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B1F2": {
+          "query_units": 3,
+          "query_positions": 117,
+          "mean": 35.62986594341128,
+          "p90": 61.5168063562227,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B1F3": {
+          "query_units": 3,
+          "query_positions": 75,
+          "mean": 40.59109013450115,
+          "p90": 84.91565498236059,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B2F0": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 24.299660134835886,
+          "p90": 54.92044854881333,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B2F1": {
+          "query_units": 3,
+          "query_positions": 132,
+          "mean": 28.498832335323172,
+          "p90": 62.233688346133206,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B2F2": {
+          "query_units": 3,
+          "query_positions": 108,
+          "mean": 20.034576947273326,
+          "p90": 65.17694952059317,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B2F3": {
+          "query_units": 3,
+          "query_positions": 168,
+          "mean": 20.690104131658842,
+          "p90": 41.5218805635471,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "B2F4": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 27.82024305704123,
+          "p90": 64.72340061911702,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        }
+      },
+      "by_draw": {
+        "0": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 27.856397657739254,
+          "p90": 59.19446981692951,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "1": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 26.311643811108215,
+          "p90": 56.32400048009359,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        },
+        "2": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 28.410372533524576,
+          "p90": 60.31703441555994,
+          "calibration_positions_mean": 5.0,
+          "calibration_positions_min": 5,
+          "calibration_positions_max": 5,
+          "calibration_scans_mean": 15.0,
+          "calibration_scans_min": 15,
+          "calibration_scans_max": 15
+        }
+      }
+    },
+    "10": {
+      "overall": {
+        "query_units": 39,
+        "query_positions": 1389,
+        "mean": 18.605161903342204,
+        "p90": 39.51499785685693,
+        "calibration_positions_mean": 10.0,
+        "calibration_positions_min": 10,
+        "calibration_positions_max": 10,
+        "calibration_scans_mean": 30.0,
+        "calibration_scans_min": 30,
+        "calibration_scans_max": 30
+      },
+      "by_building": {
+        "B0": {
+          "query_units": 12,
+          "query_positions": 387,
+          "mean": 14.427693631086424,
+          "p90": 28.37560785741707,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B1": {
+          "query_units": 12,
+          "query_positions": 396,
+          "mean": 25.28309804139226,
+          "p90": 46.34661926379838,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B2": {
+          "query_units": 15,
+          "query_positions": 606,
+          "mean": 16.909151194918383,
+          "p90": 38.525001640822246,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        }
+      },
+      "by_floor": {
+        "B0F0": {
+          "query_units": 3,
+          "query_positions": 81,
+          "mean": 14.041405568020666,
+          "p90": 30.789266084859687,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B0F1": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 12.378454784705275,
+          "p90": 23.904983130357554,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B0F2": {
+          "query_units": 3,
+          "query_positions": 105,
+          "mean": 13.856620859327974,
+          "p90": 24.881448455715734,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B0F3": {
+          "query_units": 3,
+          "query_positions": 102,
+          "mean": 17.311287944171685,
+          "p90": 39.90265620856139,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B1F0": {
+          "query_units": 3,
+          "query_positions": 114,
+          "mean": 24.17860371292086,
+          "p90": 38.60786460150099,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B1F1": {
+          "query_units": 3,
+          "query_positions": 90,
+          "mean": 30.41500685473583,
+          "p90": 88.55719586515862,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B1F2": {
+          "query_units": 3,
+          "query_positions": 117,
+          "mean": 22.6704321086409,
+          "p90": 45.445931168409054,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B1F3": {
+          "query_units": 3,
+          "query_positions": 75,
+          "mean": 24.879397699748644,
+          "p90": 47.62634679785088,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B2F0": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 17.821907003786748,
+          "p90": 45.048590603527686,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B2F1": {
+          "query_units": 3,
+          "query_positions": 132,
+          "mean": 21.259598901933458,
+          "p90": 55.4043389075524,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B2F2": {
+          "query_units": 3,
+          "query_positions": 108,
+          "mean": 13.875644129532576,
+          "p90": 28.86891435805343,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B2F3": {
+          "query_units": 3,
+          "query_positions": 168,
+          "mean": 15.111773349737248,
+          "p90": 34.58506524151374,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "B2F4": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 16.555174615606663,
+          "p90": 32.13406519171404,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        }
+      },
+      "by_draw": {
+        "0": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 16.24460389792148,
+          "p90": 36.47793897209089,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "1": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 20.618548377787256,
+          "p90": 43.26131029439434,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        },
+        "2": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 18.952333434317875,
+          "p90": 39.58433772853849,
+          "calibration_positions_mean": 10.0,
+          "calibration_positions_min": 10,
+          "calibration_positions_max": 10,
+          "calibration_scans_mean": 30.0,
+          "calibration_scans_min": 30,
+          "calibration_scans_max": 30
+        }
+      }
+    },
+    "20": {
+      "overall": {
+        "query_units": 39,
+        "query_positions": 1389,
+        "mean": 13.183279270711543,
+        "p90": 24.76526198100251,
+        "calibration_positions_mean": 20.0,
+        "calibration_positions_min": 20,
+        "calibration_positions_max": 20,
+        "calibration_scans_mean": 59.97435897435897,
+        "calibration_scans_min": 59,
+        "calibration_scans_max": 60
+      },
+      "by_building": {
+        "B0": {
+          "query_units": 12,
+          "query_positions": 387,
+          "mean": 9.545294457580546,
+          "p90": 18.721308829321206,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B1": {
+          "query_units": 12,
+          "query_positions": 396,
+          "mean": 16.920182205724313,
+          "p90": 29.54778226093068,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 59.916666666666664,
+          "calibration_scans_min": 59,
+          "calibration_scans_max": 60
+        },
+        "B2": {
+          "query_units": 15,
+          "query_positions": 606,
+          "mean": 13.06461022849478,
+          "p90": 26.693984469687393,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        }
+      },
+      "by_floor": {
+        "B0F0": {
+          "query_units": 3,
+          "query_positions": 81,
+          "mean": 9.347855276386342,
+          "p90": 18.80537824596688,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B0F1": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 9.716341072821677,
+          "p90": 19.228750520857254,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B0F2": {
+          "query_units": 3,
+          "query_positions": 105,
+          "mean": 8.845539221545696,
+          "p90": 17.15761210400942,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B0F3": {
+          "query_units": 3,
+          "query_positions": 102,
+          "mean": 10.256404835536598,
+          "p90": 20.106843971658975,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B1F0": {
+          "query_units": 3,
+          "query_positions": 114,
+          "mean": 16.377095732638,
+          "p90": 25.393163887892793,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B1F1": {
+          "query_units": 3,
+          "query_positions": 90,
+          "mean": 16.409484115708583,
+          "p90": 23.255136784231343,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 59.666666666666664,
+          "calibration_scans_min": 59,
+          "calibration_scans_max": 60
+        },
+        "B1F2": {
+          "query_units": 3,
+          "query_positions": 117,
+          "mean": 16.65876678428762,
+          "p90": 33.890007855284736,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B1F3": {
+          "query_units": 3,
+          "query_positions": 75,
+          "mean": 18.766319410275614,
+          "p90": 40.963372988501405,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B2F0": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 13.643051640228013,
+          "p90": 30.256910820939485,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B2F1": {
+          "query_units": 3,
+          "query_positions": 132,
+          "mean": 13.910222961026177,
+          "p90": 25.240807105206674,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B2F2": {
+          "query_units": 3,
+          "query_positions": 108,
+          "mean": 12.909817524622989,
+          "p90": 33.694692841299435,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B2F3": {
+          "query_units": 3,
+          "query_positions": 168,
+          "mean": 11.604907675936559,
+          "p90": 23.198278572013166,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "B2F4": {
+          "query_units": 3,
+          "query_positions": 99,
+          "mean": 14.004620939527113,
+          "p90": 25.818006679272166,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        }
+      },
+      "by_draw": {
+        "0": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 12.623447287504854,
+          "p90": 23.88410945479419,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 59.92307692307692,
+          "calibration_scans_min": 59,
+          "calibration_scans_max": 60
+        },
+        "1": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 12.649607591726944,
+          "p90": 25.046649758993404,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        },
+        "2": {
+          "query_units": 13,
+          "query_positions": 463,
+          "mean": 14.276782932902837,
+          "p90": 25.20403346422169,
+          "calibration_positions_mean": 20.0,
+          "calibration_positions_min": 20,
+          "calibration_positions_max": 20,
+          "calibration_scans_mean": 60.0,
+          "calibration_scans_min": 60,
+          "calibration_scans_max": 60
+        }
+      }
+    }
+  },
+  "per_query_unit": [
+    {
+      "query_unit_id": "uji/B0/F0/r0",
+      "building": "B0",
+      "floor": 0,
+      "repeat": 0,
+      "calibration_positions": 27,
+      "calibration_scans": 542,
+      "prediction_seconds": 1.4503988213837147,
+      "mean": 6.737940471116729,
+      "p90": 13.746602849424509
+    },
+    {
+      "query_unit_id": "uji/B0/F0/r1",
+      "building": "B0",
+      "floor": 0,
+      "repeat": 1,
+      "calibration_positions": 27,
+      "calibration_scans": 545,
+      "prediction_seconds": 0.007819678634405136,
+      "mean": 6.2588471979779285,
+      "p90": 11.089600421041025
+    },
+    {
+      "query_unit_id": "uji/B0/F0/r2",
+      "building": "B0",
+      "floor": 0,
+      "repeat": 2,
+      "calibration_positions": 27,
+      "calibration_scans": 521,
+      "prediction_seconds": 0.007223676890134811,
+      "mean": 8.028762174915549,
+      "p90": 15.356842689125163
+    },
+    {
+      "query_unit_id": "uji/B0/F1/r0",
+      "building": "B0",
+      "floor": 1,
+      "repeat": 0,
+      "calibration_positions": 33,
+      "calibration_scans": 417,
+      "prediction_seconds": 0.006590813398361206,
+      "mean": 10.243775740111504,
+      "p90": 17.735884971803124
+    },
+    {
+      "query_unit_id": "uji/B0/F1/r1",
+      "building": "B0",
+      "floor": 1,
+      "repeat": 1,
+      "calibration_positions": 34,
+      "calibration_scans": 705,
+      "prediction_seconds": 0.013149511069059372,
+      "mean": 6.260999450076675,
+      "p90": 10.56568816937709
+    },
+    {
+      "query_unit_id": "uji/B0/F1/r2",
+      "building": "B0",
+      "floor": 1,
+      "repeat": 2,
+      "calibration_positions": 34,
+      "calibration_scans": 680,
+      "prediction_seconds": 0.0115995854139328,
+      "mean": 8.336376625036193,
+      "p90": 19.444071127535636
+    },
+    {
+      "query_unit_id": "uji/B0/F2/r0",
+      "building": "B0",
+      "floor": 2,
+      "repeat": 0,
+      "calibration_positions": 35,
+      "calibration_scans": 720,
+      "prediction_seconds": 0.01673491671681404,
+      "mean": 5.754324486813422,
+      "p90": 10.3754454208614
+    },
+    {
+      "query_unit_id": "uji/B0/F2/r1",
+      "building": "B0",
+      "floor": 2,
+      "repeat": 1,
+      "calibration_positions": 35,
+      "calibration_scans": 723,
+      "prediction_seconds": 0.01633981615304947,
+      "mean": 7.941166862506704,
+      "p90": 14.834793450309562
+    },
+    {
+      "query_unit_id": "uji/B0/F2/r2",
+      "building": "B0",
+      "floor": 2,
+      "repeat": 2,
+      "calibration_positions": 35,
+      "calibration_scans": 695,
+      "prediction_seconds": 0.015086248517036438,
+      "mean": 8.424309610798172,
+      "p90": 16.55122340974045
+    },
+    {
+      "query_unit_id": "uji/B0/F3/r0",
+      "building": "B0",
+      "floor": 3,
+      "repeat": 0,
+      "calibration_positions": 34,
+      "calibration_scans": 343,
+      "prediction_seconds": 0.007024992257356644,
+      "mean": 9.65610532169711,
+      "p90": 15.912489580223076
+    },
+    {
+      "query_unit_id": "uji/B0/F3/r1",
+      "building": "B0",
+      "floor": 3,
+      "repeat": 1,
+      "calibration_positions": 34,
+      "calibration_scans": 379,
+      "prediction_seconds": 0.006240431219339371,
+      "mean": 8.474643554335687,
+      "p90": 16.804410536383926
+    },
+    {
+      "query_unit_id": "uji/B0/F3/r2",
+      "building": "B0",
+      "floor": 3,
+      "repeat": 2,
+      "calibration_positions": 34,
+      "calibration_scans": 356,
+      "prediction_seconds": 0.006261866539716721,
+      "mean": 9.236036435608886,
+      "p90": 16.98358560759269
+    },
+    {
+      "query_unit_id": "uji/B1/F0/r0",
+      "building": "B1",
+      "floor": 0,
+      "repeat": 0,
+      "calibration_positions": 38,
+      "calibration_scans": 683,
+      "prediction_seconds": 0.01370711624622345,
+      "mean": 9.000220817089021,
+      "p90": 14.494784611456021
+    },
+    {
+      "query_unit_id": "uji/B1/F0/r1",
+      "building": "B1",
+      "floor": 0,
+      "repeat": 1,
+      "calibration_positions": 38,
+      "calibration_scans": 685,
+      "prediction_seconds": 0.01386016234755516,
+      "mean": 10.57923940818137,
+      "p90": 18.717819127000908
+    },
+    {
+      "query_unit_id": "uji/B1/F0/r2",
+      "building": "B1",
+      "floor": 0,
+      "repeat": 2,
+      "calibration_positions": 38,
+      "calibration_scans": 717,
+      "prediction_seconds": 0.014526087790727615,
+      "mean": 11.19381509024206,
+      "p90": 21.179002084106877
+    },
+    {
+      "query_unit_id": "uji/B1/F1/r0",
+      "building": "B1",
+      "floor": 1,
+      "repeat": 0,
+      "calibration_positions": 30,
+      "calibration_scans": 769,
+      "prediction_seconds": 0.014230351895093918,
+      "mean": 12.82062619766955,
+      "p90": 22.53376312807441
+    },
+    {
+      "query_unit_id": "uji/B1/F1/r1",
+      "building": "B1",
+      "floor": 1,
+      "repeat": 1,
+      "calibration_positions": 30,
+      "calibration_scans": 639,
+      "prediction_seconds": 0.012932412326335907,
+      "mean": 21.61074730174182,
+      "p90": 31.266960497472155
+    },
+    {
+      "query_unit_id": "uji/B1/F1/r2",
+      "building": "B1",
+      "floor": 1,
+      "repeat": 2,
+      "calibration_positions": 30,
+      "calibration_scans": 807,
+      "prediction_seconds": 0.015859801322221756,
+      "mean": 12.81659296025999,
+      "p90": 20.893643372875914
+    },
+    {
+      "query_unit_id": "uji/B1/F2/r0",
+      "building": "B1",
+      "floor": 2,
+      "repeat": 0,
+      "calibration_positions": 40,
+      "calibration_scans": 731,
+      "prediction_seconds": 0.019862867891788483,
+      "mean": 13.009749887770058,
+      "p90": 22.243662996227467
+    },
+    {
+      "query_unit_id": "uji/B1/F2/r1",
+      "building": "B1",
+      "floor": 2,
+      "repeat": 1,
+      "calibration_positions": 40,
+      "calibration_scans": 730,
+      "prediction_seconds": 0.020035021007061005,
+      "mean": 11.204867998800855,
+      "p90": 15.93132664961269
+    },
+    {
+      "query_unit_id": "uji/B1/F2/r2",
+      "building": "B1",
+      "floor": 2,
+      "repeat": 2,
+      "calibration_positions": 40,
+      "calibration_scans": 646,
+      "prediction_seconds": 0.018451903015375137,
+      "mean": 14.40268774145535,
+      "p90": 26.773229313034108
+    },
+    {
+      "query_unit_id": "uji/B1/F3/r0",
+      "building": "B1",
+      "floor": 3,
+      "repeat": 0,
+      "calibration_positions": 25,
+      "calibration_scans": 500,
+      "prediction_seconds": 0.006536554545164108,
+      "mean": 18.666892885093514,
+      "p90": 36.521903009826744
+    },
+    {
+      "query_unit_id": "uji/B1/F3/r1",
+      "building": "B1",
+      "floor": 3,
+      "repeat": 1,
+      "calibration_positions": 25,
+      "calibration_scans": 436,
+      "prediction_seconds": 0.006053667515516281,
+      "mean": 14.07182889989067,
+      "p90": 24.138788956622204
+    },
+    {
+      "query_unit_id": "uji/B1/F3/r2",
+      "building": "B1",
+      "floor": 3,
+      "repeat": 2,
+      "calibration_positions": 25,
+      "calibration_scans": 460,
+      "prediction_seconds": 0.006508607417345047,
+      "mean": 17.263750411759545,
+      "p90": 35.99433369229841
+    },
+    {
+      "query_unit_id": "uji/B2/F0/r0",
+      "building": "B2",
+      "floor": 0,
+      "repeat": 0,
+      "calibration_positions": 34,
+      "calibration_scans": 1034,
+      "prediction_seconds": 0.014566000550985336,
+      "mean": 11.758416367489643,
+      "p90": 22.537626439095916
+    },
+    {
+      "query_unit_id": "uji/B2/F0/r1",
+      "building": "B2",
+      "floor": 0,
+      "repeat": 1,
+      "calibration_positions": 34,
+      "calibration_scans": 969,
+      "prediction_seconds": 0.013621944934129715,
+      "mean": 10.660242806211254,
+      "p90": 19.218558191336744
+    },
+    {
+      "query_unit_id": "uji/B2/F0/r2",
+      "building": "B2",
+      "floor": 0,
+      "repeat": 2,
+      "calibration_positions": 34,
+      "calibration_scans": 971,
+      "prediction_seconds": 0.013882603496313095,
+      "mean": 9.417567610140967,
+      "p90": 14.353906899184542
+    },
+    {
+      "query_unit_id": "uji/B2/F1/r0",
+      "building": "B2",
+      "floor": 1,
+      "repeat": 0,
+      "calibration_positions": 45,
+      "calibration_scans": 1105,
+      "prediction_seconds": 0.029879476875066757,
+      "mean": 9.816150564336606,
+      "p90": 25.330753592767305
+    },
+    {
+      "query_unit_id": "uji/B2/F1/r1",
+      "building": "B2",
+      "floor": 1,
+      "repeat": 1,
+      "calibration_positions": 45,
+      "calibration_scans": 1093,
+      "prediction_seconds": 0.031916894018650055,
+      "mean": 9.48463875352477,
+      "p90": 14.870612484226621
+    },
+    {
+      "query_unit_id": "uji/B2/F1/r2",
+      "building": "B2",
+      "floor": 1,
+      "repeat": 2,
+      "calibration_positions": 45,
+      "calibration_scans": 1100,
+      "prediction_seconds": 0.03191510587930679,
+      "mean": 7.934804377034992,
+      "p90": 14.607502689723441
+    },
+    {
+      "query_unit_id": "uji/B2/F2/r0",
+      "building": "B2",
+      "floor": 2,
+      "repeat": 0,
+      "calibration_positions": 37,
+      "calibration_scans": 818,
+      "prediction_seconds": 0.015707693994045258,
+      "mean": 8.33151933335026,
+      "p90": 17.21239298870137
+    },
+    {
+      "query_unit_id": "uji/B2/F2/r1",
+      "building": "B2",
+      "floor": 2,
+      "repeat": 1,
+      "calibration_positions": 37,
+      "calibration_scans": 775,
+      "prediction_seconds": 0.016726654022932053,
+      "mean": 7.225205411986575,
+      "p90": 11.026964735246558
+    },
+    {
+      "query_unit_id": "uji/B2/F2/r2",
+      "building": "B2",
+      "floor": 2,
+      "repeat": 2,
+      "calibration_positions": 37,
+      "calibration_scans": 761,
+      "prediction_seconds": 0.015017494559288025,
+      "mean": 11.079396571249735,
+      "p90": 23.958564324915777
+    },
+    {
+      "query_unit_id": "uji/B2/F3/r0",
+      "building": "B2",
+      "floor": 3,
+      "repeat": 0,
+      "calibration_positions": 57,
+      "calibration_scans": 1428,
+      "prediction_seconds": 0.0568426251411438,
+      "mean": 6.841162599998561,
+      "p90": 12.32677598463102
+    },
+    {
+      "query_unit_id": "uji/B2/F3/r1",
+      "building": "B2",
+      "floor": 3,
+      "repeat": 1,
+      "calibration_positions": 57,
+      "calibration_scans": 1367,
+      "prediction_seconds": 0.05016364902257919,
+      "mean": 9.723814453859376,
+      "p90": 15.716082196758705
+    },
+    {
+      "query_unit_id": "uji/B2/F3/r2",
+      "building": "B2",
+      "floor": 3,
+      "repeat": 2,
+      "calibration_positions": 57,
+      "calibration_scans": 1405,
+      "prediction_seconds": 0.04934848099946976,
+      "mean": 9.221368911982397,
+      "p90": 23.468571916100778
+    },
+    {
+      "query_unit_id": "uji/B2/F4/r0",
+      "building": "B2",
+      "floor": 4,
+      "repeat": 0,
+      "calibration_positions": 34,
+      "calibration_scans": 522,
+      "prediction_seconds": 0.007325317710638046,
+      "mean": 10.570083055338497,
+      "p90": 18.51232413239173
+    },
+    {
+      "query_unit_id": "uji/B2/F4/r1",
+      "building": "B2",
+      "floor": 4,
+      "repeat": 1,
+      "calibration_positions": 34,
+      "calibration_scans": 550,
+      "prediction_seconds": 0.008853357285261154,
+      "mean": 8.61672959311146,
+      "p90": 16.957561342419325
+    },
+    {
+      "query_unit_id": "uji/B2/F4/r2",
+      "building": "B2",
+      "floor": 4,
+      "repeat": 2,
+      "calibration_positions": 34,
+      "calibration_scans": 549,
+      "prediction_seconds": 0.009115703403949738,
+      "mean": 12.504779946306229,
+      "p90": 29.946538847989185
+    }
+  ],
+  "cost": {
+    "evaluation_process_seconds": 2.6687277667224407,
+    "dense_prediction_seconds": 2.0919179134070873,
+    "CPU_threads": 2,
+    "GPU_devices": [],
+    "formal_process_wall_seconds": 3,
+    "source_consistency_check_seconds": 9.52813421562314
+  },
+  "interpretation": {
+    "metric": "Pooled position-balanced scan errors on the same 39 Query units.",
+    "calibration": "Dense calibration includes every legal non-Query-position scan within the original Support acquisition rule.",
+    "repeated_draws": "The 39 draws reuse recorded floor data. The five sparse budgets are repeated evaluations of these same Query units.",
+    "comparison": "Both position counts and per-position scan counts vary. Report their measured costs separately."
+  },
+  "records": [
+    {
+      "path": "events/dense_wknn/uji/B0/F0/r0.json",
+      "sha256": "b8abe0d24682675af1b4cc1343423d3eef58533638ba4475867755c6eaff7ca9"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F0/r1.json",
+      "sha256": "90216f6217cb029fdc31393ff3178cbe1f12fab712d8e393073f0f814e83e558"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F0/r2.json",
+      "sha256": "c83e9c6f10dc4f5c8a0f36b2cd6d944947cef6be3df420d7036567c4e863e5a9"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F1/r0.json",
+      "sha256": "4a88f42067f7de557e4e591e0a7ad02e3e60b0593ea78cc4436b511209a8ce8e"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F1/r1.json",
+      "sha256": "11a0d87b56dcb61874b5f806703bcdb479ca5c7e9d0123438fd5db50276b2600"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F1/r2.json",
+      "sha256": "d4478665a2287c96bf1487878729f01d0e4347a767c177a9cfb1e6fc5fc56055"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F2/r0.json",
+      "sha256": "ec2ea95797a739a03020b1696c083ab02b5d3b92d37530063b96e5330cd03ab5"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F2/r1.json",
+      "sha256": "b1e71d7b0dcde4903983214ffe8147df893cff05fdc7393f1a30641d353fdfab"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F2/r2.json",
+      "sha256": "5b647e8ca5459a6f80dc62e9391b8c12407dbff07735c3828159ab3d9cfff7e8"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F3/r0.json",
+      "sha256": "a064c7fcc11979a446cdead86c44fdc7c7a93e624ee63f4c7d34eb5dab4f6f8c"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F3/r1.json",
+      "sha256": "a69e8eb9f5484e161af7a8be86269c654fe910d77f556200ea3fabfd332e3604"
+    },
+    {
+      "path": "events/dense_wknn/uji/B0/F3/r2.json",
+      "sha256": "62c2bba2083673baa349214143a079597ec0c11e857843ff15c7500c96ffcd8e"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F0/r0.json",
+      "sha256": "33c0b0339c9ea0e573f916d13a7d444d64bdd7d927fd778ee66c80339f1f38fa"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F0/r1.json",
+      "sha256": "1f17a8ec2be87551c658a6b64806ca5ff814b475b7122264b5a7ea6f545d1b77"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F0/r2.json",
+      "sha256": "315f6e8bf178dd789dda5daad441ecdbebf6396d5e87e0c6e86d23cbd699897d"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F1/r0.json",
+      "sha256": "c81ba96fb95607503d677a1db2c8085c902631ace0144a194ae870c120505e36"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F1/r1.json",
+      "sha256": "dbdd0e9ac4f7ec2236aec0f1a80c1b6452752b72a2da58b067e93162fb4df740"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F1/r2.json",
+      "sha256": "d06ddf14540d6fd166986b0f27e0e8e6f7a8176fa1ef36df955dfbc127aeadb2"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F2/r0.json",
+      "sha256": "8f5f75f0b33ccfc15352a5c99886d544398f4879ccaa4488004aa015e9460570"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F2/r1.json",
+      "sha256": "93b8d22a66bda4f774039f577c021b50cf58f790e57d867731f1cb0bd5443b8f"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F2/r2.json",
+      "sha256": "005c735b6eaa527dd1cf8c2e438bd5200829359136904fe83f38f2de1ed9ab2d"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F3/r0.json",
+      "sha256": "c0db6379c9416f0bc4c99f55eca0d227c7d1c0e7b7243925aad4a7516a8632f8"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F3/r1.json",
+      "sha256": "f9fcc1e40bad1c8d065ea467e846bd36d07d08b055c1adafa41e56099d850fb6"
+    },
+    {
+      "path": "events/dense_wknn/uji/B1/F3/r2.json",
+      "sha256": "e805ad4ceef967f82d7d15654dfde2a6aff689239e94a40c5a7986bc8ab9ba8b"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F0/r0.json",
+      "sha256": "ff92c5ca537ef238d44782cdcb89d4bf86f270c736c3bef43bafd90d87ee8d17"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F0/r1.json",
+      "sha256": "3ad45c159b59eba100f887d90105eb2d61d6afa65345597ab9b2d5042959afc4"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F0/r2.json",
+      "sha256": "811addc33ce692a215b947f4b8013458ab25d1d3c2db35309d8f8f3a1e38d90a"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F1/r0.json",
+      "sha256": "8e389122d06e4ee267e64424c3f18585cbfe72156b397fab7780b78843f53870"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F1/r1.json",
+      "sha256": "7bee407b324756099ec6c9093560a2c697fbd9efedc1bd9a47e255572ae0e2fe"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F1/r2.json",
+      "sha256": "f1edb67f1524e5ccb19469810dc00b5dfe8ee1a3f1e248dc8b9fef988af8d8df"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F2/r0.json",
+      "sha256": "0703b4302dd3e75fa8ac28851767688768301a4d62b15ee4e8dc90ef88c56da2"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F2/r1.json",
+      "sha256": "7595e0c4cae3cf941c0ad9508ac930829d335bdebeb9ba9144cd6d6ac953c86f"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F2/r2.json",
+      "sha256": "7667c68664befa4bd543b9ed478192fd5e6981f1495cf5bb222d00e2d55b9446"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F3/r0.json",
+      "sha256": "3f2036be3b25845484f512e0af2ee44b17e0bc701398b42ec7ed52eb0bb8c1be"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F3/r1.json",
+      "sha256": "89287c7e3dcd2929fbb0c3ad75f6f150d0a2d367d695e0e4cc137baf4f18c534"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F3/r2.json",
+      "sha256": "7b87dd9833a4c127286b724abeda648f64740c008b9bebabc2e58d8f48f0e59a"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F4/r0.json",
+      "sha256": "b1640b7c1bde38cd7759d2802ca9b1450ba5a4c8d579e6868feb2d7090764da9"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F4/r1.json",
+      "sha256": "54340d0a3efa3e1965607db13e1664a72937fb6a03d18b899c7d991768e53975"
+    },
+    {
+      "path": "events/dense_wknn/uji/B2/F4/r2.json",
+      "sha256": "c63bbe383b4b9d6588ac130c018d8b12002861f140d10ac67139574d331f7a2f"
+    }
+  ],
+  "provenance": {
+    "server_output": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/dense_calibration_reference_20261118",
+    "server_execution": "/home/panyushuo/projects/panyushuo/paper_bench_wt/current_20261110/results/dense_calibration_reference_execution_20261118",
+    "local_output": "/Users/Admin/Desktop/project/\u8fc1\u79fb\u5b66\u4e60/ReFi_v2_20261111/results/dense_calibration_reference_20261118",
+    "local_execution": "/Users/Admin/Desktop/project/\u8fc1\u79fb\u5b66\u4e60/ReFi_v2_20261111/results/dense_calibration_reference_execution_20261118",
+    "light_manifest_sha256": "5b9f6f79d88d95399f1e70a14919531342abf338f11ef06b04720d90c98522ce",
+    "raw_summary_sha256": "545386c22e16e577df474587a9fb4c964d29e277028acd3dce481922ad34d755",
+    "acceptance_sha256": "87c851e0f7d909626b38ae209352dbaed28812adbbc8cf8cd8447ef5d5d0fd4c",
+    "source_consistency_prediction_max_abs_difference": 0.0
+  }
+}
